@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Code2, ArrowRight, Sparkles, Boxes } from 'lucide-react';
+import { Code2, ArrowRight, Sparkles, Boxes, Medal, TabletSmartphone, GaugeCircle } from 'lucide-react';
 import * as THREE from 'three';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -124,7 +125,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 bg-dark-surface/50 backdrop-blur-sm px-6 py-3 rounded-full"
             >
               <Sparkles className="w-5 h-5 text-electric-blue" />
-              <span className="text-white/90">Crafting Digital Excellence</span>
+              <span className="text-white/90">Internetinių svetainių kūrimas</span>
             </motion.div>
 
             <motion.h1
@@ -134,11 +135,11 @@ const HeroSection = () => {
               custom={1}
               className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
             >
-              We Build{' '}
+              Kuriame{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
-                Digital
+                Skaitmenines
               </span>{' '}
-              Experiences
+              Patirtis
             </motion.h1>
 
             <motion.p
@@ -148,8 +149,7 @@ const HeroSection = () => {
               custom={2}
               className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto"
             >
-              Transforming ideas into exceptional web solutions with cutting-edge technology
-              and creative innovation.
+              Idėjų pavertimas išskirtiniais žiniatinklio sprendimais naudojant pažangiausias technologijas ir kūrybines naujoves.
             </motion.p>
           </div>
 
@@ -166,12 +166,12 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
               className="button-primary inline-flex items-center gap-2 group"
             >
-              <span>Start Your Project</span>
+              <Link to="/kontaktai" className="text-white">Pradėkite savo projektą</Link>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </motion.button>
             <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/10 hover:border-electric-blue/50 transition-colors duration-300 backdrop-blur-sm">
               <Code2 className="w-5 h-5" />
-              <span>View Our Work</span>
+              <Link to="/projects" className="text-white">Peržiūrėkite mūsų darbus</Link>
             </button>
           </motion.div>
 
@@ -184,10 +184,10 @@ const HeroSection = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {[
-              { number: '150+', label: 'Projects Completed' },
-              { number: '10+', label: 'Years Experience' },
-              { number: '99%', label: 'Client Satisfaction' },
-              { number: '24/7', label: 'Support Available' },
+              { icon: <Medal className="w-8 h-8" />, label: 'Laimingi klientai' },
+              { icon: <Boxes className="w-8 h-8" />, label: 'Ilgametė patirtis' },
+              { icon: <GaugeCircle className="w-8 h-8" />, label: 'Optimizuotos svetainės' },
+              { icon: <TabletSmartphone className="w-8 h-8" />, label: 'Pritaikyta mobiliems' },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -196,8 +196,8 @@ const HeroSection = () => {
                 transition={{ delay: 0.5 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-display font-bold text-electric-blue mb-2">
-                  {stat.number}
+                <div className="text-3xl md:text-4xl flex  align-center justify-center font-display font-bold text-electric-blue mb-2">
+                  {stat.icon}
                 </div>
                 <div className="text-white/70">{stat.label}</div>
               </motion.div>
@@ -213,7 +213,7 @@ const HeroSection = () => {
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
           <div className="flex flex-col items-center gap-2">
-            <span className="text-sm text-white/50">Scroll to explore</span>
+            <span className="text-sm text-white/50">Slinkite žemyn</span>
             <motion.div
               animate={{
                 y: [0, 10, 0],

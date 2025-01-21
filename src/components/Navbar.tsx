@@ -35,8 +35,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <img src="src/img/amberweb-logo-white-gradient.png" alt="Amberweb" className="h-10" />
+          <Link to="/" className="flex items-center space-x-2 logo-wrapper">
+            <div className="gradient-mask"></div>
+            <img src="src/img/amberweb-logo-amber-only.png" alt="Amberweb" className="h-10" />
           </Link>
 
           {/* Desktop Navigation */}

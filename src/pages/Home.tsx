@@ -4,10 +4,11 @@ import { useInView } from 'react-intersection-observer';
 import { 
   Code, Layout, Smartphone, Shield, Clock, Target, Award, Star, 
   ChevronRight, Zap, Users, Laptop, Palette, Database, Cloud,
-  ArrowRight, Sparkles
+  ArrowRight, Sparkles, ShoppingCart
 } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -21,36 +22,36 @@ const Home = () => {
   const services = [
     {
       icon: <Layout className="w-6 h-6" />,
-      title: 'Web Design',
-      description: 'Beautiful, responsive websites that engage users and drive results.',
+      title: 'Individualus svetainių kūrimas',
+      description: 'Modernūs ir funkcionalūs interneto svetainių sprendimai, pritaikyti jūsų verslo poreikiams.',
     },
     {
-      icon: <Code className="w-6 h-6" />,
-      title: 'Development',
-      description: 'Robust web applications with modern technologies and best practices.',
+      icon: <ShoppingCart className="w-6 h-6" />,
+      title: 'E-komercijos sprendimai',
+      description: 'Profesionalūs el. parduotuvių sprendimai, kurie padeda didinti pardavimus ir pasiekti tikslus.',
     },
     {
       icon: <Smartphone className="w-6 h-6" />,
-      title: 'Mobile First',
-      description: 'Seamless experiences across all devices and screen sizes.',
+      title: 'Pritaikyta visiems įrenginiams',
+      description: 'Visiškai adaptuotos svetainės, kurios puikiai veikia tiek kompiuteriuose, tiek mobiliuosiuose įrenginiuose.',
     },
   ];
 
   const features = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: 'Lightning Fast',
-      description: 'Optimized performance for the best user experience',
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: 'Secure',
-      description: 'Built with security best practices from the ground up',
-    },
-    {
       icon: <Users className="w-6 h-6" />,
-      title: 'User-Centric',
-      description: 'Designed with your users in mind',
+      title: 'Patyrusi Komanda',
+      description: 'Mūsų komanda turi daugelio metų patirtį interneto svetainių kūrime.',
+    },
+    {
+      icon: <Layout className="w-6 h-6" />,
+      title: 'Individualūs Sprendimai',
+      description: 'Siūlome personalizuotas paslaugas, pritaikytas jūsų specifiniams poreikiams.',
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      title: 'Klientų Pasitenkinimas',
+      description: 'Mes prioritetą teikiame klientų pasitenkinimui ir siekiame viršyti lūkesčius.',
     },
   ];
 
@@ -62,12 +63,13 @@ const Home = () => {
   ];
 
   const process = [
-    { number: '01', title: 'Discovery', description: 'Understanding your needs and goals' },
-    { number: '02', title: 'Planning', description: 'Creating a roadmap for success' },
-    { number: '03', title: 'Design', description: 'Crafting beautiful user experiences' },
-    { number: '04', title: 'Development', description: 'Building with cutting-edge tech' },
-    { number: '05', title: 'Launch', description: 'Deploying and optimizing' },
+    { number: '01', title: 'Poreikių analizė', description: 'Jūsų poreikių ir tikslų išsiaiškinimas' },
+    { number: '02', title: 'Planavimas', description: 'Sudarome aiškų veiksmų planą' },
+    { number: '03', title: 'Dizainas', description: 'Pasitenkate tinkamą dizainą' },
+    { number: '04', title: 'Kūrimas', description: 'Naudojame pažangiausias technologijas' },
+    { number: '05', title: 'Paleidimas', description: 'Įgyvendiname ir optimizuojame projektą' },
   ];
+
 
   return (
     <div className="overflow-hidden">
@@ -82,9 +84,9 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Teikiamos paslaugos</h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto">
-              We offer comprehensive web solutions tailored to your needs
+              Teikiame visapusiškas interneto svetainių kūrimo paslaugas, pritaikytas jūsų verslo poreikiams. Mūsų komanda dirba su naujausiomis technologijomis ir geriausia praktika, siekdama sukurti aukštos kokybės interneto svetaines.
             </p>
           </motion.div>
 
@@ -118,10 +120,10 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Why Choose Us?
+                Kodėl pasirinkti mus?
               </h2>
               <p className="text-white/70 text-lg mb-8">
-                We combine technical expertise with creative innovation to deliver exceptional results.
+                Esame patyrusi komanda, kuri derina pažangias technologijas ir kūrybinius sprendimus, kad sukurtume unikalius ir aukščiausios kokybės interneto svetainių sprendimus.
               </p>
               <div className="space-y-6">
                 {features.map((feature, index) => (
@@ -148,25 +150,25 @@ const Home = () => {
             {/* Testimonials Section */}
             <section className="py-20 relative">
               <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">What our clients say</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Ką sako mūsų klientai</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="card hover:border-electric-blue/30 transition-colors duration-300 p-6">
                     <p className="text-white/70 mb-4">
-                      "I was very impressed with the quality of work and the level of service I received from [Your Company Name]. They were always on time, on budget, and very responsive to my needs."
+                      “Puslapis sukurtas profesonaliai, greitai ir kokybiškai, 100% rekomenduoju!”
                     </p>
                     <div className="flex items-center">
                       <div className="w-10 h-10 bg-gray-200 rounded-full mr-4">
-                        <img src="..." alt="Client avatar" className="rounded-full w-full h-full" />
+                        <img src="/src/img/gavorka.jpg" alt="Client avatar" className="rounded-full w-full h-full" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold mb-1">Client Name</h3>
-                        <p className="text-gray-400">Company Name</p>
+                        <h3 className="text-xl font-bold mb-1">Povilas</h3>
+                        <p className="text-gray-400">gavorka.com</p>
                       </div>
                     </div>
                   </div>
                   <div className="card hover:border-electric-blue/30 transition-colors duration-300 p-6">
                     <p className="text-white/70 mb-4">
-                      "The team at [Your Company Name] was a pleasure to work with. They were very knowledgeable and professional, and they helped me to achieve my goals."
+                      “Labai esu patenkinta sukurta svetaine! Greitai ir kokybiškai. Malonus ir paprastas bendravimas! Labai profesionalus darbas. Rekomenduoju!”
                     </p>
                     <div className="flex items-center">
                       <div className="w-10 h-10 bg-gray-200 rounded-full mr-4">
@@ -194,13 +196,13 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Tech Stack</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Naudojamos technologijos</h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto">
-              We use cutting-edge technologies to build modern web applications
+              Naudojame modernias technologijas ir geriausias praktikas, siekdami sukurti aukštos kokybės interneto svetaines
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <motion.div
                 key={tech.name}
@@ -224,6 +226,77 @@ const Home = () => {
                 </div>
               </motion.div>
             ))}
+          </div> */}
+
+          {/* list of technologies with simple logos, ie. worpress, woocommerce, divi, elementor, etc.
+           */}
+          {/* align vertically */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
+            >
+              <div className="text-electric-blue mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="w-full h-full" />
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
+            >
+              <div className="text-electric-blue mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/pngwing.com_-300x76.png" alt="WooCommerce" className="w-full h-full" />
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
+            >
+              <div className="text-electric-blue mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/logo-divi-1-300x127.png" alt="Divi" className="w-full h-full" />
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
+            >
+              <div className = "text-electric-blue mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/Elementor-Logo-Full-Red-300x60.png" alt="Elementor" className="w-full h-full" />
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
+            >
+              <div className="text-electric-blue mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/chatgpt-logo-300x127.png" alt="WooCommerce" className="w-full h-full" />
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
+            >
+              <div className="text-electric-blue mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/midjourney-logo-1-300x127.png" alt="WooCommerce" className="w-full h-full" />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -244,7 +317,7 @@ const Home = () => {
           </motion.div>
 
           <div className="relative">
-            <div className="absolute top-1/2 left-0 w-full h-0.5 bg-dark-surface-2 hidden lg:block">
+            <div className="absolute top-1/3 my-2 left-0 w-full h-0.5 bg-dark-surface-2 hidden lg:block">
               <div className="h-full bg-gradient-to-r from-electric-blue to-neon-purple w-full" />
             </div>
             
@@ -281,10 +354,10 @@ const Home = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Start Your Project?
+              Pasiruošę pradėti savo projektą?
             </h2>
             <p className="text-white/70 text-lg mb-8">
-              Let's create something amazing together. Get in touch with us today.
+              Susisiekite su mumis ir pradėkite savo interneto svetainės kūrimo kelionę jau šiandien.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
