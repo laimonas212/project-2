@@ -8,10 +8,14 @@ import Templates from './pages/Templates';
 import Pricing from './pages/Pricing';
 import Kontaktai from './pages/Kontaktai';
 import { motion } from 'framer-motion';
+import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopButton from './components/ScrollToTopButton';
+
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-background overflow-hidden flex flex-col">
         <div className="fixed inset-0 grid-pattern opacity-20" />
         <motion.div
@@ -28,6 +32,7 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/kontaktai" element={<Kontaktai />} />
           </Routes>
+          <ScrollToTopButton />
         </motion.div>
         <Footer /> {/* Footer is placed here to show on all pages */}
       </div>

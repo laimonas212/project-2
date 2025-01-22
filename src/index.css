@@ -155,7 +155,11 @@ p {
 }
 
 footer {
-  z-index: 99;
+  /* z-index: 99; */
+}
+
+.toTop {
+  z-index: 100;
 }
 
 .logo-wrapper {

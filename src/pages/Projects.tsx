@@ -221,16 +221,16 @@ const Projects: React.FC = () => {
   return (
     <div className="pt-24 relative">
       {/* Static Background */}
+
+      {/* Content */}
+      <div className="relative">
       <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-surface/50 to-background/80" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-dark-surface/50 to-background/80" /> */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.1)_0%,transparent_70%)]" />
         <div className="absolute inset-0" style={{
           background: 'radial-gradient(circle at 50% 50%, rgba(157,0,255,0.1) 0%, transparent 60%)'
         }} />
       </div>
-
-      {/* Content */}
-      <div className="relative">
         {projects.map((project, index) => (
           <ProjectSection key={project.title} project={project} index={index} />
         ))}
