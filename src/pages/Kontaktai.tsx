@@ -1,25 +1,84 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin } from 'lucide-react';
 
-const Kontaktai = () => {
-  const contactInfo = [
-    {
-      icon: <Mail className="w-6 h-6" />,
-      title: 'Email',
-      value: 'contact@devportfolio.com',
-    },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: 'Phone',
-      value: '+1 (555) 123-4567',
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: 'Location',
-      value: 'San Francisco, CA',
-    },
-  ];
+type FormData = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
+
+type ErrorMessages = {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+};
+
+const Kontaktai: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const [errors, setErrors] = useState<ErrorMessages>({});
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: '' }); // Clear error on input change
+  };
+
+  const validate = (): ErrorMessages => {
+    let validationErrors: ErrorMessages = {};
+
+    if (!formData.name.trim()) {
+      validationErrors.name = 'Full name is required.';
+    }
+
+    if (!formData.email.trim()) {
+      validationErrors.email = 'Email address is required.';
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
+    ) {
+      validationErrors.email = 'Invalid email address.';
+    }
+
+    if (!formData.phone.trim()) {
+      validationErrors.phone = 'Phone number is required.';
+    } else if (!/^\+?[0-9\s-]+$/.test(formData.phone)) {
+      validationErrors.phone = 'Invalid phone number.';
+    }
+
+    if (!formData.message.trim()) {
+      validationErrors.message = 'Message cannot be empty.';
+    }
+
+    return validationErrors;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    // Submit the form (replace with actual submission logic)
+    console.log('Form submitted:', formData);
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
+    alert('Your message has been sent!');
+  };
 
   return (
     <div className="pt-24">
@@ -29,56 +88,105 @@ const Kontaktai = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-xl text-white/70">
-            Feel free to reach out via email, phone, or visit us at our location
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h1>
+          <p className="text-lg text-white/70">
+            Have a question or want to work together?
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Information Section */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-            className="space-y-8"
-          >
-            {contactInfo.map((info, index) => (
-              <div
-                key={index}
-                className="flex items-start space-x-4 p-4 bg-dark-surface rounded-lg shadow-lg"
-              >
-                <div className="p-3 bg-dark-surface rounded-lg text-electric-blue">
-                  {info.icon}
-                </div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.4 }}
+          className="max-w-lg mx-auto rounded-lg overflow-hidden shadow-lg"
+        >
+          <div className="p-6 bg-dark-surface">
+            <h2 className="text-xl font-bold mb-4">Send Us a Message</h2>
+            <form onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 gap-4">
+                {/* Full Name */}
                 <div>
-                  <h3 className="font-medium mb-1">{info.title}</h3>
-                  <p className="text-white/70">{info.value}</p>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={`bg-gray-800 text-white ${errors.name
+                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
+                        : 'border-gray-700 focus:border-blue-500'
+                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  />
+                  {errors.name && (
+                    <p className="text-blue-500 text-sm mt-1">{errors.name}</p>
+                  )}
                 </div>
-              </div>
-            ))}
-          </motion.div>
 
-          {/* Map Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
-            className="rounded-lg overflow-hidden shadow-lg"
-          >
-            <div className="aspect-video">
-              <iframe
-                title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640!3d37.757815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
-            </div>
-          </motion.div>
-        </div>
+                {/* Email Address */}
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`bg-gray-800 text-white ${errors.email
+                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
+                        : 'border-gray-700 focus:border-blue-500'
+                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  />
+                  {errors.email && (
+                    <p className="text-blue-500 text-sm mt-1">{errors.email}</p>
+                  )}
+                </div>
+
+                {/* Phone Number */}
+                <div>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone Number"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className={`bg-gray-800 text-white ${errors.phone
+                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
+                        : 'border-gray-700 focus:border-blue-500'
+                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  />
+                  {errors.phone && (
+                    <p className="text-blue-500 text-sm mt-1">{errors.phone}</p>
+                  )}
+                </div>
+
+                {/* Message */}
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    rows={4}
+                    value={formData.message}
+                    onChange={handleChange}
+                    className={`bg-gray-800 text-white ${errors.message
+                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
+                        : 'border-gray-700 focus:border-blue-500'
+                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  />
+                  {errors.message && (
+                    <p className="text-blue-500 text-sm mt-1">{errors.message}</p>
+                  )}
+                </div>
+
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

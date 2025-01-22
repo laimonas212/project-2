@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { LayoutGrid, AlignRight, X } from 'lucide-react';
 import { cn } from '../lib/utils';
+import logo from '../img/amberweb-logo-amber-only.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 logo-wrapper">
             <div className="gradient-mask"></div>
-            <img src="src/img/amberweb-logo-amber-only.png" alt="Amberweb" className="h-10" />
+            {/* import src/img/amberweb-logo-amber-only.png as logo */}
+            <img src={logo} alt="Amberweb" className="w-10 h-10" />
+
           </Link>
 
           {/* Desktop Navigation */}
