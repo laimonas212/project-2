@@ -175,7 +175,7 @@ footer {
   background: linear-gradient(90deg, #00f0ff, #763bff, #9D00FF, #00ffcc, #00f0ff);
   background-size: 200%;
   /* Extend size for smooth animation */
-  -webkit-mask-image: url('src/img/amberweb-logo-white-no-amber.png');
+  -webkit-mask-image: url({logo});
   /* Mask logo without amber */
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
