@@ -16,7 +16,8 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-background overflow-hidden flex flex-col">
+      <Navbar />
+      <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
         <div className="fixed inset-0 grid-pattern opacity-20" />
         <motion.div
           initial={{ opacity: 0 }}
@@ -24,7 +25,6 @@ function App() {
           transition={{ duration: 0.5 }}
           className="relative z-10 flex-grow"
         >
-          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
