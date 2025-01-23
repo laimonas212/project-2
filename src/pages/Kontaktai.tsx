@@ -24,6 +24,7 @@ const Kontaktai: React.FC = () => {
   });
 
   const [errors, setErrors] = useState<ErrorMessages>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -58,7 +59,7 @@ const Kontaktai: React.FC = () => {
     return validationErrors;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const validationErrors = validate();
@@ -67,17 +68,44 @@ const Kontaktai: React.FC = () => {
       return;
     }
 
-    // Submit the form (replace with actual submission logic)
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
-    alert('Your message has been sent!');
+    // Web3Forms API URL and access key
+    const WEB3FORMS_API_URL = 'https://api.web3forms.com/submit';
+    const accessKey = 'c7e2ee01-742f-4076-b0cf-8cac80da311e';
+
+    const formDataToSubmit = new FormData();
+    formDataToSubmit.append('access_key', accessKey);
+    formDataToSubmit.append('name', formData.name);
+    formDataToSubmit.append('email', formData.email);
+    formDataToSubmit.append('phone', formData.phone);
+    formDataToSubmit.append('message', formData.message);
+
+    try {
+      const response = await fetch(WEB3FORMS_API_URL, {
+        method: 'POST',
+        body: formDataToSubmit,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+        alert('Your message has been sent!');
+      } else {
+        alert('There was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      alert('There was an error sending your message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -112,13 +140,13 @@ const Kontaktai: React.FC = () => {
                     placeholder="Full Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`bg-gray-800 text-white ${errors.name
-                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
-                        : 'border-gray-700 focus:border-blue-500'
+                    className={`bg-gray-800 text-white border ${errors.name
+                      ? 'border-red-500'
+                      : 'border-gray-700 focus:border-blue-500'
                       } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
                   />
                   {errors.name && (
-                    <p className="text-blue-500 text-sm mt-1">{errors.name}</p>
+                    <p className="text-red-500 text-sm mt-1">{errors.name}</p>
                   )}
                 </div>
 
@@ -130,13 +158,13 @@ const Kontaktai: React.FC = () => {
                     placeholder="Email Address"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`bg-gray-800 text-white ${errors.email
-                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
-                        : 'border-gray-700 focus:border-blue-500'
+                    className={`bg-gray-800 text-white border ${errors.email
+                      ? 'border-red-500'
+                      : 'border-gray-700 focus:border-blue-500'
                       } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
                   />
                   {errors.email && (
-                    <p className="text-blue-500 text-sm mt-1">{errors.email}</p>
+                    <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                   )}
                 </div>
 
@@ -148,13 +176,13 @@ const Kontaktai: React.FC = () => {
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`bg-gray-800 text-white ${errors.phone
-                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
-                        : 'border-gray-700 focus:border-blue-500'
+                    className={`bg-gray-800 text-white border ${errors.phone
+                      ? 'border-red-500'
+                      : 'border-gray-700 focus:border-blue-500'
                       } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
                   />
                   {errors.phone && (
-                    <p className="text-blue-500 text-sm mt-1">{errors.phone}</p>
+                    <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
                   )}
                 </div>
 
@@ -166,22 +194,23 @@ const Kontaktai: React.FC = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className={`bg-gray-800 text-white ${errors.message
-                        ? 'border-2 border-transparent border-image-[linear-gradient(to right, theme(colors.blue.500), theme(colors.purple.500))] border-image-slice-1'
-                        : 'border-gray-700 focus:border-blue-500'
+                    className={`bg-gray-800 text-white border ${errors.message
+                      ? 'border-red-500'
+                      : 'border-gray-700 focus:border-blue-500'
                       } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
                   />
                   {errors.message && (
-                    <p className="text-blue-500 text-sm mt-1">{errors.message}</p>
+                    <p className="text-red-500 text-sm mt-1">{errors.message}</p>
                   )}
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </div>
             </form>
