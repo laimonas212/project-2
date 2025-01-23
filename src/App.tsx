@@ -17,7 +17,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Navbar />
-      <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-12 md:pt-0">
+      <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
         <div className="fixed inset-0 grid-pattern opacity-20" />
         <motion.div
           initial={{ opacity: 0 }}
