@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import Images from '../img/Images';
 
 interface Template {
   id: number;
   title: string;
-  type: 'personal' | 'e-shop';
+  type: 'asmeninės svetainės' | 'el. parduotuvės';
   images: string[]; // Multiple images
   description: string;
 }
@@ -13,96 +14,93 @@ interface Template {
 const templates: Template[] = [
   {
     id: 1,
-    title: 'Portfolio One',
-    type: 'personal',
+    title: 'Acai bowl',
+    type: 'asmeninės svetainės',
     images: [
-      'src/img/templates/acai-bowl-landing-page-533x2357.jpg',
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
+      Images.templates.acaiBowl.landing,
+      Images.templates.acaiBowl.about,
+      Images.templates.acaiBowl.contact,
+      Images.templates.acaiBowl.home,
+      Images.templates.acaiBowl.menu,
+      Images.templates.acaiBowl.blog,
     ],
-    description: 'Minimalist portfolio template for creatives',
+    description: 'Šis spalvingas maketas sujungia nuostabias pastelines spalvas su aukštos kokybės nuotraukomis, leidžiančiomis greitai sukurti unikalų ir profesionalų svetainės dizainą!',
   },
   {
     id: 2,
-    title: 'Portfolio Two',
-    type: 'personal',
+    title: 'Agency',
+    type: 'asmeninės svetainės',
     images: [
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
+      Images.templates.agency.landing,
+      Images.templates.agency.about,
+      Images.templates.agency.contact,
+      Images.templates.agency.home,
+      Images.templates.agency.portfolio,
+      Images.templates.agency.blog,
+      Images.templates.agency.pricing,
     ],
-    description: 'Dynamic portfolio with 3D elements',
+    description: 'Šis verslo maketas sukurtas tam, kad suteiktų viską, ko vidutinei įmonei gali prireikti iš karto.',
   },
-  // Add more templates as needed...
   {
     id: 3,
-    title: 'E-Shop One',
-    type: 'e-shop',
+    title: 'App Developer',
+    type: 'asmeninės svetainės',
     images: [
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
+      Images.templates.appDeveloper.landing,
+      Images.templates.appDeveloper.about,
+      Images.templates.appDeveloper.contact,
+      Images.templates.appDeveloper.home,
+      Images.templates.appDeveloper.services,
+      Images.templates.appDeveloper.portfolio,
+      Images.templates.appDeveloper.service,
+      Images.templates.appDeveloper.project,
     ],
-    description: 'E-commerce template with a focus on product presentation',
+    description: 'Šis maketas turi visus puslapių išdėstymus, reikalingus pristatyti programų kūrimo paslaugas, projektus, portfelius ir kt.',
   },
   {
     id: 4,
-    title: 'E-Shop Two',
-    type: 'e-shop',
+    title: 'Bakery',
+    type: 'el. parduotuvės',
     images: [
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
+      Images.templates.bakery.landing,
+      Images.templates.bakery.about,
+      Images.templates.bakery.contact,
+      Images.templates.bakery.home,
+      Images.templates.bakery.menu,
+      Images.templates.bakery.blog,
     ],
-    description: 'Modern e-commerce solution with advanced filtering',
+    description: 'Bakery maketas turi visas reikalingas sudedamąsias dalis, kad pažadintų jūsų klientų apetitą ir padėtų jums pristatyti savo produktus.',
   },
   {
     id: 5,
-    title: 'E-Shop Three',
-    type: 'e-shop',
+    title: 'Barber Shop',
+    type: 'el. parduotuvės',
     images: [
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
+      Images.templates.barberShop.landing,
+      Images.templates.barberShop.about,
+      Images.templates.barberShop.contact,
+      Images.templates.barberShop.home,
+      Images.templates.barberShop.services,
+      Images.templates.barberShop.shop,
     ],
-    description: 'Fashion e-commerce template with a focus on visual storytelling',
+    description: 'Šis klasikinis tamsus maketas išryškina didelius, ryškius tekstus, subtilias fonines nuotraukas ir tik tiek spalvų, kad jūsų verslas išsiskirtų.',
   },
-  // add 5 more templates
   {
     id: 6,
-    title: 'Portfolio Three',
-    type: 'personal',
+    title: 'Beauty Product',
+    type: 'el. parduotuvės',
     images: [
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
+      Images.templates.beautyProduct.landing,
+      Images.templates.beautyProduct.about,
+      Images.templates.beautyProduct.contact,
+      Images.templates.beautyProduct.home,
+      Images.templates.beautyProduct.product,
+      Images.templates.beautyProduct.shop,
+      Images.templates.beautyProduct.blog,
     ],
-    description: 'Creative portfolio template with a focus on visual storytelling',
+    description: 'Šis maketas sukurtas grožio produktų nišai, ir pasižymi išskirtiniais vaizdų maketais, kuriuos galima pritaikyti pagal jūsų poreikius.',
   },
-  {
-    id: 7,
-    title: 'Portfolio Four',
-    type: 'personal',
-    images: [
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
-    ],
-    description: 'Portfolio template for photographers and visual artists',
-  },
-  {
-    id: 8,
-    title: 'E-Shop Four',
-    type: 'e-shop',
-    images: [
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-    ],
-    description: 'Fashion e-commerce template with a focus on visual storytelling',
-  },
-  {
-    id: 9,
-    title: 'E-Shop Five',
-    type: 'e-shop',
-    images: [
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-      'https://images.unsplash.com/photo-1522542550221-31fd19575a2d',
-    ],
-    description: 'Modern e-commerce solution with advanced filtering',
-  },
+  
 ];
 
 interface MobilePreviewProps {
@@ -229,11 +227,11 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
 };
 
 const Templates: React.FC = () => {
-  const [selectedType, setSelectedType] = useState<'all' | 'personal' | 'e-shop'>('all');
+  const [selectedType, setSelectedType] = useState<'rodyti viską' | 'asmeninės svetainės' | 'el. parduotuvės'>('rodyti viską');
   const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(null);
 
   const filteredTemplates = templates.filter(
-    (template) => selectedType === 'all' || template.type === selectedType
+    (template) => selectedType === 'rodyti viską' || template.type === selectedType
   );
 
   return (
@@ -254,7 +252,7 @@ const Templates: React.FC = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Website Templates</h1>
           <div className="flex justify-center gap-4">
-            {['all', 'personal', 'e-shop'].map((type) => (
+            {['rodyti viską', 'asmeninės svetainės', 'el. parduotuvės'].map((type) => (
               <button
                 key={type}
                 onClick={() => setSelectedType(type as typeof selectedType)}
