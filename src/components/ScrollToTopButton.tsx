@@ -27,7 +27,7 @@ const ScrollToTopButton = () => {
 
     return (
         <div
-            className={`fixed bottom-8 right-8 flex items-center justify-center rounded-full transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+            className={`z-999 fixed bottom-8 right-8 flex items-center justify-center rounded-full transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
                 }`}
             style={{
                 width: '52px',
