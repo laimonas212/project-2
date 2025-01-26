@@ -27,9 +27,11 @@ const ScrollToTopButton = () => {
 
     return (
         <div
-            className={`fixed bottom-8 right-5 w-14 h-14 flex items-center justify-center rounded-full transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            className={`fixed bottom-8 right-5 flex items-center justify-center rounded-full transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
             style={{
+                width: '64px', // Increase size of outer container for thicker border
+                height: '64px',
                 background: `conic-gradient(
                     #00f0ff 0%,
                     #9370DB ${scrollProgress}%, 
@@ -38,21 +40,18 @@ const ScrollToTopButton = () => {
             }}
         >
             <div
-                className="w-12 h-12 bg-dark-surface rounded-full flex items-center justify-center text-white shadow-lg"
+                className="w-64 h-64 bg-dark-surface rounded-full flex items-center justify-center text-white shadow-lg"
                 style={{
-                    boxShadow: `conic-gradient(
-                        #00f0ff 0%, 
-                        #9370DB ${scrollProgress}%, 
-                        transparent ${scrollProgress}%
-                    )`, // Control progress bar thickness
+                    width: '60px', // Inner button size
+                    height: '60px',
                 }}
             >
                 <button
                     onClick={scrollToTop}
-                    className="w-full h-full rounded-full flex items-center justify-center"
+                    className="rounded-full flex items-center justify-center w-full h-full"
                     aria-label="Scroll to Top"
                 >
-                    <ChevronUp className="w-6 h-6" />
+                    <ChevronUp className="w-8 h-8" />
                 </button>
             </div>
         </div>
