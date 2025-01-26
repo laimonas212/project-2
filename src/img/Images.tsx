@@ -73,7 +73,31 @@ import beautyProductLanding from '././templates/beauty-product/beauty-product-la
 import beautyProductProduct from '././templates/beauty-product/beauty-product-product-page-533x1426.jpg';
 import beautyProductShop from '././templates/beauty-product/beauty-product-shop-page-533x1345.jpg';
 
+// bed and breakfast
+import bedAndBreakfastAbout from '././templates/bed-and-breakfast/bed-and-breakfast-about-page-533x2402.jpg';
+import bedAndBreakfastContact from '././templates/bed-and-breakfast/bed-and-breakfast-contact-page-533x1311.jpg';
+import bedAndBreakfastHome from '././templates/bed-and-breakfast/bed-and-breakfast-home-page-533x2050.jpg';
+import bedAndBreakfastRooms from '././templates/bed-and-breakfast/bed-and-breakfast-rooms-page-533x2291.jpg';
+import bedAndBreakfastRoom from '././templates/bed-and-breakfast/bed-and-breakfast-room-page-533x1068.jpg';
+import bedAndBreakfastLanding from '././templates/bed-and-breakfast/bed-and-breakfast-landing-page-533x3698.jpg';
+import bedAndBreakfastBlog from '././templates/bed-and-breakfast/bed-and-breakfast-blog-page-533x1122.jpg';
 
+// butcher
+import butcherAbout from '././templates/butcher/butcher-about-page-533x1544.jpg';
+import butcherContact from '././templates/butcher/butcher-contact-page-533x939.jpg';
+import butcherRecipes from '././templates/butcher/butcher-recipes-page-533x1681.jpg';
+import butcherRecipe from '././templates/butcher/butcher-recipe-page-533x1296.jpg';
+import butcherShop from '././templates/butcher/butcher-shop-page-533x2060.jpg';
+import butcherHome from '././templates/butcher/butcher-home-page-533x1645.jpg';
+import butcherLanding from '././templates/butcher/butcher-landing-page-533x2845.jpg';
+
+// cafe
+import cafeAbout from '././templates/cafe/cafe-about-page-533x1378.jpg';
+import cafeContact from '././templates/cafe/cafe-contact-page-533x493.jpg';
+import cafeHome from '././templates/cafe/cafe-home-page-533x1419.jpg';
+import cafeMenu from '././templates/cafe/cafe-menu-page-533x1078.jpg';
+import cafeLanding from '././templates/cafe/cafe-landing-page-533x1454.jpg';
+import cafeLocation from '././templates/cafe/cafe-location-page-533x644.jpg';
 
 const Images = {
     logo: logoImage,
@@ -152,6 +176,32 @@ const Images = {
             landing: beautyProductLanding,
             product: beautyProductProduct,
             shop: beautyProductShop,
+        },
+        bedAndBreakfast: {
+            about: bedAndBreakfastAbout,
+            contact: bedAndBreakfastContact,
+            home: bedAndBreakfastHome,
+            rooms: bedAndBreakfastRooms,
+            room: bedAndBreakfastRoom,
+            landing: bedAndBreakfastLanding,
+            blog: bedAndBreakfastBlog,
+        },
+        butcher: {
+            about: butcherAbout,
+            contact: butcherContact,
+            recipes: butcherRecipes,
+            recipe: butcherRecipe,
+            shop: butcherShop,
+            home: butcherHome,
+            landing: butcherLanding,
+        },
+        cafe: {
+            about: cafeAbout,
+            contact: cafeContact,
+            home: cafeHome,
+            menu: cafeMenu,
+            landing: cafeLanding,
+            location: cafeLocation,
         },
 
     }

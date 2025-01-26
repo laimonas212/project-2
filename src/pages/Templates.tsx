@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Globe, User, ShoppingCart, Grid, Layers } from 'lucide-react';
 import Images from '../img/Images';
 
 interface Template {
@@ -100,6 +100,48 @@ const templates: Template[] = [
     ],
     description: 'Šis maketas sukurtas grožio produktų nišai, ir pasižymi išskirtiniais vaizdų maketais, kuriuos galima pritaikyti pagal jūsų poreikius.',
   },
+  {
+    id: 7,
+    title: 'Bed And Breakfast',
+    type: 'asmeninės svetainės',
+    images: [
+      Images.templates.bedAndBreakfast.landing,
+      Images.templates.bedAndBreakfast.about,
+      Images.templates.bedAndBreakfast.contact,
+      Images.templates.bedAndBreakfast.home,
+      Images.templates.bedAndBreakfast.rooms,
+      Images.templates.bedAndBreakfast.blog,
+    ],
+    description: 'Kaip ir puikūs nakvynės su pusryčiais namai, šis šablonas yra ir prabangus, ir tvarkingas, su visais būtiniausiais elementais.',
+  },
+  {
+    id: 8,
+    title: 'Butcher',
+    type: 'el. parduotuvės',
+    images: [
+      Images.templates.butcher.landing,
+      Images.templates.butcher.about,
+      Images.templates.butcher.contact,
+      Images.templates.butcher.home,
+      Images.templates.butcher.recipes,
+      Images.templates.butcher.recipe,
+    ],
+    description: 'Šis maketas yra puikus pasirinkimas mėsos parduotuvėms, restoranams ar kitiems maisto prekių tiekėjams.',
+  },
+  {
+    id: 9,
+    title: 'Cafe',
+    type: 'asmeninės svetainės',
+    images: [
+      Images.templates.cafe.landing,
+      Images.templates.cafe.about,
+      Images.templates.cafe.contact,
+      Images.templates.cafe.home,
+      Images.templates.cafe.menu,
+      Images.templates.cafe.location,
+    ],
+    description: 'Jei planuojate kurti svetainę savo kavinei, būtinai peržiūrėkite „Cafe Layout Pack“ skirtą „Divi“. Šis nuostabus išdėstymo rinkinys padės jūsų produktams išsiskirti.',
+  },
   
 ];
 
@@ -126,7 +168,15 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
         />
       </div>
       <div className="mt-4 text-center">
-        <h3 className="text-xl from:text-electric-blue to:text-white font-bold mb-1">{template.title}</h3>
+        <h3 className="text-xl font-bold mb-1 flex items-center justify-center gap-2">
+          {template.title}
+          {template.type === 'asmeninės svetainės' ? (
+            <User className="inline-block h-5" />
+          ) : (
+            <ShoppingCart className="inline-block h-5" />
+          )}
+        </h3>
+
         <p className="text-white/70 text-sm">{template.description}</p>
       </div>
     </motion.div>
@@ -250,18 +300,26 @@ const Templates: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Website Templates</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Paruošti dizainai</h1>
+          <p className="text-lg mb-8 text-white/70">
+            Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!
+          </p>
           <div className="flex justify-center gap-4">
-            {['rodyti viską', 'asmeninės svetainės', 'el. parduotuvės'].map((type) => (
+            {[
+              { type: 'rodyti viską', icon: <Layers /> },
+              { type: 'asmeninės svetainės', icon: <User /> },
+              { type: 'el. parduotuvės', icon: <ShoppingCart /> },
+            ].map(({ type, icon }) => (
               <button
                 key={type}
                 onClick={() => setSelectedType(type as typeof selectedType)}
-                className={`px-6 py-2 rounded-full transition-colors ${selectedType === type
+                className={`px-6 py-2 rounded-full transition-colors text-xs ${selectedType === type
                   ? 'bg-electric-blue text-background'
                   : 'bg-dark-surface-2 text-white/70 hover:text-white'
-                  }`}
+                  } flex items-center gap-2`}
               >
-                {type.charAt(0).toUpperCase() + type.slice(1)}
+                {icon}
+                {/* <span>{type.charAt(0).toUpperCase() + type.slice(1)}</span>  */}
               </button>
             ))}
           </div>
