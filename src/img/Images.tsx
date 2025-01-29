@@ -99,6 +99,54 @@ import cafeMenu from '././templates/cafe/cafe-menu-page-533x1078.jpg';
 import cafeLanding from '././templates/cafe/cafe-landing-page-533x1454.jpg';
 import cafeLocation from '././templates/cafe/cafe-location-page-533x644.jpg';
 
+// calligrapher about, blog, classes, contact, home, landing, portfolio, services
+import calligrapherAbout from '././templates/calligrapher/calligrapher-about-page-533x915.jpg';
+import calligrapherBlog from '././templates/calligrapher/calligrapher-blog-page-533x1382.jpg';
+import calligrapherClasses from '././templates/calligrapher/calligrapher-classes-page-533x1553.jpg';
+import calligrapherContact from '././templates/calligrapher/calligrapher-contact-page-533x1027.jpg';
+import calligrapherHome from '././templates/calligrapher/calligrapher-home-page-533x1708.jpg';
+import calligrapherLanding from '././templates/calligrapher/calligrapher-landing-page-533x2548.jpg';
+import calligrapherPortfolio from '././templates/calligrapher/calligrapher-portfolio-page-533x1034.jpg';
+import calligrapherServices from '././templates/calligrapher/calligrapher-services-page-533x1587.jpg';
+
+// candle making about, blog,contact, home, landing, product, shop
+import candleMakingAbout from '././templates/candle-making/candle-making-about-page-533x996.jpg';
+import candleMakingBlog from '././templates/candle-making/candle-making-blog-page-533x973.jpg';
+import candleMakingContact from '././templates/candle-making/candle-making-contact-page-533x560.jpg';
+import candleMakingHome from '././templates/candle-making/candle-making-home-page-533x1142.jpg';
+import candleMakingLanding from '././templates/candle-making/candle-making-landing-page-533x1863.jpg';
+import candleMakingProduct from '././templates/candle-making/candle-making-product-page-533x1115.jpg';
+import candleMakingShop from '././templates/candle-making/candle-making-shop-page-533x851.jpg';
+
+// car dealer about, contact, financing, home, landing, listing, listings
+import carDealerAbout from '././templates/car-dealer/car-dealer-about-page-533x1596.jpg';
+import carDealerContact from '././templates/car-dealer/car-dealer-contact-page-533x588.jpg';
+import carDealerFinancing from '././templates/car-dealer/car-dealer-financing-page-533x929.jpg';
+import carDealerHome from '././templates/car-dealer/car-dealer-home-page-533x1052.jpg';
+import carDealerLanding from '././templates/car-dealer/car-dealer-landing-page-533x2076.jpg';
+import carDealerListing from '././templates/car-dealer/car-dealer-listing-page-533x2176.jpg';
+import carDealerListings from '././templates/car-dealer/car-dealer-listings-page-533x1339.jpg';
+
+// consulting about, blog, contact, home, landing, service, sevices
+import consultingAbout from '././templates/consulting/consulting-about-page-1646x3741.jpg';
+import consultingBlog from '././templates/consulting/consulting-blog-page-1646x2798.jpg';
+import consultingContact from '././templates/consulting/consulting-contact-page-1646x1382.jpg';
+import consultingHome from '././templates/consulting/consulting-home-page-1646x4900.jpg';
+import consultingLanding from '././templates/consulting/consulting-home-page-1646x4900.jpg';
+import consultingService from '././templates/consulting/consulting-service-page-1646x2556.jpg';
+import consultingServices from '././templates/consulting/consulting-services-page-1646x3310.jpg';
+
+// design agency about, blog, case study, contact, home, landing, portfolio, project 1, project 2
+import designAgencyAbout from '././templates/design-agency/design-agency-about-2-533x1721.jpg';
+import designAgencyBlog from '././templates/design-agency/design-agency-blog-2-533x915.jpg';
+import designAgencyCaseStudy from '././templates/design-agency/design-agency-case-study-2-533x2878.jpg';
+import designAgencyContact from '././templates/design-agency/design-agency-contact-533x620.png';
+import designAgencyHome from '././templates/design-agency/design-agency-home-2-533x999.jpg';
+import designAgencyLanding from '././templates/design-agency/design-agency-landing-2-533x2937.jpg';
+import designAgencyPortfolio from '././templates/design-agency/design-agency-portfolio-2-533x1107.jpg';
+import designAgencyProject1 from '././templates/design-agency/design-agency-project-1-2-533x846.jpg';
+import designAgencyProject2 from '././templates/design-agency/design-agency-project-2-2-533x1250.jpg';
+
 const Images = {
     logo: logoImage,
     projects: {
@@ -203,6 +251,54 @@ const Images = {
             landing: cafeLanding,
             location: cafeLocation,
         },
+        calligrapher: {
+            about: calligrapherAbout,
+            blog: calligrapherBlog,
+            classes: calligrapherClasses,
+            contact: calligrapherContact,
+            home: calligrapherHome,
+            landing: calligrapherLanding,
+            portfolio: calligrapherPortfolio,
+            services: calligrapherServices,
+        },
+        candleMaking: {
+            about: candleMakingAbout,
+            blog: candleMakingBlog,
+            contact: candleMakingContact,
+            home: candleMakingHome,
+            landing: candleMakingLanding,
+            product: candleMakingProduct,
+            shop: candleMakingShop,
+        },
+        carDealer: {
+            about: carDealerAbout,
+            contact: carDealerContact,
+            financing: carDealerFinancing,
+            home: carDealerHome,
+            landing: carDealerLanding,
+            listing: carDealerListing,
+            listings: carDealerListings,
+        },
+        consulting: {
+            about: consultingAbout,
+            blog: consultingBlog,
+            contact: consultingContact,
+            home: consultingHome,
+            landing: consultingLanding,
+            service: consultingService,
+            services: consultingServices,
+        },
+        designAgency: {
+            about: designAgencyAbout,
+            blog: designAgencyBlog,
+            caseStudy: designAgencyCaseStudy,
+            contact: designAgencyContact,
+            home: designAgencyHome,
+            landing: designAgencyLanding,
+            portfolio: designAgencyPortfolio,
+            project1: designAgencyProject1,
+            project2: designAgencyProject2,
+        }
 
     }
 }

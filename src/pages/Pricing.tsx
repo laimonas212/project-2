@@ -57,14 +57,14 @@ const Pricing = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="card transform hover:-translate-y-2"
+              className="card transform hover:-translate-y-2 flex flex-col"
             >
-              <div className="space-y-6">
+              <div className="space-y-6 mb-12 flex-1">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                   <p className="text-white/70">{plan.description}</p>
                 </div>
-                
+
                 <div className="text-4xl font-bold text-electric-blue">
                   Nuo {plan.price}
                 </div>
@@ -77,14 +77,15 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-
-                <button className="w-full button-primary py-3 rounded-lg transition-colors duration-300">
-                  Užsakyti
-                </button>
               </div>
+
+              <button className="w-full button-primary py-3 rounded-lg transition-colors duration-300">
+                <Link to="/kontaktai">Teirautis</Link>
+              </button>
             </motion.div>
           ))}
         </div>
+
 
         {/* Project Navigation */}
         <motion.div

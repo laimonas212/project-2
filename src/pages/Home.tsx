@@ -345,7 +345,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-electric-blue/10 to-neon-purple/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-electric-blue/50 to-neon-purple/50" />
         <div className="container mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

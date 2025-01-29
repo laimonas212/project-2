@@ -142,8 +142,88 @@ const templates: Template[] = [
     ],
     description: 'Jei planuojate kurti svetainę savo kavinei, būtinai peržiūrėkite „Cafe Layout Pack“ skirtą „Divi“. Šis nuostabus išdėstymo rinkinys padės jūsų produktams išsiskirti.',
   },
+  {
+    id: 10,
+    title: 'Calligrapher',
+    type: 'asmeninės svetainės',
+    images: [
+      Images.templates.calligrapher.landing,
+      Images.templates.calligrapher.about,
+      Images.templates.calligrapher.contact,
+      Images.templates.calligrapher.home,
+      Images.templates.calligrapher.services,
+      Images.templates.calligrapher.portfolio,
+      Images.templates.calligrapher.blog,
+      Images.templates.calligrapher.classes,
+    ],
+    description: 'Kaligrafo išdėstymo paketas sujungia minimalistinį stilių su įspūdingais šepetėlių efektais, todėl tai bus jūsų pagrindinis pasirinkimas kuriant bet kurią kaligrafijos svetainę.',
+  },
+  {
+    id: 11,
+    title: 'Candle Making',
+    type: 'el. parduotuvės',
+    images: [
+      Images.templates.candleMaking.landing,
+      Images.templates.candleMaking.about,
+      Images.templates.candleMaking.contact,
+      Images.templates.candleMaking.home,
+      Images.templates.candleMaking.shop,
+      Images.templates.candleMaking.product,
+      Images.templates.candleMaking.blog,
+    ],
+    description: 'Žvakių gamybos išdėstymo paketas pasižymi erdviais ir tvarkingais dizaino elementais, suteikiančiais turiniui daugiau erdvės. Ypač išsiskiria estetiški apvalūs mygtukai.',
+  },
+  {
+    id: 12,
+    title: 'Car dealer',
+    type: 'asmeninės svetainės',
+    images: [
+      Images.templates.carDealer.landing,
+      Images.templates.carDealer.about,
+      Images.templates.carDealer.contact,
+      Images.templates.carDealer.home,
+      Images.templates.carDealer.listings,
+      Images.templates.carDealer.listing,
+      Images.templates.carDealer.financing
+    ],
+    description: 'Automobilių plovimo išdėstymo paketas yra puikus pasirinkimas automobilių plovimo įmonėms, kurios nori pristatyti savo paslaugas internete.',
+  },
+  {
+    id: 13,
+    title: 'Consulting',
+    type: 'asmeninės svetainės',
+    images: [
+      Images.templates.consulting.landing,
+      Images.templates.consulting.about,
+      Images.templates.consulting.contact,
+      Images.templates.consulting.home,
+      Images.templates.consulting.services,
+      Images.templates.consulting.service,
+      Images.templates.consulting.blog,
+    ],
+    description: 'Šis įspūdingas dizainas kupinas vizualių elementų, kurie patrauks būsimų klientų dėmesį - nuo ryškaus kontrasto ir spalvų akcentų iki tinkamo kiekio vaizdų jūsų istorijai perteikti.',
+  },
+  {
+    id: 14,
+    title: 'Design agency',
+    type: 'asmeninės svetainės',
+    images: [
+      Images.templates.designAgency.landing,
+      Images.templates.designAgency.home,
+      Images.templates.designAgency.about,
+      Images.templates.designAgency.blog,
+      Images.templates.designAgency.contact,
+      Images.templates.designAgency.caseStudy,
+      Images.templates.designAgency.portfolio,
+      Images.templates.designAgency.project1,
+      Images.templates.designAgency.project2,
+    ],
+    description: 'Šis dizaino agentūros išdėstymo paketas suteiks jūsų lankytojams visą reikiamą informaciją. Taip pat leis stilingai pabrėžti pačius vertingiausius jūsų agentūros privalumus.',
+  }
   
+
 ];
+
 
 interface MobilePreviewProps {
   template: Template;
@@ -319,7 +399,6 @@ const Templates: React.FC = () => {
                   } flex items-center gap-2`}
               >
                 {icon}
-                {/* <span>{type.charAt(0).toUpperCase() + type.slice(1)}</span>  */}
               </button>
             ))}
           </div>
