@@ -12,12 +12,6 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: servicesRef,
-    offset: ["start end", "end start"]
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   const services = [
     {
@@ -55,13 +49,6 @@ const Home = () => {
     },
   ];
 
-  const technologies = [
-    { icon: <Laptop />, name: 'Frontend', items: ['React', 'Next.js', 'TypeScript'] },
-    { icon: <Database />, name: 'Backend', items: ['Node.js', 'PostgreSQL', 'GraphQL'] },
-    { icon: <Palette />, name: 'Design', items: ['Figma', 'Tailwind', 'Framer'] },
-    { icon: <Cloud />, name: 'DevOps', items: ['AWS', 'Docker', 'CI/CD'] },
-  ];
-
   const process = [
     { number: '01', title: 'Poreikių analizė', description: 'Jūsų poreikių ir tikslų išsiaiškinimas' },
     { number: '02', title: 'Planavimas', description: 'Sudarome aiškų veiksmų planą' },
@@ -69,7 +56,6 @@ const Home = () => {
     { number: '04', title: 'Kūrimas', description: 'Naudojame pažangiausias technologijas' },
     { number: '05', title: 'Paleidimas', description: 'Įgyvendiname ir optimizuojame projektą' },
   ];
-
 
   return (
     <div className="overflow-hidden">
@@ -92,7 +78,8 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-                <motion.div
+              <motion.div
+                  key={service.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -202,34 +189,6 @@ const Home = () => {
             </p>
           </motion.div>
 
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {technologies.map((tech, index) => (
-              <motion.div
-                key={tech.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="card hover:border-electric-blue/30 transition-colors duration-300"
-              >
-                <div className="text-electric-blue mb-4">{tech.icon}</div>
-                <h3 className="text-xl font-bold mb-4">{tech.name}</h3>
-                <div className="space-y-2">
-                  {tech.items.map(item => (
-                    <div
-                      key={item}
-                      className="px-3 py-1.5 bg-dark-surface/80 rounded-lg text-white/70"
-                    >
-                      {item}
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div> */}
-
-          {/* list of technologies with simple logos, ie. worpress, woocommerce, divi, elementor, etc.
-           */}
           {/* align vertically */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             <motion.div
@@ -310,9 +269,9 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Procesas</h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto">
-              A streamlined approach to bringing your vision to life
+              Mūsų darbo procesas yra struktūruotas ir efektyvus, kad užtikrintume aukščiausios kokybės interneto svetainių kūrimą.
             </p>
           </motion.div>
 
@@ -359,14 +318,17 @@ const Home = () => {
             <p className="text-white/70 text-lg mb-8">
               Susisiekite su mumis ir pradėkite savo interneto svetainės kūrimo kelionę jau šiandien.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="button-primary inline-flex items-center gap-2 group"
-            >
-              <span>Get Started</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            <Link to="/kontaktai">
+
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="button-primary inline-flex items-center gap-2 group"
+              >
+                <span>Konsultuotis</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </motion.button>
+            </Link>
           </motion.div>
         </div>
       </section>

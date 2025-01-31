@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight, User, ShoppingCart, Layers } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, User, ShoppingCart, Layers, Info, Plus } from 'lucide-react';
 import Images from '../img/Images';
 
 interface Template {
@@ -578,8 +578,14 @@ const Templates: React.FC = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Paruošti dizainai</h1>
-          <p className="text-lg mb-8 text-white/70">
+          <p className="text-lg mb-2 text-white/70">
             Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!
+          </p>
+          <p className="text-xs mb-16 text-white/70">
+            <span>
+              <Info className="w-6 h-6 inline-block mr-2" />
+            </span>
+            Mūsų paruošti dizainai tinka bet kokiam verslui - svarbiausia pasirinkti tinkamą išdėstymą, nes paveikslėlius, spalvas ir tekstus galima lengvai pritaikyti. Galite rinktis pagal tematiką, tačiau jei išdėstymas jums patinka, jį galima pritaikyti bet kokiai sričiai.
           </p>
           <div className="flex justify-center gap-4">
             {[
@@ -608,9 +614,18 @@ const Templates: React.FC = () => {
             <MobilePreview
               key={template.id}
               template={template}
-              onClick={(imageIndex) => setSelectedTemplate(template)}
+              onClick={() => setSelectedTemplate(template)}
             />
           ))}
+       
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="flex justify-center items-center gap-4 flex-col"
+          >
+            <Plus className="w-20 h-20 text-white" />
+            <h2 className="text-white/70 text-lg text-center">Galime pasiūlyti daugiau nei 2000 variacijų</h2>
+          </motion.div>
         </motion.div>
       </div>
 

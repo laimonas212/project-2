@@ -10,6 +10,9 @@ import Kontaktai from './pages/Kontaktai';
 import { motion } from 'framer-motion';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import PrivatumoPolitika from './pages/PrivatumoPolitika';
+import Salygos from './pages/Salygos';
+import Slapukai from './pages/Slapukai';
 
 
 function App() {
@@ -18,7 +21,7 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
-        <div className="fixed inset-0 grid-pattern opacity-20" />
+        {/* <div className="fixed inset-0 grid-pattern opacity-20" /> */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -31,6 +34,9 @@ function App() {
             <Route path="/templates" element={<Templates />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/kontaktai" element={<Kontaktai />} />
+            <Route path="/privatumo-politika" element={<PrivatumoPolitika />} />
+            <Route path="/salygos" element={<Salygos />} />
+            <Route path="/slapukai" element={<Slapukai />} />
           </Routes>
           <ScrollToTopButton />
         </motion.div>

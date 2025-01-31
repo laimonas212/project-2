@@ -161,18 +161,22 @@ const HeroSection = () => {
             custom={3}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
+            <Link to="/kontaktai" className="text-white">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="button-primary inline-flex items-center gap-2 group"
             >
-              <Link to="/kontaktai" className="text-white">Pradėkite savo projektą</Link>
+              Pradėkite savo projektą
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
-            <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/10 hover:border-electric-blue/50 transition-colors duration-300 backdrop-blur-sm">
-              <Code2 className="w-5 h-5" />
-              <Link to="/projects" className="text-white">Peržiūrėkite mūsų darbus</Link>
-            </button>
+              </motion.button>
+            </Link>
+            <Link to="/projects" className="text-white">
+              <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/10 hover:border-electric-blue/50 transition-colors duration-300 backdrop-blur-sm">
+                <Code2 className="w-5 h-5" />
+                Peržiūrėkite mūsų darbus
+              </button>
+            </Link>
           </motion.div>
 
           {/* Stats */}

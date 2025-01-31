@@ -79,9 +79,11 @@ const Pricing = () => {
                 </ul>
               </div>
 
-              <button className="w-full button-primary py-3 rounded-lg transition-colors duration-300">
-                <Link to="/kontaktai">Teirautis</Link>
-              </button>
+              <Link to="/kontaktai">
+                <button className="w-full button-primary py-3 rounded-lg transition-colors duration-300">
+                  Teirautis
+                </button>
+              </Link>
             </motion.div>
           ))}
         </div>

@@ -7,36 +7,39 @@ const Footer = () => {
     const contactInfo = [
         {
             icon: <Mail className="w-6 h-6" />,
-            title: 'Email',
+            title: 'EL. paštas',
             value: 'info@amberweb.lt',
+            url: 'mailto:info@amberweb.lt',
         },
         {
             icon: <Phone className="w-6 h-6" />,
-            title: 'Phone',
+            title: 'Telefonas',
             value: '+370 611 18874',
+            url: 'tel:+37061118874',
         },
         {
             icon: <MapPin className="w-6 h-6" />,
-            title: 'Location',
+            title: 'Adresas',
             value: 'Vilnius, Lithuania',
+
         },
             
     ];
 
     const termsAndConditionsPages = [
         {
-            title: 'Privacy Policy',
-            url: '/kontaktai',
+            title: 'Privatumo politika',
+            url: '/privatumo-politika',
             icon: <Shield className="w-6 h-6" />
         },
         {
-            title: 'Terms & Conditions',
-            url: '/terms-and-conditions',
+            title: 'Sąlygos',
+            url: '/salygos',
             icon: <ReceiptText className="w-6 h-6" />
         },
         {
-            title: 'Cookies Policy',
-            url: '/cookies-policy',
+            title: 'Slapukai',
+            url: '/slapukai',
             icon: <Cookie className="w-6 h-6" />
         },
     ];
@@ -58,7 +61,13 @@ const Footer = () => {
                             </div>
                             <div>
                                 <h3 className="font-medium text-white mb-1">{info.title}</h3>
-                                <p className="text-white/70">{info.value}</p>
+                                <p className="text-white/70">
+                                    {info.url ? (
+                                        <Link to={info.url} className="hover:text-white">{info.value}</Link>
+                                    ) : (
+                                        <span>{info.value}</span>
+                                    )}
+                                </p>
                             </div>
                         </motion.div>
                     ))}
@@ -75,7 +84,6 @@ const Footer = () => {
                                 {info.icon}
                             </div>
                             <div>
-
                                 <Link to={info.url} className="text-white/70 text-sm hover:text-white">
                                     {info.title}
                                 </Link>
@@ -88,6 +96,7 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} Amberweb
             </div>
         </footer>
+
     );
 };
 
