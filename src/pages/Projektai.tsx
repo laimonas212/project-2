@@ -18,6 +18,14 @@ interface ProjectSectionProps {
 
 const projects: Project[] = [
   {
+    title: 'Holistinė kosmetologija',
+    subtitle: 'Sveikata ir grožis',
+    description: 'Holistinė kosmetologija - tai sveikatos ir grožio paslaugos, grindžiamos natūraliais ir ekologiškais ingredientais. Svetainėje pateikiama informacija apie paslaugas, produktus ir jų naudojimą.',
+    image: Images.projects.holistinekosmetologija,
+    tags: ['Wordpress', 'Divi', 'E-parduotuvė', 'Kalendorius'],
+    link: 'https://www.holistinekosmetologija.lt',
+  },
+  {
     title: 'Brangus Auto',
     subtitle: 'Automobilių supirkimas',
     description: 'Brangus Auto specializuojasi greitame ir patikimame automobilių supirkime. Svetainėje pateikiama informacija apie supirkimo procesą, klientų atsiliepimai ir galimybė gauti pasiūlymą užpildant formą.',
@@ -191,6 +199,19 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.3, 1, 1, 0.3]);
 
   return (
+    <div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="text-center mt-12 mb-12"
+      >
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">Įgyvendinti projektai</h1>
+        <p className="text-lg mb-2 text-white/70">
+          Čia pateikiami keli iš daugelio mūsų įgyvendintų projektų.
+          <br />
+          Kiekvienas jų kruopščiai pritaikytas pagal kliento poreikius, užtikrinant estetiką ir funkcionalumą.
+        </p>
+      </motion.div>
     <motion.div 
       ref={sectionRef}
       className="flex items-center py-12 lg:py-20 relative"
@@ -339,6 +360,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
         </div>
       </div>
     </motion.div>
+    </div>
   );
 };
 

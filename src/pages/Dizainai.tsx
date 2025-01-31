@@ -515,7 +515,7 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
     >
       <button
         onClick={onClose}
-        className="absolute bottom-8 align-center p-2 bg-dark-surface/60 p-2 text-white rounded-full hover:bg-dark-surface/80"
+        className="absolute bottom-8 align-center bg-dark-surface/60 p-2 text-white rounded-full hover:bg-dark-surface/80"
       >
         <X className="w-6 h-6" />
       </button>
@@ -561,8 +561,22 @@ const Templates: React.FC = () => {
     (template) => selectedType === 'rodyti viską' || template.type === selectedType
   );
 
+  const containerVariants = {
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, // Controls delay between items
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  };
+
   return (
-    <div className="pt-24 min-h-screen">
+    <div className="pt-36 min-h-screen">
       {/* Static Background */}
       <div className="fixed inset-0 pointer-events-none">
         {/* <div className="absolute inset-0 bg-gradient-to-b from-dark-surface/50 to-background/80" /> */}
@@ -585,7 +599,7 @@ const Templates: React.FC = () => {
             <span>
               <Info className="w-6 h-6 inline-block mr-2" />
             </span>
-            Mūsų paruošti dizainai tinka bet kokiam verslui - svarbiausia pasirinkti tinkamą išdėstymą, nes paveikslėlius, spalvas ir tekstus galima lengvai pritaikyti. Galite rinktis pagal tematiką, tačiau jei išdėstymas jums patinka, jį galima pritaikyti bet kokiai sričiai.
+            Mūsų paruošti dizainai tinka bet kokiam verslui - svarbiausia pasirinkti tinkamą išdėstymą, nes paveikslėlius, spalvas ir tekstus galima lengvai pritaikyti. <br />Galite rinktis pagal tematiką, tačiau jei išdėstymas jums patinka, jį galima pritaikyti bet kokiai sričiai.
           </p>
           <div className="flex justify-center gap-4">
             {[
@@ -607,26 +621,36 @@ const Templates: React.FC = () => {
           </div>
         </motion.div>
 
+        
+
         <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }} // Ensures animation happens only once
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-32"
         >
           {filteredTemplates.map((template) => (
-            <MobilePreview
-              key={template.id}
-              template={template}
-              onClick={() => setSelectedTemplate(template)}
-            />
+            <motion.div key={template.id} variants={itemVariants}>
+              <MobilePreview
+                template={template}
+                onClick={() => setSelectedTemplate(template)}
+              />
+            </motion.div>
           ))}
-       
+
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            variants={itemVariants} // Uses same animation settings
             className="flex justify-center items-center gap-4 flex-col"
           >
             <Plus className="w-20 h-20 text-electric-blue" />
-            <h2 className="text-white/70 text-lg text-center">Galime pasiūlyti daugiau nei 2000 variacijų</h2>
+            <h2 className="text-white/70 text-lg text-center">
+              Galime pasiūlyti daugiau nei 2000 variacijų
+            </h2>
           </motion.div>
         </motion.div>
+
+
       </div>
 
       {/* Lightbox for Template Preview */}

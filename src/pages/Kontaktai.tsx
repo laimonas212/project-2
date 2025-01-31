@@ -28,21 +28,19 @@ const Kontaktai: React.FC = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: '' }); // Clear error on input change
+    setErrors({ ...errors, [e.target.name]: '' });
   };
 
   const validate = (): ErrorMessages => {
     let validationErrors: ErrorMessages = {};
 
     if (!formData.name.trim()) {
-      validationErrors.name = 'Varde yra privalomas.';
+      validationErrors.name = 'Vardas yra privalomas.';
     }
 
     if (!formData.email.trim()) {
       validationErrors.email = 'El. paštas yra privalomas.';
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
-    ) {
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) {
       validationErrors.email = 'Netinkamas el. pašto adresas.';
     }
 
@@ -70,37 +68,47 @@ const Kontaktai: React.FC = () => {
 
     setIsSubmitting(true);
 
-    // Web3Forms API URL and access key
-    const WEB3FORMS_API_URL = 'https://api.web3forms.com/submit';
-    const accessKey = 'c7e2ee01-742f-4076-b0cf-8cac80da311e';
-
-    const formDataToSubmit = new FormData();
-    formDataToSubmit.append('access_key', accessKey);
-    formDataToSubmit.append('name', formData.name);
-    formDataToSubmit.append('email', formData.email);
-    formDataToSubmit.append('phone', formData.phone);
-    formDataToSubmit.append('message', formData.message);
-
     try {
-      const response = await fetch(WEB3FORMS_API_URL, {
-        method: 'POST',
-        body: formDataToSubmit,
-      });
+      // Get reCAPTCHA token
+      const recaptchaResponse = await fetch(
+        `https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY`
+      );
+      const recaptchaScript = await recaptchaResponse.text();
+      eval(recaptchaScript);
 
-      const result = await response.json();
+      // Execute reCAPTCHA
+      (window as any).grecaptcha.ready(() => {
+        (window as any).grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY', { action: 'submit' }).then(async (token: string) => {
+          // Prepare form data
+          const formDataToSubmit = new FormData();
+          formDataToSubmit.append('access_key', 'd1a4724e-cee7-43da-85b8-57dfa121a7b2');
+          formDataToSubmit.append('name', formData.name);
+          formDataToSubmit.append('email', formData.email);
+          formDataToSubmit.append('phone', formData.phone);
+          formDataToSubmit.append('message', formData.message);
+          formDataToSubmit.append('g-recaptcha-response', token);
 
-      if (result.success) {
-        // Reset form
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: '',
+          // Send form data
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formDataToSubmit,
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            setFormData({
+              name: '',
+              email: '',
+              phone: '',
+              message: '',
+            });
+            alert('Jūsų žinutė išsiųsta sėkmingai!');
+          } else {
+            alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
+          }
         });
-        alert('Jūsų žinutė išsiųsta sėkmingai!');
-      } else {
-        alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
-      }
+      });
     } catch (error) {
       alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
     } finally {
@@ -109,14 +117,14 @@ const Kontaktai: React.FC = () => {
   };
 
   return (
-    <div className="pt-24 mb-24">
+    <div className="pt-36 mb-24">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Parašykite mums</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Parašykite mums</h1>
           <p className="text-lg text-white/70">
             Turite klausimų? Parašykite mums ir mes su Jumis susisieksime.
           </p>
@@ -132,79 +140,58 @@ const Kontaktai: React.FC = () => {
             <h2 className="text-xl font-bold mb-4">Užklausos forma</h2>
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-4">
-                {/* Full Name */}
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Jūsų vardas"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.name
-                      ? 'border-electric-blue'
-                      : 'border-gray-700 focus:border-blue-500'
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.name && (
-                    <p className="text-electric-blue text-sm mt-1">{errors.name}</p>
-                  )}
-                </div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Jūsų vardas"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.name && <p className="text-electric-blue text-sm">{errors.name}</p>}
 
-                {/* Email Address */}
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="El. paštas"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.email
-                      ? 'border-electric-blue'
-                      : 'border-gray-700 focus:border-blue-500'
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.email && (
-                    <p className="text-electric-blue text-sm mt-1">{errors.email}</p>
-                  )}
-                </div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="El. paštas"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.email && <p className="text-electric-blue text-sm">{errors.email}</p>}
 
-                {/* Phone Number */}
-                <div>
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="Telefono numeris"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.phone
-                      ? 'border-electric-blue'
-                      : 'border-gray-700 focus:border-blue-500'
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.phone && (
-                    <p className="text-electric-blue text-sm mt-1">{errors.phone}</p>
-                  )}
-                </div>
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Telefono numeris"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.phone && <p className="text-electric-blue text-sm">{errors.phone}</p>}
 
-                {/* Message */}
-                <div>
-                  <textarea
-                    name="message"
-                    placeholder="Žinutė"
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.message
-                      ? 'border-electric-blue'
-                      : 'border-gray-700 focus:border-blue-500'
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.message && (
-                    <p className="text-electric-blue text-sm mt-1">{errors.message}</p>
-                  )}
-                </div>
+                <textarea
+                  name="message"
+                  placeholder="Žinutė"
+                  rows={4}
+                  value={formData.message}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.message && <p className="text-electric-blue text-sm">{errors.message}</p>}
 
-                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={isSubmitting}

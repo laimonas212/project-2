@@ -16,9 +16,10 @@ import sssprendimai from '././projects/sssprendimai.png';
 import termoventa from '././projects/termoventa.png';
 import tradicineVirtuve from '././projects/tradicine-virtuve.png';
 import uSmiler from '././projects/usmiler.png';
-import angelButikas from '././projects/angelbutikas-980x584.jpg';
-import esuTau from '././projects/esutau-980x584.jpg';
-import godeko from '././projects/godeko-980x584.jpg';
+import angelButikas from '././projects/angelbutikas.png';
+import esuTau from '././projects/esutau.png';
+import godeko from '././projects/godeko.png';
+import holistinekosmetologija from '././projects/holistinekosmetologija.png';
 
 // acai bowl
 import acaiBowlAbout from '././templates/acai-bowl/acai-bowl-about-page-533x1040.jpg';
@@ -289,6 +290,7 @@ const Images = {
         angelButikas: angelButikas,
         esuTau: esuTau,
         godeko: godeko,
+        holistinekosmetologija: holistinekosmetologija,
     },
     templates: {
         acaiBowl: {
