@@ -623,7 +623,7 @@ const Templates: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             className="flex justify-center items-center gap-4 flex-col"
           >
-            <Plus className="w-20 h-20 text-white" />
+            <Plus className="w-20 h-20 text-electric-blue" />
             <h2 className="text-white/70 text-lg text-center">Galime pasiūlyti daugiau nei 2000 variacijų</h2>
           </motion.div>
         </motion.div>

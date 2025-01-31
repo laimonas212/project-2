@@ -10,7 +10,7 @@ import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Titulinis = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
 
   const services = [
@@ -339,4 +339,4 @@ const Home = () => {
 };
 <Footer />
 
-export default Home;
+export default Titulinis;

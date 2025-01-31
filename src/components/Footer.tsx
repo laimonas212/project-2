@@ -54,13 +54,13 @@ const Footer = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 * index }}
-                            className="flex items-start space-x-4 p-4 bg-dark-surface-2 rounded-lg shadow-lg"
+                            className="flex items-center space-x-4 p-4 bg-dark-surface-2 rounded-lg shadow-lg"
                         >
                             <div className="p-3 bg-dark-surface rounded-full text-electric-blue">
                                 {info.icon}
                             </div>
                             <div>
-                                <h3 className="font-medium text-white mb-1">{info.title}</h3>
+                                <h3 className="font-medium text-white m-0 mb-1">{info.title}</h3>
                                 <p className="text-white/70">
                                     {info.url ? (
                                         <Link to={info.url} className="hover:text-white">{info.value}</Link>

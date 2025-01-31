@@ -13,9 +13,9 @@ const Navbar = () => {
 
   const links = [
     { href: '/', label: <LayoutGrid /> },
-    { href: '/projects', label: 'Projektai' },
-    { href: '/templates', label: 'Paruošti dizainai' },
-    { href: '/pricing', label: 'Kainos' },
+    { href: '/projektai', label: 'Projektai' },
+    { href: '/paruosti-dizainai', label: 'Paruošti dizainai' },
+    { href: '/kainos', label: 'Kainos' },
     { href: '/kontaktai', label: 'Kontaktai' },
   ];
 

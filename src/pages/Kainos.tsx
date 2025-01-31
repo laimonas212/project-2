@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Pricing = () => {
+const Kainos = () => {
   const plans = [
     {
       name: 'Reprezentacinė svetainė',
@@ -111,4 +111,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Kainos;

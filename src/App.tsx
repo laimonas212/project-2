@@ -2,10 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'; // Import the Footer component
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Templates from './pages/Templates';
-import Pricing from './pages/Pricing';
+import Projektai from './pages/Projektai';
+import Templates from './pages/Dizainai';
+import Kainos from './pages/Kainos';
 import Kontaktai from './pages/Kontaktai';
 import { motion } from 'framer-motion';
 import ScrollToTop from './components/ScrollToTop';
@@ -13,6 +12,7 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 import PrivatumoPolitika from './pages/PrivatumoPolitika';
 import Salygos from './pages/Salygos';
 import Slapukai from './pages/Slapukai';
+import Titulinis from './pages/Titulinis';
 
 
 function App() {
@@ -29,10 +29,10 @@ function App() {
           className="relative z-10 flex-grow"
         >
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/templates" element={<Templates />} />
-            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/" element={<Titulinis />} />
+            <Route path="/projektai" element={<Projektai />} />
+            <Route path="/paruosti-dizainai" element={<Templates />} />
+            <Route path="/kainos" element={<Kainos />} />
             <Route path="/kontaktai" element={<Kontaktai />} />
             <Route path="/privatumo-politika" element={<PrivatumoPolitika />} />
             <Route path="/salygos" element={<Salygos />} />
