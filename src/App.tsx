@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'; // Import the Footer component
+import Footer from './components/Footer';
 import Projektai from './pages/Projektai';
 import Templates from './pages/Dizainai';
 import Kainos from './pages/Kainos';
@@ -14,14 +14,22 @@ import Salygos from './pages/Salygos';
 import Slapukai from './pages/Slapukai';
 import Titulinis from './pages/Titulinis';
 
+// Import CookieBot
+import CookieBot from 'react-cookiebot';
+
+// Your CookieBot domain group ID (replace this with your actual ID)
+const domainGroupId = 'c7302216-6ce5-4c9a-b458-23d9186ba517';
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Navbar />
+
+      {/* Add CookieBot Here */}
+      <CookieBot domainGroupId={domainGroupId} />
+
       <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
-        {/* <div className="fixed inset-0 grid-pattern opacity-20" /> */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
