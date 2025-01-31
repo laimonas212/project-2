@@ -147,6 +147,125 @@ import designAgencyPortfolio from '././templates/design-agency/design-agency-por
 import designAgencyProject1 from '././templates/design-agency/design-agency-project-1-2-533x846.jpg';
 import designAgencyProject2 from '././templates/design-agency/design-agency-project-2-2-533x1250.jpg';
 
+// digital marketing about, blog, careers, contact, home, landing, portfolio, services
+import digitalMarketingAbout from '././templates/digital-marketing/digital-marketing-about-page-533x1535.jpg';
+import digitalMarketingBlog from '././templates/digital-marketing/digital-marketing-blog-page-533x806.jpg';
+import digitalMarketingCareers from '././templates/digital-marketing/digital-marketing-careers-page-533x1322.jpg';
+import digitalMarketingContact from '././templates/digital-marketing/digital-marketing-contact-page-533x663.jpg';
+import digitalMarketingHome from '././templates/digital-marketing/digital-marketing-home-page-533x1107.jpg';
+import digitalMarketingLanding from '././templates/digital-marketing/digital-marketing-landing-page-533x2167.jpg';
+import digitalMarketingPortfolio from '././templates/digital-marketing/digital-marketing-portfolio-page-533x1044.jpg';
+import digitalMarketingServices from '././templates/digital-marketing/digital-marketing-services-page-533x1196.jpg';
+
+// fitness gym about, blog, classes, contact, home, landing, pricing
+import fitnessGymAbout from '././templates/fitness-gym/gym-about-page-533x1693.jpg';
+import fitnessGymBlog from '././templates/fitness-gym/gym-blog-page-533x744.jpg';
+import fitnessGymClasses from '././templates/fitness-gym/gym-classes-page-533x2145.jpg';
+import fitnessGymContact from '././templates/fitness-gym/gym-contact-page-533x1052.jpg';
+import fitnessGymHome from '././templates/fitness-gym/gym-home-page-533x1681.jpg';
+import fitnessGymLanding from '././templates/fitness-gym/gym-landing-page-533x2145.jpg';
+import fitnessGymPricing from '././templates/fitness-gym/gym-pricing-page-533x2020.jpg';
+
+// fitness trainer about, blog, contact, home, landing, pricing, service, services
+import fitnessTrainerAbout from '././templates/fitness-trainer/fitness-trainer-about-page-1646x3245.jpg';
+import fitnessTrainerBlog from '././templates/fitness-trainer/fitness-trainer-blog-page-1646x3580.jpg';
+import fitnessTrainerContact from '././templates/fitness-trainer/fitness-trainer-contact-page-1646x2455.jpg';
+import fitnessTrainerHome from '././templates/fitness-trainer/fitness-trainer-home-page-1646x4683.jpg';
+import fitnessTrainerLanding from '././templates/fitness-trainer/fitness-trainer-landing-page-1646x6803.jpg';
+import fitnessTrainerPricing from '././templates/fitness-trainer/fitness-trainer-pricing-page-1646x2792.jpg';
+import fitnessTrainerService from '././templates/fitness-trainer/fitness-trainer-service-page-1646x3711.jpg';
+import fitnessTrainerServices from '././templates/fitness-trainer/fitness-trainer-services-page-1646x2994.jpg';
+
+// furniture about, blog, contact, home, landing, product, sale, shop
+import furnitureAbout from '././templates/furniture/furniture-store-about-page-533x1481.jpg';
+import furnitureBlog from '././templates/furniture/furniture-store-blog-page-533x1258.jpg';
+import furnitureContact from '././templates/furniture/furniture-store-contact-page-533x1279.jpg';
+import furnitureHome from '././templates/furniture/furniture-store-home-page-533x1227.jpg';
+import furnitureLanding from '././templates/furniture/furniture-store-landing-page-533x2986.jpg';
+import furnitureProduct from '././templates/furniture/furniture-store-product-page-533x1506.jpg';
+import furnitureSale from '././templates/furniture/furniture-store-sale-page-533x1730.jpg';
+import furnitureShop from '././templates/furniture/furniture-store-shop-page-533x1365.jpg';
+
+// home decor about, blog, contact, home, landing, product, shop
+import homeDecorAbout from '././templates/home-decor/home-decor-about-page-1646x3241.png';
+import homeDecorBlog from '././templates/home-decor/home-decor-blog-page-1646x4069.png';
+import homeDecorContact from '././templates/home-decor/home-decor-contact-page-1646x1312.png';
+import homeDecorHome from '././templates/home-decor/home-decor-home-page-1646x3465.png';
+import homeDecorLanding from '././templates/home-decor/home-decor-landing-page-1646x5803.png';
+import homeDecorProduct from '././templates/home-decor/home-decor-product-page-1646x7185.png';
+import homeDecorShop from '././templates/home-decor/home-decor-shop-page-1646x5302.png';
+
+// home goods about, blog, contact, home, landing, shop
+import homeGoodsAbout from '././templates/home-goods/home-goods-about-page-1646x2987.jpg';
+import homeGoodsBlog from '././templates/home-goods/home-goods-blog-page-1646x2882.jpg';
+import homeGoodsContact from '././templates/home-goods/home-goods-contact-page-1646x2717.jpg';
+import homeGoodsHome from '././templates/home-goods/home-goods-home-page-1-1646x4699.jpg';
+import homeGoodsLanding from '././templates/home-goods/home-goods-landing-page-1646x7458.jpg';
+import homeGoodsShop from '././templates/home-goods/home-goods-shop-page-1646x3334.jpg';
+
+// home rental about, blog, contact, features, home, landing, pricing
+import homeRentalAbout from '././templates/home-rental/home-rental-about-page-1646x3489.jpg';
+import homeRentalBlog from '././templates/home-rental/home-rental-blog-page-1646x3342.jpg';
+import homeRentalContact from '././templates/home-rental/home-rental-contact-page-1646x2404.jpg';
+import homeRentalFeatures from '././templates/home-rental/home-rental-features-page-1646x3147.jpg';
+import homeRentalHome from '././templates/home-rental/home-rental-home-page-1646x4533.jpg';
+import homeRentalLanding from '././templates/home-rental/home-rental-landing-page-1646x6521.jpg';
+import homeRentalPricing from '././templates/home-rental/home-rental-pricing-page-1646x3449.jpg';
+
+// perfumery about, blog, contact, home, landing, product, shop
+import perfumeryAbout from '././templates/perfumery/perfumery-about-page-533x1463.jpg';
+import perfumeryBlog from '././templates/perfumery/perfumery-blog-page-533x941.jpg';
+import perfumeryContact from '././templates/perfumery/perfumery-contact-page-533x956.jpg';
+import perfumeryHome from '././templates/perfumery/perfumery-home-page-533x1328.jpg';
+import perfumeryLanding from '././templates/perfumery/perfumery-landing-page-533x2443.jpg';
+import perfumeryProduct from '././templates/perfumery/perfumery-product-page-533x1180.jpg';
+import perfumeryShop from '././templates/perfumery/perfumery-shop-page-533x1801.jpg';
+
+// pizzeria about, booking, contact, home, landing, menu
+import pizzeriaAbout from '././templates/pizzeria/pizzeria-about-page-533x740.jpg';
+import pizzeriaBooking from '././templates/pizzeria/pizzeria-booking-page-533x684.jpg';
+import pizzeriaContact from '././templates/pizzeria/pizzeria-contact-page-533x741.jpg';
+import pizzeriaHome from '././templates/pizzeria/pizzeria-home-page-533x1393.jpg';
+import pizzeriaLanding from '././templates/pizzeria/pizzeria-landing-page-533x1953.jpg';
+import pizzeriaMenu from '././templates/pizzeria/pizzeria-menu-page-533x1593.jpg';
+
+// soccer club about, blog, contact, home, landing, resources, team
+import soccerClubAbout from '././templates/soccer-club/soccer-club-about-page-533x2067.jpg';
+import soccerClubBlog from '././templates/soccer-club/soccer-club-blog-page-533x1316.jpg';
+import soccerClubContact from '././templates/soccer-club/soccer-club-contact-page-533x1133.jpg';
+import soccerClubHome from '././templates/soccer-club/soccer-club-home-page-533x1019.jpg';
+import soccerClubLanding from '././templates/soccer-club/soccer-club-landing-page-533x1741.jpg';
+import soccerClubResources from '././templates/soccer-club/soccer-club-resources-page-533x1223.jpg';
+import soccerClubTeam from '././templates/soccer-club/soccer-club-team-page-533x1253.jpg';
+
+// sunglass about, blog, contact, home, landing, product, shop
+import sunglassAbout from '././templates/sunglass/sunglass-shop-about-page-1646x2723.jpg';
+import sunglassBlog from '././templates/sunglass/sunglass-shop-blog-page-1646x3265.jpg';
+import sunglassContact from '././templates/sunglass/sunglass-shop-contact-page-1646x2090.jpg';
+import sunglassHome from '././templates/sunglass/sunglass-shop-home-page-1646x4562.jpg';
+import sunglassLanding from '././templates/sunglass/sunglass-shop-landing-page-1646x5636.jpg';
+import sunglassProduct from '././templates/sunglass/sunglass-shop-product-page-1646x4169.jpg';
+import sunglassShop from '././templates/sunglass/sunglass-shop-shop-page-1646x3629.jpg'; 
+
+// travel about, blog, contact, home, landing, packages, shop, team
+import travelAbout from '././templates/travel/travel_about-533x2050.jpg';
+import travelBlog from '././templates/travel/travel_blog-533x824.jpg';
+import travelContact from '././templates/travel/travel_contact-533x885.jpg';
+import travelHome from '././templates/travel/travel_home-533x1016.jpg';
+import travelLanding from '././templates/travel/travel_landing-533x2883.jpg';
+import travelPackages from '././templates/travel/travel_packages-533x975.jpg';
+import travelShop from '././templates/travel/travel_shop-533x625.jpg';
+import travelTeam from '././templates/travel/travel_team-533x1318.jpg';
+
+// venture capital about, blog, contact, home, landing, portfolio, team
+import ventureCapitalAbout from '././templates/venture-capital/venture-capital-firm-about-page-533x1189.jpg';
+import ventureCapitalBlog from '././templates/venture-capital/venture-capital-firm-blog-page-533x824.jpg';
+import ventureCapitalContact from '././templates/venture-capital/venture-capital-firm-contact-page-533x431.jpg';
+import ventureCapitalHome from '././templates/venture-capital/venture-capital-firm-home-page-533x1269.jpg';
+import ventureCapitalLanding from '././templates/venture-capital/venture-capital-firm-landing-page-533x2285.jpg';
+import ventureCapitalPortfolio from '././templates/venture-capital/venture-capital-firm-portfolio-page-533x900.jpg';
+import ventureCapitalTeam from '././templates/venture-capital/venture-capital-firm-team-page-533x561.jpg';
+
 const Images = {
     logo: logoImage,
     projects: {
@@ -298,8 +417,126 @@ const Images = {
             portfolio: designAgencyPortfolio,
             project1: designAgencyProject1,
             project2: designAgencyProject2,
-        }
-
+        },
+        digitalMarketing: {
+            about: digitalMarketingAbout,
+            blog: digitalMarketingBlog,
+            careers: digitalMarketingCareers,
+            contact: digitalMarketingContact,
+            home: digitalMarketingHome,
+            landing: digitalMarketingLanding,
+            portfolio: digitalMarketingPortfolio,
+            services: digitalMarketingServices,
+        },
+        fitnessGym: {
+            about: fitnessGymAbout,
+            blog: fitnessGymBlog,
+            classes: fitnessGymClasses,
+            contact: fitnessGymContact,
+            home: fitnessGymHome,
+            landing: fitnessGymLanding,
+            pricing: fitnessGymPricing,
+        },
+        fitnessTrainer: {
+            about: fitnessTrainerAbout,
+            blog: fitnessTrainerBlog,
+            contact: fitnessTrainerContact,
+            home: fitnessTrainerHome,
+            landing: fitnessTrainerLanding,
+            pricing: fitnessTrainerPricing,
+            service: fitnessTrainerService,
+            services: fitnessTrainerServices,
+        },
+        furniture: {
+            about: furnitureAbout,
+            blog: furnitureBlog,
+            contact: furnitureContact,
+            home: furnitureHome,
+            landing: furnitureLanding,
+            product: furnitureProduct,
+            sale: furnitureSale,
+            shop: furnitureShop,
+        },
+        homeDecor: {
+            about: homeDecorAbout,
+            blog: homeDecorBlog,
+            contact: homeDecorContact,
+            home: homeDecorHome,
+            landing: homeDecorLanding,
+            product: homeDecorProduct,
+            shop: homeDecorShop,
+        },
+        homeGoods: {
+            about: homeGoodsAbout,
+            blog: homeGoodsBlog,
+            contact: homeGoodsContact,
+            home: homeGoodsHome,
+            landing: homeGoodsLanding,
+            shop: homeGoodsShop,
+        },
+        homeRental: {
+            about: homeRentalAbout,
+            blog: homeRentalBlog,
+            contact: homeRentalContact,
+            features: homeRentalFeatures,
+            home: homeRentalHome,
+            landing: homeRentalLanding,
+            pricing: homeRentalPricing,
+        },
+        perfumery: {
+            about: perfumeryAbout,
+            blog: perfumeryBlog,
+            contact: perfumeryContact,
+            home: perfumeryHome,
+            landing: perfumeryLanding,
+            product: perfumeryProduct,
+            shop: perfumeryShop,
+        },
+        pizzeria: {
+            about: pizzeriaAbout,
+            booking: pizzeriaBooking,
+            contact: pizzeriaContact,
+            home: pizzeriaHome,
+            landing: pizzeriaLanding,
+            menu: pizzeriaMenu,
+        },
+        soccerClub: {
+            about: soccerClubAbout,
+            blog: soccerClubBlog,
+            contact: soccerClubContact,
+            home: soccerClubHome,
+            landing: soccerClubLanding,
+            resources: soccerClubResources,
+            team: soccerClubTeam,
+        },
+        sunglasses: {
+            about: sunglassAbout,
+            blog: sunglassBlog,
+            contact: sunglassContact,
+            home: sunglassHome,
+            landing: sunglassLanding,
+            product: sunglassProduct,
+            shop: sunglassShop,
+        },
+        travel: {
+            about: travelAbout,
+            blog: travelBlog,
+            contact: travelContact,
+            home: travelHome,
+            landing: travelLanding,
+            packages: travelPackages,
+            shop: travelShop,
+            team: travelTeam,
+        },
+        ventureCapital: {
+            about: ventureCapitalAbout,
+            blog: ventureCapitalBlog,
+            contact: ventureCapitalContact,
+            home: ventureCapitalHome,
+            landing: ventureCapitalLanding,
+            portfolio: ventureCapitalPortfolio,
+            team: ventureCapitalTeam,
+        },
     }
 }
 

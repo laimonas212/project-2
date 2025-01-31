@@ -34,7 +34,7 @@ function App() {
           </Routes>
           <ScrollToTopButton />
         </motion.div>
-        <Footer /> {/* Footer is placed here to show on all pages */}
+        <Footer />
       </div>
     </Router>
   );
