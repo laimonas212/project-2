@@ -91,8 +91,6 @@ const Footer = () => {
                         </motion.div>
                     ))}
                 </div>
-                <button onClick={() => (window as any)?.Cookiebot?.show()} className="bg-dark-surface rounded-full p-4"><Cookie className='text-electric-blue absolute left-4' /></button>
-
             </div>
             <div className="text-white/50 text-center text-sm flex align-center justify-center md:text-right mt-12">
                 &copy; {new Date().getFullYear()} Amberweb
