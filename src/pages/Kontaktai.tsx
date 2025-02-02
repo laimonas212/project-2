@@ -71,14 +71,15 @@ const Kontaktai: React.FC = () => {
     try {
       // Get reCAPTCHA token
       const recaptchaResponse = await fetch(
-        `https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY`
+        `https://www.google.com/recaptcha/api.js?render=6LfRUoMqAAAAAAhCcTjHS0MsdQNafyEu3ys1BHUU
+`
       );
       const recaptchaScript = await recaptchaResponse.text();
       eval(recaptchaScript);
 
       // Execute reCAPTCHA
       (window as any).grecaptcha.ready(() => {
-        (window as any).grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY', { action: 'submit' }).then(async (token: string) => {
+        (window as any).grecaptcha.execute('6LfRUoMqAAAAAAhCcTjHS0MsdQNafyEu3ys1BHUU', { action: 'submit' }).then(async (token: string) => {
           // Prepare form data
           const formDataToSubmit = new FormData();
           formDataToSubmit.append('access_key', 'd1a4724e-cee7-43da-85b8-57dfa121a7b2');

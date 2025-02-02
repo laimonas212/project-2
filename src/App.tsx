@@ -13,6 +13,7 @@ import PrivatumoPolitika from './pages/PrivatumoPolitika';
 import Salygos from './pages/Salygos';
 import Slapukai from './pages/Slapukai';
 import Titulinis from './pages/Titulinis';
+import WoocommerceUzsakymuValdymas from './pages/blog/WoocommerceUzsakymuValdymas';
 
 // Import CookieBot
 import CookieBot from 'react-cookiebot';
@@ -45,6 +46,7 @@ function App() {
             <Route path="/privatumo-politika" element={<PrivatumoPolitika />} />
             <Route path="/salygos" element={<Salygos />} />
             <Route path="/slapukai" element={<Slapukai />} />
+            <Route path="/blog/woocommerce-uzsakymu-valdymas" element={<WoocommerceUzsakymuValdymas />} />
           </Routes>
           <ScrollToTopButton />
         </motion.div>

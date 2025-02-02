@@ -332,6 +332,73 @@ const Titulinis = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Display 3 'blog' entries (cards), title, subtitle, read more  */}
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Naujienos ir gidai</h2>
+            <p className="text-white/70 text-lg max-w-2xl mx-auto">
+              Naujausia informacija, naudingi patarimai ir įžvalgos
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="card group hover:border-electric-blue/30 transition-colors duration-300"
+            >
+              <div className="aspect-w-16 aspect-h-9 mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="object-cover w-full h-full" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Woocommerce užsakymų valdymas</h3>
+              <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
+              <Link to="/blog/woocommerce-uzsakymu-valdymas" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
+                Skaityti daugiau
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            className="card group hover:border-electric-blue/30 transition-colors duration-300"
+            >
+              <div className="aspect-w-16 aspect-h-9 mb-4">
+                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="object-cover w-full h-full" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Kaip sukurti tinkamą interneto svetainę?</h3>
+              <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
+              <Link to="/straipsnis" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
+                Skaityti daugiau
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="card group hover:border-electric-blue/30 transition-colors duration-300"
+          >
+            <div className="aspect-w-16 aspect-h-9 mb-4">
+              <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="object-cover w-full h-full" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Kaip sukurti tinkamą interneto svetainę?</h3>
+            <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
+            <Link to="/straipsnis" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
+              Skaityti daugiau
+            </Link>
+          </motion.div>
+          </div>
+        </div>
+      </section>
     </div>
 
   );

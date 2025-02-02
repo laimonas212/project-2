@@ -20,6 +20,7 @@ import angelButikas from '././projects/angelbutikas.png';
 import esuTau from '././projects/esutau.png';
 import godeko from '././projects/godeko.png';
 import holistinekosmetologija from '././projects/holistinekosmetologija.png';
+import woo from './woo.png';
 
 // acai bowl
 import acaiBowlAbout from '././templates/acai-bowl/acai-bowl-about-page-533x1040.jpg';
@@ -269,6 +270,7 @@ import ventureCapitalTeam from '././templates/venture-capital/venture-capital-fi
 
 const Images = {
     logo: logoImage,
+    woo: woo,
     projects: {
         brangusAuto: brangusAuto,
         gavorkaArt: gavorkaArt,
