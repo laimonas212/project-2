@@ -99,7 +99,7 @@ const Kainos = () => {
           <h2 className="text-2xl font-bold mb-4">Norite pamatyti mūsų darbus?</h2>
           <p className="text-white/70 mb-8">Peržiūrėkite mūsų sėkmingai įgyvendintus projektus</p>
           <Link 
-            to="/projects"
+            to="/projektai"
             className="inline-flex items-center gap-2 button-primary group"
           >
             <span>Peržiūrėti Projektus</span>
