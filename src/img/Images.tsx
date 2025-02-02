@@ -21,6 +21,16 @@ import esuTau from '././projects/esutau.png';
 import godeko from '././projects/godeko.png';
 import holistinekosmetologija from '././projects/holistinekosmetologija.png';
 import woo from './woo.png';
+import wooWhite from './logos/woo-white.png';
+import wordpress from './logos/wordpress.png';
+import divi from './logos/divi-logo.png';
+import elementor from './logos/elementor.png';
+import midjourney from './logos/midjourney.png';
+import chatgpt from './logos/chatgpt.png';
+import react from './logos/react.png';
+import html from './logos/html5.png';
+import css from './logos/css.png';
+
 
 // acai bowl
 import acaiBowlAbout from '././templates/acai-bowl/acai-bowl-about-page-533x1040.jpg';
@@ -271,6 +281,17 @@ import ventureCapitalTeam from '././templates/venture-capital/venture-capital-fi
 const Images = {
     logo: logoImage,
     woo: woo,
+    logos: {
+        wooWhite: wooWhite,
+        wordpress: wordpress,
+        divi: divi,
+        elementor: elementor,
+        midjourney: midjourney,
+        chatgpt: chatgpt,
+        react: react,
+        html: html,
+        css: css,
+    },
     projects: {
         brangusAuto: brangusAuto,
         gavorkaArt: gavorkaArt,

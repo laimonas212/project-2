@@ -187,6 +187,23 @@ const projects: Project[] = [
   },
 ];
 
+const ProjectsList: React.FC = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="text-center mt-12 mb-12"
+    >
+      <h1 className="text-4xl md:text-5xl font-bold mb-6">Įgyvendinti projektai</h1>
+      <p className="text-lg mb-2 text-white/70">
+        Čia pateikiami keli iš daugelio mūsų įgyvendintų projektų.
+        <br />
+        Kiekvienas jų kruopščiai pritaikytas pagal kliento poreikius, užtikrinant estetiką ir funkcionalumą.
+      </p>
+    </motion.div>
+  );
+};
+
 const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -199,22 +216,9 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.3, 1, 1, 0.3]);
 
   return (
-    <div>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        className="text-center mt-12 mb-12"
-      >
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">Įgyvendinti projektai</h1>
-        <p className="text-lg mb-2 text-white/70">
-          Čia pateikiami keli iš daugelio mūsų įgyvendintų projektų.
-          <br />
-          Kiekvienas jų kruopščiai pritaikytas pagal kliento poreikius, užtikrinant estetiką ir funkcionalumą.
-        </p>
-      </motion.div>
     <motion.div 
       ref={sectionRef}
-      className="flex items-center py-12 lg:py-20 relative"
+      className="flex items-center py-12 lg:py-20 relative kaka"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -360,24 +364,21 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
         </div>
       </div>
     </motion.div>
-    </div>
   );
 };
 
 const Projects: React.FC = () => {
   return (
     <div className="pt-24 relative">
-      {/* Static Background */}
 
-      {/* Content */}
       <div className="relative">
       <div className="fixed inset-0 pointer-events-none">
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-dark-surface/50 to-background/80" /> */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.1)_0%,transparent_70%)]" />
         <div className="absolute inset-0" style={{
           background: 'radial-gradient(circle at 50% 50%, rgba(157,0,255,0.1) 0%, transparent 60%)'
         }} />
-      </div>
+        </div>
+        <ProjectsList />
         {projects.map((project, index) => (
           <ProjectSection key={project.title} project={project} index={index} />
         ))}

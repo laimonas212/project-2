@@ -2,13 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
-  Code, Layout, Smartphone, Shield, Clock, Target, Award, Star, 
-  ChevronRight, Zap, Users, Laptop, Palette, Database, Cloud,
-  ArrowRight, Sparkles, ShoppingCart
+  Layout, Smartphone, Award, Users, ArrowRight, ShoppingCart, CircleUser
 } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import Images from '../img/Images';
 
 const Titulinis = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -46,6 +45,68 @@ const Titulinis = () => {
       icon: <Award className="w-6 h-6" />,
       title: 'Klientų Pasitenkinimas',
       description: 'Mes prioritetą teikiame klientų pasitenkinimui ir siekiame viršyti lūkesčius.',
+    },
+  ];
+
+  const testimonials = [
+    {
+      content: 'Puslapis sukurtas profesonaliai, greitai ir kokybiškai, 100% rekomenduoju!',
+      name: 'Povilas',
+      company: 'gavorka.com',
+    },
+    {
+      content: 'Svetainė sukurta labai greitai ir kokybiškai. Viskas atrodo tvarkingai ir aiškiai, o navigacija - labai patogi. Esame labai patenkinti!',
+      name: 'Simona',
+      company: 'Company Name',
+    },
+    {
+      content: 'Nauja svetainė puikiai atspindi mūsų verslą. Lengva rasti reikiamą informaciją, o dizainas patrauklus ir šiuolaikiškas. Ačiū!',
+      name: 'Tadas',
+      company: 'gavorka.com',
+    },
+    {
+      content: 'Labai patenkintas padaryta parduotuve. Viskas atrodo tiksliai pagal mano norus, o ir navigacija yra labai paprasta. Klientai greitai apsiperka, o tai labai svarbu. Rekomenduoju!',
+      name: 'Vitalija',
+      company: 'Company Name',
+    },
+  ];
+
+  const technologies = [
+    {
+      name: 'Wordpress',
+      image: Images.logos.wordpress,
+    },
+    {
+      name: 'Woocommerce',
+      image: Images.logos.wooWhite,
+    },
+    {
+      name: 'Divi',
+      image: Images.logos.divi,
+    },
+    {
+      name: 'Elementor',
+      image: Images.logos.elementor,
+    },
+    {
+      name: 'Midjourney',
+      image: Images.logos.midjourney,
+    },
+    {
+      name: 'ChatGpt',
+      image: Images.logos.chatgpt,
+    },
+    {
+      name: 'React',
+      image: Images.logos.react,
+    },
+    {
+      name: 'HTML5',
+      image: Images.logos.html,
+    },
+    {
+      name: 'CSS3',
+      image: Images.logos.css,
     },
   ];
 
@@ -100,7 +161,7 @@ const Titulinis = () => {
       {/* Features Section */}
       <section className="py-20 bg-dark-surface relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -135,38 +196,28 @@ const Titulinis = () => {
             </motion.div>
             
             {/* Testimonials Section */}
-            <section className="py-20 relative">
+            <section className="relative">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Ką sako mūsų klientai</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="card hover:border-electric-blue/30 transition-colors duration-300 p-6">
-                    <p className="text-white/70 mb-4">
-                      “Puslapis sukurtas profesonaliai, greitai ir kokybiškai, 100% rekomenduoju!”
-                    </p>
-                    <div className="flex items-center">
-                      <div className="w-10 h-10 bg-gray-200 rounded-full mr-4">
-                        <img src="/src/img/gavorka.jpg" alt="Client avatar" className="rounded-full w-full h-full" />
+                  {testimonials.map((testimonial, index) => (
+                    <motion.div
+                      key={testimonial.name}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className="flex flex-col justify-between card hover:border-electric-blue/30 transition-colors duration-300 p-6"
+                    >
+                      <p className="text-white/70 mb-4">
+                        {testimonial.content}
+                      </p>
+                      <div className="flex items-center gap-4">
+                          <CircleUser className="w-6 h-6 text-electric-blue" />
+                          <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
                       </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-1">Povilas</h3>
-                        <p className="text-gray-400">gavorka.com</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card hover:border-electric-blue/30 transition-colors duration-300 p-6">
-                    <p className="text-white/70 mb-4">
-                      “Labai esu patenkinta sukurta svetaine! Greitai ir kokybiškai. Malonus ir paprastas bendravimas! Labai profesionalus darbas. Rekomenduoju!”
-                    </p>
-                    <div className="flex items-center">
-                      <div className="w-10 h-10 bg-gray-200 rounded-full mr-4">
-                        <img src="..." alt="Client avatar" className="rounded-full w-full h-full" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-1">Client Name</h3>
-                        <p className="text-gray-400">Company Name</p>
-                      </div>
-                    </div>
-                  </div>
+                    </motion.div>
+                  ))}
                 </div>
               </div>
             </section>
@@ -190,72 +241,29 @@ const Titulinis = () => {
           </motion.div>
 
           {/* align vertically */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
-            >
-              <div className="text-electric-blue mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="w-full h-full" />
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
-            >
-              <div className="text-electric-blue mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/pngwing.com_-300x76.png" alt="WooCommerce" className="w-full h-full" />
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
-            >
-              <div className="text-electric-blue mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/logo-divi-1-300x127.png" alt="Divi" className="w-full h-full" />
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
-            >
-              <div className = "text-electric-blue mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/Elementor-Logo-Full-Red-300x60.png" alt="Elementor" className="w-full h-full" />
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
-            >
-              <div className="text-electric-blue mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/chatgpt-logo-300x127.png" alt="WooCommerce" className="w-full h-full" />
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="card hover:border-electric-blue/30 flex items-center justify-center transition-colors duration-300"
-            >
-              <div className="text-electric-blue mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/midjourney-logo-1-300x127.png" alt="WooCommerce" className="w-full h-full" />
-              </div>
-            </motion.div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {technologies.map((technology, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className=" hover:border-electric-blue/30 h-auto w-36 card flex items-center justify-center transition-colors duration-300"
+              >
+                <div className="text-electric-blue">
+                  <img
+                    src={technology.image}
+                    alt={technology.name}
+                    className={`${technology.name === 'React' || technology.name === 'HTML5' || technology.name === "CSS3"
+                        ? 'h-10 w-10'
+                        : 'h-auto w-24'
+                      }`}
+                  />
+                </div>
+
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -356,7 +364,7 @@ const Titulinis = () => {
               className="card group hover:border-electric-blue/30 transition-colors duration-300"
             >
               <div className="aspect-w-16 aspect-h-9 mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="object-cover w-full h-full" />
+                <img src={Images.logos.wooWhite} alt="Woocommerce" className="object-cover w-32 h-full" />
               </div>
               <h3 className="text-xl font-bold mb-2">Woocommerce užsakymų valdymas</h3>
               <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
@@ -372,9 +380,9 @@ const Titulinis = () => {
             className="card group hover:border-electric-blue/30 transition-colors duration-300"
             >
               <div className="aspect-w-16 aspect-h-9 mb-4">
-                <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="object-cover w-full h-full" />
+                <img src={Images.logos.wooWhite} alt="Woocommerce" className="object-cover w-32 h-full" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Kaip sukurti tinkamą interneto svetainę?</h3>
+              <h3 className="text-xl font-bold mb-2">Kaip sukurti naują Woocommerce produktą?</h3>
               <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
               <Link to="/straipsnis" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
                 Skaityti daugiau
@@ -388,9 +396,9 @@ const Titulinis = () => {
             className="card group hover:border-electric-blue/30 transition-colors duration-300"
           >
             <div className="aspect-w-16 aspect-h-9 mb-4">
-              <img src="https://www.amberweb.lt/wp-content/uploads/2024/11/WordPress-logotype-standard-300x102.png" alt="WordPress" className="object-cover w-full h-full" />
+              <img src={Images.logos.divi} alt="WordPress" className="object-cover w-auto h-10" />
             </div>
-            <h3 className="text-xl font-bold mb-2">Kaip sukurti tinkamą interneto svetainę?</h3>
+            <h3 className="text-xl font-bold mb-2">Kaip naudotis DIVI?</h3>
             <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
             <Link to="/straipsnis" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
               Skaityti daugiau
