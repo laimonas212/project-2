@@ -220,3 +220,69 @@ footer {
 .grecaptcha-badge {
   display: none !important;
 }
+
+/* cookiebot */
+#CookiebotWidget * {
+  color: #dedede !important;
+}
+
+#CookiebotWidget.CookiebotWidget-open .CookiebotWidget-contents {
+  background: #12121a !important;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#CookiebotWidget .CookiebotWidget-body .CookiebotWidget-consents-list li svg {
+  fill: #31dbed !important;
+  height: 14px;
+  width: 14px;
+}
+
+#CookiebotWidget .CookiebotWidget-body .CookiebotWidget-consents-list li.CookiebotWidget-approved svg {
+  fill: #31dbed !important;
+  width: 18px;
+}
+
+#CookiebotWidget .CookiebotWidget-consent-details button {
+  align-items: center;
+  color: #31dbed !important;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#CookiebotWidget .CookiebotWidget-consent-details button svg {
+  fill: #31dbed !important;
+  height: 8px;
+  margin-left: 14px;
+  width: 12px;
+}
+
+#CookiebotWidget .CookiebotWidget-consent-details .CookiebotWidget-consent-details-box {
+  background-color: #1d1d25 !important;
+  border-radius: 8px;
+  display: none;
+  letter-spacing: .5px;
+  padding: 16px;
+}
+
+#CookiebotWidget #CookiebotWidget-buttons #CookiebotWidget-btn-withdraw:disabled {
+  border-color: #31dbed !important;
+  height: 8px;
+  cursor: default;
+  opacity: .4;
+}
+
+#CookiebotWidget #CookiebotWidget-buttons #CookiebotWidget-btn-withdraw {
+  background-color: transparent !important;
+  border-color: #31dbed !important;
+  color: #dedede;
+  transition-delay: .3s;
+}
+
+#CookiebotWidget #CookiebotWidget-buttons #CookiebotWidget-btn-change {
+  background-color: #31dbed !important;
+  border-color: #31dbeF !important;
+  color: #12121a !important;
+}
