@@ -341,7 +341,7 @@ footer {
 }
 
 #CybotCookiebotDialog form input[type=checkbox][disabled]:checked+.CybotCookiebotDialogBodyLevelButtonSlider {
-  background-color: #92eaf3 !important;
+  background-color: #353544 !important;
   pointer-events: none;
 }
 
