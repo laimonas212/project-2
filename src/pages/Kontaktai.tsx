@@ -71,8 +71,7 @@ const Kontaktai: React.FC = () => {
     try {
       // Get reCAPTCHA token
       const recaptchaResponse = await fetch(
-        `https://www.google.com/recaptcha/api.js?render=6LfRUoMqAAAAAAhCcTjHS0MsdQNafyEu3ys1BHUU
-`
+        `https://www.google.com/recaptcha/api.js?render=6LfRUoMqAAAAAAhCcTjHS0MsdQNafyEu3ys1BHUU`
       );
       const recaptchaScript = await recaptchaResponse.text();
       eval(recaptchaScript);
