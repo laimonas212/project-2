@@ -187,7 +187,7 @@ const Kontaktai: React.FC = () => {
                   {isSubmitting ? 'Siunčiama...' : 'Siųsti'}
                 </button>
               </div>
-              <div className="h-captcha" data-captcha="true"></div>
+              {/* <div className="h-captcha" data-captcha="true"></div> */}
             </form>
           </div>
         </motion.div>
