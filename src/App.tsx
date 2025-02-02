@@ -14,6 +14,8 @@ import Salygos from './pages/Salygos';
 import Slapukai from './pages/Slapukai';
 import Titulinis from './pages/Titulinis';
 import WoocommerceUzsakymuValdymas from './pages/blog/WoocommerceUzsakymuValdymas';
+import NaujasWoocommerceProduktas from './pages/blog/NaujasWoocoomerceProduktas';
+import KaipNaudotisDivi from './pages/blog/KaipNaudotisDivi';
 
 // Import CookieBot
 import CookieBot from 'react-cookiebot';
@@ -47,6 +49,8 @@ function App() {
             <Route path="/salygos" element={<Salygos />} />
             <Route path="/slapukai" element={<Slapukai />} />
             <Route path="/blog/woocommerce-uzsakymu-valdymas" element={<WoocommerceUzsakymuValdymas />} />
+            <Route path="/blog/naujas-woocommerce-produktas" element={<NaujasWoocommerceProduktas />} />
+            <Route path="/blog/kaip-naudotis-divi" element={<KaipNaudotisDivi />} />
           </Routes>
           <ScrollToTopButton />
         </motion.div>

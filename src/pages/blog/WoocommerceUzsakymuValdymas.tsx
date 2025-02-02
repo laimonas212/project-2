@@ -95,12 +95,10 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 {/* add woo logo from Images.woo flex center*/}
-                <img src={Images.woo} alt="WooCommerce" className="mx-auto" />
-            
-                
+                <img src={Images.logos.wooWhite} alt="WooCommerce" className="mx-auto h-16 mt-24" />
 
-                <p className="mt-4 text-lg">
-                    Išsamesnė informacija <a href="https://docs.woocommerce.com/document/managing-orders/" className="text-electric-blue underline">Woocommerce support</a>
+                <p className="mt-4 pb-24 text-lg">
+                    Išsamesnė informacija: <a href="https://docs.woocommerce.com/document/managing-orders/" className="text-electric-blue underline">Woocommerce dokumentacija</a>
                 </p>
             </div>
         </div>

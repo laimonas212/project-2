@@ -364,10 +364,13 @@ const Titulinis = () => {
               className="card group hover:border-electric-blue/30 transition-colors duration-300"
             >
               <div className="aspect-w-16 aspect-h-9 mb-4">
-                <img src={Images.logos.wooWhite} alt="Woocommerce" className="object-cover w-32 h-full" />
+                <img src={Images.logos.wooWhite} alt="Woocommerce" className="object-cover w-auto h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Woocommerce užsakymų valdymas</h3>
-              <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
+              <h3 className="text-xl font-bold mb-2">WooCommerce užsakymų valdymas</h3>
+              <p className="text-white/70">
+                WooCommerce užsakymų valdymas leidžia lengvai sekti ir tvarkyti užsakymus, keisti jų būsenas, generuoti sąskaitas faktūras ir organizuoti prekių pristatymą. Tai patogus įrankis efektyviam užsakymų apdorojimui.
+              </p>
+
               <Link to="/blog/woocommerce-uzsakymu-valdymas" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
                 Skaityti daugiau
               </Link>
@@ -380,11 +383,14 @@ const Titulinis = () => {
             className="card group hover:border-electric-blue/30 transition-colors duration-300"
             >
               <div className="aspect-w-16 aspect-h-9 mb-4">
-                <img src={Images.logos.wooWhite} alt="Woocommerce" className="object-cover w-32 h-full" />
+                <img src={Images.logos.wooWhite} alt="Woocommerce" className="object-cover w-auto h-8" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Kaip sukurti naują Woocommerce produktą?</h3>
-              <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
-              <Link to="/straipsnis" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
+              <h3 className="text-xl font-bold mb-2">Kaip sukurti naują WooCommerce produktą?</h3>
+              <p className="text-white/70">
+                Norėdami sukurti naują produktą WooCommerce, eikite į „Produktai“ sekciją ir pasirinkite „Pridėti naują“. Čia galite įvesti produkto pavadinimą, aprašymą, kainą, nuotraukas ir kitas detales. Pasirinkite produktų kategorijas ir pritaikykite prekių variantus, jei reikia.
+              </p>
+
+              <Link to="/blog/naujas-woocommerce-produktas" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
                 Skaityti daugiau
             </Link>
           </motion.div>
@@ -396,11 +402,13 @@ const Titulinis = () => {
             className="card group hover:border-electric-blue/30 transition-colors duration-300"
           >
             <div className="aspect-w-16 aspect-h-9 mb-4">
-              <img src={Images.logos.divi} alt="WordPress" className="object-cover w-auto h-10" />
+              <img src={Images.logos.divi} alt="WordPress" className="object-cover w-auto h-8" />
             </div>
-            <h3 className="text-xl font-bold mb-2">Kaip naudotis DIVI?</h3>
-            <p className="text-white/70">Geriausi patarimai ir gudrybės, kaip sukurti tinkamą interneto svetainę jūsų verslui.</p>
-            <Link to="/straipsnis" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
+              <h3 className="text-xl font-bold mb-2">Kaip naudotis DIVI?</h3>
+              <p className="text-white/70">
+                Divi yra populiarus WordPress puslapių kūrimo įrankis, leidžiantis lengvai kurti puslapius naudojant drag-and-drop redaktorių. Norėdami pradėti, tiesiog įdiekite Divi temą, pasirinkite šabloną arba kurkite puslapius nuo nulio. Naudodami Divi, galite pridėti įvairias sekcijas, modulius ir pritaikyti dizainą pagal savo poreikius.
+              </p>
+            <Link to="/blog/kaip-naudotis-divi" className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
               Skaityti daugiau
             </Link>
           </motion.div>
