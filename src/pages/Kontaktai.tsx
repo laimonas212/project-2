@@ -126,6 +126,8 @@ const Kontaktai: React.FC = () => {
           <div className="p-6 bg-dark-surface">
             <h2 className="text-xl font-bold mb-4">Užklausos forma</h2>
             <form onSubmit={handleSubmit}>
+              <input type="hidden" name="access_key" value="d1a4724e-cee7-43da-85b8-57dfa121a7b2" />
+
               <div className="grid grid-cols-1 gap-4">
                 <input
                   type="text"
