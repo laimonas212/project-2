@@ -69,46 +69,39 @@ const Kontaktai: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      // Execute reCAPTCHA
-      (window as any).grecaptcha.ready(async () => {
-        const token = await (window as any).grecaptcha.execute('6LfRUoMqAAAAAAhCcTjHS0MsdQNafyEu3ys1BHUU', { action: 'submit' });
+      // Prepare form data
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('access_key', 'd1a4724e-cee7-43da-85b8-57dfa121a7b2');
+      formDataToSubmit.append('name', formData.name);
+      formDataToSubmit.append('email', formData.email);
+      formDataToSubmit.append('phone', formData.phone);
+      formDataToSubmit.append('message', formData.message);
 
-        // Prepare form data
-        const formDataToSubmit = new FormData();
-        formDataToSubmit.append('access_key', 'd1a4724e-cee7-43da-85b8-57dfa121a7b2');
-        formDataToSubmit.append('name', formData.name);
-        formDataToSubmit.append('email', formData.email);
-        formDataToSubmit.append('phone', formData.phone);
-        formDataToSubmit.append('message', formData.message);
-        formDataToSubmit.append('g-recaptcha-response', token);
-
-        // Send form data
-        const response = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          body: formDataToSubmit,
-        });
-
-        const result = await response.json();
-
-        if (result.success) {
-          setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            message: '',
-          });
-          alert('Jūsų žinutė išsiųsta sėkmingai!');
-        } else {
-          alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
-        }
+      // Send form data
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSubmit,
       });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+        alert('Jūsų žinutė išsiųsta sėkmingai!');
+      } else {
+        alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
+      }
     } catch (error) {
       alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
     } finally {
       setIsSubmitting(false);
     }
   };
-
 
   return (
     <div className="pt-36 mb-24">
@@ -194,6 +187,7 @@ const Kontaktai: React.FC = () => {
                   {isSubmitting ? 'Siunčiama...' : 'Siųsti'}
                 </button>
               </div>
+              <div className="h-captcha" data-captcha="true"></div>
             </form>
           </div>
         </motion.div>
