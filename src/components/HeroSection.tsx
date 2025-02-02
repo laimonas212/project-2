@@ -171,7 +171,7 @@ const HeroSection = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </Link>
-            <Link to="/projects" className="text-white">
+            <Link to="/projektai" className="text-white">
               <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/10 hover:border-electric-blue/50 transition-colors duration-300 backdrop-blur-sm">
                 <Code2 className="w-5 h-5" />
                 Peržiūrėkite mūsų darbus
