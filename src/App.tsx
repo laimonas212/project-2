@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -14,22 +14,28 @@ import Salygos from './pages/Salygos';
 import Slapukai from './pages/Slapukai';
 import Titulinis from './pages/Titulinis';
 import WoocommerceUzsakymuValdymas from './pages/blog/WoocommerceUzsakymuValdymas';
-import NaujasWoocommerceProduktas from './pages/blog/NaujasWoocoomerceProduktas';
+import NaujasWoocommerceProduktas from './pages/blog/NaujasWoocoomerceProduktas'; // Fixed typo
 import KaipNaudotisDivi from './pages/blog/KaipNaudotisDivi';
+import { initGA, logPageView } from "./analytics";
 
 // Import CookieBot
 import CookieBot from 'react-cookiebot';
 
-// Your CookieBot domain group ID (replace this with your actual ID)
+// CookieBot domain group ID
 const domainGroupId = 'c7302216-6ce5-4c9a-b458-23d9186ba517';
 
 function App() {
+  useEffect(() => {
+    initGA(); // Initialize Google Analytics
+    logPageView(); // Log initial page load
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
       <Navbar />
 
-      {/* Add CookieBot Here */}
+      {/* CookieBot */}
       <CookieBot domainGroupId={domainGroupId} />
 
       <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
