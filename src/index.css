@@ -362,6 +362,15 @@ footer {
 #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonAccept,
 #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
   background-color: #31dbed !important;
-  border-color: #1032CF !important;
+  border-color: #31dbed !important;
   color: #12121a !important;
+}
+
+#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonIABContainerToggleHide,
+#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonIABContainerToggleShow,
+#CybotCookiebotDialog a:after,
+#CybotCookiebotDialog a:before,
+#CybotCookiebotDialog button:after,
+#CybotCookiebotDialog button:before {
+  border-color: #31dbed !important;
 }
