@@ -374,3 +374,9 @@ footer {
 #CybotCookiebotDialog button:before {
   border-color: #31dbed !important;
 }
+
+#CookiebotWidget .CookiebotWidget-body .CookiebotWidget-main-logo {
+  justify-content: flex-end;
+  margin-top: 16px;
+  display: none !important;
+}
