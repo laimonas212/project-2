@@ -8,6 +8,7 @@ type FormData = {
   email: string;
   phone: string;
   message: string;
+  subject: string;
 };
 
 type ErrorMessages = {
@@ -23,6 +24,7 @@ const Kontaktai: React.FC = () => {
     email: '',
     phone: '',
     message: '',
+    subject: 'Nauja kliento užklausa.',
   });
 
   const [errors, setErrors] = useState<ErrorMessages>({});
@@ -77,6 +79,7 @@ const Kontaktai: React.FC = () => {
       formDataToSubmit.append('name', formData.name);
       formDataToSubmit.append('email', formData.email);
       formDataToSubmit.append('phone', formData.phone);
+      formDataToSubmit.append('subject', formData.subject);
       formDataToSubmit.append('message', formData.message);
 
       // Send form data
@@ -92,6 +95,7 @@ const Kontaktai: React.FC = () => {
           name: '',
           email: '',
           phone: '',
+          subject: 'Nauja kliento užklausa.',
           message: '',
         });
         Swal.fire({
