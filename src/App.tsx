@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Projektai from './pages/Projektai';
@@ -25,10 +25,12 @@ import CookieBot from 'react-cookiebot';
 const domainGroupId = 'c7302216-6ce5-4c9a-b458-23d9186ba517';
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     initGA(); // Initialize Google Analytics
     logPageView(); // Log initial page load
-  }, []);
+  }, [location]);
 
   return (
     <Router>
