@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Swal from 'sweetalert2'; // Import SweetAlert2
+import 'sweetalert2/dist/sweetalert2.min.css'; // Import the SweetAlert2 styles
 
 type FormData = {
   name: string;
@@ -92,12 +94,43 @@ const Kontaktai: React.FC = () => {
           phone: '',
           message: '',
         });
-        alert('Jūsų žinutė išsiųsta sėkmingai!');
+        Swal.fire({
+          icon: 'success',
+          title: 'Jūsų žinutė išsiųsta sėkmingai!',
+          text: 'Artimiausiu metu su Jumis susisieksime.',
+          background: "#12121a",
+          color: 'rgba(255,255,255,0.7)',
+          showConfirmButton: true,
+          confirmButtonText: 'Gerai',
+          confirmButtonColor: '#4c6ef5',
+          timer: 3000, // Auto close after 3 seconds
+        });
+
       } else {
-        alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
+        Swal.fire({
+          icon: 'error',
+          title: 'Klaida!',
+          text: 'Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.',
+          background: "#12121a",
+          color: 'rgba(255,255,255,0.7)',
+          showConfirmButton: true,
+          confirmButtonText: 'Gerai',
+          confirmButtonColor: '#4c6ef5',
+          timer: 3000,
+        });
       }
     } catch (error) {
-      alert('Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Klaida!',
+        text: 'Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.',
+        background: "#12121a",
+        color: 'rgba(255,255,255,0.7)',
+        showConfirmButton: true,
+        confirmButtonText: 'Gerai',
+        confirmButtonColor: '#4c6ef5',
+        timer: 3000,
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -181,6 +214,8 @@ const Kontaktai: React.FC = () => {
                 />
                 {errors.message && <p className="text-electric-blue text-sm">{errors.message}</p>}
 
+                <div className="h-captcha" data-captcha="true"></div>
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -189,7 +224,6 @@ const Kontaktai: React.FC = () => {
                   {isSubmitting ? 'Siunčiama...' : 'Siųsti'}
                 </button>
               </div>
-              {/* <div className="h-captcha" data-captcha="true"></div> */}
             </form>
           </div>
         </motion.div>
