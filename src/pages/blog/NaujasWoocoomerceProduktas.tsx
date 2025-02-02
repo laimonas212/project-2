@@ -82,7 +82,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 <img src={Images.logos.wooWhite} alt="WooCommerce" className="mx-auto h-16 mt-24" />
 
                 <p className="mt-4 pb-24 text-lg">
-                    Daugiau informacijos rasite: <a href="https://docs.woocommerce.com/document/managing-products/" className="text-electric-blue underline">WooCommerce dokumentacija</a>.
+                    Daugiau informacijos rasite: <a href="https://docs.woocommerce.com/document/managing-products/" target='_blank' className="text-electric-blue underline">WooCommerce dokumentacija</a>.
                 </p>
             </div>
         </div>

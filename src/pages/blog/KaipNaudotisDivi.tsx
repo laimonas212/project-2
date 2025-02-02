@@ -74,7 +74,7 @@ const KaipNaudotisDivi: React.FC = () => {
                 <img src={Images.logos.divi} alt="WooCommerce" className="mx-auto h-16 mt-24" />
 
                 <p className="mt-4 pb-24 text-lg">
-                    Išsamesnė informacija: <a href="https://www.elegantthemes.com/documentation/divi/visual-builder/" className="text-electric-blue underline">DIVI dokumentacija</a>
+                    Išsamesnė informacija: <a href="https://www.elegantthemes.com/documentation/divi/visual-builder/" target='_blank' className="text-electric-blue underline">DIVI dokumentacija</a>
                 </p>
             </div>
         </div>

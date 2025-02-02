@@ -98,7 +98,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 <img src={Images.logos.wooWhite} alt="WooCommerce" className="mx-auto h-16 mt-24" />
 
                 <p className="mt-4 pb-24 text-lg">
-                    Išsamesnė informacija: <a href="https://docs.woocommerce.com/document/managing-orders/" className="text-electric-blue underline">Woocommerce dokumentacija</a>
+                    Išsamesnė informacija: <a href="https://docs.woocommerce.com/document/managing-orders/" target='_blank' className="text-electric-blue underline">Woocommerce dokumentacija</a>
                 </p>
             </div>
         </div>
