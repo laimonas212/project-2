@@ -113,7 +113,7 @@ const Titulinis = () => {
   const process = [
     { number: '01', title: 'Poreikių analizė', description: 'Jūsų poreikių ir tikslų išsiaiškinimas' },
     { number: '02', title: 'Planavimas', description: 'Sudarome aiškų veiksmų planą' },
-    { number: '03', title: 'Dizainas', description: 'Pasitenkate tinkamą dizainą' },
+    { number: '03', title: 'Dizainas', description: 'Pasirenkate tinkamą dizainą' },
     { number: '04', title: 'Kūrimas', description: 'Naudojame pažangiausias technologijas' },
     { number: '05', title: 'Paleidimas', description: 'Įgyvendiname ir optimizuojame projektą' },
   ];
@@ -236,7 +236,7 @@ const Titulinis = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Naudojamos technologijos</h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto">
-              Naudojame modernias technologijas ir geriausias praktikas, siekdami sukurti aukštos kokybės interneto svetaines
+              Naudojame modernias technologijas ir geriausias praktikas, siekdami sukurti aukštos kokybės interneto svetaines.
             </p>
           </motion.div>
 
