@@ -216,3 +216,7 @@ footer {
 .z-999 {
   z-index: 999999;
 }
+
+.grecaptcha-badge {
+  display: none !important;
+}
