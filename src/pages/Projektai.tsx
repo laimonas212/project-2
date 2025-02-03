@@ -130,7 +130,7 @@ const projects: Project[] = [
     link: 'https://www.printery.lt',
   },
   {
-    title: 'Prisipušk Šypsena',
+    title: 'Prisipūsk Šypseną',
     subtitle: 'Internetinė parduotuvė',
     description: 'Internetinė parduotuvė su išsamia prekių informacija ir sklandžiu užsakymo procesu.',
     image: Images.projects.prisipuskSypsena,
