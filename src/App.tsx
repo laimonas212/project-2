@@ -19,10 +19,10 @@ import KaipNaudotisDivi from './pages/blog/KaipNaudotisDivi';
 import { initGA, logPageView } from "./analytics";
 
 // Import CookieBot
-import CookieBot from 'react-cookiebot';
+// import CookieBot from 'react-cookiebot';
 
 // CookieBot domain group ID
-const domainGroupId = 'c7302216-6ce5-4c9a-b458-23d9186ba517';
+// const domainGroupId = 'c7302216-6ce5-4c9a-b458-23d9186ba517';
 
 function App() {
   useEffect(() => {
@@ -36,7 +36,7 @@ function App() {
       <Navbar />
 
       {/* CookieBot */}
-      <CookieBot domainGroupId={domainGroupId} />
+      {/* <CookieBot domainGroupId={domainGroupId} /> */}
 
       <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
         <motion.div
