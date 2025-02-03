@@ -380,8 +380,3 @@ footer {
   margin-top: 16px;
   display: none !important;
 }
-
-#CybotCookiebotDialog {
-  bottom: 0 !important;
-  transform: translate(-50%, -5%) !important;
-}
