@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import GoogleConsent from "./components/GoogleConsent";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Projektai from './pages/Projektai';
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <Router>
+      <GoogleConsent />
       <ScrollToTop />
       <Navbar />
 
