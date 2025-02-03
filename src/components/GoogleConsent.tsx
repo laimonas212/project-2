@@ -14,6 +14,11 @@ const GoogleConsent: React.FC = () => {
                 window.dataLayer.push(args);
             }
 
+            // Ensure GTM is loaded before setting consent
+            gtag("js", new Date());
+            gtag("config", "G-VF8ZYBL09C"); // Replace with your GA4 Measurement ID
+
+            // Set Default Consent
             gtag("consent", "default", {
                 analytics_storage: "denied",
                 ad_storage: "denied",
@@ -21,9 +26,6 @@ const GoogleConsent: React.FC = () => {
                 personalization_storage: "denied",
                 security_storage: "granted",
             });
-
-            gtag("js", new Date());
-            gtag("config", "G-VF8ZYBL09C"); // Replace with your GA4 Measurement ID
         }
     }, []);
 
