@@ -222,7 +222,7 @@ footer {
 }
 
 /* cookiebot */
-#CookiebotWidget * {
+/* #CookiebotWidget * {
   color: #dedede !important;
 }
 
@@ -379,4 +379,8 @@ footer {
   justify-content: flex-end;
   margin-top: 16px;
   display: none !important;
+} */
+
+.cky-consent-container .cky-consent-bar {
+  box-shadow: none !important;
 }
