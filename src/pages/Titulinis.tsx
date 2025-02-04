@@ -66,7 +66,7 @@ const Titulinis = () => {
     },
     {
       content: 'Labai patenkintas padaryta parduotuve. Viskas atrodo tiksliai pagal mano norus, o ir navigacija yra labai paprasta. Klientai greitai apsiperka, o tai labai svarbu. Rekomenduoju!',
-      name: 'Vitalija',
+      name: 'Vitalijus',
       company: 'Company Name',
     },
   ];
