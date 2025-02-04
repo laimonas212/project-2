@@ -21,7 +21,7 @@ const Slapukai: React.FC = () => {
                         Analitiniai slapukai - mes naudojame Google Analytics slapukus, kad galėtume rinkti informaciją apie Jūsų naršymą mūsų svetainėje. Tai leidžia mums analizuoti, kaip lankytojai naudojasi mūsų svetaine, ir tobulinti jos funkcionalumą.
                     </p>
                     <p className='text-white/70'>
-                        Slapukai su sutikimu - mes naudojame CookiesBot paslaugą slapukų valdymui. Jūsų sutikimas dėl slapukų naudojimo bus prašomas lankantis mūsų svetainėje. CookiesBot leidžia Jums pasirinkti, kuriuos slapukus norite priimti arba atmesti.
+                        Slapukai su sutikimu - mes naudojame CookieYes paslaugą slapukų valdymui. Jūsų sutikimas dėl slapukų naudojimo bus prašomas lankantis mūsų svetainėje. CookieYes leidžia Jums pasirinkti, kuriuos slapukus norite priimti arba atmesti.
                     </p>
                 </section>
                 
