@@ -384,3 +384,8 @@ footer {
 .cky-consent-container .cky-consent-bar {
   box-shadow: none !important;
 }
+
+.cky-revisit-bottom-left {
+  bottom: 2rem !important;
+  left: 2rem !important;
+}
