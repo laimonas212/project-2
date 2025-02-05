@@ -118,72 +118,16 @@ const Kontaktai: React.FC = () => {
         >
           <div className="p-6 bg-dark-surface">
             <h2 className="text-xl font-bold mb-4">Užklausos forma</h2>
-            <form
-              onSubmit={handleSubmit}
-              name="contact" // This is the correct name for Netlify to recognize the form
-              netlify // This enables Netlify form handling
-            >
-              <div className="grid grid-cols-1 gap-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Jūsų vardas"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                />
-                {errors.name && <p className="text-electric-blue text-sm">{errors.name}</p>}
-
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="El. paštas"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                />
-                {errors.email && <p className="text-electric-blue text-sm">{errors.email}</p>}
-
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Telefono numeris"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                />
-                {errors.phone && <p className="text-electric-blue text-sm">{errors.phone}</p>}
-
-                <textarea
-                  name="message"
-                  placeholder="Žinutė"
-                  rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                />
-                {errors.message && <p className="text-electric-blue text-sm">{errors.message}</p>}
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
-                >
-                  {isSubmitting ? 'Siunčiama...' : 'Siųsti'}
-                </button>
-              </div>
+            <form name="contact" netlify>
+              <p>
+                <label>Name <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Email <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
             </form>
           </div>
         </motion.div>
