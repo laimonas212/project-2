@@ -84,7 +84,7 @@ const Kontaktai: React.FC = () => {
       };
 
       // Send form data to FormBackend endpoint
-      const response = await fetch("https://formbackend.com/api/forms/2ccab27d2ab6eca1", {
+      const response = await fetch("https://www.formbackend.com/f/2ccab27d2ab6eca1", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
