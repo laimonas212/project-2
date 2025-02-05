@@ -52,22 +52,26 @@ const Titulinis = () => {
     {
       content: 'Puslapis sukurtas profesonaliai, greitai ir kokybiškai, 100% rekomenduoju!',
       name: 'Povilas',
-      company: 'gavorka.com',
+      company: 'Freelance CG illustrator & animator',
+      url: 'https://gavorka.com/',
     },
     {
-      content: 'Svetainė sukurta labai greitai ir kokybiškai. Viskas atrodo tvarkingai ir aiškiai, o navigacija - labai patogi. Esame labai patenkinti!',
-      name: 'Simona',
-      company: 'Company Name',
+      content: 'Puikus darbas kuriant įstaigos svetainę. Profesionalu, atsižvelgiama į visus pasiūlymus, ieškoma geriausių sprendimų. Darbas atliktas laikantis visų sutartų terminų. Rekomenduojame.',
+      name: 'Rūta',
+      company: 'Kauno „Paparčio“ pradinė mokykla',
+      url: 'https://paparciopm.lt/',
     },
     {
-      content: 'Nauja svetainė puikiai atspindi mūsų verslą. Lengva rasti reikiamą informaciją, o dizainas patrauklus ir šiuolaikiškas. Ačiū!',
-      name: 'Tadas',
-      company: 'gavorka.com',
+      content: 'Likau labai patenkinta dėl internetinės svetainės sukūrimo, viskas greitai, nesudėtingai ir už protingą kainą. Taip pat labai patiko greita komunikacija ir atsižvelgimas į konkrečius norus. Ačiū ir dar tikrai sugrįšiu su kitais projektais :)',
+      name: 'Greta',
+      company: 'GO deko',
+      url: 'https://godeko.lt/',
     },
     {
-      content: 'Labai patenkintas padaryta parduotuve. Viskas atrodo tiksliai pagal mano norus, o ir navigacija yra labai paprasta. Klientai greitai apsiperka, o tai labai svarbu. Rekomenduoju!',
-      name: 'Vitalijus',
-      company: 'Company Name',
+      content: 'Puikiai ir profesionaliai atliktas darbas, visada atsiliepiama ir pakonsultuojama telefonu. Viskas puikiai, gera kaina',
+      name: 'Regina',
+      company: 'Lopšelis-darželis - "Smaragdo uostas"',
+      url: 'https://smaragdouostas.lt/',
     },
   ];
 
@@ -212,9 +216,13 @@ const Titulinis = () => {
                       <p className="text-white/70 mb-4">
                         {testimonial.content}
                       </p>
-                      <div className="flex items-center gap-4">
+                      <div>
+                        <div className="flex items-center gap-4">
                           <CircleUser className="w-6 h-6 text-electric-blue" />
                           <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
+                        </div>
+                        {/* <p className=''>{testimonial.company}</p> */}
+                        <Link to={testimonial.url} target='_blank' className='text-xs font-light text-white/70'>{testimonial.company }</Link>
                       </div>
                     </motion.div>
                   ))}

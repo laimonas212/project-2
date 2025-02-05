@@ -5,6 +5,8 @@ import { LayoutGrid, AlignRight, X } from 'lucide-react';
 import { cn } from '../lib/utils';
 import logo from '../img/amberweb-logo-amber-only.png';
 import logo2 from '../img/amberweb-logo-white-no-amber.png';
+import Accessibility from '../components/Accessibility';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +19,7 @@ const Navbar = () => {
     { href: '/paruosti-dizainai', label: 'Paruošti dizainai' },
     { href: '/kainos', label: 'Kainos' },
     { href: '/kontaktai', label: 'Kontaktai' },
+    { href: '#accessibility', label: <Accessibility /> },
   ];
 
   useEffect(() => {
@@ -92,7 +95,6 @@ const Navbar = () => {
         </div>
       </div>
 
-
       {/* Mobile Navigation */}
       <motion.div
         initial={false}
@@ -108,13 +110,20 @@ const Navbar = () => {
                 'block py-2 font-medium transition-colors hover:text-electric-blue',
                 location.pathname === link.href ? 'text-electric-blue' : 'text-white/80'
               )}
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                if (link.href === '#accessibility') {
+                  e.preventDefault(); // Prevents navigation for Accessibility
+                  return; // Do not close the menu
+                }
+                setIsOpen(false); // Close menu for all other links
+              }}
             >
               {link.label}
             </Link>
           ))}
         </div>
       </motion.div>
+
     </nav>
   );
 };
