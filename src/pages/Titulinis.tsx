@@ -50,25 +50,25 @@ const Titulinis = () => {
 
   const testimonials = [
     {
-      content: 'Puslapis sukurtas profesonaliai, greitai ir kokybiškai, 100% rekomenduoju!',
+      content: '"Puslapis sukurtas profesonaliai, greitai ir kokybiškai, 100% rekomenduoju!"',
       name: 'Povilas',
       company: 'Freelance CG illustrator & animator',
       url: 'https://gavorka.com/',
     },
     {
-      content: 'Puikus darbas kuriant įstaigos svetainę. Profesionalu, atsižvelgiama į visus pasiūlymus, ieškoma geriausių sprendimų. Darbas atliktas laikantis visų sutartų terminų. Rekomenduojame.',
+      content: '"Puikus darbas kuriant įstaigos svetainę. Profesionalu, atsižvelgiama į visus pasiūlymus, ieškoma geriausių sprendimų. Darbas atliktas laikantis visų sutartų terminų. Rekomenduojame."',
       name: 'Rūta',
       company: 'Kauno „Paparčio“ pradinė mokykla',
       url: 'https://paparciopm.lt/',
     },
     {
-      content: 'Likau labai patenkinta dėl internetinės svetainės sukūrimo, viskas greitai, nesudėtingai ir už protingą kainą. Taip pat labai patiko greita komunikacija ir atsižvelgimas į konkrečius norus. Ačiū ir dar tikrai sugrįšiu su kitais projektais :)',
+      content: '"Likau labai patenkinta dėl internetinės svetainės sukūrimo, viskas greitai, nesudėtingai ir už protingą kainą. Taip pat labai patiko greita komunikacija ir atsižvelgimas į konkrečius norus. Ačiū ir dar tikrai sugrįšiu su kitais projektais :)"',
       name: 'Greta',
       company: 'GO deko',
       url: 'https://godeko.lt/',
     },
     {
-      content: 'Puikiai ir profesionaliai atliktas darbas, visada atsiliepiama ir pakonsultuojama telefonu. Viskas puikiai, gera kaina',
+      content: '"Puikiai ir profesionaliai atliktas darbas, visada atsiliepiama ir pakonsultuojama telefonu. Viskas puikiai, gera kaina."',
       name: 'Regina',
       company: 'Lopšelis-darželis - "Smaragdo uostas"',
       url: 'https://smaragdouostas.lt/',
@@ -221,7 +221,6 @@ const Titulinis = () => {
                           <CircleUser className="w-6 h-6 text-electric-blue" />
                           <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
                         </div>
-                        {/* <p className=''>{testimonial.company}</p> */}
                         <Link to={testimonial.url} target='_blank' className='text-xs font-light text-white/70'>{testimonial.company }</Link>
                       </div>
                     </motion.div>
