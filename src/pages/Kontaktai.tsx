@@ -110,6 +110,11 @@ const Kontaktai: React.FC = () => {
           </p>
         </motion.div>
 
+        {/* Hidden form for Netlify */}
+        <form name="contact" method="POST" data-netlify="true" style={{ display: "none" }}>
+          <input type="hidden" name="form-name" value="contact" />
+        </form>
+
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -124,7 +129,7 @@ const Kontaktai: React.FC = () => {
               data-netlify="true"
             >
               <input type="hidden" name="form-name" value="contact" />
-
+              {/* The rest of your form fields */}
               <div className="grid grid-cols-1 gap-4">
                 <input
                   type="text"
@@ -187,12 +192,12 @@ const Kontaktai: React.FC = () => {
                 </button>
               </div>
             </form>
-
           </div>
         </motion.div>
       </div>
     </div>
   );
+
 };
 
 export default Kontaktai;
