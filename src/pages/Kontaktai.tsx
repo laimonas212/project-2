@@ -23,7 +23,7 @@ export default function Kontaktai() {
               name="contact"
               method="POST"
               data-netlify="true"
-              action="/"
+              onSubmit="submit"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="grid grid-cols-1 gap-4">
