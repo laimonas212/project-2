@@ -23,7 +23,7 @@ const Kontaktai = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -38,30 +38,8 @@ const Kontaktai = () => {
 
     // Only submit if no errors
     if (!Object.values(newErrors).some((error) => error)) {
-      const formDataToSend = new FormData();
-      formDataToSend.append('form-name', 'contact');
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('message', formData.message);
-
-      try {
-        const response = await fetch('/', {
-          method: 'POST',
-          body: formDataToSend,
-        });
-
-        if (response.ok) {
-          alert('Form submitted successfully!');
-        } else {
-          alert('Error submitting the form');
-        }
-      } catch (error) {
-        console.error(error);
-        alert('Error submitting the form');
-      } finally {
-        setIsSubmitting(false);
-      }
+      // Netlify form handling will take care of submission, so no need for fetch here
+      alert('Form is valid. Netlify will handle submission.');
     } else {
       setIsSubmitting(false);
     }
@@ -92,6 +70,8 @@ const Kontaktai = () => {
             <form
               onSubmit={handleSubmit}
               name="contact"
+              method="POST"
+              data-netlify="true"
             >
               <input type="hidden" name="form-name" value="contact" />
 
