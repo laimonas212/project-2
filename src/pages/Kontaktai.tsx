@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import Swal from "sweetalert2"; // Import SweetAlert2
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Swal from 'sweetalert2'; // Import SweetAlert2
 import 'sweetalert2/dist/sweetalert2.min.css'; // Import the SweetAlert2 styles
 
 type FormData = {
@@ -29,7 +29,6 @@ const Kontaktai: React.FC = () => {
 
   const [errors, setErrors] = useState<ErrorMessages>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -74,60 +73,66 @@ const Kontaktai: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      // Prepare form data for FormBackend
-      const formDataToSubmit = {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        subject: formData.subject,
-        message: formData.message,
-      };
+      // Prepare form data
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('access_key', 'd1a4724e-cee7-43da-85b8-57dfa121a7b2');
+      formDataToSubmit.append('name', formData.name);
+      formDataToSubmit.append('email', formData.email);
+      formDataToSubmit.append('phone', formData.phone);
+      formDataToSubmit.append('subject', formData.subject);
+      formDataToSubmit.append('message', formData.message);
 
-      // Send form data to FormBackend endpoint
-      const response = await fetch("https://www.formbackend.com/f/2ccab27d2ab6eca1", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formDataToSubmit),
+      // Send form data
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSubmit,
       });
 
       const result = await response.json();
 
-      if (result.status === "success") {
+      if (result.success) {
         setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "Nauja kliento užklausa.",
-          message: "",
+          name: '',
+          email: '',
+          phone: '',
+          subject: 'Nauja kliento užklausa.',
+          message: '',
         });
-        setSuccessMessage("Form submitted successfully");
-
         Swal.fire({
-          icon: "success",
-          title: "Jūsų žinutė išsiųsta sėkmingai!",
-          text: "Artimiausiu metu su Jumis susisieksime.",
+          icon: 'success',
+          title: 'Jūsų žinutė išsiųsta sėkmingai!',
+          text: 'Artimiausiu metu su Jumis susisieksime.',
           background: "#12121a",
-          color: "rgba(255,255,255,0.7)",
+          color: 'rgba(255,255,255,0.7)',
           showConfirmButton: true,
-          confirmButtonText: "Gerai",
-          confirmButtonColor: "#4c6ef5",
+          confirmButtonText: 'Gerai',
+          confirmButtonColor: '#4c6ef5',
           timer: 3000, // Auto close after 3 seconds
         });
+
       } else {
-        throw new Error("Failed to submit form");
+        Swal.fire({
+          icon: 'error',
+          title: 'Klaida!',
+          text: 'Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.',
+          background: "#12121a",
+          color: 'rgba(255,255,255,0.7)',
+          showConfirmButton: true,
+          confirmButtonText: 'Gerai',
+          confirmButtonColor: '#4c6ef5',
+          timer: 3000,
+        });
       }
     } catch (error) {
       Swal.fire({
-        icon: "error",
-        title: "Klaida!",
-        text: "Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.",
+        icon: 'error',
+        title: 'Klaida!',
+        text: 'Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.',
         background: "#12121a",
-        color: "rgba(255,255,255,0.7)",
+        color: 'rgba(255,255,255,0.7)',
         showConfirmButton: true,
-        confirmButtonText: "Gerai",
-        confirmButtonColor: "#4c6ef5",
+        confirmButtonText: 'Gerai',
+        confirmButtonColor: '#4c6ef5',
         timer: 3000,
       });
     } finally {
@@ -157,65 +162,73 @@ const Kontaktai: React.FC = () => {
         >
           <div className="p-6 bg-dark-surface">
             <h2 className="text-xl font-bold mb-4">Užklausos forma</h2>
-            {successMessage ? (
-              <p className="text-green-500">{successMessage}</p>
-            ) : (
-              <form onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 gap-4">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Jūsų vardas"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.name ? "border-electric-blue" : "border-gray-700 focus:border-blue-500"
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.name && <p className="text-electric-blue text-sm">{errors.name}</p>}
+            <form onSubmit={handleSubmit}>
+              <input type="hidden" name="access_key" value="d1a4724e-cee7-43da-85b8-57dfa121a7b2" />
 
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="El. paštas"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.email ? "border-electric-blue" : "border-gray-700 focus:border-blue-500"
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.email && <p className="text-electric-blue text-sm">{errors.email}</p>}
+              <div className="grid grid-cols-1 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Jūsų vardas"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.name && <p className="text-electric-blue text-sm">{errors.name}</p>}
 
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="Telefono numeris"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.phone ? "border-electric-blue" : "border-gray-700 focus:border-blue-500"
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.phone && <p className="text-electric-blue text-sm">{errors.phone}</p>}
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="El. paštas"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.email && <p className="text-electric-blue text-sm">{errors.email}</p>}
 
-                  <textarea
-                    name="message"
-                    placeholder="Žinutė"
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className={`bg-gray-800 text-white border ${errors.message ? "border-electric-blue" : "border-gray-700 focus:border-blue-500"
-                      } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
-                  />
-                  {errors.message && <p className="text-electric-blue text-sm">{errors.message}</p>}
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Telefono numeris"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.phone && <p className="text-electric-blue text-sm">{errors.phone}</p>}
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
-                  >
-                    {isSubmitting ? "Siunčiama..." : "Siųsti"}
-                  </button>
-                </div>
-              </form>
-            )}
+                <textarea
+                  name="message"
+                  placeholder="Žinutė"
+                  rows={4}
+                  value={formData.message}
+                  onChange={handleChange}
+                  className={`bg-gray-800 text-white border ${errors.message
+                    ? 'border-electric-blue'
+                    : 'border-gray-700 focus:border-blue-500'
+                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                />
+                {errors.message && <p className="text-electric-blue text-sm">{errors.message}</p>}
+
+                <div className="h-captcha" data-captcha="true"></div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
+                >
+                  {isSubmitting ? 'Siunčiama...' : 'Siųsti'}
+                </button>
+              </div>
+            </form>
           </div>
         </motion.div>
       </div>
