@@ -75,15 +75,14 @@ const Kontaktai: React.FC = () => {
     try {
       // Prepare form data
       const formDataToSubmit = new FormData();
-      formDataToSubmit.append('access_key', 'd1a4724e-cee7-43da-85b8-57dfa121a7b2');
       formDataToSubmit.append('name', formData.name);
       formDataToSubmit.append('email', formData.email);
       formDataToSubmit.append('phone', formData.phone);
       formDataToSubmit.append('subject', formData.subject);
       formDataToSubmit.append('message', formData.message);
 
-      // Send form data
-      const response = await fetch('https://api.web3forms.com/submit', {
+      // Send form data to Netlify form handler
+      const response = await fetch('/', {
         method: 'POST',
         body: formDataToSubmit,
       });
@@ -162,7 +161,13 @@ const Kontaktai: React.FC = () => {
         >
           <div className="p-6 bg-dark-surface">
             <h2 className="text-xl font-bold mb-4">Užklausos forma</h2>
-            <form onSubmit={handleSubmit}>
+            <form
+              onSubmit={handleSubmit}
+              name="contact-form"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact-form" />
               <input type="hidden" name="access_key" value="d1a4724e-cee7-43da-85b8-57dfa121a7b2" />
 
               <div className="grid grid-cols-1 gap-4">
