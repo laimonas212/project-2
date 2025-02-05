@@ -1,203 +1,67 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import Swal from 'sweetalert2'; // Import SweetAlert2
-import 'sweetalert2/dist/sweetalert2.min.css'; // Import the SweetAlert2 styles
-
-type FormData = {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-  subject: string;
-};
-
-type ErrorMessages = {
-  name?: string;
-  email?: string;
-  phone?: string;
-  message?: string;
-};
-
-const Kontaktai: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    subject: 'Nauja kliento užklausa.',
-  });
-
-  const [errors, setErrors] = useState<ErrorMessages>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: '' });
-  };
-
-  const validate = (): ErrorMessages => {
-    let validationErrors: ErrorMessages = {};
-
-    if (!formData.name.trim()) {
-      validationErrors.name = 'Vardas yra privalomas.';
-    }
-
-    if (!formData.email.trim()) {
-      validationErrors.email = 'El. paštas yra privalomas.';
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) {
-      validationErrors.email = 'Netinkamas el. pašto adresas.';
-    }
-
-    if (!formData.phone.trim()) {
-      validationErrors.phone = 'Telefono numeris yra privalomas.';
-    } else if (!/^\+?[0-9\s-]+$/.test(formData.phone)) {
-      validationErrors.phone = 'Netinkamas telefono numeris.';
-    }
-
-    if (!formData.message.trim()) {
-      validationErrors.message = 'Laukelis negali būti tuščias.';
-    }
-
-    return validationErrors;
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    Swal.fire({
-      icon: 'success',
-      title: 'Jūsų žinutė išsiųsta sėkmingai!',
-      text: 'Artimiausiu metu su Jumis susisieksime.',
-      background: "#12121a",
-      color: 'rgba(255,255,255,0.7)',
-      showConfirmButton: true,
-      confirmButtonText: 'Gerai',
-      confirmButtonColor: '#4c6ef5',
-      timer: 3000, // Auto close after 3 seconds
-    });
-
-    // Reset form after successful submission
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: 'Nauja kliento užklausa.',
-      message: '',
-    });
-
-    setIsSubmitting(false);
-  };
-
+export default function Kontaktai() {
   return (
     <div className="pt-36 mb-24">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Parašykite mums</h1>
           <p className="text-lg text-white/70">
             Turite klausimų? Parašykite mums ir mes su Jumis susisieksime.
           </p>
-        </motion.div>
+        </div>
 
-        {/* Hidden form for Netlify */}
-        <form name="contact" method="POST" data-netlify="true" style={{ display: "none" }}>
-          <input type="hidden" name="form-name" value="contact" />
+        {/* Hidden form for Netlify detection */}
+        <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message" />
         </form>
 
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4 }}
-          className="max-w-lg mx-auto rounded-lg overflow-hidden shadow-lg"
-        >
+        <div className="max-w-lg mx-auto rounded-lg overflow-hidden shadow-lg">
           <div className="p-6 bg-dark-surface">
             <h2 className="text-xl font-bold mb-4">Užklausos forma</h2>
             <form
-              onSubmit={handleSubmit}
               name="contact"
+              method="POST"
               data-netlify="true"
+              action="/"
             >
               <input type="hidden" name="form-name" value="contact" />
-              {/* The rest of your form fields */}
               <div className="grid grid-cols-1 gap-4">
                 <input
                   type="text"
                   name="name"
                   placeholder="Jūsų vardas"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  className="bg-gray-800 text-white border rounded-lg py-2 px-4 w-full"
                 />
-                {errors.name && <p className="text-electric-blue text-sm">{errors.name}</p>}
-
                 <input
                   type="email"
                   name="email"
                   placeholder="El. paštas"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  className="bg-gray-800 text-white border rounded-lg py-2 px-4 w-full"
                 />
-                {errors.email && <p className="text-electric-blue text-sm">{errors.email}</p>}
-
                 <input
                   type="text"
                   name="phone"
                   placeholder="Telefono numeris"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  className="bg-gray-800 text-white border rounded-lg py-2 px-4 w-full"
                 />
-                {errors.phone && <p className="text-electric-blue text-sm">{errors.phone}</p>}
-
                 <textarea
                   name="message"
                   placeholder="Žinutė"
                   rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className={`bg-gray-800 text-white border ${errors.message
-                    ? 'border-electric-blue'
-                    : 'border-gray-700 focus:border-blue-500'
-                    } rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                  className="bg-gray-800 text-white border rounded-lg py-2 px-4 w-full"
                 />
-                {errors.message && <p className="text-electric-blue text-sm">{errors.message}</p>}
-
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
+                  className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-lg w-full"
                 >
-                  {isSubmitting ? 'Siunčiama...' : 'Siųsti'}
+                  Siųsti
                 </button>
               </div>
             </form>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
-
-};
-
-export default Kontaktai;
+}
