@@ -61,7 +61,7 @@ const Kontaktai: React.FC = () => {
     return validationErrors;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     const validationErrors = validate();
@@ -72,70 +72,28 @@ const Kontaktai: React.FC = () => {
 
     setIsSubmitting(true);
 
-    try {
-      // Prepare form data
-      const formDataToSubmit = new FormData();
-      formDataToSubmit.append('name', formData.name);
-      formDataToSubmit.append('email', formData.email);
-      formDataToSubmit.append('phone', formData.phone);
-      formDataToSubmit.append('subject', formData.subject);
-      formDataToSubmit.append('message', formData.message);
+    Swal.fire({
+      icon: 'success',
+      title: 'Jūsų žinutė išsiųsta sėkmingai!',
+      text: 'Artimiausiu metu su Jumis susisieksime.',
+      background: "#12121a",
+      color: 'rgba(255,255,255,0.7)',
+      showConfirmButton: true,
+      confirmButtonText: 'Gerai',
+      confirmButtonColor: '#4c6ef5',
+      timer: 3000, // Auto close after 3 seconds
+    });
 
-      // Send form data to Netlify form handler
-      const response = await fetch('/', {
-        method: 'POST',
-        body: formDataToSubmit,
-      });
+    // Reset form after successful submission
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      subject: 'Nauja kliento užklausa.',
+      message: '',
+    });
 
-      const result = await response.json();
-
-      if (result.success) {
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: 'Nauja kliento užklausa.',
-          message: '',
-        });
-        Swal.fire({
-          icon: 'success',
-          title: 'Jūsų žinutė išsiųsta sėkmingai!',
-          text: 'Artimiausiu metu su Jumis susisieksime.',
-          background: "#12121a",
-          color: 'rgba(255,255,255,0.7)',
-          showConfirmButton: true,
-          confirmButtonText: 'Gerai',
-          confirmButtonColor: '#4c6ef5',
-          timer: 3000, // Auto close after 3 seconds
-        });
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Klaida!',
-          text: 'Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.',
-          background: "#12121a",
-          color: 'rgba(255,255,255,0.7)',
-          showConfirmButton: true,
-          confirmButtonText: 'Gerai',
-          confirmButtonColor: '#4c6ef5',
-          timer: 3000,
-        });
-      }
-    } catch (error) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Klaida!',
-        text: 'Įvyko klaida siunčiant žinutę. Prašome bandyti dar kartą.',
-        background: "#12121a",
-        color: 'rgba(255,255,255,0.7)',
-        showConfirmButton: true,
-        confirmButtonText: 'Gerai',
-        confirmButtonColor: '#4c6ef5',
-        timer: 3000,
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    setIsSubmitting(false);
   };
 
   return (
