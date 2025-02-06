@@ -2,18 +2,32 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2"; // Import SweetAlert2
 
+type FormData = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
+
+type Errors = {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+};
+
 const Kontaktai = () => {
-  const [formData, setFormData] = useState<{ name: string; email: string; phone: string; message: string }>({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
 
-  const [errors, setErrors] = useState<{ name?: string; email?: string; phone?: string; message?: string }>({});
+  const [errors, setErrors] = useState<Errors>({});
 
-  const validate = () => {
-    let newErrors: typeof errors = {};
+  const validate = (): boolean => {
+    let newErrors: Errors = {};
     if (!formData.name.trim()) newErrors.name = "Įveskite vardą";
     if (!formData.email.includes("@")) newErrors.email = "Neteisingas el. pašto formatas";
     if (!/^\+?\d{7,}$/.test(formData.phone)) newErrors.phone = "Neteisingas telefono numeris";
@@ -46,7 +60,6 @@ const Kontaktai = () => {
     }
   };
 
-
   return (
     <div className="pt-36 mb-24">
       <div className="container mx-auto px-4">
@@ -68,11 +81,11 @@ const Kontaktai = () => {
                       type={field === "email" ? "email" : "text"}
                       name={field}
                       placeholder={field === "name" ? "Jūsų vardas" : field === "email" ? "El. paštas" : "Telefono numeris"}
-                      value={formData[field as keyof typeof formData]}
+                      value={formData[field as keyof FormData]}
                       onChange={handleChange}
-                      className={`bg-gray-800 text-electric-blue border ${errors[field as keyof typeof errors] ? "border-electric-blue" : "border-gray-700"} focus:border-blue-500 rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
+                      className={`bg-gray-800 text-electric-blue border ${errors[field as keyof Errors] ? "border-electric-blue" : "border-gray-700"} focus:border-blue-500 rounded-lg py-2 px-4 focus:ring focus:ring-blue-500 placeholder-gray-500 w-full`}
                     />
-                    {errors[field as keyof typeof errors] && <p className="text-electric-blue text-sm mt-1">{errors[field as keyof typeof errors]}</p>}
+                    {errors[field as keyof Errors] && <p className="text-electric-blue text-sm mt-1">{errors[field as keyof Errors]}</p>}
                   </div>
                 ))}
 
