@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import css from 'swiper/swiper-bundle.min.css'; 
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css/autoplay';
+import CardSwiper from '../components/SwiperTestimonials';
 
 
 const Titulinis = () => {
@@ -232,46 +233,7 @@ const Titulinis = () => {
             <section className="relative">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Ką sako mūsų klientai</h2>
-
-                {/* Swiper Component */}
-                <Swiper
-                  spaceBetween={20}  // Space between slides
-                  slidesPerView={1}
-                  loop={true}         // Loop the slides
-                  navigation={false}
-                  modules={[Autoplay]}
-                  autoplay={{
-                    delay: 6500,       // Slide change interval
-                    disableOnInteraction: false
-                  }}
-                  breakpoints={{
-                    768: {
-                      slidesPerView: 1,  // 2 testimonials on tablet
-                    },
-                    480: {
-                      slidesPerView: 1,  // 1 testimonial on mobile
-                    }
-                  }}
-                >
-                  {testimonials.map((testimonial, index) => (
-                    <SwiperSlide key={testimonial.name}>
-                      <div className="flex flex-col justify-between card hover:border-electric-blue/30 transition-colors duration-300 p-6">
-                        <p className="text-white/70 mb-4">
-                          {testimonial.content}
-                        </p>
-                        <div>
-                          <div className="flex items-center gap-4">
-                            <CircleUser className="w-6 h-6 text-electric-blue" />
-                            <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
-                          </div>
-                          <Link to={testimonial.url} target='_blank' className='text-xs font-light text-white/70'>
-                            {testimonial.company}
-                          </Link>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                  <CardSwiper />
               </div>
             </section>
             
