@@ -8,6 +8,11 @@ import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import Images from '../img/Images';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import css from 'swiper/swiper-bundle.min.css'; 
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css/autoplay';
+
 
 const Titulinis = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -50,10 +55,28 @@ const Titulinis = () => {
 
   const testimonials = [
     {
-      content: '"Puslapis sukurtas profesonaliai, greitai ir kokybiškai, 100% rekomenduoju!"',
+      content: '"Puiki kokybė atliekant konkrečius poreikius. Aukšto lygio techninis nusimanymas, profesionalus bendravimas. Rekomenduoju.Puiki kokybė atliepiant konkrečius poreikius. Aukšto lygio techninis nusimanymas, profesionalus bendravimas. Rekomenduoju."',
       name: 'Povilas',
       company: 'Freelance CG illustrator & animator',
       url: 'https://gavorka.com/',
+    },
+    {
+      content: '"Komunikacija, darbų atlikimas greitas ir sklandus. Kainodara aiški ir logiška. Aukštos kompetencijos. Didžiulis privalumas, kad padeda išsigryninti lūkesčius, net kai ir pats dar gerai nežinai ką ir kaip darysi. Labai platus paslaugų spektras, operatyvus prisitaikymas prie kintančios situacijos ir sprendimų atradimas, nebijo ieškoti nestandartinių kelių. Iš žmogiškos pusės labai kūrybingas, komunikabilus ir patikimas kūrėjas."',
+      name: 'Aiva',
+      company: 'Holistinė kosmetologija',
+      url: 'https://holistinekosmetologija.lt',
+    },
+    {
+      content: '"Malonus ir punktualus žmogus, savo srities profesionalas. Paslauga atlikta kokybiškai, per neįtikėtinai trumpą laiko tarpą už gerą kainą. Labai rekomenduoju."',
+      name: 'Rasa',
+      company: 'Esu tau',
+      url: 'https://esutau.lt',
+    },
+    {
+      content: '"Su šiuo specialistu dirbu jau daugiau nei metai. Pirmąkart užkabino tai, kad jis pasiūlė tikrai sąžiningą kainą. O darbus atlieka ytin kokybiškai, visada daro tol, kol klientui rezultatas būna toks kokio ir norėjo. Ir svarbiausia visada pasiekiamas kai reikia skubaus darbo. Ir iš esmės terminai yra labai spartūs. Ketinu ir toliau dirbti su šiuo specialistu."',
+      name: 'Andrius',
+      company: 'Basanavičiaus odontologijos centras',
+      url: 'https://bocenter.lt',
     },
     {
       content: '"Puikus darbas kuriant įstaigos svetainę. Profesionalu, atsižvelgiama į visus pasiūlymus, ieškoma geriausių sprendimų. Darbas atliktas laikantis visų sutartų terminų. Rekomenduojame."',
@@ -66,6 +89,12 @@ const Titulinis = () => {
       name: 'Greta',
       company: 'GO deko',
       url: 'https://godeko.lt/',
+    },
+    {
+      content: '"Didelis pasisekimas bendradarbiauti su tokiu paslaugų kūrėju ir tiekėju. Labai operatyvus darbas, profesionalus ir išsamus konsultavimas, argumentuoti patarimai, daug kantrybės, sąžiningumas, lankstumas, visokeriopa pagalba nuo pačios pradžios iki sklandžios pabaigos ir ilgalaikio bendradarbiavimo. Pranoko lūkesčius."',
+      name: 'Sigita',
+      company: 'Holistinė kosmetologija',
+      url: 'https://holistinekosmetologija.lt',
     },
     {
       content: '"Puikiai ir profesionaliai atliktas darbas, visada atsiliepiama ir pakonsultuojama telefonu. Viskas puikiai, gera kaina."',
@@ -203,31 +232,49 @@ const Titulinis = () => {
             <section className="relative">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Ką sako mūsų klientai</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                {/* Swiper Component */}
+                <Swiper
+                  spaceBetween={20}  // Space between slides
+                  slidesPerView={1}
+                  loop={true}         // Loop the slides
+                  navigation={false}
+                  modules={[Autoplay]}
+                  autoplay={{
+                    delay: 6500,       // Slide change interval
+                    disableOnInteraction: false
+                  }}
+                  breakpoints={{
+                    768: {
+                      slidesPerView: 1,  // 2 testimonials on tablet
+                    },
+                    480: {
+                      slidesPerView: 1,  // 1 testimonial on mobile
+                    }
+                  }}
+                >
                   {testimonials.map((testimonial, index) => (
-                    <motion.div
-                      key={testimonial.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="flex flex-col justify-between card hover:border-electric-blue/30 transition-colors duration-300 p-6"
-                    >
-                      <p className="text-white/70 mb-4">
-                        {testimonial.content}
-                      </p>
-                      <div>
-                        <div className="flex items-center gap-4">
-                          <CircleUser className="w-6 h-6 text-electric-blue" />
-                          <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
+                    <SwiperSlide key={testimonial.name}>
+                      <div className="flex flex-col justify-between card hover:border-electric-blue/30 transition-colors duration-300 p-6">
+                        <p className="text-white/70 mb-4">
+                          {testimonial.content}
+                        </p>
+                        <div>
+                          <div className="flex items-center gap-4">
+                            <CircleUser className="w-6 h-6 text-electric-blue" />
+                            <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
+                          </div>
+                          <Link to={testimonial.url} target='_blank' className='text-xs font-light text-white/70'>
+                            {testimonial.company}
+                          </Link>
                         </div>
-                        <Link to={testimonial.url} target='_blank' className='text-xs font-light text-white/70'>{testimonial.company }</Link>
                       </div>
-                    </motion.div>
+                    </SwiperSlide>
                   ))}
-                </div>
+                </Swiper>
               </div>
             </section>
+            
           </div>
         </div>
       </section>

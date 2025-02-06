@@ -389,3 +389,19 @@ footer {
   bottom: 2rem !important;
   left: 2rem !important;
 }
+
+.testimonials-container {
+  height: calc(4 * 250px);
+  /* Show 4 testimonials at a time (adjust the value depending on your design) */
+  /* overflow-y: hidden; */
+  /* Allow scrolling */
+  padding-bottom: 20px;
+  /* Space for the barely visible next testimonials */
+}
+
+.testimonial-item {
+  height: 250px;
+  /* Adjust the height of each testimonial item */
+  margin-bottom: 20px;
+  /* Adjust the gap between each testimonial */
+}
