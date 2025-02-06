@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 interface FormData {
   name: string;
@@ -18,6 +19,7 @@ interface Errors {
 const Kontaktai = () => {
   const [formData, setFormData] = useState<FormData>({ name: '', email: '', phone: '', message: '' });
   const [errors, setErrors] = useState<Errors>({});
+  const navigate = useNavigate(); // for navigation after form submission
 
   const validate = (): boolean => {
     let newErrors: Errors = {};
@@ -31,6 +33,23 @@ const Kontaktai = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const submitHandler = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+
+    if (!validate()) return; // Skip submission if validation fails
+
+    let myForm = document.getElementById("contact-form") as HTMLFormElement;
+    let formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(), // `as any` is used to type FormData properly
+    })
+      .then(() => navigate('/follow-up'))  // Navigate to follow-up page after successful form submission
+      .catch((error) => alert(error));  // Show alert on error
   };
 
   return (
@@ -56,13 +75,12 @@ const Kontaktai = () => {
           <div className="p-6 bg-dark-surface">
             <h2 className="text-xl font-bold mb-4 text-electric-blue">Užklausos forma</h2>
             <form
+              id="contact-form"
               name="contact-form"
               method="POST"
               action="/kontaktai"
               data-netlify="true"
-              onSubmit={(e) => {
-                if (!validate()) e.preventDefault();
-              }}
+              onSubmit={submitHandler}  // Use submitHandler on form submit
             >
               <input type="hidden" name="form-name" value="contact-form" />
               <div className="grid grid-cols-1 gap-4">
