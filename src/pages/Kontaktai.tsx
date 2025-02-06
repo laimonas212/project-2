@@ -69,11 +69,11 @@ const Kontaktai = () => {
             <h2 className="text-xl font-bold mb-4">Užklausos forma</h2>
             <form
               onSubmit={handleSubmit}
-              name="contact"
+              name="contact-form"
               method="POST"
               data-netlify="true"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="contact-form" />
 
               <div className="grid grid-cols-1 gap-4">
                 <input
