@@ -233,7 +233,13 @@ const Titulinis = () => {
             <section className="relative">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Ką sako mūsų klientai</h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
                   <CardSwiper />
+                </motion.div>
               </div>
             </section>
             
