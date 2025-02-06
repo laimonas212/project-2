@@ -33,9 +33,34 @@ const Kontaktai = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    validate();
+    const { name, value } = e.target;
+
+    // Update the form data
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    // Validate only the field being changed
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: validateField(name, value)
+    }));
   };
+
+  const validateField = (name: string, value: string): string | undefined => {
+    switch (name) {
+      case "name":
+        return value.trim() ? undefined : "Įveskite savo vardą";
+      case "email":
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? undefined : "Įveskite galiojantį el. paštą";
+      case "phone":
+        return /^\+?\d{7,15}$/.test(value) ? undefined : "Įveskite galiojantį telefono numerį";
+      case "message":
+        return value.trim() ? undefined : "Parašykite žinutę";
+      default:
+        return undefined;
+    }
+  };
+
+
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -48,7 +73,7 @@ const Kontaktai = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as any).toString(), // `as any` is used to type FormData properly
+      body: new URLSearchParams(formData as any).toString(),
     })
       .then(() => {
         // Show success message with SweetAlert2
@@ -59,14 +84,17 @@ const Kontaktai = () => {
           confirmButtonText: 'Gerai',
           background: '#12121a',
           customClass: {
-            popup: 'bg-dark-surface text-electric-blue', // Custom class for the popup
-            title: 'text-electric-blue', // Custom class for the header (title)
-            icon: 'text-green-500', // Custom class for the icon
-            confirmButton: 'bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500' // Custom button styles
+            popup: 'bg-dark-surface text-electric-blue',
+            title: 'text-electric-blue',
+            icon: 'text-green-500',
+            confirmButton: 'bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500'
           }
         }).then(() => {
-          // Redirect back to contact form after the success message
-          navigate('/kontaktai');
+          // Reset form data state and errors
+          setFormData({ name: '', email: '', phone: '', message: '' });
+          setErrors({}); // Clear any errors
+          navigate('/kontaktai'); // Redirect to the same page (or another)
+          myForm.reset(); // Reset the form element's values
         });
       })
       .catch((error) => {
@@ -76,7 +104,7 @@ const Kontaktai = () => {
           title: 'Įvyko klaida',
           text: 'Prašome pabandyti dar kartą.',
           confirmButtonText: 'Gerai',
-          background: '#12121a', // Optional: match your popup theme
+          background: '#12121a',
           customClass: {
             popup: 'bg-dark-surface text-electric-blue',
             title: 'text-electric-blue',
@@ -86,6 +114,7 @@ const Kontaktai = () => {
         });
       });
   };
+
 
 
   return (
