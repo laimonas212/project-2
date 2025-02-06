@@ -34,6 +34,7 @@ const Kontaktai = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    validate();
   };
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>): void => {
@@ -53,9 +54,16 @@ const Kontaktai = () => {
         // Show success message with SweetAlert2
         Swal.fire({
           icon: 'success',
-          title: 'Ačiū už Jūsų užklausą!',
-          text: 'Mes susisieksime su Jumis kuo greičiau.',
+          title: 'Žinutė išsiųsta sėkmingai!',
+          text: 'Netrukus su Jumis susisieksime.',
           confirmButtonText: 'Gerai',
+          background: '#12121a',
+          customClass: {
+            popup: 'bg-dark-surface text-electric-blue', // Custom class for the popup
+            title: 'text-electric-blue', // Custom class for the header (title)
+            icon: 'text-green-500', // Custom class for the icon
+            confirmButton: 'bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500' // Custom button styles
+          }
         }).then(() => {
           // Redirect back to contact form after the success message
           navigate('/kontaktai');
@@ -68,9 +76,17 @@ const Kontaktai = () => {
           title: 'Įvyko klaida',
           text: 'Prašome pabandyti dar kartą.',
           confirmButtonText: 'Gerai',
+          background: '#12121a', // Optional: match your popup theme
+          customClass: {
+            popup: 'bg-dark-surface text-electric-blue',
+            title: 'text-electric-blue',
+            icon: 'text-red-500',
+            confirmButton: 'bg-gradient-to-r from-red-500 to-orange-500 text-white hover:from-orange-500 hover:to-red-500'
+          }
         });
       });
   };
+
 
   return (
     <div className="pt-36 mb-24">
@@ -115,7 +131,7 @@ const Kontaktai = () => {
                         }
                         value={formData[field as keyof FormData]}
                         onChange={handleChange}
-                        className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-red-500' : 'border-gray-700'
+                        className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-electric-blue' : 'border-gray-700'
                           }`}
                       />
                     ) : (
@@ -125,11 +141,11 @@ const Kontaktai = () => {
                         rows={4}
                         value={formData[field as keyof FormData]}
                         onChange={handleChange}
-                        className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-red-500' : 'border-gray-700'
+                        className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-electric-blue' : 'border-gray-700'
                           }`}
                       />
                     )}
-                    {errors[field as keyof Errors] && <p className="text-red-500 text-sm mt-1">{errors[field as keyof Errors]}</p>}
+                    {errors[field as keyof Errors] && <p className="text-electric-blue text-sm mt-1">{errors[field as keyof Errors]}</p>}
                   </div>
                 ))}
                 <button
