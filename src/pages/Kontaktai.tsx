@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 interface FormData {
   name: string;
@@ -48,8 +49,27 @@ const Kontaktai = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData as any).toString(), // `as any` is used to type FormData properly
     })
-      .then(() => navigate('/follow-up'))  // Navigate to follow-up page after successful form submission
-      .catch((error) => alert(error));  // Show alert on error
+      .then(() => {
+        // Show success message with SweetAlert2
+        Swal.fire({
+          icon: 'success',
+          title: 'Ačiū už Jūsų užklausą!',
+          text: 'Mes susisieksime su Jumis kuo greičiau.',
+          confirmButtonText: 'Gerai',
+        }).then(() => {
+          // Redirect back to contact form after the success message
+          navigate('/kontaktai');
+        });
+      })
+      .catch((error) => {
+        // Show error message if fetch fails
+        Swal.fire({
+          icon: 'error',
+          title: 'Įvyko klaida',
+          text: 'Prašome pabandyti dar kartą.',
+          confirmButtonText: 'Gerai',
+        });
+      });
   };
 
   return (
