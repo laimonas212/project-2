@@ -19,18 +19,14 @@
   </head>
   <body>
     <div id="root"></div>
-    <form name="contact-form" data-netlify="true" >
+    <form name="contact-form" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact-form" />
-    
-        <input type="hidden" name="name" />
-       
-        <input type="hidden" name="email" />
-    
-        <input type="hidden" name="phone" />
-        
-        <input type="hidden" name="message" />
-
+      <input type="hidden" name="name" placeholder="Jūsų vardas" required />
+      <input type="hidden" name="email" placeholder="El. paštas" required />
+      <input type="hidden" name="phone" placeholder="Telefono numeris" required />
+      <textarea name="message" placeholder="Žinutė" rows="4" required class="hidden"></textarea>
     </form>
+
        
       </div>
     </form>
