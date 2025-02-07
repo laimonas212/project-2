@@ -46,7 +46,7 @@
           document.getElementById("contact-form").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent default form submission
 
-            grecaptcha.execute("YOUR_SITE_KEY", { action: "submit" }).then(function (token) {
+            grecaptcha.execute("6Leou88qAAAAAAeYFsOFtcx394MpNQnp7j6PuUtr", { action: "submit" }).then(function (token) {
               document.getElementById("g-recaptcha-response").value = token;
               event.target.submit(); // Submit the form after adding the token
             });
