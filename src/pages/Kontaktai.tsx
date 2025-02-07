@@ -145,6 +145,7 @@ const Kontaktai = () => {
               method="POST"
               action="/kontaktai"
               data-netlify="true"
+              data-netlify-recaptcha="true"
               onSubmit={submitHandler}  // Use submitHandler on form submit
             >
               <input type="hidden" name="form-name" value="contact-form" />
@@ -177,6 +178,7 @@ const Kontaktai = () => {
                     {errors[field as keyof Errors] && <p className="text-electric-blue text-sm mt-1">{errors[field as keyof Errors]}</p>}
                   </div>
                 ))}
+                <div data-netlify-recaptcha="true"></div>
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
