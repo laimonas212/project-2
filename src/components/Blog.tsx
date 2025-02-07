@@ -59,18 +59,19 @@ const Blog = () => {
                     }}
                 >
                     {blogEntries.map((entry, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="card group hover:border-electric-blue/30 transition-colors duration-300">
+                        <SwiperSlide key={index} className="h-auto">
+                            <div className="card group hover:border-electric-blue/30 transition-colors duration-300 flex flex-col h-full">
                                 <div className="aspect-w-16 aspect-h-9 mb-4">
                                     <img src={entry.image} alt={entry.title} className="object-cover w-auto h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">{entry.title}</h3>
-                                <p className="text-white/70">{entry.excerpt}</p>
-                                <Link to={entry.url} className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300">
+                                <p className="text-white/70 flex-grow">{entry.excerpt}</p>
+                                <Link to={entry.url} className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300 mt-auto">
                                     Skaityti daugiau
                                 </Link>
                             </div>
                         </SwiperSlide>
+
                     ))}
                 </Swiper>
                 </div>
