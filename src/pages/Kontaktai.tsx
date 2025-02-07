@@ -113,8 +113,6 @@ const Kontaktai = () => {
       });
   };
 
-
-
   return (
     <div className="pt-36 mb-24">
       <div className="container mx-auto px-4">
@@ -175,7 +173,6 @@ const Kontaktai = () => {
                     {errors[field as keyof Errors] && <p className="text-electric-blue text-sm mt-1">{errors[field as keyof Errors]}</p>}
                   </div>
                 ))}
-                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"/>
 
                 <button
                   type="submit"
