@@ -20,7 +20,7 @@
   </head>
   <body style="background: #12121a">
     <div id="root"></div>
-    <form style="display: none;" name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form style="display: none;" name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
       <p class="hidden" >
         <label>
           Don't fill this out if you're human: <input name="bot-field" />
@@ -31,6 +31,7 @@
       <input type="hidden" name="email" placeholder="El. paštas" required />
       <input type="hidden" name="phone" placeholder="Telefono numeris" required />
       <textarea name="message" placeholder="Žinutė" rows="4" required class="hidden"></textarea>
+      <div data-netlify-recaptcha="true"></div>
     </form>
 
        
