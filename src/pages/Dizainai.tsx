@@ -417,10 +417,7 @@ const templates: Template[] = [
     ],
     description: '„Venture Capital“ dizaino paketas sujungia gražius maketus su lengvai sekamomis puslapių struktūromis - tobula kombinacija kuriant profesionalią svetainę, kuri orientuota į jūsų lankytojų problemas ir poreikius.',
   }
-  
-
 ];
-
 
 interface MobilePreviewProps {
   template: Template;
@@ -623,7 +620,7 @@ const Templates: React.FC = () => {
 
         <motion.div
           variants={containerVariants}
-          initial="hidden"
+          // initial="hidden"
           whileInView="visible"
           viewport={{ once: true }} // Ensures animation happens only once
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-32"
