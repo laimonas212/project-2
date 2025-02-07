@@ -121,8 +121,8 @@ const Kontaktai = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-electric-blue">Parašykite mums</h1>
-          <p className="text-lg text-electric-blue/70">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Parašykite mums</h1>
+          <p className="text-lg text-white/70">
             Turite klausimų? Parašykite mums ir mes su Jumis susisieksime.
           </p>
         </motion.div>

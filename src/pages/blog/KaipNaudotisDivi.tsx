@@ -1,9 +1,10 @@
 import React from 'react';
 import Images from '../../img/Images';
+import CTA from '../../components/CTA';
 
 const KaipNaudotisDivi = () => {
     return (
-        <div className="pt-36 pb-8 min-h-screen bg-gray-900">
+        <div className="pt-36 min-h-screen bg-gray-900">
             <div className="container text-white/70 mx-auto px-4">
                 <div className="mb-8">
                     <h1 className="text-3xl font-semibold text-electric-blue mb-4">Kaip naudotis Divi?</h1>
@@ -84,6 +85,9 @@ const KaipNaudotisDivi = () => {
                         Išsamesnė informacija: <a href="https://www.elegantthemes.com/documentation/divi/visual-builder/" target='_blank' className="text-electric-blue underline">DIVI dokumentacija</a>
                     </p>
                 </div>
+            </div>
+            <div className='relative'>
+                <CTA />
             </div>
         </div>
     );

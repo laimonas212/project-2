@@ -1,3 +1,4 @@
+import CTA from '../../components/CTA';
 import Images from '../../img/Images';
 import React from 'react';
 
@@ -84,6 +85,9 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 <p className="mt-4 pb-24 text-lg">
                     Daugiau informacijos rasite: <a href="https://docs.woocommerce.com/document/managing-products/" target='_blank' className="text-electric-blue underline">WooCommerce dokumentacija</a>.
                 </p>
+            </div>
+            <div className='relative'>
+                <CTA />
             </div>
         </div>
     );

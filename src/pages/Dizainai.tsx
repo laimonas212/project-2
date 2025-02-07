@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight, User, ShoppingCart, Layers, Info, Plus } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, User, ShoppingBag, Layers, Info, Plus } from 'lucide-react';
 import Images from '../img/Images';
 
 interface Template {
@@ -450,7 +450,7 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
           {template.type === 'asmeninės svetainės' ? (
             <User className="inline-block h-5" />
           ) : (
-            <ShoppingCart className="inline-block h-5" />
+              <ShoppingBag className="inline-block h-5" />
           )}
         </h3>
 
@@ -605,7 +605,7 @@ const Templates: React.FC = () => {
             {[
               { type: 'rodyti viską', icon: <Layers /> },
               { type: 'asmeninės svetainės', icon: <User /> },
-              { type: 'el. parduotuvės', icon: <ShoppingCart /> },
+              { type: 'el. parduotuvės', icon: <ShoppingBag /> },
             ].map(({ type, icon }) => (
               <button
                 key={type}
@@ -620,8 +620,6 @@ const Templates: React.FC = () => {
             ))}
           </div>
         </motion.div>
-
-        
 
         <motion.div
           variants={containerVariants}

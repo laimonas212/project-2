@@ -5,6 +5,7 @@ import { EffectCards, Autoplay } from "swiper/modules";
 import { Link } from 'react-router-dom';
 import "swiper/css";
 import "swiper/css/effect-cards";
+import { motion } from "framer-motion";
 
 const testimonials = [
     {
@@ -59,31 +60,40 @@ const testimonials = [
 
 const CardSwiper = () => {
     return (
-        <div className="w-full max-w-xs mx-auto">
-            <div className="w-full max-w-xs mx-auto pt-4">
-                <Swiper
-                    effect="cards"
-                    loop={true}
-                    grabCursor={true}
-                    modules={[EffectCards, Autoplay]}
-                    autoplay={{ delay: 7000, disableOnInteraction: false }}
-                    className="h-[400px]" // Ensures consistent height
-                >
-                    {testimonials.map((testimonial, index) => (
-                        <SwiperSlide key={index} className="flex items-stretch">
-                            <div className="card text-white p-6 flex flex-col justify-between rounded-lg hover:border-electric-blue/30 shadow-lg h-full min-h-[250px]">
-                                <div className="flex flex-col align-center flex-grow justify-center">
-                                    <p className="text-center text-white/80 mb-4">{testimonial.content}</p>
-                                </div>
-                                <div className="mt-auto">
-                                    <h3 className="text-white/30">{testimonial.name}</h3>
-                                    <Link to={testimonial.url} className="text-sm text-white/30" target="_blank">{testimonial.company}</Link>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+        <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Ką sako mūsų klientai</h2>
+            <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+            >
+                <div className="w-full max-w-xs mx-auto">
+                    <div className="w-full max-w-xs mx-auto pt-4">
+                        <Swiper
+                            effect="cards"
+                            loop={true}
+                            grabCursor={true}
+                            modules={[EffectCards, Autoplay]}
+                            autoplay={{ delay: 7000, disableOnInteraction: false }}
+                            className="h-[400px]" // Ensures consistent height
+                        >
+                            {testimonials.map((testimonial, index) => (
+                                <SwiperSlide key={index} className="flex items-stretch">
+                                    <div className="card text-white p-6 flex flex-col justify-between rounded-lg hover:border-electric-blue/30 shadow-lg h-full min-h-[250px] transition-colors duration-300">
+                                        <div className="flex flex-col align-center flex-grow justify-center">
+                                            <p className="text-center text-white/80 mb-4">{testimonial.content}</p>
+                                        </div>
+                                        <div className="mt-auto">
+                                            <h3 className="text-white/30">{testimonial.name}</h3>
+                                            <Link to={testimonial.url} className="text-sm text-white/30" target="_blank">{testimonial.company}</Link>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                </div>
+            </motion.div>
         </div>
     );
 };
