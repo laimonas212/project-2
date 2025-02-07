@@ -63,9 +63,10 @@ const CardSwiper = () => {
             <div className="w-full max-w-xs mx-auto pt-4">
                 <Swiper
                     effect="cards"
+                    loop={true}
                     grabCursor={true}
                     modules={[EffectCards, Autoplay]}
-                    autoplay={{ delay: 7000, disableOnInteraction: true }}
+                    autoplay={{ delay: 7000, disableOnInteraction: false }}
                     className="h-[400px]" // Ensures consistent height
                 >
                     {testimonials.map((testimonial, index) => (

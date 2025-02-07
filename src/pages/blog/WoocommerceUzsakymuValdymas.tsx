@@ -3,7 +3,7 @@ import React from 'react';
 
 const WoocommerceUzsakymuValdymas: React.FC = () => {
     return (
-        <div className="pt-36 mb-32 min-h-screen bg-gray-900">
+        <div className="pt-36 pb-8 min-h-screen bg-gray-900">
             <div className="container text-white/70 mx-auto px-4">
                 <h1 className="text-4xl font-bold text-electric-blue mb-6">Užsakymų valdymas WooCommerce</h1>
                 <p className="text-lg text-white/70 mb-16">
@@ -95,7 +95,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 {/* add woo logo from Images.woo flex center*/}
-                <img src={Images.logos.wooWhite} alt="WooCommerce" className="mx-auto h-16 mt-24" />
+                <img src={Images.logos.wooWhite} alt="WooCommerce" className="h-16 mt-24" />
 
                 <p className="mt-4 pb-24 text-lg">
                     Išsamesnė informacija: <a href="https://docs.woocommerce.com/document/managing-orders/" target='_blank' className="text-electric-blue underline">Woocommerce dokumentacija</a>
