@@ -4,7 +4,7 @@ import React from 'react';
 
 const WoocommerceUzsakymuValdymas: React.FC = () => {
     return (
-        <div className="pt-36 pb-8 min-h-screen bg-gray-900">
+        <div className="pt-36 pb-8 min-h-screen">
             <div className="container text-white/70 mx-auto px-4">
                 <h1 className="text-4xl font-bold text-electric-blue mb-6">Užsakymų valdymas WooCommerce</h1>
                 <p className="text-lg text-white/70 mb-16">

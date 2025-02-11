@@ -26,6 +26,18 @@ const Blog = () => {
             excerpt: "Divi yra populiarus WordPress puslapių kūrimo įrankis, leidžiantis lengvai kurti puslapius naudojant drag-and-drop redaktorių.",
             url: "/blog/kaip-naudotis-divi",
         },
+        {
+            image: Images.logos.divi,
+            title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
+            excerpt: "Divi veikia pagal WYSIWYG principą („What You See Is What You Get“), todėl redaguodami svetainę iškart matote, kaip ji atrodys.",
+            url: "/blog/kas-yra-divi",
+        },
+        {
+            image: Images.five,
+            title: "5 klaidos, kurias daro verslai kurdami svetainę",
+            excerpt: "Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams.",
+            url: "/blog/5-klaidos-kurias-daro-verslai",
+        },
     ];
 
     return (

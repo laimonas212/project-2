@@ -4,10 +4,10 @@ import CTA from '../../components/CTA';
 
 const KaipNaudotisDivi = () => {
     return (
-        <div className="pt-36 min-h-screen bg-gray-900">
+        <div className="pt-36 min-h-screen">
             <div className="container text-white/70 mx-auto px-4">
                 <div className="mb-8">
-                    <h1 className="text-3xl font-semibold text-electric-blue mb-4">Kaip naudotis Divi?</h1>
+                    <h1 className="text-4xl font-bold text-electric-blue mb-12">Kaip naudotis Divi?</h1>
                     <h2 className="text-2xl font-semibold text-electric-blue mb-4">Kas yra Divi?</h2>
                     <p className="text-white/70 mb-6">Divi yra populiari „drag-and-drop“ svetainių kūrimo sistema, leidžianti kurti profesionalias interneto svetaines be programavimo žinių. Ji veikia kaip „WordPress“ tema su įdiegtu puslapių kūrimo įrankiu („Divi Builder“), kuris leidžia redaguoti puslapius realiu laiku.</p>
 
@@ -79,7 +79,7 @@ const KaipNaudotisDivi = () => {
                         <li>Jei puslapis dar nepublikuotas, paspauskite **„Publish“ (Publikuoti)**.</li>
                     </ol>
 
-                    <img src={Images.logos.divi} alt="WooCommerce" className="h-16 mt-24" />
+                    <img src={Images.logos.divi} alt="Divi" className="h-16 mt-24" />
 
                     <p className="mt-4 pb-24 text-lg">
                         Išsamesnė informacija: <a href="https://www.elegantthemes.com/documentation/divi/visual-builder/" target='_blank' className="text-electric-blue underline">DIVI dokumentacija</a>

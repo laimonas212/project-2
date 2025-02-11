@@ -16,7 +16,9 @@ import Slapukai from './pages/Slapukai';
 import Titulinis from './pages/Titulinis';
 import WoocommerceUzsakymuValdymas from './pages/blog/WoocommerceUzsakymuValdymas';
 import NaujasWoocommerceProduktas from './pages/blog/NaujasWoocoomerceProduktas'; // Fixed typo
-import KaipNaudotisDivi from './pages/blog/KaipNaudotisDivi';
+import KaipNaudotisDivi from './pages/blog/KasYraDivi';
+import KasYraDivi from './pages/blog/KaipNaudotisDivi';
+import KlaidosKuriasDaroVerslai from './pages/blog/KlaidosKuriasDaroVerslai';
 import { initGA, logPageView } from "./analytics";
 
 // Import CookieBot
@@ -59,6 +61,8 @@ function App() {
             <Route path="/blog/woocommerce-uzsakymu-valdymas" element={<WoocommerceUzsakymuValdymas />} />
             <Route path="/blog/naujas-woocommerce-produktas" element={<NaujasWoocommerceProduktas />} />
             <Route path="/blog/kaip-naudotis-divi" element={<KaipNaudotisDivi />} />
+            <Route path="/blog/kas-yra-divi" element={<KasYraDivi />} />
+            <Route path="/blog/5-klaidos-kurias-daro-verslai" element={<KlaidosKuriasDaroVerslai />} />
           </Routes>
           <ScrollToTopButton />
         </motion.div>

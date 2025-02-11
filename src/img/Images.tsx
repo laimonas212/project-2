@@ -30,6 +30,7 @@ import chatgpt from './logos/chatgpt.png';
 import react from './logos/react.png';
 import html from './logos/html5.png';
 import css from './logos/css.png';
+import five from './5.png'
 
 
 // acai bowl
@@ -281,6 +282,7 @@ import ventureCapitalTeam from '././templates/venture-capital/venture-capital-fi
 const Images = {
     logo: logoImage,
     woo: woo,
+    five: five,
     logos: {
         wooWhite: wooWhite,
         wordpress: wordpress,
