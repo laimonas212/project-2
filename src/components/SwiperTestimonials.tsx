@@ -6,8 +6,15 @@ import { Link } from 'react-router-dom';
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 
 const testimonials = [
+    {
+        content: 'Rekomenduoju 100 proc.! Lengvas bendravimas, puiki darbų kokybė, demokratiška kaina ir super darbų atlikimo greitis.Turėjau daug vargų su kitais programavimo ir dizaino paslaugų teikėjais, iki kol atradau Amber Web! Dabar jaučiuosi suprasta ir be IT žodyno, jaučiuosi, kompetentingai konsultuojama. Jaučiuosi, kad mano verslo idėjos ir el.parduotuvė patikimose rankose, kai tik vėl prireiks pagalbos! :D',
+        name: 'Kristina',
+        company: 'Nervų sistemai',
+        url: 'https://nervusistemai.lt/',
+    },
     {
         content: '"Puiki kokybė atliekant konkrečius poreikius. Aukšto lygio techninis nusimanymas, profesionalus bendravimas. Rekomenduoju.Puiki kokybė atliepiant konkrečius poreikius. Aukšto lygio techninis nusimanymas, profesionalus bendravimas. Rekomenduoju."',
         name: 'Povilas',
@@ -85,7 +92,7 @@ const CardSwiper = () => {
                                         </div>
                                         <div className="mt-auto">
                                             <h3 className="text-white/30">{testimonial.name}</h3>
-                                            <Link to={testimonial.url} className="text-sm text-white/30" target="_blank">{testimonial.company}</Link>
+                                            <Link to={testimonial.url} className="text-sm flex align-center text-white/30 hover:text-electric-blue/50 transition-all duration-300" target="_blank">{testimonial.company}<ExternalLink className="h-3 w-3 mt-1 ml-1"/></Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>
