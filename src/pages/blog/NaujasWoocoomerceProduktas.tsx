@@ -1,11 +1,13 @@
 import CTA from '../../components/CTA';
 import Images from '../../img/Images';
 import React from 'react';
+import BlogNavigation from '../../components/BlogNavigation';
+import blogEntries from '../../components/blogEntries';
 
 const WoocommerceNaujasProduktas: React.FC = () => {
     return (
         <div className="pt-36 pb-8 min-h-screen">
-            <div className="container text-white/70 mx-auto px-4">
+            <div className="container text-white/80 mx-auto px-4">
                 <h1 className="text-4xl font-bold text-electric-blue mb-6">Naujo produkto kūrimas WooCommerce</h1>
                 <p className="text-lg text-white/70 mb-16">
                     Jei norite pridėti naują produktą į savo WooCommerce parduotuvę, sekite šiuos paprastus žingsnius.
@@ -13,7 +15,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 </p>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Naujo produkto pridėjimas</h2>
+                    <h2 className="text-2xl font-semibold ">Naujo produkto pridėjimas</h2>
                     <p className="mb-4 text-lg text-white/70">Norėdami pridėti naują produktą:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Prieš pradėdami, eikite į Prietaisų skydelis &gt; WooCommerce &gt; Produktai.</li>
@@ -23,7 +25,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Produkto informaciją</h2>
+                    <h2 className="text-2xl font-semibold ">Produkto informaciją</h2>
                     <p className="mb-4 text-lg text-white/70">Kiekvienam produktui reikės įvesti šią informaciją:</p>
                     <ul className="list-decimal pl-5 space-y-2">
                         <li>Produkto aprašymas – trumpas arba išsamus aprašymas apie jūsų produktą.</li>
@@ -33,7 +35,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Produkto tipas ir inventorius</h2>
+                    <h2 className="text-2xl font-semibold ">Produkto tipas ir inventorius</h2>
                     <p className="mb-4 text-lg text-white/70">Pasirinkite produkto tipą ir nustatykite inventorių:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Pasirinkite „Fizinis produktas“ arba „Skaitmeninis produktas“ pagal tai, kas tinka.</li>
@@ -42,7 +44,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Produkto kategorijos ir žymos</h2>
+                    <h2 className="text-2xl font-semibold ">Produkto kategorijos ir žymos</h2>
                     <p className="mb-4 text-lg text-white/70">
                         Kategorijos ir žymos padės klientams lengviau rasti jūsų produktus parduotuvėje.
                     </p>
@@ -53,7 +55,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Produkto kaina ir mokesčiai</h2>
+                    <h2 className="text-2xl font-semibold ">Produkto kaina ir mokesčiai</h2>
                     <p className="mb-4 text-lg text-white/70">
                         Nustatykite produkto kainą ir mokesčius (jei taikoma) pagal savo parduotuvės reikalavimus.
                     </p>
@@ -64,7 +66,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Produkto pristatymas</h2>
+                    <h2 className="text-2xl font-semibold ">Produkto pristatymas</h2>
                     <p className="mb-4 text-lg text-white/70">
                         Jei tai fizinis produktas, reikia nurodyti jo pristatymo informaciją.
                     </p>
@@ -75,7 +77,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Produkto paskelbimas</h2>
+                    <h2 className="text-2xl font-semibold ">Produkto paskelbimas</h2>
                     <p className="mb-4 text-lg text-white/70">Kai visos informacijos laukeliai užpildyti, spustelėkite „Paskelbti“ ir produktas bus matomas jūsų parduotuvėje.</p>
                 </section>
 
@@ -86,6 +88,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
                     Daugiau informacijos rasite: <a href="https://docs.woocommerce.com/document/managing-products/" target='_blank' className="text-electric-blue underline">WooCommerce dokumentacija</a>.
                 </p>
             </div>
+            <BlogNavigation blogEntries={blogEntries} />
             <div className='relative'>
                 <CTA />
             </div>

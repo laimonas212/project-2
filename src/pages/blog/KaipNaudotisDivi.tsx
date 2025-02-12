@@ -1,27 +1,29 @@
 import React from 'react';
 import Images from '../../img/Images';
 import CTA from '../../components/CTA';
+import BlogNavigation from '../../components/BlogNavigation';
+import blogEntries from '../../components/blogEntries';
 
 const KaipNaudotisDivi = () => {
     return (
         <div className="pt-36 min-h-screen">
-            <div className="container text-white/70 mx-auto px-4">
+            <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8">
                     <h1 className="text-4xl font-bold text-electric-blue mb-12">Kaip naudotis Divi?</h1>
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Kas yra Divi?</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Kas yra Divi?</h2>
                     <p className="text-white/70 mb-6">Divi yra populiari „drag-and-drop“ svetainių kūrimo sistema, leidžianti kurti profesionalias interneto svetaines be programavimo žinių. Ji veikia kaip „WordPress“ tema su įdiegtu puslapių kūrimo įrankiu („Divi Builder“), kuris leidžia redaguoti puslapius realiu laiku.</p>
 
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Pagrindinė sąsaja ir navigacija</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Pagrindinė sąsaja ir navigacija</h2>
                     <p className="text-white/70 mb-6">Kai prisijungiate prie „WordPress“ administratoriaus valdymo skydelio (angl. „Dashboard“), kairiajame šone rasite meniu, kuriame yra sekcijos **„Pages“ (Puslapiai)**, **„Posts“ (Įrašai)**, **„Divi“ nustatymai** ir kitos. Pagrindinis įrankis, su kuriuo dirbsime, yra **„Divi Builder“**, kuris leidžia redaguoti puslapius vizualiai.</p>
 
-                    <h3 className="text-xl font-semibold text-electric-blue mb-2">Kaip redaguoti puslapius su Divi?</h3>
+                    <h3 className="text-xl font-semibold  mb-2">Kaip redaguoti puslapius su Divi?</h3>
                     <ol className="list-decimal pl-6 space-y-2 mb-6">
                         <li>Eikite į **„Pages“ (Puslapiai)** kairiajame meniu.</li>
                         <li>Pasirinkite puslapį, kurį norite redaguoti, ir spustelėkite **„Edit with Divi Builder“**.</li>
                         <li>Atsidarys vizualus redaktorius, kuriame matysite savo puslapį taip, kaip jis atrodo vartotojams.</li>
                     </ol>
 
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Kaip pridėti naują sekciją?</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip pridėti naują sekciją?</h2>
                     <ol className="list-decimal pl-6 space-y-2 mb-6">
                         <li>Paspauskite **mėlyną pliuso mygtuką** (+), kad pridėtumėte naują sekciją.</li>
                         <li>Pasirinkite sekcijos tipą:
@@ -36,7 +38,7 @@ const KaipNaudotisDivi = () => {
                         <li>Pridėkite **modulį** (Module), paspausdami **juodą pliusą** ir pasirinkite norimą elementą (pvz., tekstą, vaizdą, mygtuką).</li>
                     </ol>
 
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Kaip keisti tekstą?</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip keisti tekstą?</h2>
                     <ol className="list-decimal pl-6 space-y-2 mb-6">
                         <li>Norėdami pakeisti tekstą, **spustelėkite** ant jo tiesiogiai vizualiniame redaktoriuje ir pradėkite rašyti.</li>
                         <li>Alternatyviai galite spausti **nustatymų mygtuką** (krumpliaratį ⚙️) ant teksto modulio.</li>
@@ -44,7 +46,7 @@ const KaipNaudotisDivi = () => {
                         <li>Baigus keitimus, paspauskite **„Save“ (Išsaugoti)**.</li>
                     </ol>
 
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Kaip keisti spalvas?</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip keisti spalvas?</h2>
                     <ol className="list-decimal pl-6 space-y-2 mb-6">
                         <li>Paspauskite **nustatymų mygtuką** (⚙️) ant norimos sekcijos, eilutės ar modulio.</li>
                         <li>Eikite į **„Design“ (Dizainas)** skiltį.</li>
@@ -53,7 +55,7 @@ const KaipNaudotisDivi = () => {
                         <li>Paspauskite **„Save“ (Išsaugoti)**.</li>
                     </ol>
 
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Kaip keisti teksto dydį?</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip keisti teksto dydį?</h2>
                     <ol className="list-decimal pl-6 space-y-2 mb-6">
                         <li>Atidarykite teksto modulio nustatymus (⚙️).</li>
                         <li>Eikite į **„Design“ (Dizainas) → „Text“ (Tekstas)**.</li>
@@ -61,7 +63,7 @@ const KaipNaudotisDivi = () => {
                         <li>Paspauskite **„Save“ (Išsaugoti)**.</li>
                     </ol>
 
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Pagrindiniai Divi moduliai</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Pagrindiniai Divi moduliai</h2>
                     <p className="text-white/70 mb-6">Divi siūlo daugybę modulių, kurie leidžia lengvai pritaikyti puslapį:</p>
                     <ul className="list-inside list-disc ml-6 text-white/70 mb-6">
                         <li>**Text (Tekstas)** – leidžia rašyti ir formatuoti tekstą.</li>
@@ -72,7 +74,7 @@ const KaipNaudotisDivi = () => {
                         <li>**Video** – įterpti vaizdo įrašą.</li>
                     </ul>
 
-                    <h2 className="text-2xl font-semibold text-electric-blue mb-4">Kaip išsaugoti ir publikuoti pakeitimus?</h2>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip išsaugoti ir publikuoti pakeitimus?</h2>
                     <ol className="list-decimal pl-6 space-y-2 mb-6">
                         <li>Baigus redaguoti, spustelėkite **„Save“ (Išsaugoti)** apatiniame dešiniajame kampe.</li>
                         <li>Norėdami atnaujinti puslapį, spustelėkite **„Exit Visual Builder“ (Išeiti iš vizualinio redaktoriaus)**.</li>
@@ -86,6 +88,7 @@ const KaipNaudotisDivi = () => {
                     </p>
                 </div>
             </div>
+            <BlogNavigation blogEntries={blogEntries}/>
             <div className='relative'>
                 <CTA />
             </div>

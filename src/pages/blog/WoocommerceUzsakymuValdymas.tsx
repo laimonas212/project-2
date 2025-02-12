@@ -1,11 +1,13 @@
 import CTA from '../../components/CTA';
 import Images from '../../img/Images';
 import React from 'react';
+import BlogNavigation from '../../components/BlogNavigation';
+import blogEntries from '../../components/blogEntries';
 
 const WoocommerceUzsakymuValdymas: React.FC = () => {
     return (
         <div className="pt-36 pb-8 min-h-screen">
-            <div className="container text-white/70 mx-auto px-4">
+            <div className="container text-white/80 mx-auto px-4">
                 <h1 className="text-4xl font-bold text-electric-blue mb-6">Užsakymų valdymas WooCommerce</h1>
                 <p className="text-lg text-white/70 mb-16">
                     Kai klientas pateikia užsakymą jūsų parduotuvėje, užsakymo informacija bus rodoma WooCommerce užsakymų skiltyje.
@@ -13,7 +15,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </p>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Užsakymų peržiūra</h2>
+                    <h2 className="text-2xl font-semibold ">Užsakymų peržiūra</h2>
                     <p className="mb-4 text-lg text-white/70">Norėdami peržiūrėti užsakymus:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Eikite į Prietaisų skydelis &gt; WooCommerce &gt; Užsakymai.</li>
@@ -31,7 +33,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Užsakymo peržiūra ir redagavimas</h2>
+                    <h2 className="text-2xl font-semibold ">Užsakymo peržiūra ir redagavimas</h2>
                     <p className="mb-4 text-lg text-white/70">Norėdami peržiūrėti ar redaguoti užsakymo informaciją:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Eikite į WooCommerce &gt; Užsakymai ir spustelėkite užsakymą, kurį norite peržiūrėti.</li>
@@ -46,7 +48,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Užsakymo būsenos keitimas</h2>
+                    <h2 className="text-2xl font-semibold ">Užsakymo būsenos keitimas</h2>
                     <p className="mb-4 text-lg text-white/70">Norėdami keisti užsakymo būseną:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Užsakymo puslapyje Būsena skiltyje pasirinkite norimą būseną iš išskleidžiamo sąrašo.</li>
@@ -55,7 +57,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Kliento pranešimai ir užsakymo pastabos</h2>
+                    <h2 className="text-2xl font-semibold ">Kliento pranešimai ir užsakymo pastabos</h2>
                     <p className="mb-4 text-lg text-white/70">
                         Jūs galite pridėti pastabas prie užsakymų, kurios gali būti siunčiamos klientams arba naudojamos tik vidinėje sistemoje.
                     </p>
@@ -67,7 +69,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Grąžinimų ir atšaukimų valdymas</h2>
+                    <h2 className="text-2xl font-semibold ">Grąžinimų ir atšaukimų valdymas</h2>
                     <p className="mb-4 text-lg text-white/70">Jei klientas nori grąžinti prekę arba atšaukti užsakymą:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Atidarykite užsakymą ir spustelėkite Grąžinti šalia prekės, kurią reikia grąžinti.</li>
@@ -77,7 +79,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Užsakymų filtravimas ir eksportavimas</h2>
+                    <h2 className="text-2xl font-semibold ">Užsakymų filtravimas ir eksportavimas</h2>
                     <p className="mb-4 text-lg text-white/70">WooCommerce leidžia lengvai filtruoti užsakymus pagal datą, būseną ir kitus kriterijus:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Eikite į WooCommerce &gt; Užsakymai.</li>
@@ -87,7 +89,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold text-electric-blue">Užsakymo ataskaitos</h2>
+                    <h2 className="text-2xl font-semibold ">Užsakymo ataskaitos</h2>
                     <p className="mb-4 text-lg text-white/70">Norėdami gauti daugiau įžvalgų apie savo užsakymus ir pardavimus:</p>
                     <ol className="list-decimal pl-5 space-y-2">
                         <li>Eikite į WooCommerce &gt; Ataskaitos.</li>
@@ -102,6 +104,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
                     Išsamesnė informacija: <a href="https://docs.woocommerce.com/document/managing-orders/" target='_blank' className="text-electric-blue underline">Woocommerce dokumentacija</a>
                 </p>
             </div>
+            <BlogNavigation blogEntries={blogEntries} />
             <div className='relative'>
                 <CTA />
             </div>

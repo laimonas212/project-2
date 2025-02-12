@@ -5,41 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import BlogNavigation from "./BlogNavigation";
+import blogEntries from "./blogEntries";
 
 const Blog = () => {
-    const blogEntries = [
-        {
-            image: Images.logos.wooWhite,
-            title: "WooCommerce užsakymų valdymas",
-            excerpt: "WooCommerce užsakymų valdymas leidžia lengvai sekti ir tvarkyti užsakymus, keisti jų būsenas, generuoti sąskaitas faktūras ir organizuoti prekių pristatymą.",
-            url: "/blog/woocommerce-uzsakymu-valdymas",
-        },
-        {
-            image: Images.logos.wooWhite,
-            title: "Kaip sukurti naują WooCommerce produktą?",
-            excerpt: "Norėdami sukurti naują produktą WooCommerce, eikite į „Produktai“ sekciją ir pasirinkite „Pridėti naują“.",
-            url: "/blog/naujas-woocommerce-produktas",
-        },
-        {
-            image: Images.logos.divi,
-            title: "Kaip naudotis DIVI?",
-            excerpt: "Divi yra populiarus WordPress puslapių kūrimo įrankis, leidžiantis lengvai kurti puslapius naudojant drag-and-drop redaktorių.",
-            url: "/blog/kaip-naudotis-divi",
-        },
-        {
-            image: Images.logos.divi,
-            title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
-            excerpt: "Divi veikia pagal WYSIWYG principą („What You See Is What You Get“), todėl redaguodami svetainę iškart matote, kaip ji atrodys.",
-            url: "/blog/kas-yra-divi",
-        },
-        {
-            image: Images.five,
-            title: "5 klaidos, kurias daro verslai kurdami svetainę",
-            excerpt: "Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams.",
-            url: "/blog/5-klaidos-kurias-daro-verslai",
-        },
-    ];
-
     return (
         <section className="py-20 relative">
             <div className="container mx-auto px-4">
@@ -86,7 +55,8 @@ const Blog = () => {
 
                     ))}
                 </Swiper>
-                </div>
+            </div>
+            <BlogNavigation blogEntries={blogEntries} />
             </section>
     );
 };
