@@ -16,8 +16,8 @@ import Slapukai from './pages/Slapukai';
 import Titulinis from './pages/Titulinis';
 import WoocommerceUzsakymuValdymas from './pages/blog/WoocommerceUzsakymuValdymas';
 import NaujasWoocommerceProduktas from './pages/blog/NaujasWoocoomerceProduktas'; // Fixed typo
-import KaipNaudotisDivi from './pages/blog/KasYraDivi';
-import KasYraDivi from './pages/blog/KaipNaudotisDivi';
+import KaipNaudotisDivi from './pages/blog/KaipNaudotisDivi';
+import KasYraDivi from './pages/blog/KasYraDivi';
 import KlaidosKuriasDaroVerslai from './pages/blog/KlaidosKuriasDaroVerslai';
 import { initGA, logPageView } from "./analytics";
 

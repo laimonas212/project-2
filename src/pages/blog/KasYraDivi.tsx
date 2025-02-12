@@ -8,49 +8,87 @@ const KasYraDivi = () => {
     return (
         <div className="pt-36 min-h-screen">
             <div className="container text-white/80 mx-auto px-4">
-                <div className="mb-8 pb-24">
-                    <h1 className="text-4xl font-bold text-electric-blue mb-12">Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?</h1>
+                <div className="mb-8">
+                    <h1 className="text-4xl font-bold text-electric-blue mb-12">Kaip naudotis Divi?</h1>
+                    <h2 className="text-2xl font-semibold  mb-4">Kas yra Divi?</h2>
+                    <p className="text-white/70 mb-6">Divi yra populiari „drag-and-drop“ svetainių kūrimo sistema, leidžianti kurti profesionalias interneto svetaines be programavimo žinių. Ji veikia kaip „WordPress“ tema su įdiegtu puslapių kūrimo įrankiu („Divi Builder“), kuris leidžia redaguoti puslapius realiu laiku.</p>
 
-                    <h3 className="text-white/70 mb-6">Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių (angl. page builder), sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams.</h3>
+                    <h2 className="text-2xl font-semibold  mb-4">Pagrindinė sąsaja ir navigacija</h2>
+                    <p className="text-white/70 mb-6">Kai prisijungiate prie „WordPress“ administratoriaus valdymo skydelio (angl. „Dashboard“), kairiajame šone rasite meniu, kuriame yra sekcijos **„Pages“ (Puslapiai)**, **„Posts“ (Įrašai)**, **„Divi“ nustatymai** ir kitos. Pagrindinis įrankis, su kuriuo dirbsime, yra **„Divi Builder“**, kuris leidžia redaguoti puslapius vizualiai.</p>
 
-                    <h2 className="text-2xl font-semibold  mb-4">Kodėl verta rinktis Divi?</h2>
-                    
-                    <h2 className="text-2xl font-semibold  mb-4">1. Paprastas vizualinis redaktorius</h2>
-                    <p className="text-white/70 mb-6">Divi veikia pagal WYSIWYG principą („What You See Is What You Get“), todėl redaguodami svetainę iškart matote, kaip ji atrodys. Galite keisti spalvas, šriftus, išdėstymą ir turinį realiu laiku, be jokių kodavimo žinių.</p>
+                    <h3 className="text-xl font-semibold  mb-2">Kaip redaguoti puslapius su Divi?</h3>
+                    <ol className="list-decimal pl-6 space-y-2 mb-6">
+                        <li>Eikite į **„Pages“ (Puslapiai)** kairiajame meniu.</li>
+                        <li>Pasirinkite puslapį, kurį norite redaguoti, ir spustelėkite **„Edit with Divi Builder“**.</li>
+                        <li>Atsidarys vizualus redaktorius, kuriame matysite savo puslapį taip, kaip jis atrodo vartotojams.</li>
+                    </ol>
 
-                    <h2 className="text-2xl font-semibold  mb-4">2. Lankstumas ir plačios dizaino galimybės</h2>
-                    <p className="text-white/70 mb-6">Divi suteikia galimybę kurti unikalias svetaines be išorinių įskiepių. Su daugybe integruotų modulių, galite lengvai įterpti formas, galerijas, mygtukus, vaizdo įrašus ir kitus elementus.</p>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip pridėti naują sekciją?</h2>
+                    <ol className="list-decimal pl-6 space-y-2 mb-6">
+                        <li>Paspauskite **mėlyną pliuso mygtuką** (+), kad pridėtumėte naują sekciją.</li>
+                        <li>Pasirinkite sekcijos tipą:
+                            <ul className="list-inside list-disc ml-4 text-white/70">
+                                <li>**Regular** – paprasta sekcija su eilutėmis.</li>
+                                <li>**Specialty** – sudėtingesnės sekcijos su unikaliomis išdėstymo galimybėmis.</li>
+                                <li>**Fullwidth** – sekcija, užimanti visą puslapio plotį.</li>
+                            </ul>
+                        </li>
+                        <li>Į sekciją pridėkite **eilutę** (Row), paspaudę **žalią pliusą**.</li>
+                        <li>Pasirinkite išdėstymą – kiek stulpelių norite (pvz., 1, 2, 3 ar daugiau).</li>
+                        <li>Pridėkite **modulį** (Module), paspausdami **juodą pliusą** ir pasirinkite norimą elementą (pvz., tekstą, vaizdą, mygtuką).</li>
+                    </ol>
 
-                    <h2 className="text-2xl font-semibold  mb-4">3. Atsako į įvairius ekranų dydžius</h2>
-                    <p className="text-white/70 mb-6">Visos su Divi sukurtos svetainės yra automatiškai pritaikomos mobiliems įrenginiams, planšetėms ir kompiuteriams. Be to, galite atskirai redaguoti kiekvienos versijos išdėstymą.</p>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip keisti tekstą?</h2>
+                    <ol className="list-decimal pl-6 space-y-2 mb-6">
+                        <li>Norėdami pakeisti tekstą, **spustelėkite** ant jo tiesiogiai vizualiniame redaktoriuje ir pradėkite rašyti.</li>
+                        <li>Alternatyviai galite spausti **nustatymų mygtuką** (krumpliaratį ⚙️) ant teksto modulio.</li>
+                        <li>Atsidarys nustatymų langas, kuriame galėsite pakeisti tekstą, spalvą, dydį ir kitus parametrus.</li>
+                        <li>Baigus keitimus, paspauskite **„Save“ (Išsaugoti)**.</li>
+                    </ol>
 
-                    <h2 className="text-2xl font-semibold  mb-4">4. Didelis našumas ir greitis</h2>
-                    <p className="text-white/70 mb-6">Naujausios Divi versijos yra optimizuotos greitesniam užkrovimui. Taip pat galima valdyti skriptus, CSS ir kitus resursus, kad svetainė veiktų dar greičiau.</p>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip keisti spalvas?</h2>
+                    <ol className="list-decimal pl-6 space-y-2 mb-6">
+                        <li>Paspauskite **nustatymų mygtuką** (⚙️) ant norimos sekcijos, eilutės ar modulio.</li>
+                        <li>Eikite į **„Design“ (Dizainas)** skiltį.</li>
+                        <li>Suraskite **„Text Color“ (Teksto spalva)** arba **„Background“ (Fonas)** nustatymus.</li>
+                        <li>Pasirinkite spalvą iš spalvų paletės arba įveskite HEX kodą.</li>
+                        <li>Paspauskite **„Save“ (Išsaugoti)**.</li>
+                    </ol>
 
-                    <h2 className="text-2xl font-semibold  mb-4">5. Nuolatiniai atnaujinimai ir palaikymas</h2>
-                    <p className="text-white/70 mb-6">„Elegant Themes“ reguliariai atnaujina Divi, kad jis būtų suderinamas su naujausiomis „WordPress“ versijomis ir turėtų naujas funkcijas. Taip pat siūloma plati dokumentacija bei klientų aptarnavimas.</p>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip keisti teksto dydį?</h2>
+                    <ol className="list-decimal pl-6 space-y-2 mb-6">
+                        <li>Atidarykite teksto modulio nustatymus (⚙️).</li>
+                        <li>Eikite į **„Design“ (Dizainas) → „Text“ (Tekstas)**.</li>
+                        <li>Suraskite **„Text Size“ (Teksto dydis)** slankiklį ir reguliuokite dydį.</li>
+                        <li>Paspauskite **„Save“ (Išsaugoti)**.</li>
+                    </ol>
 
-                    <h2 className="text-2xl font-semibold  mb-4">6. Integracija su WooCommerce</h2>
-                    <p className="text-white/70 mb-6">Divi turi pilną integraciją su „WooCommerce“, todėl puikiai tinka el. parduotuvėms. Galite tinkinti produktų puslapius, krepšelį ir atsiskaitymo procesą be papildomų įskiepių.</p>
-
-                    <h2 className="text-2xl font-semibold  mb-4">7. Galimybė kurti ir išsaugoti šablonus</h2>
-                    <p className="text-white/70 mb-6">Naudodami Divi galite kurti savo dizaino šablonus ir juos pritaikyti kitoms svetainėms, taip sutaupydami daug laiko.</p>
-
-                    <h2 className="text-2xl font-semibold  mb-4">Kam tinkamas Divi?</h2>
-                    <ul className='pl-4'>
-                        <li className="text-white/70 mb-6 list-item list-disc">Smulkioms ir vidutinėms įmonėms</li>
-                        <li className="text-white/70 mb-6 list-item list-disc">Laisvai samdomiems dizaineriams ir programuotojams</li>
-                        <li className="text-white/70 mb-6 list-item list-disc">Tiems, kurie nori sukurti profesionalią svetainę be kodavimo</li>
-                        <li className="text-white/70 mb-6 list-item list-disc">El. parduotuvėms su WooCommerce</li>
+                    <h2 className="text-2xl font-semibold  mb-4">Pagrindiniai Divi moduliai</h2>
+                    <p className="text-white/70 mb-6">Divi siūlo daugybę modulių, kurie leidžia lengvai pritaikyti puslapį:</p>
+                    <ul className="list-inside list-disc ml-6 text-white/70 mb-6">
+                        <li>**Text (Tekstas)** – leidžia rašyti ir formatuoti tekstą.</li>
+                        <li>**Image (Vaizdas)** – įkelti ir rodyti paveikslėlius.</li>
+                        <li>**Button (Mygtukas)** – sukurti mygtuką su nuoroda.</li>
+                        <li>**Gallery (Galerija)** – rodyti kelis paveikslėlius kaip galeriją.</li>
+                        <li>**Form (Forma)** – pridėti kontaktų formą.</li>
+                        <li>**Video** – įterpti vaizdo įrašą.</li>
                     </ul>
 
-                    <p className="text-white/70 mb-6">Išvada:
-                        Divi yra vienas iš geriausių pasirinkimų norint sukurti vizualiai patrauklią, funkcionalią ir lengvai valdomą „WordPress“ svetainę. Nesvarbu, ar esate pradedantysis, ar profesionalas – su Divi galima įgyvendinti beveik bet kokią dizaino idėją be didelių techninių žinių.</p>
+                    <h2 className="text-2xl font-semibold  mb-4">Kaip išsaugoti ir publikuoti pakeitimus?</h2>
+                    <ol className="list-decimal pl-6 space-y-2 mb-6">
+                        <li>Baigus redaguoti, spustelėkite **„Save“ (Išsaugoti)** apatiniame dešiniajame kampe.</li>
+                        <li>Norėdami atnaujinti puslapį, spustelėkite **„Exit Visual Builder“ (Išeiti iš vizualinio redaktoriaus)**.</li>
+                        <li>Jei puslapis dar nepublikuotas, paspauskite **„Publish“ (Publikuoti)**.</li>
+                    </ol>
 
                     <img src={Images.logos.divi} alt="Divi" className="h-16 mt-24" />
+
+                    <p className="mt-4 pb-24 text-lg">
+                        Išsamesnė informacija: <a href="https://www.elegantthemes.com/documentation/divi/visual-builder/" target='_blank' className="text-electric-blue underline">DIVI dokumentacija</a>
+                    </p>
                 </div>
             </div>
-            <BlogNavigation blogEntries={blogEntries} />
+            <BlogNavigation blogEntries={blogEntries}/>
             <div className='relative'>
                 <CTA />
             </div>
