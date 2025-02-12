@@ -177,6 +177,7 @@ footer {
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, #00f0ff, #763bff, #9D00FF, #00ffcc, #00f0ff);
+  filter: saturate(60%) brightness(120%);
   background-size: 200%;
   /* Extend size for smooth animation */
   -webkit-mask-image: url({logo});
