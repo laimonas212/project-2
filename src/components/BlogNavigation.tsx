@@ -20,7 +20,7 @@ const BlogNavigation: React.FC<BlogNavigationProps> = ({ blogEntries }) => {
     const nextEntry = currentIndex < blogEntries.length - 1 ? blogEntries[currentIndex + 1] : null;
 
     return (
-        <div className="flex justify-between items-center my-16 border-t border-gray-600 pt-8 max-w-2xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-2 justify-between items-center my-16 border-t border-gray-700 p-8 max-w-2xl mx-auto">
             {prevEntry ? (
                 <Link to={prevEntry.url} className="flex items-center gap-4 text-electric-blue hover:text-electric-blue/70">
                     <MoveLeft className="w-6 h-6 text-gray-400" />
