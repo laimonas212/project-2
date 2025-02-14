@@ -9,6 +9,7 @@ import Process from '../components/Process';
 import Services from '../components/Services';
 import Features from '../components/Features';
 import CTA from '../components/CTA';
+import FAQ from '../components/Faq';
 
 
 const Titulinis = () => {
@@ -39,10 +40,11 @@ const Titulinis = () => {
         </div>
       </section>
 
-        <Technologies />
-        <Process />
-        <CTA />
-        <Blog />
+      <Technologies />
+      <Process />
+      <CTA />
+      <Blog />
+      <FAQ />
     </div>
 
   );

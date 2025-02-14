@@ -20,14 +20,13 @@ const CTA = () => {
                 Susisiekite su mumis ir pradėkite savo interneto svetainės kūrimo kelionę jau šiandien.
                 </p>
                 <Link to="/kontaktai">
-
-                <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="button-primary inline-flex items-center gap-2 group"
-                >
-                    <span>Konsultuotis</span>
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="button-primary inline-flex items-center gap-2 group"
+                    >
+                        <span>Konsultuotis</span>
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </motion.button>
                 </Link>
             </motion.div>
