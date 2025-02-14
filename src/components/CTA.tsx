@@ -14,7 +14,7 @@ const CTA = () => {
                 className="text-center max-w-3xl mx-auto"
             >
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Pasiruošę pradėti savo projektą?
+                Gaukite nemokamą konsultaciją
                 </h2>
                 <p className="text-white/70 text-lg mb-8">
                 Susisiekite su mumis ir pradėkite savo interneto svetainės kūrimo kelionę jau šiandien.

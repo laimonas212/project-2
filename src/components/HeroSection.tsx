@@ -149,7 +149,7 @@ const HeroSection = () => {
               custom={2}
               className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto"
             >
-              Idėjų pavertimas išskirtiniais žiniatinklio sprendimais naudojant pažangiausias technologijas ir kūrybines naujoves.
+              Idėjas paverčiame profesionaliomis interneto svetainėmis, naudodami pažangiausias technologijas ir kūrybinius sprendimus.
             </motion.p>
           </div>
 
