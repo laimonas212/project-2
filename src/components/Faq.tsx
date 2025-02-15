@@ -50,16 +50,14 @@ const FAQ = () => {
                                     <ChevronDown />
                                 </motion.span>
                             </button>
-                            {openIndex === index && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    className="text-white/50 text-md text-left mt-2"
-                                >
-                                    {item.answer}
-                                </motion.div>
-                            )}
+                            <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={openIndex === index ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className="overflow-hidden text-white/50 text-md text-left"
+                            >
+                                <div className="py-2">{item.answer}</div>
+                            </motion.div>
                         </div>
                     ))}
                 </div>
