@@ -129,11 +129,10 @@ const HeroSection = () => {
             </motion.div>
 
             <motion.h1
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={titleVariants}
-              custom={1}
-              className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
+              className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight opacity-100"
             >
               Kuriame{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
