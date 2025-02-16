@@ -88,13 +88,14 @@ const Kainos = () => {
           ))}
         </div>
 
+        <p className='text-center pt-8'>*Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos kiekio.</p>
 
         {/* Project Navigation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="my-20 text-center"
+          className="my-20 pb-8 text-center"
         >
           <h2 className="text-2xl font-bold mb-4">Norite pamatyti mūsų darbus?</h2>
           <p className="text-white/70 mb-8">Peržiūrėkite mūsų sėkmingai įgyvendintus projektus</p>
