@@ -20,8 +20,7 @@ const Footer = () => {
         {
             icon: <MapPin className="w-6 h-6" />,
             title: 'Adresas',
-            value: 'Vilnius, Lithuania',
-
+            value: 'Vilnius, Lietuva',
         },
             
     ];
