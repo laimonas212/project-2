@@ -27,14 +27,14 @@ const ScrollToTopButton = () => {
 
     return (
         <div
-            className={`z-999 fixed bottom-8 right-8 flex items-center justify-center rounded-full transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+            className={`z-999 fixed bottom-8 right-8 flex items-center justify-center rounded-full transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100 ' : 'translate-y-20 opacity-0 pointer-events-none'
                 }`}
             style={{
-                width: '52px',
-                height: '52px',
+                width: '50px',
+                height: '50px',
                 background: `conic-gradient(
                     #00f0ff 0%, 
-                    #9370DB ${scrollProgress}%, 
+                    #9D00FF ${scrollProgress}%,
                     transparent ${scrollProgress}%
                 )`,
                 visibility: isVisible ? 'visible' : 'hidden', // Ensures proper hiding
@@ -44,22 +44,22 @@ const ScrollToTopButton = () => {
             <div
                 className="absolute inset-0 rounded-full"
                 style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.2)', // Semi-transparent white
-                    backdropFilter: 'blur(10px)', // Blur effect
-                    WebkitBackdropFilter: 'blur(10px)', // Safari support
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', // Semi-transparent white
+                    backdropFilter: 'blur(5px)', // Blur effect
+                    WebkitBackdropFilter: 'blur(5px)', // Safari support
                 }}
             ></div>
 
             {/* Inner Button */}
             <div
-                className="relative w-12 h-12 bg-dark-surface rounded-full flex items-center justify-center text-electric-blue shadow-lg"
+                className="relative w-11 h-11 bg-dark-surface rounded-full flex items-center justify-center text-electric-blue shadow-lg"
             >
                 <button
                     onClick={scrollToTop}
                     className="w-full h-full rounded-full flex items-center justify-center"
                     aria-label="Scroll to Top"
                 >
-                    <ChevronUp className="w-6 h-6" />
+                    <ChevronUp className="w-5 h-5" />
                 </button>
             </div>
         </div>
