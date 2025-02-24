@@ -3,10 +3,15 @@ import Images from '../../img/Images';
 import CTA from '../../components/CTA';
 import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
+import { Helmet } from 'react-helmet-async';
 
 const KasYraDivi = () => {
     return (
         <div className="pt-36 min-h-screen">
+            <Helmet>
+                <title>Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms? | Amberweb</title>
+                <meta name="description" content="Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms? Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių, sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams." />
+            </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8 pb-24">
                     <h1 className="text-4xl font-bold text-electric-blue mb-12">Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?</h1>

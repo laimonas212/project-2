@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 interface FormData {
   name: string;
@@ -115,6 +116,12 @@ const Kontaktai = () => {
 
   return (
     <div className="pt-36 mb-24">
+      {/* Helmet component for page title and meta */}
+      <Helmet>
+        <title>Kontaktai - Susisiekite su mumis | Amberweb</title>
+        <meta name="description" content="Susisiekite su mumis užklausti klausimų, gauti informaciją ar užsisakyti paslaugas." />
+      </Helmet>
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

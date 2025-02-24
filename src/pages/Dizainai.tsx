@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, User, ShoppingBag, Layers, Info, Plus } from 'lucide-react';
 import Images from '../img/Images';
+import { Helmet } from 'react-helmet-async';
 
 interface Template {
   id: number;
@@ -574,6 +575,13 @@ const Templates: React.FC = () => {
 
   return (
     <div className="pt-36 min-h-screen">
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Paruošti dizainai | Amberweb</title>
+        <meta name="description" content="Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!" />
+        <meta property="og:title" content="Paruošti dizainai" />
+        <meta property="og:description" content="Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!" />
+      </Helmet>
       {/* Static Background */}
       <div className="fixed inset-0 pointer-events-none">
         {/* <div className="absolute inset-0 bg-gradient-to-b from-dark-surface/50 to-background/80" /> */}

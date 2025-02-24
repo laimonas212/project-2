@@ -1,8 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const PrivatumoPolitika: React.FC = () => {
     return (
         <div className="pt-24 min-h-auto mt-4 mb-24 bg-background text-gray-800">
+            <Helmet>
+                <title>Privatumo Politika | Amberweb</title>
+                <meta name="description" content="Amberweb privatumo politika. Mes įsipareigoję užtikrinti jūsų asmens duomenų apsaugą." />
+            </Helmet>
             <div className="container mx-auto px-6 md:px-12">
                 {/* Title */}
                 <h1 className="text-3xl md:text-4xl font-bold text-electric-blue mb-8">Privatumo politika</h1>

@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Salygos: React.FC = () => {
     return (
         <div className="pt-24 min-h-auto mt-4 mb-24 bg-background text-gray-800">
+            <Helmet>
+                <title>Sąlygos | Amberweb</title>
+                <meta name="description" content="Amberweb sąlygos. Sutikdami su šiomis sąlygomis, Jūs patvirtinate, kad naudosite svetainę teisėtai ir nesiekiate pažeisti mūsų ar kitų asmenų teisių." />
+            </Helmet>
             <div className="container mx-auto px-6 md:px-12">
                 <h1 className="text-3xl md:text-4xl font-bold text-electric-blue mb-8">Sąlygos</h1>
 

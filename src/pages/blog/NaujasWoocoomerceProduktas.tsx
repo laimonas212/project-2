@@ -3,10 +3,15 @@ import Images from '../../img/Images';
 import React from 'react';
 import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
+import { Helmet } from 'react-helmet-async';
 
 const WoocommerceNaujasProduktas: React.FC = () => {
     return (
         <div className="pt-36 pb-8 min-h-screen">
+            <Helmet>
+                <title>Naujo produkto kūrimas WooCommerce | Amberweb</title>
+                <meta name="description" content="Naujo produkto kūrimas WooCommerce. Kaip sukurti naują produktą savo WooCommerce parduotuvėje. Žingsnis po žingsnio instrukcija." />
+            </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <h1 className="text-4xl font-bold text-electric-blue mb-6">Naujo produkto kūrimas WooCommerce</h1>
                 <p className="text-lg text-white/70 mb-16">

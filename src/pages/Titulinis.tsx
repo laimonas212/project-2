@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import 'swiper/css/autoplay';
@@ -11,12 +12,22 @@ import Features from '../components/Features';
 import CTA from '../components/CTA';
 import FAQ from '../components/Faq';
 
-
 const Titulinis = () => {
-  const servicesRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef(null);
 
   return (
     <div className="overflow-hidden">
+      <Helmet>
+        <title>Amberweb – Profesionalus Interneto Svetainių Kūrimas</title>
+        <meta name="description" content="Kuriame modernias ir funkcionalias interneto svetaines bei el. parduotuves." />
+        <meta name="keywords" content="interneto svetainių kūrimas, el. parduotuvės, web dizainas, SEO, WordPress, WooCommerce" />
+        <meta property="og:title" content="Amberweb – Profesionalus Interneto Svetainių Kūrimas" />
+        <meta property="og:description" content="Modernios interneto svetainės ir el. parduotuvės, pritaikytos verslo poreikiams." />
+        <meta property="og:image" content="https://amberweb.lt/amberweb_social.jpg" />
+        <meta property="og:url" content="https://amberweb.lt" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <HeroSection />
 
       {/* Services Section */}
@@ -28,14 +39,14 @@ const Titulinis = () => {
       <section className="py-20 bg-dark-surface relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
+
             <Features />
 
             {/* Testimonials Section */}
             <section className="relative">
-                <CardSwiper />
+              <CardSwiper />
             </section>
-            
+
           </div>
         </div>
       </section>
@@ -46,10 +57,7 @@ const Titulinis = () => {
       <Blog />
       <FAQ />
     </div>
-
   );
-  
 };
-<Footer />
 
 export default Titulinis;

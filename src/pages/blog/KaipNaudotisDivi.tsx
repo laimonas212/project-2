@@ -3,10 +3,15 @@ import Images from '../../img/Images';
 import CTA from '../../components/CTA';
 import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
+import { Helmet } from 'react-helmet-async';
 
 const KaipNaudotisDivi = () => {
     return (
         <div className="pt-36 min-h-screen">
+            <Helmet>
+                <title>Kaip naudotis Divi? | Amberweb</title>
+                <meta name="description" content="Kaip naudotis Divi? Divi yra populiari „drag-and-drop“ svetainių kūrimo sistema, leidžianti kurti profesionalias interneto svetaines be programavimo žinių." />
+            </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8">
                     <h1 className="text-4xl font-bold text-electric-blue mb-12">Kaip naudotis Divi?</h1>

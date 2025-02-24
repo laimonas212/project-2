@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Kainos = () => {
   const plans = [
@@ -40,6 +41,11 @@ const Kainos = () => {
 
   return (
     <div className="pt-36 min-h-screen">
+      {/* Helmet component for page title and meta */}
+      <Helmet>
+        <title>Mūsų Kainos - Pasirinkite Planą | Amberweb</title>
+        <meta name="description" content="Pasirinkite tinkamiausią planą savo projektui. Sužinokite, ką siūlome ir kokie yra mūsų paslaugų įkainiai." />
+      </Helmet>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Images from '../img/Images';
+import { Helmet } from 'react-helmet-async';
 
 interface Project {
   title: string;
@@ -218,7 +219,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
   return (
     <motion.div 
       ref={sectionRef}
-      className="flex items-center py-12 lg:py-20 relative kaka"
+      className="flex items-center py-12 lg:py-20 relative"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -370,7 +371,18 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 const Projects: React.FC = () => {
   return (
     <div className="pt-24 relative">
-
+      <Helmet>
+        <title>Įgyvendinti projektai | Amberweb</title>
+        <meta
+          name="description"
+          content="Mūsų įgyvendinti projektai - unikalūs sprendimai, pritaikyti pagal kliento poreikius, užtikrinantys tiek estetiką, tiek funkcionalumą."
+        />
+        <meta
+          name="keywords"
+          content="interneto svetainių kūrimas, web dizainas, Wordpress, Divi, e-parduotuvės, portfolio"
+        />
+        <link rel="canonical" href="https://www.amberweb.lt/projects" />
+      </Helmet>
       <div className="relative">
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.1)_0%,transparent_70%)]" />
