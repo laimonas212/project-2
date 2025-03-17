@@ -11,8 +11,10 @@ const Kainos = () => {
       description: 'Idealiai tinka mažoms įmonėms ar asmeniniams projektams',
       price: '€350',
       features: [
+        'Turinio valdymo sistema',
         'Pasirinktas paruoštas dizainas',
         '1-5 puslapiai',
+        'Kontaktinės formos',
         'Individualios spalvos',
         'Informacijos patalpinimas',
         'Mobiliesiems pritaikytas dizainas',
@@ -24,8 +26,10 @@ const Kainos = () => {
       description: 'Puikiai tinka vidutinio dydžio įmonėms, norinčioms sustiprinti savo internetinę veiklą',
       price: '€550',
       features: [
+        'Turinio valdymo sistema',
         'Pasirinktas paruoštas dizainas',
         '1-10 puslapiai',
+        'Kontaktinės formos',
         'Individualios spalvos',
         'Informacijos patalpinimas',
         'Mobiliesiems pritaikytas dizainas',
@@ -87,7 +91,7 @@ const Kainos = () => {
 
               <Link to="/kontaktai">
                 <button className="w-full button-primary py-3 rounded-lg transition-colors duration-300">
-                  Teirautis
+                  Nemokama Konsultacija
                 </button>
               </Link>
             </motion.div>
