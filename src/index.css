@@ -430,3 +430,8 @@ footer {
   margin-top: 20px;
   /* Adjust space below slides */
 }
+
+/* data-cky-tag="detail-powered-by" display none */
+[data-cky-tag="detail-powered-by"] {
+  display: none !important;
+}
