@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight, User, ShoppingBag, Layers, Info, Plus } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, User, ShoppingBag, Layers, Info, Plus, Images as Gallery, MousePointerClick } from 'lucide-react';
 import Images from '../img/Images';
 import { Helmet } from 'react-helmet-async';
 
@@ -441,6 +441,14 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
           alt={template.title}
           className="w-full h-[200%] object-cover"
         />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-white/60 text-black/80 backdrop-blur-sm z-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 space-y-2 text-center">
+          <span className="text-sm">Peržiūrėti</span>
+          <span className="text-lg font-semibold">{template.title}</span>
+          <MousePointerClick className="w-6 h-6 animate-carousel-ping" />
+        </div>
+
+
       </div>
       <div className="mt-4 text-center">
         <h3 className="text-xl font-bold mb-1 flex items-center justify-center gap-2">

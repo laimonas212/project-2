@@ -306,7 +306,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                 <div className="absolute inset-0 bg-gradient-to-r from-electric-blue/10 to-neon-purple/10 blur-3xl -z-10" />
               </h2>
               {project.subtitle && (
-                <p className="text-electric-blue mt-4 text-xl vertical-text">
+                <p className="text-electric-blue mt-4 text-xl ">
                   {project.subtitle}
                 </p>
               )}

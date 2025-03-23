@@ -18,6 +18,7 @@ export default {
         'gradient-x': 'gradient-x 15s ease infinite',
         'float': 'float 6s ease-in-out infinite',
         'spin-slow': 'spin-slow 20s linear infinite',
+        'carousel-ping': 'carousel-ping 1s infinite ease-in-out',
       },
       keyframes: {
         'gradient-x': {
@@ -35,8 +36,12 @@ export default {
           '50%': { transform: 'translateY(-20px)' },
         },
         'spin-slow': {
-          'from': { transform: 'rotate(0deg)' },
-          'to': { transform: 'rotate(360deg)' },
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+        'carousel-ping': {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
         },
       },
     },
