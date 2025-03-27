@@ -19,6 +19,14 @@ interface ProjectSectionProps {
 
 const projects: Project[] = [
   {
+    title: 'LŽSPA',
+    subtitle: 'Lietuvos žmonių su stuburo pažeidimais asociacija',
+    description: 'Lietuvos žmonių su stuburo pažeidimais asociacija - tai nevyriausybinė organizacija, siekianti padėti žmonėms, turintiems stuburo pažeidimų, ir jų šeimoms. Svetainėje pateikiama informacija apie asociacijos veiklą, renginius ir galimybę prisidėti prie jos veiklos.',
+    image: Images.projects.lzspa,
+    tags: ['Wordpress', 'Divi', 'Nemokama svetainė', 'Labdara'],
+    link: 'https://www.lzspa.lt',
+  },
+  {
     title: 'Holistinė kosmetologija',
     subtitle: 'Sveikata ir grožis',
     description: 'Holistinė kosmetologija - tai sveikatos ir grožio paslaugos, grindžiamos natūraliais ir ekologiškais ingredientais. Svetainėje pateikiama informacija apie paslaugas, produktus ir jų naudojimą.',
@@ -35,7 +43,7 @@ const projects: Project[] = [
     link: 'https://www.brangusauto.lt',
   },
   {
-    title: 'Kaliause',
+    title: 'Kaliausė',
     subtitle: 'Renginių vedėjai',
     description: 'Tai profesionalių renginių vedėjų komanda su daugiau nei 10 metų patirtimi. Jie organizuoja renginius suaugusiems, įmonėms ir vaikams, užtikrindami įsimintinas šventes. Svetainėje rasite išsamią informaciją apie teikiamas paslaugas ir renginių vedėjų kompetenciją.',
     image: Images.projects.kaliause,
@@ -235,7 +243,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
           >
             <h2 className="text-4xl font-display font-bold relative z-10">
               <a href={project.link} target="_blank" rel="noreferrer">
-                {project.title}
+                <div className="notranslate">{project.title}</div>
               </a>
             </h2>
             {project.subtitle && (
@@ -300,7 +308,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
-                    {project.title}
+                    <div className="notranslate">{project.title}</div>
                   </motion.div>
                 </a>
                 <div className="absolute inset-0 bg-gradient-to-r from-electric-blue/10 to-neon-purple/10 blur-3xl -z-10" />

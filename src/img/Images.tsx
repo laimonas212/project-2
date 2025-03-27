@@ -20,6 +20,7 @@ import angelButikas from '././projects/angelbutikas.png';
 import esuTau from '././projects/esutau.png';
 import godeko from '././projects/godeko.png';
 import holistinekosmetologija from '././projects/holistinekosmetologija.png';
+import lzspa from '././projects/lzspa.png';
 import woo from './woo.png';
 import wooWhite from './logos/woo-white.png';
 import wordpress from './logos/wordpress.png';
@@ -316,6 +317,7 @@ const Images = {
         esuTau: esuTau,
         godeko: godeko,
         holistinekosmetologija: holistinekosmetologija,
+        lzspa: lzspa,
     },
     templates: {
         acaiBowl: {
