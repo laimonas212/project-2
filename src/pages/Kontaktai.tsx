@@ -181,12 +181,7 @@ const Kontaktai = () => {
                   </div>
                 ))}
 
-                <button
-                  type="submit"
-                  className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 rounded-lg shadow-lg w-full"
-                >
-                  Siųsti
-                </button>
+                <button type="submit" className="button-primary">Siųsti</button>
               </div>
             </form>
           </div>
