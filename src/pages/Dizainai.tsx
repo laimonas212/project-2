@@ -624,7 +624,7 @@ const Templates: React.FC = () => {
                 key={type}
                 onClick={() => setSelectedType(type as typeof selectedType)}
                 className={`px-6 py-2 rounded-full transition-colors text-xs ${selectedType === type
-                  ? 'bg-electric-blue text-background'
+                  ? 'button-primary'
                   : 'bg-dark-surface-2 text-white/70 hover:text-white'
                   } flex items-center gap-2`}
               >
