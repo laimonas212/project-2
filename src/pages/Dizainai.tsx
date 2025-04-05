@@ -660,8 +660,6 @@ const Templates: React.FC = () => {
             </h2>
           </motion.div>
         </motion.div>
-
-
       </div>
 
       {/* Lightbox for Template Preview */}

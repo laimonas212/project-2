@@ -279,7 +279,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
               <p className="text-white/70 text-lg leading-relaxed">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-3 mt-4">
+              <div className="flex flex-wrap gap-3 mt-4 notranslate">
                 {project.tags.map(tag => (
                   <span
                     key={tag}
@@ -360,12 +360,14 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                     {project.tags.map(tag => (
                       <span
                         key={tag}
-                        className="px-4 py-2 bg-dark-surface/80 rounded-full text-electric-blue text-sm backdrop-blur-sm"
+                        className={`px-4 py-2 bg-dark-surface/80 rounded-full text-electric-blue text-sm backdrop-blur-sm ${tag === 'Divi' ? 'notranslate' : ''
+                          }`}
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
+
                 </div>
               </motion.div>
             </div>

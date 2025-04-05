@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import Features from '../components/Features';
 
 const Kainos = () => {
   const plans = [
@@ -57,7 +58,16 @@ const Kainos = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Mūsų Kainos</h1>
+          <p className="text-xl text-white/70">Mūsų kainos – aiškiai ir be paslėptų mokesčių. Gaukite viską, ko reikia stipriai internetinei svetainei – už fiksuotą kainą.</p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-12"
+        >
           <p className="text-xl text-white/70">Pasirinkite tinkamiausią planą savo projektui</p>
+
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -100,7 +110,10 @@ const Kainos = () => {
 
         <p className='text-center pt-8'>*Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos kiekio.</p>
 
-        {/* Project Navigation */}
+        <div className='max-w-5xl mx-auto mt-24'>
+          <Features />        
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

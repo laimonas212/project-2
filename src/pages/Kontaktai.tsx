@@ -181,7 +181,7 @@ const Kontaktai = () => {
                   </div>
                 ))}
 
-                <button type="submit" className="button-primary">Siųsti</button>
+                <button type="submit" className="button-primary">Siųsti užklausą</button>
               </div>
             </form>
           </div>

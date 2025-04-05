@@ -91,8 +91,8 @@ const CardSwiper = () => {
                                             <p className="text-center text-white/80 mb-4">{testimonial.content}</p>
                                         </div>
                                         <div className="mt-auto">
-                                            <h3 className="text-white/30">{testimonial.name}</h3>
-                                            <Link to={testimonial.url} className="text-sm flex align-center text-white/30 hover:text-electric-blue/50 transition-all duration-300" target="_blank">{testimonial.company}<ExternalLink className="h-3 w-3 mt-1 ml-1"/></Link>
+                                            <h3 className="text-white/30 notranslate">{testimonial.name}</h3>
+                                            <Link to={testimonial.url} className="text-sm flex align-center text-white/30 hover:text-electric-blue/50 transition-all duration-300 notranslate" target="_blank">{testimonial.company}<ExternalLink className="h-3 w-3 mt-1 ml-1"/></Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>

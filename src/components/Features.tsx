@@ -1,12 +1,17 @@
-import { Users, Layout, Award } from "lucide-react";
+import { Users, Layout, Award, BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Features = () => {
-    const features = [
+    const features = [ 
         {
-            icon: <Users className="w-6 h-6" />,
-            title: 'Patyrusi Komanda',
-            description: 'Mūsų komanda turi daugelio metų patirtį interneto svetainių kūrime.',
+            icon: <BadgeCheck className="w-6 h-6" />,
+            title: 'Aukštos Kokybės Paslaugos',
+            description: 'Teikiame aukštos kokybės paslaugas, atitinkančias jūsų verslo poreikius.',
+        },
+        {
+            icon: <Layout className="w-6 h-6" />,
+            title: 'Modernūs Dizaino Sprendimai',
+            description: 'Naudojame naujausias dizaino tendencijas ir technologijas, kad sukurtume patrauklias svetaines.',
         },
         {
             icon: <Layout className="w-6 h-6" />,
