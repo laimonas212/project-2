@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet-async';
+import { Clock3, MessageCircle, UserCheck } from 'lucide-react';
 
 interface FormData {
   name: string;
@@ -184,6 +185,23 @@ const Kontaktai = () => {
                 <button type="submit" className="button-primary">Siųsti užklausą</button>
               </div>
             </form>
+            <div className="mt-12 text-white/80 text-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                <div className="flex flex-col items-center">
+                  <MessageCircle size={32} className="text-electric-blue mb-2" />
+                  <p>Greitas ir aiškus atsakymas į Jūsų klausimus.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <UserCheck size={32} className="text-electric-blue mb-2" />
+                  <p>Asmeniškai pritaikytas pasiūlymas pagal Jūsų poreikius.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Clock3 size={32} className="text-electric-blue mb-2" />
+                  <p>14+ metų patirtis – žinome, ką darome.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </motion.div>
       </div>
