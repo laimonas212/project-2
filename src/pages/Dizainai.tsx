@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, User, ShoppingBag, Layers, Info, Plus, Images as Gallery, MousePointerClick } from 'lucide-react';
 import Images from '../img/Images';
 import { Helmet } from 'react-helmet-async';
+import { createPortal } from 'react-dom';
 
 interface Template {
   id: number;
@@ -471,17 +472,17 @@ interface LightboxProps {
   onClose: () => void;
 }
 
+import ReactDOM from 'react-dom';
+
 const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Handle next image
   const handleNextImage = () => {
     if (template) {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % template.images.length);
     }
   };
 
-  // Handle previous image
   const handlePrevImage = () => {
     if (template) {
       setCurrentImageIndex(
@@ -490,49 +491,46 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
     }
   };
 
-  // Listen for keyboard events (left/right arrow keys) when the lightbox is open
   useEffect(() => {
     const handleKeydown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') {
-        handlePrevImage();
-      } else if (event.key === 'ArrowRight') {
-        handleNextImage();
-      }
+      if (event.key === 'ArrowLeft') handlePrevImage();
+      else if (event.key === 'ArrowRight') handleNextImage();
+      else if (event.key === 'Escape') onClose();
     };
 
-    // Add the event listener when the lightbox is open
     window.addEventListener('keydown', handleKeydown);
+    document.body.style.overflow = 'hidden';
 
-    // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener('keydown', handleKeydown);
+      document.body.style.overflow = '';
     };
   }, [template, currentImageIndex]);
 
   if (!template) return null;
 
-  return (
+  const modalContent = (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-background/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-background/90 backdrop-blur-sm z-[9999] flex items-center justify-center p-4"
       onClick={onClose}
     >
       <button
         onClick={onClose}
-        className="absolute bottom-8 align-center button-primary rounded-full p-3"
+        className="absolute top-6 right-6 z-[10000] button-primary rounded-full p-3"
       >
-          <X className="w-6 h-6" />
+        <X className="w-6 h-6" />
       </button>
+
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="relative max-w-6xl w-full  rounded-lg overflow-hidden"
+        className="relative max-w-6xl w-full rounded-lg overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Image Navigation */}
         <div className="flex justify-between items-center absolute top-1/2 w-full transform -translate-y-1/2 px-4 z-10">
           <button
             onClick={handlePrevImage}
@@ -548,15 +546,16 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
           </button>
         </div>
 
-        {/* Display current image */}
         <img
           src={template.images[currentImageIndex]}
           alt={template.title}
-          className="w-full h-auto max-h-[70vh] object-contain"
+          className="w-full h-auto max-h-[90vh] object-contain"
         />
       </motion.div>
     </motion.div>
   );
+
+  return ReactDOM.createPortal(modalContent, document.body);
 };
 
 const Templates: React.FC = () => {
