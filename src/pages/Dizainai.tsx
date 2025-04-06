@@ -521,9 +521,9 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
     >
       <button
         onClick={onClose}
-        className="absolute bottom-8 align-center bg-dark-surface/60 p-2 text-white rounded-full hover:bg-dark-surface/80"
+        className="absolute bottom-8 align-center button-primary rounded-full p-3"
       >
-        <X className="w-6 h-6" />
+          <X className="w-6 h-6" />
       </button>
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
