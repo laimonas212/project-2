@@ -549,7 +549,7 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
         <img
           src={template.images[currentImageIndex]}
           alt={template.title}
-          className="w-full h-auto max-h-[90vh] object-contain"
+          className="w-full h-auto max-h-[80vh] object-contain"
         />
       </motion.div>
     </motion.div>

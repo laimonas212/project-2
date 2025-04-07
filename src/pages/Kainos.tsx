@@ -55,10 +55,9 @@ const Kainos = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-6"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Mūsų Kainos</h1>
-          <p className="text-xl text-white/70">Mūsų kainos – aiškiai ir be paslėptų mokesčių. Gaukite viską, ko reikia stipriai internetinei svetainei – už fiksuotą kainą.</p>
+          <h1 className="text-4xl md:text-5xl font-bold">Mūsų Kainos</h1>
         </motion.div>
 
         <motion.div
@@ -66,7 +65,9 @@ const Kainos = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <p className="text-xl text-white/70">Pasirinkite tinkamiausią planą savo projektui</p>
+          <p className="text-xl text-white/70 pb-2">Pasirinkite tinkamiausią planą savo projektui</p>
+          <p className="text-xs text-white/70">Mūsų kainos – aiškiai ir be paslėptų mokesčių. Gaukite viską, ko reikia stipriai internetinei svetainei – už fiksuotą kainą.</p>
+
 
         </motion.div>
 
