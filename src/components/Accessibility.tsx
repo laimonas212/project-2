@@ -40,7 +40,7 @@ const AccessibilityPanel: React.FC = () => {
     return (
         <div className="relative">
             {/* Toggle Button */}
-            <button
+            <div
                 className="p-1 text-white/70 hover:text-electric-blue transition"
                 onClick={togglePanel}
                 onKeyDown={(e) => {
@@ -54,7 +54,7 @@ const AccessibilityPanel: React.FC = () => {
                 aria-controls="accessibility-panel"
             >
                 {isOpen ? <X size={24} /> : <Settings2 size={24} />}
-            </button>
+            </div>
 
 
             {/* Accessibility Panel */}
@@ -73,26 +73,16 @@ const AccessibilityPanel: React.FC = () => {
                     {/* Text Size */}
                     <div className="flex items-center gap-3">
                         <Type size={20} /> Šrifto dydis:
-                        <button onClick={() => adjustTextSize('small')}>
-                            <Type size={14} className={textSize === 'small' ? 'text-primary' : ''} />
-                        </button>
-                        <button onClick={() => adjustTextSize('medium')}>
-                            <Type size={18} className={textSize === 'medium' ? 'text-primary' : ''} />
-                        </button>
-                        <button onClick={() => adjustTextSize('large')}>
-                            <Type size={22} className={textSize === 'large' ? 'text-primary' : ''} />
-                        </button>
+                        <Type onClick={() => adjustTextSize('small')} size={14} className={textSize === 'small' ? 'text-primary' : ''} />
+                        <Type onClick={() => adjustTextSize('medium')} size={18} className={textSize === 'medium' ? 'text-primary' : ''} />
+                        <Type onClick={() => adjustTextSize('large')} size={22} className={textSize === 'large' ? 'text-primary' : ''} />
                     </div>
 
                     {/* Contrast */}
                     <div className="flex items-center gap-3">
                         <Contrast size={20} /> Kontrastas:
-                        <button onClick={() => adjustContrast('normal')}>
-                            <Contrast size={20} className={contrast === 'normal' ? 'text-primary' : ''} />
-                        </button>
-                        <button onClick={() => adjustContrast('high')} className="text-yellow-500">
-                            <Contrast size={24} className={contrast === 'high' ? 'text-yellow-500' : ''} />
-                        </button>
+                        <Contrast onClick={() => adjustContrast('normal')} size={20} className={contrast === 'normal' ? 'text-primary' : ''} />
+                        <Contrast onClick={() => adjustContrast('high')} size={24} className={contrast === 'high' ? 'text-yellow-500' : ''} />
                     </div>
                 </div>
             )}
