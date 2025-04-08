@@ -31,7 +31,8 @@ import chatgpt from './logos/chatgpt.png';
 import react from './logos/react.png';
 import html from './logos/html5.png';
 import css from './logos/css.png';
-import five from './5.png'
+import five from './5.png';
+import topStone from '././projects/topstone.png';
 
 
 // acai bowl
@@ -318,6 +319,7 @@ const Images = {
         godeko: godeko,
         holistinekosmetologija: holistinekosmetologija,
         lzspa: lzspa,
+        topStone: topStone,
     },
     templates: {
         acaiBowl: {

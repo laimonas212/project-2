@@ -35,6 +35,14 @@ const projects: Project[] = [
     link: 'https://www.holistinekosmetologija.lt',
   },
   {
+    title: 'TopStone Lietuva',
+    subtitle: 'Akmens kilimai',
+    description: 'TopStone Lietuva - tai įmonė, specializuojanti akmens kilimų gamyboje ir montavime. Svetainėje pateikiama informacija apie produktus, paslaugas ir jų privalumus.',
+    image: Images.projects.topStone,
+    tags: ['Wordpress', 'Divi', 'E-parduotuvė', 'Skaičiuoklė'],
+    link: 'https://www.topstonelietuva.com',
+  },
+  {
     title: 'Brangus Auto',
     subtitle: 'Automobilių supirkimas',
     description: 'Brangus Auto specializuojasi greitame ir patikimame automobilių supirkime. Svetainėje pateikiama informacija apie supirkimo procesą, klientų atsiliepimai ir galimybė gauti pasiūlymą užpildant formą.',
