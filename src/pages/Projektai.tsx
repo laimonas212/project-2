@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import projects  from '../components/Projects';
+import { ExternalLink, MousePointerClick } from 'lucide-react';
 
 interface Project {
   title: string;
@@ -152,19 +153,29 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             <div className="max-w-[85%]">
               {/* Project Image */}
               <motion.div
-                className="w-full aspect-[16/9] rounded-lg overflow-hidden mb-12 relative"
+                className="w-full aspect-[16/9] rounded-lg overflow-hidden mb-12 relative group"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
-                <a href={project.link} target="_blank" rel="noreferrer">
+                <a href={project.link} target="_blank" rel="noreferrer" className="block relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
-                    />
+                    className="w-full h-full object-cover transition"
+                  />
+
+                  {/* Hover button in the center */}
+                  <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                    <div className="opacity-0 group-hover:opacity-100 backdrop-blur-sm bg-white/60 px-5 py-2 rounded-md pointer-events-auto">
+                      <a href={project.link} target="_blank" rel="noreferrer" className="text-black text-sm font-medium flex items-center gap-2">
+                        Peržiūrėti gyvai
+                        <MousePointerClick className="w-6 h-6 animate-carousel-ping" />
+                      </a>
+                    </div>
+                  </div>
                 </a>
               </motion.div>
 

@@ -33,6 +33,7 @@ import html from './logos/html5.png';
 import css from './logos/css.png';
 import five from './5.png';
 import topStone from '././projects/topstone.png';
+import veselovaite from '././projects/veselovaite.png';
 
 
 // acai bowl
@@ -320,6 +321,7 @@ const Images = {
         holistinekosmetologija: holistinekosmetologija,
         lzspa: lzspa,
         topStone: topStone,
+        veselovaite: veselovaite,
     },
     templates: {
         acaiBowl: {

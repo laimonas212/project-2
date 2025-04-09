@@ -18,6 +18,14 @@ const projects = [
         link: 'https://www.holistinekosmetologija.lt',
     },
     {
+        title: 'Advokatų kontora',
+        subtitle: 'Teisinės paslaugos',
+        description: 'Advokatų kontora teikia profesionalias teisinės pagalbos paslaugas. Svetainėje pateikiama informacija apie teikiamas paslaugas, advokatų kompetenciją ir kontaktus.',
+        image: Images.projects.veselovaite,
+        tags: ['Wordpress', 'Divi', 'Kalbos'],
+        link: 'https://www.veselovaite.lt',
+    },
+    {
         title: 'TopStone Lietuva',
         subtitle: 'Akmens kilimai',
         description: 'TopStone Lietuva - tai įmonė, specializuojanti akmens kilimų gamyboje ir montavime. Svetainėje pateikiama informacija apie produktus, paslaugas ir jų privalumus.',
