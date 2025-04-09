@@ -171,7 +171,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                   <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                     <div className="opacity-0 group-hover:opacity-100 backdrop-blur-sm bg-white/60 px-5 py-2 rounded-md pointer-events-auto">
                       <a href={project.link} target="_blank" rel="noreferrer" className="text-black text-sm font-medium flex items-center gap-2">
-                        Peržiūrėti gyvai
+                        Peržiūrėti
                         <MousePointerClick className="w-6 h-6 animate-carousel-ping" />
                       </a>
                     </div>
