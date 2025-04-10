@@ -83,6 +83,15 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             transition={{ duration: 0.3 }}
           >
             <a href={project.link} target="_blank" rel="noreferrer">
+            {/* Hover button in the center */}
+            <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+              <div className="backdrop-blur-sm bg-white/60 px-4 py-2 rounded-md pointer-events-auto">
+                <a href={project.link} target="_blank" rel="noreferrer" className="text-black text-xs font-medium flex items-center gap-2">
+                  Peržiūrėti
+                  <MousePointerClick className="w-4 h-4 animate-carousel-ping" />
+                </a>
+              </div>
+            </div>
               <img
                 src={project.image}
                 alt={project.title}
