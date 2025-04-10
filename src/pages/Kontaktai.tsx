@@ -149,9 +149,20 @@ const Kontaktai = () => {
               method="POST"
               action="/kontaktai"
               data-netlify="true"
-              onSubmit={submitHandler}  // Use submitHandler on form submit
+              netlify-honeypot="bot-field"
+              onSubmit={submitHandler}
             >
+              {/* Hidden form-name for Netlify */}
               <input type="hidden" name="form-name" value="contact-form" />
+
+              {/* Honeypot field */}
+              <p className="hidden">
+                <label>
+                  Don’t fill this out if you’re human:
+                  <input name="bot-field" />
+                </label>
+              </p>
+
               <div className="grid grid-cols-1 gap-4">
                 {['name', 'email', 'phone', 'message'].map((field) => (
                   <div key={field}>
@@ -162,6 +173,7 @@ const Kontaktai = () => {
                         placeholder={
                           field === 'name' ? 'Jūsų vardas' : field === 'email' ? 'El. paštas' : 'Telefono numeris'
                         }
+                        required
                         value={formData[field as keyof FormData]}
                         onChange={handleChange}
                         className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-electric-blue' : 'border-gray-700'
@@ -172,6 +184,7 @@ const Kontaktai = () => {
                         name={field}
                         placeholder="Žinutė"
                         rows={4}
+                        required
                         value={formData[field as keyof FormData]}
                         onChange={handleChange}
                         className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-electric-blue' : 'border-gray-700'
@@ -185,6 +198,7 @@ const Kontaktai = () => {
                 <button type="submit" className="button-primary">Siųsti užklausą</button>
               </div>
             </form>
+
             <div className="mt-12 text-white/80 text-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
                 <div className="flex flex-col items-center">
