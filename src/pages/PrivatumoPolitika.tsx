@@ -7,6 +7,7 @@ const PrivatumoPolitika: React.FC = () => {
             <Helmet>
                 <title>Privatumo Politika | Amberweb</title>
                 <meta name="description" content="Amberweb privatumo politika. Mes įsipareigoję užtikrinti jūsų asmens duomenų apsaugą." />
+                <link rel="canonical" href="https://amberweb.lt/privatumo-politika" />
             </Helmet>
             <div className="container mx-auto px-6 md:px-12">
                 {/* Title */}

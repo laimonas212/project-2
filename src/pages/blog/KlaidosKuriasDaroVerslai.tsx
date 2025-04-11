@@ -11,6 +11,7 @@ const KlaidosKuriasDaroVerslai = () => {
             <Helmet>
                 <title>5 klaidos, kurias daro verslai kurdami svetainę | Amberweb</title>
                 <meta name="description" content="Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams. Štai penkios esminės klaidos, kurių reikėtų vengti." />
+                <link rel="canonical" href="https://amberweb.lt/5-klaidos-kurias-daro-verslai" />
             </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8 pb-24">

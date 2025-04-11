@@ -8,6 +8,7 @@ const Salygos: React.FC = () => {
             <Helmet>
                 <title>Sąlygos | Amberweb</title>
                 <meta name="description" content="Amberweb sąlygos. Sutikdami su šiomis sąlygomis, Jūs patvirtinate, kad naudosite svetainę teisėtai ir nesiekiate pažeisti mūsų ar kitų asmenų teisių." />
+                <link rel="canonical" href="https://amberweb.lt/salygos" />
             </Helmet>
             <div className="container mx-auto px-6 md:px-12">
                 <h1 className="text-3xl md:text-4xl font-bold text-electric-blue mb-8">Sąlygos</h1>

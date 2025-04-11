@@ -234,7 +234,7 @@ const Projects: React.FC = () => {
           name="keywords"
           content="interneto svetainių kūrimas, web dizainas, Wordpress, Divi, e-parduotuvės, portfolio"
         />
-        <link rel="canonical" href="https://www.amberweb.lt/projects" />
+        <link rel="canonical" href="https://www.amberweb.lt/projektai" />
       </Helmet>
       <div className="relative">
       <div className="fixed inset-0 pointer-events-none">

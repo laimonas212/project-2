@@ -50,6 +50,7 @@ const Kainos = () => {
       <Helmet>
         <title>Mūsų Kainos - Pasirinkite Planą | Amberweb</title>
         <meta name="description" content="Pasirinkite tinkamiausią planą savo projektui. Sužinokite, ką siūlome ir kokie yra mūsų paslaugų įkainiai." />
+        <link rel="canonical" href="https://amberweb.lt/kainos" />
       </Helmet>
       <div className="container mx-auto px-4">
         <motion.div

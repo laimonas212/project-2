@@ -26,6 +26,7 @@ const Titulinis = () => {
         <meta property="og:image" content="https://amberweb.lt/amberweb_social.jpg" />
         <meta property="og:url" content="https://amberweb.lt" />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://amberweb.lt" />
       </Helmet>
 
       <HeroSection />

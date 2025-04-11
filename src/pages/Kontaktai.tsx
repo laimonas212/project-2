@@ -121,6 +121,7 @@ const Kontaktai = () => {
       <Helmet>
         <title>Kontaktai - Susisiekite su mumis | Amberweb</title>
         <meta name="description" content="Susisiekite su mumis užklausti klausimų, gauti informaciją ar užsisakyti paslaugas." />
+        <link rel="canonical" href="https://amberweb.lt/kontaktai" />
       </Helmet>
 
       <div className="container mx-auto px-4">

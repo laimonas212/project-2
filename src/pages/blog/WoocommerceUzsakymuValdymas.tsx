@@ -11,6 +11,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
             <Helmet>
                 <title>Užsakymų valdymas WooCommerce | Amberweb</title>
                 <meta name="description" content="Kaip peržiūrėti, redaguoti ir valdyti užsakymus WooCommerce parduotuvėje. Užsakymų valdymo instrukcija." />
+                <link rel="canonical" href="https://amberweb.lt/woocommerce-uzsakymu-valdymas" />
             </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <h1 className="text-4xl font-bold text-electric-blue mb-6">Užsakymų valdymas WooCommerce</h1>

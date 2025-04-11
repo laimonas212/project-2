@@ -11,6 +11,7 @@ const KaipNaudotisDivi = () => {
             <Helmet>
                 <title>Kaip naudotis Divi? | Amberweb</title>
                 <meta name="description" content="Kaip naudotis Divi? Divi yra populiari „drag-and-drop“ svetainių kūrimo sistema, leidžianti kurti profesionalias interneto svetaines be programavimo žinių." />
+                <link rel="canonical" href="https://amberweb.lt/kaip-naudotis-divi" />
             </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8">

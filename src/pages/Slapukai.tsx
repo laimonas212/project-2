@@ -7,6 +7,7 @@ const Slapukai: React.FC = () => {
             <Helmet>
                 <title>Slapukai | Amberweb</title>
                 <meta name="description" content="Amberweb slapukų politika. Mes naudojame slapukus, kad pagerintume naršymo patirtį ir užtikrintume tam tikras funkcijas." />            
+                <link rel="canonical" href="https://amberweb.lt/slapukai" />
             </Helmet>
             <div className="container mx-auto px-6 md:px-12">
                 <h1 className="text-3xl md:text-4xl font-bold text-electric-blue mb-8">Slapukai</h1>

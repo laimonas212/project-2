@@ -11,6 +11,7 @@ const KasYraDivi = () => {
             <Helmet>
                 <title>Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms? | Amberweb</title>
                 <meta name="description" content="Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms? Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių, sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams." />
+                <link rel="canonical" href="https://amberweb.lt/kas-yra-divi" />
             </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8 pb-24">

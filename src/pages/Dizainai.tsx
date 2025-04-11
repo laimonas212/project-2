@@ -181,6 +181,7 @@ const Templates: React.FC = () => {
         <meta name="description" content="Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!" />
         <meta property="og:title" content="Paruošti dizainai" />
         <meta property="og:description" content="Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!" />
+        < link rel="canonical" href="https://amberweb.lt/paruosti-dizainai" />
       </Helmet>
       {/* Static Background */}
       <div className="fixed inset-0 pointer-events-none">

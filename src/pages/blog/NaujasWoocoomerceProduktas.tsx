@@ -11,6 +11,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
             <Helmet>
                 <title>Naujo produkto kūrimas WooCommerce | Amberweb</title>
                 <meta name="description" content="Naujo produkto kūrimas WooCommerce. Kaip sukurti naują produktą savo WooCommerce parduotuvėje. Žingsnis po žingsnio instrukcija." />
+                <link rel="canonical" href="https://amberweb.lt/naujas-woocommerce-produktas" />
             </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <h1 className="text-4xl font-bold text-electric-blue mb-6">Naujo produkto kūrimas WooCommerce</h1>
