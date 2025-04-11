@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /search
+Disallow: /author
+Disallow: /?s=
+Disallow: /wp-
+Allow: /
+
+Sitemap: https://amberweb.lt/sitemap.xml
