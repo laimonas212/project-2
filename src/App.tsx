@@ -21,6 +21,7 @@ import KaipNaudotisDivi from './pages/blog/KaipNaudotisDivi';
 import KasYraDivi from './pages/blog/KasYraDivi';
 import KlaidosKuriasDaroVerslai from './pages/blog/KlaidosKuriasDaroVerslai';
 import { initGA, logPageView } from "./analytics";
+import NotFoundPage from './components/NotFoundPage';
 
 function App() {
   useEffect(() => {
@@ -56,6 +57,7 @@ function App() {
               <Route path="/blog/kaip-naudotis-divi" element={<KaipNaudotisDivi />} />
               <Route path="/blog/kas-yra-divi" element={<KasYraDivi />} />
               <Route path="/blog/5-klaidos-kurias-daro-verslai" element={<KlaidosKuriasDaroVerslai />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <ScrollToTopButton />
           </motion.div>

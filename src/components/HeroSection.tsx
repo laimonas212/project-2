@@ -1,13 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Code2, ArrowRight, Sparkles, Boxes, Medal, TabletSmartphone, GaugeCircle } from 'lucide-react';
-import * as THREE from 'three';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
+import ParticlesBackground from './ParticlesBackground'; // Jei palieki foną
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
@@ -18,67 +17,7 @@ const HeroSection = () => {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-
-  useEffect(() => {
-    if (!canvasRef.current) return;
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({
-      canvas: canvasRef.current,
-      alpha: true,
-      antialias: true,
-    });
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-    // Create particles
-    const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 1000;
-    const posArray = new Float32Array(particlesCount * 3);
-
-    for (let i = 0; i < particlesCount * 3; i++) {
-      posArray[i] = (Math.random() - 0.5) * 5;
-    }
-
-    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-
-    const particlesMaterial = new THREE.PointsMaterial({
-      size: 0.005,
-      color: '#00F0FF',
-      transparent: true,
-      opacity: 0.8,
-    });
-
-    const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-    scene.add(particlesMesh);
-
-    camera.position.z = 3;
-
-    const animate = () => {
-      requestAnimationFrame(animate);
-      particlesMesh.rotation.y += 0.001;
-      renderer.render(scene, camera);
-    };
-
-    animate();
-
-    const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      renderer.dispose();
-    };
-  }, []);
 
   const titleVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -99,12 +38,8 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ opacity }}
     >
-      {/* 3D Background */}
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full"
-        style={{ pointerEvents: 'none' }}
-      />
+      {/* Jei nori palikti particle foną */}
+      <ParticlesBackground />
 
       {/* Gradient Overlays */}
       <div className="absolute inset-0">
@@ -115,7 +50,6 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         <div className="max-w-5xl mx-auto">
-          {/* Main Title */}
           <div className="space-y-6 text-center mb-12">
             <motion.div
               initial="hidden"
@@ -161,13 +95,13 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
             <Link to="/kontaktai" className="text-white">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="button-primary inline-flex items-center gap-2 group"
-            >
-              Pradėkite savo projektą
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="button-primary inline-flex items-center gap-2 group"
+              >
+                Pradėkite savo projektą
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </Link>
             <Link to="/projektai" className="text-white">
@@ -199,7 +133,7 @@ const HeroSection = () => {
                 transition={{ delay: 0.5 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl flex  align-center justify-center font-display font-bold text-electric-blue mb-2">
+                <div className="text-3xl md:text-4xl flex align-center justify-center font-display font-bold text-electric-blue mb-2">
                   {stat.icon}
                 </div>
                 <div className="text-white/70">{stat.label}</div>
