@@ -1,7 +1,18 @@
 import Images from "../img/Images";
 
+export type Project = {
+    id: string
+    title: string
+    subtitle: string
+    description: string
+    image: string
+    tags: string[]
+    link: string
+}
+
 const projects = [
     {
+        id: "lzspa",
         title: 'LŽSPA',
         subtitle: 'Lietuvos žmonių su stuburo pažeidimais asociacija',
         description: 'Lietuvos žmonių su stuburo pažeidimais asociacija - tai nevyriausybinė organizacija, siekianti padėti žmonėms, turintiems stuburo pažeidimų, ir jų šeimoms. Svetainėje pateikiama informacija apie asociacijos veiklą, renginius ir galimybę prisidėti prie jos veiklos.',
@@ -10,6 +21,7 @@ const projects = [
         link: 'https://www.lzspa.lt',
     },
     {
+        id: "holistine-kosmetologija",
         title: 'Holistinė kosmetologija',
         subtitle: 'Sveikata ir grožis',
         description: 'Holistinė kosmetologija - tai sveikatos ir grožio paslaugos, grindžiamos natūraliais ir ekologiškais ingredientais. Svetainėje pateikiama informacija apie paslaugas, produktus ir jų naudojimą.',
@@ -18,6 +30,7 @@ const projects = [
         link: 'https://www.holistinekosmetologija.lt',
     },
     {
+        id: "veselovaite",
         title: 'Advokatų kontora',
         subtitle: 'Teisinės paslaugos',
         description: 'Advokatų kontora teikia profesionalias teisinės pagalbos paslaugas. Svetainėje pateikiama informacija apie teikiamas paslaugas, advokatų kompetenciją ir kontaktus.',
@@ -26,6 +39,7 @@ const projects = [
         link: 'https://www.veselovaite.lt',
     },
     {
+        id: 'topstone',
         title: 'TopStone Lietuva',
         subtitle: 'Akmens kilimai',
         description: 'TopStone Lietuva - tai įmonė, specializuojanti akmens kilimų gamyboje ir montavime. Svetainėje pateikiama informacija apie produktus, paslaugas ir jų privalumus.',
@@ -34,6 +48,7 @@ const projects = [
         link: 'https://www.topstonelietuva.com',
     },
     {
+        id: 'brangus-auto',
         title: 'Brangus Auto',
         subtitle: 'Automobilių supirkimas',
         description: 'Brangus Auto specializuojasi greitame ir patikimame automobilių supirkime. Svetainėje pateikiama informacija apie supirkimo procesą, klientų atsiliepimai ir galimybė gauti pasiūlymą užpildant formą.',
@@ -42,6 +57,7 @@ const projects = [
         link: 'https://www.brangusauto.lt',
     },
     {
+        id: 'kaliause',
         title: 'Kaliausė',
         subtitle: 'Renginių vedėjai',
         description: 'Tai profesionalių renginių vedėjų komanda su daugiau nei 10 metų patirtimi. Jie organizuoja renginius suaugusiems, įmonėms ir vaikams, užtikrindami įsimintinas šventes. Svetainėje rasite išsamią informaciją apie teikiamas paslaugas ir renginių vedėjų kompetenciją.',
@@ -50,6 +66,7 @@ const projects = [
         link: 'https://www.kaliause.lt',
     },
     {
+        id: 'esu-tau',
         title: 'Esu Tau',
         subtitle: 'Konsultacijos',
         description: 'Esu Tau teikia dvasinio konsultavimo ir asistavimo paslaugas, padedančias asmeniniam augimui ir savęs pažinimui.',
@@ -58,6 +75,7 @@ const projects = [
         link: 'https://www.esutau.lt',
     },
     {
+        id: 'angel-butikas',
         title: 'Angel Butikas',
         subtitle: 'Butikas',
         description: 'Angel Butikas - mados butikas, siūlantis išskirtinius drabužius ir aksesuarus. Svetainėje pateikiama informacija apie prekes ir galimybė įsigyti internetu.',
@@ -66,6 +84,7 @@ const projects = [
         link: 'https://www.angelbutikas.lt',
     },
     {
+        id: 'godeko',
         title: 'GoDeko',
         subtitle: 'Švenčių dekoravimas',
         description: 'GoDeko specializuojasi švenčių dekoravimo paslaugose, siūlydama kūrybiškus sprendimus įvairioms progoms. Svetainėje pateikiama paslaugų informacija ir nuotraukų galerija.',
@@ -74,6 +93,7 @@ const projects = [
         link: 'https://www.godeko.lt',
     },
     {
+        id: 'eriola',
         title: 'Eriola',
         subtitle: 'Logistikos įmonė',
         description: 'UAB „Eriola“ - stabili ir sparčiai auganti krovinių pervežimo įmonė, teikianti visas transporto ir logistikos paslaugas pasauliniu mastu. Svetainėje pateikiama informacija apie paslaugas ir kontaktai.',
@@ -82,6 +102,7 @@ const projects = [
         link: 'https://www.eriola.lt',
     },
     {
+        id: 'gavorka-art',
         title: 'Gavorka Art',
         subtitle: 'Meninė galerija',
         description: 'Gavorka Art - meninė galerija, pristatanti išskirtinius Povilo Gavorkos darbus. Svetainėje galima peržiūrėti menininko kūrinius ir sužinoti daugiau apie jo veiklą.',
@@ -98,6 +119,7 @@ const projects = [
     //   link: 'https://www.evakuacinekuprine.lt',
     // },
     {
+        id: 'gavorka',
         title: 'Gavorka',
         subtitle: '3D Animacija',
         description: '3D animacijos studijos tinklalapis su darbų portfeliu.',
@@ -106,6 +128,7 @@ const projects = [
         link: 'https://www.gavorka.com',
     },
     {
+        id: 'grozio-forma',
         title: 'Grožio Forma',
         subtitle: 'Kosmetikos parduotuvė',
         description: 'Kosmetikos parduotuvė, siūlanti platų grožio priemonių asortimentą. Svetainėje pateikiama išsami prekių informacija ir galimybė jas įsigyti internetu.',
@@ -122,6 +145,7 @@ const projects = [
     //   link: 'https://www.kamtechna.lt',
     // },
     {
+        id: 'ovc',
         title: 'OVC',
         subtitle: 'Internetinė parduotuvė',
         description: 'Šioje parduotuvėje rasite unikalius produktus - knygas ir žaidimus, sukurtus pačių OVC Consulting komandos narių. Tai puikūs įrankiai mokymams, komandiniam darbui ar savęs tobulinimui. Visi produktai pasižymi kokybe ir pritaikomumu įvairioms situacijoms.',
@@ -130,6 +154,7 @@ const projects = [
         link: 'https://www.e-shop.ovc.lt',
     },
     {
+        id: 'printery',
         title: 'Printery',
         subtitle: 'Spauda ant tekstilės',
         description: 'Printery specializuojasi originalių tekstų ir emblemų spaudoje ant drabužių ir aksesuarų, siūlydama individualius dizainus ir kokybišką spaudą.',
@@ -138,6 +163,7 @@ const projects = [
         link: 'https://www.printery.lt',
     },
     {
+        id: 'prisipusk-sypsena',
         title: 'Prisipūsk Šypseną',
         subtitle: 'Internetinė parduotuvė',
         description: 'Internetinė parduotuvė su išsamia prekių informacija ir sklandžiu užsakymo procesu.',
@@ -146,6 +172,7 @@ const projects = [
         link: 'https://www.prisipusksypsena.lt',
     },
     {
+        id: 'provanso-svajos',
         title: 'Provanso Svajos',
         subtitle: 'Rankų darbo dovanos',
         description: 'Internetinė parduotuvė, kurioje siūlomos unikalios rankų darbo dovanos, puikiai tinkančios bet kokiai progai.',
@@ -154,6 +181,7 @@ const projects = [
         link: 'https://www.provansosvajos.lt',
     },
     {
+        id: 'smaragdo-uostas',
         title: 'Smaragdo Uostas',
         subtitle: 'Vaikų darželis',
         description: 'Informacinis vaikų darželio tinklalapis, kuriame pateikiama detali informacija apie ugdymo programas, veiklas ir dienotvarkes.',
@@ -161,7 +189,8 @@ const projects = [
         tags: ['Wordpress', 'Divi', 'Galerija'],
         link: 'https://www.smaragdouostas.lt',
     },
-    {
+    {   
+        id: 'sssprendimai',
         title: 'SSSprendimai',
         subtitle: 'Silpnų srovių sprendimai',
         description: 'Profesionalus tinklalapis, skirtas silpnųjų srovių sprendimų paslaugoms pristatyti, su aiškia paslaugų struktūra ir kontaktais.',
@@ -170,6 +199,7 @@ const projects = [
         link: 'https://www.sssprendimai.lt',
     },
     {
+        id: 'termoventa',
         title: 'Termoventa',
         subtitle: 'Inžinerinės sistemos',
         description: 'Modernus tinklalapis, skirtas inžinerinių sistemų paslaugų pristatymui, pateikiantis techninę informaciją ir įmonės sprendimus.',
@@ -178,6 +208,7 @@ const projects = [
         link: 'https://www.termoventa.lt',
     },
     {
+        id: 'tradicine-virtuve',
         title: 'Tradicinė Virtuvė',
         subtitle: 'Kavinė',
         description: 'Tinklalapis, kuriame tradicinė lietuviška virtuvė atskleidžiama per išsamų meniu, nuotraukas ir kavinės kontaktus.',
@@ -186,7 +217,8 @@ const projects = [
         link: 'https://www.tradicinevirtuve.lt',
     },
     {
-        title: 'U Smiler',
+        id: 'u-smiler',
+        title: 'U-Smiler',
         subtitle: 'Irigatorius',
         description: 'E-parduotuvė, skirta irigatorių pristatymui bei pardavimui, su patogiu užsakymo procesu ir vartotojo patirtimi.',
         image: Images.projects.uSmiler,

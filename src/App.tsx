@@ -22,6 +22,28 @@ import KasYraDivi from './pages/blog/KasYraDivi';
 import KlaidosKuriasDaroVerslai from './pages/blog/KlaidosKuriasDaroVerslai';
 import { initGA, logPageView } from "./analytics";
 import NotFoundPage from './components/NotFoundPage';
+import LzspaPage from './pages/projektai/Lzspa';
+import HolistineKosmetologija from './pages/projektai/holistine-kosmetologija';
+import Veselovaite from './pages/projektai/veselovaite';
+import Topstone from './pages/projektai/topstone';
+import Brangusauto from './pages/projektai/brangus-auto';
+import Kaliause from './pages/projektai/kaliause';
+import Esutau from './pages/projektai/esu-tau';
+import Angelbutikas from './pages/projektai/angel-butikas';
+import Godeko from './pages/projektai/godeko';
+import Eriola from './pages/projektai/eriola';
+import Gavorkaart from './pages/projektai/gavorka-art';
+import Gavorka from './pages/projektai/gavorka';
+import Grozioforma from './pages/projektai/grozio-forma';
+import Ovc from './pages/projektai/ovc';
+import Printery from './pages/projektai/printery';
+import Prisipusksypsena from './pages/projektai/prisipusk-sypsena';
+import Provansosvajos from './pages/projektai/provanso-svajos';
+import Smaragdouostas from './pages/projektai/smaragdo-uostas';
+import Sssprendimai from './pages/projektai/sssprendimai';
+import Termoventa from './pages/projektai/termoventa';
+import Tradicinevirtuve from './pages/projektai/tradicine-virtuve';
+import Usmiler from './pages/projektai/u-smiler';
 
 function App() {
   useEffect(() => {
@@ -58,6 +80,30 @@ function App() {
               <Route path="/blog/kas-yra-divi" element={<KasYraDivi />} />
               <Route path="/blog/5-klaidos-kurias-daro-verslai" element={<KlaidosKuriasDaroVerslai />} />
               <Route path="*" element={<NotFoundPage />} />
+              <Route path="/projektai/lzspa" element={<LzspaPage />} />
+              <Route path="/projektai/holistine-kosmetologija" element={<HolistineKosmetologija />} />
+              <Route path="/projektai/veselovaite" element={<Veselovaite />} />
+              <Route path="/projektai/topstone" element={<Topstone />} />
+              <Route path="/projektai/brangus-auto" element={<Brangusauto />} />
+              <Route path="/projektai/kaliause" element={<Kaliause />} />
+              <Route path="/projektai/esu-tau" element={<Esutau />} />
+              <Route path="/projektai/angel-butikas" element={<Angelbutikas />} />
+              <Route path="/projektai/godeko" element={<Godeko />} />
+              <Route path="/projektai/eriola" element={<Eriola />} />
+              <Route path="/projektai/gavorka-art" element={<Gavorkaart />} />
+              <Route path="/projektai/gavorka" element={<Gavorka />} />
+              <Route path="/projektai/grozio-forma" element={<Grozioforma />} />
+              <Route path="/projektai/ovc" element={<Ovc />} />
+              <Route path="/projektai/printery" element={<Printery />} />
+              <Route path="/projektai/prisipusk-sypsena" element={<Prisipusksypsena />} />
+              <Route path="/projektai/provanso-svajos" element={<Provansosvajos />} />
+              <Route path="/projektai/smaragdo-uostas" element={<Smaragdouostas />} />
+              <Route path="/projektai/sssprendimai" element={<Sssprendimai />} />
+              <Route path="/projektai/termoventa" element={<Termoventa />} />
+              <Route path="/projektai/tradicine-virtuve" element={<Tradicinevirtuve />} />
+              <Route path="/projektai/u-smiler" element={<Usmiler />} />
+
+
             </Routes>
             <ScrollToTopButton />
           </motion.div>

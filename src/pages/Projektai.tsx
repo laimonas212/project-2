@@ -5,6 +5,7 @@ import projects  from '../components/Projects';
 import { ExternalLink, MousePointerClick } from 'lucide-react';
 
 interface Project {
+  id: string;
   title: string;
   subtitle?: string;
   description: string;
@@ -64,7 +65,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             className="relative"
           >
             <h2 className="text-4xl font-display font-bold relative z-10">
-              <a href={project.link} target="_blank" rel="noreferrer">
+              <a href={`/projektai/${project.id}`} className="block" rel="noreferrer">
                 <div className="notranslate">{project.title}</div>
               </a>
             </h2>
@@ -82,11 +83,11 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
-            <a href={project.link} target="_blank" rel="noreferrer">
+            <a href={`/projektai/${project.id}`} rel="noreferrer">
             {/* Hover button in the center */}
             <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
               <div className="backdrop-blur-sm bg-white/60 px-4 py-2 rounded-md pointer-events-auto">
-                <a href={project.link} target="_blank" rel="noreferrer" className="text-black text-xs font-medium flex items-center gap-2">
+                  <a href={`/projektai/${project.id}`} rel="noreferrer" className="text-black text-xs font-medium flex items-center gap-2">
                   Peržiūrėti
                   <MousePointerClick className="w-4 h-4 animate-carousel-ping" />
                 </a>
@@ -136,7 +137,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
           >
             <div className="vertical-text">
               <h2 className="text-6xl xl:text-7xl font-display font-bold whitespace-nowrap relative">
-                <a href={project.link} target="_blank" rel="noreferrer">
+                <a href={`/projektai/${project.id}`} rel="noreferrer">
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
@@ -169,7 +170,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
-                <a href={project.link} target="_blank" rel="noreferrer" className="block relative">
+                <a href={`/projektai/${project.id}`} rel="noreferrer" className="block relative">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -178,8 +179,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
                   {/* Hover button in the center */}
                   <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-                    <div className="opacity-0 group-hover:opacity-100 backdrop-blur-sm bg-white/60 px-5 py-2 rounded-md pointer-events-auto">
-                      <a href={project.link} target="_blank" rel="noreferrer" className="text-black text-sm font-medium flex items-center gap-2">
+                    <div className="backdrop-blur-sm bg-white/60 px-5 py-2 rounded-md pointer-events-auto">
+                      <a href={`/projektai/${project.id}`} rel="noreferrer" className="text-black text-sm font-medium flex items-center gap-2">
                         Peržiūrėti
                         <MousePointerClick className="w-6 h-6 animate-carousel-ping" />
                       </a>
@@ -195,11 +196,11 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="relative z-10 p-8 backdrop-blur-sm">
-                  <p className="text-white/70 text-lg leading-relaxed">
+                <div className="relative z-10 backdrop-blur-sm">
+                  {/* <p className="text-white/70 text-lg leading-relaxed">
                     {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-3 mt-6">
+                  </p> */}
+                  <div className="flex flex-wrap gap-3 justify-center">
                     {project.tags.map(tag => (
                       <span
                         key={tag}

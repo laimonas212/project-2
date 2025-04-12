@@ -1,76 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Static Pages -->
+    <!-- Pagrindiniai puslapiai -->
     <url>
-        <loc>https://amberweb.lt/</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <loc>https://www.amberweb.lt/</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/projektai</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <loc>https://www.amberweb.lt/projektai</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/paruosti-dizainai</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://www.amberweb.lt/dizainai</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/kainos</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://www.amberweb.lt/kainos</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/kontaktai</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://www.amberweb.lt/kontaktai</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/privatumo-politika</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://www.amberweb.lt/privatumo-politika</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/salygos</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://www.amberweb.lt/salygos</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/slapukai</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://www.amberweb.lt/slapukai</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/titulinis</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://www.amberweb.lt/blog</loc>
     </url>
 
-    <!-- Blog Posts -->
+    <!-- Blog įrašai -->
     <url>
-        <loc>https://amberweb.lt/blog/kaip-naudotis-divi</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://www.amberweb.lt/blog/KaipNaudotisDivi</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/blog/kas-yra-divi</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://www.amberweb.lt/blog/KasYraDivi</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/blog/5-klaidos-kurias-daro-verslai</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://www.amberweb.lt/blog/KlaidosKuriasDaroVerslai</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/blog/naujas-woocommerce-produktas</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://www.amberweb.lt/blog/NaujasWoocommerceProduktas</loc>
     </url>
     <url>
-        <loc>https://amberweb.lt/blog/woocommerce-uzsakymu-valdymas</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://www.amberweb.lt/blog/WoocommerceUzsakymuValdymas</loc>
+    </url>
+
+    <!-- Projektų puslapiai -->
+    <url>
+        <loc>https://www.amberweb.lt/projektai/angel-butikas</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/brangus-auto</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/eriola</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/esu-tau</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/gavorka-art</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/gavorka</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/godeko</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/grozio-forma</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/holistine-kosmetologija</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/kaliause</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/lzspa</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/ovc</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/printery</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/prisipusk-sypsena</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/provanso-svajos</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/smaragdo-uostas</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/sssprendimai</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/termoventa</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/topstone</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/tradicine-virtuve</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/u-smiler</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/projektai/veselovaite</loc>
     </url>
 </urlset>
