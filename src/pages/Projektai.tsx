@@ -108,9 +108,6 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             viewport={{ once: true }}
           >
             <div className="relative z-10 p-6  backdrop-blur-sm">
-              <p className="text-white/70 text-lg leading-relaxed">
-                {project.description}
-              </p>
               <div className="flex flex-wrap gap-3 mt-4">
                 {project.tags.map(tag => (
                   <span
