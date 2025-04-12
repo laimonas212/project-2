@@ -22,7 +22,7 @@ import KasYraDivi from './pages/blog/KasYraDivi';
 import KlaidosKuriasDaroVerslai from './pages/blog/KlaidosKuriasDaroVerslai';
 import { initGA, logPageView } from "./analytics";
 import NotFoundPage from './components/NotFoundPage';
-import LzspaPage from './pages/projektai/Lzspa';
+import LzspaPage from './pages/projektai/lzspa';
 import HolistineKosmetologija from './pages/projektai/holistine-kosmetologija';
 import Veselovaite from './pages/projektai/veselovaite';
 import Topstone from './pages/projektai/topstone';
