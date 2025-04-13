@@ -1,10 +1,14 @@
 import { Helmet } from "react-helmet-async"
 import { useNavigate } from "react-router-dom"
 import { Project } from "./Projects";
+import projects from './Projects'
+
 
 type Props = {
     project: Project
 }
+
+
 
 export default function ProjectPage({ project }: Props) {
     const navigate = useNavigate();
@@ -16,6 +20,11 @@ export default function ProjectPage({ project }: Props) {
             navigate('/projektai')
         }
     }
+
+    const currentIndex = projects.findIndex(p => p.id === project.id)
+    const prevProject = projects[currentIndex - 1] || null
+    const nextProject = projects[currentIndex + 1] || null
+
 
     return (
         <div className="relative mt-32 mb-12 z-10">
@@ -48,6 +57,37 @@ export default function ProjectPage({ project }: Props) {
                 </div>
 
                 <a href={project.link} target="_blank" className="button-primary">Aplankyti svetainę →</a>
+            </div>
+
+            <div className="relative mt-20 flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between text-white/80 gap-8 max-w-5xl mx-auto px-6 text-center md:text-left">
+                {prevProject && (
+                    <a href={`/projektai/${prevProject.id}`} className="group w-full md:w-1/2 flex items-center gap-4 justify-center md:justify-start text-center md:text-left">
+                        <img
+                            src={prevProject.image}
+                            alt={prevProject.title}
+                            className="w-20 h-14 object-cover rounded-md border border-white/10"
+                        />
+                        <div>
+                            <p className="text-sm mb-1">← Ankstesnis projektas</p>
+                            <div className="font-semibold">{prevProject.title}</div>
+                        </div>
+                    </a>
+                )}
+
+                {nextProject && (
+                    <a href={`/projektai/${nextProject.id}`} className="group w-full md:w-1/2 flex items-center gap-4 justify-center md:justify-end text-center md:text-right">
+                        <div>
+                            <p className="text-sm mb-1">Kitas projektas →</p>
+                            <div className="font-semibold">{nextProject.title}</div>
+                        </div>
+                        <img
+                            src={nextProject.image}
+                            alt={nextProject.title}
+                            className="w-20 h-14 object-cover rounded-md border border-white/10"
+                        />
+                    </a>
+                )}
+
             </div>
 
             <div className="relative z-10">
