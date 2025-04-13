@@ -14,11 +14,7 @@ export default function ProjectPage({ project }: Props) {
     const navigate = useNavigate();
 
     const handleBack = () => {
-        if (window.history.length > 1) {
-            navigate(-1)
-        } else {
-            navigate('/projektai')
-        }
+        navigate('/projektai')
     }
 
     const currentIndex = projects.findIndex(p => p.id === project.id)
