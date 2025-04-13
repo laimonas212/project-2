@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async"
 import { useNavigate } from "react-router-dom"
-import { Project } from "./Projects";
+import { Project } from "./Projects"
 import projects from './Projects'
+import sortedIds from "./sortedProjectIds"
 
 type Props = {
     project: Project
@@ -14,9 +15,13 @@ export default function ProjectPage({ project }: Props) {
         navigate('/projektai')
     }
 
-    const currentIndex = projects.findIndex(p => p.id === project.id)
-    const prevProject = projects[currentIndex - 1] || null
-    const nextProject = projects[currentIndex + 1] || null
+    const sortedProjects = [...projects].sort(
+        (a, b) => sortedIds.indexOf(a.id) - sortedIds.indexOf(b.id)
+    );
+
+    const currentIndex = sortedProjects.findIndex(p => p.id === project.id);
+    const prevProject = sortedProjects[currentIndex - 1] || null;
+    const nextProject = sortedProjects[currentIndex + 1] || null;
 
     return (
         <div className="relative mt:4 md:mt-36 mb-12 z-10">

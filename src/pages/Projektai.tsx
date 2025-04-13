@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import projects  from '../components/Projects';
-import { ExternalLink, MousePointerClick } from 'lucide-react';
+import { MousePointerClick } from 'lucide-react';
+import sortedIds from '../components/sortedProjectIds';
 
 interface Project {
   id: string;
@@ -19,38 +20,9 @@ interface ProjectSectionProps {
   index: number;
 }
 
-const sortedIds = [
-  'lzspa',
-  'paparciopm',
-  'veselovaite',
-  'holistine-kosmetologija',
-  'smaragdo-uostas',
-  'tradicine-virtuve',
-  'archi-grupe',
-  'ovc',
-  'brangus-auto',
-  'godeko',
-  'kaliause',
-  'gavorka',
-  'gavorka-art',
-  'provanso-svajos',
-  'printery',
-  'prisipusk-sypsena',
-  'topstone',
-  'angel-butikas',
-  'grozio-forma',
-  'eriola',
-  'termoventa',
-  'sssprendimai',
-  'lithuan',
-  'esu-tau',
-  'u-smiler',
-];
-
 const sortedProjects = [...projects].sort(
   (a, b) => sortedIds.indexOf(a.id) - sortedIds.indexOf(b.id)
 );
-
 
 const ProjectsList: React.FC = () => {
   return (
