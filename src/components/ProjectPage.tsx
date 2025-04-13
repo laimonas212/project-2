@@ -68,7 +68,7 @@ export default function ProjectPage({ project }: Props) {
                             className="w-20 h-14 object-cover rounded-md border border-white/10"
                         />
                         <div>
-                            <p className="text-sm mb-1">← Ankstesnis projektas</p>
+                            <p className="text-sm mb-1 group-hover:text-electric-blue">← Ankstesnis projektas</p>
                             <div className="font-semibold">{prevProject.title}</div>
                         </div>
                     </a>
@@ -77,8 +77,8 @@ export default function ProjectPage({ project }: Props) {
                 {nextProject && (
                     <a href={`/projektai/${nextProject.id}`} className="group w-full md:w-1/2 flex items-center gap-4 justify-center md:justify-end text-center md:text-right">
                         <div>
-                            <p className="text-sm mb-1">Kitas projektas →</p>
-                            <div className="font-semibold">{nextProject.title}</div>
+                            <p className="text-sm mb-1 group-hover:text-electric-blue">Kitas projektas →</p>
+                            <div className="font-semibold ">{nextProject.title}</div>
                         </div>
                         <img
                             src={nextProject.image}
