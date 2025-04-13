@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 
 const Slapukai: React.FC = () => {
     return (
-        <div className="pt-24 min-h-auto mt-4 mb-24">
+        <div className="pt-4 md:pt-36 min-h-auto mt-4 mb-24">
             <Helmet>
                 <title>Slapukai | Amberweb</title>
                 <meta name="description" content="Amberweb slapukų politika. Mes naudojame slapukus, kad pagerintume naršymo patirtį ir užtikrintume tam tikras funkcijas." />            

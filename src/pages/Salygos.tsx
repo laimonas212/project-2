@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 
 const Salygos: React.FC = () => {
     return (
-        <div className="pt-24 min-h-auto mt-4 mb-24 bg-background text-gray-800">
+        <div className="pt-4 md:pt-36 min-h-auto mt-4 mb-24 bg-background text-gray-800">
             <Helmet>
                 <title>Sąlygos | Amberweb</title>
                 <meta name="description" content="Amberweb sąlygos. Sutikdami su šiomis sąlygomis, Jūs patvirtinate, kad naudosite svetainę teisėtai ir nesiekiate pažeisti mūsų ar kitų asmenų teisių." />

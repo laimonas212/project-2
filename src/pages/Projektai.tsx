@@ -19,12 +19,45 @@ interface ProjectSectionProps {
   index: number;
 }
 
+const sortedIds = [
+  'lzspa',
+  'paparciopm',
+  'veselovaite',
+  'holistine-kosmetologija',
+  'smaragdo-uostas',
+  'tradicine-virtuve',
+  'archi-grupe',
+  'ovc',
+  'brangus-auto',
+  'godeko',
+  'kaliause',
+  'gavorka',
+  'gavorka-art',
+  'provanso-svajos',
+  'printery',
+  'prisipusk-sypsena',
+  'topstone',
+  'angel-butikas',
+  'grozio-forma',
+  'eriola',
+  'termoventa',
+  'sssprendimai',
+  'lithuan',
+  'esu-tau',
+  'u-smiler',
+];
+
+const sortedProjects = [...projects].sort(
+  (a, b) => sortedIds.indexOf(a.id) - sortedIds.indexOf(b.id)
+);
+
+
 const ProjectsList: React.FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="text-center mt-12 mb-12"
+      className="text-center mt-0 md:mt-12 mb-12"
     >
       <h1 className="text-4xl md:text-5xl font-bold mb-6">Įgyvendinti projektai</h1>
       <p className="text-lg mb-2 text-white/70">
@@ -107,8 +140,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className="relative z-10 p-6  backdrop-blur-sm">
-              <div className="flex flex-wrap gap-3 mt-4">
+            <div className="relative z-10  backdrop-blur-sm">
+              <div className="flex flex-wrap gap-3">
                 {project.tags.map(tag => (
                   <span
                     key={tag}
@@ -221,7 +254,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
 const Projects: React.FC = () => {
   return (
-    <div className="pt-24 relative">
+    <div className="pt-4 md:pt-24 relative">
       <Helmet>
         <title>Įgyvendinti projektai | Amberweb</title>
         <meta
@@ -242,7 +275,7 @@ const Projects: React.FC = () => {
         }} />
         </div>
         <ProjectsList />
-        {projects.map((project, index) => (
+        {sortedProjects.map((project, index) => (
           <ProjectSection key={project.title} project={project} index={index} />
         ))}
       </div>

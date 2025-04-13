@@ -116,7 +116,7 @@ const Kontaktai = () => {
   };
 
   return (
-    <div className="pt-36 mb-24">
+    <div className="pt-4 md:pt-36 mb-24">
       {/* Helmet component for page title and meta */}
       <Helmet>
         <title>Kontaktai - Susisiekite su mumis | Amberweb</title>

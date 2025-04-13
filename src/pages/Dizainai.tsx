@@ -174,7 +174,7 @@ const Templates: React.FC = () => {
   };
 
   return (
-    <div className="pt-36 min-h-screen">
+    <div className="pt-4 md:pt-36 min-h-screen">
       {/* Helmet for SEO */}
       <Helmet>
         <title>Paruošti dizainai | Amberweb</title>

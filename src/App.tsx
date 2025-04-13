@@ -44,6 +44,9 @@ import Sssprendimai from './pages/projektai/sssprendimai';
 import Termoventa from './pages/projektai/termoventa';
 import Tradicinevirtuve from './pages/projektai/tradicine-virtuve';
 import Usmiler from './pages/projektai/u-smiler';
+import Paparciopm from './pages/projektai/paparciopm';
+import ArchiGrupe from './pages/projektai/archi-grupe';
+import Lithuan from './pages/projektai/lithuan';
 
 function App() {
   useEffect(() => {
@@ -102,8 +105,9 @@ function App() {
               <Route path="/projektai/termoventa" element={<Termoventa />} />
               <Route path="/projektai/tradicine-virtuve" element={<Tradicinevirtuve />} />
               <Route path="/projektai/u-smiler" element={<Usmiler />} />
-
-
+              <Route path="/projektai/paparciopm" element={<Paparciopm />} />
+              <Route path="/projektai/archi-grupe" element={<ArchiGrupe />} />
+              <Route path="/projektai/lithuan" element={<Lithuan />} />
             </Routes>
             <ScrollToTopButton />
           </motion.div>

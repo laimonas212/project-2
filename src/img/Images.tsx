@@ -1,12 +1,10 @@
 import logoImage from './amberweb-logo-amber-only.png';
 import brangusAuto from '././projects/brangus-auto.png';
 import eriola from '././projects/eriola.png';
-import evakuacineKuprine from '././projects/evakuacine-kuprine.png';
 import gavorkaArt from '././projects/gavorka-art.png';
 import gavorka from '././projects/gavorka.png';
 import grozioForma from '././projects/grozio-forma.png';
 import kaliause from '././projects/kaliause.png';
-import kamtechna from '././projects/kamtechna.png';
 import ovc from '././projects/ovc.png';
 import printery from '././projects/printery.png';
 import prisipuskSypsena from '././projects/prisipusk-sypsena.png';
@@ -15,12 +13,13 @@ import smaragdoUostas from '././projects/smaragdo-uostas.png';
 import sssprendimai from '././projects/sssprendimai.png';
 import termoventa from '././projects/termoventa.png';
 import tradicineVirtuve from '././projects/tradicine-virtuve.png';
-import uSmiler from '././projects/usmiler.png';
-import angelButikas from '././projects/angelbutikas.png';
-import esuTau from '././projects/esutau.png';
+import uSmiler from '././projects/u-smiler.png';
+import angelButikas from '././projects/angel-butikas.png';
+import esuTau from '././projects/esu-tau.png';
 import godeko from '././projects/godeko.png';
-import holistinekosmetologija from '././projects/holistinekosmetologija.png';
+import holistinekosmetologija from '././projects/holistine-kosmetologija.png';
 import lzspa from '././projects/lzspa.png';
+import lithuan from '././projects/lithuan.png';
 import woo from './woo.png';
 import wooWhite from './logos/woo-white.png';
 import wordpress from './logos/wordpress.png';
@@ -34,6 +33,8 @@ import css from './logos/css.png';
 import five from './5.png';
 import topStone from '././projects/topstone.png';
 import veselovaite from '././projects/veselovaite.png';
+import archiGrupe from '././projects/archi-grupe.png';
+import paparcioPradineMokykla from '././projects/paparcio-pradine-mokykla.png';
 
 
 // acai bowl
@@ -298,14 +299,13 @@ const Images = {
         css: css,
     },
     projects: {
+        archiGrupe: archiGrupe,
         brangusAuto: brangusAuto,
         gavorkaArt: gavorkaArt,
         eriola: eriola,
-        evakuacineKuprine: evakuacineKuprine,
         gavorka: gavorka,
         grozioForma: grozioForma,
         kaliause: kaliause,
-        kamtechna: kamtechna,
         ovc: ovc,
         printery: printery,
         prisipuskSypsena: prisipuskSypsena,
@@ -320,8 +320,10 @@ const Images = {
         godeko: godeko,
         holistinekosmetologija: holistinekosmetologija,
         lzspa: lzspa,
+        lithuan: lithuan,
         topStone: topStone,
         veselovaite: veselovaite,
+        paparcioPradineMokykla: paparcioPradineMokykla,
     },
     templates: {
         acaiBowl: {

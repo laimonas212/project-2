@@ -45,7 +45,7 @@ const Kainos = () => {
   ];
 
   return (
-    <div className="pt-36 min-h-screen">
+    <div className="pt-4 md:pt-36 min-h-screen">
       {/* Helmet component for page title and meta */}
       <Helmet>
         <title>Mūsų Kainos - Pasirinkite Planą | Amberweb</title>

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 
 const PrivatumoPolitika: React.FC = () => {
     return (
-        <div className="pt-24 min-h-auto mt-4 mb-24 bg-background text-gray-800">
+        <div className="pt-4 md:pt-36 min-h-auto mt-4 mb-24 bg-background text-gray-800">
             <Helmet>
                 <title>Privatumo Politika | Amberweb</title>
                 <meta name="description" content="Amberweb privatumo politika. Mes įsipareigoję užtikrinti jūsų asmens duomenų apsaugą." />
