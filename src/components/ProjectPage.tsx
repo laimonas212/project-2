@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { Project } from "./Projects"
 import projects from './Projects'
 import sortedIds from "./sortedProjectIds"
+import Images from "../img/Images"
 
 type Props = {
     project: Project
@@ -34,6 +35,12 @@ export default function ProjectPage({ project }: Props) {
                 <Helmet>
                     <title>{project.title} | Amberweb</title>
                     <meta name="description" content={project.description} />
+                    <link
+                        rel="preload"
+                        as="image"
+                        href={Images.projects.lzspa}
+                        type="image/webp"
+                    />
                 </Helmet>
 
                 <button onClick={handleBack} className="mb-6 text-sm text-electric-blue hover:underline">
