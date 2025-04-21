@@ -47,6 +47,7 @@ import Usmiler from './pages/projektai/u-smiler';
 import Paparciopm from './pages/projektai/paparciopm';
 import ArchiGrupe from './pages/projektai/archi-grupe';
 import Lithuan from './pages/projektai/lithuan';
+import PuppyYogaMeta from './pages/projektai/puppy-yoga-meta';
 
 function App() {
   useEffect(() => {
@@ -100,6 +101,7 @@ function App() {
               <Route path="/projektai/printery" element={<Printery />} />
               <Route path="/projektai/prisipusk-sypsena" element={<Prisipusksypsena />} />
               <Route path="/projektai/provanso-svajos" element={<Provansosvajos />} />
+              <Route path="/projektai/puppy-yoga-meta" element={<PuppyYogaMeta />} />
               <Route path="/projektai/smaragdo-uostas" element={<Smaragdouostas />} />
               <Route path="/projektai/sssprendimai" element={<Sssprendimai />} />
               <Route path="/projektai/termoventa" element={<Termoventa />} />

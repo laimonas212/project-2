@@ -3,6 +3,7 @@ const sortedIds = [
     'paparciopm',
     'veselovaite',
     'holistine-kosmetologija',
+    'puppy-yoga-meta',
     'smaragdo-uostas',
     'tradicine-virtuve',
     'archi-grupe',

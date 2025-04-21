@@ -1,25 +1,33 @@
+// projects
 import logoImage from './amberweb-logo-amber-only.png';
-import brangusAuto from '././projects/brangus-auto.png';
-import eriola from '././projects/eriola.png';
-import gavorkaArt from '././projects/gavorka-art.png';
-import gavorka from '././projects/gavorka.png';
-import grozioForma from '././projects/grozio-forma.png';
-import kaliause from '././projects/kaliause.png';
-import ovc from '././projects/ovc.png';
-import printery from '././projects/printery.png';
-import prisipuskSypsena from '././projects/prisipusk-sypsena.png';
-import provansoSvajos from '././projects/provanso-svajos.png';
-import smaragdoUostas from '././projects/smaragdo-uostas.png';
-import sssprendimai from '././projects/sssprendimai.png';
-import termoventa from '././projects/termoventa.png';
-import tradicineVirtuve from '././projects/tradicine-virtuve.png';
-import uSmiler from '././projects/u-smiler.png';
-import angelButikas from '././projects/angel-butikas.png';
-import esuTau from '././projects/esu-tau.png';
-import godeko from '././projects/godeko.png';
-import holistinekosmetologija from '././projects/holistine-kosmetologija.png';
-import lzspa from '././projects/lzspa.png';
-import lithuan from '././projects/lithuan.png';
+import brangusAuto from '././projects/brangus-auto.webp';
+import eriola from '././projects/eriola.webp';
+import gavorkaArt from '././projects/gavorka-art.webp';
+import gavorka from '././projects/gavorka.webp';
+import grozioForma from '././projects/grozio-forma.webp';
+import kaliause from '././projects/kaliause.webp';
+import ovc from '././projects/ovc.webp';
+import printery from '././projects/printery.webp';
+import prisipuskSypsena from '././projects/prisipusk-sypsena.webp';
+import provansoSvajos from '././projects/provanso-svajos.webp';
+import smaragdoUostas from '././projects/smaragdo-uostas.webp';
+import sssprendimai from '././projects/sssprendimai.webp';
+import termoventa from '././projects/termoventa.webp';
+import tradicineVirtuve from '././projects/tradicine-virtuve.webp';
+import uSmiler from '././projects/u-smiler.webp';
+import angelButikas from '././projects/angel-butikas.webp';
+import esuTau from '././projects/esu-tau.webp';
+import godeko from '././projects/godeko.webp';
+import holistinekosmetologija from '././projects/holistine-kosmetologija.webp';
+import lzspa from '././projects/lzspa.webp';
+import lithuan from '././projects/lithuan.webp';
+import topStone from '././projects/topstone.webp';
+import veselovaite from '././projects/veselovaite.webp';
+import archiGrupe from '././projects/archi-grupe.webp';
+import paparcioPradineMokykla from '././projects/paparcio-pradine-mokykla.webp';
+import puppyYoga from '././projects/puppy-yoga-meta.webp';
+
+// icons
 import woo from './woo.png';
 import wooWhite from './logos/woo-white.png';
 import wordpress from './logos/wordpress.png';
@@ -31,148 +39,143 @@ import react from './logos/react.png';
 import html from './logos/html5.png';
 import css from './logos/css.png';
 import five from './5.png';
-import topStone from '././projects/topstone.png';
-import veselovaite from '././projects/veselovaite.png';
-import archiGrupe from '././projects/archi-grupe.png';
-import paparcioPradineMokykla from '././projects/paparcio-pradine-mokykla.png';
-
 
 // acai bowl
-import acaiBowlAbout from '././templates/acai-bowl/acai-bowl-about-page-533x1040.jpg';
-import acaiBowlContact from '././templates/acai-bowl/acai-bowl-contact-page-533x823.jpg';
-import acaiBowlHome from '././templates/acai-bowl/acai-bowl-home-page-533x1170.jpg';
-import acaiBowlMenu from '././templates/acai-bowl/acai-bowl-menu-page-533x948.jpg';
-import acaiBowlLanding from '././templates/acai-bowl/acai-bowl-landing-page-533x2357.jpg';
-import acaiBowlBlog from '././templates/acai-bowl/acai-bowl-blog-page-533x704.jpg';
+import acaiBowlAbout from '././templates/acai-bowl/acai-bowl-about-page-533x1040.webp';
+import acaiBowlContact from '././templates/acai-bowl/acai-bowl-contact-page-533x823.webp';
+import acaiBowlHome from '././templates/acai-bowl/acai-bowl-home-page-533x1170.webp';
+import acaiBowlMenu from '././templates/acai-bowl/acai-bowl-menu-page-533x948.webp';
+import acaiBowlLanding from '././templates/acai-bowl/acai-bowl-landing-page-533x2357.webp';
+import acaiBowlBlog from '././templates/acai-bowl/acai-bowl-blog-page-533x704.webp';
 
 // agency
-import agencyAbout from '././templates/agency/business-about-533x1307.jpg';
-import agencyContact from '././templates/agency/business-contact-533x633.jpg';
-import agencyBlog from '././templates/agency/business-blog-533x1005.jpg';
-import agencyHome from '././templates/agency/business-home-533x865.jpg';
-import agencyPortfolio from '././templates/agency/business-portfolio-533x1068.jpg';
-import agencyLanding from '././templates/agency/business-landing-1-533x2694.jpg';
-import agencyPricing from '././templates/agency/business-pricing-533x1425.jpg';
+import agencyAbout from '././templates/agency/business-about-533x1307.webp';
+import agencyContact from '././templates/agency/business-contact-533x633.webp';
+import agencyBlog from '././templates/agency/business-blog-533x1005.webp';
+import agencyHome from '././templates/agency/business-home-533x865.webp';
+import agencyPortfolio from '././templates/agency/business-portfolio-533x1068.webp';
+import agencyLanding from '././templates/agency/business-landing-1-533x2694.webp';
+import agencyPricing from '././templates/agency/business-pricing-533x1425.webp';
 
 // app developer
-import appDeveloperLanding from '././templates/app-developer/app-developer-landing-page-533x2764.jpg';
-import appDeveloperAbout from '././templates/app-developer/app-developer-about-page-533x1800.jpg';
-import appDeveloperContact from '././templates/app-developer/app-developer-contact-page-533x823.jpg';
-import appDeveloperHome from '././templates/app-developer/app-developer-home-page-533x1254.jpg';
-import appDeveloperPortfolio from '././templates/app-developer/app-developer-portfolio-page-533x1733.jpg';
-import appDeveloperServices from '././templates/app-developer/app-developer-services-page-533x2110.jpg';
-import appDeveloperService from '././templates/app-developer/app-developer-sevice-page-533x1424.jpg';
-import appDeveloperProject from '././templates/app-developer/app-developer-project-page-533x2011.jpg';
+import appDeveloperLanding from '././templates/app-developer/app-developer-landing-page-533x2764.webp';
+import appDeveloperAbout from '././templates/app-developer/app-developer-about-page-533x1800.webp';
+import appDeveloperContact from '././templates/app-developer/app-developer-contact-page-533x823.webp';
+import appDeveloperHome from '././templates/app-developer/app-developer-home-page-533x1254.webp';
+import appDeveloperPortfolio from '././templates/app-developer/app-developer-portfolio-page-533x1733.webp';
+import appDeveloperServices from '././templates/app-developer/app-developer-services-page-533x2110.webp';
+import appDeveloperService from '././templates/app-developer/app-developer-sevice-page-533x1424.webp';
+import appDeveloperProject from '././templates/app-developer/app-developer-project-page-533x2011.webp';
 
 // bakery
-import bakeryAbout from '././templates/bakery/bakery-about-page-533x1507.jpg';
-import bakeryContact from '././templates/bakery/bakery-contact-page-533x584.jpg';
-import bakeryHome from '././templates/bakery/bakery-home-page-533x2024.jpg';
-import bakeryMenu from '././templates/bakery/bakery-menu-page-533x1327.jpg';
-import bakeryLanding from '././templates/bakery/bakery-landing-page-533x2027.jpg';
-import bakeryBlog from '././templates/bakery/bakery-blog-page-533x1056.jpg';
-import bakeryShop from '././templates/bakery/bakery-shop-page-533x1460.jpg';
+import bakeryAbout from '././templates/bakery/bakery-about-page-533x1507.webp';
+import bakeryContact from '././templates/bakery/bakery-contact-page-533x584.webp';
+import bakeryHome from '././templates/bakery/bakery-home-page-533x2024.webp';
+import bakeryMenu from '././templates/bakery/bakery-menu-page-533x1327.webp';
+import bakeryLanding from '././templates/bakery/bakery-landing-page-533x2027.webp';
+import bakeryBlog from '././templates/bakery/bakery-blog-page-533x1056.webp';
+import bakeryShop from '././templates/bakery/bakery-shop-page-533x1460.webp';
 
 // barber shop
-import barberShopAbout from '././templates/barber-shop/barber-shop-about-page-533x1479.jpg';
-import barberShopContact from '././templates/barber-shop/barber-shop-contact-page-533x870.jpg';
-import barberShopHome from '././templates/barber-shop/barber-shop-home-page-533x1171.jpg';
-import barberShopServices from '././templates/barber-shop/barber-shop-services-page-533x1215.jpg';
-import barberShopLanding from '././templates/barber-shop/barber-shop-landing-page-533x1867.jpg';
-import barberShopShop from '././templates/barber-shop/barber-shop-shop-page-533x1091.jpg';
+import barberShopAbout from '././templates/barber-shop/barber-shop-about-page-533x1479.webp';
+import barberShopContact from '././templates/barber-shop/barber-shop-contact-page-533x870.webp';
+import barberShopHome from '././templates/barber-shop/barber-shop-home-page-533x1171.webp';
+import barberShopServices from '././templates/barber-shop/barber-shop-services-page-533x1215.webp';
+import barberShopLanding from '././templates/barber-shop/barber-shop-landing-page-533x1867.webp';
+import barberShopShop from '././templates/barber-shop/barber-shop-shop-page-533x1091.webp';
 
 // beauty product
-import beautyProductAbout from '././templates/beauty-product/beauty-product-about-page-533x1030.jpg';
-import beautyProductBlog from '././templates/beauty-product/beauty-product-blog-page-533x742.jpg';
-import beautyProductContact from '././templates/beauty-product/beauty-product-contact-page-533x575.jpg';
-import beautyProductHome from '././templates/beauty-product/beauty-product-home-page-533x1170.jpg';
-import beautyProductLanding from '././templates/beauty-product/beauty-product-landing-page-533x2660.jpg';
-import beautyProductProduct from '././templates/beauty-product/beauty-product-product-page-533x1426.jpg';
-import beautyProductShop from '././templates/beauty-product/beauty-product-shop-page-533x1345.jpg';
+import beautyProductAbout from '././templates/beauty-product/beauty-product-about-page-533x1030.webp';
+import beautyProductBlog from '././templates/beauty-product/beauty-product-blog-page-533x742.webp';
+import beautyProductContact from '././templates/beauty-product/beauty-product-contact-page-533x575.webp';
+import beautyProductHome from '././templates/beauty-product/beauty-product-home-page-533x1170.webp';
+import beautyProductLanding from '././templates/beauty-product/beauty-product-landing-page-533x2660.webp';
+import beautyProductProduct from '././templates/beauty-product/beauty-product-product-page-533x1426.webp';
+import beautyProductShop from '././templates/beauty-product/beauty-product-shop-page-533x1345.webp';
 
 // bed and breakfast
-import bedAndBreakfastAbout from '././templates/bed-and-breakfast/bed-and-breakfast-about-page-533x2402.jpg';
-import bedAndBreakfastContact from '././templates/bed-and-breakfast/bed-and-breakfast-contact-page-533x1311.jpg';
-import bedAndBreakfastHome from '././templates/bed-and-breakfast/bed-and-breakfast-home-page-533x2050.jpg';
-import bedAndBreakfastRooms from '././templates/bed-and-breakfast/bed-and-breakfast-rooms-page-533x2291.jpg';
-import bedAndBreakfastRoom from '././templates/bed-and-breakfast/bed-and-breakfast-room-page-533x1068.jpg';
-import bedAndBreakfastLanding from '././templates/bed-and-breakfast/bed-and-breakfast-landing-page-533x3698.jpg';
-import bedAndBreakfastBlog from '././templates/bed-and-breakfast/bed-and-breakfast-blog-page-533x1122.jpg';
+import bedAndBreakfastAbout from '././templates/bed-and-breakfast/bed-and-breakfast-about-page-533x2402.webp';
+import bedAndBreakfastContact from '././templates/bed-and-breakfast/bed-and-breakfast-contact-page-533x1311.webp';
+import bedAndBreakfastHome from '././templates/bed-and-breakfast/bed-and-breakfast-home-page-533x2050.webp';
+import bedAndBreakfastRooms from '././templates/bed-and-breakfast/bed-and-breakfast-rooms-page-533x2291.webp';
+import bedAndBreakfastRoom from '././templates/bed-and-breakfast/bed-and-breakfast-room-page-533x1068.webp';
+import bedAndBreakfastLanding from '././templates/bed-and-breakfast/bed-and-breakfast-landing-page-533x3698.webp';
+import bedAndBreakfastBlog from '././templates/bed-and-breakfast/bed-and-breakfast-blog-page-533x1122.webp';
 
 // butcher
-import butcherAbout from '././templates/butcher/butcher-about-page-533x1544.jpg';
-import butcherContact from '././templates/butcher/butcher-contact-page-533x939.jpg';
-import butcherRecipes from '././templates/butcher/butcher-recipes-page-533x1681.jpg';
-import butcherRecipe from '././templates/butcher/butcher-recipe-page-533x1296.jpg';
-import butcherShop from '././templates/butcher/butcher-shop-page-533x2060.jpg';
-import butcherHome from '././templates/butcher/butcher-home-page-533x1645.jpg';
-import butcherLanding from '././templates/butcher/butcher-landing-page-533x2845.jpg';
+import butcherAbout from '././templates/butcher/butcher-about-page-533x1544.webp';
+import butcherContact from '././templates/butcher/butcher-contact-page-533x939.webp';
+import butcherRecipes from '././templates/butcher/butcher-recipes-page-533x1681.webp';
+import butcherRecipe from '././templates/butcher/butcher-recipe-page-533x1296.webp';
+import butcherShop from '././templates/butcher/butcher-shop-page-533x2060.webp';
+import butcherHome from '././templates/butcher/butcher-home-page-533x1645.webp';
+import butcherLanding from '././templates/butcher/butcher-landing-page-533x2845.webp';
 
 // cafe
-import cafeAbout from '././templates/cafe/cafe-about-page-533x1378.jpg';
-import cafeContact from '././templates/cafe/cafe-contact-page-533x493.jpg';
-import cafeHome from '././templates/cafe/cafe-home-page-533x1419.jpg';
-import cafeMenu from '././templates/cafe/cafe-menu-page-533x1078.jpg';
-import cafeLanding from '././templates/cafe/cafe-landing-page-533x1454.jpg';
-import cafeLocation from '././templates/cafe/cafe-location-page-533x644.jpg';
+import cafeAbout from '././templates/cafe/cafe-about-page-533x1378.webp';
+import cafeContact from '././templates/cafe/cafe-contact-page-533x493.webp';
+import cafeHome from '././templates/cafe/cafe-home-page-533x1419.webp';
+import cafeMenu from '././templates/cafe/cafe-menu-page-533x1078.webp';
+import cafeLanding from '././templates/cafe/cafe-landing-page-533x1454.webp';
+import cafeLocation from '././templates/cafe/cafe-location-page-533x644.webp';
 
 // calligrapher about, blog, classes, contact, home, landing, portfolio, services
-import calligrapherAbout from '././templates/calligrapher/calligrapher-about-page-533x915.jpg';
-import calligrapherBlog from '././templates/calligrapher/calligrapher-blog-page-533x1382.jpg';
-import calligrapherClasses from '././templates/calligrapher/calligrapher-classes-page-533x1553.jpg';
-import calligrapherContact from '././templates/calligrapher/calligrapher-contact-page-533x1027.jpg';
-import calligrapherHome from '././templates/calligrapher/calligrapher-home-page-533x1708.jpg';
-import calligrapherLanding from '././templates/calligrapher/calligrapher-landing-page-533x2548.jpg';
-import calligrapherPortfolio from '././templates/calligrapher/calligrapher-portfolio-page-533x1034.jpg';
-import calligrapherServices from '././templates/calligrapher/calligrapher-services-page-533x1587.jpg';
+import calligrapherAbout from '././templates/calligrapher/calligrapher-about-page-533x915.webp';
+import calligrapherBlog from '././templates/calligrapher/calligrapher-blog-page-533x1382.webp';
+import calligrapherClasses from '././templates/calligrapher/calligrapher-classes-page-533x1553.webp';
+import calligrapherContact from '././templates/calligrapher/calligrapher-contact-page-533x1027.webp';
+import calligrapherHome from '././templates/calligrapher/calligrapher-home-page-533x1708.webp';
+import calligrapherLanding from '././templates/calligrapher/calligrapher-landing-page-533x2548.webp';
+import calligrapherPortfolio from '././templates/calligrapher/calligrapher-portfolio-page-533x1034.webp';
+import calligrapherServices from '././templates/calligrapher/calligrapher-services-page-533x1587.webp';
 
 // candle making about, blog,contact, home, landing, product, shop
-import candleMakingAbout from '././templates/candle-making/candle-making-about-page-533x996.jpg';
-import candleMakingBlog from '././templates/candle-making/candle-making-blog-page-533x973.jpg';
-import candleMakingContact from '././templates/candle-making/candle-making-contact-page-533x560.jpg';
-import candleMakingHome from '././templates/candle-making/candle-making-home-page-533x1142.jpg';
-import candleMakingLanding from '././templates/candle-making/candle-making-landing-page-533x1863.jpg';
-import candleMakingProduct from '././templates/candle-making/candle-making-product-page-533x1115.jpg';
-import candleMakingShop from '././templates/candle-making/candle-making-shop-page-533x851.jpg';
+import candleMakingAbout from '././templates/candle-making/candle-making-about-page-533x996.webp';
+import candleMakingBlog from '././templates/candle-making/candle-making-blog-page-533x973.webp';
+import candleMakingContact from '././templates/candle-making/candle-making-contact-page-533x560.webp';
+import candleMakingHome from '././templates/candle-making/candle-making-home-page-533x1142.webp';
+import candleMakingLanding from '././templates/candle-making/candle-making-landing-page-533x1863.webp';
+import candleMakingProduct from '././templates/candle-making/candle-making-product-page-533x1115.webp';
+import candleMakingShop from '././templates/candle-making/candle-making-shop-page-533x851.webp';
 
 // car dealer about, contact, financing, home, landing, listing, listings
-import carDealerAbout from '././templates/car-dealer/car-dealer-about-page-533x1596.jpg';
-import carDealerContact from '././templates/car-dealer/car-dealer-contact-page-533x588.jpg';
-import carDealerFinancing from '././templates/car-dealer/car-dealer-financing-page-533x929.jpg';
-import carDealerHome from '././templates/car-dealer/car-dealer-home-page-533x1052.jpg';
-import carDealerLanding from '././templates/car-dealer/car-dealer-landing-page-533x2076.jpg';
-import carDealerListing from '././templates/car-dealer/car-dealer-listing-page-533x2176.jpg';
-import carDealerListings from '././templates/car-dealer/car-dealer-listings-page-533x1339.jpg';
+import carDealerAbout from '././templates/car-dealer/car-dealer-about-page-533x1596.webp';
+import carDealerContact from '././templates/car-dealer/car-dealer-contact-page-533x588.webp';
+import carDealerFinancing from '././templates/car-dealer/car-dealer-financing-page-533x929.webp';
+import carDealerHome from '././templates/car-dealer/car-dealer-home-page-533x1052.webp';
+import carDealerLanding from '././templates/car-dealer/car-dealer-landing-page-533x2076.webp';
+import carDealerListing from '././templates/car-dealer/car-dealer-listing-page-533x2176.webp';
+import carDealerListings from '././templates/car-dealer/car-dealer-listings-page-533x1339.webp';
 
 // consulting about, blog, contact, home, landing, service, sevices
-import consultingAbout from '././templates/consulting/consulting-about-page-1646x3741.jpg';
-import consultingBlog from '././templates/consulting/consulting-blog-page-1646x2798.jpg';
-import consultingContact from '././templates/consulting/consulting-contact-page-1646x1382.jpg';
-import consultingHome from '././templates/consulting/consulting-home-page-1646x4900.jpg';
-import consultingLanding from '././templates/consulting/consulting-home-page-1646x4900.jpg';
-import consultingService from '././templates/consulting/consulting-service-page-1646x2556.jpg';
-import consultingServices from '././templates/consulting/consulting-services-page-1646x3310.jpg';
+import consultingAbout from '././templates/consulting/consulting-about-page-1646x3741.webp';
+import consultingBlog from '././templates/consulting/consulting-blog-page-1646x2798.webp';
+import consultingContact from '././templates/consulting/consulting-contact-page-1646x1382.webp';
+import consultingHome from '././templates/consulting/consulting-home-page-1646x4900.webp';
+import consultingLanding from '././templates/consulting/consulting-home-page-1646x4900.webp';
+import consultingService from '././templates/consulting/consulting-service-page-1646x2556.webp';
+import consultingServices from '././templates/consulting/consulting-services-page-1646x3310.webp';
 
 // design agency about, blog, case study, contact, home, landing, portfolio, project 1, project 2
-import designAgencyAbout from '././templates/design-agency/design-agency-about-2-533x1721.jpg';
-import designAgencyBlog from '././templates/design-agency/design-agency-blog-2-533x915.jpg';
-import designAgencyCaseStudy from '././templates/design-agency/design-agency-case-study-2-533x2878.jpg';
-import designAgencyContact from '././templates/design-agency/design-agency-contact-533x620.png';
-import designAgencyHome from '././templates/design-agency/design-agency-home-2-533x999.jpg';
-import designAgencyLanding from '././templates/design-agency/design-agency-landing-2-533x2937.jpg';
-import designAgencyPortfolio from '././templates/design-agency/design-agency-portfolio-2-533x1107.jpg';
-import designAgencyProject1 from '././templates/design-agency/design-agency-project-1-2-533x846.jpg';
-import designAgencyProject2 from '././templates/design-agency/design-agency-project-2-2-533x1250.jpg';
+import designAgencyAbout from '././templates/design-agency/design-agency-about-2-533x1721.webp';
+import designAgencyBlog from '././templates/design-agency/design-agency-blog-2-533x915.webp';
+import designAgencyCaseStudy from '././templates/design-agency/design-agency-case-study-2-533x2878.webp';
+import designAgencyContact from '././templates/design-agency/design-agency-contact-533x620.webp';
+import designAgencyHome from '././templates/design-agency/design-agency-home-2-533x999.webp';
+import designAgencyLanding from '././templates/design-agency/design-agency-landing-2-533x2937.webp';
+import designAgencyPortfolio from '././templates/design-agency/design-agency-portfolio-2-533x1107.webp';
+import designAgencyProject1 from '././templates/design-agency/design-agency-project-1-2-533x846.webp';
+import designAgencyProject2 from '././templates/design-agency/design-agency-project-2-2-533x1250.webp';
 
 // digital marketing about, blog, careers, contact, home, landing, portfolio, services
-import digitalMarketingAbout from '././templates/digital-marketing/digital-marketing-about-page-533x1535.jpg';
-import digitalMarketingBlog from '././templates/digital-marketing/digital-marketing-blog-page-533x806.jpg';
-import digitalMarketingCareers from '././templates/digital-marketing/digital-marketing-careers-page-533x1322.jpg';
-import digitalMarketingContact from '././templates/digital-marketing/digital-marketing-contact-page-533x663.jpg';
-import digitalMarketingHome from '././templates/digital-marketing/digital-marketing-home-page-533x1107.jpg';
-import digitalMarketingLanding from '././templates/digital-marketing/digital-marketing-landing-page-533x2167.jpg';
-import digitalMarketingPortfolio from '././templates/digital-marketing/digital-marketing-portfolio-page-533x1044.jpg';
-import digitalMarketingServices from '././templates/digital-marketing/digital-marketing-services-page-533x1196.jpg';
+import digitalMarketingAbout from '././templates/digital-marketing/digital-marketing-about-page-533x1535.webp';
+import digitalMarketingBlog from '././templates/digital-marketing/digital-marketing-blog-page-533x806.webp';
+import digitalMarketingCareers from '././templates/digital-marketing/digital-marketing-careers-page-533x1322.webp';
+import digitalMarketingContact from '././templates/digital-marketing/digital-marketing-contact-page-533x663.webp';
+import digitalMarketingHome from '././templates/digital-marketing/digital-marketing-home-page-533x1107.webp';
+import digitalMarketingLanding from '././templates/digital-marketing/digital-marketing-landing-page-533x2167.webp';
+import digitalMarketingPortfolio from '././templates/digital-marketing/digital-marketing-portfolio-page-533x1044.webp';
+import digitalMarketingServices from '././templates/digital-marketing/digital-marketing-services-page-533x1196.webp';
 
 // fitness gym about, blog, classes, contact, home, landing, pricing
 import fitnessGymAbout from '././templates/fitness-gym/gym-about-page-533x1693.jpg';
@@ -324,6 +327,7 @@ const Images = {
         topStone: topStone,
         veselovaite: veselovaite,
         paparcioPradineMokykla: paparcioPradineMokykla,
+        puppyYoga: puppyYoga,
     },
     templates: {
         acaiBowl: {

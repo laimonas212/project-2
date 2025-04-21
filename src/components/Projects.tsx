@@ -236,6 +236,15 @@ const projects = [
         tags: ['Wordpress', 'Divi', 'E-parduotuvė'],
         link: 'https://www.u-smiler.lt',
     },
+    {
+        id: 'puppy-yoga-meta',
+        title: 'Puppy Yoga - Mėta',
+        subtitle: 'Joga su šuniukais',
+        description: 'Puppy Yoga – tai jauki ir žaisminga svetainė jogos studijai, kur užsiėmimai vyksta kartu su šuniukais. Projektas sukurtas naudojant WordPress ir Divi. Svetainėje lankytojai gali susipažinti su užsiėmimų grafiku, sužinoti daugiau apie šuniukus bei patogiai registruotis į pamokas. Dizainas pritaikytas tiek telefonams, tiek kompiuteriams – greitas, šiltas ir atspindintis pozityvią atmosferą.',
+        image: Images.projects.puppyYoga,
+        tags: ['Wordpress', 'E-parduotuvė', 'Divi'],
+        link: 'https://www.puppyyogameta.lt',
+    },
 ];
 
 export default projects;
