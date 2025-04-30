@@ -16,6 +16,12 @@ const testimonials = [
         url: 'https://nervusistemai.lt/',
     },
     {
+        content: '"Puikus rezultatas bei kokybės ir kainos santykis. Malonus bendravimas , gavome daug naudingų patarimų. Kai reikės tokio tipo paslaugos - žinosime kur kreiptis. Rekomenduoju."',
+        name: 'Rūta',
+        company: 'Puppy Yoga - Mėta',
+        url: 'https://puppyogameta.lt/',
+    },
+    {
         content: '"Puiki kokybė atliekant konkrečius poreikius. Aukšto lygio techninis nusimanymas, profesionalus bendravimas. Rekomenduoju.Puiki kokybė atliepiant konkrečius poreikius. Aukšto lygio techninis nusimanymas, profesionalus bendravimas. Rekomenduoju."',
         name: 'Povilas',
         company: 'Freelance CG illustrator & animator',
