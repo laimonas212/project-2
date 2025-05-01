@@ -29,8 +29,7 @@ const Services = () => {
             >
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Teikiamos paslaugos</h2>
                 <p className="text-white/70 text-lg max-w-2xl mx-auto">
-                    Teikiame visapusiškas interneto svetainių kūrimo paslaugas, pritaikytas jūsų verslo poreikiams. Mūsų komanda dirba su naujausiomis technologijomis ir geriausia praktika, siekdama sukurti aukštos kokybės interneto svetaines.
-                </p>
+Mes kuriame aukštos kokybės interneto svetaines, pritaikytas jūsų unikaliems verslo tikslams ir poreikiams, naudojant naujausias technologijas ir geriausią praktiką.                </p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
