@@ -2,6 +2,12 @@ import Images from "../img/Images";
 
 const blogEntries = [
     {
+        image: Images.logos.internetoSvetainiuKurimas,
+        title: 'Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą?',
+        excerpt: 'Šiandien, kai skaitmeninė erdvė yra tapusi neatsiejama verslo dalimi, kokybiška interneto svetainė yra ne tik vizitinė kortelė, bet ir galingas įrankis, padedantis pritraukti naujus klientus, stiprinti prekės ženklą ir didinti pardavimus.',
+        url: '/blog/interneto-svetainiu-kurimas-2025',
+    },
+    {
         image: Images.logos.wp_woo,
         title: "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
         excerpt: "Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo.",

@@ -49,6 +49,7 @@ import ArchiGrupe from './pages/projektai/archi-grupe';
 import Lithuan from './pages/projektai/lithuan';
 import PuppyYogaMeta from './pages/projektai/puppy-yoga-meta';
 import WordPressKaina2025 from './pages/blog/WordPressKaina2025';
+import InternetoSvetainiuKurimas2025 from './pages/blog/InternetoSvetainiuKurimas2025';
 
 function App() {
   useEffect(() => {
@@ -85,6 +86,7 @@ function App() {
               <Route path="/blog/kas-yra-divi" element={<KasYraDivi />} />
               <Route path="/blog/5-klaidos-kurias-daro-verslai" element={<KlaidosKuriasDaroVerslai />} />
               <Route path="/blog/wordpress-svetaines-kaina-2025" element={<WordPressKaina2025 />} />
+              <Route path="/blog/interneto-svetainiu-kurimas-2025" element={<InternetoSvetainiuKurimas2025 />} />
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/projektai/lzspa" element={<LzspaPage />} />
               <Route path="/projektai/holistine-kosmetologija" element={<HolistineKosmetologija />} />
