@@ -12,7 +12,34 @@ const WordPressKaina2025 = () => {
                 <title>Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.? | Amberweb</title>
                 <meta name="description" content="Ieškai, kiek kainuoja WordPress svetainė 2025 m. Lietuvoje? Sužinok pagrindinius kainos faktorius, ką įeina į paslaugą ir kaip nesumokėti per daug." />
                 <link rel="canonical" href="https://amberweb.lt/wordpress-svetaines-kaina-2025" />
+                <script type="application/ld+json">{`
+                    {
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
+                    "description": "Ieškai, kiek kainuoja WordPress svetainė 2025 m. Lietuvoje? Sužinok pagrindinius kainos faktorius, ką įeina į paslaugą ir kaip nesumokėti per daug.",
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Amberweb"
+                    },
+                    "datePublished": "2025-05-01",
+                    "dateModified": "2025-05-01",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://amberweb.lt/wordpress-svetaines-kaina-2025"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Amberweb",
+                        "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://amberweb.lt/images/logoInWhite.jpg"
+                        }
+                    }
+                    }
+                `}</script>
             </Helmet>
+
             <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8 pb-24">
                     <h1 className="text-4xl font-bold text-electric-blue mb-12">Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?</h1>

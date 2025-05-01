@@ -12,6 +12,35 @@ const InternetoSvetainiuKurimas2025 = () => {
                 <title>Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą? | Amberweb</title>
                 <meta name="description" content="Ieškote profesionalaus interneto svetainių kūrimo? Sužinokite svarbiausius žingsnius, kainos veiksnius ir kaip pasirinkti tinkamą partnerį savo sėkmingam interneto projektui 2025 metais." />
                 <link rel="canonical" href="https://amberweb.lt/interneto-svetainiu-kurimas-2025" />
+                <script type="application/ld+json">
+                    {`
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "BlogPosting",
+                        "headline": "Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą?",
+                        "description": "Ieškote profesionalaus interneto svetainių kūrimo? Sužinokite svarbiausius žingsnius, kainos veiksnius ir kaip pasirinkti tinkamą partnerį savo sėkmingam interneto projektui 2025 metais.",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "Amberweb"
+                        },
+                        "datePublished": "2025-05-01",
+                        "dateModified": "2025-05-01",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://amberweb.lt/interneto-svetainiu-kurimas-2025"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Amberweb",
+                            "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://amberweb.lt/images/logoInWhite.jpg"
+                            }
+                        }
+                        }
+                        `}
+                </script>
+
             </Helmet>
             <div className="container text-white/80 mx-auto px-4">
                 <div className="mb-8 pb-24">

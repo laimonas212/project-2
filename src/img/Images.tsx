@@ -33,6 +33,7 @@ import wooWhite from './logos/woo-white.png';
 import wordpress from './logos/wordpress.png';
 import wp_woo from './logos/wp_woo.png';
 import internetoSvetainiuKurimas from './logos/interneto-svetainiu-kurimas.png';
+import logoInWhite from './logos/amberweb-logo-white-bg.jpg';
 import divi from './logos/divi-logo.png';
 import elementor from './logos/elementor.png';
 import midjourney from './logos/midjourney.png';
@@ -304,6 +305,7 @@ const Images = {
         html: html,
         css: css,
         internetoSvetainiuKurimas: internetoSvetainiuKurimas,
+        logoInWhite: logoInWhite,
     },
     projects: {
         archiGrupe: archiGrupe,
