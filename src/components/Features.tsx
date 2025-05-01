@@ -1,27 +1,32 @@
-import { Users, Layout, Award, BadgeCheck } from "lucide-react";
+import { Briefcase, TrendingUp, Eye, Puzzle, ThumbsUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Features = () => {
     const features = [ 
         {
-            icon: <BadgeCheck className="w-6 h-6" />,
-            title: 'Aukštos Kokybės Paslaugos',
-            description: 'Teikiame aukštos kokybės paslaugas, atitinkančias jūsų verslo poreikius.',
+            icon: <Briefcase className="w-6 h-6" />,
+            title: 'Patirtis ir inovacijos jūsų sėkmei',
+            description: 'Mūsų patyrusi komanda pasitelkia pažangias technologijas ir kūrybiškumą, kad sukurtų unikalias ir aukščiausios kokybės svetaines, padedančias jums pasiekti savo verslo tikslus.',
         },
         {
-            icon: <Layout className="w-6 h-6" />,
-            title: 'Modernūs Dizaino Sprendimai',
-            description: 'Naudojame naujausias dizaino tendencijas ir technologijas, kad sukurtume patrauklias svetaines.',
+            icon: <TrendingUp className="w-6 h-6" />,
+            title: 'Investicija, atsiperkanti rezultatais',
+            description: 'Teikiame aukščiausios kokybės paslaugas, kurios ne tik atitinka, bet ir viršija jūsų lūkesčius, užtikrindamos ilgalaikę vertę jūsų verslui.',
         },
         {
-            icon: <Layout className="w-6 h-6" />,
-            title: 'Individualūs Sprendimai',
-            description: 'Siūlome personalizuotas paslaugas, pritaikytas jūsų specifiniams poreikiams.',
+            icon: <Eye className="w-6 h-6" />,
+            title: 'Patrauklus dizainas, pritraukiantis klientus',
+            description: 'Kuriame modernaus dizaino svetaines, kurios ne tik puikiai atrodo, bet ir yra patogios naudoti bei efektyviai pritraukia jūsų tikslinę auditoriją.',
         },
         {
-            icon: <Award className="w-6 h-6" />,
-            title: 'Klientų Pasitenkinimas',
-            description: 'Mes prioritetą teikiame klientų pasitenkinimui ir siekiame viršyti lūkesčius.',
+            icon: <Puzzle className="w-6 h-6" />,
+            title: 'Sprendimai, pritaikyti būtent jūsų verslui',
+            description: 'Mes nesame vieno dydžio tinkančių sprendimų šalininkai. Kuriame personalizuotas svetaines, atitinkančias unikalius jūsų verslo poreikius ir tikslus.',
+        },
+        {
+            icon: <ThumbsUp className="w-6 h-6" />,
+            title: 'Jūsų sėkmė – mūsų prioritetas',
+            description: 'Mūsų tikslas – ne tik sukurti puikią svetainę, bet ir užtikrinti jūsų visišką pasitenkinimą bei ilgalaikį bendradarbiavimą, padedant jums augti.',
         },
     ];
     return (
@@ -34,7 +39,7 @@ const Features = () => {
                 Kodėl pasirinkti mus?
             </h2>
             <p className="text-white/70 text-lg mb-8">
-                Esame patyrusi komanda, kuri derina pažangias technologijas ir kūrybinius sprendimus, kad sukurtume unikalius ir aukščiausios kokybės interneto svetainių sprendimus.
+                Kuriame interneto svetaines, kurios veikia jūsų verslo sėkmei.
             </p>
             <div className="space-y-6">
                 {features.map((feature, index) => (

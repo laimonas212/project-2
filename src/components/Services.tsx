@@ -1,22 +1,22 @@
-import { Layout, ShoppingBag, Smartphone } from "lucide-react";
+import { Layout, Search, Settings, ShoppingBag, Smartphone, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Services = () => {
     const servicesList = [
         {
             icon: <Layout className="w-6 h-6" />,
-            title: 'Individualus svetainių kūrimas',
-            description: 'Modernūs ir funkcionalūs interneto svetainių sprendimai, pritaikyti jūsų verslo poreikiams.',
+            title: 'Interneto svetainių kūrimas ir dizainas',
+            description: 'Profesionalus interneto svetainių kūrimas – nuo idėjos iki pilnai veikiančio projekto. Kuriame vizualiai patrauklias, mobiliesiems pritaikytas svetaines (reprezentacines, verslo svetaines, portfolio), kurios ne tik puikiai atspindi jūsų prekės ženklą, bet ir efektyviai pritraukia naujus klientus bei užtikrina sklandžią vartotojo patirtį (UX).',
         },
         {
             icon: <ShoppingBag className="w-6 h-6" />,
-            title: 'E-komercijos sprendimai',
-            description: 'Profesionalūs el. parduotuvių sprendimai, kurie padeda didinti pardavimus ir pasiekti tikslus.',
+            title: 'Elektroninių parduotuvių kūrimas',
+            description: 'Patikimas elektroninių parduotuvių kūrimas pagal jūsų verslo poreikius, siekiant maksimalių pardavimų. Specializuojamės kuriant funkcionalias, saugias ir pardavimus skatinančias e-komercijos platformas (pvz., naudojant WooCommerce), kurios užtikrina patogų apsipirkimą jūsų klientams ir lengvą valdymą jums.',
         },
         {
-            icon: <Smartphone className="w-6 h-6" />,
-            title: 'Pritaikyta visiems įrenginiams',
-            description: 'Visiškai adaptuotos svetainės, kurios puikiai veikia tiek kompiuteriuose, tiek mobiliuosiuose įrenginiuose.',
+            icon: <TrendingUp className="w-6 h-6" />,
+            title: 'Esminis svetainių optimizavimas paieškos sistemoms',
+            description: 'Užtikriname, kad jūsų svetainė būtų tinkamai paruošta paieškos sistemoms, tokioms kaip Google. Atliekame svarbiausius optimizavimo veiksmus, įskaitant puslapių metaduomenų ir turinio pritaikymą, kad padidintume jūsų svetainės matomumą ir pritrauktume daugiau lankytojų.',
         },
     ];
     return (
