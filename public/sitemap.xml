@@ -31,22 +31,28 @@
 
     <!-- Blog įrašai -->
     <url>
-        <loc>https://www.amberweb.lt/blog/KaipNaudotisDivi</loc>
+        <loc>https://www.amberweb.lt/blog/wordpress-svetaines-kaina-2025</loc>
     </url>
     <url>
-        <loc>https://www.amberweb.lt/blog/KasYraDivi</loc>
+        <loc>https://www.amberweb.lt/blog/kaip-naudotis-divi</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/blog/kas-yra-divi</loc>
     </url>
     <url>
         <loc>https://www.amberweb.lt/blog/KlaidosKuriasDaroVerslai</loc>
     </url>
     <url>
-        <loc>https://www.amberweb.lt/blog/NaujasWoocommerceProduktas</loc>
+        <loc>https://www.amberweb.lt/blog/naujas-woocommerce-produktas</loc>
     </url>
     <url>
-        <loc>https://www.amberweb.lt/blog/WoocommerceUzsakymuValdymas</loc>
+        <loc>https://www.amberweb.lt/blog/woocommerce-uzsakymu-valdymas</loc>
     </url>
 
     <!-- Projektų puslapiai -->
+    <url>
+        <loc>https://www.amberweb.lt/projektai/puppy-yoga-meta</loc>
+    </url>
     <url>
         <loc>https://www.amberweb.lt/projektai/angel-butikas</loc>
     </url>
