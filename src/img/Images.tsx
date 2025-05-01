@@ -33,7 +33,6 @@ import wooWhite from './logos/woo-white.png';
 import wordpress from './logos/wordpress.png';
 import wp_woo from './logos/wp_woo.png';
 import internetoSvetainiuKurimas from './logos/interneto-svetainiu-kurimas.png';
-import logoInWhite from './logos/amberweb-logo-white-bg.jpg';
 import divi from './logos/divi-logo.png';
 import elementor from './logos/elementor.png';
 import midjourney from './logos/midjourney.png';
@@ -42,6 +41,7 @@ import react from './logos/react.png';
 import html from './logos/html5.png';
 import css from './logos/css.png';
 import five from './5.png';
+import logoInWhite from './amberweb-logo-white-bg.jpg';
 
 // acai bowl
 import acaiBowlAbout from '././templates/acai-bowl/acai-bowl-about-page-533x1040.webp';
