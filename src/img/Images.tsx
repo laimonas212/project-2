@@ -31,6 +31,7 @@ import puppyYoga from '././projects/puppy-yoga-meta.webp';
 import woo from './woo.png';
 import wooWhite from './logos/woo-white.png';
 import wordpress from './logos/wordpress.png';
+import wp_woo from './logos/wp_woo.png';
 import divi from './logos/divi-logo.png';
 import elementor from './logos/elementor.png';
 import midjourney from './logos/midjourney.png';
@@ -293,6 +294,7 @@ const Images = {
     logos: {
         wooWhite: wooWhite,
         wordpress: wordpress,
+        wp_woo: wp_woo,
         divi: divi,
         elementor: elementor,
         midjourney: midjourney,

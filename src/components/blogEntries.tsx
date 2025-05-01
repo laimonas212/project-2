@@ -2,6 +2,12 @@ import Images from "../img/Images";
 
 const blogEntries = [
     {
+        image: Images.logos.wp_woo,
+        title: "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
+        excerpt: "Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo.",
+        url: "/blog/wordpress-svetaines-kaina-2025",
+    },
+    {
         image: Images.logos.wooWhite,
         title: "WooCommerce užsakymų valdymas",
         excerpt: "WooCommerce užsakymų valdymas leidžia lengvai sekti ir tvarkyti užsakymus, keisti jų būsenas, generuoti sąskaitas faktūras ir organizuoti prekių pristatymą.",
