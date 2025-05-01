@@ -72,7 +72,7 @@ const Technologies = () => {
                                 <img
                                     src={technology.image}
                                     alt={technology.name}
-                                    className={`${technology.name === 'React' || technology.name === 'HTML5' || technology.name === "CSS3"
+                                    className={`${technology.name === 'React' || technology.name === 'HTML5' || technology.name === "CSS3" || technology.name === ''
                                         ? 'h-10 w-10'
                                         : 'h-auto w-24'
                                         }`}
