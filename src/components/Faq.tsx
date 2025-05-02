@@ -9,12 +9,14 @@ interface FAQItem {
 }
 
 const faqData: FAQItem[] = [
-    { question: "Kiek laiko užtrunka tinklapio kūrimas?", answer: "Tai priklauso nuo projekto sudėtingumo ir nuo to, kaip greitai pateiksite visą reikiamą informaciją. Asmeninių svetainių kūrimas dažniausiai trunka 1–3 d. d., o elektroninių parduotuvių – 3–5 d. d." },
-    { question: "Ar galima vėliau keisti dizainą?", answer: "Taip, svetainė bus pritaikyta redagavimui ir plėtrai ateityje." },
-    { question: "Ar galiu pats redaguoti turinį?", answer: "Taip, gausite prieigą prie administracinės dalies, kad galėtumėte lengvai redaguoti turinį." },
-    { question: "Ar galite padėti su tekstų kūrimu?", answer: "Taip, galime sukurti aiškius ir profesionalius tekstus jūsų svetainei pagal jūsų poreikius." },
-    { question: "Ar optimizuojate svetaines paieškos sistemoms (SEO)?", answer: "Taip, įtraukiame bazinį SEO ir galime pasiūlyti papildomas optimizavimo paslaugas." },
-    { question: "Kokia yra paslaugų kaina?", answer: "Kaina priklauso nuo projekto sudėtingumo bei informacijos kiekio. Bazinė kaina prasideda nuo 350€ už asmeninę svetainę." },
+    { question: "Kiek laiko užtrunka interneto svetainės kūrimas?", answer: "Interneto svetainės kūrimo trukmė priklauso nuo projekto sudėtingumo ir pateiktos informacijos. Paprastų asmeninių svetainių kūrimas dažniausiai trunka 1–3 darbo dienas, o el. parduotuvių – 3–5 darbo dienas." },
+    { question: "Ar galima vėliau keisti svetainės dizainą?", answer: "Taip, sukurtos svetainės dizainas gali būti lengvai atnaujinamas ar koreguojamas pagal jūsų verslo poreikius." },
+    { question: "Ar galėsiu pats redaguoti svetainės turinį?", answer: "Taip, visos mūsų kuriamos svetainės turi patogią turinio valdymo sistemą (WordPress), leidžiančią lengvai keisti tekstus, nuotraukas ar struktūrą." },
+    { question: "Ar padedate su svetainės tekstų kūrimu?", answer: "Taip, galime padėti su profesionaliu turiniu – nuo pardaviminių tekstų iki SEO optimizuoto turinio." },
+    { question: "Ar optimizuojate svetaines paieškos sistemoms (SEO)?", answer: "Taip, visos mūsų svetainės turi bazinį SEO optimizavimą: greitaveika, struktūriniai duomenys, tinkami meta aprašymai." },
+    { question: "Kiek kainuoja interneto svetainės kūrimas?", answer: "Svetainės kūrimo kaina priklauso nuo funkcionalumo ir turinio apimties. Paprastos svetainės kainuoja nuo 350€, el. parduotuvės – nuo 550€." },
+    { question: "Kokie papildomi sprendimai reikalingi el. parduotuvės kūrimui, palyginus su paprasta svetaine?", answer: "El. parduotuvė reikalauja integracijų su mokėjimų sistemomis, prekių valdymo, krepšelio, vartotojo paskyrų, atsargų stebėjimo ir automatinio informacijos siuntimo. Paprasta svetainė dažniausiai apsiriboja informaciniu turiniu ir kontaktine forma." },
+    { question: "Kodėl verta rinktis WordPress svetainę?", answer: "WordPress yra viena populiariausių ir lankščiausių turinio valdymo sistemų pasaulyje. Ji leidžia lengvai valdyti svetainę, turi daug papildinių, ir yra puikiai pritaikoma SEO optimizavimui." }
 ];
 
 const FAQ = () => {

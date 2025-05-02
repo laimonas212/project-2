@@ -51,9 +51,9 @@ const Technologies = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Naudojamos technologijos</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Naudojamos technologijos kuriant interneto svetaines</h2>
                     <p className="text-white/70 text-lg max-w-2xl mx-auto">
-                        Naudojame modernias technologijas ir geriausias praktikas, siekdami sukurti aukštos kokybės interneto svetaines.
+                        Kuriant interneto svetaines naudojame WordPress ir Divi – patikimus ir lankstus sprendimus, leidžiančius pasiekti aukštą kokybę, greitį bei gerus rezultatus paieškos sistemose. Visos svetainės pritaikytos mobiliesiems įrenginiams, saugios ir lengvai valdomos.
                     </p>
                 </motion.div>
 

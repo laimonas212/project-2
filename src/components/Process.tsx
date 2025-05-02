@@ -17,9 +17,9 @@ const Process = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Procesas</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Interneto svetainių kūrimo procesas</h2>
                     <p className="text-white/70 text-lg max-w-2xl mx-auto">
-                        Mūsų darbo procesas yra struktūruotas ir efektyvus, kad užtikrintume aukščiausios kokybės interneto svetainių kūrimą.
+                        Dirbame pagal aiškų ir patikrintą procesą – nuo idėjos iki galutinės svetainės paleidimo. Tai leidžia užtikrinti sklandų darbą, kokybę ir rezultatą, kuris padeda augti jūsų verslui internete.
                     </p>
                 </motion.div>
 

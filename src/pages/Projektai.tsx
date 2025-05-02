@@ -11,6 +11,7 @@ interface Project {
   subtitle?: string;
   description: string;
   image: string;
+  alt: string;
   tags: string[];
   link?: string;
 }
@@ -100,7 +101,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             </div>
               <img
                 src={project.image}
-                alt={project.title}
+                alt={project.alt}
                 className="w-full h-full object-cover"
                 />
             </a>
@@ -175,7 +176,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                 <a href={`/projektai/${project.id}`} rel="noreferrer" className="block relative">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={project.alt}
                     className="w-full h-full object-cover transition"
                   />
 

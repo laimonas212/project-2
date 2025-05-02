@@ -47,7 +47,7 @@ export default function ProjectPage({ project }: Props) {
                     ← Grįžti atgal į projektus
                 </button>
 
-                <img src={project.image} alt={project.title} className="rounded-xl mb-4" />
+                <img src={project.image} alt={project.alt} className="rounded-xl mb-4" />
                 <h1 className="text-3xl font-bold text-white/80">{project.title}</h1>
                 <h2 className="text-xl text-white/80 mb-4">{project.subtitle}</h2>
                 <p className="mb-4 text-white/60">{project.description}</p>
@@ -66,7 +66,7 @@ export default function ProjectPage({ project }: Props) {
             <div className="relative mt-20 flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between text-white/80 gap-8 max-w-5xl mx-auto px-6 text-center md:text-left">
                 {prevProject ? (
                     <a href={`/projektai/${prevProject.id}`} className="group w-full md:w-1/2 flex items-center gap-4 justify-center md:justify-start text-center md:text-left">
-                        <img src={prevProject.image} alt={prevProject.title} className="w-20 h-14 object-cover rounded-md border border-white/10" />
+                        <img src={prevProject.image} alt={prevProject.alt} className="w-20 h-14 object-cover rounded-md border border-white/10" />
                         <div>
                             <p className="text-sm mb-1 group-hover:text-electric-blue">← Ankstesnis projektas</p>
                             <div className="font-semibold">{prevProject.title}</div>
@@ -82,7 +82,7 @@ export default function ProjectPage({ project }: Props) {
                             <p className="text-sm mb-1 group-hover:text-electric-blue">Kitas projektas →</p>
                             <div className="font-semibold">{nextProject.title}</div>
                         </div>
-                        <img src={nextProject.image} alt={nextProject.title} className="w-20 h-14 object-cover rounded-md border border-white/10" />
+                        <img src={nextProject.image} alt={nextProject.alt} className="w-20 h-14 object-cover rounded-md border border-white/10" />
                     </a>
                 ) : (
                     <div className="w-full md:w-1/2" />

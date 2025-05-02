@@ -59,7 +59,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 bg-dark-surface/50 backdrop-blur-sm px-6 py-3 rounded-full"
             >
               <Sparkles className="w-5 h-5 text-electric-blue" />
-              <span className="text-white/90">Internetinių svetainių kūrimas</span>
+              <h1 className="text-white/90">Internetinių svetainių kūrimas</h1>
             </motion.div>
 
             <motion.h1
