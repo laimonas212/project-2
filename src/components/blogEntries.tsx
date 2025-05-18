@@ -2,6 +2,12 @@ import Images from "../img/Images";
 
 const blogEntries = [
     {
+        image: Images.logos.pigiosSvetaines,
+        title: "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
+        excerpt: "Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia ekonomišką sprendimą?",
+        url: "/blog/pigios-svetaines",
+    },
+    {
         image: Images.logos.internetoSvetainiuKurimas,
         title: 'Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą?',
         excerpt: 'Šiandien, kai skaitmeninė erdvė yra tapusi neatsiejama verslo dalimi, kokybiška interneto svetainė yra ne tik vizitinė kortelė, bet ir galingas įrankis, padedantis pritraukti naujus klientus, stiprinti prekės ženklą ir didinti pardavimus.',
