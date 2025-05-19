@@ -39,6 +39,12 @@ const blogEntries = [
     },
     {
         image: Images.logos.divi,
+        title: "Kas yra Divi 5?",
+        excerpt: "Divi 5 – tai naujausia puslapių kūrimo platforma, leidžianti kurti modernias svetaines be programavimo žinių.",
+        url: "/blog/kas-yra-divi-5",
+    },
+    {
+        image: Images.logos.divi,
         title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
         excerpt: "Divi veikia pagal WYSIWYG principą („What You See Is What You Get“), todėl redaguodami svetainę iškart matote, kaip ji atrodys.",
         url: "/blog/kas-yra-divi",
