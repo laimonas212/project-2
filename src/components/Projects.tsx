@@ -44,7 +44,7 @@ const projects = [
     },
     {
         id: "veselovaite",
-        title: 'Advokatų kontora',
+        title: 'Advokatės A. Veselovaitės kontora',
         subtitle: 'Teisinės paslaugos',
         description: 'A. Veselovaitės advokatų kontora – tai profesionalias teisines paslaugas teikianti įstaiga, orientuota į verslo, šeimos ir baudžiamąją teisę. Sukūrėme modernią, patikimą ir aiškios struktūros svetainę, kurioje lankytojai gali greitai rasti aktualią informaciją apie paslaugas, teisininkų patirtį ir kontaktus. Svetainė sukurta su WordPress ir Divi, įdiegta kalbų pasirinkimo funkcija, pritaikyta įvairiems įrenginiams bei optimizuota SEO.',
         image: Images.projects.veselovaite,

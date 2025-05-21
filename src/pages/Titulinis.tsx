@@ -11,6 +11,7 @@ import Services from '../components/Services';
 import Features from '../components/Features';
 import CTA from '../components/CTA';
 import FAQ from '../components/Faq';
+import HomepageSampleWork from '../components/HomepageSampleWork';
 
 const Titulinis = () => {
   const servicesRef = useRef(null);
@@ -36,6 +37,10 @@ const Titulinis = () => {
         <Services />
       </section>
 
+      <section className="py-20 bg-dark-surface relative overflow-hidden">
+        <HomepageSampleWork />
+      </section>
+      
       {/* Features Section */}
       <section className="py-20 bg-dark-surface relative overflow-hidden">
         <div className="container mx-auto px-4">
