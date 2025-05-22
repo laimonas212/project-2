@@ -50,7 +50,7 @@ const blogEntries = [
         url: "/blog/kas-yra-divi",
     },
     {
-        image: Images.five,
+        image: Images.logos.caution,
         title: "5 klaidos, kurias daro verslai kurdami svetainę",
         excerpt: "Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams.",
         url: "/blog/5-klaidos-kurias-daro-verslai",

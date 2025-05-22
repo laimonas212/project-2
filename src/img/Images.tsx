@@ -43,6 +43,7 @@ import css from './logos/css.png';
 import five from './5.png';
 import logoInWhite from './amberweb-logo-white-bg.jpg';
 import pigiosSvetaines from './logos/pigios-svetaines.png';
+import caution from './logos/caution.png';
 
 // acai bowl
 import acaiBowlAbout from '././templates/acai-bowl/acai-bowl-about-page-533x1040.webp';
@@ -308,6 +309,7 @@ const Images = {
         internetoSvetainiuKurimas: internetoSvetainiuKurimas,
         logoInWhite: logoInWhite,
         pigiosSvetaines: pigiosSvetaines,
+        caution: caution,
     },
     projects: {
         archiGrupe: archiGrupe,
