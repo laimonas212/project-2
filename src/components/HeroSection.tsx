@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Code2, ArrowRight, Sparkles, Boxes, Medal, TabletSmartphone, GaugeCircle } from 'lucide-react';
+import { Code2, ArrowRight, Sparkles, Boxes, Medal, TabletSmartphone, GaugeCircle, Rocket, MonitorSmartphone, PenTool, Handshake } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import ParticlesBackground from './ParticlesBackground'; // Jei palieki foną
@@ -121,10 +121,11 @@ const HeroSection = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {[
-              { icon: <Medal className="w-8 h-8" />, label: 'Laimingi klientai' },
-              { icon: <Boxes className="w-8 h-8" />, label: 'Ilgametė patirtis' },
-              { icon: <GaugeCircle className="w-8 h-8" />, label: 'Optimizuotos svetainės' },
-              { icon: <TabletSmartphone className="w-8 h-8" />, label: 'Pritaikyta mobiliems' },
+              { icon: <Rocket className="w-8 h-8" />, label: 'Greitos ir SEO draugiškos svetainės' },
+              { icon: <MonitorSmartphone className="w-8 h-8" />, label: 'Sklandžiai veikia kompiuteriuose ir telefonuose' },
+              { icon: <PenTool className="w-8 h-8" />, label: 'Priderintas dizainas pagal kliento poreikius' },
+              { icon: <Handshake className="w-8 h-8" />, label: 'Sklandus bendradarbiavimas ir palaikymas' },
+
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
