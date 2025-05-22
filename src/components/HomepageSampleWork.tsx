@@ -27,6 +27,7 @@ const HomepageSampleWork = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {firstThreeProjects.map((project, index) => (
+                    project && // Ensure project is not undefined
                     <motion.div
                         key={project.title}
                         initial={{ opacity: 0, y: 20 }}
@@ -45,7 +46,7 @@ const HomepageSampleWork = () => {
                             <p className="text-sm text-center text-white/70 line-clamp-3">{project.description}</p>
                         </div>
                         {/* Hover icon overlay */}
-                        <div className="absolute inset-0 bg-black/60 text-white/80 backdrop-blur-sm z-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 space-y-2 text-center">
+                        <div className="absolute inset-0 bg-black/60 text-white backdrop-blur-sm z-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 space-y-2 text-center">
                             <span className="text-sm">Peržiūrėti</span>
                             <span className="text-lg font-semibold">{project.title}</span>
                             <MousePointerClick className="w-6 h-6 animate-carousel-ping" />
