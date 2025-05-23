@@ -75,46 +75,48 @@ const Kainos = () => {
 
         <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
-            <motion.div
-              key={plan.name}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="card transform hover:-translate-y-2 flex flex-col"
-            >
-              <div className="space-y-6 mb-12 flex-1">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                  <p className="text-white/70">{plan.description}</p>
+            <div className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue to-purple-500 p-[1px]'>
+              <motion.div
+                key={plan.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="card transform hover:-translate-y-2 flex flex-col h-full"
+              >
+                <div className="space-y-6 mb-12 flex-1">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+                    <p className="text-white/70">{plan.description}</p>
+                  </div>
+
+                  <div className="text-4xl font-bold text-electric-blue">
+                    Nuo {plan.price}
+                  </div>
+
+                  <ul className="space-y-4">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-electric-blue shrink-0 mt-0.5" />
+                        <span className="text-white/70">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <div className="text-4xl font-bold text-electric-blue">
-                  Nuo {plan.price}
-                </div>
-
-                <ul className="space-y-4">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-electric-blue shrink-0 mt-0.5" />
-                      <span className="text-white/70">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <Link to="/kontaktai">
-                <button className="w-full button-primary py-3 rounded-lg transition-colors duration-300">
-                  Nemokama Konsultacija
-                </button>
-              </Link>
-            </motion.div>
+                <Link to="/kontaktai">
+                  <button className="w-full button-primary py-3 rounded-lg transition-colors duration-300">
+                    Nemokama Konsultacija
+                  </button>
+                </Link>
+              </motion.div>
+            </div>
           ))}
         </div>
 
         <p className='px-4 text-center pt-8'>*Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos kiekio.</p>
 
         <div className='max-w-5xl mx-auto mt-24 px-4'>
-          <Features />        
+          <Features />
         </div>
         
         <div className='w-full mx-auto mt-24'>
@@ -134,7 +136,7 @@ const Kainos = () => {
         >
           <h2 className="text-2xl font-bold mb-4">Norite pamatyti mūsų darbus?</h2>
           <p className="text-white/70 mb-8">Peržiūrėkite mūsų sėkmingai įgyvendintus projektus</p>
-          <Link 
+          <Link
             to="/projektai"
             className="inline-flex items-center gap-2 button-primary group"
           >
