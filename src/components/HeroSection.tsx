@@ -38,7 +38,7 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ opacity }}
     >
-      {/* Jei nori palikti particle foną */}
+
       <ParticlesBackground />
 
       {/* Gradient Overlays */}

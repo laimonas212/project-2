@@ -4,6 +4,7 @@ import { Check, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Features from '../components/Features';
+import CTA from '../components/CTA';
 
 const Kainos = () => {
   const plans = [
@@ -52,11 +53,11 @@ const Kainos = () => {
         <meta name="description" content="Pasirinkite tinkamiausią planą savo projektui. Sužinokite, ką siūlome ir kokie yra mūsų paslaugų įkainiai." />
         <link rel="canonical" href="https://amberweb.lt/kainos" />
       </Helmet>
-      <div className="container mx-auto px-4">
+      <div className="mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-6"
+          className="text-center mb-6 px-4"
         >
           <h1 className="text-4xl md:text-5xl font-bold">Mūsų Kainos</h1>
         </motion.div>
@@ -64,7 +65,7 @@ const Kainos = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="max-w-5xl mx-auto text-center mb-12 px-4"
         >
           <p className="text-xl text-white/70 pb-2">Pasirinkite tinkamiausią planą savo projektui</p>
           <p className="text-xs text-white/70">Mūsų kainos – aiškiai ir be paslėptų mokesčių. Gaukite viską, ko reikia stipriai internetinei svetainei – už fiksuotą kainą.</p>
@@ -72,7 +73,7 @@ const Kainos = () => {
 
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -110,10 +111,19 @@ const Kainos = () => {
           ))}
         </div>
 
-        <p className='text-center pt-8'>*Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos kiekio.</p>
+        <p className='px-4 text-center pt-8'>*Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos kiekio.</p>
 
-        <div className='max-w-5xl mx-auto mt-24'>
+        <div className='max-w-5xl mx-auto mt-24 px-4'>
           <Features />        
+        </div>
+        
+        <div className='w-full mx-auto mt-24'>
+          <CTA
+            title="Nežinote kuris planas jums tinka?"
+            subtitle="Parašykite mums – padėsime išsirinkti."
+            buttonText="Susisiekti"
+            link="/kontaktai"
+          />
         </div>
 
         <motion.div
