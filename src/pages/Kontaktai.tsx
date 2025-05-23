@@ -146,7 +146,7 @@ const Kontaktai = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
               // Gradient border trick: outer div with gradient, inner div with solid background
-              className="relative mx-auto rounded-lg overflow-hidden shadow-lg bg-gradient-to-r from-electric-blue to-purple-500 p-[1px]"
+              className="relative mx-auto rounded-lg overflow-hidden shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]"
             >
               <div className="flex flex-col p-6 bg-dark-surface rounded-t-lg h-full w-full relative"> {/* Added relative for sticky positioning */}
                 <h2 className="text-xl font-bold mb-4 text-electric-blue">Užklausos forma</h2>
@@ -241,7 +241,7 @@ const Kontaktai = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }} className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue to-purple-500 p-[1px]'>
+              transition={{ delay: 0.4 }} className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]'>
               
               <div className="bg-dark-surface rounded-lg w-full shadow-xl p-6">
                 <h2 className="text-xl font-bold mb-6 text-electric-blue">Darbo laikas</h2>

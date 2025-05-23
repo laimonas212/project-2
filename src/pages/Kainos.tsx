@@ -75,7 +75,7 @@ const Kainos = () => {
 
         <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
-            <div className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue to-purple-500 p-[1px]'>
+            <div className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]'>
               <motion.div
                 key={plan.name}
                 initial={{ opacity: 0, y: 20 }}
