@@ -259,7 +259,9 @@ const Kontaktai = () => {
                 </div>
               </div>
             </motion.div>
-            <Maps />
+            <div className='h-[400px] sm:h-full'>
+              <Maps />
+            </div>
           </div>
         </div>
       </div>
