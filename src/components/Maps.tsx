@@ -284,7 +284,7 @@ const Maps: React.FC = () => {
             className="relative rounded-lg shadow-xl bg-dark-surface overflow-hidden p-[1px] bg-gradient-to-r from-electric-blue to-purple-500 h-full"
         >
             <div className="relative rounded-lg overflow-hidden h-full">
-                <div ref={mapRef} className="w-full h-full" />
+                <div ref={mapRef} className="w-full h-[400px] sm:h-full" />
             </div>
         </motion.div>
     );
