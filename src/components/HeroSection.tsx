@@ -63,10 +63,10 @@ const HeroSection = () => {
             </motion.div>
 
             <motion.h1
-              initial={{ y: 20 }}
-              animate={{ y: 0 }}
+              initial={{ y: 20, opacity: 1 }} // <- čia esmė!
+              animate={{ y: 0, opacity: 1 }}  // <- čia irgi!
               transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
-              className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight opacity-100"
+              className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
             >
               Kuriame{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
