@@ -27,7 +27,8 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
       className="group"
     >
       <div
-        className="relative mx-auto w-[280px] h-[560px] rounded-[3rem] border-[7px] border-dark-surface-2 overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+        className="relative mx-auto aspect-[1/2] w-[280px] max-w-full rounded-[3rem] border-[7px] border-dark-surface-2 overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+
         onClick={() => onClick(0)} // Show the first image on click
       >
         <img
@@ -228,11 +229,11 @@ const Templates: React.FC = () => {
         </motion.div>
 
         <motion.div
+          key={selectedType}
           variants={containerVariants}
-          // initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }} // Ensures animation happens only once
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-32"
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32"
         >
           {filteredTemplates.map((template) => (
             <motion.div key={template.id} variants={itemVariants}>
@@ -242,9 +243,8 @@ const Templates: React.FC = () => {
               />
             </motion.div>
           ))}
-
           <motion.div
-            variants={itemVariants} // Uses same animation settings
+            variants={itemVariants}
             className="flex justify-center items-center gap-4 flex-col"
           >
             <Plus className="w-20 h-20 text-electric-blue" />

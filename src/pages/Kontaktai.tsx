@@ -142,9 +142,9 @@ const Kontaktai = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
               // Gradient border trick: outer div with gradient, inner div with solid background
               className="relative mx-auto rounded-lg overflow-hidden shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]"
             >
@@ -235,13 +235,13 @@ const Kontaktai = () => {
                 />
               </div>
             </motion.div>
-
           </div>
+
           <div className='flex flex-col justify-between gap-8 '>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }} className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]'>
+              transition={{ delay: 0.2 }} className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]'>
               
               <div className="bg-dark-surface rounded-lg w-full shadow-xl p-6">
                 <h2 className="text-xl font-bold mb-6 text-electric-blue">Darbo laikas</h2>

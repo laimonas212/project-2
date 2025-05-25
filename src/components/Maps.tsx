@@ -280,7 +280,7 @@ const Maps: React.FC = () => {
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.3 }}
             className="relative rounded-lg shadow-xl bg-dark-surface overflow-hidden p-[1px] bg-gradient-to-r from-electric-blue/50 to-purple-500/50 h-full"
         >
             <div className="relative rounded-lg overflow-hidden h-full">
