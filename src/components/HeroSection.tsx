@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Code2, ArrowRight, Sparkles, Boxes, Medal, TabletSmartphone, GaugeCircle, Rocket, MonitorSmartphone, PenTool, Handshake } from 'lucide-react';
+import { Code2, ArrowRight, Sparkles, Rocket, MonitorSmartphone, PenTool, Handshake } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import ParticlesBackground from './ParticlesBackground'; // Jei palieki foną
@@ -32,7 +32,8 @@ const HeroSection = () => {
     }),
   };
 
-  const isMobile = window.innerWidth < 768;
+  // isMobile is not currently used in the provided JSX, can be removed if not needed
+  // const isMobile = window.innerWidth < 768;
 
   return (
     <motion.div
@@ -64,7 +65,7 @@ const HeroSection = () => {
               <h1 className="text-white/90">Internetinių svetainių kūrimas</h1>
             </motion.div>
 
-            {/* FAKE h1 – tam, kad LCP turėtų content */}
+            {/* FAKE h1 – tam, kad LCP turėtų content, but it's hidden from LCP by opacity:0 */}
             <h1
               className="absolute top-0 left-0 opacity-0 pointer-events-none text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
               aria-hidden="true"
@@ -72,17 +73,13 @@ const HeroSection = () => {
               Kuriame Skaitmenines Patirtis
             </h1>
 
-            {/* REAL h1 su animacija */}
-            <motion.h1
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
+            {/* REAL h1 – MODIFIED: Removed initial and animate for immediate visibility and better LCP */}
+            {/* This h1 will now be fully visible from the start, allowing LCP to be recorded quickly. */}
+            <h1
               className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
             >
               Kuriame <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">Skaitmenines</span> Patirtis
-            </motion.h1>
-
-
+            </h1>
 
             <motion.p
               initial="hidden"
