@@ -64,18 +64,24 @@ const HeroSection = () => {
               <h1 className="text-white/90">Internetinių svetainių kūrimas</h1>
             </motion.div>
 
+            {/* FAKE h1 – tam, kad LCP turėtų content */}
+            <h1
+              className="absolute top-0 left-0 opacity-0 pointer-events-none text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
+              aria-hidden="true"
+            >
+              Kuriame Skaitmenines Patirtis
+            </h1>
+
+            {/* REAL h1 su animacija */}
             <motion.h1
-              initial={isMobile ? false : { y: 20 }}
-              animate={isMobile ? false : { y: 0 }}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
               className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
             >
-              Kuriame{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
-                Skaitmenines
-              </span>{' '}
-              Patirtis
+              Kuriame <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">Skaitmenines</span> Patirtis
             </motion.h1>
+
 
 
             <motion.p
