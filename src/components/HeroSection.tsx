@@ -32,6 +32,8 @@ const HeroSection = () => {
     }),
   };
 
+  const isMobile = window.innerWidth < 768;
+
   return (
     <motion.div
       ref={containerRef}
@@ -63,8 +65,8 @@ const HeroSection = () => {
             </motion.div>
 
             <motion.h1
-              initial={{ y: 20, opacity: 1 }} // <- čia esmė!
-              animate={{ y: 0, opacity: 1 }}  // <- čia irgi!
+              initial={isMobile ? false : { y: 20 }}
+              animate={isMobile ? false : { y: 0 }}
               transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
               className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
             >
@@ -74,6 +76,7 @@ const HeroSection = () => {
               </span>{' '}
               Patirtis
             </motion.h1>
+
 
             <motion.p
               initial="hidden"
