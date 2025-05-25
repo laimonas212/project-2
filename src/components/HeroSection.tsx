@@ -3,21 +3,24 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Code2, ArrowRight, Sparkles, Rocket, MonitorSmartphone, PenTool, Handshake } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import ParticlesBackground from './ParticlesBackground'; // Jei palieki foną
+import ParticlesBackground from './ParticlesBackground';
 
 const HeroSection = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  // containerRef is no longer needed for scroll-based opacity of the whole section
+  // const containerRef = useRef<HTMLDivElement>(null);
+
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  // These are now potentially unused if you remove the scroll-based opacity
+  // You might want to re-evaluate where you apply scroll-based effects if needed.
+  // const { scrollYProgress } = useScroll({
+  //   target: containerRef, // This would point to a different ref if used internally
+  //   offset: ["start start", "end start"],
+  // });
+  // const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   const titleVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -32,14 +35,15 @@ const HeroSection = () => {
     }),
   };
 
-  // isMobile is not currently used in the provided JSX, can be removed if not needed
+  // isMobile is not currently used
   // const isMobile = window.innerWidth < 768;
 
   return (
-    <motion.div
-      ref={containerRef}
+    // MODIFIED: Changed to a regular div or removed style prop for LCP optimization
+    // The scroll-based opacity for the whole section is removed here.
+    <div
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ opacity }}
+    // style={{ opacity }} // REMOVED THIS LINE
     >
 
       <ParticlesBackground />
@@ -65,7 +69,7 @@ const HeroSection = () => {
               <h1 className="text-white/90">Internetinių svetainių kūrimas</h1>
             </motion.div>
 
-            {/* FAKE h1 – tam, kad LCP turėtų content, but it's hidden from LCP by opacity:0 */}
+            {/* FAKE h1 – for SEO, but LCP doesn't see it because of opacity:0 */}
             <h1
               className="absolute top-0 left-0 opacity-0 pointer-events-none text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
               aria-hidden="true"
@@ -73,8 +77,7 @@ const HeroSection = () => {
               Kuriame Skaitmenines Patirtis
             </h1>
 
-            {/* REAL h1 – MODIFIED: Removed initial and animate for immediate visibility and better LCP */}
-            {/* This h1 will now be fully visible from the start, allowing LCP to be recorded quickly. */}
+            {/* REAL h1 – Now renders immediately with full opacity */}
             <h1
               className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight"
             >
@@ -174,7 +177,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
