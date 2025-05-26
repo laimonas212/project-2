@@ -42,9 +42,8 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
           <span className="text-lg font-semibold">{template.title}</span>
           <MousePointerClick className="w-6 h-6 animate-carousel-ping" />
         </div>
-
-
       </div>
+      
       <div className="mt-4 text-center">
         <h3 className="text-xl font-bold mb-1 flex items-center justify-center gap-2">
           {template.title}
@@ -67,6 +66,7 @@ interface LightboxProps {
 }
 
 import ReactDOM from 'react-dom';
+import FadeOutSection from '../components/FadeOutSection';
 
 const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -236,22 +236,28 @@ const Templates: React.FC = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32"
         >
           {filteredTemplates.map((template) => (
-            <motion.div key={template.id} variants={itemVariants}>
-              <MobilePreview
-                template={template as Template}
-                onClick={() => setSelectedTemplate(template as Template)}
-              />
-            </motion.div>
+            <FadeOutSection>
+
+              <motion.div key={template.id} variants={itemVariants}>
+                <MobilePreview
+                  template={template as Template}
+                  onClick={() => setSelectedTemplate(template as Template)}
+                />
+              </motion.div>
+            </FadeOutSection>
           ))}
-          <motion.div
-            variants={itemVariants}
-            className="flex justify-center items-center gap-4 flex-col"
-          >
-            <Plus className="w-20 h-20 text-electric-blue" />
-            <h2 className="text-white/70 text-lg text-center">
-              Galime pasiūlyti daugiau nei 2000 variacijų
-            </h2>
-          </motion.div>
+          
+          <FadeOutSection>
+            <motion.div
+              variants={itemVariants}
+              className="flex justify-center items-center gap-4 h-full flex-col"
+            >
+              <Plus className="w-20 h-20 text-electric-blue" />
+              <h2 className="text-white/70 text-lg text-center">
+                Galime pasiūlyti daugiau nei 2000 variacijų
+              </h2>
+            </motion.div>
+          </FadeOutSection>
         </motion.div>
       </div>
 

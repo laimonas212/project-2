@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import projects  from '../components/Projects';
 import { MousePointerClick } from 'lucide-react';
 import sortedIds from '../components/sortedProjectIds';
+import FadeOutSection from '../components/FadeOutSection';
 
 interface Project {
   id: string;
@@ -64,6 +65,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
       <div className="w-full relative">
         {/* Mobile Layout */}
         <div className="lg:hidden space-y-6 px-6">
+          <FadeOutSection>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -127,24 +129,28 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
               </div>
 
             </div>
-          </motion.div>
+            </motion.div>
+          </FadeOutSection>
+
         </div>
 
         {/* Desktop Layout */}
         <div className="hidden lg:grid grid-cols-[1fr_2fr] gap-8 items-center max-w-[90%] mx-auto">
           {/* Floating Title */}
+          <FadeOutSection>
+
           <motion.div
             className="relative h-full flex items-center"
             style={{ y, scale, opacity }}
             
-          >
+            >
             <div className="vertical-text">
               <h2 className="text-6xl xl:text-7xl font-display font-bold whitespace-nowrap relative">
                 <a href={`/projektai/${project.id}`} rel="noreferrer">
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
-                  >
+                    >
                     <div className="notranslate">{project.title}</div>
                   </motion.div>
                 </a>
@@ -157,8 +163,10 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
               )}
             </div>
           </motion.div>
+              </FadeOutSection>
 
           {/* Project Content */}
+          <FadeOutSection>
           <motion.div 
             className="w-full"
             style={{ scale, opacity }}
@@ -218,7 +226,9 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                 </div>
               </motion.div>
             </div>
-          </motion.div>
+            </motion.div>
+          </FadeOutSection>
+
         </div>
       </div>
     </motion.div>

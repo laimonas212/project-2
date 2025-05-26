@@ -90,14 +90,14 @@ export default function ProjectPage({ project }: Props) {
             </div>
 
             <div className="relative z-10">
-                <section className="mt-24 bg-gradient-to-r from-electric-blue/50 to-neon-purple/50 p-16 text-center relative z-10">
+                <section className="mt-24 bg-gradient-to-r from-electric-blue to-neon-purple p-16 text-center relative z-10">
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                         Patiko šis projektas?
                     </h2>
                     <p className="text-white/70 mb-6">
                         Sukursime ir Jūsų verslui tokią svetainę – greitą, modernią ir pritaikytą Jūsų poreikiams.
                     </p>
-                    <a href="/kontaktai" className="button-primary">
+                    <a href="/kontaktai" className="button-cta">
                         Susisiekti dabar →
                     </a>
                 </section>
