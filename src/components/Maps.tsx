@@ -250,6 +250,7 @@ const Maps: React.FC = () => {
                     map: map, // ← čia esmė
                     title: "Amberweb",
                     icon: Images.amberWebLogo,
+                    scaledSize: new window.google.maps.Size(50, 50),
                 });
             }
         };
