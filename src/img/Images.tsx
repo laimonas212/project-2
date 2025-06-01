@@ -1,6 +1,6 @@
 // projects
 import logoImage from './amberweb-logo-amber-only.png';
-import amberWebLogo from './amberweb-logo-amber-web.png';
+import amberWebLogo from './amberweb-logo-white.png';
 import brangusAuto from '././projects/wordpress-interneto-svetaines-kurimas-brangus-auto-amberweb.webp';
 import eriola from '././projects/wordpress-interneto-svetaines-kurimas-eriola-amberweb.webp';
 import gavorkaArt from '././projects/wordpress-interneto-svetaines-kurimas-gavorka-art-amberweb.webp';

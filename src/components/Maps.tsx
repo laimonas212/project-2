@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Images from '../img/Images';
 
-// Google global initMap fix for TypeScript
 declare global {
     interface Window {
         google: any;
@@ -18,14 +17,7 @@ const Maps: React.FC = () => {
     useEffect(() => {
         const loadMap = () => {
             if (mapRef.current && window.google && window.google.maps) {
-
-                new window.google.maps.Marker({
-                    position: { lat: 54.6872, lng: 25.2797 },
-                    Maps,
-                    title: "Amberweb",
-                    icon: Images.amberWebLogo,
-                });
-                new window.google.maps.Map(mapRef.current, {
+                const map = new window.google.maps.Map(mapRef.current, {
                     center: { lat: 54.6872, lng: 25.2797 },
                     zoom: 13,
                     disableDefaultUI: true,
@@ -250,7 +242,14 @@ const Maps: React.FC = () => {
                                 }
                             ]
                         }
-                    ]
+                    ],
+                });
+
+                new window.google.maps.Marker({
+                    position: { lat: 54.6872, lng: 25.2797 },
+                    map: map, // ← čia esmė
+                    title: "Amberweb",
+                    icon: Images.amberWebLogo,
                 });
             }
         };
@@ -264,7 +263,7 @@ const Maps: React.FC = () => {
 
             script.onload = () => {
                 scriptLoadedRef.current = true;
-                loadMap(); // Paleidžiam žemėlapį kai užkrauna
+                loadMap();
             };
 
             script.onerror = () => {
@@ -273,7 +272,7 @@ const Maps: React.FC = () => {
 
             document.head.appendChild(script);
         } else if (window.google && window.google.maps) {
-            loadMap(); // Jeigu jau buvo pakrauta
+            loadMap();
         }
     }, []);
 
