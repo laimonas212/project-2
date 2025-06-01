@@ -245,7 +245,7 @@ const Maps: React.FC = () => {
                     ],
                 });
 
-                const marker = new window.google.maps.Marker({
+                new window.google.maps.Marker({
                     position: { lat: 54.6872, lng: 25.2797 },
                     map: map,
                     title: "Amberweb",
@@ -254,18 +254,6 @@ const Maps: React.FC = () => {
                         scaledSize: new window.google.maps.Size(50, 50),
                     },
                     animation: window.google.maps.Animation.DROP,
-                });
-
-                const infoWindow = new window.google.maps.InfoWindow({
-                    content: `<div style="font-weight: 600; font-size: 14px;">Amberweb<br>Dirbame visoje Lietuvoje!</div>`,
-                });
-
-                marker.addListener("mouseover", () => {
-                    infoWindow.open(map, marker);
-                });
-
-                marker.addListener("mouseout", () => {
-                    infoWindow.close();
                 });
             }
         };
