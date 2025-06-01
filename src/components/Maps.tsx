@@ -251,7 +251,7 @@ const Maps: React.FC = () => {
                     title: "Amberweb - Profesionalus Interneto Svetainių Kūrimas",
                     icon: {
                         url: Images.amberWebLogo,
-                        scaledSize: new window.google.maps.Size(30, 30),
+                        scaledSize: new window.google.maps.Size(40, 40),
                     },
                     animation: window.google.maps.Animation.DROP,
                 });
