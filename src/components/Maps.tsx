@@ -248,7 +248,7 @@ const Maps: React.FC = () => {
                 new window.google.maps.Marker({
                     position: { lat: 54.6872, lng: 25.2797 },
                     map: map,
-                    title: "Amberweb",
+                    title: "Amberweb - Profesionalus Interneto Svetainių Kūrimas",
                     icon: {
                         url: Images.amberWebLogo,
                         scaledSize: new window.google.maps.Size(50, 50),
