@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Images from '../img/Images';
 
 // Google global initMap fix for TypeScript
 declare global {
@@ -22,7 +23,7 @@ const Maps: React.FC = () => {
                     position: { lat: 54.6872, lng: 25.2797 },
                     Maps,
                     title: "Amberweb",
-                    icon: "TAVO-LOGO-AR-IKONA-URL.png"
+                    icon: Images.amberWebLogo,
                 });
                 new window.google.maps.Map(mapRef.current, {
                     center: { lat: 54.6872, lng: 25.2797 },
