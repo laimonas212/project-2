@@ -31,7 +31,7 @@ const Svetaine24hStraipsnis = () => {
                         24 valandų terminas galioja ne kompromisams, o procesui. Dirbant su iš anksto paruoštu dizainu, efektyvia struktūra ir žinant kliento poreikius – svetainė gali būti paleista greičiau, nei daugelis įsivaizduoja.
                     </p>
 
-                    <h2 className="text-2xl font-semibold mb-4">Ką įeina į 24h sprendimą?</h2>
+                    <h2 className="text-2xl font-semibold mb-4">Kas įeina į 24h sprendimą?</h2>
                     <ul className='pl-4 mb-6'>
                         <li className="text-white/70 list-item list-disc">Turinio valdymo sistema (WordPress)</li>
                         <li className="text-white/70 list-item list-disc">Parinktas dizainas pagal nišą</li>
