@@ -8,21 +8,35 @@ import logo2 from '../img/amberweb-logo-white-no-amber.png';
 import Accessibility from '../components/Accessibility';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 
+// Define a type for your link objects to improve type safety
+interface NavLinkItem {
+  href?: string; // Optional for buttons
+  label: string | React.ReactElement;
+  isButton?: boolean;
+  isHighlight?: boolean;
+}
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showAccessibilityMenu, setShowAccessibilityMenu] = useState(false);
   const location = useLocation();
 
-  const links = [
+  // Define regular URL links separately
+  const urlLinks: NavLinkItem[] = [
     { href: '/', label: <LayoutGrid /> },
     { href: '/projektai', label: 'Projektai' },
     { href: '/paruosti-dizainai', label: 'Paruošti dizainai' },
     { href: '/kainos', label: 'Kainos' },
     { href: '/kontaktai', label: 'Kontaktai' },
-    { href: '/svetaine-per-24h', label: 'Svetainė per 24h', isHighlight: true },
-    { label: <Accessibility />, isButton: true }, // Accessibility now a button
   ];
+
+  // The 'Svetainė per 24h' link
+  const highlightLink: NavLinkItem = { href: '/svetaine-per-24h', label: 'Svetainė per 24h', isHighlight: true };
+
+  // The Accessibility button link
+  const accessibilityLink: NavLinkItem = { label: <Accessibility />, isButton: true };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,79 +90,99 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {links.map((link) =>
-              link.isButton ? (
-                <button
-                  key="accessibility"
-                  onClick={handleAccessibilityToggle}
-                  className="text-white/80 hover:text-electric-blue transition-colors"
-                >
-                  {link.label}
-                </button>
-              ) : (
-                <Link
-                  key={link.href}
-                  to={link.href || ''}
-                  className={cn(
-                    "font-medium transition-colors",
-                    link.isHighlight
-                      ? "button-primary rounded-full animate-gradient-x"
-                      : location.pathname === link.href
-                        ? "text-electric-blue"
-                        : "text-white/80 hover:text-electric-blue"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+            {/* All URL links */}
+            {urlLinks.map((link) => (
+              <Link
+                key={link.href}
+                to={link.href || ''}
+                className={cn(
+                  "font-medium transition-colors",
+                  location.pathname === link.href
+                    ? "text-electric-blue"
+                    : "text-white/80 hover:text-electric-blue"
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
+
+            {/* 24h button */}
+            <Link
+              key={highlightLink.href}
+              to={highlightLink.href || ''}
+              className={cn(
+                "font-medium transition-colors button-primary rounded-full animate-gradient-x"
+              )}
+            >
+              {highlightLink.label}
+            </Link>
+
+            {/* Accessibility button */}
+            <button
+              key="accessibility"
+              onClick={handleAccessibilityToggle}
+              className="text-white/80 hover:text-electric-blue transition-colors"
+            >
+              {accessibilityLink.label}
+            </button>
 
             <LanguageSwitcher />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X /> : <AlignRight />}
-          </button>
+          {/* Mobile Menu Button and Highlight Button (in header) */}
+          <div className="md:hidden flex items-center space-x-4">
+            <Link
+              key={highlightLink.href}
+              to={highlightLink.href || ''}
+              className={cn(
+                "font-medium transition-colors button-primary rounded-full animate-gradient-x",
+                "adaptive-button-font"
+              )}
+            >
+              {highlightLink.label}
+            </Link>
+            <button onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X /> : <AlignRight />}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation (Dropdown Menu) */}
       <motion.div
         initial={false}
         animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
         className="md:hidden overflow-hidden bg-dark-surface-2"
       >
         <div className="container mx-auto px-4 py-4">
-          {links.map((link) =>
-            link.isButton ? (
-              <button
-                key="accessibility-mobile"
-                onClick={() => {
-                  handleAccessibilityToggle();
-                }}
-                className="block py-2 w-full text-left text-white/80 hover:text-electric-blue"
-              >
-                {link.label}
-              </button>
-            ) : (
-              <Link
-                key={link.href}
-                to={link.href || ''}
-                className={cn(
-                  'block py-2 font-medium transition-colors',
-                  link.isHighlight
-                    ? 'button-primary animate-pulse rounded-full inline-block my-3'
-                    : location.pathname === link.href
-                      ? 'text-electric-blue'
-                      : 'text-white/80 hover:text-electric-blue'
-                )}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            )
-          )}
+          {/* All URL links for mobile menu */}
+          {urlLinks.map((link) => (
+            <Link
+              key={link.href}
+              to={link.href || ''}
+              className={cn(
+                'block py-2 font-medium transition-colors',
+                location.pathname === link.href
+                  ? 'text-electric-blue'
+                  : 'text-white/80 hover:text-electric-blue'
+              )}
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+
+          {/* Accessibility button for mobile menu */}
+          <button
+            key="accessibility-mobile"
+            onClick={() => {
+              handleAccessibilityToggle();
+              setIsOpen(false); // Close menu when accessibility is toggled
+            }}
+            className="block py-2 w-full text-left text-white/80 hover:text-electric-blue"
+          >
+            {accessibilityLink.label}
+          </button>
 
           <LanguageSwitcher />
         </div>
@@ -157,6 +191,7 @@ const Navbar = () => {
       {/* Accessibility submeniu */}
       {showAccessibilityMenu && (
         <div className="absolute top-full right-4 bg-dark-surface text-white p-4 rounded shadow-xl z-50">
+          {/* You would render your Accessibility component content here */}
         </div>
       )}
     </nav>
