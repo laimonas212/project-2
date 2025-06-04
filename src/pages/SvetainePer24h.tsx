@@ -43,7 +43,7 @@ const SvetainePer24h: React.FC = () => {
                         { number: '01', title: 'Trumpa konsultacija', description: 'Susisiekiame ir greitai aptariame, ko reikia jūsų svetainei.' },
                         { number: '02', title: 'Dizaino pasirinkimas', description: 'Išsirenkate vieną iš siūlomų šablonų arba dizaino krypčių.' },
                         { number: '03', title: 'Turinio suvedimas', description: 'Patalpiname jūsų tekstus, nuotraukas, kontaktus ir kitą informaciją.' },
-                        { number: '04', title: 'Techninis paruošimas', description: 'Sutvarkome mobilų vaizdą, vidinį SEO ir pasiruošiame paleidimui.' },
+                        { number: '04', title: 'Techninis paruošimas', description: 'Sutvarkome mobilų vaizdą ir pasiruošiame paleidimui.' },
                         { number: '05', title: 'Svetainės paleidimas', description: 'Per 24 val. jūsų svetainė jau veikia su viskuo, ko reikia startui!' },
                     ]}
                 />
@@ -111,8 +111,6 @@ const SvetainePer24h: React.FC = () => {
             </section>
 
             <section className="bg-dark-surface relative overflow-hidden px-4 grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto">
-
-                
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
