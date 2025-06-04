@@ -43,7 +43,7 @@ const Blog = () => {
                         <SwiperSlide key={index} className="h-auto">
                             <div className="card group hover:border-electric-blue/30 transition-colors duration-300 flex flex-col h-full">
                                 <div className="aspect-w-16 aspect-h-9 mb-4">
-                                    <img src={entry.image} alt={entry.title} className="object-cover w-auto h-8" />
+                                    <img src={entry.image} alt={entry.title} className="object-cover w-auto h-16" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">{entry.title}</h3>
                                 <p className="text-white/70 flex-grow">{entry.excerpt}</p>

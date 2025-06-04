@@ -1,13 +1,29 @@
 import { motion } from "framer-motion";
 
-const Process = () => {
-    const processList = [
+interface Step {
+    number: string;
+    title: string;
+    description: string;
+}
+
+interface ProcessProps {
+    steps?: Step[];
+    headline?: string;
+    description?: string;
+}
+
+const Process = ({
+    steps = [
         { number: '01', title: 'Poreikių analizė', description: 'Jūsų poreikių ir tikslų išsiaiškinimas' },
         { number: '02', title: 'Planavimas', description: 'Sudarome aiškų veiksmų planą' },
         { number: '03', title: 'Dizainas', description: 'Pasirenkate tinkamą dizainą' },
         { number: '04', title: 'Kūrimas', description: 'Naudojame pažangiausias technologijas' },
         { number: '05', title: 'Paleidimas', description: 'Įgyvendiname ir optimizuojame projektą' },
-    ];
+    ],
+    headline = 'Interneto svetainių kūrimo procesas',
+    description = 'Dirbame pagal aiškų ir patikrintą procesą – nuo idėjos iki galutinės svetainės paleidimo. Tai leidžia užtikrinti sklandų darbą, kokybę ir rezultatą, kuris padeda augti jūsų verslui internete.'
+}: ProcessProps) => {
+
     return (
         <section className="py-20 bg-dark-surface relative">
             <div className="container mx-auto px-4">
@@ -17,19 +33,19 @@ const Process = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Interneto svetainių kūrimo procesas</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">{headline}</h2>
                     <p className="text-white/70 text-lg max-w-2xl mx-auto">
-                        Dirbame pagal aiškų ir patikrintą procesą – nuo idėjos iki galutinės svetainės paleidimo. Tai leidžia užtikrinti sklandų darbą, kokybę ir rezultatą, kuris padeda augti jūsų verslui internete.
+                        {description}
                     </p>
                 </motion.div>
 
                 <div className="relative">
                     <div className="absolute top-1/3 my-2 left-0 w-full h-0.5 bg-dark-surface-2 hidden lg:block">
-                        <div className="h-full bg-gradient-to-r from-electric-blue to-neon-purple w-full" />
+                        <div className="h-full bg-gradient-to-r from-electric-blue to-neon-purple w-full animate-gradient-x" />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                        {processList.map((step, index) => (
+                        {steps.map((step, index) => (
                             <motion.div
                                 key={step.number}
                                 initial={{ opacity: 0, y: 20 }}
@@ -50,6 +66,6 @@ const Process = () => {
             </div>
         </section>
     );
-}
+};
 
 export default Process;

@@ -20,6 +20,7 @@ const Navbar = () => {
     { href: '/paruosti-dizainai', label: 'Paruošti dizainai' },
     { href: '/kainos', label: 'Kainos' },
     { href: '/kontaktai', label: 'Kontaktai' },
+    { href: '/svetaine-per-24h', label: 'Svetainė per 24h', isHighlight: true },
     { label: <Accessibility />, isButton: true }, // Accessibility now a button
   ];
 
@@ -89,14 +90,19 @@ const Navbar = () => {
                   key={link.href}
                   to={link.href || ''}
                   className={cn(
-                    "font-medium transition-colors hover:text-electric-blue",
-                    location.pathname === link.href ? "text-electric-blue" : "text-white/80"
+                    "font-medium transition-colors",
+                    link.isHighlight
+                      ? "button-primary rounded-full animate-gradient-x"
+                      : location.pathname === link.href
+                        ? "text-electric-blue"
+                        : "text-white/80 hover:text-electric-blue"
                   )}
                 >
                   {link.label}
                 </Link>
               )
             )}
+
             <LanguageSwitcher />
           </div>
 
@@ -130,9 +136,12 @@ const Navbar = () => {
                 key={link.href}
                 to={link.href || ''}
                 className={cn(
-
-                  'block py-2 font-medium transition-colors hover:text-electric-blue',
-                  location.pathname === link.href ? 'text-electric-blue' : 'text-white/80'
+                  'block py-2 font-medium transition-colors',
+                  link.isHighlight
+                    ? 'button-primary animate-pulse rounded-full inline-block my-3'
+                    : location.pathname === link.href
+                      ? 'text-electric-blue'
+                      : 'text-white/80 hover:text-electric-blue'
                 )}
                 onClick={() => setIsOpen(false)}
               >
@@ -140,6 +149,7 @@ const Navbar = () => {
               </Link>
             )
           )}
+
           <LanguageSwitcher />
         </div>
       </motion.div>

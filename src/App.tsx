@@ -8,6 +8,7 @@ import Projektai from './pages/Projektai';
 import Templates from './pages/Dizainai';
 import Kainos from './pages/Kainos';
 import Kontaktai from './pages/Kontaktai';
+import SvetainePer24h from './pages/SvetainePer24h';
 import { motion } from 'framer-motion';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton';
@@ -52,6 +53,7 @@ import WordPressKaina2025 from './pages/blog/WordPressKaina2025';
 import InternetoSvetainiuKurimas2025 from './pages/blog/InternetoSvetainiuKurimas2025';
 import PigiosSvetaines from './pages/blog/PigiosSvetaines';
 import Divi5Straipsnis from './pages/blog/Divi5';
+import Svetaine24hStraipsnis from './pages/blog/Svetaine24hStraipsnis';
 
 function App() {
   useEffect(() => {
@@ -79,6 +81,7 @@ function App() {
               <Route path="/paruosti-dizainai" element={<Templates />} />
               <Route path="/kainos" element={<Kainos />} />
               <Route path="/kontaktai" element={<Kontaktai />} />
+              <Route path="/svetaine-per-24h" element={<SvetainePer24h />} />
               <Route path="/privatumo-politika" element={<PrivatumoPolitika />} />
               <Route path="/salygos" element={<Salygos />} />
               <Route path="/slapukai" element={<Slapukai />} />
@@ -91,6 +94,7 @@ function App() {
               <Route path="/blog/interneto-svetainiu-kurimas-2025" element={<InternetoSvetainiuKurimas2025 />} />
               <Route path="/blog/pigios-svetaines" element={<PigiosSvetaines />} />
               <Route path="//blog/kas-yra-divi-5" element={<Divi5Straipsnis />} />
+              <Route path='/blog/svetaine-per-24h' element={<Svetaine24hStraipsnis />} />
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/projektai/lzspa" element={<LzspaPage />} />
               <Route path="/projektai/holistine-kosmetologija" element={<HolistineKosmetologija />} />

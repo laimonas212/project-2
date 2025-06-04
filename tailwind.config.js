@@ -15,7 +15,7 @@ export default {
         body: ['Inter', 'sans-serif'],
       },
       animation: {
-        'gradient-x': 'gradient-x 15s ease infinite',
+        'gradient-x': 'gradient-x 4s ease infinite',
         'float': 'float 6s ease-in-out infinite',
         'spin-slow': 'spin-slow 20s linear infinite',
         'carousel-ping': 'carousel-ping 1s infinite ease-in-out',

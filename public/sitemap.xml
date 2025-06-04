@@ -28,6 +28,9 @@
     <url>
         <loc>https://www.amberweb.lt/blog</loc>
     </url>
+    <url>
+        <loc>https://www.amberweb.lt/svetaine-per-24h</loc>
+    </url>
 
     <!-- Blog įrašai -->
     <url>
@@ -35,6 +38,9 @@
     </url>
     <url>
         <loc>https://www.amberweb.lt/blog/pigios-svetaines</loc>
+    </url>
+    <url>
+        <loc>https://www.amberweb.lt/blog/svetaine-per-24h</loc>
     </url>
     <url>
         <loc>https://www.amberweb.lt/blog/interneto-svetainiu-kurimas-2025</loc>

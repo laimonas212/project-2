@@ -11,7 +11,7 @@ const Kainos = () => {
     {
       name: 'Reprezentacinė svetainė',
       description: 'Idealiai tinka mažoms įmonėms ar asmeniniams projektams',
-      price: '€350',
+      price: '€499',
       features: [
         'Turinio valdymo sistema',
         'Pasirinktas paruoštas dizainas',
@@ -26,7 +26,7 @@ const Kainos = () => {
     {
       name: 'Elektroninė Parduotuvė',
       description: 'Puikiai tinka vidutinio dydžio įmonėms, norinčioms sustiprinti savo internetinę veiklą',
-      price: '€550',
+      price: '€799',
       features: [
         'Turinio valdymo sistema',
         'Pasirinktas paruoštas dizainas',
@@ -37,11 +37,24 @@ const Kainos = () => {
         'Mobiliesiems pritaikytas dizainas',
         'Bazinis SEO',
         'El. prekyba',
-        '15 prekių įkėlimas nemokamai',
+        '10 prekių įkėlimas nemokamai',
         'Atsiskaitymų pajungimas',
         'Paštomatų/Kurjerių pajungimas',
       ],
       highlighted: true,
+    },
+    {
+      name: 'Svetainė per 24h',
+      description: 'Greitas startas – informacinė svetainė paruošta per 24 valandas.',
+      price: '€299',
+      features: [
+        'Turinio valdymo sistema',
+        'Pasirinktas paruoštas dizainas',
+        '1-2 puslapiai (pvz. landing, kontaktai)',
+        'Kontaktinė forma',
+        'Informacijos patalpinimas',
+        'Mobiliesiems pritaikytas dizainas',
+      ],
     },
   ];
 
@@ -69,19 +82,18 @@ const Kainos = () => {
         >
           <p className="text-xl text-white/70 pb-2">Pasirinkite tinkamiausią planą savo projektui</p>
           <p className="text-xs text-white/70">Mūsų kainos – aiškiai ir be paslėptų mokesčių. Gaukite viską, ko reikia stipriai internetinei svetainei – už fiksuotą kainą.</p>
-
-
         </motion.div>
 
-        <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
           {plans.map((plan, index) => (
-            <div className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]'>
+            <div className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px] h-min'>
               <motion.div
                 key={plan.name}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="card transform hover:-translate-y-2 flex flex-col h-full"
+                className="card transform hover:-translate-y-2 flex flex-col h-auto"
               >
                 <div className="space-y-6 mb-12 flex-1">
                   <div>

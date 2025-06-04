@@ -2,6 +2,12 @@ import Images from "../img/Images";
 
 const blogEntries = [
     {
+        image: Images.logos.svetaine24h,
+        title: "Interneto svetainė per 24 val. – ar tai įmanoma?",
+        excerpt: "Verslui svarbus greitis – kartais naujos svetainės reikia čia ir dabar. Bet ar įmanoma ją sukurti vos per vieną dieną? Atsakymas – taip.",
+        url: "/blog/svetaine-per-24h",
+    },
+    {
         image: Images.logos.pigiosSvetaines,
         title: "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
         excerpt: "Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia ekonomišką sprendimą?",
