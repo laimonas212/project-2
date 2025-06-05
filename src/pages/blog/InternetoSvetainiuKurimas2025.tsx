@@ -75,7 +75,7 @@ const InternetoSvetainiuKurimas2025 = () => {
                         <li className="text-white/70 mb-4 list-item list-disc"><strong>Dizaino unikalumas:</strong> Individualus dizainas kainuos brangiau nei šablono pritaikymas.</li>
                         <li className="text-white/70 mb-4 list-item list-disc"><strong>Funkcionalumas:</strong> Kuo daugiau specialių funkcijų (pvz., registracijos sistemos, mokėjimo integracijos, interaktyvūs elementai), tuo didesnė bus kaina.</li>
                         <li className="text-white/70 mb-4 list-item list-disc"><strong>Puslapių skaičius:</strong> Daugiau puslapių reiškia daugiau darbo.</li>
-                        <li className="text-white/70 mb-4 list-item list-disc"><strong>Papildomos integracijos:</strong> Integracijos su CRM, el. pašto rinkodaros platformomis ir kitomis sistemomis gali padidinti kainą.</li>
+                        <li className="text-white/70 mb-4 list-item list-disc"><strong>Papildomos integracijos:</strong> Integracijos su el. pašto rinkodaros platformomis ir kitomis sistemomis gali padidinti kainą.</li>
                         <li className="text-white/70 mb-4 list-item list-disc"><strong>Paslaugų teikėjo patirtis ir reputacija:</strong> Patyrusių ir gerai žinomų agentūrų ar specialistų paslaugos dažniausiai kainuoja brangiau.</li>
                     </ul>
 
