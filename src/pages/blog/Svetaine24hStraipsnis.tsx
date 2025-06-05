@@ -35,7 +35,7 @@ const Svetaine24hStraipsnis = () => {
                     <ul className='pl-4 mb-6'>
                         <li className="text-white/70 list-item list-disc">Turinio valdymo sistema (WordPress)</li>
                         <li className="text-white/70 list-item list-disc">Parinktas dizainas pagal nišą</li>
-                        <li className="text-white/70 list-item list-disc">1 puslapis (pvz. landing)</li>
+                        <li className="text-white/70 list-item list-disc">1-2 puslapiai (pvz. landing, kontaktai)</li>
                         <li className="text-white/70 list-item list-disc">Kontaktinė forma</li>
                         <li className="text-white/70 list-item list-disc">Informacijos patalpinimas</li>
                         <li className="text-white/70 list-item list-disc">Mobiliesiems pritaikytas dizainas</li>
