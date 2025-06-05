@@ -46,7 +46,7 @@ const Blog = () => {
                                     <img src={entry.image} alt={entry.title} className="object-cover w-auto h-16" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">{entry.title}</h3>
-                                <p className="text-white/70 flex-grow">{entry.excerpt}</p>
+                                <p className="text-white/70 flex-grow line-clamp-2">{entry.excerpt}</p>
                                 <Link to={entry.url} className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300 mt-auto">
                                     Skaityti daugiau
                                 </Link>

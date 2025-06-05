@@ -69,10 +69,10 @@ const WordPressKaina2025 = () => {
                     <p className="text-white/70 mb-6">Yra daugybė "freelancerių" ar įmonių, siūlančių svetaines už 100–200€, bet dažnai tai būna paviršutiniškai sukurti puslapiai su mažai optimizacijos ir jokiu palaikymu. Tokiu atveju gali prarasti daugiau nei sutaupai. Kokybiškai padaryta svetainė ne tik atrodys profesionaliai, bet ir veiks greitai, bus saugi, lengvai valdoma ir pritaikyta Google paieškai.</p>
 
                     <h2 className="text-2xl font-semibold  mb-4">4. O tai kiek kainuoja svetainė su WooCommerce?</h2>
-                    <p className="text-white/70 mb-6">El. parduotuvė su WordPress + WooCommerce dažniausiai kainuoja nuo <strong>600€</strong>. Kaina priklauso nuo produktų kiekio, ar reikalingi mokėjimo metodai, pristatymo skaičiavimai, sandėlio valdymas ir pan.</p>
+                    <p className="text-white/70 mb-6">El. parduotuvė su WordPress + WooCommerce dažniausiai kainuoja nuo <strong>500€</strong>. Kaina priklauso nuo produktų kiekio, ar reikalingi mokėjimo metodai, pristatymo skaičiavimai, sandėlio valdymas ir pan.</p>
 
                     <h2 className="text-2xl font-semibold  mb-4">5. Kokias kainas siūlome mes?</h2>
-                    <p className="text-white/70 mb-6">Mūsų siūlomos svetainės dažniausiai kainuoja nuo <strong>350€</strong>, priklausomai nuo funkcionalumo. Į kainą įeina:</p>
+                    <p className="text-white/70 mb-6">Mūsų siūlomos svetainės dažniausiai kainuoja nuo <strong>499€</strong>, priklausomai nuo funkcionalumo. Į kainą įeina:</p>
                     <ul className='pl-4'>
                         <li className="text-white/70 mb-4 list-item list-disc">WordPress su Divi</li>
                         <li className="text-white/70 mb-4 list-item list-disc">Dizaino pritaikymas</li>
@@ -82,7 +82,7 @@ const WordPressKaina2025 = () => {
                         <li className="text-white/70 mb-4 list-item list-disc">Turinio įkėlimas ir konsultacijos</li>
                     </ul>
 
-                    <p className="text-white/70 mb-6">Jeigu reikia el. parduotuvės – kaina prasideda nuo <strong>550€</strong>, priklausomai nuo specifikos.</p>
+                    <p className="text-white/70 mb-6">Jeigu reikia el. parduotuvės – kaina prasideda nuo <strong>799€</strong>, priklausomai nuo specifikos.</p>
 
                     <p className="text-white/70 mb-6">Turite idėją? <a href="/kontaktai" className="text-electric-blue underline">Susisiekite</a> ir pakonsultuosime be jokio įsipareigojimo.</p>
 
