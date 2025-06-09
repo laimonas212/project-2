@@ -63,7 +63,10 @@ const Kainos = () => {
       {/* Helmet component for page title and meta */}
       <Helmet>
         <title>Mūsų Kainos - Pasirinkite Planą | Amberweb</title>
-        <meta name="description" content="Pasirinkite tinkamiausią planą savo projektui. Sužinokite, ką siūlome ir kokie yra mūsų paslaugų įkainiai." />
+        <meta
+          name="description"
+          content="Pasirinkite tinkamiausią planą savo projektui. Sužinokite, ką siūlome ir kokie yra mūsų paslaugų įkainiai."
+        />
         <link rel="canonical" href="https://amberweb.lt/kainos" />
       </Helmet>
       <div className="mx-auto">
@@ -80,14 +83,22 @@ const Kainos = () => {
           animate={{ opacity: 1, y: 0 }}
           className="max-w-5xl mx-auto text-center mb-12 px-4"
         >
-          <p className="text-xl text-white/70 pb-2">Pasirinkite tinkamiausią planą savo projektui</p>
-          <p className="text-xs text-white/70">Mūsų kainos – aiškiai ir be paslėptų mokesčių. Gaukite viską, ko reikia stipriai internetinei svetainei – už fiksuotą kainą.</p>
+          <p className="text-xl text-white/70 pb-2">
+            Pasirinkite tinkamiausią planą savo projektui
+          </p>
+          <p className="text-xs text-white/70">
+            Mūsų kainos – aiškiai ir be paslėptų mokesčių. Gaukite viską, ko
+            reikia stipriai internetinei svetainei – už fiksuotą kainą.
+          </p>
         </motion.div>
 
         <div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
           {plans.map((plan, index) => (
-            <div className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px] h-min'>
+            <div
+              className={`p-[1px] h-min rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 ${
+                plan.highlighted ? "animate-gradient-x" : ""
+              }`}
+            >
               <motion.div
                 key={plan.name}
                 initial={{ opacity: 0, y: 20 }}
@@ -125,13 +136,16 @@ const Kainos = () => {
           ))}
         </div>
 
-        <p className='px-4 text-center pt-8'>*Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos kiekio.</p>
+        <p className="px-4 text-center pt-8">
+          *Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos
+          kiekio.
+        </p>
 
-        <div className='max-w-5xl mx-auto mt-24 px-4'>
+        <div className="max-w-5xl mx-auto mt-24 px-4">
           <Features />
         </div>
-        
-        <div className='w-full mx-auto mt-24'>
+
+        <div className="w-full mx-auto mt-24">
           <CTA
             title="Nežinote kuris planas jums tinka?"
             subtitle="Parašykite mums – padėsime išsirinkti."
@@ -146,8 +160,12 @@ const Kainos = () => {
           transition={{ delay: 0.3 }}
           className="my-20 pb-8 text-center"
         >
-          <h2 className="text-2xl font-bold mb-4">Norite pamatyti mūsų darbus?</h2>
-          <p className="text-white/70 mb-8">Peržiūrėkite mūsų sėkmingai įgyvendintus projektus</p>
+          <h2 className="text-2xl font-bold mb-4">
+            Norite pamatyti mūsų darbus?
+          </h2>
+          <p className="text-white/70 mb-8">
+            Peržiūrėkite mūsų sėkmingai įgyvendintus projektus
+          </p>
           <Link
             to="/projektai"
             className="inline-flex items-center gap-2 button-primary group"
