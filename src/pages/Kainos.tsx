@@ -137,8 +137,9 @@ const Kainos = () => {
         </div>
 
         <p className="px-4 text-center pt-8">
-          *Galutinė kaina priklauso nuo projekto sudėtingumo bei informacijos
-          kiekio.
+          *Pateikta kaina apima visas nurodytas funkcijas. Galutinė kaina gali
+          keistis priklausomai nuo papildomų funkcijų, puslapių skaičiaus ar
+          specifinių poreikių.
         </p>
 
         <div className="max-w-5xl mx-auto mt-24 px-4">
