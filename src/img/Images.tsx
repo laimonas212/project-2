@@ -27,6 +27,7 @@ import veselovaite from '././projects/wordpress-interneto-svetaines-kurimas-vese
 import archiGrupe from '././projects/wordpress-interneto-svetaines-kurimas-archi-grupe-amberweb.webp';
 import paparcioPradineMokykla from '././projects/wordpress-interneto-svetaines-kurimas-paparcio-pradine-mokykla-amberweb.webp';
 import puppyYoga from '././projects/wordpress-interneto-svetaines-kurimas-puppy-yoga-meta-amberweb.webp';
+import akmenukas from '././projects/wordpress-interneto-svetaines-kurimas-akmenukas-amberweb.webp';
 
 // icons
 import woo from './woo.png';
@@ -342,6 +343,7 @@ const Images = {
         veselovaite: veselovaite,
         paparcioPradineMokykla: paparcioPradineMokykla,
         puppyYoga: puppyYoga,
+        akmenukas: akmenukas,
     },
     templates: {
         acaiBowl: {

@@ -23,6 +23,16 @@ const projects = [
         link: 'https://www.lzspa.lt',
     },
     {
+        id: "akmenukas",
+        title: "MB Akmenukas",
+        subtitle: "Paminklų gamyba ir kapų priežiūra Lietuvoje",
+        description: "MB „Akmenukas“ – daugiau nei 20 metų patirties turinti įmonė, kurianti individualius sprendimus paminklų gamyboje, kapaviečių įrengime bei natūralaus akmens gaminių srityje. Svetainėje pristatomos teikiamos paslaugos, skaldos prekyba, akmens gaminiai interjerui ir eksterjerui. Projektas sukurtas naudojant WordPress ir Divi, su švariu, vizualiai patraukliu dizainu, optimizuotu SEO ir socialiniam dalinimuisi.",
+        image: Images.projects.akmenukas,
+        alt: "MB Akmenukas – paminklų gamyba, kapų tvarkymas ir akmens gaminiai, WordPress svetainė su Divi dizainu",
+        tags: ["WordPress", "Divi", "SEO", "Unikalus dizainas"],
+        link: "https://akmenukas.lt",
+    },
+    {
         id: "paparciopm",
         title: "Kauno „Paparčio“ mokykla",
         subtitle: "Pradinio ugdymo įstaiga",

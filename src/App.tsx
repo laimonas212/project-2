@@ -54,6 +54,7 @@ import InternetoSvetainiuKurimas2025 from './pages/blog/InternetoSvetainiuKurima
 import PigiosSvetaines from './pages/blog/PigiosSvetaines';
 import Divi5Straipsnis from './pages/blog/Divi5';
 import Svetaine24hStraipsnis from './pages/blog/Svetaine24hStraipsnis';
+import Akmenukas from './pages/projektai/akmenukas';
 
 function App() {
   useEffect(() => {
@@ -82,28 +83,64 @@ function App() {
               <Route path="/kainos" element={<Kainos />} />
               <Route path="/kontaktai" element={<Kontaktai />} />
               <Route path="/svetaine-per-24h" element={<SvetainePer24h />} />
-              <Route path="/privatumo-politika" element={<PrivatumoPolitika />} />
+              <Route
+                path="/privatumo-politika"
+                element={<PrivatumoPolitika />}
+              />
               <Route path="/salygos" element={<Salygos />} />
               <Route path="/slapukai" element={<Slapukai />} />
-              <Route path="/blog/woocommerce-uzsakymu-valdymas" element={<WoocommerceUzsakymuValdymas />} />
-              <Route path="/blog/naujas-woocommerce-produktas" element={<NaujasWoocommerceProduktas />} />
-              <Route path="/blog/kaip-naudotis-divi" element={<KaipNaudotisDivi />} />
+              <Route
+                path="/blog/woocommerce-uzsakymu-valdymas"
+                element={<WoocommerceUzsakymuValdymas />}
+              />
+              <Route
+                path="/blog/naujas-woocommerce-produktas"
+                element={<NaujasWoocommerceProduktas />}
+              />
+              <Route
+                path="/blog/kaip-naudotis-divi"
+                element={<KaipNaudotisDivi />}
+              />
               <Route path="/blog/kas-yra-divi" element={<KasYraDivi />} />
-              <Route path="/blog/5-klaidos-kurias-daro-verslai" element={<KlaidosKuriasDaroVerslai />} />
-              <Route path="/blog/wordpress-svetaines-kaina-2025" element={<WordPressKaina2025 />} />
-              <Route path="/blog/interneto-svetainiu-kurimas-2025" element={<InternetoSvetainiuKurimas2025 />} />
-              <Route path="/blog/pigios-svetaines" element={<PigiosSvetaines />} />
-              <Route path="//blog/kas-yra-divi-5" element={<Divi5Straipsnis />} />
-              <Route path='/blog/svetaine-per-24h' element={<Svetaine24hStraipsnis />} />
+              <Route
+                path="/blog/5-klaidos-kurias-daro-verslai"
+                element={<KlaidosKuriasDaroVerslai />}
+              />
+              <Route
+                path="/blog/wordpress-svetaines-kaina-2025"
+                element={<WordPressKaina2025 />}
+              />
+              <Route
+                path="/blog/interneto-svetainiu-kurimas-2025"
+                element={<InternetoSvetainiuKurimas2025 />}
+              />
+              <Route
+                path="/blog/pigios-svetaines"
+                element={<PigiosSvetaines />}
+              />
+              <Route
+                path="//blog/kas-yra-divi-5"
+                element={<Divi5Straipsnis />}
+              />
+              <Route
+                path="/blog/svetaine-per-24h"
+                element={<Svetaine24hStraipsnis />}
+              />
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/projektai/lzspa" element={<LzspaPage />} />
-              <Route path="/projektai/holistine-kosmetologija" element={<HolistineKosmetologija />} />
+              <Route
+                path="/projektai/holistine-kosmetologija"
+                element={<HolistineKosmetologija />}
+              />
               <Route path="/projektai/veselovaite" element={<Veselovaite />} />
               <Route path="/projektai/topstone" element={<Topstone />} />
               <Route path="/projektai/brangus-auto" element={<Brangusauto />} />
               <Route path="/projektai/kaliause" element={<Kaliause />} />
               <Route path="/projektai/esu-tau" element={<Esutau />} />
-              <Route path="/projektai/angel-butikas" element={<Angelbutikas />} />
+              <Route
+                path="/projektai/angel-butikas"
+                element={<Angelbutikas />}
+              />
               <Route path="/projektai/godeko" element={<Godeko />} />
               <Route path="/projektai/eriola" element={<Eriola />} />
               <Route path="/projektai/gavorka-art" element={<Gavorkaart />} />
@@ -111,17 +148,36 @@ function App() {
               <Route path="/projektai/grozio-forma" element={<Grozioforma />} />
               <Route path="/projektai/ovc" element={<Ovc />} />
               <Route path="/projektai/printery" element={<Printery />} />
-              <Route path="/projektai/prisipusk-sypsena" element={<Prisipusksypsena />} />
-              <Route path="/projektai/provanso-svajos" element={<Provansosvajos />} />
-              <Route path="/projektai/puppy-yoga-meta" element={<PuppyYogaMeta />} />
-              <Route path="/projektai/smaragdo-uostas" element={<Smaragdouostas />} />
-              <Route path="/projektai/sssprendimai" element={<Sssprendimai />} />
+              <Route
+                path="/projektai/prisipusk-sypsena"
+                element={<Prisipusksypsena />}
+              />
+              <Route
+                path="/projektai/provanso-svajos"
+                element={<Provansosvajos />}
+              />
+              <Route
+                path="/projektai/puppy-yoga-meta"
+                element={<PuppyYogaMeta />}
+              />
+              <Route
+                path="/projektai/smaragdo-uostas"
+                element={<Smaragdouostas />}
+              />
+              <Route
+                path="/projektai/sssprendimai"
+                element={<Sssprendimai />}
+              />
               <Route path="/projektai/termoventa" element={<Termoventa />} />
-              <Route path="/projektai/tradicine-virtuve" element={<Tradicinevirtuve />} />
+              <Route
+                path="/projektai/tradicine-virtuve"
+                element={<Tradicinevirtuve />}
+              />
               <Route path="/projektai/u-smiler" element={<Usmiler />} />
               <Route path="/projektai/paparciopm" element={<Paparciopm />} />
               <Route path="/projektai/archi-grupe" element={<ArchiGrupe />} />
               <Route path="/projektai/lithuan" element={<Lithuan />} />
+              <Route path="/projektai/akmenukas" element={<Akmenukas />} />
             </Routes>
             <ScrollToTopButton />
           </motion.div>
