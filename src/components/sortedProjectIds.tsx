@@ -1,8 +1,11 @@
 const sortedIds = [
+    'akmenukas',
     'lzspa',
     'paparciopm',
     'veselovaite',
     'holistine-kosmetologija',
+    'dentes-vitae',
+    'lithuan',
     'puppy-yoga-meta',
     'smaragdo-uostas',
     'tradicine-virtuve',
@@ -22,7 +25,6 @@ const sortedIds = [
     'eriola',
     'termoventa',
     'sssprendimai',
-    'lithuan',
     'esu-tau',
     'u-smiler',
 ];

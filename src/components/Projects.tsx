@@ -282,6 +282,16 @@ const projects = [
         tags: ['Wordpress', 'E-parduotuvė', 'Divi'],
         link: 'https://www.puppyyogameta.lt',
     },
+    {
+        id: 'dentes-vitae',
+        title: 'Dentes Vitae',
+        subtitle: 'Odontologijos klinika',
+        description: 'Dentes Vitae – tai odontologijos klinika, teikianti profesionalias dantų priežiūros paslaugas. Svetainė sukurta naudojant WordPress ir Divi, siekiant suteikti lankytojams išsamią informaciją apie teikiamas paslaugas, gydytojus ir klinikos veiklą. Dizainas švarus ir modernus, su lengva navigacija, leidžiančia greitai rasti reikiamą informaciją. Integruota kontaktinė forma ir galimybė užsiregistruoti vizitui padeda užtikrinti sklandų klientų aptarnavimą.',
+        image: Images.projects.dentesVitae,
+        alt: "Dentes Vitae – odontologijos klinika sukurta su WordPress ir Divi, modernus dizainas",
+        tags: ['Wordpress', 'Divi'],
+        link: 'https://www.dentesvitae.lt',
+    },
 ];
 
 export default projects;

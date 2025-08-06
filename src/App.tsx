@@ -55,6 +55,7 @@ import PigiosSvetaines from './pages/blog/PigiosSvetaines';
 import Divi5Straipsnis from './pages/blog/Divi5';
 import Svetaine24hStraipsnis from './pages/blog/Svetaine24hStraipsnis';
 import Akmenukas from './pages/projektai/akmenukas';
+import DentesVitae from './pages/projektai/dentes-vitae';
 
 function App() {
   useEffect(() => {
@@ -178,6 +179,7 @@ function App() {
               <Route path="/projektai/archi-grupe" element={<ArchiGrupe />} />
               <Route path="/projektai/lithuan" element={<Lithuan />} />
               <Route path="/projektai/akmenukas" element={<Akmenukas />} />
+              <Route path="/projektai/dentes-vitae" element={<DentesVitae />} />
             </Routes>
             <ScrollToTopButton />
           </motion.div>
