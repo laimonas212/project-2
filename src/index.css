@@ -289,3 +289,7 @@ footer {
 [data-cky-tag="detail-powered-by"] {
   display: none !important;
 }
+
+.leaflet-control-container .leaflet-control-attribution {
+  display: none !important;
+}
