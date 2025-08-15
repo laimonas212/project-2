@@ -1,66 +1,83 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Check, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
-import Features from '../components/Features';
-import CTA from '../components/CTA';
+import React from "react";
+import { motion } from "framer-motion";
+import { Check, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import Features from "../components/Features";
+import CTA from "../components/CTA";
 
 const Kainos = () => {
   const plans = [
     {
-      name: 'Reprezentacinė svetainė',
-      description: 'Idealiai tinka mažoms įmonėms ar asmeniniams projektams',
-      price: '€499',
+      name: "Reprezentacinė svetainė",
+      description: "Idealiai tinka mažoms įmonėms ar asmeniniams projektams",
+      price: "€499",
       features: [
-        'Turinio valdymo sistema',
-        'Pasirinktas paruoštas dizainas',
-        '1-5 puslapiai',
-        'Kontaktinės formos',
-        'Individualios spalvos',
-        'Informacijos patalpinimas',
-        'Mobiliesiems pritaikytas dizainas',
-        'Bazinis SEO',
+        "Turinio valdymo sistema (WordPress)",
+        "Pasirinktas paruoštas dizainas",
+        "1-5 puslapiai",
+        "Kontaktinės formos",
+        "Individualios spalvos",
+        "Informacijos patalpinimas",
+        "Mobiliesiems pritaikytas dizainas",
+        "Bazinis SEO",
+        "Google Analytics ir Search Console pajungimas",
+      ],
+      extras: [
+        "Hostingas + SSL su 50% nuolaida pirmais metais",
+        "Metinė priežiūra: serverio palaikymas, SSL atnaujinimai, baziniai saugumo patikrinimai (nemokamai 1 metams)",
+        "1 mėn. nemokama techninė pagalba po paleidimo",
       ],
     },
     {
-      name: 'Elektroninė Parduotuvė',
-      description: 'Puikiai tinka vidutinio dydžio įmonėms, norinčioms sustiprinti savo internetinę veiklą',
-      price: '€799',
+      name: "Elektroninė Parduotuvė",
+      description:
+        "Puikiai tinka įmonėms, norinčioms pradėti arba išplėsti savo internetinę prekybą",
+      price: "€799",
       features: [
-        'Turinio valdymo sistema',
-        'Pasirinktas paruoštas dizainas',
-        '1-10 puslapiai',
-        'Kontaktinės formos',
-        'Individualios spalvos',
-        'Informacijos patalpinimas',
-        'Mobiliesiems pritaikytas dizainas',
-        'Bazinis SEO',
-        'El. prekyba',
-        '10 prekių įkėlimas nemokamai',
-        'Atsiskaitymų pajungimas',
-        'Paštomatų/Kurjerių pajungimas',
+        "Turinio valdymo sistema (WordPress + WooCommerce)",
+        "Pasirinktas paruoštas dizainas",
+        "1-10 puslapių",
+        "Kontaktinės formos",
+        "Individualios spalvos",
+        "Informacijos patalpinimas",
+        "Mobiliesiems pritaikytas dizainas",
+        "Bazinis SEO",
+        "Google Analytics ir Search Console pajungimas",
+        "El. prekybos pajungimas",
+        "10 prekių įkėlimas nemokamai",
+        "Atsiskaitymų pajungimas",
+        "Paštomatų/Kurjerių integracija",
+      ],
+      extras: [
+        "Nemokamas hostingas + SSL 1 metams",
+        "Metinė priežiūra: serverio palaikymas, SSL atnaujinimai, saugumo patikrinimai, atsarginės kopijos, smulkūs turinio pakeitimai (nemokamai 1 metams)",
+        "3 mėn. nemokama techninė pagalba po paleidimo",
       ],
       highlighted: true,
     },
     {
-      name: 'Svetainė per 24h',
-      description: 'Greitas startas – informacinė svetainė paruošta per 24 valandas.',
-      price: '€299',
+      name: "Svetainė per 24h",
+      description:
+        "Greitas startas – informacinė svetainė paruošta per 24 valandas.",
+      price: "€299",
       features: [
-        'Turinio valdymo sistema',
-        'Pasirinktas paruoštas dizainas',
-        '1-2 puslapiai (pvz. landing, kontaktai)',
-        'Kontaktinė forma',
-        'Informacijos patalpinimas',
-        'Mobiliesiems pritaikytas dizainas',
+        "Turinio valdymo sistema (WordPress)",
+        "Pasirinktas paruoštas dizainas",
+        "1-2 puslapiai (pvz. landing, kontaktai)",
+        "Kontaktinė forma",
+        "Informacijos patalpinimas",
+        "Mobiliesiems pritaikytas dizainas",
+      ],
+      extras: [
+        "Hostingas + SSL su 30% nuolaida pirmais metais",
+        "Metinė priežiūra: serverio palaikymas ir SSL atnaujinimai (nemokamai 1 metams)",
       ],
     },
   ];
 
   return (
     <div className="pt-4 md:pt-36 min-h-screen">
-      {/* Helmet component for page title and meta */}
       <Helmet>
         <title>Mūsų Kainos - Pasirinkite Planą | Amberweb</title>
         <meta
@@ -69,6 +86,7 @@ const Kainos = () => {
         />
         <link rel="canonical" href="https://amberweb.lt/kainos" />
       </Helmet>
+
       <div className="mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -92,15 +110,16 @@ const Kainos = () => {
           </p>
         </motion.div>
 
+        {/* Kortelės */}
         <div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <div
               className={`p-[1px] h-min rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 ${
                 plan.highlighted ? "animate-gradient-x" : ""
               }`}
+              key={plan.name}
             >
               <motion.div
-                key={plan.name}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -121,6 +140,15 @@ const Kainos = () => {
                       <li key={feature} className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-electric-blue shrink-0 mt-0.5" />
                         <span className="text-white/70">{feature}</span>
+                      </li>
+                    ))}
+                    <p className="text-sm text-electric-blue font-semibold mt-4">
+                      Talpinant svetainę pas mus:
+                    </p>
+                    {plan.extras.map((feature) => (
+                      <li key={feature} className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-electric-blue shrink-0 mt-0.5" />
+                        <p className="text-white/70">{feature}</p>
                       </li>
                     ))}
                   </ul>
