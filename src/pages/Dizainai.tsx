@@ -1,22 +1,30 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight, User, ShoppingBag, Layers, Info, Plus, Images as Gallery, MousePointerClick } from 'lucide-react';
-import Images from '../img/Images';
-import { Helmet } from 'react-helmet-async';
-import { createPortal } from 'react-dom';
-import templates from '../components/Templates';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import {
+  X,
+  ChevronLeft,
+  ChevronRight,
+  User,
+  ShoppingBag,
+  Layers,
+  MousePointerClick,
+} from "lucide-react";
+import ReactDOM from "react-dom";
+import templates from "../components/Templates"; // tavo template objektas
+import { Link } from "react-router-dom";
 
 interface Template {
   id: number;
   title: string;
-  type: 'asmeninės svetainės' | 'el. parduotuvės';
-  images: string[]; // Multiple images
+  type: "asmeninės svetainės" | "el. parduotuvės";
+  images: string[];
   description: string;
+  url?: string; // Live demo URL
 }
 
 interface MobilePreviewProps {
   template: Template;
-  onClick: (imageIndex: number) => void;
+  onClick: (mode: "image" | "live") => void;
 }
 
 const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
@@ -26,16 +34,17 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
       whileInView={{ opacity: 1, y: 0 }}
       className="group"
     >
+      {/* Nuotraukos preview */}
       <div
-        className="relative mx-auto aspect-[1/2] w-[280px] max-w-full rounded-[3rem] border-[7px] border-dark-surface-2 overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
-
-        onClick={() => onClick(0)} // Show the first image on click
+        className="relative mx-auto aspect-[1/2] sm:aspect-[3/4] md:aspect-[1/2] w-[280px] sm:w-[300px] md:w-[280px] max-w-full rounded-[3rem] border-[7px] border-dark-surface-2 overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+        onClick={() => onClick("image")}
       >
         <img
-          src={template.images[0]} // Show the first image as the main image
+          src={template.images[0]}
           alt={template.title}
           className="w-full h-[200%] object-cover"
         />
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-white/60 text-black/80 backdrop-blur-sm z-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 space-y-2 text-center">
           <span className="text-sm">Peržiūrėti</span>
@@ -43,17 +52,29 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
           <MousePointerClick className="w-6 h-6 animate-carousel-ping" />
         </div>
       </div>
-      
+
       <div className="mt-4 text-center">
+        {/* Live Demo mygtukas ant fotkės, centre apačioje */}
+        {template.url && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation(); // kad nepaleistų carousel click
+              onClick("live");
+            }}
+            className=" bottom-4  px-3 py-1 button-primary text-white text-sm sm:text-base"
+          >
+            Demo
+            <MousePointerClick className="inline-block h-4 ml-1 animate-carousel-ping" />
+          </button>
+        )}
         <h3 className="text-xl font-bold mb-1 flex items-center justify-center gap-2">
           {template.title}
-          {template.type === 'asmeninės svetainės' ? (
+          {template.type === "asmeninės svetainės" ? (
             <User className="inline-block h-5" />
           ) : (
-              <ShoppingBag className="inline-block h-5" />
+            <ShoppingBag className="inline-block h-5" />
           )}
         </h3>
-
         <p className="text-white/70 text-sm">{template.description}</p>
       </div>
     </motion.div>
@@ -62,44 +83,44 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
 
 interface LightboxProps {
   template: Template | null;
+  mode: "image" | "live";
   onClose: () => void;
+  setMode: (mode: "image" | "live") => void;
 }
 
-import ReactDOM from 'react-dom';
-import FadeOutSection from '../components/FadeOutSection';
-
-const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
+const Lightbox: React.FC<LightboxProps> = ({
+  template,
+  onClose,
+  mode,
+  setMode,
+}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNextImage = () => {
-    if (template) {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % template.images.length);
-    }
+    if (template)
+      setCurrentImageIndex((prev) => (prev + 1) % template.images.length);
   };
 
   const handlePrevImage = () => {
-    if (template) {
+    if (template)
       setCurrentImageIndex(
-        (prevIndex) => (prevIndex - 1 + template.images.length) % template.images.length
+        (prev) => (prev - 1 + template.images.length) % template.images.length
       );
-    }
   };
 
   useEffect(() => {
-    const handleKeydown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') handlePrevImage();
-      else if (event.key === 'ArrowRight') handleNextImage();
-      else if (event.key === 'Escape') onClose();
+    const handleKeydown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") handlePrevImage();
+      else if (e.key === "ArrowRight") handleNextImage();
+      else if (e.key === "Escape") onClose();
     };
-
-    window.addEventListener('keydown', handleKeydown);
-    document.body.style.overflow = 'hidden';
-
+    window.addEventListener("keydown", handleKeydown);
+    document.body.style.overflow = "hidden";
     return () => {
-      window.removeEventListener('keydown', handleKeydown);
-      document.body.style.overflow = '';
+      window.removeEventListener("keydown", handleKeydown);
+      document.body.style.overflow = "";
     };
-  }, [template, currentImageIndex]);
+  }, [template]);
 
   if (!template) return null;
 
@@ -113,38 +134,56 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
     >
       <button
         onClick={onClose}
-        className="absolute top-6 right-6 z-[10000] button-primary rounded-full p-3"
+        className="absolute top-6 right-6 z-[10000] p-3 bg-dark rounded-full"
       >
         <X className="w-6 h-6" />
       </button>
 
       <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.9, opacity: 0 }}
         className="relative max-w-6xl w-full rounded-lg overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between items-center absolute top-1/2 w-full transform -translate-y-1/2 px-4 z-10">
-          <button
-            onClick={handlePrevImage}
-            className="bg-dark-surface/60 p-2 text-white rounded-full hover:bg-dark-surface/80"
-          >
-            <ChevronLeft className="w-8 h-8" />
-          </button>
-          <button
-            onClick={handleNextImage}
-            className="bg-dark-surface/60 p-2 text-white rounded-full hover:bg-dark-surface/80"
-          >
-            <ChevronRight className="w-8 h-8" />
-          </button>
-        </div>
+        {mode === "live" && template.url ? (
+          <div className="relative w-full h-[80vh]">
+            <iframe
+              src={template.url}
+              className="w-full h-full"
+              style={{ border: "none" }}
+            />
+            <div className="absolute bottom-0 left-0 w-full h-[60px] bg-background">
 
-        <img
-          src={template.images[currentImageIndex]}
-          alt={template.title}
-          className="w-full h-auto max-h-[80vh] object-contain"
-        />
+              <div className="flex items-center justify-center h-full text-white/70 text-sm">
+                <Link to={"/kontaktai"} className="ml-2 text-electric-blue hover:underline" >
+                  Nemokama konsultacija
+                  <MousePointerClick className="inline-block h-4 ml-1 animate-carousel-ping" />
+                </Link>
+
+                </div>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="flex justify-between items-center absolute top-1/2 w-full transform -translate-y-1/2 px-4 z-10">
+              <button
+                onClick={handlePrevImage}
+                className="bg-dark-surface/60 p-2 text-white rounded-full hover:bg-dark-surface/80"
+              >
+                <ChevronLeft className="w-8 h-8" />
+              </button>
+              <button
+                onClick={handleNextImage}
+                className="bg-dark-surface/60 p-2 text-white rounded-full hover:bg-dark-surface/80"
+              >
+                <ChevronRight className="w-8 h-8" />
+              </button>
+            </div>
+            <img
+              src={template.images[currentImageIndex]}
+              alt={template.title}
+              className="w-full h-auto max-h-[80vh] object-contain"
+            />
+          </>
+        )}
       </motion.div>
     </motion.div>
   );
@@ -152,121 +191,71 @@ const Lightbox: React.FC<LightboxProps> = ({ template, onClose }) => {
   return ReactDOM.createPortal(modalContent, document.body);
 };
 
-const Templates: React.FC = () => {
-  const [selectedType, setSelectedType] = useState<'rodyti viską' | 'asmeninės svetainės' | 'el. parduotuvės'>('rodyti viską');
-  const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(null);
+const TemplatesPage: React.FC = () => {
+  const [selectedType, setSelectedType] = useState<
+    "rodyti viską" | "asmeninės svetainės" | "el. parduotuvės"
+  >("rodyti viską");
+  const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(
+    null
+  );
+  const [mode, setMode] = useState<"image" | "live">("image");
 
   const filteredTemplates = templates.filter(
-    (template) => selectedType === 'rodyti viską' || template.type === selectedType
+    (t) => selectedType === "rodyti viską" || t.type === selectedType
   );
-
-  const containerVariants = {
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1, // Controls delay between items
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
-  };
 
   return (
     <div className="pt-4 md:pt-36 min-h-screen">
-      {/* Helmet for SEO */}
-      <Helmet>
-        <title>Paruošti dizainai | Amberweb</title>
-        <meta name="description" content="Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!" />
-        <meta property="og:title" content="Paruošti dizainai" />
-        <meta property="og:description" content="Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!" />
-        < link rel="canonical" href="https://amberweb.lt/paruosti-dizainai" />
-      </Helmet>
-      {/* Static Background */}
-      <div className="fixed inset-0 pointer-events-none">
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-dark-surface/50 to-background/80" /> */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.1)_0%,transparent_70%)]" />
-        <div className="absolute inset-0" style={{
-          background: 'radial-gradient(circle at 50% 50%, rgba(157,0,255,0.1) 0%, transparent 60%)'
-        }} />
-      </div>
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Paruošti dizainai</h1>
-          <p className="text-lg mb-2 text-white/70">
-            Pasirinkite iš mūsų paruoštų maketų ir pradėkite kurti savo svetainę!
-          </p>
-          <p className="text-xs mb-16 text-white/70">
-            <span>
-              <Info className="w-6 h-6 inline-block mr-2" />
-            </span>
-            Mūsų paruošti dizainai tinka bet kokiam verslui - svarbiausia pasirinkti tinkamą išdėstymą, nes paveikslėlius, spalvas ir tekstus galima lengvai pritaikyti. <br />Galite rinktis pagal tematiką, tačiau jei išdėstymas jums patinka, jį galima pritaikyti bet kokiai sričiai.
-          </p>
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Paruošti dizainai
+          </h1>
           <div className="flex justify-center gap-4">
             {[
-              { type: 'rodyti viską', icon: <Layers /> },
-              { type: 'asmeninės svetainės', icon: <User /> },
-              { type: 'el. parduotuvės', icon: <ShoppingBag /> },
+              { type: "rodyti viską", icon: <Layers /> },
+              { type: "asmeninės svetainės", icon: <User /> },
+              { type: "el. parduotuvės", icon: <ShoppingBag /> },
             ].map(({ type, icon }) => (
               <button
                 key={type}
                 onClick={() => setSelectedType(type as typeof selectedType)}
-                className={`px-6 py-2 rounded-full transition-colors text-xs ${selectedType === type
-                  ? 'button-primary'
-                  : 'bg-dark-surface-2 text-white/70 hover:text-white'
-                  } flex items-center gap-2`}
+                className={`px-6 py-2 rounded-full transition-colors text-xs ${
+                  selectedType === type
+                    ? "button-primary"
+                    : "bg-dark-surface-2 text-white/70 hover:text-white"
+                } flex items-center gap-2`}
               >
                 {icon}
               </button>
             ))}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          key={selectedType}
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32">
           {filteredTemplates.map((template) => (
-            <FadeOutSection>
-
-              <motion.div key={template.id} variants={itemVariants}>
-                <MobilePreview
-                  template={template as Template}
-                  onClick={() => setSelectedTemplate(template as Template)}
-                />
-              </motion.div>
-            </FadeOutSection>
+            <MobilePreview
+              key={template.id}
+              template={template as Template}
+              onClick={(clickMode) => {
+                setSelectedTemplate(template as Template);
+                setMode(clickMode); // image arba live
+              }}
+            />
           ))}
-          
-          <FadeOutSection>
-            <motion.div
-              variants={itemVariants}
-              className="flex justify-center items-center gap-4 h-full flex-col"
-            >
-              <Plus className="w-20 h-20 text-electric-blue" />
-              <h2 className="text-white/70 text-lg text-center">
-                Galime pasiūlyti daugiau nei 2000 variacijų
-              </h2>
-            </motion.div>
-          </FadeOutSection>
-        </motion.div>
+        </div>
       </div>
 
-      {/* Lightbox for Template Preview */}
       {selectedTemplate && (
-        <Lightbox template={selectedTemplate} onClose={() => setSelectedTemplate(null)} />
+        <Lightbox
+          template={selectedTemplate}
+          onClose={() => setSelectedTemplate(null)}
+          mode={mode}
+          setMode={setMode}
+        />
       )}
     </div>
   );
 };
 
-export default Templates;
+export default TemplatesPage;
