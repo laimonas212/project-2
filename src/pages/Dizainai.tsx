@@ -63,7 +63,7 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
             }}
             className=" bottom-4  px-3 py-1 button-primary text-white text-sm sm:text-base"
           >
-            Demo
+            Peržiūra gyvai
             <MousePointerClick className="inline-block h-4 ml-1 animate-carousel-ping" />
           </button>
         )}
