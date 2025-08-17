@@ -5,7 +5,7 @@ const templates = [
     id: 1,
     title: "Acai bowl",
     type: "asmeninės svetainės",
-    url: "https://www.elegantthemes.com/layouts/food-drink/acai-bowl-contact-page/live-demo",
+    url: "https://www.elegantthemes.com/layouts/food-drink/acai-bowl-landing-page/live-demo",
     images: [
       Images.templates.acaiBowl.landing,
       Images.templates.acaiBowl.about,
