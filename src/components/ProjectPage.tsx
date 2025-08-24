@@ -4,7 +4,7 @@ import { Project } from "../components/Projects";
 import projects from "./Projects";
 import sortedIds from "./sortedProjectIds";
 import { motion } from "framer-motion";
-import { Layout, Settings, TrendingUp } from "lucide-react";
+import { Goal, Layout, Settings, Target, TrendingUp } from "lucide-react";
 
 type Props = {
   project: Project;
@@ -92,7 +92,7 @@ export default function ProjectPage({ project }: Props) {
               className="card group p-6 bg-dark-surface/60 rounded-xl border border-white/10 hover:border-electric-blue/30 transition-all duration-300"
             >
               <div className="text-electric-blue mb-4 group-hover:-translate-x-1 group-hover:scale-110 transition-transform duration-300">
-                <Layout className="w-6 h-6" />
+                <Target className="w-6 h-6" />
               </div>
               <h2 className="text-xl font-bold text-white/80 mb-4">
                 Projekto tikslai
@@ -113,7 +113,7 @@ export default function ProjectPage({ project }: Props) {
               className="card group p-6 bg-dark-surface/60 rounded-xl border border-white/10 hover:border-electric-blue/30 transition-all duration-300"
             >
               <div className="text-electric-blue mb-4 group-hover:-translate-x-1 group-hover:scale-110 transition-transform duration-300">
-                <Settings className="w-6 h-6" />
+                <Goal className="w-6 h-6" />
               </div>
               <h2 className="text-xl font-bold text-white/80 mb-4">
                 Įgyvendinti sprendimai
