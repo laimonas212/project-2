@@ -12,6 +12,7 @@ import {
 import ReactDOM from "react-dom";
 import templates from "../components/Templates"; // tavo template objektas
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async"; // Importuojame Helmet
 
 interface Template {
   id: number;
@@ -151,14 +152,15 @@ const Lightbox: React.FC<LightboxProps> = ({
               style={{ border: "none" }}
             />
             <div className="absolute bottom-0 left-0 w-full h-[60px] bg-background">
-
               <div className="flex items-center justify-center h-full text-white/70 text-sm">
-                <Link to={"/kontaktai"} className="ml-2 text-electric-blue hover:underline" >
+                <Link
+                  to={"/kontaktai"}
+                  className="ml-2 text-electric-blue hover:underline"
+                >
                   Nemokama konsultacija
                   <MousePointerClick className="inline-block h-4 ml-1 animate-carousel-ping" />
                 </Link>
-
-                </div>
+              </div>
             </div>
           </div>
         ) : (
@@ -206,6 +208,15 @@ const TemplatesPage: React.FC = () => {
 
   return (
     <div className="pt-4 md:pt-36 min-h-screen">
+      <Helmet>
+        <title>Paruošti dizainai - Svetainių šablonai | Amberweb</title>
+        <meta
+          name="description"
+          content="Peržiūrėkite mūsų paruoštus dizainus asmeninėms svetainėms ir el. parduotuvėms. Greitas startas jūsų verslui."
+        />
+        <link rel="canonical" href="https://amberweb.lt/paruosti-dizainai" />
+      </Helmet>
+
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
       </div>
