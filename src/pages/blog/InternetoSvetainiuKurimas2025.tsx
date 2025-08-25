@@ -5,6 +5,8 @@ import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
 
+const entry = blogEntries.find((e) => e.id === "interneto-svetainiu-kurimas-2025");
+
 const InternetoSvetainiuKurimas2025 = () => {
     return (
       <div className="pt-36 min-h-screen">
@@ -17,10 +19,7 @@ const InternetoSvetainiuKurimas2025 = () => {
             name="description"
             content="Ieškote profesionalaus interneto svetainių kūrimo? Sužinokite svarbiausius žingsnius, kainos veiksnius ir kaip pasirinkti tinkamą partnerį savo sėkmingam interneto projektui 2025 metais."
           />
-          <link
-            rel="canonical"
-            href="https://amberweb.lt/interneto-svetainiu-kurimas-2025"
-          />
+          <link rel="canonical" href={`https://amberweb.lt${entry?.url}`} />
           <script type="application/ld+json">
             {`
                         {

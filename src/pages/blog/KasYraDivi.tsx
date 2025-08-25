@@ -5,6 +5,8 @@ import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
 
+const entry = blogEntries.find(e => e.url === '/blog/kas-yra-divi');
+
 const KasYraDivi = () => {
     return (
       <div className="pt-36 min-h-screen">
@@ -16,7 +18,7 @@ const KasYraDivi = () => {
             name="description"
             content="Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms? Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių, sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams."
           />
-          <link rel="canonical" href="https://amberweb.lt/kas-yra-divi" />
+          <link rel="canonical" href={`https://amberweb.lt${entry?.url}`} />
         </Helmet>
         <div className="container max-w-screen-lg text-white/80 mx-auto px-4">
           <div className="w-full pb-8">

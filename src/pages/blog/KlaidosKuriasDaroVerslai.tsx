@@ -5,6 +5,8 @@ import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
 
+const entry = blogEntries.find((e) => e.url === "/blog/5-klaidos-kurias-daro-verslai");
+
 const KlaidosKuriasDaroVerslai = () => {
     return (
       <div className="pt-36 min-h-screen">
@@ -16,10 +18,7 @@ const KlaidosKuriasDaroVerslai = () => {
             name="description"
             content="Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams. Štai penkios esminės klaidos, kurių reikėtų vengti."
           />
-          <link
-            rel="canonical"
-            href="https://amberweb.lt/5-klaidos-kurias-daro-verslai"
-          />
+          <link rel="canonical" href={`https://amberweb.lt${entry?.url}`} />
         </Helmet>
         <div className="container max-w-screen-lg text-white/80 mx-auto px-4">
           <div className="w-full pb-8">

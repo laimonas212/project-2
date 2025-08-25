@@ -2,6 +2,7 @@ import Images from "../img/Images";
 
 const blogEntries = [
   {
+    id: "svetaine-per-24h",
     image: Images.blog.websiteIn24h,
     title: "Interneto svetainė per 24 val. – ar tai įmanoma?",
     excerpt: `
@@ -37,6 +38,7 @@ Svetainė per 24 val. – skamba greitai, nes ir yra greitai.
     url: "/blog/svetaine-per-24h",
   },
   {
+    id: "pigios-svetaines",
     image: Images.blog.pigiosSvetaines,
     title:
       "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
@@ -68,6 +70,7 @@ Išvada: Taupant kuriant svetainę dažnai tenka mokėti du kartus. Geriau iš k
     url: "/blog/pigios-svetaines",
   },
   {
+    id: "interneto-svetainiu-kurimas-2025",
     image: Images.blog.svetainiuKurimas2025,
     title:
       "Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą?",
@@ -119,6 +122,7 @@ Turite idėją savo naujai interneto svetainei? Susisiekite su mumis šiandien i
     url: "/blog/interneto-svetainiu-kurimas-2025",
   },
   {
+    id: "wordpress-svetaines-kaina-2025",
     image: Images.blog.wordpressKaina2025,
     title: "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
     excerpt: `Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai svetainių kūrimo kainos prasideda nuo 300–500€ ir gali siekti net 3000€ ar daugiau. Pažiūrėkime, kas lemia tą kainą ir ką gaunate už tam tikrą sumą.
@@ -157,6 +161,7 @@ Turite idėją? Susisiekite ir pakonsultuosime be jokio įsipareigojimo.`,
     url: "/blog/wordpress-svetaines-kaina-2025",
   },
   {
+    id: "woocommerce-uzsakymu-valdymas",
     image: Images.blog.woocommerceUzsakymuValdymas,
     title: "WooCommerce užsakymų valdymas",
     excerpt: `Kai klientas pateikia užsakymą jūsų parduotuvėje, užsakymo informacija bus rodoma WooCommerce užsakymų skiltyje. Šiame vadove aptarsime, kaip peržiūrėti, redaguoti ir valdyti užsakymus.
@@ -215,6 +220,7 @@ Eikite į WooCommerce > Ataskaitos.
     url: "/blog/woocommerce-uzsakymu-valdymas",
   },
   {
+    id: "naujas-woocommerce-produktas",
     image: Images.blog.newProductWoo,
     title: "Kaip sukurti naują WooCommerce produktą?",
     excerpt: `Jei norite pridėti naują produktą į savo WooCommerce parduotuvę, sekite šiuos paprastus žingsnius. Šiame vadove paaiškinsime, kaip sukurti fizinius ir skaitmeninius produktus.
@@ -258,6 +264,7 @@ Kai visos informacijos laukeliai užpildyti, spustelėkite „Paskelbti“ ir pr
     url: "/blog/naujas-woocommerce-produktas",
   },
   {
+    id: "kaip-naudotis-divi",
     image: Images.blog.kaipNaudotisDivi,
     title: "Kaip naudotis DIVI?",
     excerpt: `Kas yra Divi?
@@ -312,6 +319,7 @@ Jei puslapis dar nepublikuotas, paspauskite „Publish“ (Publikuoti).
     url: "/blog/kaip-naudotis-divi",
   },
   {
+    id: "kas-yra-divi-5",
     image: Images.blog.divi5,
     title: "Kas yra Divi 5?",
     excerpt: `Nuo 2025 m. viena populiariausių WordPress temų – Divi – išleido reikšmingą atnaujinimą: Divi 5. Tai nėra tik kosmetinis pakeitimas – tai visas sistemos perrašymas. Tačiau svarbiausia – ką tai reiškia verslui ir svetainių kūrimo paslaugų ieškantiems klientams?
@@ -345,6 +353,7 @@ Naudoju naujausius sprendimus, kad jūsų svetainė būtų konkurencinga 2025-ai
     url: "/blog/kas-yra-divi-5",
   },
   {
+    id: "kas-yra-divi",
     image: Images.blog.KasYraDivi,
     title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
     excerpt: `Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių (angl. page builder), sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams.
@@ -381,6 +390,7 @@ Išvada: Divi yra vienas iš geriausių pasirinkimų norint sukurti vizualiai pa
     url: "/blog/kas-yra-divi",
   },
   {
+    id: "5-klaidos-kurias-daro-verslai",
     image: Images.blog.penkiosKlaidos,
     title: "5 klaidos, kurias daro verslai kurdami svetainę",
     excerpt: `Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams. Štai penkios esminės klaidos, kurių reikėtų vengti.
@@ -401,6 +411,96 @@ Net ir gražiausia svetainė nebus naudinga, jei jos niekas neranda. Dažna klai
 
 Išvada: Sėkminga verslo svetainė turi būti greita, aiški, pritaikyta mobiliesiems ir optimizuota paieškos sistemoms. Išvengę šių penkių dažniausių klaidų, galėsite sukurti efektyvesnį ir patrauklesnį puslapį savo verslui. Taip pat svarbu nuolat stebėti svetainės statistiką ir atlikti reikalingus patobulinimus, kad ji atitiktų lankytojų lūkesčius.`,
     url: "/blog/5-klaidos-kurias-daro-verslai",
+  },
+  {
+    id: "kodel-jusu-verslui-butina-tureti-tinklarasti",
+    image: Images.blog.versloTinklarastis,
+    title: "Kodėl jūsų verslui būtina turėti tinklaraštį?",
+    excerpt: `Šiandieniniame skaitmeniniame pasaulyje vien tik turėti svetainę – nebepakanka. Jei norite, kad jūsų verslas būtų matomas „Google“ paieškoje, pritrauktų naujų klientų ir įrodytų savo patikimumą, būtina turėti verslo tinklaraštį.
+
+Toliau paaiškinsiu, kodėl tinklaraštis yra vienas stipriausių įrankių jūsų verslo augimui.
+
+1. Tinklaraštis padeda pakilti „Google“ paieškoje
+
+„Google“ mėgsta turinį. Jei jūsų svetainėje yra tik keli statiniai puslapiai („Apie mus“, „Paslaugos“, „Kontaktai“), paieškos sistema neturi daug ko indeksuoti.
+Tinklaraštis leidžia:
+
+Kurti naują turinį pagal aktualius raktinius žodžius;
+
+Atsakyti į klausimus, kuriuos užduoda potencialūs klientai;
+
+Didinti organinį srautą į svetainę be reklamos.
+
+Pvz., jei esate odontologijos klinika, straipsniai apie „dantų balinimą“, „dantų implantus“ ar „dantų priežiūrą“ padės jus rasti žmonėms, kurie to ieško „Google“.
+
+2. Tinklaraštis kuria pasitikėjimą ir autoritetą
+
+Žmonės nori pirkti iš ekspertų. Kai dalinatės profesionaliomis įžvalgomis, patarimais ar net paprastais gidais, parodote, kad suprantate savo sritį.
+
+Tai didina pasitikėjimą jūsų verslu;
+
+Skatina klientus pasirinkti jus, o ne konkurentą;
+
+Padeda išsiskirti rinkoje.
+
+3. Tinklaraštis generuoja ilgalaikę vertę
+
+Reklama veikia tol, kol mokate už paspaudimus. Tuo tarpu tinklaraščio įrašas, parašytas šiandien, gali atnešti lankytojų dar po metų ar net penkerių.
+
+Tai vadinama ilgalaikiu organiniu srautu – jūsų turinys dirba už jus 24/7.
+
+4. Tinklaraštis stiprina santykį su klientais
+
+Per straipsnius galite:
+
+Atsakyti į dažniausius klausimus;
+
+Dalintis naujienomis ir patarimais;
+
+Įtraukti skaitytojus į diskusiją.
+
+Tai kuria ne tik klientų lojalumą, bet ir bendruomenę aplink jūsų prekės ženklą.
+
+5. Tinklaraštis – papildomas pardavimų kanalas
+
+Straipsniuose galite subtiliai integruoti savo paslaugas ar produktus. Pvz.:
+
+Įraše apie „keto dietą“ – pasiūlyti savo receptų e-knygą;
+
+Straipsnyje apie „svetainės dizainą“ – pakviesti kreiptis dėl nemokamos konsultacijos.
+
+Tokiu būdu tinklaraštis tampa pardavimų įrankiu, bet neperkrauna reklama.
+
+Išvada
+
+Tinklaraštis nėra tik papildomas puslapis svetainėje. Tai – SEO variklis, pasitikėjimo kūrėjas ir ilgalaikė investicija į jūsų verslo matomumą.
+
+Jeigu dar neturite tinklaraščio – dabar pats metas pradėti. O jei turite, bet nerašote reguliariai – prisiminkite, kad kiekvienas naujas įrašas gali būti jūsų naujas klientas.`,
+    url: "/blog/kodel-jusu-verslui-butina-tureti-tinklarasti",
+  },
+  {
+    id: "domeno-pasirinkimas",
+    image: Images.blog.Domenas,
+    title: "Kaip pasirinkti tinkamą domeno vardą savo svetainei?",
+    excerpt: `Domenas – tai jūsų verslo adresas internete. Tinkamai pasirinktas domeno pavadinimas gali padėti išsiskirti, geriau pozicionuoti savo svetainę „Google“ paieškoje ir sukurti patikimą pirmą įspūdį.
+1. Paprastumas ir įsimenamumas
+Trumpas ir lengvai įsimenamas domenas yra raktas į sėkmę. Venkite sudėtingų raidžių derinių ar skaičių – kuo paprasčiau, tuo geriau. Pvz., manoimone.lt visada bus aiškiau nei mano-imone123.lt.
+
+2. Raktažodžiai domeno pavadinime
+Jei įmanoma, naudokite raktažodį, susijusį su jūsų veikla. Tai gali padėti SEO. Pavyzdžiui, jei teikiate buhalterijos paslaugas, domenas buhalterija.lt yra aiškus signalas tiek klientams, tiek paieškos sistemoms.
+
+3. Pasirinkite tinkamą galūnę (.lt, .com, .eu ir kt.)
+Lietuvoje veikiantiems verslams labiausiai tinka .lt domenas. Jei planuojate tarptautinę veiklą, verta pagalvoti apie .com ar .eu. Svarbiausia – pasirinkti galūnę, atitinkančią jūsų auditoriją.
+
+4. Prekės ženklo atpažįstamumas
+Domenas turėtų stiprinti jūsų prekės ženklą. Jei pavadinimas unikalus ir lengvai atpažįstamas – klientams bus lengviau jus prisiminti. Tokiu būdu domenas tampa ne tik adresu, bet ir verslo identiteto dalimi.
+
+5. Patikrinkite, ar domenas neužimtas
+Prieš registruodami, pasitikrinkite domeno prieinamumą. Jei pavadinimas jau naudojamas, geriau rinktis kitą variantą, o ne pridėti nereikalingų simbolių, kurie tik klaidina vartotojus.
+
+Išvada
+Tinkamai pasirinktas domenas yra ilgalaikė investicija į jūsų verslo matomumą internete. Paprastumas, tinkama galūnė, raktažodžiai ir prekės ženklo stiprinimas – pagrindiniai kriterijai, į kuriuos verta atsižvelgti.`,
+    url: "/blog/domeno-pasirinkimas",
   },
 ];
 

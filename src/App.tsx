@@ -57,6 +57,8 @@ import Divi5Straipsnis from './pages/blog/Divi5';
 import Svetaine24hStraipsnis from './pages/blog/Svetaine24hStraipsnis';
 import Akmenukas from './pages/projektai/akmenukas';
 import DentesVitae from './pages/projektai/dentes-vitae';
+import VersloTinklarastis from './pages/blog/VersloTinklarastis';
+import DomenoPasirinkimas from './pages/blog/DomenoPasirinkimas';
 
 function App() {
   useEffect(() => {
@@ -129,6 +131,15 @@ function App() {
                 path="/blog/svetaine-per-24h"
                 element={<Svetaine24hStraipsnis />}
               />
+              <Route
+                path="/blog/kodel-jusu-verslui-butina-tureti-tinklarasti"
+                element={<VersloTinklarastis />}
+              />
+              <Route
+                path="/blog/domeno-pasirinkimas"
+                element={<DomenoPasirinkimas />}
+              />
+
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/projektai/lzspa" element={<LzspaPage />} />
               <Route

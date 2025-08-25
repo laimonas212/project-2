@@ -33,16 +33,25 @@ const Blog = () => {
           grabCursor={true}
           autoplay={{ delay: 7000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
           speed={800}
-          centeredSlides={true}
+          centeredSlides={false}
           modules={[Pagination, Navigation, Autoplay]}
           breakpoints={{
-            640: { slidesPerView: 1, spaceBetween: 20 },
-            1024: { slidesPerView: 2, spaceBetween: 30 },
+            640: {
+              // telefonai
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              // planšetės / mid ekranai
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1200: {
+              // dideli ekranai
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
           }}
           className="custom-swiper"
         >
@@ -69,11 +78,6 @@ const Blog = () => {
               </div>
             </SwiperSlide>
           ))}
-          {/* Custom navigation buttons */}
-          <div className="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 text-white cursor-pointer p-2">
-          </div>
-          <div className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white cursor-pointer p-2">
-          </div>
         </Swiper>
         {/* add a button to /blog */}
         <div className="text-center mt-12">
@@ -83,7 +87,7 @@ const Blog = () => {
           >
             Peržiūrėti visus įrašus
           </Link>
-          </div>
+        </div>
       </div>
     </section>
   );

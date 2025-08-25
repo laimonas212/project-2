@@ -41,6 +41,8 @@ import pigiosSvetaines from "././blog/kodel-pigios-svetaines-brangiai-kainuoja.w
 import svetainiuKurimas2025 from "././blog/interneto-svetainiu-kurimas-2025-metais.webp";
 import wordpressKaina2025 from "././blog/kiek-kainuoja-svetaine-su-wordpress-lietuvoje-2025-metais.webp";
 import woocommerceUzsakymuValdymas from "././blog/woocommerce-uzsakymu-valdymas.webp";
+import versloTinklarastis from "././blog/tinklarastis-interneto-svetainei.webp";
+import Domenas from "././blog/kaip-pasirinkti-tinkama-domena.webp";
 
 // icons
 import woo from './woo.png';
@@ -323,6 +325,8 @@ const Images = {
         svetainiuKurimas2025: svetainiuKurimas2025,
         wordpressKaina2025: wordpressKaina2025,
         woocommerceUzsakymuValdymas: woocommerceUzsakymuValdymas,
+        versloTinklarastis: versloTinklarastis,
+        Domenas: Domenas,
     },
     logos: {
         wooWhite: wooWhite,

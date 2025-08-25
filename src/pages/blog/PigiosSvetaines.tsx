@@ -1,9 +1,10 @@
-import React from 'react';
 import Images from '../../img/Images';
 import CTA from '../../components/CTA';
 import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
+
+const entry = blogEntries.find((e) => e.id === "pigios-svetaines");
 
 const PigiosSvetaines = () => {
     return (
@@ -17,7 +18,7 @@ const PigiosSvetaines = () => {
             name="description"
             content="Ar tikrai pigi svetainė padeda sutaupyti? Sužinokite, kodėl dažnai taupymas kuriant svetainę baigiasi didesnėmis išlaidomis. Analizuojame dažniausius mitus apie pigias svetaines."
           />
-          <link rel="canonical" href="https://amberweb.lt/pigios-svetaines" />
+          <link rel="canonical" href={`https://amberweb.lt${entry?.url}`} />
         </Helmet>
         <div className="container max-w-screen-lg text-white/80 mx-auto px-4">
           <div className="w-full pb-8">

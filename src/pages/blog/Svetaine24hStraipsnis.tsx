@@ -7,6 +7,8 @@ import { Clock } from 'lucide-react';
 import Images from '../../img/Images';
 import { Link } from 'react-router-dom';
 
+const entry = blogEntries.find((e) => e.id === "svetaine-per-24h");
+
 const Svetaine24hStraipsnis = () => {
     return (
       <div className="pt-36 min-h-screen">
@@ -18,10 +20,7 @@ const Svetaine24hStraipsnis = () => {
             name="description"
             content="Sužinokite, kaip įmanoma sukurti profesionalią interneto svetainę per 24 valandas – greitai, kokybiškai ir efektyviai. Amberweb siūlo sprendimus verslui, kuriam svarbus greitis."
           />
-          <link
-            rel="canonical"
-            href="https://amberweb.lt/blog/svetaine-per-24h"
-          />
+          <link rel="canonical" href={`https://amberweb.lt${entry?.url}`} />
         </Helmet>
 
         <div className="container max-w-screen-lg text-white/80 mx-auto px-4">

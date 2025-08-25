@@ -6,6 +6,8 @@ import { Helmet } from 'react-helmet-async';
 import { Wrench } from 'lucide-react'; // maža, tinkama ikonėlė
 import Images from '../../img/Images';
 
+const entry = blogEntries.find((e) => e.id === "kas-yra-divi-5");
+
 const Divi5Straipsnis = () => {
     return (
       <div className="pt-36 min-h-screen">
@@ -17,10 +19,7 @@ const Divi5Straipsnis = () => {
             name="description"
             content="Naujoji Divi 5 versija keičia WordPress svetainių kūrimą – greitesnis veikimas, modulių perrašymas ir švaresnis kodas. Sužinokite, kaip tai padeda verslams gauti modernią svetainę."
           />
-          <link
-            rel="canonical"
-            href="https://amberweb.lt/divi-5-wordpress-svetaines"
-          />
+          <link rel="canonical" href={`https://amberweb.lt${entry?.url}`} />
         </Helmet>
 
         <div className="container max-w-screen-lg text-white/80 mx-auto px-4">
