@@ -75,6 +75,15 @@ const Blog = () => {
           <div className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white cursor-pointer p-2">
           </div>
         </Swiper>
+        {/* add a button to /blog */}
+        <div className="text-center mt-12">
+          <Link
+            to="/blog"
+            className="inline-block px-6 py-3 button-primary text-white font-bold"
+          >
+            Peržiūrėti visus įrašus
+          </Link>
+          </div>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import Images from "../img/Images";
 
 const blogEntries = [
   {
-    image: Images.logos.svetaine24h,
+    image: Images.blog.websiteIn24h,
     title: "Interneto svetainė per 24 val. – ar tai įmanoma?",
     excerpt: `
 Verslui svarbus greitis – kartais naujos svetainės reikia čia ir dabar. Bet ar įmanoma ją sukurti vos per vieną dieną? Atsakymas – taip. Paaiškinsime kaip.
@@ -37,7 +37,7 @@ Svetainė per 24 val. – skamba greitai, nes ir yra greitai.
     url: "/blog/svetaine-per-24h",
   },
   {
-    image: Images.logos.pigiosSvetaines,
+    image: Images.blog.pigiosSvetaines,
     title:
       "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
     excerpt: `Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia ekonomišką sprendimą? Šiame straipsnyje paneigsime dažniausius mitus ir paaiškinsime, kaip "taupymas" gali virsti didelėmis išlaidomis ateityje.
@@ -68,7 +68,7 @@ Išvada: Taupant kuriant svetainę dažnai tenka mokėti du kartus. Geriau iš k
     url: "/blog/pigios-svetaines",
   },
   {
-    image: Images.logos.internetoSvetainiuKurimas,
+    image: Images.blog.svetainiuKurimas2025,
     title:
       "Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą?",
     excerpt: `Šiandien, kai skaitmeninė erdvė yra tapusi neatsiejama verslo dalimi, kokybiška interneto svetainė yra ne tik vizitinė kortelė, bet ir galingas įrankis, padedantis pritraukti naujus klientus, stiprinti prekės ženklą ir didinti pardavimus. 2025 metais sėkmingas interneto svetainių kūrimas reikalauja ne tik modernaus dizaino ir patogaus naudojimo, bet ir strateginio požiūrio bei kruopštaus planavimo.
@@ -119,7 +119,7 @@ Turite idėją savo naujai interneto svetainei? Susisiekite su mumis šiandien i
     url: "/blog/interneto-svetainiu-kurimas-2025",
   },
   {
-    image: Images.logos.wp_woo,
+    image: Images.blog.wordpressKaina2025,
     title: "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
     excerpt: `Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai svetainių kūrimo kainos prasideda nuo 300–500€ ir gali siekti net 3000€ ar daugiau. Pažiūrėkime, kas lemia tą kainą ir ką gaunate už tam tikrą sumą.
 
@@ -157,7 +157,7 @@ Turite idėją? Susisiekite ir pakonsultuosime be jokio įsipareigojimo.`,
     url: "/blog/wordpress-svetaines-kaina-2025",
   },
   {
-    image: Images.logos.wooWhite,
+    image: Images.blog.woocommerceUzsakymuValdymas,
     title: "WooCommerce užsakymų valdymas",
     excerpt: `Kai klientas pateikia užsakymą jūsų parduotuvėje, užsakymo informacija bus rodoma WooCommerce užsakymų skiltyje. Šiame vadove aptarsime, kaip peržiūrėti, redaguoti ir valdyti užsakymus.
 
@@ -215,7 +215,7 @@ Eikite į WooCommerce > Ataskaitos.
     url: "/blog/woocommerce-uzsakymu-valdymas",
   },
   {
-    image: Images.logos.wooWhite,
+    image: Images.blog.newProductWoo,
     title: "Kaip sukurti naują WooCommerce produktą?",
     excerpt: `Jei norite pridėti naują produktą į savo WooCommerce parduotuvę, sekite šiuos paprastus žingsnius. Šiame vadove paaiškinsime, kaip sukurti fizinius ir skaitmeninius produktus.
 
@@ -258,7 +258,7 @@ Kai visos informacijos laukeliai užpildyti, spustelėkite „Paskelbti“ ir pr
     url: "/blog/naujas-woocommerce-produktas",
   },
   {
-    image: Images.logos.divi,
+    image: Images.blog.kaipNaudotisDivi,
     title: "Kaip naudotis DIVI?",
     excerpt: `Kas yra Divi?
 Divi yra populiari „drag-and-drop“ svetainių kūrimo sistema, leidžianti kurti profesionalias interneto svetaines be programavimo žinių. Ji veikia kaip „WordPress“ tema su įdiegtu puslapių kūrimo įrankiu („Divi Builder“), kuris leidžia redaguoti puslapius realiu laiku.
@@ -312,7 +312,7 @@ Jei puslapis dar nepublikuotas, paspauskite „Publish“ (Publikuoti).
     url: "/blog/kaip-naudotis-divi",
   },
   {
-    image: Images.logos.divi,
+    image: Images.blog.divi5,
     title: "Kas yra Divi 5?",
     excerpt: `Nuo 2025 m. viena populiariausių WordPress temų – Divi – išleido reikšmingą atnaujinimą: Divi 5. Tai nėra tik kosmetinis pakeitimas – tai visas sistemos perrašymas. Tačiau svarbiausia – ką tai reiškia verslui ir svetainių kūrimo paslaugų ieškantiems klientams?
 Greitesnis svetainių veikimas
@@ -345,7 +345,7 @@ Naudoju naujausius sprendimus, kad jūsų svetainė būtų konkurencinga 2025-ai
     url: "/blog/kas-yra-divi-5",
   },
   {
-    image: Images.logos.divi,
+    image: Images.blog.KasYraDivi,
     title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
     excerpt: `Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių (angl. page builder), sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams.
 Kodėl verta rinktis Divi?
@@ -381,7 +381,7 @@ Išvada: Divi yra vienas iš geriausių pasirinkimų norint sukurti vizualiai pa
     url: "/blog/kas-yra-divi",
   },
   {
-    image: Images.logos.caution,
+    image: Images.blog.penkiosKlaidos,
     title: "5 klaidos, kurias daro verslai kurdami svetainę",
     excerpt: `Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams. Štai penkios esminės klaidos, kurių reikėtų vengti.
 1. Neaiški struktūra ir navigacija

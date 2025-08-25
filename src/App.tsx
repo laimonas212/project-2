@@ -16,6 +16,7 @@ import PrivatumoPolitika from './pages/PrivatumoPolitika';
 import Salygos from './pages/Salygos';
 import Slapukai from './pages/Slapukai';
 import Titulinis from './pages/Titulinis';
+import Straipsniai from './pages/Straipsniai';
 import WoocommerceUzsakymuValdymas from './pages/blog/WoocommerceUzsakymuValdymas';
 import NaujasWoocommerceProduktas from './pages/blog/NaujasWoocoomerceProduktas';
 import KaipNaudotisDivi from './pages/blog/KaipNaudotisDivi';
@@ -83,6 +84,7 @@ function App() {
               <Route path="/paruosti-dizainai" element={<Templates />} />
               <Route path="/kainos" element={<Kainos />} />
               <Route path="/kontaktai" element={<Kontaktai />} />
+              <Route path="/blog" element={<Straipsniai />} />
               <Route path="/svetaine-per-24h" element={<SvetainePer24h />} />
               <Route
                 path="/privatumo-politika"

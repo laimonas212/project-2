@@ -30,6 +30,18 @@ import puppyYoga from '././projects/wordpress-interneto-svetaines-kurimas-puppy-
 import akmenukas from '././projects/wordpress-interneto-svetaines-kurimas-akmenukas-amberweb.webp';
 import dentesVitae from '././projects/wordpress-interneto-svetaines-kurimas-dentes-vitae-amberweb.webp';
 
+// blog
+import websiteIn24h from "././blog/Interneto-svetaine-per-24h.webp";
+import divi5 from "././blog/divi-5-ir-wordpress-svetainiu-kurimas-verslui.webp";
+import kaipNaudotisDivi from "././blog/kaip-naudotis-divi.webp";
+import KasYraDivi from '././blog/kas-yra-divi.webp';
+import penkiosKlaidos from '././blog/5-klaidos.webp';
+import newProductWoo from "././blog/naujo-produkto-kurimas-woocommerce.webp";
+import pigiosSvetaines from "././blog/kodel-pigios-svetaines-brangiai-kainuoja.webp";
+import svetainiuKurimas2025 from "././blog/interneto-svetainiu-kurimas-2025-metais.webp";
+import wordpressKaina2025 from "././blog/kiek-kainuoja-svetaine-su-wordpress-lietuvoje-2025-metais.webp";
+import woocommerceUzsakymuValdymas from "././blog/woocommerce-uzsakymu-valdymas.webp";
+
 // icons
 import woo from './woo.png';
 import wooWhite from './logos/woo-white.png';
@@ -45,7 +57,7 @@ import html from './logos/html5.png';
 import css from './logos/css.png';
 import five from './5.png';
 import logoInWhite from './amberweb-logo-white-bg.jpg';
-import pigiosSvetaines from './logos/pigios-svetaines.png';
+// import pigiosSvetaines from './logos/pigios-svetaines.png';
 import caution from './logos/caution.png';
 import svetaine24h from './logos/svetaine-per-24h.webp';
 
@@ -300,6 +312,18 @@ const Images = {
     amberWebLogo: amberWebLogo,
     woo: woo,
     five: five,
+    blog: {
+        websiteIn24h: websiteIn24h,
+        divi5: divi5,
+        kaipNaudotisDivi: kaipNaudotisDivi,
+        KasYraDivi: KasYraDivi,
+        penkiosKlaidos: penkiosKlaidos,
+        newProductWoo: newProductWoo,
+        pigiosSvetaines: pigiosSvetaines,
+        svetainiuKurimas2025: svetainiuKurimas2025,
+        wordpressKaina2025: wordpressKaina2025,
+        woocommerceUzsakymuValdymas: woocommerceUzsakymuValdymas,
+    },
     logos: {
         wooWhite: wooWhite,
         wordpress: wordpress,
@@ -594,7 +618,7 @@ const Images = {
             portfolio: ventureCapitalPortfolio,
             team: ventureCapitalTeam,
         },
-    }
-}
+    },
+};
 
 export default Images;

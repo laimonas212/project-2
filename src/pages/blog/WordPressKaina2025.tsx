@@ -40,8 +40,16 @@ const WordPressKaina2025 = () => {
                 `}</script>
             </Helmet>
 
-            <div className="container text-white/80 mx-auto px-4">
-                <div className="mb-8 pb-24">
+
+            <div className="container max-w-screen-lg text-white/80 mx-auto px-4">
+                <div className="w-full pb-8">
+                    <img
+                        src={Images.blog.wordpressKaina2025}
+                        alt="Interneto svetainių kūrimas 2025 metais"
+                        className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg"
+                    />
+                </div>
+                <div className="mb-8 pb-8 card">
                     <h1 className="text-4xl font-bold text-electric-blue mb-12">Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?</h1>
 
                     <p className="text-white/70 mb-6">Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai svetainių kūrimo kainos prasideda nuo <strong>300–500€</strong> ir gali siekti net <strong>3000€ ar daugiau</strong>. Pažiūrėkime, kas lemia tą kainą ir ką gaunate už tam tikrą sumą.</p>
@@ -85,8 +93,6 @@ const WordPressKaina2025 = () => {
                     <p className="text-white/70 mb-6">Jeigu reikia el. parduotuvės – kaina prasideda nuo <strong>799€</strong>, priklausomai nuo specifikos.</p>
 
                     <p className="text-white/70 mb-6">Turite idėją? <a href="/kontaktai" className="text-electric-blue underline">Susisiekite</a> ir pakonsultuosime be jokio įsipareigojimo.</p>
-
-                    <img src={Images.logos.wp_woo} alt="WordPress ir WooCommerce" className="h-16 mt-24" />
                 </div>
             </div>
             <BlogNavigation blogEntries={blogEntries} />

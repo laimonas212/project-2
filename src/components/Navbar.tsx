@@ -29,6 +29,7 @@ const Navbar = () => {
     { href: '/paruosti-dizainai', label: 'Paruošti dizainai' },
     { href: '/kainos', label: 'Kainos' },
     { href: '/kontaktai', label: 'Kontaktai' },
+    { href: '/blog', label: 'Straipsniai' },
   ];
 
   // The 'Svetainė per 24h' link

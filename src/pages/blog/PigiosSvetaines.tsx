@@ -7,49 +7,118 @@ import { Helmet } from 'react-helmet-async';
 
 const PigiosSvetaines = () => {
     return (
-        <div className="pt-36 min-h-screen">
-            <Helmet>
-                <title>Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė | Amberweb</title>
-                <meta name="description" content="Ar tikrai pigi svetainė padeda sutaupyti? Sužinokite, kodėl dažnai taupymas kuriant svetainę baigiasi didesnėmis išlaidomis. Analizuojame dažniausius mitus apie pigias svetaines." />
-                <link rel="canonical" href="https://amberweb.lt/pigios-svetaines" />
-            </Helmet>
-            <div className="container text-white/80 mx-auto px-4">
-                <div className="mb-8 pb-24">
-                    <h1 className="text-4xl font-bold text-electric-blue mb-12">Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė</h1>
+      <div className="pt-36 min-h-screen">
+        <Helmet>
+          <title>
+            Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė
+            | Amberweb
+          </title>
+          <meta
+            name="description"
+            content="Ar tikrai pigi svetainė padeda sutaupyti? Sužinokite, kodėl dažnai taupymas kuriant svetainę baigiasi didesnėmis išlaidomis. Analizuojame dažniausius mitus apie pigias svetaines."
+          />
+          <link rel="canonical" href="https://amberweb.lt/pigios-svetaines" />
+        </Helmet>
+        <div className="container max-w-screen-lg text-white/80 mx-auto px-4">
+          <div className="w-full pb-8">
+            <img
+              src={Images.blog.pigiosSvetaines}
+              alt="5 klaidos, kurias daro verslai kurdami svetainę"
+              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg"
+            />
+          </div>
+          <div className="mb-8 pb-8 card">
+            <h1 className="text-4xl font-bold text-electric-blue mb-12">
+              Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir
+              realybė
+            </h1>
 
-                    <h3 className="text-white/70 mb-6">Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia ekonomišką sprendimą? Šiame straipsnyje paneigsime dažniausius mitus ir paaiškinsime, kaip "taupymas" gali virsti didelėmis išlaidomis ateityje.</h3>
+            <h3 className="text-white/70 mb-6">
+              Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą
+              kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia
+              ekonomišką sprendimą? Šiame straipsnyje paneigsime dažniausius
+              mitus ir paaiškinsime, kaip "taupymas" gali virsti didelėmis
+              išlaidomis ateityje.
+            </h3>
 
-                    <h2 className="text-2xl font-semibold  mb-4">1. Mitas: "Svarbiausia – kad veiktų"</h2>
-                    <p className="text-white/70 mb-6">Techninis veikimas yra tik pradžia. Svetainė turi būti greita, patogi naudoti, pritaikyta SEO, mobiliems įrenginiams ir atitikti verslo tikslus. Pigūs sprendimai dažnai praleidžia šiuos svarbius aspektus.</p>
+            <h2 className="text-2xl font-semibold  mb-4">
+              1. Mitas: "Svarbiausia – kad veiktų"
+            </h2>
+            <p className="text-white/70 mb-6">
+              Techninis veikimas yra tik pradžia. Svetainė turi būti greita,
+              patogi naudoti, pritaikyta SEO, mobiliems įrenginiams ir atitikti
+              verslo tikslus. Pigūs sprendimai dažnai praleidžia šiuos svarbius
+              aspektus.
+            </p>
 
-                    <h2 className="text-2xl font-semibold  mb-4">2. Mitas: "Dizainas nėra svarbus, svarbu turinys"</h2>
-                    <p className="text-white/70 mb-6">Nors turinys svarbus, pirmą įspūdį sukuria dizainas. Pigi svetainė dažnai atrodo neprofesionaliai, o tai atbaido potencialius klientus. Dizainas formuoja pasitikėjimą prekės ženklu.</p>
+            <h2 className="text-2xl font-semibold  mb-4">
+              2. Mitas: "Dizainas nėra svarbus, svarbu turinys"
+            </h2>
+            <p className="text-white/70 mb-6">
+              Nors turinys svarbus, pirmą įspūdį sukuria dizainas. Pigi svetainė
+              dažnai atrodo neprofesionaliai, o tai atbaido potencialius
+              klientus. Dizainas formuoja pasitikėjimą prekės ženklu.
+            </p>
 
-                    <h2 className="text-2xl font-semibold  mb-4">3. Mitas: "SEO susitvarkys vėliau"</h2>
-                    <p className="text-white/70 mb-6">SEO yra pamatas, o ne priedas. Pigios svetainės dažnai neturi optimizuotos struktūros, meta žymų ar greičio, todėl jas vėliau pritaikyti SEO reikalavimams kainuoja daugiau nei padaryti viską tinkamai iš karto.</p>
+            <h2 className="text-2xl font-semibold  mb-4">
+              3. Mitas: "SEO susitvarkys vėliau"
+            </h2>
+            <p className="text-white/70 mb-6">
+              SEO yra pamatas, o ne priedas. Pigios svetainės dažnai neturi
+              optimizuotos struktūros, meta žymų ar greičio, todėl jas vėliau
+              pritaikyti SEO reikalavimams kainuoja daugiau nei padaryti viską
+              tinkamai iš karto.
+            </p>
 
-                    <h2 className="text-2xl font-semibold  mb-4">4. Mitas: "Svarbiausia, kad būtų pigiai padaryta, o paskui tobulinsim"</h2>
-                    <p className="text-white/70 mb-6">Pigi svetainė dažnai neturi tvirtų technologinių pagrindų. Tobulinimas tampa brangus, o kartais – neįmanomas. Tenka kurti viską iš naujo, kas reiškia dvigubas išlaidas.</p>
+            <h2 className="text-2xl font-semibold  mb-4">
+              4. Mitas: "Svarbiausia, kad būtų pigiai padaryta, o paskui
+              tobulinsim"
+            </h2>
+            <p className="text-white/70 mb-6">
+              Pigi svetainė dažnai neturi tvirtų technologinių pagrindų.
+              Tobulinimas tampa brangus, o kartais – neįmanomas. Tenka kurti
+              viską iš naujo, kas reiškia dvigubas išlaidas.
+            </p>
 
-                    <h2 className="text-2xl font-semibold  mb-4">5. Mitas: "Kaimynas moka HTML, padarys pigiai"</h2>
-                    <p className="text-white/70 mb-6">Vien HTML nepakanka. Reikia UI/UX žinių, saugumo, atsakomybės. Jei kažkas nepavyks – nebus garantijos ar pagalbos. Profesionalumas atsiperka.</p>
+            <h2 className="text-2xl font-semibold  mb-4">
+              5. Mitas: "Kaimynas moka HTML, padarys pigiai"
+            </h2>
+            <p className="text-white/70 mb-6">
+              Vien HTML nepakanka. Reikia UI/UX žinių, saugumo, atsakomybės. Jei
+              kažkas nepavyks – nebus garantijos ar pagalbos. Profesionalumas
+              atsiperka.
+            </p>
 
-                    <h2 className="text-2xl font-semibold  mb-4">6. Realybė: Kokybiška svetainė yra investicija</h2>
-                    <p className="text-white/70 mb-6">Kokybiška svetainė generuoja pasitikėjimą, konversijas ir veikia ilgus metus. Tai ne išlaidos, o investicija į jūsų verslo augimą ir reputaciją internete.</p>
+            <h2 className="text-2xl font-semibold  mb-4">
+              6. Realybė: Kokybiška svetainė yra investicija
+            </h2>
+            <p className="text-white/70 mb-6">
+              Kokybiška svetainė generuoja pasitikėjimą, konversijas ir veikia
+              ilgus metus. Tai ne išlaidos, o investicija į jūsų verslo augimą
+              ir reputaciją internete.
+            </p>
 
-                    <h2 className="text-2xl font-semibold  mb-4">7. Realybė: Klientai sprendžia per sekundes</h2>
-                    <p className="text-white/70 mb-6">Tyrimai rodo, kad vartotojai per 3–5 sekundes nusprendžia, ar likti svetainėje. Pigi ir prastai atrodanti svetainė gali reikšti prarastus klientus.</p>
+            <h2 className="text-2xl font-semibold  mb-4">
+              7. Realybė: Klientai sprendžia per sekundes
+            </h2>
+            <p className="text-white/70 mb-6">
+              Tyrimai rodo, kad vartotojai per 3–5 sekundes nusprendžia, ar
+              likti svetainėje. Pigi ir prastai atrodanti svetainė gali reikšti
+              prarastus klientus.
+            </p>
 
-                    <p className="text-white/70 mb-6">Išvada: Taupant kuriant svetainę dažnai tenka mokėti du kartus. Geriau iš karto rinktis profesionalų sprendimą, kuris kurtų vertę, o ne rūpesčius.</p>
-
-                    <img src={Images.logos.pigiosSvetaines} alt="WordPress" className="h-16 mt-24" />
-                </div>
-            </div>
-            <BlogNavigation blogEntries={blogEntries} />
-            <div className='relative'>
-                <CTA />
-            </div>
+            <p className="text-white/70 mb-6">
+              Išvada: Taupant kuriant svetainę dažnai tenka mokėti du kartus.
+              Geriau iš karto rinktis profesionalų sprendimą, kuris kurtų vertę,
+              o ne rūpesčius.
+            </p>
+          </div>
         </div>
+        <BlogNavigation blogEntries={blogEntries} />
+        <div className="relative">
+          <CTA />
+        </div>
+      </div>
     );
 };
 
