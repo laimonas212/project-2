@@ -4,7 +4,7 @@ import { Project } from "../components/Projects";
 import projects from "./Projects";
 import sortedIds from "./sortedProjectIds";
 import { motion } from "framer-motion";
-import { Goal, Layout, Settings, Target, TrendingUp } from "lucide-react";
+import { Goal, Target, TrendingUp } from "lucide-react";
 
 type Props = {
   project: Project;
@@ -12,6 +12,9 @@ type Props = {
 
 export default function ProjectPage({ project }: Props) {
   const navigate = useNavigate();
+
+  // Assuming a base URL for your website
+  const baseUrl = "https://yourwebsite.com";
 
   const handleBack = () => {
     navigate("/projektai");
@@ -25,11 +28,42 @@ export default function ProjectPage({ project }: Props) {
   const prevProject = sortedProjects[currentIndex - 1] || null;
   const nextProject = sortedProjects[currentIndex + 1] || null;
 
+  // Generate structured data for the page
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.description,
+    image: project.image,
+    url: `${baseUrl}/projektai/${project.id}`, // Use your actual URL structure
+    dateCreated: "2024-05-01", // Replace with actual project start date
+    author: {
+      "@type": "Organization",
+      name: "Amberweb",
+    },
+    hasPart: [
+      {
+        "@type": "WebPageElement",
+        name: "Project Goals",
+        description: project.goals ? project.goals.join(" ") : "", // Corrected line
+      },
+      {
+        "@type": "WebPageElement",
+        name: "Implemented Solutions",
+        description: project.solutions ? project.solutions.join(" ") : "", // Corrected line
+      },
+      {
+        "@type": "WebPageElement",
+        name: "Results",
+        description: project.results ? project.results.join(" ") : "", // Corrected line
+      },
+    ],
+  };
+
   return (
     <div className="relative mt:4 md:mt-36 mb-12 z-10">
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.15)_0%,transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
       </div>
 
       <div className="max-w-5xl mx-auto mb-24 relative z-10 p-6 md:p-10 lg:p-0">
@@ -39,16 +73,24 @@ export default function ProjectPage({ project }: Props) {
             name="description"
             content={project.metaTitle || project.description}
           />
-          <meta property="og:image" content={project.image} />
           <meta property="og:title" content={project.title} />
           <meta property="og:description" content={project.description} />
+          <meta property="og:image" content={project.image} />
+          <meta
+            property="og:url"
+            content={`${baseUrl}/projektai/${project.id}`}
+          />
           <meta property="og:type" content="website" />
+          <link rel="canonical" href={`${baseUrl}/projektai/${project.id}`} />
           <link
             rel="preload"
             as="image"
             href={project.image}
             type="image/webp"
           />
+          <script type="application/ld+json">
+            {JSON.stringify(structuredData, null, 2)}
+          </script>
         </Helmet>
 
         <button

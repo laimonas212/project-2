@@ -206,7 +206,10 @@ const TemplatesPage: React.FC = () => {
 
   return (
     <div className="pt-4 md:pt-36 min-h-screen">
-      <div className="container mx-auto px-4">
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
+      </div>
+      <div className="container relative mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Paruošti dizainai
