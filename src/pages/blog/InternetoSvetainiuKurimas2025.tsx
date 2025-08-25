@@ -49,7 +49,11 @@ const InternetoSvetainiuKurimas2025 = () => {
                         `}
           </script>
         </Helmet>
-        <div className="container max-w-screen-lg text-white/80 mx-auto px-4">
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
+        </div>
+
+        <div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
           <div className="w-full pb-8">
             <img
               src={Images.blog.svetainiuKurimas2025}
@@ -267,8 +271,8 @@ const InternetoSvetainiuKurimas2025 = () => {
             </p>
           </div>
         </div>
-        <BlogNavigation blogEntries={blogEntries} />
         <div className="relative">
+          <BlogNavigation blogEntries={blogEntries} />
           <CTA />
         </div>
       </div>

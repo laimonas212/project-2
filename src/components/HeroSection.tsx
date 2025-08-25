@@ -38,13 +38,11 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ opacity }}
     >
-
       <ParticlesBackground />
 
       {/* Gradient Overlays */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.15)_0%,transparent_50%)]" />
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
       </div>
 
       {/* Content */}
@@ -68,10 +66,10 @@ const HeroSection = () => {
               transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
               className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight opacity-100"
             >
-              Kuriame{' '}
+              Kuriame{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
                 Skaitmenines
-              </span>{' '}
+              </span>{" "}
               Patirtis
             </motion.h1>
 
@@ -82,7 +80,8 @@ const HeroSection = () => {
               custom={2}
               className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto"
             >
-              Idėjas paverčiame profesionaliomis interneto svetainėmis, naudodami pažangiausias technologijas ir kūrybinius sprendimus.
+              Idėjas paverčiame profesionaliomis interneto svetainėmis,
+              naudodami pažangiausias technologijas ir kūrybinius sprendimus.
             </motion.p>
           </div>
 
@@ -121,11 +120,22 @@ const HeroSection = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {[
-              { icon: <Rocket className="w-8 h-8" />, label: 'Greitos ir SEO draugiškos svetainės' },
-              { icon: <MonitorSmartphone className="w-8 h-8" />, label: 'Sklandžiai veikia kompiuteriuose ir telefonuose' },
-              { icon: <PenTool className="w-8 h-8" />, label: 'Priderintas dizainas pagal kliento poreikius' },
-              { icon: <Handshake className="w-8 h-8" />, label: 'Sklandus bendradarbiavimas ir palaikymas' },
-
+              {
+                icon: <Rocket className="w-8 h-8" />,
+                label: "Greitos ir SEO draugiškos svetainės",
+              },
+              {
+                icon: <MonitorSmartphone className="w-8 h-8" />,
+                label: "Sklandžiai veikia kompiuteriuose ir telefonuose",
+              },
+              {
+                icon: <PenTool className="w-8 h-8" />,
+                label: "Priderintas dizainas pagal kliento poreikius",
+              },
+              {
+                icon: <Handshake className="w-8 h-8" />,
+                label: "Sklandus bendradarbiavimas ir palaikymas",
+              },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

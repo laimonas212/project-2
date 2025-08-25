@@ -116,14 +116,16 @@ const Kontaktai = () => {
       <ParticlesBackground />
 
       {/* Gradient Overlays */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.15)_0%,transparent_50%)]" />
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
       </div>
 
       <Helmet>
         <title>Kontaktai - Susisiekite su mumis | Amberweb</title>
-        <meta name="description" content="Susisiekite su mumis užklausti klausimų, gauti informaciją ar užsisakyti paslaugas." />
+        <meta
+          name="description"
+          content="Susisiekite su mumis užklausti klausimų, gauti informaciją ar užsisakyti paslaugas."
+        />
         <link rel="canonical" href="https://amberweb.lt/kontaktai" />
       </Helmet>
 
@@ -133,7 +135,9 @@ const Kontaktai = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Parašykite mums</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            Parašykite mums
+          </h1>
           <p className="text-lg text-white/70">
             Turite klausimų? Parašykite mums ir mes su Jumis susisieksime.
           </p>
@@ -148,8 +152,12 @@ const Kontaktai = () => {
               // Gradient border trick: outer div with gradient, inner div with solid background
               className="relative mx-auto rounded-lg overflow-hidden shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]"
             >
-              <div className="flex flex-col p-6 bg-dark-surface rounded-t-lg h-full w-full relative"> {/* Added relative for sticky positioning */}
-                <h2 className="text-xl font-bold mb-4 text-electric-blue">Užklausos forma</h2>
+              <div className="flex flex-col p-6 bg-dark-surface rounded-t-lg h-full w-full relative">
+                {" "}
+                {/* Added relative for sticky positioning */}
+                <h2 className="text-xl font-bold mb-4 text-electric-blue">
+                  Užklausos forma
+                </h2>
                 <form
                   id="contact-form"
                   name="contact-form"
@@ -171,20 +179,27 @@ const Kontaktai = () => {
                   </p>
 
                   <div className="grid grid-cols-1 gap-4">
-                    {['name', 'email', 'phone', 'message'].map((field) => (
+                    {["name", "email", "phone", "message"].map((field) => (
                       <div key={field}>
-                        {field !== 'message' ? (
+                        {field !== "message" ? (
                           <input
-                            type={field === 'email' ? 'email' : 'text'}
+                            type={field === "email" ? "email" : "text"}
                             name={field}
                             placeholder={
-                              field === 'name' ? 'Jūsų vardas' : field === 'email' ? 'El. paštas' : 'Telefono numeris'
+                              field === "name"
+                                ? "Jūsų vardas"
+                                : field === "email"
+                                ? "El. paštas"
+                                : "Telefono numeris"
                             }
                             required
                             value={formData[field as keyof FormData]}
                             onChange={handleChange}
-                            className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-red-500' : 'border-gray-700' // Changed error border color to red for better visibility
-                              }`}
+                            className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${
+                              errors[field as keyof Errors]
+                                ? "border-red-500"
+                                : "border-gray-700" // Changed error border color to red for better visibility
+                            }`}
                           />
                         ) : (
                           <textarea
@@ -194,27 +209,44 @@ const Kontaktai = () => {
                             required
                             value={formData[field as keyof FormData]}
                             onChange={handleChange}
-                            className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${errors[field as keyof Errors] ? 'border-red-500' : 'border-gray-700' // Changed error border color to red
-                              }`}
+                            className={`bg-gray-800 text-electric-blue border rounded-lg py-2 px-4 w-full focus:ring focus:ring-blue-500 placeholder-gray-500 ${
+                              errors[field as keyof Errors]
+                                ? "border-red-500"
+                                : "border-gray-700" // Changed error border color to red
+                            }`}
                           />
                         )}
-                        {errors[field as keyof Errors] && <p className="text-red-500 text-sm mt-1">{errors[field as keyof Errors]}</p>} {/* Changed error text color to red */}
+                        {errors[field as keyof Errors] && (
+                          <p className="text-red-500 text-sm mt-1">
+                            {errors[field as keyof Errors]}
+                          </p>
+                        )}{" "}
+                        {/* Changed error text color to red */}
                       </div>
                     ))}
 
-                    <button type="submit" className="button-primary">Siųsti užklausą</button>
+                    <button type="submit" className="button-primary">
+                      Siųsti užklausą
+                    </button>
                   </div>
                 </form>
-
                 <div className="mt-12 text-white/80 text-center">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
                     <div className="flex flex-col items-center">
-                      <MessageCircle size={32} className="text-electric-blue mb-2" />
+                      <MessageCircle
+                        size={32}
+                        className="text-electric-blue mb-2"
+                      />
                       <p>Greitas ir aiškus atsakymas į Jūsų klausimus.</p>
                     </div>
                     <div className="flex flex-col items-center">
-                      <UserCheck size={32} className="text-electric-blue mb-2" />
-                      <p>Asmeniškai pritaikytas pasiūlymas pagal Jūsų poreikius.</p>
+                      <UserCheck
+                        size={32}
+                        className="text-electric-blue mb-2"
+                      />
+                      <p>
+                        Asmeniškai pritaikytas pasiūlymas pagal Jūsų poreikius.
+                      </p>
                     </div>
                     <div className="flex flex-col items-center">
                       <Clock3 size={32} className="text-electric-blue mb-2" />
@@ -237,14 +269,17 @@ const Kontaktai = () => {
             </motion.div>
           </div>
 
-          <div className='flex flex-col justify-between gap-8 '>
+          <div className="flex flex-col justify-between gap-8 ">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }} className='rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]'>
-              
+              transition={{ delay: 0.2 }}
+              className="rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 p-[1px]"
+            >
               <div className="bg-dark-surface rounded-lg w-full shadow-xl p-6">
-                <h2 className="text-xl font-bold mb-6 text-electric-blue">Darbo laikas</h2>
+                <h2 className="text-xl font-bold mb-6 text-electric-blue">
+                  Darbo laikas
+                </h2>
 
                 <div className="flex flex-col gap-4 text-left text-sm justify-center">
                   <div className="flex items-center gap-3 text-white/70">
@@ -259,7 +294,7 @@ const Kontaktai = () => {
                 </div>
               </div>
             </motion.div>
-            <div className='h-[400px] sm:h-full'>
+            <div className="h-[400px] sm:h-full">
               <Maps />
             </div>
           </div>

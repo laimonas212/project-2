@@ -72,6 +72,7 @@ function App() {
         <GoogleConsent />
         <ScrollToTop />
         <Navbar />
+        <ScrollToTopButton />
 
         <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
           <motion.div
@@ -194,7 +195,6 @@ function App() {
               <Route path="/projektai/akmenukas" element={<Akmenukas />} />
               <Route path="/projektai/dentes-vitae" element={<DentesVitae />} />
             </Routes>
-            <ScrollToTopButton />
           </motion.div>
           <Footer />
         </div>

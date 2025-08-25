@@ -56,28 +56,32 @@ const HeroSection = () => {
       <ParticlesBackground />
 
       {/* Overlays */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.15)_0%,transparent_50%)]" />
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
       </div>
 
       {/* Content */}
-      <div ref={ref} className="relative z-10 text-center max-w-3xl mx-auto space-y-8 pt-20">
+      <div
+        ref={ref}
+        className="relative z-10 text-center max-w-3xl mx-auto space-y-8 pt-20"
+      >
         <motion.div
           custom={0}
           initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
+          animate={inView ? "visible" : "hidden"}
           variants={titleVariants}
           className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-dark-surface/60 backdrop-blur"
         >
           <Rocket className="w-5 h-5 text-electric-blue" />
-          <span className="text-white/80 text-sm font-medium">Gaukite savo svetainę per 24 valandas</span>
+          <span className="text-white/80 text-sm font-medium">
+            Gaukite savo svetainę per 24 valandas
+          </span>
         </motion.div>
 
         <motion.div
           custom={1}
           initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
+          animate={inView ? "visible" : "hidden"}
           variants={titleVariants}
           className="flex flex-col items-center justify-center gap-2"
         >
@@ -90,18 +94,20 @@ const HeroSection = () => {
         <motion.h1
           custom={2}
           initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
+          animate={inView ? "visible" : "hidden"}
           variants={titleVariants}
           className="text-4xl md:text-7xl font-bold leading-tight text-white"
         >
           Profesionali interneto svetainė&nbsp;
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">per 24h</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
+            per 24h
+          </span>
         </motion.h1>
 
         <motion.p
           custom={3}
           initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
+          animate={inView ? "visible" : "hidden"}
           variants={titleVariants}
           className="text-white/70 text-lg md:text-xl"
         >
@@ -112,7 +118,7 @@ const HeroSection = () => {
         <motion.div
           custom={4}
           initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
+          animate={inView ? "visible" : "hidden"}
           variants={titleVariants}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
         >
@@ -134,7 +140,7 @@ const HeroSection = () => {
             key={index}
             custom={5 + index}
             initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
+            animate={inView ? "visible" : "hidden"}
             variants={titleVariants}
           >
             <div className="text-3xl md:text-4xl flex justify-center text-electric-blue mb-2">

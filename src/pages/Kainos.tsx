@@ -78,6 +78,9 @@ const Kainos = () => {
 
   return (
     <div className="pt-4 md:pt-36 min-h-screen">
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
+      </div>
       <Helmet>
         <title>Mūsų Kainos - Pasirinkite Planą | Amberweb</title>
         <meta
@@ -187,7 +190,7 @@ const Kainos = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="my-20 pb-8 text-center"
+          className="relative my-20 pb-8 text-center"
         >
           <h2 className="text-2xl font-bold mb-4">
             Norite pamatyti mūsų darbus?

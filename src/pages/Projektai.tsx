@@ -251,11 +251,8 @@ const Projects: React.FC = () => {
         <link rel="canonical" href="https://www.amberweb.lt/projektai" />
       </Helmet>
       <div className="relative">
-        <div className="fixed inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.1)_0%,transparent_70%)]" />
-          <div className="absolute inset-0" style={{
-            background: 'radial-gradient(circle at 50% 50%, rgba(157,0,255,0.1) 0%, transparent 60%)'
-          }} />
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
         </div>
         <ProjectsList />
         {sortedProjects.map((project, index) => (

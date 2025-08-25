@@ -49,7 +49,7 @@ const SvetainePer24h: React.FC = () => {
                 />
             </section>
 
-            <section className="pt-20 pb-40 bg-dark-surface-2 px-4 grid grid-cols-1 gap-8
+            <section className="relative pt-20 pb-40 bg-dark-surface-2 px-4 grid grid-cols-1 gap-8
              mx-auto">
                 {/* heading and subheading */}
                 <motion.div
