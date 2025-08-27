@@ -63,64 +63,70 @@ const Process = ({
 	description = "Mes dirbame pagal aiškų ir patikrintą procesą, nuo pradinės idėjos iki galutinės svetainės paleidimo ir techninio palaikymo. Tai leidžia užtikrinti sklandų darbą, aukščiausią kokybę ir rezultatą, kuris efektyviai padeda augti jūsų verslui internete.",
 }: ProcessProps) => {
 	return (
-    <section className="py-20 bg-dark-surface relative">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">{headline}</h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            {description}
-          </p>
-        </motion.div>
+		<section className="py-20 bg-dark-surface relative">
+			<div className="container mx-auto px-4">
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true }}
+					className="text-center mb-16"
+				>
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">{headline}</h2>
+					<p className="text-white/70 text-lg max-w-2xl mx-auto">
+						{description}
+					</p>
+				</motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 relative">
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.number}
-              className="group relative bg-dark-surface-2 rounded-lg p-6 shadow-lg flex flex-col 
-             border border-transparent hover:border-electric-blue/30 transition-colors duration-300"
-            >
-              {/* Badge */}
-              <div
-                className="absolute -top-4 -left-3 w-12 h-12 rounded-full bg-dark-surface-2 flex items-center justify-center text-white font-bold transition-all duration-300 ease-in-out group-hover:scale-0 group-hover:opacity-0"
-              >
-                {step.number}
-              </div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 relative">
+					{steps.map((step, index) => (
+						<motion.div
+							key={step.number}
+							initial={{ opacity: 0, y: 30 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							transition={{
+								delay: index * 0.2,
+								duration: 0.5,
+								ease: "easeOut",
+							}}
+							className="group relative bg-dark-surface-2 rounded-lg p-6 shadow-lg flex flex-col 
+               border border-transparent hover:border-electric-blue/30 transition-colors duration-300"
+						>
+							{/* Badge */}
+							<div
+								className="absolute -top-4 -left-3 w-12 h-12 rounded-full bg-dark-surface-2 flex items-center justify-center text-white font-bold 
+                    transition-all duration-300 ease-in-out group-hover:scale-0 group-hover:opacity-0"
+							>
+								{step.number}
+							</div>
 
-              {/* Content */}
-              <h3 className="text-xl font-bold mb-4">{step.title}</h3>
-              <p className="text-white/70">{makeTextBold(step.description)}</p>
+							{/* Content */}
+							<h3 className="text-xl font-bold mb-4">{step.title}</h3>
+							<p className="text-white/70">{makeTextBold(step.description)}</p>
 
-              {/* Rodyklės burbuliuko stiliumi */}
-              {index < steps.length - 1 && (
-                <>
-                  {/* Desktop / tablet – į dešinę */}
-                  <div
-                    className="hidden md:block absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 
-                      transition-opacity duration-300 group-hover:opacity-0"
-                  >
-                    <div className="w-0 h-0 border-t-[16px] border-b-[16px] border-l-[16px] border-transparent border-l-dark-surface-2"></div>
-                  </div>
-
-                  {/* Mobile – į apačią */}
-                  <div
-                    className="md:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full 
-                      transition-opacity duration-300 group-hover:opacity-0"
-                  >
-                    <div className="w-0 h-0 border-l-[16px] border-r-[16px] border-t-[16px] border-transparent border-t-dark-surface-2"></div>
-                  </div>
-                </>
-              )}
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+							{/* Rodyklės */}
+							{index < steps.length - 1 && (
+								<>
+									<div
+										className="hidden md:block absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 
+                        transition-opacity duration-300 group-hover:opacity-0"
+									>
+										<div className="w-0 h-0 border-t-[16px] border-b-[16px] border-l-[16px] border-transparent border-l-dark-surface-2"></div>
+									</div>
+									<div
+										className="md:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full 
+                        transition-opacity duration-300 group-hover:opacity-0"
+									>
+										<div className="w-0 h-0 border-l-[16px] border-r-[16px] border-t-[16px] border-transparent border-t-dark-surface-2"></div>
+									</div>
+								</>
+							)}
+						</motion.div>
+					))}
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Process;
