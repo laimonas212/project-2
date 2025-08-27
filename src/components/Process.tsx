@@ -54,9 +54,15 @@ const Process = ({
 		},
 		{
 			number: "05",
-			title: "Paleidimas ir palaikymas",
+			title: "Testavimas ir paleidimas",
 			description:
-				"Prieš paleidžiant projektą, atliekame išsamų **testavimą**, kad įsitikintume, jog viskas veikia nepriekaištingai. Po to, atliekame paskutinius **optimizavimo darbus**, konfigūruojame talpinimo paslaugas ir oficialiai paleidžiame svetainę. Mes ne tik paleidžiame projektą, bet ir pasirūpiname, kad jis būtų paruoštas augti ir pritraukti jūsų auditoriją, teikdami ir tolesnį **techninį palaikymą**.",
+				"Prieš paleidžiant projektą, atliekame išsamų **testavimą**, kad įsitikintume, jog viskas veikia nepriekaištingai. Atliekame paskutinius **optimizavimo darbus**, konfigūruojame talpinimo paslaugas ir oficialiai paleidžiame svetainę.",
+		},
+		{
+			number: "06",
+			title: "Palaikymas ir augimas",
+			description:
+				"Po paleidimo rūpinamės tolesniu jūsų projekto sklandžiu veikimu: atliekame **techninį palaikymą**, atnaujinimus, saugumo patikrinimus ir konsultuojame dėl tolimesnio **svetainės augimo** bei SEO tobulinimo.",
 		},
 	],
 	headline = "Išsamus interneto svetainių kūrimo procesas",
