@@ -7,7 +7,7 @@ import CTA from "../components/CTA"; // Galite įkelti CTA komponentą
 
 const Straipsniai = () => {
   return (
-    <div className="pt-4 md:pt-36 min-h-screen">
+    <div className="min-h-screen">
       <Helmet>
         <title>Įrašai ir Naujienos | Amberweb</title>
         <meta

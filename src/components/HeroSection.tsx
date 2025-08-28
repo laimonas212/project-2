@@ -35,7 +35,7 @@ const HeroSection = () => {
   return (
     <motion.div
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="-mt-20 :md-mt-36 relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ opacity }}
     >
       <ParticlesBackground />

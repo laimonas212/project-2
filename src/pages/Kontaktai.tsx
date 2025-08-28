@@ -112,7 +112,7 @@ const Kontaktai = () => {
   };
 
   return (
-    <div className="pt-4 md:pt-36 relative min-h-screen flex flex-col justify-between">
+    <div className="relative min-h-screen flex flex-col justify-between">
       <ParticlesBackground />
 
       {/* Gradient Overlays */}
@@ -129,7 +129,7 @@ const Kontaktai = () => {
         <link rel="canonical" href="https://amberweb.lt/kontaktai" />
       </Helmet>
 
-      <div className="mx-auto relative z-10 w-full max-w-5xl px-4 pt-16">
+      <div className="mx-auto relative z-10 w-full max-w-5xl px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

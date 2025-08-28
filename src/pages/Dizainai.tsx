@@ -207,7 +207,7 @@ const TemplatesPage: React.FC = () => {
   );
 
   return (
-    <div className="pt-4 md:pt-36 min-h-screen">
+    <div className="min-h-screen">
       <Helmet>
         <title>Paruošti dizainai - Svetainių šablonai | Amberweb</title>
         <meta

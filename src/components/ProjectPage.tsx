@@ -60,7 +60,7 @@ export default function ProjectPage({ project }: Props) {
   };
 
   return (
-    <div className="relative mt:4 md:mt-36 mb-12 z-10">
+    <div className="relative z-10">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
       </div>

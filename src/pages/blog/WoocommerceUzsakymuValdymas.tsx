@@ -4,12 +4,17 @@ import React from 'react';
 import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 const entry = blogEntries.find((e) => e.id === "woocommerce-uzsakymu-valdymas");
 
 const WoocommerceUzsakymuValdymas: React.FC = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/blog");
+  };
     return (
-      <div className="pt-36 pb-8 min-h-screen">
+      <div className="min-h-screen">
         <Helmet>
           <title>Užsakymų valdymas WooCommerce | Amberweb</title>
           <meta
@@ -23,6 +28,12 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
         </div>
 
         <div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
+          <button
+            onClick={handleBack}
+            className="mb-6 text-sm text-electric-blue hover:underline"
+          >
+            ← Visi straipsniai
+          </button>
           <div className="w-full pb-8">
             <img
               src={Images.blog.woocommerceUzsakymuValdymas}

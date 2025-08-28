@@ -31,7 +31,7 @@ const ProjectsList: React.FC = () => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="text-center mt-0 md:mt-12 mb-12"
+      className="text-center mb-12"
     >
       <h1 className="text-4xl md:text-5xl font-bold mb-6">Įgyvendinti projektai</h1>
       <p className="text-lg mb-2 text-white/70">
@@ -237,7 +237,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
 const Projects: React.FC = () => {
   return (
-    <div className="pt-4 md:pt-24 relative">
+    <div className="relative">
       <Helmet>
         <title>Įgyvendinti projektai | Amberweb</title>
         <meta

@@ -1,31 +1,42 @@
-import React from 'react';
-import CTA from '../../components/CTA';
-import BlogNavigation from '../../components/BlogNavigation';
-import blogEntries from '../../components/blogEntries';
-import { Helmet } from 'react-helmet-async';
-import { Wrench } from 'lucide-react'; // maža, tinkama ikonėlė
-import Images from '../../img/Images';
+import CTA from "../../components/CTA";
+import BlogNavigation from "../../components/BlogNavigation";
+import blogEntries from "../../components/blogEntries";
+import { Helmet } from "react-helmet-async";
+import { Wrench } from "lucide-react"; // maža, tinkama ikonėlė
+import Images from "../../img/Images";
+import { useNavigate } from "react-router-dom";
+
+
 
 const entry = blogEntries.find((e) => e.id === "kas-yra-divi-5");
 
 const Divi5Straipsnis = () => {
-  return (
-    <div className="pt-36 min-h-screen">
+	const navigate = useNavigate();
+	const handleBack = () => {
+	  	navigate("/blog");
+	};
+	return (
+    <div className="min-h-screen">
       <Helmet>
-        <title>
-          Divi 5 ir WordPress svetainių kūrimas verslui | Amberweb
-        </title>
+        <title>Divi 5 ir WordPress svetainių kūrimas verslui | Amberweb</title>
         <meta
           name="description"
           content="Naujoji Divi 5 versija keičia WordPress svetainių kūrimą – greitesnis veikimas, modulių perrašymas ir švaresnis kodas. Sužinokite, kaip tai padeda verslams gauti modernią svetainę."
         />
         <link rel="canonical" href={`https://amberweb.lt${entry?.url}`} />
       </Helmet>
+
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
       </div>
 
       <div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
+        <button
+          onClick={handleBack}
+          className="mb-6 text-sm text-electric-blue hover:underline"
+        >
+          ← Visi straipsniai
+        </button>
         <div className="w-full pb-8">
           <img
             src={Images.blog.divi5}
@@ -53,8 +64,8 @@ const Divi5Straipsnis = () => {
             Divi 5 atsisakė senos architektūros ir dabar naudoja naują{" "}
             <strong>React pagrįstą modulių sistemą</strong>. Tai leidžia
             puslapiams krautis greičiau, o tai tiesiogiai veikia ir SEO, ir
-            vartotojo patirtį. Jei anksčiau Divi buvo kritikuojamas dėl
-            greičio – ši versija atsako į tuos priekaištus.
+            vartotojo patirtį. Jei anksčiau Divi buvo kritikuojamas dėl greičio
+            – ši versija atsako į tuos priekaištus.
           </p>
 
           <h2 className="text-2xl font-semibold mb-4">
@@ -85,8 +96,8 @@ const Divi5Straipsnis = () => {
             Technologija – bet ne jūsų rūpestis
           </h2>
           <p className="text-white/70 mb-6">
-            Daugelis įmonių nesidomi, ar svetainė padaryta su Divi, Elementor
-            ar custom sprendimu – jiems svarbu, kad ji{" "}
+            Daugelis įmonių nesidomi, ar svetainė padaryta su Divi, Elementor ar
+            custom sprendimu – jiems svarbu, kad ji{" "}
             <strong>
               veiktų greitai, atrodytų profesionaliai ir būtų lengvai valdoma
             </strong>

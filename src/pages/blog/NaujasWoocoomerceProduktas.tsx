@@ -4,12 +4,17 @@ import React from 'react';
 import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 const entry = blogEntries.find((e) => e.id === "naujas-woocommerce-produktas");
 
 const WoocommerceNaujasProduktas: React.FC = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/blog");
+  };
     return (
-      <div className="pt-36 pb-8 min-h-screen">
+      <div className="min-h-screen">
         <Helmet>
           <title>Naujo produkto kūrimas WooCommerce | Amberweb</title>
           <meta
@@ -22,6 +27,12 @@ const WoocommerceNaujasProduktas: React.FC = () => {
           <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
         </div>
         <div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
+          <button
+            onClick={handleBack}
+            className="mb-6 text-sm text-electric-blue hover:underline"
+          >
+            ← Visi straipsniai
+          </button>
           <div className="w-full pb-8">
             <img
               src={Images.blog.newProductWoo}

@@ -4,12 +4,17 @@ import CTA from '../../components/CTA';
 import BlogNavigation from '../../components/BlogNavigation';
 import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 const entry = blogEntries.find((e) => e.url === "/blog/5-klaidos-kurias-daro-verslai");
 
 const KlaidosKuriasDaroVerslai = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/blog");
+  };
     return (
-      <div className="pt-36 min-h-screen">
+      <div className="min-h-screen">
         <Helmet>
           <title>
             5 klaidos, kurias daro verslai kurdami svetainę | Amberweb
@@ -25,6 +30,12 @@ const KlaidosKuriasDaroVerslai = () => {
         </div>
 
         <div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
+          <button
+            onClick={handleBack}
+            className="mb-6 text-sm text-electric-blue hover:underline"
+          >
+            ← Visi straipsniai
+          </button>
           <div className="w-full pb-8">
             <img
               src={Images.blog.penkiosKlaidos}

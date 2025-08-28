@@ -52,7 +52,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-background px-4 relative overflow-hidden">
+    <section className="-mt-20 :md-mt-36 min-h-screen flex flex-col items-center justify-center bg-background px-4 relative overflow-hidden">
       <ParticlesBackground />
 
       {/* Overlays */}

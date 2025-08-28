@@ -74,7 +74,7 @@ function App() {
         <Navbar />
         <ScrollToTopButton />
 
-        <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-24 md:pt-0">
+        <div className="min-h-screen bg-background overflow-hidden flex flex-col pt-32 md:pt-36">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

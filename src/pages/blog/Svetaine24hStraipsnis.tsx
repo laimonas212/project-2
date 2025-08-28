@@ -5,13 +5,17 @@ import blogEntries from '../../components/blogEntries';
 import { Helmet } from 'react-helmet-async';
 import { Clock } from 'lucide-react';
 import Images from '../../img/Images';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const entry = blogEntries.find((e) => e.id === "svetaine-per-24h");
 
 const Svetaine24hStraipsnis = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/blog");
+  };
     return (
-      <div className="pt-36 min-h-screen">
+      <div className="min-h-screen">
         <Helmet>
           <title>
             Internetinė svetainė per 24 val. – ar tai įmanoma? | Amberweb
@@ -27,6 +31,12 @@ const Svetaine24hStraipsnis = () => {
         </div>
         
         <div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
+          <button
+            onClick={handleBack}
+            className="mb-6 text-sm text-electric-blue hover:underline"
+          >
+            ← Visi straipsniai
+          </button>
           <div className="w-full pb-8">
             <img
               src={Images.blog.websiteIn24h}
