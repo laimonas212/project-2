@@ -222,9 +222,15 @@ const TemplatesPage: React.FC = () => {
       </div>
       <div className="container relative mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Paruošti dizainai
-          </h1>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-6 px-4"
+          >
+            <h1 className="text-4xl md:text-5xl mb-8 font-bold">
+              Paruošti dizainai
+            </h1>
+
           <div className="flex justify-center gap-4">
             {[
               { type: "rodyti viską", icon: <Layers /> },
@@ -232,18 +238,19 @@ const TemplatesPage: React.FC = () => {
               { type: "el. parduotuvės", icon: <ShoppingBag /> },
             ].map(({ type, icon }) => (
               <button
-                key={type}
-                onClick={() => setSelectedType(type as typeof selectedType)}
-                className={`px-6 py-2 rounded-full transition-colors text-xs ${
-                  selectedType === type
-                    ? "button-primary"
-                    : "bg-dark-surface-2 text-white/70 hover:text-white"
-                } flex items-center gap-2`}
+              key={type}
+              onClick={() => setSelectedType(type as typeof selectedType)}
+              className={`px-6 py-2 rounded-full transition-colors text-xs ${
+                selectedType === type
+                ? "button-primary"
+                : "bg-dark-surface-2 text-white/70 hover:text-white"
+              } flex items-center gap-2`}
               >
                 {icon}
               </button>
             ))}
           </div>
+            </motion.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32">
