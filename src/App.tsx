@@ -49,7 +49,7 @@ import Usmiler from './pages/projektai/u-smiler';
 import Paparciopm from './pages/projektai/paparciopm';
 import ArchiGrupe from './pages/projektai/archi-grupe';
 import Lithuan from './pages/projektai/lithuan';
-import PuppyYogaMeta from './pages/projektai/puppy-yoga-meta';
+import YogaWithMeta  from './pages/projektai/yoga-with-meta';
 import WordPressKaina2025 from './pages/blog/WordPressKaina2025';
 import InternetoSvetainiuKurimas2025 from './pages/blog/InternetoSvetainiuKurimas2025';
 import PigiosSvetaines from './pages/blog/PigiosSvetaines';
@@ -172,8 +172,8 @@ function App() {
                 element={<Provansosvajos />}
               />
               <Route
-                path="/projektai/puppy-yoga-meta"
-                element={<PuppyYogaMeta />}
+                path="/projektai/yoga-with-meta"
+                element={<YogaWithMeta />}
               />
               <Route
                 path="/projektai/smaragdo-uostas"

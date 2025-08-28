@@ -6,7 +6,7 @@ const sortedIds = [
     'holistine-kosmetologija',
     'dentes-vitae',
     'lithuan',
-    'puppy-yoga-meta',
+    'yoga-with-meta',
     'smaragdo-uostas',
     'tradicine-virtuve',
     'archi-grupe',
