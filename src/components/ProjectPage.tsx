@@ -13,8 +13,7 @@ type Props = {
 export default function ProjectPage({ project }: Props) {
   const navigate = useNavigate();
 
-  // Assuming a base URL for your website
-  const baseUrl = "https://yourwebsite.com";
+  const baseUrl = "https://amberweb.lt";
 
   const handleBack = () => {
     navigate("/projektai");
