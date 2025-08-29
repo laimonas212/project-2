@@ -40,6 +40,7 @@ const ProjectsList: React.FC = () => {
         Kiekvienas jų kruopščiai pritaikytas pagal kliento poreikius, užtikrinant estetiką ir funkcionalumą.
       </p>
     </motion.div>
+
   );
 };
 
@@ -64,7 +65,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
     >
       <div className="w-full relative">
         {/* Mobile Layout */}
-        <div className="lg:hidden space-y-6 px-6">
+        <div className="lg:hidden space-y-6 px-6 mb-8">
           <FadeOutSection>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -78,7 +79,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
               </a>
             </h2>
             {project.subtitle && (
-              <p className="text-electric-blue text-xl mt-2">{project.subtitle}</p>
+              <p className="text-electric-blue text-xl mb-12 mt-2">{project.subtitle}</p>
             )}
             <div className="absolute -inset-4 bg-dark-surface/50 rounded-lg -z-10 backdrop-blur-sm" />
           </motion.div>
@@ -116,7 +117,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             viewport={{ once: true }}
           >
             <div className="relative z-10  backdrop-blur-sm">
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
                 {project.tags.map(tag => (
                   <span
                     key={tag}
@@ -131,7 +132,6 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
             </div>
             </motion.div>
           </FadeOutSection>
-
         </div>
 
         {/* Desktop Layout */}
