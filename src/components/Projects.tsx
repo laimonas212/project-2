@@ -21,6 +21,7 @@ export type Project = {
 };
 
 const projects = [
+  //  LŽSPA
   {
     id: "lzspa",
     title: "LŽSPA",
@@ -29,7 +30,17 @@ const projects = [
       "LŽSPA – Lietuvos žmonių su stuburo pažeidimais asociacijos svetainė, sukurta siekiant informuoti, įgalinti ir suburti bendruomenę. Puslapyje pateikiama informacija apie asociacijos veiklą, renginius, aktualijas bei galimybę prisidėti prie jos iniciatyvų. Dizainas pritaikytas prieinamumui – aiški struktūra, kontrastingos spalvos ir lengvai skaitomas turinys. Projektas įgyvendintas su WordPress ir Divi, neatlygintinai, kaip socialiai atsakinga iniciatyva.",
     image: Images.projects.lzspa,
     alt: "LŽSPA, Lietuvos žmonių su stuburo pažeidimais asociacija interneto svetainė su WordPress, prieinamumo funkcijomis ir informacija apie veiklą",
-    tags: ["Wordpress", "Divi", "Nemokama svetainė", "Prieinamumas", "Labdara"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Prieinamumas",
+      "SEO",
+      "NVO",
+      "Asociacija",
+      "Labdara",
+      "Nemokama svetainė",
+      "Turinio valdymas",
+    ],
     link: "https://www.lzspa.lt",
 
     metaTitle: "LŽSPA – asociacijos svetainės kūrimas | Amberweb",
@@ -58,44 +69,55 @@ const projects = [
       text: "Džiaugiamės svetaine – ji lengvai valdoma, prieinama visiems, o bendruomenė aktyviau dalyvauja mūsų iniciatyvose.",
     },
   },
+  //   Yoga with Mėta
   {
-  id: "yoga-with-meta",
-  title: "Yoga with Mėta",
-  subtitle: "Jogos studija",
-  description:
-    "Yoga with Mėta – unikalūs jogos užsiėmimai, derinantys švelnius jogos pratimus su mažų gyvūnų, tokių kaip šuniukai, kačiukai ir triušiukai, draugija, taip pat joga žvakių šviesoje. Dalyviai gali atsipalaiduoti, sumažinti stresą ir mėgautis jaukia, raminančia atmosfera. Svetainėje pateikiama informacija apie užsiėmimus, trenerius, tvarkaraštį ir leidžiama registruotis internetu.",
-  image: Images.projects.yogaWithMeta,
-  alt: "Yoga with Mėta – jogos su gyvūnais ir joga žvakių šviesoje svetainė su WordPress ir Divi",
-  tags: ["WordPress", "E-Parduotuvė", "Divi", "SEO", "Registracija", "Joga su gyvūnais", "Joga žvakių šviesoje"],
-  link: "https://yogawithmeta.lt",
-  metaTitle: "Yoga with Mėta – jogos su gyvūnais ir žvakių šviesoje svetainės kūrimas | Amberweb",
-  metaDescription:
-    "Sukūrėme Yoga with Mėta svetainę su WordPress ir Divi, pritaikytą SEO, mobiliems įrenginiams ir užsiėmimų registracijai. Užsiėmimai apima jogą su gyvūnais ir jogą žvakių šviesoje.",
-  goals: [
-    "Sukurti jaukią ir raminančią svetainę jogos studijai",
-    "Integruoti užsiėmimų registracijos sistemą",
-    "Optimizuoti turinį SEO paieškai",
-    "Užtikrinti patogų naršymą mobiliuosiuose įrenginiuose",
-    "Tiksliai atspindėti jogos su gyvūnais ir žvakių šviesoje užsiėmimus",
-  ],
-  solutions: [
-    "Jaukus ir raminantis dizainas su WordPress + Divi",
-    "Aiški paslaugų ir užsiėmimų struktūra",
-    "SEO optimizuotas turinys ir meta žymos",
-    "Kontaktų forma ir paprasta registracijos sistema",
-    "Specifinių užsiėmimų informacijos integracija apie jogą su gyvūnais ir žvakių šviesoje sesijas",
-  ],
-  results: [
-    "Padidintas studijos matomumas internete",
-    "Daugiau užsiregistravusių klientų per svetainę",
-    "Sukurtas šiltas ir patrauklus įvaizdis, atitinkantis jogos filosofiją",
-    "Tiksliai komunikuojama apie unikalius užsiėmimus su gyvūnais ir žvakių šviesoje",
-  ],
-  testimonial: {
-    client: "Yoga with Mėta",
-    text: "Svetainė puikiai atspindi mūsų studijos dvasią, o užsiėmimų registracija tapo daug paprastesnė tiek mums, tiek mūsų klientams. Specialūs užsiėmimai su gyvūnais ir joga žvakių šviesoje yra aiškiai pristatyti ir patraukliai pateikti.",
+    id: "yoga-with-meta",
+    title: "Yoga with Mėta",
+    subtitle: "Jogos studija",
+    description:
+      "Yoga with Mėta – unikalūs jogos užsiėmimai, derinantys švelnius jogos pratimus su mažų gyvūnų, tokių kaip šuniukai, kačiukai ir triušiukai, draugija, taip pat joga žvakių šviesoje. Dalyviai gali atsipalaiduoti, sumažinti stresą ir mėgautis jaukia, raminančia atmosfera. Svetainėje pateikiama informacija apie užsiėmimus, trenerius, tvarkaraštį ir leidžiama registruotis internetu.",
+    image: Images.projects.yogaWithMeta,
+    alt: "Yoga with Mėta – jogos su gyvūnais ir joga žvakių šviesoje svetainė su WordPress ir Divi",
+    tags: [
+      "WordPress",
+      "E-Parduotuvė",
+      "Divi",
+      "SEO",
+      "Registracija",
+      "Joga su gyvūnais",
+      "Joga žvakių šviesoje",
+    ],
+    link: "https://yogawithmeta.lt",
+    metaTitle:
+      "Yoga with Mėta – jogos su gyvūnais ir žvakių šviesoje svetainės kūrimas | Amberweb",
+    metaDescription:
+      "Sukūrėme Yoga with Mėta svetainę su WordPress ir Divi, pritaikytą SEO, mobiliems įrenginiams ir užsiėmimų registracijai. Užsiėmimai apima jogą su gyvūnais ir jogą žvakių šviesoje.",
+    goals: [
+      "Sukurti jaukią ir raminančią svetainę jogos studijai",
+      "Integruoti užsiėmimų registracijos sistemą",
+      "Optimizuoti turinį SEO paieškai",
+      "Užtikrinti patogų naršymą mobiliuosiuose įrenginiuose",
+      "Tiksliai atspindėti jogos su gyvūnais ir žvakių šviesoje užsiėmimus",
+    ],
+    solutions: [
+      "Jaukus ir raminantis dizainas su WordPress + Divi",
+      "Aiški paslaugų ir užsiėmimų struktūra",
+      "SEO optimizuotas turinys ir meta žymos",
+      "Kontaktų forma ir paprasta registracijos sistema",
+      "Specifinių užsiėmimų informacijos integracija apie jogą su gyvūnais ir žvakių šviesoje sesijas",
+    ],
+    results: [
+      "Padidintas studijos matomumas internete",
+      "Daugiau užsiregistravusių klientų per svetainę",
+      "Sukurtas šiltas ir patrauklus įvaizdis, atitinkantis jogos filosofiją",
+      "Tiksliai komunikuojama apie unikalius užsiėmimus su gyvūnais ir žvakių šviesoje",
+    ],
+    testimonial: {
+      client: "Yoga with Mėta",
+      text: "Svetainė puikiai atspindi mūsų studijos dvasią, o užsiėmimų registracija tapo daug paprastesnė tiek mums, tiek mūsų klientams. Specialūs užsiėmimai su gyvūnais ir joga žvakių šviesoje yra aiškiai pristatyti ir patraukliai pateikti.",
+    },
   },
-},
+  //   MB Akmenukas
   {
     id: "akmenukas",
     title: "MB Akmenukas",
@@ -104,7 +126,17 @@ const projects = [
       "MB „Akmenukas“ – daugiau nei 20 metų patirties turinti įmonė, kurianti individualius sprendimus paminklų gamyboje, kapaviečių įrengime bei natūralaus akmens gaminių srityje. Svetainėje pristatomos teikiamos paslaugos, skaldos prekyba, akmens gaminiai interjerui ir eksterjerui. Projektas sukurtas naudojant WordPress ir Divi, su švariu, vizualiai patraukliu dizainu, optimizuotu SEO ir socialiniam dalinimuisi.",
     image: Images.projects.akmenukas,
     alt: "MB Akmenukas – paminklų gamyba, kapų tvarkymas ir akmens gaminiai, WordPress svetainė su Divi dizainu",
-    tags: ["WordPress", "Divi", "SEO", "Unikalus dizainas"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "SEO",
+      "Unikalus dizainas",
+      "Paminklai",
+      "Kapų tvarkymas",
+      "Akmens gaminiai",
+      "Kontaktų forma",
+      "Verslo svetainė",
+    ],
     link: "https://akmenukas.lt",
 
     metaTitle: "MB Akmenukas – paminklų gamybos svetainės kūrimas | Amberweb",
@@ -132,7 +164,55 @@ const projects = [
       client: "MB Akmenukas",
       text: "Esame labai patenkinti rezultatu – svetainė atrodo moderniai, ją paprasta valdyti, o klientai mus randa lengviau.",
     },
-  },
+    },
+    //   Dentes Vitae
+    {
+        id: "dentes-vitae",
+        title: "Dentes Vitae",
+        subtitle: "Burnos priežiūros klinika",
+        description:
+            "Dentes Vitae – tai moderni burnos priežiūros klinika, teikianti aukštos kokybės odontologines paslaugas. Svetainėje pateikiama informacija apie klinikos teikiamas paslaugas, gydytojus, pacientų atsiliepimus bei leidžiama registruotis vizitams internetu. Projektas sukurtas naudojant WordPress ir Divi, su švariu, profesionaliu dizainu, optimizuotu SEO ir pritaikytu mobiliems įrenginiams.",
+        image: Images.projects.dentesVitae,
+        alt: "Dentes Vitae – burnos priežiūros klinika, WordPress svetainė su Divi dizainu",
+        tags: [
+            "WordPress",
+            "Divi",
+            "SEO",
+            "Registracija",
+            "Odontologija",
+            "Burnos priežiūra",
+            "Kontaktų forma",
+            "Verslo svetainė",
+        ],
+        link: "https://dentesvitae.lt",
+        metaTitle: "Dentes Vitae – burnos priežiūros svetainės kūrimas | Amberweb",
+        metaDescription:
+            "Sukūrėme Dentes Vitae svetainę su WordPress ir Divi, pritaikytą SEO, mobiliems įrenginiams ir vizitų registracijai. Peržiūrėkite projektą!",
+        goals: [
+            "Sukurti profesionalią ir patikimą interneto svetainę",
+            "Pritaikyti svetainę mobiliesiems įrenginiams",
+            "Optimizuoti turinį SEO paieškai",
+            "Suteikti galimybę paprastai valdyti svetainę su WordPress + Divi",
+            "Leisti pacientams registruotis vizitams internetu",
+        ],
+        solutions: [
+            "Profesionalus dizainas su Divi",
+            "Aiški paslaugų struktūra (odontologija, burnos priežiūra)",
+            "SEO optimizuotas turinys ir meta žymos",
+            "Kontaktų forma ir paprastas pacientų užklausų valdymas",
+            "Integruota vizitų registracijos sistema",
+        ],
+        results: [
+            "Padidintas klinikos matomumas internete",
+            "Paprastesnis pacientų užklausų ir registracijų valdymas",
+            "Šiuolaikiškas įvaizdis, atitinkantis klinikos profesionalumą",
+        ],
+        testimonial: {
+            client: "Dentes Vitae",
+            text: "Svetainė puikiai atspindi mūsų klinikos profesionalumą, o registracijos sistema labai palengvino pacientų aptarnavimą.",
+        },
+},
+  //   Kauno „Paparčio“ mokykla
   {
     id: "paparciopm",
     title: "Kauno „Paparčio“ mokykla",
@@ -141,7 +221,17 @@ const projects = [
       "Kauno „Paparčio“ pradinė mokykla – tai savivaldybės biudžetinė įstaiga, teikianti pradinio ugdymo programas skirtingų gebėjimų mokiniams. Svetainėje pateikiama informacija apie mokyklos veiklą, pedagogus, neformaliojo ugdymo būrelius ir aktualijas. Taip pat integruota „Patyčių dėžutė“ bei prieinamumo nustatymai, užtikrinantys patogų naudojimąsi svetaine visiems lankytojams.",
     image: Images.projects.paparcioPradineMokykla,
     alt: "Kauno „Paparčio“ pradinės mokyklos interneto svetainė su WordPress ir Divi, integruota Patyčių dėžutė ir prieinamumo funkcijos",
-    tags: ["WordPress", "Divi", "Prieinamumas", "Švietimas"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Prieinamumas",
+      "Švietimas",
+      "Patyčių dėžutė",
+      "Mokyklos svetainė",
+      "Kontaktų forma",
+      "SEO",
+      "Turinio valdymas",
+    ],
     link: "https://paparciopm.lt",
 
     metaTitle: "Kauno „Paparčio“ mokykla – interneto svetainė | Amberweb",
@@ -170,6 +260,7 @@ const projects = [
       text: "Svetainė puikiai atspindi mokyklos veiklą ir yra patogi tiek tėvams, tiek mokiniams, o interaktyvios funkcijos padeda bendrauti saugiai.",
     },
   },
+  //   Holistinė kosmetologija
   {
     id: "holistine-kosmetologija",
     title: "Holistinė kosmetologija",
@@ -178,7 +269,18 @@ const projects = [
       "Holistinė kosmetologija – tai sveikatingumo ir grožio paslaugas teikiantis verslas, orientuotas į natūralumą, ekologiškumą ir holistinį požiūrį į kūno priežiūrą. Svetainėje įdiegta aiški paslaugų struktūra, integruota rezervacijų sistema su kalendoriumi bei el. parduotuvė natūraliems produktams. Dizainas sukurtas jaukus ir šviesus, pritaikytas tiek informacijos pateikimui, tiek vartotojo patogumui naršant mobiliuoju įrenginiu.",
     image: Images.projects.holistinekosmetologija,
     alt: "Holistinė kosmetologija, sveikatingumo ir grožio paslaugos su el. parduotuve natūraliems produktams, sukurta WordPress ir WooCommerce",
-    tags: ["WordPress", "Divi", "E-parduotuvė", "Kalendorius"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "WooCommerce",
+      "E-parduotuvė",
+      "Kalendorius",
+      "Grožio paslaugos",
+      "Sveikatingumas",
+      "Kontaktų forma",
+      "SEO",
+      "Produktų katalogas",
+    ],
     link: "https://www.holistinekosmetologija.lt",
 
     metaTitle:
@@ -208,6 +310,7 @@ const projects = [
       text: "Svetainė tiksliai atspindi mūsų koncepciją, o rezervacijos sistema ir e-parduotuvė labai palengvino mūsų darbą su klientais.",
     },
   },
+  //   Advokatės A. Veselovaitės kontora
   {
     id: "veselovaite",
     title: "Advokatės A. Veselovaitės kontora",
@@ -216,7 +319,16 @@ const projects = [
       "A. Veselovaitės advokatų kontora – tai profesionalias teisines paslaugas teikianti įstaiga, orientuota į verslo, šeimos ir baudžiamąją teisę. Sukūrėme modernią, patikimą ir aiškios struktūros svetainę, kurioje lankytojai gali greitai rasti aktualią informaciją apie paslaugas, teisininkų patirtį ir kontaktus. Svetainė sukurta su WordPress ir Divi, įdiegta kalbų pasirinkimo funkcija, pritaikyta įvairiems įrenginiams bei optimizuota SEO.",
     image: Images.projects.veselovaite,
     alt: "A. Veselovaitės advokatų kontoros svetainė su WordPress ir Divi, teisinės paslaugos, kalbų pasirinkimas ir SEO optimizacija",
-    tags: ["WordPress", "Divi", "Kalbos"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Teisinės paslaugos",
+      "SEO",
+      "Kontaktų forma",
+      "Verslo svetainė",
+      "Kalbų pasirinkimas",
+      "LT, EN, RU",
+    ],
     link: "https://www.veselovaite.lt",
 
     metaTitle:
@@ -246,6 +358,7 @@ const projects = [
       text: "Svetainė puikiai reprezentuoja mūsų kontorą, o kalbų pasirinkimo funkcija labai patogi mūsų klientams.",
     },
   },
+  //   TopStone Lietuva
   {
     id: "topstone",
     title: "TopStone Lietuva",
@@ -254,7 +367,18 @@ const projects = [
       "TopStone Lietuva – tai dekoratyvinių akmens kilimų gamintojas ir montuotojas, pristatantis unikalų grindų dangos sprendimą vidaus ir lauko erdvėms. Svetainėje sukurta aiški produktų ir spalvų kolekcijų struktūra, skaičiuoklė kainai paskaičiuoti pagal dangos tipą ir plotą, o dizainas paryškina natūralaus akmens estetiką. Sprendimas sukurtas su WordPress + Divi, optimizuotas tiek informaciniam, tiek pardavimų tikslui.",
     image: Images.projects.topStone,
     alt: "TopStone Lietuva interneto svetainė su WordPress, dekoratyviniai akmens kilimai, grindų dangos skaičiuoklė ir e-parduotuvė",
-    tags: ["WordPress", "Divi", "E-parduotuvė", "Skaičiuoklė"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "WooCommerce",
+      "E-parduotuvė",
+      "Skaičiuoklė",
+      "Akmens kilimai",
+      "Grindų dangos",
+      "SEO",
+      "Kontaktų forma",
+      "Verslo svetainė",
+    ],
     link: "https://www.topstonelietuva.com",
 
     metaTitle:
@@ -284,6 +408,7 @@ const projects = [
       text: "Svetainė puikiai atspindi mūsų produktų unikalumą, o skaičiuoklė padeda klientams apsispręsti greičiau.",
     },
   },
+  //   ARCHI grupė
   {
     id: "archi-grupe",
     title: "ARCHI grupė",
@@ -292,7 +417,16 @@ const projects = [
       "Archigrupė – įmonė, teikianti profesionalias geodezijos, kartografijos, žemėtvarkos bei miškininkystės paslaugas visoje Lietuvoje. Svetainėje pateikiama informacija apie topografinius ir kadastrinius matavimus, teritorijų planavimą, miškotvarką bei kitus sprendimus, susijusius su žemės ūkio ir miškų valdymu. Patogi struktūra leidžia greitai rasti reikiamą paslaugą ir lengvai susisiekti su specialistais.",
     image: Images.projects.archiGrupe,
     alt: "ARCHI grupė, geodezijos ir miškininkystės paslaugos, svetainė su WordPress ir Divi",
-    tags: ["WordPress", "Divi"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Geodezija",
+      "Miškininkystė",
+      "SEO",
+      "Kontaktų forma",
+      "Verslo svetainė",
+      "Turinio valdymas",
+    ],
     link: "https://www.archigrupe.lt",
 
     metaTitle:
@@ -322,6 +456,7 @@ const projects = [
       text: "Svetainė atspindi mūsų profesionalumą ir leidžia klientams greitai rasti reikiamą informaciją.",
     },
   },
+  //   Brangus Auto
   {
     id: "brangus-auto",
     title: "Brangus Auto",
@@ -330,7 +465,17 @@ const projects = [
       "Brangus Auto – įmonė, teikianti greitas ir patikimas automobilių supirkimo paslaugas visoje Lietuvoje. Svetainėje įdiegtas supirkimo pasiūlymo formos sprendimas su galimybe įkelti automobilio nuotraukas bei dokumentus, pateikti informaciją apie transporto priemonę ir greitai gauti atsakymą. Dizainas aiškus, veikia kaip konversijų tunelis – lankytojas iškart nukreipiamas veiksmui, o struktūra pritaikyta tiek mobiliems, tiek stacionariems naudotojams.",
     image: Images.projects.brangusAuto,
     alt: "Brangus Auto WordPress interneto svetainė su automobilių supirkimo forma, nuotraukų ir dokumentų įkėlimu, pritaikyta tiek mobiliems, tiek stacionariems įrenginiams",
-    tags: ["WordPress", "Divi", "Failų įkelimas"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Automobilių supirkimas",
+      "Failų įkėlimas",
+      "Nuotraukų galerija",
+      "Kontaktų forma",
+      "SEO",
+      "Mobiliesiems įrenginiams",
+      "Verslo svetainė",
+    ],
     link: "https://www.brangusauto.lt",
 
     metaTitle: "Brangus Auto – automobilių supirkimo svetainė | Amberweb",
@@ -359,6 +504,7 @@ const projects = [
       text: "Svetainė labai praktiška, supirkimo procesas tapo greitesnis ir lengvesnis mūsų klientams.",
     },
   },
+  //   Kaliausė
   {
     id: "kaliause",
     title: "Kaliausė",
@@ -367,7 +513,17 @@ const projects = [
       "Kaliausė – profesionalių renginių vedėjų komanda, turinti daugiau nei 10 metų patirties organizuojant šventes suaugusiems, įmonėms ir vaikams. Svetainėje pristatomos teikiamos paslaugos, teminių renginių idėjos bei realių švenčių nuotraukų galerijos, padedančios klientams susidaryti aiškų įspūdį. Dizainas žaismingas, tačiau struktūriškai aiškus – lankytojas greitai randa tai, ko ieško. Projektas sukurtas WordPress + Divi pagrindu, pritaikytas skirtingiems įrenginiams bei turinio administravimui savarankiškai.",
     image: Images.projects.kaliause,
     alt: "WordPress svetainė skirta renginių vedėjų komandai, su galerija, teminių renginių idėjomis ir paslaugų pristatymu",
-    tags: ["WordPress", "Divi", "Galerija"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Renginių vedėjai",
+      "Galerija",
+      "Teminiai renginiai",
+      "Kontaktų forma",
+      "SEO",
+      "Verslo svetainė",
+      "Paslaugų pristatymas",
+    ],
     link: "https://www.kaliause.lt",
 
     metaTitle: "Kaliausė – renginių vedėjų svetainė | Amberweb",
@@ -396,6 +552,7 @@ const projects = [
       text: "Esame labai patenkinti svetainės dizainu ir funkcionalumu – mūsų paslaugos pristatomos aiškiai, o klientai greitai randa informaciją.",
     },
   },
+  //   Esu Tau
   {
     id: "esu-tau",
     title: "Esu Tau",
@@ -404,7 +561,17 @@ const projects = [
       "Esu Tau – dvasinio konsultavimo ir asmeninio augimo paslaugas teikiantis projektas, orientuotas į žmones, ieškančius vidinės ramybės, savęs pažinimo ir emocinės pusiausvyros. Svetainė minimalistinė, šilta ir jauki, perteikianti paslaugų esmę per tekstus, vizualus ir švarią struktūrą. Informacija pateikta aiškiai, su lengvu navigavimu, o WordPress + Divi pagrindu sukurta sistema leidžia lengvai administruoti turinį bei bendrauti su lankytojais per kontaktų formą.",
     image: Images.projects.esuTau,
     alt: "Minimalistinė WordPress svetainė dvasinio konsultavimo paslaugoms, su aiškia struktūra ir lengvu navigavimu",
-    tags: ["Wordpress", "Divi"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Dvasinis konsultavimas",
+      "Minimalistinis dizainas",
+      "Kontaktų forma",
+      "SEO",
+      "Verslo svetainė",
+      "Turinio valdymas",
+      "Lengva navigacija",
+    ],
     link: "https://www.esutau.lt",
 
     metaTitle: "Esu Tau – dvasinio konsultavimo svetainė | Amberweb",
@@ -433,6 +600,7 @@ const projects = [
       text: "Svetainė tiksliai perteikia mūsų veiklos esmę – minimalistinė, aiški ir patogi tiek mums, tiek lankytojams.",
     },
   },
+  //   Angel Butikas
   {
     id: "angel-butikas",
     title: "Angel Butikas",
@@ -441,7 +609,18 @@ const projects = [
       "Angel Butikas – tai internetinė mados platforma, pristatanti išskirtinius drabužius ir aksesuarus moterims, ieškančioms originalumo ir elegancijos. Svetainėje įgyvendinta e. prekybos sistema su patogia prekių naršymo patirtimi, vizualiai akcentuotos kolekcijos bei paprastas užsakymo procesas. Dizainas subtilus ir moteriškas, paremtas šviesia palete bei aiškia struktūra, leidžiančia greitai atrasti norimą prekę. Sukurta naudojant WordPress ir Divi, optimizuota mobiliesiems.",
     image: Images.projects.angelButikas,
     alt: "WordPress interneto svetainė mados butikai, su e. prekybos sistema, patogiu prekių naršymu ir užsakymu",
-    tags: ["Wordpress", "Divi", "E-parduotuvė"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "E-parduotuvė",
+      "Mados butikai",
+      "WooCommerce",
+      "Produktų katalogas",
+      "Patogus naršymas",
+      "Užsakymų sistema",
+      "SEO",
+      "Verslo svetainė",
+    ],
     link: "https://www.angelbutikas.lt",
 
     metaTitle: "Angel Butikas – internetinė mados svetainė | Amberweb",
@@ -470,6 +649,7 @@ const projects = [
       text: "Svetainė tiksliai atspindi mūsų stilių – elegantiška, lengvai naršoma ir skatinanti pirkimus.",
     },
   },
+  //   GoDeko
   {
     id: "godeko",
     title: "GoDeko",
@@ -478,7 +658,17 @@ const projects = [
       "GoDeko – kūrybinė studija, teikianti švenčių dekoravimo paslaugas įvairioms progoms: nuo vaikų gimtadienių iki vestuvių ar įmonių renginių. Svetainėje akcentuojamas vizualinis turinys – integruota galerija su realių projektų nuotraukomis padeda lankytojams pajusti dekoro stilių ir estetiką. Aiški paslaugų struktūra ir užklausos forma leidžia greitai susisiekti dėl individualaus dekoro sprendimo. Projektas sukurtas su WordPress ir Divi, dizainas lengvas, žaismingas ir pilnai pritaikytas mobiliesiems įrenginiams.",
     image: Images.projects.godeko,
     alt: "WordPress svetainė švenčių dekoravimo paslaugoms, su galerija ir užklausos forma, pritaikyta mobiliems įrenginiams",
-    tags: ["Wordpress", "Divi", "Galerija"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Švenčių dekoravimas",
+      "Galerija",
+      "Kontaktų / užklausos forma",
+      "SEO",
+      "Mobiliesiems įrenginiams",
+      "Verslo svetainė",
+      "Paslaugų pristatymas",
+    ],
     link: "https://www.godeko.lt",
 
     metaTitle: "GoDeko – švenčių dekoravimo svetainė | Amberweb",
@@ -507,6 +697,7 @@ const projects = [
       text: "Svetainė puikiai atspindi mūsų kūrybą – lengva naršyti, vizualiai patraukli ir skatina klientus susisiekti.",
     },
   },
+  //   Eriola
   {
     id: "eriola",
     title: "Eriola",
@@ -515,7 +706,18 @@ const projects = [
       "Eriola – tarptautinė logistikos ir krovinių pervežimo įmonė, teikianti platų transportavimo paslaugų spektrą visoje Europoje ir už jos ribų. Svetainėje pristatytos pagrindinės paslaugų kryptys, pabrėžiant įmonės patirtį, patikimumą ir operatyvų klientų aptarnavimą. Dizainas modernus ir aiškus, su integruotu kalbų pasirinkimu, pritaikytas skirtingiems rinkų segmentams. Sukurta su WordPress ir Divi, svetainė lengvai administruojama bei puikiai veikia visuose įrenginiuose.",
     image: Images.projects.eriola,
     alt: "WordPress svetainė tarptautinei logistikos įmonei su kalbų pasirinkimo funkcija ir moderniu dizainu",
-    tags: ["Wordpress", "Divi", "Kalbos"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Logistika",
+      "Tarptautinė įmonė",
+      "Kalbų pasirinkimas",
+      "SEO",
+      "Verslo svetainė",
+      "Kontaktų forma",
+      "Modernus dizainas",
+    ],
+
     link: "https://www.eriola.lt",
 
     metaTitle: "Eriola – logistikos svetainė | Amberweb",
@@ -544,6 +746,7 @@ const projects = [
       text: "Svetainė puikiai atspindi mūsų profesionalumą – moderni, aiški ir lengvai administruojama.",
     },
   },
+  //   Lithuan
   {
     id: "lithuan",
     title: "Lithuan",
@@ -552,7 +755,18 @@ const projects = [
       "Lithuan – profesionalias vertimo paslaugas teikiantis biuras, dirbantis su įvairiomis kalbų poromis ir skirtingų sričių tekstais – nuo teisinių dokumentų iki techninių instrukcijų. Svetainėje pateikta aiški paslaugų struktūra, kalbų sąrašas, įkainių informacija ir kontaktų forma greitam užklausos pateikimui. Dizainas minimalus ir funkcionalus, orientacija į verslo klientus. Projektas įgyvendintas su WordPress ir Divi, užtikrinant lengvą turinio valdymą ir gerą pasiekiamumą mobiliuose įrenginiuose.",
     image: Images.projects.lithuan,
     alt: "WordPress svetainė vertimų biurui su aiškia paslaugų struktūra ir kalbų pasirinkimo funkcija",
-    tags: ["Wordpress", "Divi", "Kalbos"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Vertimų biuras",
+      "Paslaugų struktūra",
+      "Kalbų pasirinkimas",
+      "SEO",
+      "Verslo svetainė",
+      "Kontaktų forma",
+      "Profesionalus dizainas",
+    ],
+
     link: "https://www.lithuan.eu",
 
     metaTitle: "Lithuan – vertimų biuro svetainė | Amberweb",
@@ -581,6 +795,7 @@ const projects = [
       text: "Svetainė profesionaliai atspindi mūsų paslaugų pobūdį – aiški, funkcionali ir paprasta naudotis.",
     },
   },
+  //   Gavorka Art
   {
     id: "gavorka-art",
     title: "Gavorka Art",
@@ -589,7 +804,18 @@ const projects = [
       "Gavorka Art – meninė galerija internete, skirta pristatyti išskirtinius Povilo Gavorkos kūrinius. Svetainė sukurta kaip minimalistinė ir vizualiai išgryninta erdvė, leidžianti lankytojui koncentruotis į meną – be pašalinių trukdžių. Integruota galerija su darbų peržiūra, kūrinių aprašymais bei informacija apie menininko veiklą. Projektas įgyvendintas WordPress ir Divi pagrindu, optimizuotas vizualinio turinio pateikimui ir naršymui skirtinguose įrenginiuose.",
     image: Images.projects.gavorkaArt,
     alt: "Gavorka Art – meninė galerija WordPress ir Divi pagrindu, pristatanti Povilo Gavorkos kūrinius",
-    tags: ["Wordpress", "Divi", "Galerija"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Meninė galerija",
+      "Povilo Gavorkos kūriniai",
+      "SEO",
+      "Verslo svetainė",
+      "Kontaktų forma",
+      "Portfelis",
+      "Vizualinis dizainas",
+    ],
+
     link: "https://www.gavorka.art",
 
     metaTitle: "Gavorka Art – meninė galerija internete | Amberweb",
@@ -616,6 +842,7 @@ const projects = [
       text: "Svetainė puikiai perteikia mano kūrinių esmę – minimalistinė, aiški ir vizualiai patraukli.",
     },
   },
+  //   Gavorka
   {
     id: "gavorka",
     title: "Gavorka",
@@ -624,7 +851,18 @@ const projects = [
       "Gavorka – 3D animacijos studijos svetainė, skirta vizualiai pristatyti kūrybinius projektus ir animuotus sprendimus. Tinklalapyje pateikiamas darbų portfolio, demonstruojantis įvairius 3D animacijos stilius ir taikymus – nuo komercinių projektų iki asmeninių vizualinių eksperimentų. Dizainas kontrastingas, leidžiantis animacijoms išsiskirti, o navigacija minimalistinė ir greita. Svetainė sukurta su WordPress ir Divi, pritaikyta darbų demonstravimui bei klientų užklausų pateikimui.",
     image: Images.projects.gavorka,
     alt: "Gavorka 3D animacijos portfolio su WordPress ir Divi, skirta animuotų projektų demonstravimui",
-    tags: ["Wordpress", "Divi", "Portfolio"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "3D animacija",
+      "Portfolio",
+      "Animuoti projektai",
+      "SEO",
+      "Verslo svetainė",
+      "Kontaktų forma",
+      "Vizualinis dizainas",
+    ],
+
     link: "https://www.gavorka.com",
 
     metaTitle: "Gavorka – 3D animacijos studija internete | Amberweb",
@@ -651,6 +889,7 @@ const projects = [
       text: "Svetainė puikiai perteikia mano kūrybinius projektus ir leidžia klientams lengvai susisiekti dėl užsakymų.",
     },
   },
+  //   Grožio Forma
   {
     id: "grozio-forma",
     title: "Grožio Forma",
@@ -659,7 +898,19 @@ const projects = [
       "Grožio Forma – internetinė kosmetikos parduotuvė, siūlanti platų grožio priemonių asortimentą moterims, vertinančioms kokybę ir estetiką. Svetainėje įdiegta patogi el. prekybos sistema su išsamia prekių informacija, filtravimo galimybėmis ir sklandžiu užsakymo procesu. Dizainas šviesus, minimalistinis, orientuotas į vizualinę prekių pateiktį bei mobiliųjų naudotojų patirtį. Projektas įgyvendintas WordPress ir Divi pagrindu, užtikrinant lengvą administravimą ir greitą veikimą.",
     image: Images.projects.grozioForma,
     alt: "Grožio Forma – kosmetikos e-parduotuvė sukurtas su WordPress ir WooCommerce, minimalistinis dizainas",
-    tags: ["Wordpress", "Divi", "E-parduotuvė"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "WooCommerce",
+      "Kosmetika",
+      "E-parduotuvė",
+      "Minimalistinis dizainas",
+      "SEO",
+      "Verslo svetainė",
+      "Produktų katalogas",
+      "Patogus naršymas",
+    ],
+
     link: "https://www.grozioforma.lt",
 
     metaTitle: "Grožio Forma – kosmetikos e-parduotuvė | Amberweb",
@@ -686,6 +937,7 @@ const projects = [
       text: "Svetainė tapo aiški, minimalistinė ir labai patogi mūsų klientams naršyti bei pirkti prekes.",
     },
   },
+  //   OVC
   {
     id: "ovc",
     title: "OVC",
@@ -694,7 +946,19 @@ const projects = [
       "OVC – tai internetinė parduotuvė, kurioje pristatomi unikalūs mokymų produktai – knygos, žaidimai ir praktiniai įrankiai, sukurti OVC Consulting komandos. Svetainė skirta tam, kad lankytojai lengvai atrastų tinkamiausius produktus asmeniniam tobulėjimui, komandiniam darbui ar profesiniams mokymams. Integruota el. prekybos sistema su aiškiu produktų išdėstymu, patogiu krepšeliu ir sklandžiu pirkimo procesu. Dizainas švarus ir modernus, su WordPress + Divi pagrindu, pritaikytas tiek verslo klientams, tiek individualiems pirkėjams.",
     image: Images.projects.ovc,
     alt: "OVC – internetinė parduotuvė su mokymų produktais sukurta WordPress ir WooCommerce, modernus dizainas",
-    tags: ["Wordpress", "Divi", "E-parduotuvė"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "WooCommerce",
+      "Mokymai",
+      "E-parduotuvė",
+      "Modernus dizainas",
+      "SEO",
+      "Verslo svetainė",
+      "Produktų katalogas",
+      "Patogus naršymas",
+    ],
+
     link: "https://www.e-shop.ovc.lt",
 
     metaTitle: "OVC – internetinė mokymų parduotuvė | Amberweb",
@@ -721,6 +985,7 @@ const projects = [
       text: "Svetainė labai patogi ir moderni – klientams lengva rasti produktus ir juos įsigyti.",
     },
   },
+  //   Printery
   {
     id: "printery",
     title: "Printery",
@@ -729,7 +994,19 @@ const projects = [
       "Printery – tai spaudos ant tekstilės paslaugas teikianti platforma, leidžianti klientams kurti individualius dizainus drabužiams ir aksesuarams. Svetainėje integruota failų įkėlimo sistema, leidžianti pateikti savo maketus ar logotipus tiesiai užsakymo metu. El. parduotuvėje patogiai pateikti produktai, spaudos tipai ir kainos, o užsakymo procesas – greitas ir intuityvus. Dizainas švarus, su moderniu charakteriu, pritaikytas tiek B2C, tiek B2B klientams. Projektas sukurtas su WordPress ir Divi, dėmesys skirtas sklandžiai vartotojo patirčiai bei techniniam funkcionalumui.",
     image: Images.projects.printery,
     alt: "Printery – spauda ant tekstilės su WordPress ir WooCommerce, paprasta ir intuityvi e-parduotuvė",
-    tags: ["Wordpress", "Divi", "E-parduotuvė", "Failų įkelimas"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "WooCommerce",
+      "Spauda ant tekstilės",
+      "E-parduotuvė",
+      "Failų įkelimas",
+      "Patogus naršymas",
+      "SEO",
+      "Verslo svetainė",
+      "Minimalistinis dizainas",
+    ],
+
     link: "https://www.printery.lt",
 
     metaTitle:
@@ -757,6 +1034,7 @@ const projects = [
       text: "Svetainė leidžia mūsų klientams greitai pateikti maketus ir užsakymus, o dizainas atrodo profesionaliai.",
     },
   },
+  //   Prisipūsk Šypseną
   {
     id: "prisipusk-sypsena",
     title: "Prisipūsk Šypseną",
@@ -765,7 +1043,20 @@ const projects = [
       "Prisipūsk Šypseną – tai internetinė parduotuvė, siūlanti ne tik balionų dekoracijas, bet ir prasmingas dovanas bei ritualinius rinkinius, skirtus džiuginti ir įkvėpti. Svetainėje integruota el. prekybos sistema su aiškia prekių struktūra, leidžiančia lengvai rasti norimą produktą. Dizainas šviesus ir žaismingas, atspindintis prekės ženklo pozityvumą. Projektas sukurtas naudojant WordPress ir Divi, užtikrinant patogų turinio valdymą ir sklandų naršymą įvairiuose įrenginiuose.",
     image: Images.projects.prisipuskSypsena,
     alt: "Prisipūsk Šypseną – balionų ir dovanų parduotuvė sukurta su WordPress ir WooCommerce, šviesus ir žaismingas dizainas",
-    tags: ["Wordpress", "Divi", "E-parduotuvė"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "WooCommerce",
+      "Balionai",
+      "Dovanos",
+      "E-parduotuvė",
+      "Šviesus dizainas",
+      "Žaismingas dizainas",
+      "SEO",
+      "Verslo svetainė",
+      "Patogus naršymas",
+    ],
+
     link: "https://www.prisipusksypsena.lt",
 
     metaTitle: "Prisipūsk Šypseną – balionų ir dovanų e-parduotuvė | Amberweb",
@@ -792,6 +1083,7 @@ const projects = [
       text: "Svetainė tapo aiški, šviesi ir patraukli mūsų klientams – užsakymų skaičius padidėjo.",
     },
   },
+  //   Provanso Svajos
   {
     id: "provanso-svajos",
     title: "Provanso Svajos",
@@ -800,7 +1092,19 @@ const projects = [
       "Provanso Svajos – kūrybinės dirbtuvės ir jauki erdvė, kurioje vyksta rankdarbių užsiėmimai, edukacijos, vaikų vasaros stovyklos bei rankų darbo dovanų kūrimas. Svetainė skirta pristatyti veiklų grafiką, supažindinti lankytojus su dirbtuvėse gimstančiais kūriniais bei suteikti galimybę susisiekti dėl dalyvavimo ar individualių užsakymų. Dizainas šviesus, įkvėptas Provanso estetikos, o struktūra – paprasta ir šilta, skatinanti naršyti. Projektas sukurtas naudojant WordPress ir Divi, orientuotas į bendruomeniškumą ir kūrybišką saviraišką.",
     image: Images.projects.provansoSvajos,
     alt: "Provanso Svajos – rankų darbo dovanų ir dirbtuvių svetainė sukurta naudojant WordPress ir Divi",
-    tags: ["Wordpress", "Divi", "E-parduotuvė"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Rankų darbo dovanos",
+      "Dirbtuvės",
+      "E-parduotuvė",
+      "SEO",
+      "Verslo svetainė",
+      "Minimalistinis dizainas",
+      "Kontaktų forma",
+      "Patogus naršymas",
+    ],
+
     link: "https://www.provansosvajos.lt",
 
     metaTitle: "Provanso Svajos – rankų darbo dovanos ir dirbtuvės | Amberweb",
@@ -827,6 +1131,7 @@ const projects = [
       text: "Svetainė leidžia lengvai susipažinti su mūsų kūriniais ir dalyvauti dirbtuvėse – labai patogu.",
     },
   },
+  //   Smaragdo Uostas
   {
     id: "smaragdo-uostas",
     title: "Smaragdo Uostas",
@@ -835,7 +1140,19 @@ const projects = [
       "Smaragdo Uostas – vaikų darželis, kuriame kuriama saugi, šilta ir kūrybiška aplinka mažųjų ugdymui. Svetainėje pateikiama išsami informacija apie ugdymo programas, kasdienę darželio rutiną, pedagogų komandą ir organizuojamas veiklas. Integruota galerija leidžia tėvams susipažinti su darželio aplinka bei veiklų akimirkomis. Dizainas šviesus, draugiškas ir lengvai naršomas, sukurtas naudojant WordPress ir Divi – užtikrinant tiek informacijos aiškumą, tiek patogų turinio valdymą.",
     image: Images.projects.smaragdoUostas,
     alt: "Smaragdo Uostas – vaikų darželis su WordPress ir Divi, edukacinės veiklos ir galerija",
-    tags: ["Wordpress", "Divi", "Galerija"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Vaikų darželis",
+      "Edukacinė veikla",
+      "Galerija",
+      "SEO",
+      "Verslo svetainė",
+      "Kontaktų forma",
+      "Mobiliesiems įrenginiams",
+      "Informacija tėvams",
+    ],
+
     link: "https://www.smaragdouostas.lt",
 
     metaTitle: "Smaragdo Uostas – vaikų darželis su galerija | Amberweb",
@@ -862,6 +1179,7 @@ const projects = [
       text: "Svetainė labai informatyvi ir patogi tėvams – aišku, ką siūlome vaikams ir kaip registruotis.",
     },
   },
+  //   SSSprendimai
   {
     id: "sssprendimai",
     title: "SSSprendimai",
@@ -870,7 +1188,19 @@ const projects = [
       "SSSprendimai – įmonės svetainė, pristatanti profesionalius silpnųjų srovių sprendimus: nuo apsaugos sistemų iki vaizdo stebėjimo, elektros instaliacijos bei IT tinklų. Svetainėje pateikta aiški paslaugų struktūra, leidžianti greitai suprasti, kokius sprendimus įmonė siūlo verslui ar privatiems klientams. Dizainas minimalus, funkcionalus, atitinkantis techninio sektoriaus lūkesčius. Projektas įgyvendintas su WordPress ir Divi, užtikrinant stabilų veikimą, greitą įkėlimą ir lengvą administravimą.",
     image: Images.projects.sssprendimai,
     alt: "SSSprendimai – silpnųjų srovių sprendimai, apsaugos sistemos ir IT tinklai sukurta naudojant WordPress ir Divi",
-    tags: ["Wordpress", "Divi"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "IT sprendimai",
+      "Apsaugos sistemos",
+      "Silpnųjų srovių sprendimai",
+      "SEO",
+      "Verslo svetainė",
+      "Kontaktų forma",
+      "Techninis dizainas",
+      "Mobiliesiems įrenginiams",
+    ],
+
     link: "https://www.sssprendimai.lt",
 
     metaTitle: "SSSprendimai – silpnųjų srovių sprendimų svetainė | Amberweb",
@@ -897,6 +1227,7 @@ const projects = [
       // text: "Svetainė aiški ir profesionali, padeda klientams greitai rasti reikiamą informaciją."
     },
   },
+  //   Termoventa
   {
     id: "termoventa",
     title: "Termoventa",
@@ -905,7 +1236,19 @@ const projects = [
       "Termoventa – įmonės svetainė, pristatanti inžinerinių sistemų projektavimo, montavimo ir aptarnavimo paslaugas. Svetainėje pateikiama techninė informacija apie šildymo, vėdinimo, kondicionavimo bei kitus sprendimus, sklandžiai struktūruota pagal paslaugų kategorijas. Dizainas modernus ir funkcionalus, orientuotas į verslo klientus, ieškančius patikimo partnerio. Projektas įgyvendintas WordPress ir Divi pagrindu, užtikrinant lengvą turinio administravimą ir patogią vartotojo patirtį tiek kompiuteriuose, tiek mobiliuosiuose įrenginiuose.",
     image: Images.projects.termoventa,
     alt: "Termoventa – inžinerinių sistemų projektavimas ir montavimas, sukurtas su WordPress ir Divi",
-    tags: ["Wordpress", "Divi"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Inžinerinės sistemos",
+      "Projektavimas",
+      "Montavimas",
+      "SEO",
+      "Verslo svetainė",
+      "Kontaktų forma",
+      "Techninis dizainas",
+      "Mobiliesiems įrenginiams",
+    ],
+
     link: "https://www.termoventa.lt",
 
     metaTitle:
@@ -933,6 +1276,7 @@ const projects = [
       text: "Svetainė aiški ir profesionali, puikiai pristato mūsų paslaugas.",
     },
   },
+  //   Tradicinė Virtuvė
   {
     id: "tradicine-virtuve",
     title: "Tradicinė Virtuvė",
@@ -941,7 +1285,19 @@ const projects = [
       "Tradicinė Virtuvė – tai kavinės svetainė, skirta pristatyti autentiškus lietuviškus patiekalus šiuolaikiškai. Svetainėje lankytojai gali peržiūrėti išsamų meniu, pasigrožėti patiekalų nuotraukomis bei greitai rasti kontaktinę informaciją ar rezervacijos galimybę. Dizainas šiltas, jaukus, atitinkantis tradicinės virtuvės dvasią, tačiau pateiktas moderniai ir aiškiai. Projektas sukurtas su WordPress ir Divi, pritaikytas tiek stacionariems įrenginiams, tiek mobiliesiems – kad alkani klientai greitai rastų, ko ieško.",
     image: Images.projects.tradicineVirtuve,
     alt: "Tradicinė Virtuvė – lietuviškų patiekalų kavinė sukurta naudojant WordPress ir Divi, modernus dizainas",
-    tags: ["Wordpress", "Divi"],
+    tags: [
+      "WordPress",
+      "Divi",
+      "Kavinė",
+      "Lietuviški patiekalai",
+      "Modernus dizainas",
+      "SEO",
+      "Verslo svetainė",
+      "Meniu",
+      "Kontaktų forma",
+      "Mobiliesiems įrenginiams",
+    ],
+
     link: "https://www.tradicinevirtuve.lt",
 
     metaTitle: "Tradicinė Virtuvė – kavinės svetainė su meniu | Amberweb",
@@ -968,41 +1324,54 @@ const projects = [
       text: "Svetainė aiški ir patogi – lankytojai greitai randa meniu ir kontaktus.",
     },
   },
-    {
-        id: "u-smiler",
-        title: "U-Smiler",
-        subtitle: "Irigatorius",
-        description:
-            "U-Smiler – internetinė parduotuvė, skirta irigatorių – dantų ir burnos ertmės priežiūros prietaisų – pristatymui ir pardavimui. Svetainėje pateikiama detali informacija apie produktų privalumus, naudojimo būdus bei naudą sveikatai. Dizainas švarus, minimalistinis, atspindintis higienos tematiką ir pasitikėjimą. Įdiegta patogi užsakymo sistema, leidžianti greitai įsigyti prekę tiek mobiliuoju, tiek kompiuteriu. Projektas sukurtas WordPress ir Divi pagrindu, optimizuotas vartotojo patirčiai ir pirkimo konversijoms.",
-        image: Images.projects.uSmiler,
-        alt: "U-Smiler – dantų ir burnos ertmės priežiūros prietaisai, e-parduotuvė sukurta su WordPress ir WooCommerce",
-        tags: ["Wordpress", "Divi", "E-parduotuvė"],
-        link: "https://www.u-smiler.lt",
+  //   U-Smiler
+  {
+    id: "u-smiler",
+    title: "U-Smiler",
+    subtitle: "Irigatorius",
+    description:
+      "U-Smiler – internetinė parduotuvė, skirta irigatorių – dantų ir burnos ertmės priežiūros prietaisų – pristatymui ir pardavimui. Svetainėje pateikiama detali informacija apie produktų privalumus, naudojimo būdus bei naudą sveikatai. Dizainas švarus, minimalistinis, atspindintis higienos tematiką ir pasitikėjimą. Įdiegta patogi užsakymo sistema, leidžianti greitai įsigyti prekę tiek mobiliuoju, tiek kompiuteriu. Projektas sukurtas WordPress ir Divi pagrindu, optimizuotas vartotojo patirčiai ir pirkimo konversijoms.",
+    image: Images.projects.uSmiler,
+    alt: "U-Smiler – dantų ir burnos ertmės priežiūros prietaisai, e-parduotuvė sukurta su WordPress ir WooCommerce",
+    tags: [
+      "WordPress",
+      "Divi",
+      "WooCommerce",
+      "Dantų priežiūros prietaisai",
+      "E-parduotuvė",
+      "SEO",
+      "Verslo svetainė",
+      "Produktų katalogas",
+      "Minimalistinis dizainas",
+      "Patogus naršymas",
+    ],
 
-        metaTitle: "U-Smiler – irigatorių e-parduotuvė | Amberweb",
-        metaDescription:
-            "Sukūrėme U-Smiler e-parduotuvę su WordPress ir WooCommerce, pristatančią irigatorius ir dantų priežiūros priemones.",
+    link: "https://www.u-smiler.lt",
 
-        goals: [
-            "Pristatyti ir parduoti dantų ir burnos ertmės priežiūros prietaisus",
-            "Sukurti minimalistinę ir higienišką svetainę",
-            "Optimizuoti vartotojo patirtį pirkimui",
-        ],
-        solutions: [
-            "WordPress + Divi e-parduotuvė",
-            "Detali produktų informacija ir aiškus užsakymo procesas",
-            "Minimalistinis dizainas, optimizuotas konversijoms",
-        ],
-        results: [
-            "Padidintas prekių pardavimas",
-            "Greitas ir patogus pirkimo procesas",
-            "Pozityvi vartotojo patirtis",
-        ],
-        testimonial: {
-            client: "U-Smiler",
-            text: "Svetainė minimalistinė ir patogi – klientams lengva įsigyti prekę.",
-        },
+    metaTitle: "U-Smiler – irigatorių e-parduotuvė | Amberweb",
+    metaDescription:
+      "Sukūrėme U-Smiler e-parduotuvę su WordPress ir WooCommerce, pristatančią irigatorius ir dantų priežiūros priemones.",
+
+    goals: [
+      "Pristatyti ir parduoti dantų ir burnos ertmės priežiūros prietaisus",
+      "Sukurti minimalistinę ir higienišką svetainę",
+      "Optimizuoti vartotojo patirtį pirkimui",
+    ],
+    solutions: [
+      "WordPress + Divi e-parduotuvė",
+      "Detali produktų informacija ir aiškus užsakymo procesas",
+      "Minimalistinis dizainas, optimizuotas konversijoms",
+    ],
+    results: [
+      "Padidintas prekių pardavimas",
+      "Greitas ir patogus pirkimo procesas",
+      "Pozityvi vartotojo patirtis",
+    ],
+    testimonial: {
+      client: "U-Smiler",
+      text: "Svetainė minimalistinė ir patogi – klientams lengva įsigyti prekę.",
     },
+  },
 ];
 
 export default projects;
