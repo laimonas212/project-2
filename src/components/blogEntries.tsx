@@ -502,6 +502,55 @@ Išvada
 Tinkamai pasirinktas domenas yra ilgalaikė investicija į jūsų verslo matomumą internete. Paprastumas, tinkama galūnė, raktažodžiai ir prekės ženklo stiprinimas – pagrindiniai kriterijai, į kuriuos verta atsižvelgti.`,
     url: "/blog/domeno-pasirinkimas",
   },
+  {
+    id: "senos-svetaines-atnaujinimas-ar-kurti-nauja",
+    image: Images.blog.senaVsNauja,
+    title: "Atnaujinti seną svetainę ar kurti naują? Pilnas gidas 2025",
+    excerpt: `
+      Daugelis verslų susiduria su dilema: gaivinti seną svetainę ar kurti naują su WordPress. Žemiau – praktiškas palyginimas pagal greitį, SEO, kainą, saugumą ir rizikas, kad pasirinkimas būtų pagrįstas.
+
+1. Kada užtenka atnaujinti seną svetainę?
+Dizainas morališkai tvarkingas, reikia tik kosmetikos (spalvos, tipografija, vizualai).
+Sistema palaikoma (WordPress naujausia versija, įskiepiai atnaujinami).
+Turinio daug (straipsniai, produktai), nenori masinės migracijos.
+SEO pozicijos stabilios – pokyčiai turi būti atsargūs, kad jų neprarasti.
+2. Kada geriau kurti naują svetainę?
+Sena technologija (custom CMS, neatnaujinami įskiepiai, nėra mobilumo).
+Lėtas krovimas, saugumo spragos, dažni nulūžimai.
+Reikalingos naujos funkcijos: WooCommerce, rezervacijos, integracijos, kalbos.
+Dizainas atbaido lankytojus ir mažina konversiją.
+3. Kainos: atnaujinimas vs. nauja svetainė
+Atnaujinimas (UI korekcijos, greičio/SEO pataisymai): dažniausiai nuo 200–500 €.
+Nauja WordPress svetainė (Divi + SEO pagrindai): nuo 499 €.
+WooCommerce parduotuvė: nuo 799 €, priklausomai nuo funkcijų.
+
+Pastaba: reali kaina priklauso nuo apimties, integracijų ir turinio kiekio.
+
+4. SEO rizikos ir kaip jų išvengti
+URL žemėlapis: nekeičiant struktūros – palikti; keičiant – sukurti 301 peradresavimus.
+Meta žymos ir H1: perkelti/optimizuoti prieš paleidžiant.
+Sitemap + robots.txt: atnaujinti ir pateikti į Google Search Console.
+Greitis: CDN, vaizdų optimizacija, kešavimas, minimalūs skriptai.
+5. Greitas sprendimo medis
+Jei svetainė > 5–7 metų ir lėta – nauja.
+Jei SEO traukia srautą ir reikia tik UX – atnaujinimas.
+Jei reikalingos naujos funkcijos – nauja.
+Jei biudžetas ribotas, bet reikia „atsikvėpti“ – mini atnaujinimas dabar, planuojant naują vėliau.
+6. Mūsų pasiūlymas 2025 m.
+Greita esamos svetainės apžiūra (UX, SEO, greitis, saugumas).
+Aiški rekomendacija: gaivinti ar kurti naują – su pro/contra.
+Jei nauja – WordPress + Divi, mobilumas, bazinis SEO, turinio perkėlimas, 301 planas.
+7. D.U.K.
+Ar prarasiu SEO kurdamas naują? Ne, jei teisingai padarysi 301 peradresavimus ir perkelsi meta duomenis.
+
+Kiek trunka? Atnaujinimas – nuo kelių dienų; nauja svetainė – nuo 2 savaičių (priklauso nuo apimties).
+
+Ar galima etapais? Taip – pirmiausia kritiniai dalykai (greitis, UX), vėliau – nauja versija.
+
+Turite seną svetainę ir norite aiškaus atsakymo? Susisiekite – nemokamai įvertinsime, kas jums finansiškai ir strategiškai labiausiai apsimoka.
+    `,
+    url: "/blog/senos-svetaines-atnaujinimas-ar-kurti-nauja",
+  },
 ];
 
 export default blogEntries;

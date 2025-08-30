@@ -43,6 +43,7 @@ import wordpressKaina2025 from "././blog/kiek-kainuoja-svetaine-su-wordpress-lie
 import woocommerceUzsakymuValdymas from "././blog/woocommerce-uzsakymu-valdymas.webp";
 import versloTinklarastis from "././blog/tinklarastis-interneto-svetainei.webp";
 import Domenas from "././blog/kaip-pasirinkti-tinkama-domena.webp";
+import senaVsNauja from "././blog/senos-svetaines-atnaujinimas-ar-nauja.webp";
 
 // icons
 import woo from './woo.png';
@@ -327,6 +328,7 @@ const Images = {
     woocommerceUzsakymuValdymas: woocommerceUzsakymuValdymas,
     versloTinklarastis: versloTinklarastis,
     Domenas: Domenas,
+    senaVsNauja: senaVsNauja,
   },
   logos: {
     wooWhite: wooWhite,

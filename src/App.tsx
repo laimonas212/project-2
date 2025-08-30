@@ -59,6 +59,7 @@ import Akmenukas from './pages/projektai/akmenukas';
 import DentesVitae from './pages/projektai/dentes-vitae';
 import VersloTinklarastis from './pages/blog/VersloTinklarastis';
 import DomenoPasirinkimas from './pages/blog/DomenoPasirinkimas';
+import SenosSvetainesAtnaujinimasArNauja from './pages/blog/SenosSvetainesAtnaujinimasArNauja'; 
 
 function App() {
   useEffect(() => {
@@ -139,6 +140,11 @@ function App() {
               <Route
                 path="/blog/domeno-pasirinkimas"
                 element={<DomenoPasirinkimas />}
+              />
+
+              <Route
+                path="/blog/senos-svetaines-atnaujinimas-ar-kurti-nauja"
+                element={<SenosSvetainesAtnaujinimasArNauja />}
               />
 
               <Route path="*" element={<NotFoundPage />} />
