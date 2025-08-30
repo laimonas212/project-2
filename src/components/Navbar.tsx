@@ -28,8 +28,8 @@ const Navbar = () => {
     { href: '/projektai', label: 'Projektai' },
     { href: '/paruosti-dizainai', label: 'Paruošti dizainai' },
     { href: '/kainos', label: 'Kainos' },
-    { href: '/kontaktai', label: 'Kontaktai' },
     { href: '/blog', label: 'Straipsniai' },
+    { href: '/kontaktai', label: 'Kontaktai' },
   ];
 
   // The 'Svetainė per 24h' link
