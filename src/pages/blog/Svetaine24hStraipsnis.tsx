@@ -29,7 +29,7 @@ const Svetaine24hStraipsnis = () => {
         <div className="fixed inset-0 z-0 pointer-events-none">
           <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
         </div>
-        
+
         <div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
           <button
             onClick={handleBack}
@@ -41,7 +41,7 @@ const Svetaine24hStraipsnis = () => {
             <img
               src={Images.blog.websiteIn24h}
               alt="Svetainė per 24h."
-              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg"
+              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
             />
           </div>
           <div className="mb-8 pb-8 card">

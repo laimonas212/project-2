@@ -40,7 +40,7 @@ const KlaidosKuriasDaroVerslai = () => {
             <img
               src={Images.blog.penkiosKlaidos}
               alt="5 klaidos, kurias daro verslai kurdami svetainę"
-              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg"
+              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
             />
           </div>
           <div className="mb-8 pb-8 card">

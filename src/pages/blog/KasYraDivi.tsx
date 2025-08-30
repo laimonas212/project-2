@@ -39,7 +39,7 @@ const KasYraDivi = () => {
             <img
               src={Images.blog.KasYraDivi}
               alt="Svetainė per 24h."
-              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg"
+              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
             />
           </div>
           <div className="mb-8 pb-8 card">

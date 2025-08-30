@@ -69,7 +69,7 @@ const InternetoSvetainiuKurimas2025 = () => {
             <img
               src={Images.blog.svetainiuKurimas2025}
               alt="Interneto svetainių kūrimas 2025 metais"
-              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg"
+              className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
             />
           </div>
           <div className="mb-8 pb-8 card">
