@@ -17,7 +17,8 @@ const RedesignVsRebuild = () => {
         <div className="min-h-screen">
             <Helmet>
                 <title>
-                    Atnaujinti seną svetainę ar kurti naują? Pilnas gidas 2025 | Amberweb
+                    Atnaujinti seną svetainę ar kurti naują? Pilnas gidas 2025 |
+                    Amberweb
                 </title>
                 <meta
                     name="description"
@@ -25,8 +26,10 @@ const RedesignVsRebuild = () => {
                 />
                 <link
                     rel="canonical"
-                    href={`https://amberweb.lt${entry?.url || "/senos-svetaines-atnaujinimas-ar-kurti-nauja"
-                        }`}
+                    href={`https://amberweb.lt${
+                        entry?.url ||
+                        "/senos-svetaines-atnaujinimas-ar-kurti-nauja"
+                    }`}
                 />
                 <script type="application/ld+json">{`
           {
@@ -72,15 +75,16 @@ const RedesignVsRebuild = () => {
 
                 <div className="mb-8 pb-8 card">
                     <h1 className="text-4xl font-bold text-electric-blue mb-12">
-                        Atnaujinti seną svetainę ar kurti naują? Pilnas gidas 2025
+                        Atnaujinti seną svetainę ar kurti naują? Pilnas gidas
+                        2025
                     </h1>
 
                     <p className="text-white/70 mb-6">
                         Daugelis verslų susiduria su dilema:{" "}
                         <strong>gaivinti seną svetainę</strong> ar
-                        <strong> kurti naują su WordPress</strong>. Žemiau – praktiškas
-                        palyginimas pagal greitį, SEO, kainą, saugumą ir rizikas, kad
-                        pasirinkimas būtų pagrįstas.
+                        <strong> kurti naują su WordPress</strong>. Žemiau –
+                        praktiškas palyginimas pagal greitį, SEO, kainą, saugumą
+                        ir rizikas, kad pasirinkimas būtų pagrįstas.
                     </p>
 
                     <h2 className="text-2xl font-semibold mb-4">
@@ -88,19 +92,20 @@ const RedesignVsRebuild = () => {
                     </h2>
                     <ul className="pl-4">
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Dizainas morališkai tvarkingas, reikia tik kosmetikos (spalvos,
-                            tipografija, vizualai).
+                            Dizainas morališkai tvarkingas, reikia tik
+                            kosmetikos (spalvos, tipografija, vizualai).
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Sistema palaikoma (WordPress naujausia versija, įskiepiai
-                            atnaujinami).
+                            Sistema palaikoma (WordPress naujausia versija,
+                            įskiepiai atnaujinami).
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Turinio daug (straipsniai, produktai), nenori masinės migracijos.
+                            Turinio daug (straipsniai, produktai), nenori
+                            masinės migracijos.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            SEO pozicijos stabilios – pokyčiai turi būti atsargūs, kad jų
-                            neprarasti.
+                            SEO pozicijos stabilios – pokyčiai turi būti
+                            atsargūs, kad jų neprarasti.
                         </li>
                     </ul>
 
@@ -109,15 +114,15 @@ const RedesignVsRebuild = () => {
                     </h2>
                     <ul className="pl-4">
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Sena technologija (custom CMS, neatnaujinami įskiepiai, nėra
-                            mobilumo).
+                            Sena technologija (custom CMS, neatnaujinami
+                            įskiepiai, nėra mobilumo).
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
                             Lėtas krovimas, saugumo spragos, dažni nulūžimai.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Reikalingos naujos funkcijos: WooCommerce, rezervacijos,
-                            integracijos, kalbos.
+                            Reikalingos naujos funkcijos: WooCommerce,
+                            rezervacijos, integracijos, kalbos.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
                             Dizainas atbaido lankytojus ir mažina konversiją.
@@ -128,16 +133,17 @@ const RedesignVsRebuild = () => {
                         3. Kainos: atnaujinimas vs. nauja svetainė
                     </h2>
                     <p className="text-white/70 mb-4">
-                        <strong>Atnaujinimas</strong> (UI korekcijos, greičio/SEO
-                        pataisymai): dažniausiai nuo <strong>200–500 €</strong>.<br />
-                        <strong>Nauja WordPress svetainė</strong> (Divi + SEO pagrindai):
-                        nuo <strong>499 €</strong>.<br />
-                        <strong>WooCommerce</strong> parduotuvė: nuo <strong>799 €</strong>,
-                        priklausomai nuo funkcijų.
+                        <strong>Atnaujinimas</strong> (UI korekcijos,
+                        greičio/SEO pataisymai): dažniausiai nuo{" "}
+                        <strong>200–500 €</strong>.<br />
+                        <strong>Nauja WordPress svetainė</strong> (Divi + SEO
+                        pagrindai): nuo <strong>499 €</strong>.<br />
+                        <strong>WooCommerce</strong> parduotuvė: nuo{" "}
+                        <strong>799 €</strong>, priklausomai nuo funkcijų.
                     </p>
                     <p className="text-white/60 text-sm mb-6">
-                        Pastaba: reali kaina priklauso nuo apimties, integracijų ir turinio
-                        kiekio.
+                        Pastaba: reali kaina priklauso nuo apimties, integracijų
+                        ir turinio kiekio.
                     </p>
 
                     <h2 className="text-2xl font-semibold mb-4">
@@ -145,20 +151,21 @@ const RedesignVsRebuild = () => {
                     </h2>
                     <ul className="pl-4">
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            <strong>URL žemėlapis</strong>: nekeičiant struktūros – palikti;
-                            keičiant – sukurti 301 peradresavimus.
+                            <strong>URL žemėlapis</strong>: nekeičiant
+                            struktūros – palikti; keičiant – sukurti 301
+                            peradresavimus.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            <strong>Meta žymos ir H1</strong>: perkelti/optimizuoti prieš
-                            paleidžiant.
+                            <strong>Meta žymos ir H1</strong>:
+                            perkelti/optimizuoti prieš paleidžiant.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            <strong>Sitemap + robots.txt</strong>: atnaujinti ir pateikti į
-                            Google Search Console.
+                            <strong>Sitemap + robots.txt</strong>: atnaujinti ir
+                            pateikti į Google Search Console.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            <strong>Greitis</strong>: CDN, vaizdų optimizacija, kešavimas,
-                            minimalūs skriptai.
+                            <strong>Greitis</strong>: CDN, vaizdų optimizacija,
+                            kešavimas, minimalūs skriptai.
                         </li>
                     </ul>
 
@@ -167,18 +174,21 @@ const RedesignVsRebuild = () => {
                     </h2>
                     <ul className="pl-4">
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Jei svetainė &gt; 5–7 metų ir lėta – <strong>nauja</strong>.
+                            Jei svetainė &gt; 5–7 metų ir lėta –{" "}
+                            <strong>nauja</strong>.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
                             Jei SEO traukia srautą ir reikia tik UX –{" "}
                             <strong>atnaujinimas</strong>.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Jei reikalingos naujos funkcijos – <strong>nauja</strong>.
+                            Jei reikalingos naujos funkcijos –{" "}
+                            <strong>nauja</strong>.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
                             Jei biudžetas ribotas, bet reikia „atsikvėpti“ –{" "}
-                            <strong>mini atnaujinimas</strong> dabar, planuojant naują vėliau.
+                            <strong>mini atnaujinimas</strong> dabar, planuojant
+                            naują vėliau.
                         </li>
                     </ul>
 
@@ -187,39 +197,57 @@ const RedesignVsRebuild = () => {
                     </h2>
                     <ul className="pl-4">
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Greita esamos svetainės apžiūra (UX, SEO, greitis, saugumas).
+                            Greita esamos svetainės apžiūra (UX, SEO, greitis,
+                            saugumas).
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Aiški rekomendacija: <em>gaivinti</em> ar <em>kurti naują</em> –
-                            su pro/contra.
+                            Aiški rekomendacija: <em>gaivinti</em> ar{" "}
+                            <em>kurti naują</em> – su pro/contra.
                         </li>
                         <li className="text-white/70 mb-3 list-item list-disc">
-                            Jei nauja – WordPress + Divi, mobilumas, bazinis SEO, turinio
-                            perkėlimas, 301 planas.
+                            Jei nauja – WordPress + Divi, mobilumas, bazinis
+                            SEO, turinio perkėlimas, 301 planas.
                         </li>
                     </ul>
 
                     <h2 className="text-2xl font-semibold mb-4">7. D.U.K.</h2>
                     <p className="text-white/70 mb-3">
-                        <strong>Ar prarasiu SEO kurdamas naują?</strong> Ne, jei teisingai
-                        padarysi 301 peradresavimus ir perkelsi meta duomenis.
+                        <strong>Ar prarasiu SEO kurdamas naują?</strong> Ne, jei
+                        teisingai padarysi 301 peradresavimus ir perkelsi meta
+                        duomenis.
                     </p>
                     <p className="text-white/70 mb-3">
-                        <strong>Kiek trunka?</strong> Atnaujinimas – nuo kelių dienų; nauja
-                        svetainė – nuo 2 savaičių (priklauso nuo apimties).
+                        <strong>Kiek trunka?</strong> Atnaujinimas – nuo kelių
+                        dienų; nauja svetainė – nuo 2 savaičių (priklauso nuo
+                        apimties).
                     </p>
                     <p className="text-white/70 mb-6">
-                        <strong>Ar galima etapais?</strong> Taip – pirmiausia kritiniai
-                        dalykai (greitis, UX), vėliau – nauja versija.
+                        <strong>Ar galima etapais?</strong> Taip – pirmiausia
+                        kritiniai dalykai (greitis, UX), vėliau – nauja versija.
                     </p>
 
                     <p className="text-white/70 mb-6">
                         Turite seną svetainę ir norite aiškaus atsakymo?{" "}
-                        <a href="/kontaktai" className="text-electric-blue underline">
+                        <a
+                            href="/kontaktai"
+                            className="text-electric-blue underline"
+                        >
                             Susisiekite
                         </a>{" "}
-                        – nemokamai įvertinsime, kas jums finansiškai ir strategiškai
-                        labiausiai apsimoka.
+                        – nemokamai įvertinsime, kas jums finansiškai ir
+                        strategiškai labiausiai apsimoka.
+                    </p>
+
+                    <p className="text-white/70">
+                        Daugiau apie mūsų interneto svetainių kūrimo paslaugas
+                        skaitykite&nbsp;
+                        <a
+                            href="/interneto-svetainiu-kurimas"
+                            className="text-electric-blue underline"
+                        >
+                            čia
+                        </a>
+                        .
                     </p>
                 </div>
             </div>
