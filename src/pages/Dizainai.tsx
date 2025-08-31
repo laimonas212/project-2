@@ -37,7 +37,7 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
 		>
 			{/* Nuotraukos preview */}
 			<div
-				className="relative mx-auto aspect-[1/2] sm:aspect-[3/4] md:aspect-[1/2] w-[280px] sm:w-[300px] md:w-[280px] max-w-full rounded-[3rem] border-[7px] border-dark-surface-2 overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+				className="relative mx-auto aspect-[1/2] w-[280px] max-w-full rounded-[3rem] border-[7px] border-dark-surface-2 overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
 				onClick={() => onClick("image")}
 			>
 				<img
@@ -78,7 +78,7 @@ const MobilePreview: React.FC<MobilePreviewProps> = ({ template, onClick }) => {
 						<ShoppingBag className="inline-block h-5" />
 					)}
 				</h3>
-				<p className="text-white/70 text-sm">{template.description}</p>
+				<p className="text-white/70 text-sm text-justify max-w-80 mx-auto">{template.description}</p>
 			</div>
 		</motion.div>
 	);
@@ -280,7 +280,7 @@ const TemplatesPage: React.FC = () => {
 					</motion.div>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 mb-32">
 					{filteredTemplates.map((template) => (
 						<MobilePreview
 							key={template.id}
