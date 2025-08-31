@@ -1,85 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="lt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "ProfessionalService",
+				"name": "Amberweb",
+				"description": "Profesionalus interneto svetainių kūrimas, el. parduotuvių sprendimai ir skaitmeninės paslaugos verslui.",
+				"image": "https://amberweb.lt/amberweb_social.jpg",
+				"url": "https://amberweb.lt",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Vilnius",
+					"addressCountry": "LT"
+				},
+				"priceRange": "€350-€550",
+				"telephone": "+370 611 18874",
+				"email": "info@amberweb.lt",
+				"areaServed": "Lithuania",
+				"offers": [
+					{
+						"@type": "Offer",
+						"name": "Reprezentacinė svetainė",
+						"price": "350",
+						"priceCurrency": "EUR",
+						"description": "Idealiai tinka mažoms įmonėms ar asmeniniams projektams"
+					},
+					{
+						"@type": "Offer",
+						"name": "Elektroninė Parduotuvė",
+						"price": "550",
+						"priceCurrency": "EUR",
+						"description": "Puikiai tinka vidutinio dydžio įmonėms, norinčioms sustiprinti savo internetinę veiklą"
+					}
+				]
+			}
+		</script>
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Amberweb",
-      "description": "Profesionalus interneto svetainių kūrimas, el. parduotuvių sprendimai ir skaitmeninės paslaugos verslui.",
-      "image": "https://amberweb.lt/amberweb_social.jpg",
-      "url": "https://amberweb.lt",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Vilnius",
-        "addressCountry": "LT"
-      },
-      "priceRange": "€350-€550",
-      "telephone": "+370 611 18874",
-      "email": "info@amberweb.lt",
-      "areaServed": "Lithuania",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Reprezentacinė svetainė",
-          "price": "350",
-          "priceCurrency": "EUR",
-          "description": "Idealiai tinka mažoms įmonėms ar asmeniniams projektams"
-        },
-        {
-          "@type": "Offer",
-          "name": "Elektroninė Parduotuvė",
-          "price": "550",
-          "priceCurrency": "EUR",
-          "description": "Puikiai tinka vidutinio dydžio įmonėms, norinčioms sustiprinti savo internetinę veiklą"
-        }
-      ]
-    }
-    </script>
+		<link rel="icon" type="image/svg+xml" href="./src/img/favicon.png" />
+		<link rel="apple-touch-icon" href="./src/img/amberweb-amber-logo.jpg" />
+		<meta name="apple-mobile-web-app-title" content="Amberweb" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link
+			rel="icon"
+			sizes="192x192"
+			href="./src/img/amberweb-amber-logo.jpg"
+		/>
+		<meta
+			name="msapplication-square70x70logo"
+			content="./src/img/amberweb-amber-logo.jpg"
+		/>
+		<meta
+			name="msapplication-square150x150logo"
+			content="./src/img/amberweb-amber-logo.jpg"
+		/>
+		<meta
+			name="msapplication-wide310x150logo"
+			content="./src/img/amberweb-amber-logo.jpg"
+		/>
+		<meta
+			name="msapplication-310x310logo"
+			content="./src/img/amberweb-amber-logo.jpg"
+		/>
 
-  <link rel="icon" type="image/svg+xml" href="./src/img/favicon.png" />
-  <link rel="apple-touch-icon" href="./src/img/amberweb-amber-logo.jpg" />
-  <meta name="apple-mobile-web-app-title" content="Amberweb">
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="icon" sizes="192x192" href="./src/img/amberweb-amber-logo.jpg" />
-  <meta name="msapplication-square70x70logo" content="./src/img/amberweb-amber-logo.jpg" />
-  <meta name="msapplication-square150x150logo" content="./src/img/amberweb-amber-logo.jpg" />
-  <meta name="msapplication-wide310x150logo" content="./src/img/amberweb-amber-logo.jpg" />
-  <meta name="msapplication-310x310logo" content="./src/img/amberweb-amber-logo.jpg" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-VF8ZYBL09C"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+		</script>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VF8ZYBL09C"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-  </script>
+		<script
+			id="cookieyes"
+			type="text/javascript"
+			src="https://cdn-cookieyes.com/client_data/9c4bf2530baf77f3c4583682/script.js"
+		></script>
+	</head>
 
-  <script id="cookieyes" type="text/javascript"
-    src="https://cdn-cookieyes.com/client_data/9c4bf2530baf77f3c4583682/script.js"></script>
-</head>
+	<body style="background: #12121a">
+		<div id="root"></div>
 
-<body style="background: #12121a">
-  <div id="root"></div>
+		<form
+			style="display: none"
+			name="contact-form"
+			method="POST"
+			data-netlify="true"
+			netlify-honeypot="bot-field"
+		>
+			<p class="hidden">
+				<label>
+					Don't fill this out if you're human:
+					<input name="bot-field" />
+				</label>
+			</p>
+			<input type="hidden" name="form-name" value="contact-form" />
+			<input
+				type="hidden"
+				name="name"
+				placeholder="Jūsų vardas"
+				required
+			/>
+			<input
+				type="hidden"
+				name="email"
+				placeholder="El. paštas"
+				required
+			/>
+			<input
+				type="hidden"
+				name="phone"
+				placeholder="Telefono numeris"
+				required
+			/>
+			<textarea
+				name="message"
+				placeholder="Žinutė"
+				rows="4"
+				required
+				class="hidden"
+			></textarea>
+		</form>
 
-  <form style="display: none;" name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-    <p class="hidden">
-      <label>
-        Don't fill this out if you're human: <input name="bot-field" />
-      </label>
-    </p>
-    <input type="hidden" name="form-name" value="contact-form" />
-    <input type="hidden" name="name" placeholder="Jūsų vardas" required />
-    <input type="hidden" name="email" placeholder="El. paštas" required />
-    <input type="hidden" name="phone" placeholder="Telefono numeris" required />
-    <textarea name="message" placeholder="Žinutė" rows="4" required class="hidden"></textarea>
-  </form>
-
-  <script type="module" src="/src/main.tsx"></script>
-  <script src="https://web3forms.com/client/script.js" async defer></script>
-</body>
-
+		<script type="module" src="/src/main.tsx"></script>
+		<script
+			src="https://web3forms.com/client/script.js"
+			async
+			defer
+		></script>
+	</body>
 </html>

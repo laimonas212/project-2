@@ -1,11 +1,11 @@
 import Images from "../img/Images";
 
 const blogEntries = [
-  {
-    id: "svetaine-per-24h",
-    image: Images.blog.websiteIn24h,
-    title: "Interneto svetainė per 24 val. – ar tai įmanoma?",
-    excerpt: `
+	{
+		id: "svetaine-per-24h",
+		image: Images.blog.websiteIn24h,
+		title: "Interneto svetainė per 24 val. – ar tai įmanoma?",
+		excerpt: `
 Verslui svarbus greitis – kartais naujos svetainės reikia čia ir dabar. Bet ar įmanoma ją sukurti vos per vieną dieną? Atsakymas – taip. Paaiškinsime kaip.
 
 Greita nereiškia paviršutiniška
@@ -35,14 +35,13 @@ Jei reikia greitos, profesionalios ir estetiškos svetainės – susisiekite. Ga
 
 Svetainė per 24 val. – skamba greitai, nes ir yra greitai.
 `,
-    url: "/blog/svetaine-per-24h",
-  },
-  {
-    id: "pigios-svetaines",
-    image: Images.blog.pigiosSvetaines,
-    title:
-      "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
-    excerpt: `Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia ekonomišką sprendimą? Šiame straipsnyje paneigsime dažniausius mitus ir paaiškinsime, kaip "taupymas" gali virsti didelėmis išlaidomis ateityje.
+		url: "/blog/svetaine-per-24h",
+	},
+	{
+		id: "pigios-svetaines",
+		image: Images.blog.pigiosSvetaines,
+		title: "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
+		excerpt: `Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia ekonomišką sprendimą? Šiame straipsnyje paneigsime dažniausius mitus ir paaiškinsime, kaip "taupymas" gali virsti didelėmis išlaidomis ateityje.
 1. Mitas: "Svarbiausia – kad veiktų"
 Techninis veikimas yra tik pradžia. Svetainė turi būti greita, patogi naudoti, pritaikyta SEO, mobiliems įrenginiams ir atitikti verslo tikslus. Pigūs sprendimai dažnai praleidžia šiuos svarbius aspektus.
 
@@ -67,14 +66,13 @@ Tyrimai rodo, kad vartotojai per 3–5 sekundes nusprendžia, ar likti svetainė
 Išvada: Taupant kuriant svetainę dažnai tenka mokėti du kartus. Geriau iš karto rinktis profesionalų sprendimą, kuris kurtų vertę, o ne rūpesčius.
 
 `,
-    url: "/blog/pigios-svetaines",
-  },
-  {
-    id: "interneto-svetainiu-kurimas-2025",
-    image: Images.blog.svetainiuKurimas2025,
-    title:
-      "Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą?",
-    excerpt: `Šiandien, kai skaitmeninė erdvė yra tapusi neatsiejama verslo dalimi, kokybiška interneto svetainė yra ne tik vizitinė kortelė, bet ir galingas įrankis, padedantis pritraukti naujus klientus, stiprinti prekės ženklą ir didinti pardavimus. 2025 metais sėkmingas interneto svetainių kūrimas reikalauja ne tik modernaus dizaino ir patogaus naudojimo, bet ir strateginio požiūrio bei kruopštaus planavimo.
+		url: "/blog/pigios-svetaines",
+	},
+	{
+		id: "interneto-svetainiu-kurimas-2025",
+		image: Images.blog.svetainiuKurimas2025,
+		title: "Interneto svetainių kūrimas 2025 metais: kaip sukurti sėkmingą projektą?",
+		excerpt: `Šiandien, kai skaitmeninė erdvė yra tapusi neatsiejama verslo dalimi, kokybiška interneto svetainė yra ne tik vizitinė kortelė, bet ir galingas įrankis, padedantis pritraukti naujus klientus, stiprinti prekės ženklą ir didinti pardavimus. 2025 metais sėkmingas interneto svetainių kūrimas reikalauja ne tik modernaus dizaino ir patogaus naudojimo, bet ir strateginio požiūrio bei kruopštaus planavimo.
 
 Kodėl verta investuoti į kokybišką interneto svetainių kūrimą?
 Profesionalus įvaizdis: Aukštos kokybės svetainė sukuria patikimą ir profesionalų jūsų verslo įvaizdį.
@@ -119,13 +117,13 @@ Individualūs sprendimai
 Mūsų tikslas – ne tik sukurti puikiai atrodančią svetainę, bet ir užtikrinti, kad ji veiktų jūsų verslo sėkmei, pritrauktų naujų klientų ir padėtų jums augti.
 
 Turite idėją savo naujai interneto svetainei? Susisiekite su mumis šiandien ir gaukite nemokamą konsultaciją. Padėsime jums žengti pirmą žingsnį link sėkmingo interneto projekto 2025 metais.`,
-    url: "/blog/interneto-svetainiu-kurimas-2025",
-  },
-  {
-    id: "wordpress-svetaines-kaina-2025",
-    image: Images.blog.wordpressKaina2025,
-    title: "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
-    excerpt: `Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai svetainių kūrimo kainos prasideda nuo 300–500€ ir gali siekti net 3000€ ar daugiau. Pažiūrėkime, kas lemia tą kainą ir ką gaunate už tam tikrą sumą.
+		url: "/blog/interneto-svetainiu-kurimas-2025",
+	},
+	{
+		id: "wordpress-svetaines-kaina-2025",
+		image: Images.blog.wordpressKaina2025,
+		title: "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
+		excerpt: `Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai svetainių kūrimo kainos prasideda nuo 300–500€ ir gali siekti net 3000€ ar daugiau. Pažiūrėkime, kas lemia tą kainą ir ką gaunate už tam tikrą sumą.
 
 1. Ką įprastai apima bazinė WordPress svetainės kaina?
 Pasirinktas dizainas (šablonas arba individualus dizainas)
@@ -158,13 +156,13 @@ Turinio įkėlimas ir konsultacijos
 Jeigu reikia el. parduotuvės – kaina prasideda nuo 799€, priklausomai nuo specifikos.
 
 Turite idėją? Susisiekite ir pakonsultuosime be jokio įsipareigojimo.`,
-    url: "/blog/wordpress-svetaines-kaina-2025",
-  },
-  {
-    id: "woocommerce-uzsakymu-valdymas",
-    image: Images.blog.woocommerceUzsakymuValdymas,
-    title: "WooCommerce užsakymų valdymas",
-    excerpt: `Kai klientas pateikia užsakymą jūsų parduotuvėje, užsakymo informacija bus rodoma WooCommerce užsakymų skiltyje. Šiame vadove aptarsime, kaip peržiūrėti, redaguoti ir valdyti užsakymus.
+		url: "/blog/wordpress-svetaines-kaina-2025",
+	},
+	{
+		id: "woocommerce-uzsakymu-valdymas",
+		image: Images.blog.woocommerceUzsakymuValdymas,
+		title: "WooCommerce užsakymų valdymas",
+		excerpt: `Kai klientas pateikia užsakymą jūsų parduotuvėje, užsakymo informacija bus rodoma WooCommerce užsakymų skiltyje. Šiame vadove aptarsime, kaip peržiūrėti, redaguoti ir valdyti užsakymus.
 
 Užsakymų peržiūra
 Norėdami peržiūrėti užsakymus:
@@ -217,13 +215,13 @@ Norėdami gauti daugiau įžvalgų apie savo užsakymus ir pardavimus:
 
 Eikite į WooCommerce > Ataskaitos.
 Čia rasite įvairias ataskaitas apie pardavimus, klientus ir produktus, kurie padės geriau suprasti parduotuvės veiklą.`,
-    url: "/blog/woocommerce-uzsakymu-valdymas",
-  },
-  {
-    id: "naujas-woocommerce-produktas",
-    image: Images.blog.newProductWoo,
-    title: "Kaip sukurti naują WooCommerce produktą?",
-    excerpt: `Jei norite pridėti naują produktą į savo WooCommerce parduotuvę, sekite šiuos paprastus žingsnius. Šiame vadove paaiškinsime, kaip sukurti fizinius ir skaitmeninius produktus.
+		url: "/blog/woocommerce-uzsakymu-valdymas",
+	},
+	{
+		id: "naujas-woocommerce-produktas",
+		image: Images.blog.newProductWoo,
+		title: "Kaip sukurti naują WooCommerce produktą?",
+		excerpt: `Jei norite pridėti naują produktą į savo WooCommerce parduotuvę, sekite šiuos paprastus žingsnius. Šiame vadove paaiškinsime, kaip sukurti fizinius ir skaitmeninius produktus.
 
 Naujo produkto pridėjimas
 Norėdami pridėti naują produktą:
@@ -261,13 +259,13 @@ Produkto paskelbimas
 Kai visos informacijos laukeliai užpildyti, spustelėkite „Paskelbti“ ir produktas bus matomas jūsų parduotuvėje.
 
 `,
-    url: "/blog/naujas-woocommerce-produktas",
-  },
-  {
-    id: "kaip-naudotis-divi",
-    image: Images.blog.kaipNaudotisDivi,
-    title: "Kaip naudotis DIVI?",
-    excerpt: `Kas yra Divi?
+		url: "/blog/naujas-woocommerce-produktas",
+	},
+	{
+		id: "kaip-naudotis-divi",
+		image: Images.blog.kaipNaudotisDivi,
+		title: "Kaip naudotis DIVI?",
+		excerpt: `Kas yra Divi?
 Divi yra populiari „drag-and-drop“ svetainių kūrimo sistema, leidžianti kurti profesionalias interneto svetaines be programavimo žinių. Ji veikia kaip „WordPress“ tema su įdiegtu puslapių kūrimo įrankiu („Divi Builder“), kuris leidžia redaguoti puslapius realiu laiku.
 
 Pagrindinė sąsaja ir navigacija
@@ -316,13 +314,13 @@ Baigus redaguoti, spustelėkite „Save“ (Išsaugoti) apatiniame dešiniajame 
 Norėdami atnaujinti puslapį, spustelėkite „Exit Visual Builder“ (Išeiti iš vizualinio redaktoriaus).
 Jei puslapis dar nepublikuotas, paspauskite „Publish“ (Publikuoti).
 `,
-    url: "/blog/kaip-naudotis-divi",
-  },
-  {
-    id: "kas-yra-divi-5",
-    image: Images.blog.divi5,
-    title: "Kas yra Divi 5?",
-    excerpt: `Nuo 2025 m. viena populiariausių WordPress temų – Divi – išleido reikšmingą atnaujinimą: Divi 5. Tai nėra tik kosmetinis pakeitimas – tai visas sistemos perrašymas. Tačiau svarbiausia – ką tai reiškia verslui ir svetainių kūrimo paslaugų ieškantiems klientams?
+		url: "/blog/kaip-naudotis-divi",
+	},
+	{
+		id: "kas-yra-divi-5",
+		image: Images.blog.divi5,
+		title: "Kas yra Divi 5?",
+		excerpt: `Nuo 2025 m. viena populiariausių WordPress temų – Divi – išleido reikšmingą atnaujinimą: Divi 5. Tai nėra tik kosmetinis pakeitimas – tai visas sistemos perrašymas. Tačiau svarbiausia – ką tai reiškia verslui ir svetainių kūrimo paslaugų ieškantiems klientams?
 Greitesnis svetainių veikimas
 Divi 5 atsisakė senos architektūros ir dabar naudoja naują React pagrįstą modulų sistemą. Tai leidžia puslapiams krautis greičiau, o tai tiesiogiai veikia ir SEO, ir vartotojo patirtį. Jei anksčiau Divi buvo kritikuojamas dėl greičio – ši versija atsako į tuos priekaištus.
 
@@ -350,13 +348,13 @@ Sukurta pagal jūsų verslo poreikius
 Susisiekite, jei norite modernios, greitos ir profesionalios svetainės, kuri padės jūsų verslui augti internete.
 
 Naudoju naujausius sprendimus, kad jūsų svetainė būtų konkurencinga 2025-aisiais.`,
-    url: "/blog/kas-yra-divi-5",
-  },
-  {
-    id: "kas-yra-divi",
-    image: Images.blog.KasYraDivi,
-    title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
-    excerpt: `Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių (angl. page builder), sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams.
+		url: "/blog/kas-yra-divi-5",
+	},
+	{
+		id: "kas-yra-divi",
+		image: Images.blog.KasYraDivi,
+		title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
+		excerpt: `Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių (angl. page builder), sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams.
 Kodėl verta rinktis Divi?
 1. Paprastas vizualinis redaktorius
 Divi veikia pagal WYSIWYG principą („What You See Is What You Get“), todėl redaguodami svetainę iškart matote, kaip ji atrodys. Galite keisti spalvas, šriftus, išdėstymą ir turinį realiu laiku, be jokių kodavimo žinių.
@@ -387,13 +385,13 @@ El. parduotuvėms su WooCommerce
 Išvada: Divi yra vienas iš geriausių pasirinkimų norint sukurti vizualiai patrauklią, funkcionalią ir lengvai valdomą „WordPress“ svetainę. Nesvarbu, ar esate pradedantysis, ar profesionalas – su Divi galima įgyvendinti beveik bet kokią dizaino idėją be didelių techninių žinių.
 
 `,
-    url: "/blog/kas-yra-divi",
-  },
-  {
-    id: "5-klaidos-kurias-daro-verslai",
-    image: Images.blog.penkiosKlaidos,
-    title: "5 klaidos, kurias daro verslai kurdami svetainę",
-    excerpt: `Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams. Štai penkios esminės klaidos, kurių reikėtų vengti.
+		url: "/blog/kas-yra-divi",
+	},
+	{
+		id: "5-klaidos-kurias-daro-verslai",
+		image: Images.blog.penkiosKlaidos,
+		title: "5 klaidos, kurias daro verslai kurdami svetainę",
+		excerpt: `Kuriant svetainę verslui, svarbu išvengti dažniausiai pasitaikančių klaidų, kurios gali turėti įtakos svetainės sėkmei, lankytojų patirčiai ir net pardavimams. Štai penkios esminės klaidos, kurių reikėtų vengti.
 1. Neaiški struktūra ir navigacija
 Jei lankytojai negali greitai rasti norimos informacijos, jie greitai išeis iš svetainės. Būtina užtikrinti, kad navigacija būtų aiški, logiška ir intuityvi. Kiekvienas puslapis turėtų turėti aiškų tikslą ir lengvai pasiekiamus pagrindinius skyrius. Taip pat svarbu naudoti aiškius meniu pavadinimus, kurie atspindėtų turinį.
 
@@ -410,13 +408,13 @@ Perkrauta svetainė su begale teksto, mirgančių reklamų ir painių mygtukų g
 Net ir gražiausia svetainė nebus naudinga, jei jos niekas neranda. Dažna klaida – ignoruoti SEO (paieškos sistemų optimizavimą). Tinkamai parinkti raktiniai žodžiai, meta aprašymai, greitas užkrovimo laikas ir kokybiškas turinys padės svetainei būti lengviau randamai „Google“ paieškoje. Taip pat svarbu užtikrinti, kad svetainėje yra vidinės nuorodos ir tinkamai naudojamos antraštės (H1, H2, H3), kad paieškos sistemos geriau suprastų svetainės turinį.
 
 Išvada: Sėkminga verslo svetainė turi būti greita, aiški, pritaikyta mobiliesiems ir optimizuota paieškos sistemoms. Išvengę šių penkių dažniausių klaidų, galėsite sukurti efektyvesnį ir patrauklesnį puslapį savo verslui. Taip pat svarbu nuolat stebėti svetainės statistiką ir atlikti reikalingus patobulinimus, kad ji atitiktų lankytojų lūkesčius.`,
-    url: "/blog/5-klaidos-kurias-daro-verslai",
-  },
-  {
-    id: "kodel-jusu-verslui-butina-tureti-tinklarasti",
-    image: Images.blog.versloTinklarastis,
-    title: "Kodėl jūsų verslui būtina turėti tinklaraštį?",
-    excerpt: `Šiandieniniame skaitmeniniame pasaulyje vien tik turėti svetainę – nebepakanka. Jei norite, kad jūsų verslas būtų matomas „Google“ paieškoje, pritrauktų naujų klientų ir įrodytų savo patikimumą, būtina turėti verslo tinklaraštį.
+		url: "/blog/5-klaidos-kurias-daro-verslai",
+	},
+	{
+		id: "kodel-jusu-verslui-butina-tureti-tinklarasti",
+		image: Images.blog.versloTinklarastis,
+		title: "Kodėl jūsų verslui būtina turėti tinklaraštį?",
+		excerpt: `Šiandieniniame skaitmeniniame pasaulyje vien tik turėti svetainę – nebepakanka. Jei norite, kad jūsų verslas būtų matomas „Google“ paieškoje, pritrauktų naujų klientų ir įrodytų savo patikimumą, būtina turėti verslo tinklaraštį.
 
 Toliau paaiškinsiu, kodėl tinklaraštis yra vienas stipriausių įrankių jūsų verslo augimui.
 
@@ -476,13 +474,13 @@ Išvada
 Tinklaraštis nėra tik papildomas puslapis svetainėje. Tai – SEO variklis, pasitikėjimo kūrėjas ir ilgalaikė investicija į jūsų verslo matomumą.
 
 Jeigu dar neturite tinklaraščio – dabar pats metas pradėti. O jei turite, bet nerašote reguliariai – prisiminkite, kad kiekvienas naujas įrašas gali būti jūsų naujas klientas.`,
-    url: "/blog/kodel-jusu-verslui-butina-tureti-tinklarasti",
-  },
-  {
-    id: "domeno-pasirinkimas",
-    image: Images.blog.Domenas,
-    title: "Kaip pasirinkti tinkamą domeno vardą savo svetainei?",
-    excerpt: `Domenas – tai jūsų verslo adresas internete. Tinkamai pasirinktas domeno pavadinimas gali padėti išsiskirti, geriau pozicionuoti savo svetainę „Google“ paieškoje ir sukurti patikimą pirmą įspūdį.
+		url: "/blog/kodel-jusu-verslui-butina-tureti-tinklarasti",
+	},
+	{
+		id: "domeno-pasirinkimas",
+		image: Images.blog.Domenas,
+		title: "Kaip pasirinkti tinkamą domeno vardą savo svetainei?",
+		excerpt: `Domenas – tai jūsų verslo adresas internete. Tinkamai pasirinktas domeno pavadinimas gali padėti išsiskirti, geriau pozicionuoti savo svetainę „Google“ paieškoje ir sukurti patikimą pirmą įspūdį.
 1. Paprastumas ir įsimenamumas
 Trumpas ir lengvai įsimenamas domenas yra raktas į sėkmę. Venkite sudėtingų raidžių derinių ar skaičių – kuo paprasčiau, tuo geriau. Pvz., manoimone.lt visada bus aiškiau nei mano-imone123.lt.
 
@@ -500,13 +498,13 @@ Prieš registruodami, pasitikrinkite domeno prieinamumą. Jei pavadinimas jau na
 
 Išvada
 Tinkamai pasirinktas domenas yra ilgalaikė investicija į jūsų verslo matomumą internete. Paprastumas, tinkama galūnė, raktažodžiai ir prekės ženklo stiprinimas – pagrindiniai kriterijai, į kuriuos verta atsižvelgti.`,
-    url: "/blog/domeno-pasirinkimas",
-  },
-  {
-    id: "senos-svetaines-atnaujinimas-ar-kurti-nauja",
-    image: Images.blog.senaVsNauja,
-    title: "Atnaujinti seną svetainę ar kurti naują? Pilnas gidas 2025",
-    excerpt: `
+		url: "/blog/domeno-pasirinkimas",
+	},
+	{
+		id: "senos-svetaines-atnaujinimas-ar-kurti-nauja",
+		image: Images.blog.senaVsNauja,
+		title: "Atnaujinti seną svetainę ar kurti naują? Pilnas gidas 2025",
+		excerpt: `
       Daugelis verslų susiduria su dilema: gaivinti seną svetainę ar kurti naują su WordPress. Žemiau – praktiškas palyginimas pagal greitį, SEO, kainą, saugumą ir rizikas, kad pasirinkimas būtų pagrįstas.
 
 1. Kada užtenka atnaujinti seną svetainę?
@@ -549,8 +547,8 @@ Ar galima etapais? Taip – pirmiausia kritiniai dalykai (greitis, UX), vėliau 
 
 Turite seną svetainę ir norite aiškaus atsakymo? Susisiekite – nemokamai įvertinsime, kas jums finansiškai ir strategiškai labiausiai apsimoka.
     `,
-    url: "/blog/senos-svetaines-atnaujinimas-ar-kurti-nauja",
-  },
+		url: "/blog/senos-svetaines-atnaujinimas-ar-kurti-nauja",
+	},
 ];
 
 export default blogEntries;

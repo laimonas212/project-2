@@ -5,290 +5,295 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-background text-white font-body;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
-  }
+	body {
+		@apply bg-background text-white font-body;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-display;
+	}
 }
 
 @layer components {
-  .gradient-border {
-    @apply relative before:absolute before:-inset-0.5 before:bg-gradient-to-r before:from-electric-blue before:to-neon-purple before:rounded-lg before:-z-10;
-  }
-  
-  .card {
-    @apply bg-dark-surface rounded-lg p-6 backdrop-blur-sm border border-white/10;
-  }
-  
-  .button-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-electric-blue to-neon-purple rounded-lg font-display font-medium 
-    hover:opacity-90 transition-all duration-300;
-  }
+	.gradient-border {
+		@apply relative before:absolute before:-inset-0.5 before:bg-gradient-to-r before:from-electric-blue before:to-neon-purple before:rounded-lg before:-z-10;
+	}
 
-  .button-cta {
-    @apply px-6 py-3 bg-dark-surface-2 rounded-lg font-display font-medium 
-    hover:opacity-90 transition-all duration-300;
-  }
+	.card {
+		@apply bg-dark-surface rounded-lg p-6 backdrop-blur-sm border border-white/10;
+	}
+
+	.button-primary {
+		@apply px-6 py-3 bg-gradient-to-r from-electric-blue to-neon-purple rounded-lg font-display font-medium hover:opacity-90 transition-all duration-300;
+	}
+
+	.button-cta {
+		@apply px-6 py-3 bg-dark-surface-2 rounded-lg font-display font-medium hover:opacity-90 transition-all duration-300;
+	}
 }
 
 .adaptive-button-font {
-  font-size: clamp(0.8rem, 2vw + 0.4rem, 1.2rem);
-  padding-left: 0.8em;
-    padding-right: 0.8em;
-    padding-top: 0.4em;
-    /* Adjust vertical padding as needed */
-    padding-bottom: 0.4em;
+	font-size: clamp(0.8rem, 2vw + 0.4rem, 1.2rem);
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	padding-top: 0.4em;
+	/* Adjust vertical padding as needed */
+	padding-bottom: 0.4em;
 }
 
 .vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	transform: rotate(180deg);
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 .animate-scroll {
-  animation: scroll 20s linear infinite;
+	animation: scroll 20s linear infinite;
 }
 
 @keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .animate-spin-slow {
-  animation: spin-slow 20s linear infinite;
+	animation: spin-slow 20s linear infinite;
 }
 
 /* templates */
 
 .templates-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 16px;
+	padding: 20px;
+	max-width: 900px;
+	margin: auto;
 }
 
 .template-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-  text-align: center;
-  transition: transform 0.3s ease;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+	transition: transform 0.3s ease;
 }
 
 .template-card:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .image-wrapper {
-  height: 300px;
-  overflow: hidden;
-  position: relative;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
 }
 
 .image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 2s ease;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 2s ease;
 }
 
 .image-wrapper:hover img {
-  transform: translateY(-20%);
+	transform: translateY(-20%);
 }
 
 h3 {
-  margin: 10px 0;
-  font-size: 18px;
+	margin: 10px 0;
+	font-size: 18px;
 }
 
 p {
-  color: #666;
+	color: #666;
 }
 
 .lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
 }
 
 .lightbox img {
-  max-width: 90%;
-  max-height: 90%;
+	max-width: 90%;
+	max-height: 90%;
 }
 
 .close-btn,
 .prev-btn,
 .next-btn {
-  position: absolute;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
+	position: absolute;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
 }
 
 .close-btn {
-  top: 20px;
-  right: 20px;
+	top: 20px;
+	right: 20px;
 }
 
 .prev-btn {
-  left: 20px;
+	left: 20px;
 }
 
 .next-btn {
-  right: 20px;
+	right: 20px;
 }
 
 footer {
-  /* z-index: 99; */
+	/* z-index: 99; */
 }
 
 .toTop {
-  z-index: 100;
+	z-index: 100;
 }
 
 .logo-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 150px;
-  /* Adjust width to fit your logo */
-  height: auto;
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	/* Adjust width to fit your logo */
+	height: auto;
 }
 
 .gradient-mask {
-  position: absolute;
-  top: 0;
-  left: 7px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, #00f0ff, #763bff, #9D00FF, #00ffcc, #00f0ff);
-  filter: saturate(60%) brightness(120%);
-  background-size: 200%;
-  /* Extend size for smooth animation */
-  -webkit-mask-image: url({logo});
-  /* Mask logo without amber */
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
-  mask-image: url('src/img/amberweb-logo-white-no-amber.png');
-  /* For standard browsers */
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  animation: gradient-animation 15s linear infinite;
+	position: absolute;
+	top: 0;
+	left: 7px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, #00f0ff, #763bff, #9D00FF, #00ffcc, #00f0ff);
+	filter: saturate(60%) brightness(120%);
+	background-size: 200%;
+	/* Extend size for smooth animation */
+	-webkit-mask-image: url({logo});
+	/* Mask logo without amber */
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+	mask-image: url('src/img/amberweb-logo-white-no-amber.png');
+	/* For standard browsers */
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
+	animation: gradient-animation 15s linear infinite;
 }
 
 .logo-wrapper img {
-  position: relative;
-  z-index: 1;
-  /* Place on top of the gradient */
-  display: block;
-  width: 100%;
-  /* Ensure the image matches the container size */
-  height: auto;
+	position: relative;
+	z-index: 1;
+	/* Place on top of the gradient */
+	display: block;
+	width: 100%;
+	/* Ensure the image matches the container size */
+	height: auto;
 }
 
 @keyframes gradient-animation {
-  0% {
-    background-position: 200% 50%;
-  }
+	0% {
+		background-position: 200% 50%;
+	}
 
-  100% {
-    background-position: 0% 50%;
-    /* Smooth looping */
-  }
+	100% {
+		background-position: 0% 50%;
+		/* Smooth looping */
+	}
 }
 
 .z-999 {
-  z-index: 999999;
+	z-index: 999999;
 }
 
 .grecaptcha-badge {
-  display: none !important;
+	display: none !important;
 }
 
 .cky-consent-container .cky-consent-bar {
-  box-shadow: none !important;
+	box-shadow: none !important;
 }
 
 .cky-revisit-bottom-left {
-  bottom: 2rem !important;
-  left: 2rem !important;
+	bottom: 2rem !important;
+	left: 2rem !important;
 }
 
 .testimonials-container {
-  height: calc(4 * 250px);
-  /* Show 4 testimonials at a time (adjust the value depending on your design) */
-  /* overflow-y: hidden; */
-  /* Allow scrolling */
-  padding-bottom: 20px;
-  /* Space for the barely visible next testimonials */
+	height: calc(4 * 250px);
+	/* Show 4 testimonials at a time (adjust the value depending on your design) */
+	/* overflow-y: hidden; */
+	/* Allow scrolling */
+	padding-bottom: 20px;
+	/* Space for the barely visible next testimonials */
 }
 
 .testimonial-item {
-  height: 250px;
-  /* Adjust the height of each testimonial item */
-  margin-bottom: 20px;
-  /* Adjust the gap between each testimonial */
+	height: 250px;
+	/* Adjust the height of each testimonial item */
+	margin-bottom: 20px;
+	/* Adjust the gap between each testimonial */
 }
 
 /* Default (inactive) dots */
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.5);
-  /* Light gray/white */
-  width: 10px;
-  height: 10px;
-  transition: background-color 0.3s ease;
+	background-color: rgba(255, 255, 255, 0.5);
+	/* Light gray/white */
+	width: 10px;
+	height: 10px;
+	transition: background-color 0.3s ease;
 }
 
 /* Active dot */
 .swiper-pagination-bullet-active {
-  background-color: #00bcd4;
-  /* Electric blue */
-  width: 12px;
-  height: 12px;
+	background-color: #00bcd4;
+	/* Electric blue */
+	width: 12px;
+	height: 12px;
 }
 
 .custom-swiper .swiper-pagination {
-  position: relative !important;
-  /* Override Swiper default */
-  margin-top: 20px;
-  /* Adjust space below slides */
+	position: relative !important;
+	/* Override Swiper default */
+	margin-top: 20px;
+	/* Adjust space below slides */
 }
 
 /* data-cky-tag="detail-powered-by" display none */
 [data-cky-tag="detail-powered-by"] {
-  display: none !important;
+	display: none !important;
 }
 
 .leaflet-control-container .leaflet-control-attribution {
-  display: none !important;
+	display: none !important;
 }

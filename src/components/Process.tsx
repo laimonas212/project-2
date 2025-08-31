@@ -1,29 +1,29 @@
 import { motion } from "framer-motion";
 
 interface Step {
-    number: string;
-    title: string;
-    description: string;
+	number: string;
+	title: string;
+	description: string;
 }
 
 interface ProcessProps {
-    steps?: Step[];
-    headline?: string;
-    description?: string;
+	steps?: Step[];
+	headline?: string;
+	description?: string;
 }
 
 // function to make text between ** ** bold in markdown
 const makeTextBold = (text: string) => {
-    const regex = /\*\*(.*?)\*\*/g;
-    return text.split(regex).map((part, index) =>
-        index % 2 === 1 ? (
-            <strong key={index} className="font-bold">
-                {part}
-            </strong>
-        ) : (
-            part
-        )
-    );
+	const regex = /\*\*(.*?)\*\*/g;
+	return text.split(regex).map((part, index) =>
+		index % 2 === 1 ? (
+			<strong key={index} className="font-bold">
+				{part}
+			</strong>
+		) : (
+			part
+		)
+	);
 };
 
 const Process = ({
@@ -77,7 +77,9 @@ const Process = ({
 					viewport={{ once: true }}
 					className="text-center mb-16"
 				>
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">{headline}</h2>
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">
+						{headline}
+					</h2>
 					<p className="text-white/70 text-lg max-w-2xl mx-auto">
 						{description}
 					</p>
@@ -107,8 +109,12 @@ const Process = ({
 							</div>
 
 							{/* Content */}
-							<h3 className="text-xl font-bold mb-4">{step.title}</h3>
-							<p className="text-white/70">{makeTextBold(step.description)}</p>
+							<h3 className="text-xl font-bold mb-4">
+								{step.title}
+							</h3>
+							<p className="text-white/70">
+								{makeTextBold(step.description)}
+							</p>
 
 							{/* Rodyklės */}
 							{index < steps.length - 1 && (

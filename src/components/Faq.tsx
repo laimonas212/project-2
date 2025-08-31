@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 
 interface FAQItem {
     question: string;
-    answer: string;
+    answer: string | React.ReactNode;
 }
 
 interface FAQProps {
@@ -58,56 +58,56 @@ const defaultFAQ: FAQItem[] = [
 ];
 
 const FAQ = ({ data = defaultFAQ, heading = "D.U.K.", subtext = "Jeigu turite klausimų apie mūsų paslaugas ar norite gauti daugiau informacijos, susisiekite su mumis." }: FAQProps) => {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
+	const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-    const toggleFAQ = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
+	const toggleFAQ = (index: number) => {
+		setOpenIndex(openIndex === index ? null : index);
+	};
 
-    return (
-        <div className="pt-8 flex justify-center items-center flex-col text-center pb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{heading}</h2>
+	return (
+		<div className="pt-8 flex justify-center items-center flex-col text-center pb-16">
+			<h2 className="text-3xl md:text-4xl font-bold mb-4">{heading}</h2>
 
-            <motion.div
-                className="container mx-auto p-4 gap-8 max-w-4xl"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-            >
-                <div className="space-y-2">
-                    {data.map((item, index) => (
-                        <div key={index} className="border-b card hover:border-electric-blue/30 pt-2 pb-2">
-                            <button
-                                className="w-full text-left text-white/80 flex justify-between items-center py-2 text-lg font-medium group"
-                                onClick={() => toggleFAQ(index)}
-                            >
-                                {item.question}
-                                <motion.span
-                                    animate={{ rotate: openIndex === index ? 180 : 0 }}
-                                    transition={{ duration: 0.3 }}
-                                    className="inline-block group-hover:text-electric-blue"
-                                >
-                                    <ChevronDown />
-                                </motion.span>
-                            </button>
-                            <motion.div
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={openIndex === index ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
-                                transition={{ duration: 0.3, ease: "easeInOut" }}
-                                className="overflow-hidden text-white/50 text-md text-left"
-                            >
-                                <div className="py-2">{item.answer}</div>
-                            </motion.div>
-                        </div>
-                    ))}
-                </div>
+			<motion.div
+				className="container mx-auto p-4 gap-8 max-w-4xl"
+				initial={{ opacity: 0, y: 20 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true }}
+			>
+				<div className="space-y-2">
+					{data.map((item, index) => (
+						<div key={index} className="border-b card hover:border-electric-blue/30 pt-2 pb-2">
+							<button
+								className="w-full text-left text-white/80 flex justify-between items-center py-2 text-lg font-medium group"
+								onClick={() => toggleFAQ(index)}
+							>
+								{item.question}
+								<motion.span
+									animate={{ rotate: openIndex === index ? 180 : 0 }}
+									transition={{ duration: 0.3 }}
+									className="inline-block group-hover:text-electric-blue"
+								>
+									<ChevronDown />
+								</motion.span>
+							</button>
+							<motion.div
+								initial={{ height: 0, opacity: 0 }}
+								animate={openIndex === index ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+								transition={{ duration: 0.3, ease: "easeInOut" }}
+								className="overflow-hidden text-white/50 text-md text-left"
+							>
+								<div className="py-2">{item.answer}</div>
+							</motion.div>
+						</div>
+					))}
+				</div>
 
-                {subtext && (
-                    <p className="text-md pt-8 text-white/80">{subtext}</p>
-                )}
-            </motion.div>
-        </div>
-    );
+				{subtext && (
+					<p className="text-md pt-8 text-white/80">{subtext}</p>
+				)}
+			</motion.div>
+		</div>
+	);
 };
 
 export default FAQ;
