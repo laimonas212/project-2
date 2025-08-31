@@ -207,75 +207,99 @@ const TemplatesPage: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen">
-      <Helmet>
-        <title>Paruošti dizainai - Svetainių šablonai | Amberweb</title>
-        <meta
-          name="description"
-          content="Peržiūrėkite mūsų paruoštus dizainus asmeninėms svetainėms ir el. parduotuvėms. Greitas startas jūsų verslui."
-        />
-        <link rel="canonical" href="https://amberweb.lt/paruosti-dizainai" />
-      </Helmet>
+      <div className="min-h-screen">
+          <Helmet>
+              <title>Paruošti dizainai - Svetainių šablonai | Amberweb</title>
+              <meta
+                  name="description"
+                  content="Peržiūrėkite mūsų paruoštus dizainus asmeninėms svetainėms ir el. parduotuvėms. Greitas startas jūsų verslui."
+              />
+              <link
+                  rel="canonical"
+                  href="https://amberweb.lt/paruosti-dizainai"
+              />
+          </Helmet>
 
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
-      </div>
-      <div className="container relative mx-auto px-4">
-        <div className="text-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-6 px-4"
-          >
-            <h1 className="text-4xl md:text-5xl mb-8 font-bold">
-              Paruošti dizainai
-            </h1>
-
-          <div className="flex justify-center gap-4">
-            {[
-              { type: "rodyti viską", icon: <Layers /> },
-              { type: "asmeninės svetainės", icon: <User /> },
-              { type: "el. parduotuvės", icon: <ShoppingBag /> },
-            ].map(({ type, icon }) => (
-              <button
-              key={type}
-              onClick={() => setSelectedType(type as typeof selectedType)}
-              className={`px-6 py-2 rounded-full transition-colors text-xs ${
-                selectedType === type
-                ? "button-primary"
-                : "bg-dark-surface-2 text-white/70 hover:text-white"
-              } flex items-center gap-2`}
-              >
-                {icon}
-              </button>
-            ))}
+          <div className="fixed inset-0 z-0 pointer-events-none">
+              <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
           </div>
-            </motion.div>
-        </div>
+          <div className="container relative mx-auto px-4">
+              <div className="text-center mb-12">
+                  <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="text-center mb-6 px-4"
+                  >
+                      <h1 className="text-4xl md:text-5xl mb-8 font-bold">
+                          Paruošti dizainai
+                      </h1>
+                      <p className="text-white/70 max-w-2xl mx-auto mb-6">
+                          Peržiūrėkite mūsų paruoštus dizainus asmeninėms
+                          svetainėms ir el. parduotuvėms – greitas startas jūsų
+              verslui.
+              <br />
+              Jei ieškote <b>individualaus sprendimo</b>,{" "}
+                          <a
+                              href="/kontaktai"
+                              className="text-electric-blue underline"
+              >
+                              susisiekite su mumis
+                          </a>
+                          !
+                      </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32">
-          {filteredTemplates.map((template) => (
-            <MobilePreview
-              key={template.id}
-              template={template as Template}
-              onClick={(clickMode) => {
-                setSelectedTemplate(template as Template);
-                setMode(clickMode); // image arba live
-              }}
-            />
-          ))}
-        </div>
+                      <div className="flex justify-center gap-4">
+                          {[
+                              { type: "rodyti viską", icon: <Layers /> },
+                              { type: "asmeninės svetainės", icon: <User /> },
+                              {
+                                  type: "el. parduotuvės",
+                                  icon: <ShoppingBag />,
+                              },
+                          ].map(({ type, icon }) => (
+                              <button
+                                  key={type}
+                                  onClick={() =>
+                                      setSelectedType(
+                                          type as typeof selectedType
+                                      )
+                                  }
+                                  className={`px-6 py-2 rounded-full transition-colors text-xs ${
+                                      selectedType === type
+                                          ? "button-primary"
+                                          : "bg-dark-surface-2 text-white/70 hover:text-white"
+                                  } flex items-center gap-2`}
+                              >
+                                  {icon}
+                              </button>
+                          ))}
+                      </div>
+                  </motion.div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-32">
+                  {filteredTemplates.map((template) => (
+                      <MobilePreview
+                          key={template.id}
+                          template={template as Template}
+                          onClick={(clickMode) => {
+                              setSelectedTemplate(template as Template);
+                              setMode(clickMode); // image arba live
+                          }}
+                      />
+                  ))}
+              </div>
+          </div>
+
+          {selectedTemplate && (
+              <Lightbox
+                  template={selectedTemplate}
+                  onClose={() => setSelectedTemplate(null)}
+                  mode={mode}
+                  setMode={setMode}
+              />
+          )}
       </div>
-
-      {selectedTemplate && (
-        <Lightbox
-          template={selectedTemplate}
-          onClose={() => setSelectedTemplate(null)}
-          mode={mode}
-          setMode={setMode}
-        />
-      )}
-    </div>
   );
 };
 
