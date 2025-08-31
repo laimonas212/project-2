@@ -60,6 +60,8 @@ import DentesVitae from './pages/projektai/dentes-vitae';
 import VersloTinklarastis from './pages/blog/VersloTinklarastis';
 import DomenoPasirinkimas from './pages/blog/DomenoPasirinkimas';
 import SenosSvetainesAtnaujinimasArNauja from './pages/blog/SenosSvetainesAtnaujinimasArNauja'; 
+import HeroSectionLanding from './components/HeroSectionLanding';
+import Landing from './pages/Landing';
 
 function App() {
   useEffect(() => {
@@ -90,6 +92,7 @@ function App() {
               <Route path="/kontaktai" element={<Kontaktai />} />
               <Route path="/blog" element={<Straipsniai />} />
               <Route path="/svetaine-per-24h" element={<SvetainePer24h />} />
+              <Route path="/interneto-svetainiu-kurimas" element={<Landing />} />
               <Route
                 path="/privatumo-politika"
                 element={<PrivatumoPolitika />}
