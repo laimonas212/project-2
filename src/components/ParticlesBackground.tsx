@@ -25,7 +25,7 @@ const ParticlesBackground: React.FC = () => {
 		renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
 		const particlesGeometry = new THREE.BufferGeometry();
-		const particlesCount = 1000;
+		const particlesCount = 3000;
 		const posArray = new Float32Array(particlesCount * 3);
 
 		for (let i = 0; i < particlesCount * 3; i++) {
@@ -42,6 +42,9 @@ const ParticlesBackground: React.FC = () => {
 			color: "#00F0FF",
 			transparent: true,
 			opacity: 0.8,
+			map: new THREE.TextureLoader().load(
+				"https://threejs.org/examples/textures/sprites/disc.png"
+			),
 		});
 
 		const particlesMesh = new THREE.Points(
