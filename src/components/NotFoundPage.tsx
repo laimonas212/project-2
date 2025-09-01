@@ -14,9 +14,8 @@ const NotFoundPage: React.FC = () => {
 			<ParticlesBackground />
 
 			{/* Gradient Overlays */}
-			<div className="absolute inset-0 z-0">
-				<div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
-				<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.15)_0%,transparent_50%)]" />
+			<div className="fixed inset-0 z-0 pointer-events-none">
+				<div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
 			</div>
 
 			{/* Content */}
