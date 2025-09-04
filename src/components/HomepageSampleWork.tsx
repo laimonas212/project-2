@@ -3,6 +3,7 @@ import projects, { Project } from "./Projects";
 import { MousePointerClick } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import ProjectShowcase from "./ProjectShowcase";
 
 const HomepageSampleWork = () => {
 	const projectsList = projects as Project[];
@@ -39,20 +40,8 @@ const HomepageSampleWork = () => {
 								key={project.title}
 								className="relative p-4 justify-center flex flex-col group border border-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:border-electric-blue/30"
 							>
-								<motion.img
-									src={project.image}
-									alt={project.title}
-									loading="lazy"
-									initial={{ opacity: 0, scale: 0.95 }}
-									whileInView={{ opacity: 1, scale: 1 }}
-									viewport={{ once: true }}
-									transition={{
-										delay: index * 0.1,
-										duration: 0.5,
-										ease: "easeOut",
-									}}
-									className="h-48 w-auto object-contain"
-								/>
+								<ProjectShowcase images={project.images} />
+
 								<motion.div
 									initial={{ opacity: 0, y: 20 }}
 									whileInView={{ opacity: 1, y: 0 }}
