@@ -81,7 +81,7 @@ export default function ProjectPage({ project }: Props) {
 						property="og:description"
 						content={project.description}
 					/>
-					<meta property="og:image" content={project.image} />
+					<meta property="og:image" content={project.images?.desktop} />
 					<meta
 						property="og:url"
 						content={`${baseUrl}/projektai/${project.id}`}
@@ -94,7 +94,7 @@ export default function ProjectPage({ project }: Props) {
 					<link
 						rel="preload"
 						as="image"
-						href={project.image}
+						href={project.images?.desktop}
 						type="image/webp"
 					/>
 					<script type="application/ld+json">
@@ -109,11 +109,61 @@ export default function ProjectPage({ project }: Props) {
 					← Grįžti atgal į projektus
 				</button>
 
-				<img
+				<div className="flex justify-center items-end w-full m-auto my-20">
+					{/* Mobile */}
+					<motion.div
+						initial={{ opacity: 0, x: -30 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.6, delay: 0 }}
+						className="relative z-10 [perspective:800px] group"
+					>
+						<div className="transition-transform duration-300 [transform:rotateY(20deg)_rotateX(4deg)] h-full">
+							<img
+								src={project.images?.mobile}
+								loading="lazy"
+								className="h-full w-full object-cover scale-[0.9] shadow-2xl rounded-xl "
+							/>
+						</div>
+					</motion.div>
+
+					{/* Tablet */}
+					<motion.div
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.6, delay: 0.1 }}
+						className="relative z-20 -ml-12 [perspective:800px] scale-95 md:scale-100 group"
+					>
+						<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(3deg)] h-full">
+							<img
+								src={project.images?.tablet}
+								loading="lazy"
+								className="h-full w-full object-cover rounded-xl"
+							/>
+						</div>
+					</motion.div>
+
+					{/* Desktop */}
+					<motion.div
+						initial={{ opacity: 0, x: 70 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.6, delay: 0.2 }}
+						className="relative z-30 -ml-16 [perspective:800px] group"
+					>
+						<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(2deg)] h-full">
+							<img
+								src={project.images?.desktop}
+								loading="lazy"
+								className="h-full w-full object-cover rounded-xl"
+							/>
+						</div>
+					</motion.div>
+				</div>
+
+				{/* <img
 					src={project.image}
 					alt={project.alt}
 					className="rounded-xl mb-4"
-				/>
+				/> */}
 				<h1 className="text-3xl font-bold text-white/80">
 					{project.title}
 				</h1>
@@ -121,7 +171,6 @@ export default function ProjectPage({ project }: Props) {
 					{project.subtitle}
 				</h2>
 				<p className="mb-4 text-white/60">{project.description}</p>
-
 				<div className="flex flex-wrap gap-2 mb-8">
 					{project.tags.map((tag, idx) => (
 						<span
@@ -132,7 +181,6 @@ export default function ProjectPage({ project }: Props) {
 						</span>
 					))}
 				</div>
-
 				<a
 					href={project.link}
 					target="_blank"
@@ -140,7 +188,6 @@ export default function ProjectPage({ project }: Props) {
 				>
 					Aplankyti svetainę →
 				</a>
-
 				{/* Papildomas SEO turinys */}
 				<section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
 					{project.goals && (
@@ -216,7 +263,7 @@ export default function ProjectPage({ project }: Props) {
 						className="group w-full md:w-1/2 flex items-center gap-4 justify-center md:justify-start text-center md:text-left"
 					>
 						<img
-							src={prevProject.image}
+							src={prevProject.images?.desktop}
 							alt={prevProject.alt}
 							className="w-20 h-14 object-cover rounded-md border border-white/10"
 						/>
@@ -247,7 +294,7 @@ export default function ProjectPage({ project }: Props) {
 							</div>
 						</div>
 						<img
-							src={nextProject.image}
+							src={nextProject.images?.desktop}
 							alt={nextProject.alt}
 							className="w-20 h-14 object-cover rounded-md border border-white/10"
 						/>

@@ -6,6 +6,11 @@ export type Project = {
 	subtitle: string;
 	description: string;
 	image: string;
+	images?: {
+		desktop: string;
+		tablet: string;
+		mobile: string;
+	};
 	alt: string;
 	tags: string[];
 	link: string;
@@ -26,6 +31,11 @@ const projects = [
 		description:
 			"LŽSPA – Lietuvos žmonių su stuburo pažeidimais asociacijos svetainė, sukurta siekiant informuoti, įgalinti ir suburti bendruomenę. Puslapyje pateikiama informacija apie asociacijos veiklą, renginius, aktualijas bei galimybę prisidėti prie jos iniciatyvų. Dizainas pritaikytas prieinamumui – aiški struktūra, kontrastingos spalvos ir lengvai skaitomas turinys. Projektas įgyvendintas su WordPress ir Divi, neatlygintinai, kaip socialiai atsakinga iniciatyva.",
 		image: Images.projects.lzspa,
+		images: {
+			desktop: Images.projects.lzspa.desktop,
+			tablet: Images.projects.lzspa.tablet,
+			mobile: Images.projects.lzspa.mobile,
+		},
 		alt: "LŽSPA, Lietuvos žmonių su stuburo pažeidimais asociacija interneto svetainė su WordPress, prieinamumo funkcijomis ir informacija apie veiklą",
 		tags: [
 			"WordPress",
@@ -74,6 +84,11 @@ const projects = [
 		description:
 			"Yoga with Mėta – unikalūs jogos užsiėmimai, derinantys švelnius jogos pratimus su mažų gyvūnų, tokių kaip šuniukai, kačiukai ir triušiukai, draugija, taip pat joga žvakių šviesoje. Dalyviai gali atsipalaiduoti, sumažinti stresą ir mėgautis jaukia, raminančia atmosfera. Svetainėje pateikiama informacija apie užsiėmimus, trenerius, tvarkaraštį ir leidžiama registruotis internetu.",
 		image: Images.projects.yogaWithMeta,
+		images: {
+			desktop: Images.projects.yogaWithMeta.desktop,
+			tablet: Images.projects.yogaWithMeta.tablet,
+			mobile: Images.projects.yogaWithMeta.mobile,
+		},
 		alt: "Yoga with Mėta – jogos su gyvūnais ir joga žvakių šviesoje svetainė su WordPress ir Divi",
 		tags: [
 			"WordPress",
@@ -121,7 +136,12 @@ const projects = [
 		subtitle: "Paminklų gamyba ir kapų priežiūra Lietuvoje",
 		description:
 			"MB „Akmenukas“ – daugiau nei 20 metų patirties turinti įmonė, kurianti individualius sprendimus paminklų gamyboje, kapaviečių įrengime bei natūralaus akmens gaminių srityje. Svetainėje pristatomos teikiamos paslaugos, skaldos prekyba, akmens gaminiai interjerui ir eksterjerui. Projektas sukurtas naudojant WordPress ir Divi, su švariu, vizualiai patraukliu dizainu, optimizuotu SEO ir socialiniam dalinimuisi.",
-		image: Images.projects.akmenukas,
+		image: Images.projects.akmenukas.desktop,
+		images: {
+			desktop: Images.projects.akmenukas.desktop,
+			tablet: Images.projects.akmenukas.tablet,
+			mobile: Images.projects.akmenukas.mobile,
+		},
 		alt: "MB Akmenukas – paminklų gamyba, kapų tvarkymas ir akmens gaminiai, WordPress svetainė su Divi dizainu",
 		tags: [
 			"WordPress",
@@ -171,6 +191,11 @@ const projects = [
 		description:
 			"Dentes Vitae – tai moderni burnos priežiūros klinika, teikianti aukštos kokybės odontologines paslaugas. Svetainėje pateikiama informacija apie klinikos teikiamas paslaugas, gydytojus, pacientų atsiliepimus bei leidžiama registruotis vizitams internetu. Projektas sukurtas naudojant WordPress ir Divi, su švariu, profesionaliu dizainu, optimizuotu SEO ir pritaikytu mobiliems įrenginiams.",
 		image: Images.projects.dentesVitae,
+		images: {
+			desktop: Images.projects.dentesVitae.desktop,
+			tablet: Images.projects.dentesVitae.tablet,
+			mobile: Images.projects.dentesVitae.mobile,
+		},
 		alt: "Dentes Vitae – burnos priežiūros klinika, WordPress svetainė su Divi dizainu",
 		tags: [
 			"WordPress",
@@ -219,6 +244,11 @@ const projects = [
 		description:
 			"Kauno „Paparčio“ pradinė mokykla – tai savivaldybės biudžetinė įstaiga, teikianti pradinio ugdymo programas skirtingų gebėjimų mokiniams. Svetainėje pateikiama informacija apie mokyklos veiklą, pedagogus, neformaliojo ugdymo būrelius ir aktualijas. Taip pat integruota „Patyčių dėžutė“ bei prieinamumo nustatymai, užtikrinantys patogų naudojimąsi svetaine visiems lankytojams.",
 		image: Images.projects.paparcioPradineMokykla,
+		images: {
+			desktop: Images.projects.paparcioPradineMokykla.desktop,
+			tablet: Images.projects.paparcioPradineMokykla.tablet,
+			mobile: Images.projects.paparcioPradineMokykla.mobile,
+		},
 		alt: "Kauno „Paparčio“ pradinės mokyklos interneto svetainė su WordPress ir Divi, integruota Patyčių dėžutė ir prieinamumo funkcijos",
 		tags: [
 			"WordPress",
@@ -267,6 +297,11 @@ const projects = [
 		description:
 			"Holistinė kosmetologija – tai sveikatingumo ir grožio paslaugas teikiantis verslas, orientuotas į natūralumą, ekologiškumą ir holistinį požiūrį į kūno priežiūrą. Svetainėje įdiegta aiški paslaugų struktūra, integruota rezervacijų sistema su kalendoriumi bei el. parduotuvė natūraliems produktams. Dizainas sukurtas jaukus ir šviesus, pritaikytas tiek informacijos pateikimui, tiek vartotojo patogumui naršant mobiliuoju įrenginiu.",
 		image: Images.projects.holistinekosmetologija,
+		images: {
+			desktop: Images.projects.holistinekosmetologija.desktop,
+			tablet: Images.projects.holistinekosmetologija.tablet,
+			mobile: Images.projects.holistinekosmetologija.mobile,
+		},
 		alt: "Holistinė kosmetologija, sveikatingumo ir grožio paslaugos su el. parduotuve natūraliems produktams, sukurta WordPress ir WooCommerce",
 		tags: [
 			"WordPress",
@@ -317,6 +352,11 @@ const projects = [
 		description:
 			"A. Veselovaitės advokatų kontora – tai profesionalias teisines paslaugas teikianti įstaiga, orientuota į verslo, šeimos ir baudžiamąją teisę. Sukūrėme modernią, patikimą ir aiškios struktūros svetainę, kurioje lankytojai gali greitai rasti aktualią informaciją apie paslaugas, teisininkų patirtį ir kontaktus. Svetainė sukurta su WordPress ir Divi, įdiegta kalbų pasirinkimo funkcija, pritaikyta įvairiems įrenginiams bei optimizuota SEO.",
 		image: Images.projects.veselovaite,
+		images: {
+			desktop: Images.projects.veselovaite.desktop,
+			tablet: Images.projects.veselovaite.tablet,
+			mobile: Images.projects.veselovaite.mobile,
+		},
 		alt: "A. Veselovaitės advokatų kontoros svetainė su WordPress ir Divi, teisinės paslaugos, kalbų pasirinkimas ir SEO optimizacija",
 		tags: [
 			"WordPress",
@@ -365,6 +405,11 @@ const projects = [
 		description:
 			"TopStone Lietuva – tai dekoratyvinių akmens kilimų gamintojas ir montuotojas, pristatantis unikalų grindų dangos sprendimą vidaus ir lauko erdvėms. Svetainėje sukurta aiški produktų ir spalvų kolekcijų struktūra, skaičiuoklė kainai paskaičiuoti pagal dangos tipą ir plotą, o dizainas paryškina natūralaus akmens estetiką. Sprendimas sukurtas su WordPress + Divi, optimizuotas tiek informaciniam, tiek pardavimų tikslui.",
 		image: Images.projects.topStone,
+		images: {
+			desktop: Images.projects.topStone.desktop,
+			tablet: Images.projects.topStone.tablet,
+			mobile: Images.projects.topStone.mobile,
+		},
 		alt: "TopStone Lietuva interneto svetainė su WordPress, dekoratyviniai akmens kilimai, grindų dangos skaičiuoklė ir e-parduotuvė",
 		tags: [
 			"WordPress",
@@ -415,6 +460,11 @@ const projects = [
 		description:
 			"Archigrupė – įmonė, teikianti profesionalias geodezijos, kartografijos, žemėtvarkos bei miškininkystės paslaugas visoje Lietuvoje. Svetainėje pateikiama informacija apie topografinius ir kadastrinius matavimus, teritorijų planavimą, miškotvarką bei kitus sprendimus, susijusius su žemės ūkio ir miškų valdymu. Patogi struktūra leidžia greitai rasti reikiamą paslaugą ir lengvai susisiekti su specialistais.",
 		image: Images.projects.archiGrupe,
+		images: {
+			desktop: Images.projects.archiGrupe.desktop,
+			tablet: Images.projects.archiGrupe.tablet,
+			mobile: Images.projects.archiGrupe.mobile,
+		},
 		alt: "ARCHI grupė, geodezijos ir miškininkystės paslaugos, svetainė su WordPress ir Divi",
 		tags: [
 			"WordPress",
@@ -463,6 +513,11 @@ const projects = [
 		description:
 			"Brangus Auto – įmonė, teikianti greitas ir patikimas automobilių supirkimo paslaugas visoje Lietuvoje. Svetainėje įdiegtas supirkimo pasiūlymo formos sprendimas su galimybe įkelti automobilio nuotraukas bei dokumentus, pateikti informaciją apie transporto priemonę ir greitai gauti atsakymą. Dizainas aiškus, veikia kaip konversijų tunelis – lankytojas iškart nukreipiamas veiksmui, o struktūra pritaikyta tiek mobiliems, tiek stacionariems naudotojams.",
 		image: Images.projects.brangusAuto,
+		images: {
+			desktop: Images.projects.brangusAuto.desktop,
+			tablet: Images.projects.brangusAuto.tablet,
+			mobile: Images.projects.brangusAuto.mobile,
+		},
 		alt: "Brangus Auto WordPress interneto svetainė su automobilių supirkimo forma, nuotraukų ir dokumentų įkėlimu, pritaikyta tiek mobiliems, tiek stacionariems įrenginiams",
 		tags: [
 			"WordPress",
@@ -511,6 +566,11 @@ const projects = [
 		description:
 			"Kaliausė – profesionalių renginių vedėjų komanda, turinti daugiau nei 10 metų patirties organizuojant šventes suaugusiems, įmonėms ir vaikams. Svetainėje pristatomos teikiamos paslaugos, teminių renginių idėjos bei realių švenčių nuotraukų galerijos, padedančios klientams susidaryti aiškų įspūdį. Dizainas žaismingas, tačiau struktūriškai aiškus – lankytojas greitai randa tai, ko ieško. Projektas sukurtas WordPress + Divi pagrindu, pritaikytas skirtingiems įrenginiams bei turinio administravimui savarankiškai.",
 		image: Images.projects.kaliause,
+		images: {
+			desktop: Images.projects.kaliause.desktop,
+			tablet: Images.projects.kaliause.tablet,
+			mobile: Images.projects.kaliause.mobile,
+		},
 		alt: "WordPress svetainė skirta renginių vedėjų komandai, su galerija, teminių renginių idėjomis ir paslaugų pristatymu",
 		tags: [
 			"WordPress",
@@ -559,6 +619,11 @@ const projects = [
 		description:
 			"Esu Tau – dvasinio konsultavimo ir asmeninio augimo paslaugas teikiantis projektas, orientuotas į žmones, ieškančius vidinės ramybės, savęs pažinimo ir emocinės pusiausvyros. Svetainė minimalistinė, šilta ir jauki, perteikianti paslaugų esmę per tekstus, vizualus ir švarią struktūrą. Informacija pateikta aiškiai, su lengvu navigavimu, o WordPress + Divi pagrindu sukurta sistema leidžia lengvai administruoti turinį bei bendrauti su lankytojais per kontaktų formą.",
 		image: Images.projects.esuTau,
+		images: {
+			desktop: Images.projects.esuTau.desktop,
+			tablet: Images.projects.esuTau.tablet,
+			mobile: Images.projects.esuTau.mobile,
+		},
 		alt: "Minimalistinė WordPress svetainė dvasinio konsultavimo paslaugoms, su aiškia struktūra ir lengvu navigavimu",
 		tags: [
 			"WordPress",
@@ -607,6 +672,11 @@ const projects = [
 		description:
 			"Angel Butikas – tai internetinė mados platforma, pristatanti išskirtinius drabužius ir aksesuarus moterims, ieškančioms originalumo ir elegancijos. Svetainėje įgyvendinta e. prekybos sistema su patogia prekių naršymo patirtimi, vizualiai akcentuotos kolekcijos bei paprastas užsakymo procesas. Dizainas subtilus ir moteriškas, paremtas šviesia palete bei aiškia struktūra, leidžiančia greitai atrasti norimą prekę. Sukurta naudojant WordPress ir Divi, optimizuota mobiliesiems.",
 		image: Images.projects.angelButikas,
+		images: {
+			desktop: Images.projects.angelButikas.desktop,
+			tablet: Images.projects.angelButikas.tablet,
+			mobile: Images.projects.angelButikas.mobile,
+		},
 		alt: "WordPress interneto svetainė mados butikai, su e. prekybos sistema, patogiu prekių naršymu ir užsakymu",
 		tags: [
 			"WordPress",
@@ -656,6 +726,11 @@ const projects = [
 		description:
 			"GoDeko – kūrybinė studija, teikianti švenčių dekoravimo paslaugas įvairioms progoms: nuo vaikų gimtadienių iki vestuvių ar įmonių renginių. Svetainėje akcentuojamas vizualinis turinys – integruota galerija su realių projektų nuotraukomis padeda lankytojams pajusti dekoro stilių ir estetiką. Aiški paslaugų struktūra ir užklausos forma leidžia greitai susisiekti dėl individualaus dekoro sprendimo. Projektas sukurtas su WordPress ir Divi, dizainas lengvas, žaismingas ir pilnai pritaikytas mobiliesiems įrenginiams.",
 		image: Images.projects.godeko,
+		images: {
+			desktop: Images.projects.godeko.desktop,
+			tablet: Images.projects.godeko.tablet,
+			mobile: Images.projects.godeko.mobile,
+		},
 		alt: "WordPress svetainė švenčių dekoravimo paslaugoms, su galerija ir užklausos forma, pritaikyta mobiliems įrenginiams",
 		tags: [
 			"WordPress",
@@ -704,6 +779,11 @@ const projects = [
 		description:
 			"Eriola – tarptautinė logistikos ir krovinių pervežimo įmonė, teikianti platų transportavimo paslaugų spektrą visoje Europoje ir už jos ribų. Svetainėje pristatytos pagrindinės paslaugų kryptys, pabrėžiant įmonės patirtį, patikimumą ir operatyvų klientų aptarnavimą. Dizainas modernus ir aiškus, su integruotu kalbų pasirinkimu, pritaikytas skirtingiems rinkų segmentams. Sukurta su WordPress ir Divi, svetainė lengvai administruojama bei puikiai veikia visuose įrenginiuose.",
 		image: Images.projects.eriola,
+		images: {
+			desktop: Images.projects.eriola.desktop,
+			tablet: Images.projects.eriola.tablet,
+			mobile: Images.projects.eriola.mobile,
+		},
 		alt: "WordPress svetainė tarptautinei logistikos įmonei su kalbų pasirinkimo funkcija ir moderniu dizainu",
 		tags: [
 			"WordPress",
@@ -753,6 +833,11 @@ const projects = [
 		description:
 			"Lithuan – profesionalias vertimo paslaugas teikiantis biuras, dirbantis su įvairiomis kalbų poromis ir skirtingų sričių tekstais – nuo teisinių dokumentų iki techninių instrukcijų. Svetainėje pateikta aiški paslaugų struktūra, kalbų sąrašas, įkainių informacija ir kontaktų forma greitam užklausos pateikimui. Dizainas minimalus ir funkcionalus, orientacija į verslo klientus. Projektas įgyvendintas su WordPress ir Divi, užtikrinant lengvą turinio valdymą ir gerą pasiekiamumą mobiliuose įrenginiuose.",
 		image: Images.projects.lithuan,
+		images: {
+			desktop: Images.projects.lithuan.desktop,
+			tablet: Images.projects.lithuan.tablet,
+			mobile: Images.projects.lithuan.mobile,
+		},
 		alt: "WordPress svetainė vertimų biurui su aiškia paslaugų struktūra ir kalbų pasirinkimo funkcija",
 		tags: [
 			"WordPress",
@@ -802,6 +887,11 @@ const projects = [
 		description:
 			"Gavorka Art – meninė galerija internete, skirta pristatyti išskirtinius Povilo Gavorkos kūrinius. Svetainė sukurta kaip minimalistinė ir vizualiai išgryninta erdvė, leidžianti lankytojui koncentruotis į meną – be pašalinių trukdžių. Integruota galerija su darbų peržiūra, kūrinių aprašymais bei informacija apie menininko veiklą. Projektas įgyvendintas WordPress ir Divi pagrindu, optimizuotas vizualinio turinio pateikimui ir naršymui skirtinguose įrenginiuose.",
 		image: Images.projects.gavorkaArt,
+		images: {
+			desktop: Images.projects.gavorkaArt.desktop,
+			tablet: Images.projects.gavorkaArt.tablet,
+			mobile: Images.projects.gavorkaArt.mobile,
+		},
 		alt: "Gavorka Art – meninė galerija WordPress ir Divi pagrindu, pristatanti Povilo Gavorkos kūrinius",
 		tags: [
 			"WordPress",
@@ -849,6 +939,11 @@ const projects = [
 		description:
 			"Gavorka – 3D animacijos studijos svetainė, skirta vizualiai pristatyti kūrybinius projektus ir animuotus sprendimus. Tinklalapyje pateikiamas darbų portfolio, demonstruojantis įvairius 3D animacijos stilius ir taikymus – nuo komercinių projektų iki asmeninių vizualinių eksperimentų. Dizainas kontrastingas, leidžiantis animacijoms išsiskirti, o navigacija minimalistinė ir greita. Svetainė sukurta su WordPress ir Divi, pritaikyta darbų demonstravimui bei klientų užklausų pateikimui.",
 		image: Images.projects.gavorka,
+		images: {
+			desktop: Images.projects.gavorka.desktop,
+			tablet: Images.projects.gavorka.tablet,
+			mobile: Images.projects.gavorka.mobile,
+		},
 		alt: "Gavorka 3D animacijos portfolio su WordPress ir Divi, skirta animuotų projektų demonstravimui",
 		tags: [
 			"WordPress",
@@ -896,6 +991,11 @@ const projects = [
 		description:
 			"Grožio Forma – internetinė kosmetikos parduotuvė, siūlanti platų grožio priemonių asortimentą moterims, vertinančioms kokybę ir estetiką. Svetainėje įdiegta patogi el. prekybos sistema su išsamia prekių informacija, filtravimo galimybėmis ir sklandžiu užsakymo procesu. Dizainas šviesus, minimalistinis, orientuotas į vizualinę prekių pateiktį bei mobiliųjų naudotojų patirtį. Projektas įgyvendintas WordPress ir Divi pagrindu, užtikrinant lengvą administravimą ir greitą veikimą.",
 		image: Images.projects.grozioForma,
+		images: {
+			desktop: Images.projects.grozioForma.desktop,
+			tablet: Images.projects.grozioForma.tablet,
+			mobile: Images.projects.grozioForma.mobile,
+		},
 		alt: "Grožio Forma – kosmetikos e-parduotuvė sukurtas su WordPress ir WooCommerce, minimalistinis dizainas",
 		tags: [
 			"WordPress",
@@ -944,6 +1044,11 @@ const projects = [
 		description:
 			"OVC – tai internetinė parduotuvė, kurioje pristatomi unikalūs mokymų produktai – knygos, žaidimai ir praktiniai įrankiai, sukurti OVC Consulting komandos. Svetainė skirta tam, kad lankytojai lengvai atrastų tinkamiausius produktus asmeniniam tobulėjimui, komandiniam darbui ar profesiniams mokymams. Integruota el. prekybos sistema su aiškiu produktų išdėstymu, patogiu krepšeliu ir sklandžiu pirkimo procesu. Dizainas švarus ir modernus, su WordPress + Divi pagrindu, pritaikytas tiek verslo klientams, tiek individualiems pirkėjams.",
 		image: Images.projects.ovc,
+		images: {
+			desktop: Images.projects.ovc.desktop,
+			tablet: Images.projects.ovc.tablet,
+			mobile: Images.projects.ovc.mobile,
+		},
 		alt: "OVC – internetinė parduotuvė su mokymų produktais sukurta WordPress ir WooCommerce, modernus dizainas",
 		tags: [
 			"WordPress",
@@ -992,6 +1097,11 @@ const projects = [
 		description:
 			"Printery – tai spaudos ant tekstilės paslaugas teikianti platforma, leidžianti klientams kurti individualius dizainus drabužiams ir aksesuarams. Svetainėje integruota failų įkėlimo sistema, leidžianti pateikti savo maketus ar logotipus tiesiai užsakymo metu. El. parduotuvėje patogiai pateikti produktai, spaudos tipai ir kainos, o užsakymo procesas – greitas ir intuityvus. Dizainas švarus, su moderniu charakteriu, pritaikytas tiek B2C, tiek B2B klientams. Projektas sukurtas su WordPress ir Divi, dėmesys skirtas sklandžiai vartotojo patirčiai bei techniniam funkcionalumui.",
 		image: Images.projects.printery,
+		images: {
+			desktop: Images.projects.printery.desktop,
+			tablet: Images.projects.printery.tablet,
+			mobile: Images.projects.printery.mobile,
+		},
 		alt: "Printery – spauda ant tekstilės su WordPress ir WooCommerce, paprasta ir intuityvi e-parduotuvė",
 		tags: [
 			"WordPress",
@@ -1041,6 +1151,11 @@ const projects = [
 		description:
 			"Prisipūsk Šypseną – tai internetinė parduotuvė, siūlanti ne tik balionų dekoracijas, bet ir prasmingas dovanas bei ritualinius rinkinius, skirtus džiuginti ir įkvėpti. Svetainėje integruota el. prekybos sistema su aiškia prekių struktūra, leidžiančia lengvai rasti norimą produktą. Dizainas šviesus ir žaismingas, atspindintis prekės ženklo pozityvumą. Projektas sukurtas naudojant WordPress ir Divi, užtikrinant patogų turinio valdymą ir sklandų naršymą įvairiuose įrenginiuose.",
 		image: Images.projects.prisipuskSypsena,
+		images: {
+			desktop: Images.projects.prisipuskSypsena.desktop,
+			tablet: Images.projects.prisipuskSypsena.tablet,
+			mobile: Images.projects.prisipuskSypsena.mobile,
+		},
 		alt: "Prisipūsk Šypseną – balionų ir dovanų parduotuvė sukurta su WordPress ir WooCommerce, šviesus ir žaismingas dizainas",
 		tags: [
 			"WordPress",
@@ -1091,6 +1206,11 @@ const projects = [
 		description:
 			"Provanso Svajos – kūrybinės dirbtuvės ir jauki erdvė, kurioje vyksta rankdarbių užsiėmimai, edukacijos, vaikų vasaros stovyklos bei rankų darbo dovanų kūrimas. Svetainė skirta pristatyti veiklų grafiką, supažindinti lankytojus su dirbtuvėse gimstančiais kūriniais bei suteikti galimybę susisiekti dėl dalyvavimo ar individualių užsakymų. Dizainas šviesus, įkvėptas Provanso estetikos, o struktūra – paprasta ir šilta, skatinanti naršyti. Projektas sukurtas naudojant WordPress ir Divi, orientuotas į bendruomeniškumą ir kūrybišką saviraišką.",
 		image: Images.projects.provansoSvajos,
+		images: {
+			desktop: Images.projects.provansoSvajos.desktop,
+			tablet: Images.projects.provansoSvajos.tablet,
+			mobile: Images.projects.provansoSvajos.mobile,
+		},
 		alt: "Provanso Svajos – rankų darbo dovanų ir dirbtuvių svetainė sukurta naudojant WordPress ir Divi",
 		tags: [
 			"WordPress",
@@ -1140,6 +1260,11 @@ const projects = [
 		description:
 			"Smaragdo Uostas – vaikų darželis, kuriame kuriama saugi, šilta ir kūrybiška aplinka mažųjų ugdymui. Svetainėje pateikiama išsami informacija apie ugdymo programas, kasdienę darželio rutiną, pedagogų komandą ir organizuojamas veiklas. Integruota galerija leidžia tėvams susipažinti su darželio aplinka bei veiklų akimirkomis. Dizainas šviesus, draugiškas ir lengvai naršomas, sukurtas naudojant WordPress ir Divi – užtikrinant tiek informacijos aiškumą, tiek patogų turinio valdymą.",
 		image: Images.projects.smaragdoUostas,
+		images: {
+			desktop: Images.projects.smaragdoUostas.desktop,
+			tablet: Images.projects.smaragdoUostas.tablet,
+			mobile: Images.projects.smaragdoUostas.mobile,
+		},
 		alt: "Smaragdo Uostas – vaikų darželis su WordPress ir Divi, edukacinės veiklos ir galerija",
 		tags: [
 			"WordPress",
@@ -1188,6 +1313,11 @@ const projects = [
 		description:
 			"SSSprendimai – įmonės svetainė, pristatanti profesionalius silpnųjų srovių sprendimus: nuo apsaugos sistemų iki vaizdo stebėjimo, elektros instaliacijos bei IT tinklų. Svetainėje pateikta aiški paslaugų struktūra, leidžianti greitai suprasti, kokius sprendimus įmonė siūlo verslui ar privatiems klientams. Dizainas minimalus, funkcionalus, atitinkantis techninio sektoriaus lūkesčius. Projektas įgyvendintas su WordPress ir Divi, užtikrinant stabilų veikimą, greitą įkėlimą ir lengvą administravimą.",
 		image: Images.projects.sssprendimai,
+		images: {
+			desktop: Images.projects.sssprendimai.desktop,
+			tablet: Images.projects.sssprendimai.tablet,
+			mobile: Images.projects.sssprendimai.mobile,
+		},
 		alt: "SSSprendimai – silpnųjų srovių sprendimai, apsaugos sistemos ir IT tinklai sukurta naudojant WordPress ir Divi",
 		tags: [
 			"WordPress",
@@ -1237,6 +1367,11 @@ const projects = [
 		description:
 			"Termoventa – įmonės svetainė, pristatanti inžinerinių sistemų projektavimo, montavimo ir aptarnavimo paslaugas. Svetainėje pateikiama techninė informacija apie šildymo, vėdinimo, kondicionavimo bei kitus sprendimus, sklandžiai struktūruota pagal paslaugų kategorijas. Dizainas modernus ir funkcionalus, orientuotas į verslo klientus, ieškančius patikimo partnerio. Projektas įgyvendintas WordPress ir Divi pagrindu, užtikrinant lengvą turinio administravimą ir patogią vartotojo patirtį tiek kompiuteriuose, tiek mobiliuosiuose įrenginiuose.",
 		image: Images.projects.termoventa,
+		images: {
+			desktop: Images.projects.termoventa.desktop,
+			tablet: Images.projects.termoventa.tablet,
+			mobile: Images.projects.termoventa.mobile,
+		},
 		alt: "Termoventa – inžinerinių sistemų projektavimas ir montavimas, sukurtas su WordPress ir Divi",
 		tags: [
 			"WordPress",
@@ -1286,6 +1421,11 @@ const projects = [
 		description:
 			"Tradicinė Virtuvė – tai kavinės svetainė, skirta pristatyti autentiškus lietuviškus patiekalus šiuolaikiškai. Svetainėje lankytojai gali peržiūrėti išsamų meniu, pasigrožėti patiekalų nuotraukomis bei greitai rasti kontaktinę informaciją ar rezervacijos galimybę. Dizainas šiltas, jaukus, atitinkantis tradicinės virtuvės dvasią, tačiau pateiktas moderniai ir aiškiai. Projektas sukurtas su WordPress ir Divi, pritaikytas tiek stacionariems įrenginiams, tiek mobiliesiems – kad alkani klientai greitai rastų, ko ieško.",
 		image: Images.projects.tradicineVirtuve,
+		images: {
+			desktop: Images.projects.tradicineVirtuve.desktop,
+			tablet: Images.projects.tradicineVirtuve.tablet,
+			mobile: Images.projects.tradicineVirtuve.mobile,
+		},
 		alt: "Tradicinė Virtuvė – lietuviškų patiekalų kavinė sukurta naudojant WordPress ir Divi, modernus dizainas",
 		tags: [
 			"WordPress",
@@ -1334,6 +1474,11 @@ const projects = [
 		description:
 			"U-Smiler – internetinė parduotuvė, skirta irigatorių – dantų ir burnos ertmės priežiūros prietaisų – pristatymui ir pardavimui. Svetainėje pateikiama detali informacija apie produktų privalumus, naudojimo būdus bei naudą sveikatai. Dizainas švarus, minimalistinis, atspindintis higienos tematiką ir pasitikėjimą. Įdiegta patogi užsakymo sistema, leidžianti greitai įsigyti prekę tiek mobiliuoju, tiek kompiuteriu. Projektas sukurtas WordPress ir Divi pagrindu, optimizuotas vartotojo patirčiai ir pirkimo konversijoms.",
 		image: Images.projects.uSmiler,
+		images: {
+			desktop: Images.projects.uSmiler.desktop,
+			tablet: Images.projects.uSmiler.tablet,
+			mobile: Images.projects.uSmiler.mobile,
+		},
 		alt: "U-Smiler – dantų ir burnos ertmės priežiūros prietaisai, e-parduotuvė sukurta su WordPress ir WooCommerce",
 		tags: [
 			"WordPress",

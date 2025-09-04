@@ -5,13 +5,19 @@ import projects from "../components/Projects";
 import { MousePointerClick } from "lucide-react";
 import sortedIds from "../components/sortedProjectIds";
 import FadeOutSection from "../components/FadeOutSection";
+import { Link } from "react-router-dom";
 
 interface Project {
 	id: string;
 	title: string;
 	subtitle?: string;
 	description: string;
-	image: string;
+	image: any;
+	images?: {
+		mobile: string;
+		tablet: string;
+		desktop: string;
+	};
 	alt: string;
 	tags: string[];
 	link?: string;
@@ -105,8 +111,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 								whileHover={{ scale: 1.02 }}
 								transition={{ duration: 0.3 }}
 							>
-								{/* Hover button in the center - NO NESTED <a> */}
-								<div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+								<div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none">
 									<div className="backdrop-blur-sm bg-white/60 px-4 py-2 rounded-md pointer-events-auto">
 										<span className="text-black text-xs font-medium flex items-center gap-2">
 											Peržiūrėti
@@ -114,11 +119,66 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 										</span>
 									</div>
 								</div>
-								<img
+								{/* <img
 									src={project.image}
 									alt={project.alt}
-									className="w-full h-full object-cover"
-								/>
+									className="w-full h-full object-contain"
+								/> */}
+								<div className="flex justify-center items-end w-full m-auto my-4">
+									{/* Mobile */}
+									<motion.div
+										initial={{ opacity: 0, y: 30 }}
+										whileInView={{ opacity: 1, y: 0 }}
+										transition={{ duration: 0.6 }}
+										className="relative z-10 [perspective:800px]  transition-all duration-500 group"
+									>
+										<div className="  transition-transform duration-500 [transform:rotateY(20deg)_rotateX(4deg)] h-full">
+											<img
+												src={project.images?.mobile}
+												loading="lazy"
+												className="h-full w-full object-cover scale-[0.9] shadow-2xl rounded-xl "
+											/>
+										</div>
+									</motion.div>
+
+									{/* Tablet */}
+									<motion.div
+										initial={{ opacity: 0, y: 30 }}
+										whileInView={{ opacity: 1, y: 0 }}
+										transition={{
+											duration: 0.6,
+											delay: 0.1,
+										}}
+										className="relative z-20 -ml-12 [perspective:800px] scale-95 md:scale-100 group"
+									>
+										<div className="shadow-2xl transition-transform duration-500 [transform:rotateY(20deg)_rotateX(3deg)] h-full">
+											<img
+												src={project.images?.tablet}
+												loading="lazy"
+												className="h-full w-full object-cover rounded-xl"
+											/>
+										</div>
+									</motion.div>
+
+									{/* Desktop */}
+									<motion.div
+										initial={{ opacity: 0, y: 30 }}
+										whileInView={{ opacity: 1, y: 0 }}
+										transition={{
+											duration: 0.6,
+											delay: 0.2,
+										}}
+										className="relative z-30 -ml-16 [perspective:800px] group"
+									>
+										<div className="shadow-2xl transition-transform duration-500 [transform:rotateY(20deg)_rotateX(2deg)] h-full">
+											<img
+												src={project.images?.desktop}
+												loading="lazy"
+												className="h-full w-full object-cover rounded-xl"
+											/>
+										</div>
+									</motion.div>
+								</div>
 							</motion.div>
 						</motion.a>
 
@@ -190,7 +250,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 						>
 							<div className="max-w-[85%]">
 								{/* Project Image */}
-								<motion.a
+								{/* <motion.a
 									href={`/projektai/${project.id}`}
 									rel="noreferrer"
 									className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden mb-12 group"
@@ -203,18 +263,78 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 									<img
 										src={project.image}
 										alt={project.alt}
-										className="w-full h-full object-cover transition"
+										className="w-full h-full object-contain transition"
 									/>
-									{/* Hover button in the center - NO NESTED <a> */}
-									<div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+
+									
+								</motion.a> */}
+
+								<Link
+									to={`/projektai/${project.id}`}
+									className="relative flex justify-center items-end w-full m-auto my-20"
+								>
+									<div className="z-50 absolute inset-0 flex items-center justify-center pointer-events-none">
 										<div className="backdrop-blur-sm bg-white/60 px-5 py-2 rounded-md pointer-events-auto">
-											<span className="text-black text-sm font-medium flex items-center gap-2">
+											<span className="text-black border-gray-50 text-sm font-medium flex items-center gap-2">
 												Peržiūrėti
 												<MousePointerClick className="w-6 h-6 animate-carousel-ping" />
 											</span>
 										</div>
 									</div>
-								</motion.a>
+									{/* Mobile */}
+									<motion.div
+										initial={{ opacity: 0, x: -50 }}
+										whileInView={{ opacity: 1, x: 0 }}
+										transition={{ duration: 0.6 }}
+										className="relative z-10 [perspective:800px] group"
+									>
+										<div className="transition-transform duration-300 [transform:rotateY(20deg)_rotateX(4deg)] h-full">
+											<img
+												src={project.images?.mobile}
+												loading="lazy"
+												className="h-full w-full object-cover scale-[0.9] shadow-2xl rounded-xl "
+											/>
+										</div>
+									</motion.div>
+
+									{/* Tablet */}
+									<motion.div
+										initial={{ opacity: 0, x: 30 }}
+										whileInView={{ opacity: 1, x: 0 }}
+										transition={{
+											duration: 0.6,
+											delay: 0.1,
+										}}
+										className="relative z-20 -ml-12 [perspective:800px] scale-95 md:scale-100 group"
+									>
+										<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(3deg)] h-full">
+											<img
+												src={project.images?.tablet}
+												loading="lazy"
+												className="h-full w-full object-cover rounded-xl"
+											/>
+										</div>
+									</motion.div>
+
+									{/* Desktop */}
+									<motion.div
+										initial={{ opacity: 0, x: 70 }}
+										whileInView={{ opacity: 1, x: 0 }}
+										transition={{
+											duration: 0.6,
+											delay: 0.2,
+										}}
+										className="relative z-30 -ml-16 [perspective:800px] group"
+									>
+										<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(2deg)] h-full">
+											<img
+												src={project.images?.desktop}
+												loading="lazy"
+												className="h-full w-full object-cover rounded-xl"
+											/>
+										</div>
+									</motion.div>
+								</Link>
 
 								{/* Project Info */}
 								<motion.div
