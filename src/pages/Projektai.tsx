@@ -129,10 +129,10 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 									<motion.div
 										initial={{ opacity: 0, x: -30 }}
 										whileInView={{ opacity: 1, x: 0 }}
-										transition={{ duration: 0.6 }}
-										className="relative z-10 [perspective:800px]  transition-all duration-500 group"
+										transition={{ duration: 0.6, delay: 0 }}
+										className="relative z-10 [perspective:800px] group"
 									>
-										<div className="  transition-transform duration-500 [transform:rotateY(20deg)_rotateX(4deg)] h-full">
+										<div className="transition-transform [transform:rotateY(20deg)_rotateX(4deg)] h-full">
 											<img
 												src={project.images?.mobile}
 												loading="lazy"
@@ -143,15 +143,15 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
 									{/* Tablet */}
 									<motion.div
-										initial={{ opacity: 0, y: 10 }}
-										whileInView={{ opacity: 1, y: 0 }}
+										initial={{ opacity: 0, scale: 0.8 }}
+										whileInView={{ opacity: 1, scale: 1 }}
 										transition={{
 											duration: 0.6,
 											delay: 0.1,
 										}}
 										className="relative z-20 -ml-12 [perspective:800px] scale-95 md:scale-100 group"
 									>
-										<div className="shadow-2xl transition-transform duration-500 [transform:rotateY(20deg)_rotateX(3deg)] h-full">
+										<div className="shadow-2xl transition-transform [transform:rotateY(20deg)_rotateX(3deg)] h-full">
 											<img
 												src={project.images?.tablet}
 												loading="lazy"
@@ -162,7 +162,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
 									{/* Desktop */}
 									<motion.div
-										initial={{ opacity: 0, x: 50 }}
+										initial={{ opacity: 0, x: 70 }}
 										whileInView={{ opacity: 1, x: 0 }}
 										transition={{
 											duration: 0.6,
@@ -170,7 +170,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 										}}
 										className="relative z-30 -ml-16 [perspective:800px] group"
 									>
-										<div className="shadow-2xl transition-transform duration-500 [transform:rotateY(20deg)_rotateX(2deg)] h-full">
+										<div className="shadow-2xl transition-transform [transform:rotateY(20deg)_rotateX(2deg)] h-full">
 											<img
 												src={project.images?.desktop}
 												loading="lazy"
