@@ -114,10 +114,10 @@ export default function ProjectPage({ project }: Props) {
 					<motion.div
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.6, delay: 0 }}
+						transition={{ duration: 0.3, delay: 0 }}
 						className="relative z-10 [perspective:800px] group"
 					>
-						<div className="transition-transform duration-300 [transform:rotateY(20deg)_rotateX(4deg)] h-full">
+						<div className="transition-transform [transform:rotateY(20deg)_rotateX(4deg)] h-full">
 							<img
 								src={project.images?.mobile}
 								loading="lazy"
@@ -130,10 +130,10 @@ export default function ProjectPage({ project }: Props) {
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.6, delay: 0.1 }}
+						transition={{ duration: 0.3, delay: 0.1 }}
 						className="relative z-20 -ml-12 [perspective:800px] scale-95 md:scale-100 group"
 					>
-						<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(3deg)] h-full">
+						<div className="shadow-2xl transition-transform [transform:rotateY(20deg)_rotateX(3deg)] h-full">
 							<img
 								src={project.images?.tablet}
 								loading="lazy"
@@ -146,10 +146,10 @@ export default function ProjectPage({ project }: Props) {
 					<motion.div
 						initial={{ opacity: 0, x: 70 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.6, delay: 0.2 }}
+						transition={{ duration: 0.3, delay: 0.2 }}
 						className="relative z-30 -ml-16 [perspective:800px] group"
 					>
-						<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(2deg)] h-full">
+						<div className="shadow-2xl transition-transform [transform:rotateY(20deg)_rotateX(2deg)] h-full">
 							<img
 								src={project.images?.desktop}
 								loading="lazy"
