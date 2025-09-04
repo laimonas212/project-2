@@ -127,8 +127,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 								<div className="flex justify-center items-end w-full m-auto my-4">
 									{/* Mobile */}
 									<motion.div
-										initial={{ opacity: 0, y: 30 }}
-										whileInView={{ opacity: 1, y: 0 }}
+										initial={{ opacity: 0, x: -30 }}
+										whileInView={{ opacity: 1, x: 0 }}
 										transition={{ duration: 0.6 }}
 										className="relative z-10 [perspective:800px]  transition-all duration-500 group"
 									>
@@ -143,7 +143,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
 									{/* Tablet */}
 									<motion.div
-										initial={{ opacity: 0, y: 30 }}
+										initial={{ opacity: 0, y: 10 }}
 										whileInView={{ opacity: 1, y: 0 }}
 										transition={{
 											duration: 0.6,
@@ -162,8 +162,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
 									{/* Desktop */}
 									<motion.div
-										initial={{ opacity: 0, y: 30 }}
-										whileInView={{ opacity: 1, y: 0 }}
+										initial={{ opacity: 0, x: 50 }}
+										whileInView={{ opacity: 1, x: 0 }}
 										transition={{
 											duration: 0.6,
 											delay: 0.2,
