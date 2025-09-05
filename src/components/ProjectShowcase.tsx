@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
 
@@ -12,6 +13,31 @@ interface ProjectShowcaseProps {
 
 export default function ProjectShowcase({ images }: ProjectShowcaseProps) {
 	const [lightboxImg, setLightboxImg] = useState<string | null>(null);
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	const lightbox = lightboxImg ? (
+		<div
+			className="fixed inset-0 bg-black/80 flex items-center justify-center z-[99999]"
+			onClick={() => setLightboxImg(null)}
+		>
+			<div className="relative" onClick={(e) => e.stopPropagation()}>
+				<button
+					className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white p-1.5 rounded-full transition"
+					onClick={() => setLightboxImg(null)}
+				>
+					<X size={16} />
+				</button>
+				<img
+					src={lightboxImg}
+					className="max-h-[90vh] max-w-[90vw] rounded-xl shadow-xl"
+				/>
+			</div>
+		</div>
+	) : null;
 
 	return (
 		<>
@@ -68,31 +94,8 @@ export default function ProjectShowcase({ images }: ProjectShowcaseProps) {
 				</motion.div>
 			</div>
 
-			{/* Lightbox */}
-			{lightboxImg && (
-				<div
-					className="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]"
-					onClick={() => setLightboxImg(null)} // uždaro paspaudus foną
-				>
-					<div
-						className="relative"
-						onClick={(e) => e.stopPropagation()} // stabdo bubble ant foto
-					>
-						{/* Close button on image */}
-						<button
-							className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white p-1.5 rounded-full transition"
-							onClick={() => setLightboxImg(null)}
-						>
-							<X size={16} />
-						</button>
-
-						<img
-							src={lightboxImg}
-							className="max-h-[90vh] max-w-[90vw] rounded-xl shadow-xl"
-						/>
-					</div>
-				</div>
-			)}
+			{/* Lightbox via Portal */}
+			{mounted && createPortal(lightbox, document.body)}
 		</>
 	);
 }
