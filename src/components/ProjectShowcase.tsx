@@ -9,9 +9,10 @@ interface ProjectShowcaseProps {
 		tablet: string;
 		desktop: string;
 	};
+	altTitle?: string;
 }
 
-export default function ProjectShowcase({ images }: ProjectShowcaseProps) {
+export default function ProjectShowcase({ images, altTitle }: ProjectShowcaseProps) {
 	const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 	const [mounted, setMounted] = useState(false);
 
@@ -53,6 +54,12 @@ export default function ProjectShowcase({ images }: ProjectShowcaseProps) {
 					<div className="[transform:rotateY(20deg)_rotateX(4deg)] h-full">
 						<img
 							src={images?.mobile}
+							alt={
+								altTitle
+									? altTitle +
+									  " mobiliojo įrenginio projekto nuotrauka"
+									: "Projekto nuotrauka"
+							}
 							loading="lazy"
 							className="h-full w-full object-cover scale-[0.9] shadow-2xl rounded-xl hover:scale-[0.91] transition-transform duration-300"
 						/>
@@ -70,6 +77,12 @@ export default function ProjectShowcase({ images }: ProjectShowcaseProps) {
 					<div className="shadow-2xl [transform:rotateY(20deg)_rotateX(3deg)] h-full">
 						<img
 							src={images?.tablet}
+							alt={
+								altTitle
+									? altTitle +
+									  " planšetinio įrenginio projekto nuotrauka"
+									: "Projekto nuotrauka"
+							}
 							loading="lazy"
 							className="h-full w-full object-cover rounded-xl hover:scale-[1.01] transition-transform duration-300"
 						/>
@@ -87,6 +100,12 @@ export default function ProjectShowcase({ images }: ProjectShowcaseProps) {
 					<div className="shadow-2xl [transform:rotateY(20deg)_rotateX(2deg)] h-full">
 						<img
 							src={images?.desktop}
+							alt={
+								altTitle
+									? altTitle +
+									  " kompiuterio ekrano projekto nuotrauka"
+									: "Projekto nuotrauka"
+							}
 							loading="lazy"
 							className="h-full w-full object-cover rounded-xl hover:scale-[1.01] transition-transform duration-300"
 						/>

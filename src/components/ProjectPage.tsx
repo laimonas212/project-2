@@ -113,7 +113,7 @@ export default function ProjectPage({ project }: Props) {
 					← Grįžti atgal į projektus
 				</button>
 
-				<ProjectShowcase images={project.images} />
+				<ProjectShowcase images={project.images} altTitle={project.title} />
 
 				<h1 className="text-3xl font-bold text-white/80">
 					{project.title}

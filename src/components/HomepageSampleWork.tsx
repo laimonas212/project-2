@@ -40,7 +40,7 @@ const HomepageSampleWork = () => {
 								key={project.title}
 								className="relative p-4 justify-center flex flex-col group border border-gray-700 rounded-lg overflow-hidden transition-all duration-300 hover:border-electric-blue/30"
 							>
-								<ProjectShowcase images={project.images} />
+								<ProjectShowcase images={project.images} altTitle={project.title} />
 
 								<motion.div
 									initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const HomepageSampleWork = () => {
 									</p>
 								</motion.div>
 
-								<div className="absolute inset-0 bg-black/60 text-white backdrop-blur-sm z-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 space-y-2 text-center">
+								<div className="p-2 absolute inset-0 bg-dark-surface/60 text-white backdrop-blur-sm z-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 space-y-2 text-center">
 									<span className="text-sm">Peržiūrėti</span>
 									<span className="text-lg font-semibold">
 										{project.title}

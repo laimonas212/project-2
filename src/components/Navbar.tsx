@@ -3,8 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { LayoutGrid, AlignRight, X } from "lucide-react";
 import { cn } from "../lib/utils";
-import logo from "../img/amberweb-logo-amber-only.png";
-import logo2 from "../img/amberweb-logo-white-no-amber.png";
+import logo from "../img/amberweb-logo-white.png";
 import Accessibility from "../components/Accessibility";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
@@ -75,29 +74,6 @@ const Navbar = () => {
 						to="/"
 						className="flex items-center space-x-2 logo-wrapper"
 					>
-						<div
-							className="gradient-mask"
-							style={{
-								position: "absolute",
-								top: 0,
-								left: "7px",
-								width: "100%",
-								height: "100%",
-								background:
-									"linear-gradient(90deg, #00f0ff, #763bff, #9D00FF, #00ffcc, #00f0ff)",
-								backgroundSize: "200%",
-								WebkitMaskImage: `url(${logo2})`,
-								WebkitMaskRepeat: "no-repeat",
-								WebkitMaskPosition: "center",
-								WebkitMaskSize: "contain",
-								maskImage: `url(${logo2})`,
-								maskRepeat: "no-repeat",
-								maskPosition: "center",
-								maskSize: "contain",
-								animation:
-									"gradient-animation 15s linear infinite",
-							}}
-						/>
 						<img src={logo} alt="Amberweb" className="w-10 h-10" />
 					</Link>
 

@@ -121,7 +121,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 									</div>
 								</div>
 
-								<ProjectShowcase images={project.images} />
+								<ProjectShowcase images={project.images} altTitle={project.title} />
 							</motion.div>
 						</motion.a>
 
@@ -192,26 +192,6 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 							style={{ scale, opacity }}
 						>
 							<div className="max-w-[85%]">
-								{/* Project Image */}
-								{/* <motion.a
-									href={`/projektai/${project.id}`}
-									rel="noreferrer"
-									className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden mb-12 group"
-									initial={{ opacity: 0, y: 20 }}
-									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true }}
-									whileHover={{ scale: 1.02 }}
-									transition={{ duration: 0.3 }}
-								>
-									<img
-										src={project.image}
-										alt={project.alt}
-										className="w-full h-full object-contain transition"
-									/>
-
-									
-								</motion.a> */}
-
 								<Link
 									to={`/projektai/${project.id}`}
 									className="relative flex justify-center items-end w-full m-auto my-20"
@@ -224,59 +204,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 											</span>
 										</div>
 									</div>
-									{/* Mobile */}
-									<motion.div
-										initial={{ opacity: 0, x: -50 }}
-										whileInView={{ opacity: 1, x: 0 }}
-										transition={{ duration: 0.6 }}
-										className="relative z-10 [perspective:800px] group"
-									>
-										<div className="transition-transform duration-300 [transform:rotateY(20deg)_rotateX(4deg)] h-full">
-											<img
-												src={project.images?.mobile}
-												loading="lazy"
-												className="h-full w-full object-cover scale-[0.9] shadow-2xl rounded-xl "
-											/>
-										</div>
-									</motion.div>
 
-									{/* Tablet */}
-									<motion.div
-										initial={{ opacity: 0, x: 30 }}
-										whileInView={{ opacity: 1, x: 0 }}
-										transition={{
-											duration: 0.6,
-											delay: 0.1,
-										}}
-										className="relative z-20 -ml-12 [perspective:800px] scale-95 md:scale-100 group"
-									>
-										<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(3deg)] h-full">
-											<img
-												src={project.images?.tablet}
-												loading="lazy"
-												className="h-full w-full object-cover rounded-xl"
-											/>
-										</div>
-									</motion.div>
-
-									{/* Desktop */}
-									<motion.div
-										initial={{ opacity: 0, x: 70 }}
-										whileInView={{ opacity: 1, x: 0 }}
-										transition={{
-											duration: 0.6,
-											delay: 0.2,
-										}}
-										className="relative z-30 -ml-16 [perspective:800px] group"
-									>
-										<div className="shadow-2xl transition-transform duration-300 [transform:rotateY(20deg)_rotateX(2deg)] h-full">
-											<img
-												src={project.images?.desktop}
-												loading="lazy"
-												className="h-full w-full object-cover rounded-xl"
-											/>
-										</div>
-									</motion.div>
+									<ProjectShowcase images={project.images} altTitle={project.title} />
 								</Link>
 
 								{/* Project Info */}
