@@ -5,8 +5,18 @@ const LanguageSwitcher = () => {
 	const [open, setOpen] = useState(false);
 
 	const changeLanguage = (lang: string) => {
+		// Pirmiausia atnaujiname URL su nauju kalbos parametru
+		const url = new URL(window.location.href);
+		url.searchParams.set("lang", lang);
+
+		// Pakeičiame naršyklės URL, bet neperkrauname puslapio iškart
+		window.history.pushState({}, "", url.toString());
+
+		// Tada nustatome slapuką, kaip tai darėte anksčiau
 		document.cookie = `googtrans=/lt/${lang}; path=/`;
 		document.cookie = `googtrans=/lt/${lang}; domain=${window.location.hostname}; path=/`;
+
+		// Perkrauname puslapį, kad kalbos pakeitimas įsigaliotų
 		window.location.reload();
 	};
 
