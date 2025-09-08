@@ -11,6 +11,14 @@ const LanguageSwitcher = () => {
 	};
 
 	useEffect(() => {
+		// Tikrina URL parametrus ir nustato kalbą
+		const urlParams = new URLSearchParams(window.location.search);
+		const langParam = urlParams.get("lang");
+		if (langParam && ["lt", "en"].includes(langParam)) {
+			document.cookie = `googtrans=/lt/${langParam}; path=/`;
+			document.cookie = `googtrans=/lt/${langParam}; domain=${window.location.hostname}; path=/`;
+		}
+
 		const interval = setInterval(() => {
 			if (
 				(window as any).google &&
@@ -44,14 +52,14 @@ const LanguageSwitcher = () => {
 
 		const style = document.createElement("style");
 		style.innerHTML = `
-        .goog-te-banner-frame.skiptranslate,
-        body > .skiptranslate {
-            display: none !important;
-        }
-        body {
-            top: 0px !important;
-        }
-    `;
+            .goog-te-banner-frame.skiptranslate,
+            body > .skiptranslate {
+                display: none !important;
+            }
+            body {
+                top: 0px !important;
+            }
+        `;
 		document.head.appendChild(style);
 
 		return () => clearInterval(interval);
