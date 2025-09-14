@@ -3,11 +3,29 @@ import CTA from "../../components/CTA";
 import BlogNavigation from "../../components/BlogNavigation";
 import blogEntries from "../../components/blogEntries";
 import { Helmet } from "react-helmet-async";
-import { Clock } from "lucide-react";
+import { Clock, Share2 } from "lucide-react";
 import Images from "../../img/Images";
 import { Link, useNavigate } from "react-router-dom";
 
 const entry = blogEntries.find((e) => e.id === "svetaine-per-24h");
+
+const handleShare = async () => {
+	if (navigator.share && entry) {
+		try {
+			await navigator.share({
+				title: entry.title,
+				text: entry.excerpt,
+				url: window.location.href,
+			});
+		} catch (error) {
+			// Fallback to copying URL
+			navigator.clipboard.writeText(window.location.href);
+		}
+	} else {
+		// Fallback to copying URL
+		navigator.clipboard.writeText(window.location.href);
+	}
+};
 
 const Svetaine24hStraipsnis = () => {
 	const navigate = useNavigate();
@@ -47,6 +65,15 @@ const Svetaine24hStraipsnis = () => {
 						alt="Svetainė per 24h."
 						className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
 					/>
+					<div className="mt-2 text-sm inline-flex gap-4">
+						<button
+							onClick={handleShare}
+							className="hover:underline flex items-center text-electric-blue"
+						>
+							<Share2 className="h-4 w-4 mr-2" />
+							Dalintis
+						</button>
+					</div>
 				</div>
 				<div className="mb-8 pb-8 card">
 					<h1 className="text-4xl font-bold text-electric-blue mb-12">

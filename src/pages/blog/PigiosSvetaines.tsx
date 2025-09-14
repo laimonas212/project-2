@@ -4,8 +4,27 @@ import BlogNavigation from "../../components/BlogNavigation";
 import blogEntries from "../../components/blogEntries";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
+import { Share2 } from "lucide-react";
 
 const entry = blogEntries.find((e) => e.id === "pigios-svetaines");
+
+const handleShare = async () => {
+	if (navigator.share && entry) {
+		try {
+			await navigator.share({
+				title: entry.title,
+				text: entry.excerpt,
+				url: window.location.href,
+			});
+		} catch (error) {
+			// Fallback to copying URL
+			navigator.clipboard.writeText(window.location.href);
+		}
+	} else {
+		// Fallback to copying URL
+		navigator.clipboard.writeText(window.location.href);
+	}
+}
 
 const PigiosSvetaines = () => {
 	const navigate = useNavigate();
@@ -45,6 +64,16 @@ const PigiosSvetaines = () => {
 						alt="5 klaidos, kurias daro verslai kurdami svetainę"
 						className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
 					/>
+
+					<div className="mt-2 text-sm inline-flex gap-4">
+						<button
+							onClick={handleShare}
+							className="hover:underline flex items-center text-electric-blue"
+						>
+							<Share2 className="h-4 w-4 mr-2" />
+							Dalintis
+						</button>
+					</div>
 				</div>
 				<div className="mb-8 pb-8 card">
 					<h1 className="text-4xl font-bold text-electric-blue mb-12">

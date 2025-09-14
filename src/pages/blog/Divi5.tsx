@@ -2,11 +2,29 @@ import CTA from "../../components/CTA";
 import BlogNavigation from "../../components/BlogNavigation";
 import blogEntries from "../../components/blogEntries";
 import { Helmet } from "react-helmet-async";
-import { Wrench } from "lucide-react"; // maža, tinkama ikonėlė
+import { Share2, Wrench } from "lucide-react"; // maža, tinkama ikonėlė
 import Images from "../../img/Images";
 import { useNavigate } from "react-router-dom";
 
 const entry = blogEntries.find((e) => e.id === "kas-yra-divi-5");
+
+const handleShare = async () => {
+	if (navigator.share && entry) {
+		try {
+			await navigator.share({
+				title: entry.title,
+				text: entry.excerpt,
+				url: window.location.href,
+			});
+		} catch (error) {
+			// Fallback to copying URL
+			navigator.clipboard.writeText(window.location.href);
+		}
+	} else {
+		// Fallback to copying URL
+		navigator.clipboard.writeText(window.location.href);
+	}
+};
 
 const Divi5Straipsnis = () => {
 	const navigate = useNavigate();
@@ -46,6 +64,16 @@ const Divi5Straipsnis = () => {
 						alt="Divi 5 ir WordPress svetainių kūrimas"
 						className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
 					/>
+
+					<div className="mt-2 text-sm inline-flex gap-4">
+						<button
+							onClick={handleShare}
+							className="hover:underline flex items-center text-electric-blue"
+						>
+							<Share2 className="h-4 w-4 mr-2" />
+							Dalintis
+						</button>
+					</div>
 				</div>
 				<div className="mb-8 pb-8 card">
 					<h1 className="text-4xl font-bold text-electric-blue mb-12">
