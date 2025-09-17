@@ -323,7 +323,7 @@ footer {
 	background-size: 400%;
 	border-radius: inherit;
 	z-index: -1;
-	animation: animate 18s linear infinite;
+	animation: animate 12s linear infinite;
 }
 
 .featured::after {
