@@ -117,7 +117,7 @@ const Kainos = () => {
 				<div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 					{plans.map((plan, index) => (
 						<div
-							className={`p-[1px] h-min rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 ${plan.highlighted ? "animate-gradient-x" : ""
+							className={`p-[1px] h-min rounded-lg shadow-lg bg-gradient-to-r from-electric-blue/50 to-purple-500/50 ${plan.highlighted ? "animate-gradient-x featured" : ""
 								}`}
 							key={plan.name}
 						>
