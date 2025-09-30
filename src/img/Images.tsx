@@ -58,6 +58,10 @@ import esuTauDesktop from "././projects/esu-tau/desktop.webp";
 import esuTauTablet from "././projects/esu-tau/tablet.webp";
 import esuTauMobile from "././projects/esu-tau/mobile.webp";
 
+import gabikamiDesktop from "././projects/gabikami/desktop.webp";
+import gabikamiTablet from "././projects/gabikami/tablet.webp";
+import gabikamiMobile from "././projects/gabikami/mobile.webp";
+
 import gavorkaDesktop from "././projects/gavorka/desktop.webp";
 import gavorkaTablet from "././projects/gavorka/tablet.webp";
 import gavorkaMobile from "././projects/gavorka/mobile.webp";
@@ -484,6 +488,11 @@ const Images = {
 			desktop: eriolaDesktop,
 			tablet: eriolaTablet,
 			mobile: eriolaMobile,
+		},
+		gabikami: {
+			desktop: gabikamiDesktop,
+			tablet: gabikamiTablet,
+			mobile: gabikamiMobile,
 		},
 		gavorka: {
 			desktop: gavorkaDesktop,

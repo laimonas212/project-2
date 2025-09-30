@@ -1519,6 +1519,56 @@ const projects = [
 			text: "Svetainė minimalistinė ir patogi – klientams lengva įsigyti prekę.",
 		},
 	},
+	// Gabikami
+	{
+		id: "gabikami",
+		title: "Gabikami",
+		subtitle: "Profesionalus makiažas Vilniuje",
+		description:
+			"Gabikami – tai profesionalaus makiažo paslaugų svetainė, pristatanti šventinį, vestuvinį ir kasdienį makiažą Vilniuje. Svetainėje lankytojai gali patogiai registruotis internetu, susipažinti su paslaugomis, kainomis, makiažo patarimais bei peržiūrėti atliktų darbų galeriją. Dizainas švarus, elegantiškas ir moteriškas – atspindintis grožio industrijos estetiką. Projektas sukurtas naudojant WordPress ir Divi, užtikrinant lengvą valdymą tiek klientui, tiek administratoriui.",
+		image: Images.projects.gabikami,
+		images: {
+			desktop: Images.projects.gabikami.desktop,
+			tablet: Images.projects.gabikami.tablet,
+			mobile: Images.projects.gabikami.mobile,
+		},
+		alt: "Gabikami – makiažo paslaugų svetainė su elegantišku dizainu ir registracijos forma",
+		tags: [
+			"WordPress",
+			"Divi",
+			"Makiažas",
+			"Grožio industrija",
+			"Galerija",
+			"SEO",
+			"Kontaktų forma",
+			"Kainoraštis",
+			"Pritaikyta mobiliems",
+		],
+		link: "https://www.gabikami.lt",
+		metaTitle:
+			"Gabikami – profesionalaus makiažo paslaugos Vilniuje | Amberweb",
+		metaDescription:
+			"Sukūrėme Gabikami makiažo paslaugų svetainę su WordPress ir Divi – su registracija internetu, paslaugų kainoraščiu ir darbų galerija.",
+		goals: [
+			"Sudaryti galimybę klientams lengvai registruotis internetu",
+			"Elegantiškai pristatyti makiažo paslaugas ir kainas",
+			"Parodyti atliktų darbų galeriją ir patarimus klientams",
+		],
+		solutions: [
+			"WordPress + Divi svetainė su integruota registracijos forma",
+			"Elegantiškas ir moteriškas dizainas su pastelinių spalvų blokais",
+			"Aiški paslaugų struktūra, kainoraštis ir darbų galerija",
+		],
+		results: [
+			"Padidintas klientų pasitikėjimas paslaugomis",
+			"Patogus būdas registruotis internetu",
+			"Skaidri kainodara ir vizualiai patraukli darbų galerija",
+		],
+		testimonial: {
+			client: "Gabikami",
+			text: "Svetainė ne tik elegantiška, bet ir labai patogi – klientams lengva registruotis ir rasti visą informaciją apie paslaugas.",
+		},
+	},
 ];
 
 export default projects;
