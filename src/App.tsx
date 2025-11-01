@@ -34,7 +34,6 @@ import Esutau from "./pages/projektai/esu-tau";
 import Angelbutikas from "./pages/projektai/angel-butikas";
 import Godeko from "./pages/projektai/godeko";
 import Eriola from "./pages/projektai/eriola";
-import Gabikami from "./pages/projektai/gabikami";
 import Gavorkaart from "./pages/projektai/gavorka-art";
 import Gavorka from "./pages/projektai/gavorka";
 import Grozioforma from "./pages/projektai/grozio-forma";
@@ -271,10 +270,6 @@ function App() {
 							<Route
 								path="/projektai/dentes-vitae"
 								element={<DentesVitae />}
-							/>
-							<Route
-								path="/projektai/Gabikami"
-								element={<Gabikami />}
 							/>
 						</Routes>
 					</motion.div>
