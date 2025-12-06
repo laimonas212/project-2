@@ -1519,6 +1519,59 @@ const projects = [
 			text: "Svetainė minimalistinė ir patogi – klientams lengva įsigyti prekę.",
 		},
 	},
+	// Romasta
+	{
+		id: "romasta",
+		title: "Romasta Service",
+		subtitle: "Sunkvežimių ir komercinio transporto servisas",
+		description:
+			"„Romasta Service“ – tai aukščiausios kvalifikacijos sunkiasvorių transporto priemonių (vilkikų, autovežių, autocisternų) priežiūros ir remonto centras Kaune. Svetainėje profesionaliai pristatomas platus paslaugų spektras: nuo kompiuterinės diagnostikos iki sudėtingų variklio ar važiuoklės remonto darbų. Dizainas solidus ir informatyvus, pabrėžiantis ilgametę įmonės patirtį bei partnerystę su žinomais gamintojais (Wabco, Bosch, Knorr-Bremse).",
+		image: Images.projects.romasta,
+		images: {
+			desktop: Images.projects.romasta.desktop,
+			tablet: Images.projects.romasta.tablet,
+			mobile: Images.projects.romasta.mobile,
+		},
+		alt: "Romasta Service – sunkvežimių remonto centro svetainė sukurta naudojant WordPress ir Divi",
+		tags: [
+			"WordPress",
+			"Divi",
+			"Sunkvežimių servisas",
+			"Transporto remontas",
+			"Paslaugų pristatymas",
+			"Verslo svetainė",
+			"Kontaktų forma",
+			"SEO",
+			"Mobiliesiems įrenginiams",
+		],
+
+		link: "https://www.romasta.lt",
+
+		metaTitle:
+			"Romasta Service – sunkiasvorių transporto priemonių remontas Kaune | Amberweb",
+		metaDescription:
+			"Sukūrėme Romasta Service svetainę, pristatančią aukščiausios kvalifikacijos sunkvežimių, autovežių ir kito komercinio transporto remonto paslaugas.",
+
+		goals: [
+			"Aiškiai pristatyti remonto paslaugų spektrą",
+			"Pabrėžti servisų kvalifikaciją ir patikimumą",
+			"Suteikti lengvą prieigą prie kontaktų ir serviso vietos",
+		],
+		solutions: [
+			"Struktūruotas paslaugų atvaizdavimas su iliustracijomis",
+			"Partnerių ir prekinių ženklų integracija pasitikėjimui didinti",
+			"Naujienų ir įmonės pasiekimų skiltys",
+		],
+		results: [
+			"Profesionalus įmonės įvaizdis internete",
+			"Lengvai randama informacija apie specifines remonto paslaugas",
+			"Patogus susisiekimas klientams",
+		],
+		testimonial: {
+			client: "Romasta Service",
+			text: "Svetainė puikiai atspindi mūsų profesionalumą ir leidžia klientams greitai rasti reikiamas serviso paslaugas.",
+		},
+	},
 ];
 
 export default projects;

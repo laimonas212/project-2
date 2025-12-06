@@ -41,6 +41,7 @@ import Ovc from "./pages/projektai/ovc";
 import Printery from "./pages/projektai/printery";
 import Prisipusksypsena from "./pages/projektai/prisipusk-sypsena";
 import Provansosvajos from "./pages/projektai/provanso-svajos";
+import Romasta from "./pages/projektai/romasta";
 import Smaragdouostas from "./pages/projektai/smaragdo-uostas";
 import Sssprendimai from "./pages/projektai/sssprendimai";
 import Termoventa from "./pages/projektai/termoventa";
@@ -270,6 +271,10 @@ function App() {
 							<Route
 								path="/projektai/dentes-vitae"
 								element={<DentesVitae />}
+							/>
+							<Route
+								path="/projektai/romasta"
+								element={<Romasta />}
 							/>
 						</Routes>
 					</motion.div>
