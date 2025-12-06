@@ -10,7 +10,7 @@ const HomepageSampleWork = () => {
 	const projectOrder = [
 		"paparciopm",
 		"veselovaite",
-		"holistine-kosmetologija",
+		"romasta",
 	];
 	const firstThreeProjects = projectOrder.map((id) =>
 		projectsList.find((project) => project.id === id)
