@@ -9,6 +9,24 @@ import CTA from "../components/CTA";
 const Kainos = () => {
 	const plans = [
 		{
+			name: "Svetainė per 24h",
+			description:
+				"Greitas startas – informacinė svetainė paruošta per 24 valandas.",
+			price: "€299",
+			features: [
+				"Turinio valdymo sistema (WordPress)",
+				"Pasirinktas paruoštas dizainas",
+				"1-2 puslapiai (pvz. landing, kontaktai)",
+				"Kontaktinė forma",
+				"Informacijos patalpinimas",
+				"Mobiliesiems pritaikytas dizainas",
+			],
+			extras: [
+				"Hostingas + SSL su 30% nuolaida pirmais metais",
+				"Metinė priežiūra: serverio palaikymas ir SSL atnaujinimai (nemokamai 1 metams)",
+			],
+		},
+		{
 			name: "Reprezentacinė svetainė",
 			description:
 				"Idealiai tinka mažoms įmonėms ar asmeniniams projektams",
@@ -55,24 +73,6 @@ const Kainos = () => {
 				"Nemokamas hostingas + SSL 1 metams",
 				"Metinė priežiūra: serverio palaikymas, SSL atnaujinimai, saugumo patikrinimai, atsarginės kopijos, smulkūs turinio pakeitimai (nemokamai 1 metams)",
 				"3 mėn. nemokama techninė pagalba po paleidimo",
-			],
-		},
-		{
-			name: "Svetainė per 24h",
-			description:
-				"Greitas startas – informacinė svetainė paruošta per 24 valandas.",
-			price: "€299",
-			features: [
-				"Turinio valdymo sistema (WordPress)",
-				"Pasirinktas paruoštas dizainas",
-				"1-2 puslapiai (pvz. landing, kontaktai)",
-				"Kontaktinė forma",
-				"Informacijos patalpinimas",
-				"Mobiliesiems pritaikytas dizainas",
-			],
-			extras: [
-				"Hostingas + SSL su 30% nuolaida pirmais metais",
-				"Metinė priežiūra: serverio palaikymas ir SSL atnaujinimai (nemokamai 1 metams)",
 			],
 		},
 	];
