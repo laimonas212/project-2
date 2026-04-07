@@ -375,8 +375,12 @@ const Navbar = () => {
 			{/* MOBILE MENU */}
 			<AnimatePresence>
 				{isOpen && (
-					<div className="fixed top-24 left-0 right-0 bottom-6 mx-auto w-[95%] max-w-5xl z-40 pointer-events-none flex flex-col gap-3">
-						<div className="overflow-y-auto pointer-events-auto flex flex-col gap-3 pb-6 scrollbar-hide">
+					<div className="fixed top-24 left-0 right-0 z-40 pointer-events-none flex flex-col items-center px-[2.5%]">
+						{/* Naudojame 100dvh (Dynamic Viewport Height), kad išvengtume naršyklės juostos uždengimo.
+                Sumažiname max-height, kad meniu niekada „neišliptų“ iš ekrano.
+            */}
+						<div className="w-full max-w-5xl overflow-y-auto pointer-events-auto flex flex-col gap-3 pb-32 scrollbar-hide max-h-[calc(100dvh-110px)]">
+							{/* 1. Nuorodos */}
 							<motion.div
 								initial={{ opacity: 0, scale: 0.95, y: -10 }}
 								animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -404,7 +408,7 @@ const Navbar = () => {
 								</div>
 							</motion.div>
 
-							{/* Įrankių burbulas (Apatinis) */}
+							{/* 2. Įrankių burbulas (Nustatymai ir Kalba) */}
 							<motion.div
 								initial={{ opacity: 0, y: -10 }}
 								animate={{ opacity: 1, y: 0 }}
