@@ -1,27 +1,38 @@
 import { Globe, X } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion"; // Pridėjau animacijas, kad būtų solidžiau
 
 const LanguageSwitcher = () => {
 	const [open, setOpen] = useState(false);
+	const dropdownRef = useRef<HTMLDivElement>(null);
+
+	// Uždaryti paspaudus šalia
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				dropdownRef.current &&
+				!dropdownRef.current.contains(event.target as Node)
+			) {
+				setOpen(false);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () =>
+			document.removeEventListener("mousedown", handleClickOutside);
+	}, []);
 
 	const changeLanguage = (lang: string) => {
-		// Pirmiausia atnaujiname URL su nauju kalbos parametru
 		const url = new URL(window.location.href);
 		url.searchParams.set("lang", lang);
-
-		// Pakeičiame naršyklės URL, bet neperkrauname puslapio iškart
 		window.history.pushState({}, "", url.toString());
 
-		// Tada nustatome slapuką, kaip tai darėte anksčiau
 		document.cookie = `googtrans=/lt/${lang}; path=/`;
 		document.cookie = `googtrans=/lt/${lang}; domain=${window.location.hostname}; path=/`;
 
-		// Perkrauname puslapį, kad kalbos pakeitimas įsigaliotų
 		window.location.reload();
 	};
 
 	useEffect(() => {
-		// Tikrina URL parametrus ir nustato kalbą
 		const urlParams = new URLSearchParams(window.location.search);
 		const langParam = urlParams.get("lang");
 		if (langParam && ["lt", "en"].includes(langParam)) {
@@ -36,7 +47,6 @@ const LanguageSwitcher = () => {
 				(window as any).google.translate.TranslateElement
 			) {
 				clearInterval(interval);
-
 				try {
 					new (window as any).google.translate.TranslateElement(
 						{
@@ -60,43 +70,43 @@ const LanguageSwitcher = () => {
 		script.async = true;
 		document.body.appendChild(script);
 
-		const style = document.createElement("style");
-		style.innerHTML = `
-            .goog-te-banner-frame.skiptranslate,
-            body > .skiptranslate {
-                display: none !important;
-            }
-            body {
-                top: 0px !important;
-            }
-        `;
-		document.head.appendChild(style);
-
 		return () => clearInterval(interval);
 	}, []);
 
 	return (
-		<div className="relative inline-block p-1 text-left text-white/70  hover:text-electric-blue">
-			<button onClick={() => setOpen(!open)} className="">
-				{open ? <X /> : <Globe />}
+		<div className="relative inline-block" ref={dropdownRef}>
+			{/* Mygtukas su suvienodintu dydžiu */}
+			<button
+				onClick={() => setOpen(!open)}
+				className="p-2 flex items-center justify-center rounded-full text-white/70 hover:text-electric-blue hover:bg-white/5 transition-all outline-none"
+			>
+				{/* ČIA SUTVARKYTI DYDŽIAI (size={20}) */}
+				{open ? <X size={20} /> : <Globe size={20} />}
 			</button>
 
-			{open && (
-				<div className="md:absolute rounded-lg bg-background right-0 mt-2 z-50">
-					<button
-						onClick={() => changeLanguage("lt")}
-						className="block w-full text-left notranslate p-4 text-white/70 rounded hover:text-electric-blue "
+			<AnimatePresence>
+				{open && (
+					<motion.div
+						initial={{ opacity: 0, y: 10, scale: 0.95 }}
+						animate={{ opacity: 1, y: 0, scale: 1 }}
+						exit={{ opacity: 0, y: 10, scale: 0.95 }}
+						className="absolute right-0 mt-3 w-28 bg-[#0a0a0a] border border-white/10 rounded-xl shadow-2xl z-50 overflow-hidden backdrop-blur-xl"
 					>
-						LT
-					</button>
-					<button
-						onClick={() => changeLanguage("en")}
-						className="block w-full text-left notranslate p-4 text-white/70 rounded hover:text-electric-blue"
-					>
-						EN
-					</button>
-				</div>
-			)}
+						<button
+							onClick={() => changeLanguage("lt")}
+							className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition-colors notranslate"
+						>
+							Lietuvių <span>LT</span>
+						</button>
+						<button
+							onClick={() => changeLanguage("en")}
+							className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition-colors notranslate border-t border-white/5"
+						>
+							English <span>EN</span>
+						</button>
+					</motion.div>
+				)}
+			</AnimatePresence>
 
 			<div
 				id="google_translate_element"
