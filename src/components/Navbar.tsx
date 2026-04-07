@@ -10,34 +10,29 @@ import {
 	Moon,
 	Contrast,
 	Globe,
+	ChevronLeft,
 } from "lucide-react";
 import { cn } from "../lib/utils";
 import logo from "../img/amberweb-logo-white.png";
 
-// --- KALBOS KEITIMO LOGIKA ---
 const changeLanguage = (lang: string) => {
 	const url = new URL(window.location.href);
 	url.searchParams.set("lang", lang);
 	window.history.pushState({}, "", url.toString());
-
 	document.cookie = `googtrans=/lt/${lang}; path=/`;
 	document.cookie = `googtrans=/lt/${lang}; domain=${window.location.hostname}; path=/`;
-
 	window.location.reload();
 };
 
-interface NavLinkItem {
-	href?: string;
-	label: string | React.ReactElement;
-	isHighlight?: boolean;
-}
-
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [activeTab, setActiveTab] = useState<"menu" | "settings" | "lang">(
+		"menu"
+	);
+
+	// Desktop dropdown būsenos
 	const [desktopSettingsOpen, setDesktopSettingsOpen] = useState(false);
 	const [desktopLangOpen, setDesktopLangOpen] = useState(false);
-	const [mobileSettingsOpen, setMobileSettingsOpen] = useState(false);
-	const [mobileLangOpen, setMobileLangOpen] = useState(false);
 
 	const [fontSize, setFontSize] = useState<"normal" | "large" | "xl">(
 		"normal"
@@ -47,23 +42,18 @@ const Navbar = () => {
 	const location = useLocation();
 	const navRef = useRef<HTMLDivElement>(null);
 
-	// Nustatome aktyvią kalbą iš URL arba slapuko
 	const getCurrentLang = () => {
 		const urlParams = new URLSearchParams(window.location.search);
 		const langParam = urlParams.get("lang");
 		if (langParam) return langParam;
-
 		const cookie = document.cookie
 			.split("; ")
 			.find((row) => row.startsWith("googtrans="));
-		if (cookie) return cookie.split("/").pop() || "lt";
-
-		return "lt";
+		return cookie ? cookie.split("/").pop() : "lt";
 	};
 
 	const currentLang = getCurrentLang();
 
-	// Click Outside logic
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
 			if (
@@ -79,7 +69,13 @@ const Navbar = () => {
 			document.removeEventListener("mousedown", handleClickOutside);
 	}, []);
 
-	const urlLinks: NavLinkItem[] = [
+	// Uždaryti meniu pasikeitus puslapiui
+	useEffect(() => {
+		setIsOpen(false);
+		setActiveTab("menu");
+	}, [location]);
+
+	const urlLinks = [
 		{ href: "/projektai", label: "Projektai" },
 		{ href: "/paruosti-dizainai", label: "Dizainai" },
 		{ href: "/kainos", label: "Kainos" },
@@ -87,51 +83,30 @@ const Navbar = () => {
 		{ href: "/kontaktai", label: "Kontaktai" },
 	];
 
-	const highlightLink: NavLinkItem = {
-		href: "/svetaine-per-24h",
-		label: "Svetainė per 24h",
-		isHighlight: true,
-	};
-
-	// ACCESSIBILITY LOGIKA
-	const handleFontSizeChange = (size: "normal" | "large" | "xl") => {
-		setFontSize(size);
-		const root = document.documentElement;
-		root.classList.remove("text-lg", "text-xl");
-		if (size === "large") root.classList.add("text-lg");
-		if (size === "xl") root.classList.add("text-xl");
-	};
-
-	const handleContrastToggle = (mode: "normal" | "high") => {
-		const isHigh = mode === "high";
-		setIsHighContrast(isHigh);
-		const root = document.documentElement;
-		if (isHigh) {
-			root.classList.add("high-contrast");
-			root.style.filter = "contrast(120%)";
-		} else {
-			root.classList.remove("high-contrast");
-			root.style.filter = "none";
-		}
-	};
-
-	// --- SKYDELIAI ---
 	const AccessibilityPanel = () => (
-		<div className="flex flex-col gap-5 min-w-[220px]">
-			<div className="flex flex-col gap-2">
-				<span className="text-white/50 text-[10px] uppercase tracking-widest flex items-center gap-2">
-					<Type size={12} /> Šrifto dydis
+		<div className="flex flex-col gap-6 w-full">
+			<div className="flex flex-col gap-3">
+				<span className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold text-center">
+					Šrifto dydis
 				</span>
-				<div className="flex bg-white/5 rounded-xl p-1 border border-white/5">
+				<div className="flex bg-white/5 rounded-2xl p-1 border border-white/5">
 					{(["normal", "large", "xl"] as const).map((size) => (
 						<button
 							key={size}
-							onClick={() => handleFontSizeChange(size)}
+							onClick={() => {
+								setFontSize(size);
+								const root = document.documentElement;
+								root.classList.remove("text-lg", "text-xl");
+								if (size === "large")
+									root.classList.add("text-lg");
+								if (size === "xl")
+									root.classList.add("text-xl");
+							}}
 							className={cn(
-								"flex-1 h-9 flex items-center justify-center rounded-lg font-bold transition-all text-sm",
+								"flex-1 h-12 flex items-center justify-center rounded-xl font-bold transition-all",
 								fontSize === size
-									? "bg-white/15 text-white shadow-sm"
-									: "text-white/30 hover:text-white/60"
+									? "bg-white/15 text-white shadow-lg"
+									: "text-white/30"
 							)}
 						>
 							{size === "normal"
@@ -143,32 +118,45 @@ const Navbar = () => {
 					))}
 				</div>
 			</div>
-			<div className="flex flex-col gap-2">
-				<span className="text-white/50 text-[10px] uppercase tracking-widest flex items-center gap-2">
-					<Contrast size={12} /> Kontrastas
+			<div className="flex flex-col gap-3">
+				<span className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold text-center">
+					Kontrastas
 				</span>
-				<div className="flex bg-white/5 rounded-xl p-1 gap-1 border border-white/5">
+				<div className="flex bg-white/5 rounded-2xl p-1 gap-1 border border-white/5">
 					<button
-						onClick={() => handleContrastToggle("normal")}
+						onClick={() => {
+							setIsHighContrast(false);
+							document.documentElement.classList.remove(
+								"high-contrast"
+							);
+							document.documentElement.style.filter = "none";
+						}}
 						className={cn(
-							"flex-1 h-9 flex items-center justify-center rounded-lg transition-all",
+							"flex-1 h-12 flex items-center justify-center rounded-xl transition-all",
 							!isHighContrast
 								? "bg-white/15 text-white"
-								: "text-white/30 hover:text-white/60"
+								: "text-white/30"
 						)}
 					>
-						<Sun size={18} />
+						<Sun size={20} />
 					</button>
 					<button
-						onClick={() => handleContrastToggle("high")}
+						onClick={() => {
+							setIsHighContrast(true);
+							document.documentElement.classList.add(
+								"high-contrast"
+							);
+							document.documentElement.style.filter =
+								"contrast(120%)";
+						}}
 						className={cn(
-							"flex-1 h-9 flex items-center justify-center rounded-lg transition-all",
+							"flex-1 h-12 flex items-center justify-center rounded-xl transition-all",
 							isHighContrast
 								? "bg-white/15 text-white"
-								: "text-white/30 hover:text-white/60"
+								: "text-white/30"
 						)}
 					>
-						<Moon size={18} />
+						<Moon size={20} />
 					</button>
 				</div>
 			</div>
@@ -176,52 +164,32 @@ const Navbar = () => {
 	);
 
 	const LanguagePanel = () => (
-		<div className="flex flex-col gap-2 min-w-[200px]">
-			<span className="text-white/50 text-[10px] uppercase tracking-widest flex items-center gap-2">
-				<Globe size={12} /> Kalba / Language
+		<div className="flex flex-col gap-4 w-full">
+			<span className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold text-center">
+				Kalba / Language
 			</span>
-			<div className="flex bg-white/5 rounded-xl p-1 border border-white/5">
+			<div className="flex flex-col gap-2">
 				<button
 					onClick={() => changeLanguage("lt")}
 					className={cn(
-						"flex-1 h-10 flex items-center justify-center rounded-lg font-bold text-sm transition-all",
+						"w-full h-14 flex items-center justify-between px-6 rounded-2xl font-bold transition-all border border-white/5",
 						currentLang === "lt"
-							? "bg-white/15 text-white shadow-sm"
-							: "text-white/30 hover:text-white/60"
+							? "bg-electric-blue/20 text-white border-electric-blue/30"
+							: "bg-white/5 text-white/40"
 					)}
 				>
-					LT{" "}
-					<span
-						className={cn(
-							"ml-2 text-[10px] font-normal",
-							currentLang === "lt"
-								? "text-white/60"
-								: "opacity-30"
-						)}
-					>
-						Lietuvių
-					</span>
+					Lietuvių <span className="text-xs opacity-50">LT</span>
 				</button>
 				<button
 					onClick={() => changeLanguage("en")}
 					className={cn(
-						"flex-1 h-10 flex items-center justify-center rounded-lg font-bold text-sm transition-all",
+						"w-full h-14 flex items-center justify-between px-6 rounded-2xl font-bold transition-all border border-white/5",
 						currentLang === "en"
-							? "bg-white/15 text-white shadow-sm"
-							: "text-white/30 hover:text-white/60"
+							? "bg-electric-blue/20 text-white border-electric-blue/30"
+							: "bg-white/5 text-white/40"
 					)}
 				>
-					EN{" "}
-					<span
-						className={cn(
-							"ml-2 text-[10px] font-normal",
-							currentLang === "en"
-								? "text-white/60"
-								: "opacity-30"
-						)}
-					>
-						English
-					</span>
+					English <span className="text-xs opacity-50">EN</span>
 				</button>
 			</div>
 		</div>
@@ -244,7 +212,7 @@ const Navbar = () => {
 						{urlLinks.map((link) => (
 							<Link
 								key={link.href}
-								to={link.href || ""}
+								to={link.href}
 								className={cn(
 									"text-sm font-medium transition-colors hover:text-electric-blue",
 									location.pathname === link.href
@@ -260,112 +228,83 @@ const Navbar = () => {
 					{/* DESKTOP ACTIONS */}
 					<div className="hidden lg:flex items-center gap-4">
 						<div className="flex items-center gap-2 relative">
-							{/* Settings */}
-							<div className="relative">
-								<button
-									onClick={() => {
-										setDesktopSettingsOpen(
-											!desktopSettingsOpen
-										);
-										setDesktopLangOpen(false);
-									}}
-									className={cn(
-										"p-2 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors",
-										desktopSettingsOpen &&
-											"text-white bg-white/10"
-									)}
-								>
-									<Settings size={20} />
-								</button>
-								<AnimatePresence>
-									{desktopSettingsOpen && (
-										<motion.div
-											initial={{
-												opacity: 0,
-												y: 10,
-												scale: 0.95,
-											}}
-											animate={{
-												opacity: 1,
-												y: 0,
-												scale: 1,
-											}}
-											exit={{
-												opacity: 0,
-												y: 10,
-												scale: 0.95,
-											}}
-											className="absolute top-full right-0 mt-4 bg-[#0a0a0a]/95 border border-white/10 rounded-2xl p-5 shadow-xl z-50 backdrop-blur-xl"
-										>
-											<AccessibilityPanel />
-										</motion.div>
-									)}
-								</AnimatePresence>
-							</div>
+							<button
+								onClick={() => {
+									setDesktopSettingsOpen(
+										!desktopSettingsOpen
+									);
+									setDesktopLangOpen(false);
+								}}
+								className={cn(
+									"p-2 rounded-full hover:bg-white/10 text-white/70 transition-colors",
+									desktopSettingsOpen &&
+										"text-white bg-white/10"
+								)}
+							>
+								<Settings size={20} />
+							</button>
+							<AnimatePresence>
+								{desktopSettingsOpen && (
+									<motion.div
+										initial={{ opacity: 0, y: 10 }}
+										animate={{ opacity: 1, y: 0 }}
+										exit={{ opacity: 0, y: 10 }}
+										className="absolute top-full right-0 mt-4 bg-[#0a0a0a]/95 border border-white/10 rounded-2xl p-5 shadow-xl z-50 backdrop-blur-xl min-w-[240px]"
+									>
+										<AccessibilityPanel />
+									</motion.div>
+								)}
+							</AnimatePresence>
 
-							{/* Globe */}
-							<div className="relative">
-								<button
-									onClick={() => {
-										setDesktopLangOpen(!desktopLangOpen);
-										setDesktopSettingsOpen(false);
-									}}
-									className={cn(
-										"p-2 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors flex items-center gap-1",
-										desktopLangOpen &&
-											"text-white bg-white/10"
-									)}
-								>
-									<Globe size={20} />
-									<span className="text-[10px] font-bold uppercase opacity-50 px-1">
-										{currentLang}
-									</span>
-								</button>
-								<AnimatePresence>
-									{desktopLangOpen && (
-										<motion.div
-											initial={{
-												opacity: 0,
-												y: 10,
-												scale: 0.95,
-											}}
-											animate={{
-												opacity: 1,
-												y: 0,
-												scale: 1,
-											}}
-											exit={{
-												opacity: 0,
-												y: 10,
-												scale: 0.95,
-											}}
-											className="absolute top-full right-0 mt-4 bg-[#0a0a0a]/95 border border-white/10 rounded-2xl p-4 shadow-xl z-50 backdrop-blur-xl min-w-[220px]"
-										>
-											<LanguagePanel />
-										</motion.div>
-									)}
-								</AnimatePresence>
-							</div>
+							<button
+								onClick={() => {
+									setDesktopLangOpen(!desktopLangOpen);
+									setDesktopSettingsOpen(false);
+								}}
+								className={cn(
+									"p-2 rounded-full hover:bg-white/10 text-white/70 transition-colors flex items-center gap-1",
+									desktopLangOpen && "text-white bg-white/10"
+								)}
+							>
+								<Globe size={20} />
+								<span className="text-[10px] font-bold opacity-50 uppercase">
+									{currentLang}
+								</span>
+							</button>
+							<AnimatePresence>
+								{desktopLangOpen && (
+									<motion.div
+										initial={{ opacity: 0, y: 10 }}
+										animate={{ opacity: 1, y: 0 }}
+										exit={{ opacity: 0, y: 10 }}
+										className="absolute top-full right-0 mt-4 bg-[#0a0a0a]/95 border border-white/10 rounded-2xl p-5 shadow-xl z-50 backdrop-blur-xl min-w-[240px]"
+									>
+										<LanguagePanel />
+									</motion.div>
+								)}
+							</AnimatePresence>
 						</div>
-
 						<Link
-							to={highlightLink.href || ""}
-							className="button-primary px-5 py-2 rounded-full text-xs font-bold shadow-lg shadow-electric-blue/20 hover:scale-105 transition-transform"
+							to="/svetaine-per-24h"
+							className="button-primary px-5 py-2 rounded-full text-xs font-bold transition-transform hover:scale-105"
 						>
-							{highlightLink.label}
+							Svetainė per 24h
 						</Link>
 					</div>
 
 					{/* MOBILE TOGGLE */}
 					<div className="lg:hidden flex items-center">
 						<button
-							onClick={() => setIsOpen(!isOpen)}
-							className="text-white/80 hover:text-white p-2"
+							onClick={() => {
+								setIsOpen(!isOpen);
+								setActiveTab("menu");
+							}}
+							className="text-white/80 p-2"
 						>
 							{isOpen ? (
-								<X size={24} />
+								<X size={26} />
 							) : (
-								<AlignRight size={24} />
+								<AlignRight size={26} />
 							)}
 						</button>
 					</div>
@@ -375,114 +314,89 @@ const Navbar = () => {
 			{/* MOBILE MENU */}
 			<AnimatePresence>
 				{isOpen && (
-					<div className="fixed top-24 left-0 right-0 z-40 pointer-events-none flex flex-col items-center px-[2.5%]">
-						{/* Naudojame 100dvh (Dynamic Viewport Height), kad išvengtume naršyklės juostos uždengimo.
-                Sumažiname max-height, kad meniu niekada „neišliptų“ iš ekrano.
-            */}
-						<div className="w-full max-w-5xl overflow-y-auto pointer-events-auto flex flex-col gap-3 pb-32 scrollbar-hide max-h-[calc(100dvh-110px)]">
-							{/* 1. Nuorodos */}
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95, y: -10 }}
-								animate={{ opacity: 1, scale: 1, y: 0 }}
-								exit={{ opacity: 0, scale: 0.95, y: -10 }}
-								className="bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 rounded-3xl p-6 shadow-2xl"
-							>
-								<div className="flex flex-col gap-4 text-center">
-									{urlLinks.map((link) => (
+					<motion.div
+						initial={{ opacity: 0, y: 10 }}
+						animate={{ opacity: 1, y: 0 }}
+						exit={{ opacity: 0, y: 10 }}
+						className="fixed top-24 left-0 right-0 mx-auto w-[92%] z-40"
+					>
+						<div className="bg-[#0a0a0a]/95 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] p-6 shadow-2xl overflow-hidden relative">
+							<AnimatePresence mode="wait">
+								{activeTab === "menu" ? (
+									<motion.div
+										key="menu"
+										initial={{ x: -20, opacity: 0 }}
+										animate={{ x: 0, opacity: 1 }}
+										exit={{ x: -20, opacity: 0 }}
+										className="flex flex-col gap-2"
+									>
+										{urlLinks.map((link) => (
+											<Link
+												key={link.href}
+												to={link.href}
+												className="text-xl font-semibold text-white/90 py-3 px-4 rounded-2xl hover:bg-white/5 active:bg-white/10 transition-all"
+											>
+												{link.label}
+											</Link>
+										))}
 										<Link
-											key={link.href}
-											to={link.href || ""}
-											onClick={() => setIsOpen(false)}
-											className="text-lg font-medium text-white/80 hover:text-electric-blue py-2"
+											to="/svetaine-per-24h"
+											className="button-primary py-4 rounded-2xl text-center font-bold mt-4 shadow-lg shadow-electric-blue/20"
 										>
-											{link.label}
+											Svetainė per 24h
 										</Link>
-									))}
-									<Link
-										to={highlightLink.href || ""}
-										onClick={() => setIsOpen(false)}
-										className="button-primary py-4 rounded-2xl text-sm font-bold mt-2"
-									>
-										{highlightLink.label}
-									</Link>
-								</div>
-							</motion.div>
 
-							{/* 2. Įrankių burbulas (Nustatymai ir Kalba) */}
-							<motion.div
-								initial={{ opacity: 0, y: -10 }}
-								animate={{ opacity: 1, y: 0 }}
-								exit={{ opacity: 0, y: -10 }}
-								transition={{ delay: 0.1 }}
-								className="bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 rounded-3xl p-4 shadow-2xl overflow-hidden"
-							>
-								<div className="flex justify-center items-center gap-12 py-1">
-									<button
-										onClick={() => {
-											setMobileSettingsOpen(
-												!mobileSettingsOpen
-											);
-											setMobileLangOpen(false);
-										}}
-										className={cn(
-											"p-3 rounded-full transition-all duration-300",
-											mobileSettingsOpen
-												? "bg-electric-blue text-white shadow-lg shadow-electric-blue/20"
-												: "text-white/40 hover:bg-white/5"
-										)}
+										{/* Apatinė įrankių juosta meniu viduje */}
+										<div className="flex items-center justify-between mt-6 pt-6 border-t border-white/5">
+											<button
+												onClick={() =>
+													setActiveTab("settings")
+												}
+												className="flex flex-col items-center gap-1 flex-1 text-white/40"
+											>
+												<Settings size={22} />
+												<span className="text-[10px] uppercase font-bold">
+													Nustatymai
+												</span>
+											</button>
+											<button
+												onClick={() =>
+													setActiveTab("lang")
+												}
+												className="flex flex-col items-center gap-1 flex-1 text-white/40"
+											>
+												<Globe size={22} />
+												<span className="text-[10px] uppercase font-bold">
+													Kalba ({currentLang})
+												</span>
+											</button>
+										</div>
+									</motion.div>
+								) : (
+									<motion.div
+										key="panel"
+										initial={{ x: 20, opacity: 0 }}
+										animate={{ x: 0, opacity: 1 }}
+										exit={{ x: 20, opacity: 0 }}
+										className="flex flex-col"
 									>
-										<Settings size={22} />
-									</button>
-									<button
-										onClick={() => {
-											setMobileLangOpen(!mobileLangOpen);
-											setMobileSettingsOpen(false);
-										}}
-										className={cn(
-											"p-3 rounded-full transition-all duration-300 flex items-center gap-1",
-											mobileLangOpen
-												? "bg-electric-blue text-white shadow-lg shadow-electric-blue/20"
-												: "text-white/40 hover:bg-white/5"
+										<button
+											onClick={() => setActiveTab("menu")}
+											className="flex items-center gap-2 text-electric-blue mb-6 font-bold uppercase text-xs tracking-widest"
+										>
+											<ChevronLeft size={18} /> Atgal į
+											meniu
+										</button>
+										{activeTab === "settings" ? (
+											<AccessibilityPanel />
+										) : (
+											<LanguagePanel />
 										)}
-									>
-										<Globe size={22} />
-										<span
-											className={cn(
-												"text-[10px] font-bold uppercase",
-												mobileLangOpen
-													? "text-white"
-													: "opacity-40"
-											)}
-										>
-											{currentLang}
-										</span>
-									</button>
-								</div>
-
-								<AnimatePresence>
-									{(mobileSettingsOpen || mobileLangOpen) && (
-										<motion.div
-											initial={{ height: 0, opacity: 0 }}
-											animate={{
-												height: "auto",
-												opacity: 1,
-											}}
-											exit={{ height: 0, opacity: 0 }}
-											className="overflow-hidden"
-										>
-											<div className="pt-6 mt-4 border-t border-white/10 px-1 pb-2">
-												{mobileSettingsOpen ? (
-													<AccessibilityPanel />
-												) : (
-													<LanguagePanel />
-												)}
-											</div>
-										</motion.div>
-									)}
-								</AnimatePresence>
-							</motion.div>
+									</motion.div>
+								)}
+							</AnimatePresence>
 						</div>
-					</div>
+					</motion.div>
 				)}
 			</AnimatePresence>
 		</div>
