@@ -15,12 +15,17 @@ import {
 import { cn } from "../lib/utils";
 import logo from "../img/amberweb-logo-white.png";
 
+// --- KALBOS KEITIMO LOGIKA ---
 const changeLanguage = (lang: string) => {
 	const url = new URL(window.location.href);
 	url.searchParams.set("lang", lang);
 	window.history.pushState({}, "", url.toString());
+
+	// Nustatome slapukus Google vertėjui
 	document.cookie = `googtrans=/lt/${lang}; path=/`;
 	document.cookie = `googtrans=/lt/${lang}; domain=${window.location.hostname}; path=/`;
+	document.cookie = `googtrans=/lt/${lang}; domain=.${window.location.hostname}; path=/`;
+
 	window.location.reload();
 };
 
@@ -29,11 +34,8 @@ const Navbar = () => {
 	const [activeTab, setActiveTab] = useState<"menu" | "settings" | "lang">(
 		"menu"
 	);
-
-	// Desktop dropdown būsenos
 	const [desktopSettingsOpen, setDesktopSettingsOpen] = useState(false);
 	const [desktopLangOpen, setDesktopLangOpen] = useState(false);
-
 	const [fontSize, setFontSize] = useState<"normal" | "large" | "xl">(
 		"normal"
 	);
@@ -41,6 +43,67 @@ const Navbar = () => {
 
 	const location = useLocation();
 	const navRef = useRef<HTMLDivElement>(null);
+
+	// --- GOOGLE TRANSLATE INIT & SCRIPT LOAD ---
+	useEffect(() => {
+		// 1. Sukuriame intervalą, kuris laukia, kol užsikraus Google skriptas
+		const interval = setInterval(() => {
+			if (
+				(window as any).google &&
+				(window as any).google.translate &&
+				(window as any).google.translate.TranslateElement
+			) {
+				clearInterval(interval);
+				try {
+					new (window as any).google.translate.TranslateElement(
+						{
+							pageLanguage: "lt",
+							autoDisplay: false,
+							includedLanguages: "lt,en",
+							layout: (window as any).google.translate
+								.TranslateElement.InlineLayout.SIMPLE,
+						},
+						"google_translate_element"
+					);
+				} catch (e) {
+					console.error("Google Translate init error:", e);
+				}
+			}
+		}, 100);
+
+		// 2. Įkeliam skriptą, jei jo dar nėra
+		if (!document.getElementById("google-translate-script")) {
+			const script = document.createElement("script");
+			script.id = "google-translate-script";
+			script.src =
+				"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+			script.async = true;
+			document.body.appendChild(script);
+		}
+
+		// 3. Paslepiame Google Translate šiukšles (viršutinę juostą ir t.t.)
+		const style = document.createElement("style");
+		style.innerHTML = `
+            .goog-te-banner-frame.skiptranslate, 
+            .goog-te-gadget-icon,
+            .goog-te-menu-value span:nth-child(2),
+            .goog-te-menu-value img,
+            .goog-te-menu-frame.skiptranslate,
+            #goog-gt-tt,
+            .skiptranslate {
+                display: none !important;
+            }
+            body {
+                top: 0px !important;
+            }
+            .goog-te-combo {
+                display: none !important;
+            }
+        `;
+		document.head.appendChild(style);
+
+		return () => clearInterval(interval);
+	}, []);
 
 	const getCurrentLang = () => {
 		const urlParams = new URLSearchParams(window.location.search);
@@ -54,6 +117,13 @@ const Navbar = () => {
 
 	const currentLang = getCurrentLang();
 
+	// Uždaryti meniu pasikeitus puslapiui
+	useEffect(() => {
+		setIsOpen(false);
+		setActiveTab("menu");
+	}, [location]);
+
+	// Click outside logic
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
 			if (
@@ -68,12 +138,6 @@ const Navbar = () => {
 		return () =>
 			document.removeEventListener("mousedown", handleClickOutside);
 	}, []);
-
-	// Uždaryti meniu pasikeitus puslapiui
-	useEffect(() => {
-		setIsOpen(false);
-		setActiveTab("menu");
-	}, [location]);
 
 	const urlLinks = [
 		{ href: "/projektai", label: "Projektai" },
@@ -174,7 +238,7 @@ const Navbar = () => {
 					className={cn(
 						"w-full h-14 flex items-center justify-between px-6 rounded-2xl font-bold transition-all border border-white/5",
 						currentLang === "lt"
-							? "bg-electric-blue/20 text-white border-electric-blue/30"
+							? "bg-electric-blue/20 text-white border-electric-blue/30 shadow-lg"
 							: "bg-white/5 text-white/40"
 					)}
 				>
@@ -185,7 +249,7 @@ const Navbar = () => {
 					className={cn(
 						"w-full h-14 flex items-center justify-between px-6 rounded-2xl font-bold transition-all border border-white/5",
 						currentLang === "en"
-							? "bg-electric-blue/20 text-white border-electric-blue/30"
+							? "bg-electric-blue/20 text-white border-electric-blue/30 shadow-lg"
 							: "bg-white/5 text-white/40"
 					)}
 				>
@@ -345,8 +409,6 @@ const Navbar = () => {
 										>
 											Svetainė per 24h
 										</Link>
-
-										{/* Apatinė įrankių juosta meniu viduje */}
 										<div className="flex items-center justify-between mt-6 pt-6 border-t border-white/5">
 											<button
 												onClick={() =>
@@ -399,6 +461,12 @@ const Navbar = () => {
 					</motion.div>
 				)}
 			</AnimatePresence>
+
+			{/* BŪTINAS ELEMENTAS GOOGLE TRANSLATE'UI (nematomas) */}
+			<div
+				id="google_translate_element"
+				style={{ display: "none" }}
+			></div>
 		</div>
 	);
 };
