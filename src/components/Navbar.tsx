@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
-import { LayoutGrid, AlignRight, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+	AlignRight,
+	X,
+	Settings,
+	Type,
+	Sun,
+	Moon,
+	Contrast,
+} from "lucide-react";
 import { cn } from "../lib/utils";
 import logo from "../img/amberweb-logo-white.png";
-import Accessibility from "../components/Accessibility";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
-// Define a type for your link objects to improve type safety
 interface NavLinkItem {
-	href?: string; // Optional for buttons
+	href?: string;
 	label: string | React.ReactElement;
 	isButton?: boolean;
 	isHighlight?: boolean;
@@ -18,10 +24,37 @@ interface NavLinkItem {
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
-	const [showAccessibilityMenu, setShowAccessibilityMenu] = useState(false);
-	const location = useLocation();
 
-	// Define regular URL links separately
+	// Desktop dropdown būsenos
+	const [desktopSettingsOpen, setDesktopSettingsOpen] = useState(false);
+
+	// Mobile nustatymų būsena (tik Settings mygtukui)
+	const [mobileSettingsOpen, setMobileSettingsOpen] = useState(false);
+
+	// UI Būsenos (Accessibility)
+	const [fontSize, setFontSize] = useState<"normal" | "large" | "xl">(
+		"normal"
+	);
+	const [isHighContrast, setIsHighContrast] = useState(false);
+
+	const location = useLocation();
+	const navRef = useRef<HTMLDivElement>(null);
+
+	// Click Outside logic
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				navRef.current &&
+				!navRef.current.contains(event.target as Node)
+			) {
+				setDesktopSettingsOpen(false);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () =>
+			document.removeEventListener("mousedown", handleClickOutside);
+	}, []);
+
 	const urlLinks: NavLinkItem[] = [
 		{ href: "/projektai", label: "Projektai" },
 		{ href: "/paruosti-dizainai", label: "Dizainai" },
@@ -30,158 +63,319 @@ const Navbar = () => {
 		{ href: "/kontaktai", label: "Kontaktai" },
 	];
 
-	// The 'Svetainė per 24h' link
 	const highlightLink: NavLinkItem = {
 		href: "/svetaine-per-24h",
 		label: "Svetainė per 24h",
 		isHighlight: true,
 	};
 
-	// The Accessibility button link
-	const accessibilityLink: NavLinkItem = {
-		label: <Accessibility />,
-		isButton: true,
+	// SCROLL & RESIZE
+	useEffect(() => {
+		const handleScroll = () => setScrolled(window.scrollY > 20);
+		window.addEventListener("scroll", handleScroll);
+
+		const handleResize = () => {
+			if (window.innerWidth >= 1024 && isOpen) {
+				setIsOpen(false);
+				setMobileSettingsOpen(false);
+			}
+		};
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+			window.removeEventListener("resize", handleResize);
+		};
+	}, [isOpen]);
+
+	// --- ACCESSIBILITY LOGIKA ---
+	const handleFontSizeChange = (size: "normal" | "large" | "xl") => {
+		setFontSize(size);
+		const root = document.documentElement;
+		root.classList.remove("text-lg", "text-xl");
+		if (size === "large") root.classList.add("text-lg");
+		if (size === "xl") root.classList.add("text-xl");
 	};
 
-	useEffect(() => {
-		const handleScroll = () => {
-			setScrolled(window.scrollY > 20);
-		};
-
-		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, []);
-
-	const handleAccessibilityToggle = () => {
-		setShowAccessibilityMenu(!showAccessibilityMenu);
-
-		// nuimti hash iš URL jei buvo uždėtas
-		if (window.location.hash === "#accessibility") {
-			history.replaceState(null, "", window.location.pathname);
+	const handleContrastToggle = (mode: "normal" | "high") => {
+		const isHigh = mode === "high";
+		setIsHighContrast(isHigh);
+		const root = document.documentElement;
+		if (isHigh) {
+			root.classList.add("high-contrast");
+			root.style.filter = "contrast(120%)";
+		} else {
+			root.classList.remove("high-contrast");
+			root.style.filter = "none";
 		}
 	};
 
-	return (
-		<nav
-			className={cn(
-				"fixed w-full z-50 transition-all duration-300",
-				scrolled ? "pt-4 bg-background/80 backdrop-blur-lg" : "py-6"
-			)}
-		>
-			<div className="container mx-auto px-4">
-				<div className="flex items-center justify-between">
-					<Link
-						to="/"
-						className="flex items-center space-x-2 logo-wrapper"
+	// --- PANELĖ (Accessibility) ---
+	const AccessibilityPanel = () => (
+		<div className="flex flex-col gap-4 min-w-[200px]">
+			<div className="flex flex-col gap-2">
+				<span className="text-white/60 text-xs flex items-center gap-2">
+					<Type size={14} /> Šrifto dydis
+				</span>
+				<div className="flex bg-white/5 rounded-lg p-1">
+					{(["normal", "large", "xl"] as const).map((size) => (
+						<button
+							key={size}
+							onClick={() => handleFontSizeChange(size)}
+							className={cn(
+								"flex-1 h-8 flex items-center justify-center rounded-md font-bold transition-all",
+								fontSize === size
+									? "bg-white/20 text-white"
+									: "text-white/40 hover:text-white/70",
+								size === "normal"
+									? "text-xs"
+									: size === "large"
+									? "text-sm"
+									: "text-lg"
+							)}
+						>
+							{size === "normal"
+								? "A"
+								: size === "large"
+								? "A+"
+								: "A++"}
+						</button>
+					))}
+				</div>
+			</div>
+			<div className="flex flex-col gap-2">
+				<span className="text-white/60 text-xs flex items-center gap-2">
+					<Contrast size={14} /> Kontrastas
+				</span>
+				<div className="flex bg-white/5 rounded-lg p-1 gap-1">
+					<button
+						onClick={() => handleContrastToggle("normal")}
+						className={cn(
+							"flex-1 h-8 flex items-center justify-center rounded-md transition-all",
+							!isHighContrast
+								? "bg-white/20 text-white"
+								: "text-white/40 hover:text-white/70"
+						)}
 					>
-						<img src={logo} alt="Amberweb" className="w-10 h-10" />
+						<Sun size={16} />
+					</button>
+					<button
+						onClick={() => handleContrastToggle("high")}
+						className={cn(
+							"flex-1 h-8 flex items-center justify-center rounded-md transition-all",
+							isHighContrast
+								? "bg-white/20 text-white"
+								: "text-white/40 hover:text-white/70"
+						)}
+					>
+						<Moon size={16} />
+					</button>
+				</div>
+			</div>
+		</div>
+	);
+
+	return (
+		<div ref={navRef}>
+			<motion.nav
+				initial={{ y: -100, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.5 }}
+				className={cn(
+					"fixed top-4 left-0 right-0 mx-auto z-50",
+					"w-[95%] max-w-5xl",
+					"rounded-full",
+					"border border-white/10 shadow-2xl shadow-black/50",
+					"backdrop-blur-md bg-[#0a0a0a]/80",
+					"px-4 py-3"
+				)}
+			>
+				<div className="flex items-center justify-between">
+					{/* LOGO */}
+					<Link to="/" className="flex items-center gap-2 pl-2">
+						<img src={logo} alt="Amberweb" className="h-8" />
 					</Link>
 
-					{/* Desktop Navigation */}
-					<div className="hidden lg:flex items-center space-x-8">
-						{/* All URL links */}
+					{/* DESKTOP LINKS */}
+					<div className="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
 						{urlLinks.map((link) => (
 							<Link
 								key={link.href}
 								to={link.href || ""}
 								className={cn(
-									"font-medium transition-colors",
+									"text-sm font-medium transition-colors hover:text-electric-blue",
 									location.pathname === link.href
 										? "text-electric-blue"
-										: "text-white/80 hover:text-electric-blue"
+										: "text-white/70"
 								)}
 							>
 								{link.label}
 							</Link>
 						))}
+					</div>
 
-						{/* 24h button */}
+					{/* DESKTOP ACTIONS */}
+					<div className="hidden lg:flex items-center gap-4">
+						<div className="flex items-center gap-2 text-white/70 relative">
+							{/* A. SETTINGS (Nustatymai) */}
+							<div className="relative">
+								<button
+									onClick={() =>
+										setDesktopSettingsOpen(
+											!desktopSettingsOpen
+										)
+									}
+									className={cn(
+										"p-2 rounded-full hover:bg-white/10 hover:text-white transition-colors",
+										desktopSettingsOpen &&
+											"text-white bg-white/10"
+									)}
+								>
+									<Settings size={20} />
+								</button>
+								<AnimatePresence>
+									{desktopSettingsOpen && (
+										<motion.div
+											initial={{
+												opacity: 0,
+												y: 10,
+												scale: 0.95,
+											}}
+											animate={{
+												opacity: 1,
+												y: 0,
+												scale: 1,
+											}}
+											exit={{
+												opacity: 0,
+												y: 10,
+												scale: 0.95,
+											}}
+											className="absolute top-full right-0 mt-4 bg-[#0a0a0a] border border-white/10 rounded-2xl p-4 shadow-xl z-50 w-64"
+										>
+											<AccessibilityPanel />
+										</motion.div>
+									)}
+								</AnimatePresence>
+							</div>
+
+							{/* B. LANGUAGE (Kalba) - DIRECT RENDER */}
+							{/* Mes nededame jokio wrapper button. Tiesiog įdedame komponentą. 
+                                Jis atsistos šalia Settings mygtuko. */}
+							<div className="flex items-center justify-center p-1">
+								<LanguageSwitcher />
+							</div>
+						</div>
+
 						<Link
-							key={highlightLink.href}
 							to={highlightLink.href || ""}
-							className={cn(
-								"font-medium transition-colors button-primary rounded-full animate-gradient-x"
-							)}
+							className="button-primary px-5 py-2 rounded-full text-xs font-bold shadow-lg shadow-electric-blue/20 hover:scale-105 transition-transform"
 						>
 							{highlightLink.label}
 						</Link>
+					</div>
 
-						{/* Accessibility button */}
+					{/* MOBILE TOGGLE */}
+					<div className="lg:hidden flex items-center gap-3">
+						<Link
+							to={highlightLink.href || ""}
+							className="button-primary px-5 py-2 rounded-full text-xs font-bold shadow-lg shadow-electric-blue/20 hover:scale-105 transition-transform"
+						>
+							{highlightLink.label}
+						</Link>
 						<button
-							key="accessibility"
-							onClick={handleAccessibilityToggle}
-							className="text-white/80 hover:text-electric-blue transition-colors"
+							onClick={() => setIsOpen(!isOpen)}
+							className="text-white/80 hover:text-white p-1"
 						>
-							{accessibilityLink.label}
-						</button>
-
-						<LanguageSwitcher />
-					</div>
-
-					{/* Mobile Menu Button and Highlight Button (in header) */}
-					<div className="lg:hidden flex items-center space-x-4">
-						<Link
-							key={highlightLink.href}
-							to={highlightLink.href || ""}
-							className={cn(
-								"font-medium transition-colors button-primary rounded-full animate-gradient-x",
-								"adaptive-button-font"
+							{isOpen ? (
+								<X size={24} />
+							) : (
+								<AlignRight size={24} />
 							)}
-						>
-							{highlightLink.label}
-						</Link>
-						<button onClick={() => setIsOpen(!isOpen)}>
-							{isOpen ? <X /> : <AlignRight />}
 						</button>
 					</div>
 				</div>
-			</div>
+			</motion.nav>
 
-			{/* Mobile Navigation (Dropdown Menu) */}
-			<motion.div
-				initial={false}
-				animate={
-					isOpen
-						? { height: "auto", opacity: 1 }
-						: { height: 0, opacity: 0 }
-				}
-				className="lg:hidden mt-4 overflow-hidden bg-dark-surface"
-			>
-				<div className="container mx-auto px-4 py-4">
-					{/* All URL links for mobile menu */}
-					{urlLinks.map((link) => (
-						<Link
-							key={link.href}
-							to={link.href || ""}
-							className={cn(
-								"block py-2 font-medium transition-colors",
-								location.pathname === link.href
-									? "text-electric-blue"
-									: "text-white/80 hover:text-electric-blue"
-							)}
-							onClick={() => setIsOpen(false)}
+			{/* MOBILE MENU */}
+			<AnimatePresence>
+				{isOpen && (
+					<div className="fixed top-24 left-0 right-0 mx-auto w-[95%] max-w-5xl z-40 flex flex-col gap-3">
+						{/* 1. Nuorodos */}
+						<motion.div
+							initial={{ opacity: 0, scale: 0.95, y: -10 }}
+							animate={{ opacity: 1, scale: 1, y: 0 }}
+							exit={{ opacity: 0, scale: 0.95, y: -10 }}
+							className="bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 rounded-3xl p-6 shadow-2xl"
 						>
-							{link.label}
-						</Link>
-					))}
+							<div className="flex flex-col gap-4 text-center">
+								{urlLinks.map((link) => (
+									<Link
+										key={link.href}
+										to={link.href || ""}
+										onClick={() => setIsOpen(false)}
+										className="text-lg font-medium text-white/80 hover:text-electric-blue py-2"
+									>
+										{link.label}
+									</Link>
+								))}
+							</div>
+						</motion.div>
 
-					{/* Accessibility button for mobile menu */}
-					<button
-						key="accessibility-mobile"
-						onClick={() => {
-							handleAccessibilityToggle();
-						}}
-						className="block py-2 w-full text-left text-white/80 hover:text-electric-blue"
-					>
-						{accessibilityLink.label}
-					</button>
+						{/* 2. Įrankių burbulas (Apatinis) */}
+						<motion.div
+							initial={{ opacity: 0, y: -10 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: -10 }}
+							transition={{ delay: 0.1 }}
+							className="bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/10 rounded-3xl p-4 shadow-2xl overflow-hidden"
+						>
+							{/* Čia mes panaikinome TABUS. Dedame elementus vieną šalia kito. */}
+							<div className="flex justify-center items-center gap-8">
+								{/* 1. Settings Mygtukas - veikia kaip jungiklis apačiai */}
+								<button
+									onClick={() =>
+										setMobileSettingsOpen(
+											!mobileSettingsOpen
+										)
+									}
+									className={cn(
+										"p-3 rounded-full transition-all duration-300 flex items-center gap-2",
+										mobileSettingsOpen
+											? "bg-electric-blue text-white shadow-lg shadow-electric-blue/20"
+											: "text-white/60 hover:text-white hover:bg-white/5"
+									)}
+								>
+									<Settings size={22} />
+								</button>
 
-					<LanguageSwitcher />
-				</div>
+								{/* 2. Language Switcher - Tiesioginis atvaizdavimas */}
+								{/* Vartotojas iškart mato tavo komponento ikoną. Paspaudus - veikia tavo komponento logika. */}
+								<div className="p-1">
+									<LanguageSwitcher />
+								</div>
+							</div>
 
-				<div className="h-0.5 w-full bg-gradient-to-r from-electric-blue to-neon-purple animate-gradient-x" />
-			</motion.div>
-		</nav>
+							{/* Iššokantis turinys TIK nustatymams (Settings) */}
+							<AnimatePresence>
+								{mobileSettingsOpen && (
+									<motion.div
+										initial={{ height: 0, opacity: 0 }}
+										animate={{ height: "auto", opacity: 1 }}
+										exit={{ height: 0, opacity: 0 }}
+										className="overflow-hidden"
+									>
+										<div className="pt-6 mt-4 border-t border-white/10">
+											<AccessibilityPanel />
+										</div>
+									</motion.div>
+								)}
+							</AnimatePresence>
+						</motion.div>
+					</div>
+				)}
+			</AnimatePresence>
+		</div>
 	);
 };
 

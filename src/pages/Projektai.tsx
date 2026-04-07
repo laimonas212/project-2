@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import projects from "../components/Projects";
-import { MousePointerClick } from "lucide-react";
+import { MousePointerClick, Plus } from "lucide-react"; // Pridėjau Plus ikoną mygtukui
 import sortedIds from "../components/sortedProjectIds";
 import FadeOutSection from "../components/FadeOutSection";
 import { Link } from "react-router-dom";
@@ -121,7 +121,10 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 									</div>
 								</div>
 
-								<ProjectShowcase images={project.images} altTitle={project.title} />
+								<ProjectShowcase
+									images={project.images}
+									altTitle={project.title}
+								/>
 							</motion.div>
 						</motion.a>
 
@@ -205,7 +208,10 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 										</div>
 									</div>
 
-									<ProjectShowcase images={project.images} altTitle={project.title} />
+									<ProjectShowcase
+										images={project.images}
+										altTitle={project.title}
+									/>
 								</Link>
 
 								{/* Project Info */}
@@ -242,6 +248,17 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 };
 
 const Projects: React.FC = () => {
+	// Kiek projektų rodyti iš pradžių
+	const INITIAL_COUNT = 4;
+	const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
+
+	const handleLoadMore = () => {
+		// Pridedame dar 4 projektus paspaudus
+		setVisibleCount((prev) => prev + 4);
+	};
+
+	const hasMore = visibleCount < sortedProjects.length;
+
 	return (
 		<div className="relative">
 			<Helmet>
@@ -263,14 +280,35 @@ const Projects: React.FC = () => {
 				<div className="fixed inset-0 z-0 pointer-events-none">
 					<div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
 				</div>
+
 				<ProjectsList />
-				{sortedProjects.map((project, index) => (
+
+				{/* Naudojame slice, kad rodytume tik dalį masyvo */}
+				{sortedProjects.slice(0, visibleCount).map((project, index) => (
 					<ProjectSection
-						key={project.title}
+						key={project.id} // Pakeista iš project.title į project.id dėl stabilumo
 						project={project}
 						index={index}
 					/>
 				))}
+
+				{/* Mygtukas rodomas tik jei yra dar ko rodyti */}
+				{hasMore && (
+					<div className="flex justify-center items-center py-16">
+						<motion.button
+							onClick={handleLoadMore}
+							initial={{ opacity: 0 }}
+							whileInView={{ opacity: 1 }}
+							whileHover={{ scale: 1.05 }}
+							whileTap={{ scale: 0.95 }}
+							className="group relative flex items-center gap-3 px-5 py-3 bg-dark-surface/50 border border-electric-blue/30 rounded-full text-white text-xs font-medium hover:border-electric-blue transition-all backdrop-blur-md overflow-hidden"
+						>
+							<div className="absolute inset-0 bg-electric-blue/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+							<Plus className="w-4 h-4 text-electric-blue" />
+							<span>Rodyti daugiau projektų</span>
+						</motion.button>
+					</div>
+				)}
 			</div>
 		</div>
 	);
