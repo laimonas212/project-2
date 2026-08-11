@@ -4,10 +4,6 @@ import {
 	Code2,
 	ArrowRight,
 	Sparkles,
-	Boxes,
-	Medal,
-	TabletSmartphone,
-	GaugeCircle,
 	Rocket,
 	MonitorSmartphone,
 	PenTool,
@@ -15,9 +11,14 @@ import {
 } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import ParticlesBackground from "./ParticlesBackground"; // Jei palieki foną
+import ParticlesBackground from "./ParticlesBackground";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+	h1?: string;
+	introText?: string;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ h1, introText }) => {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const [ref, inView] = useInView({
 		threshold: 0.1,
@@ -69,9 +70,9 @@ const HeroSection = () => {
 							className="inline-flex items-center gap-2 bg-dark-surface/50 backdrop-blur-sm px-6 py-3 rounded-full"
 						>
 							<Sparkles className="w-5 h-5 text-electric-blue" />
-							<h1 className="text-white/90">
-								Internetinių svetainių kūrimas
-							</h1>
+							<h2 className="text-white/90 text-sm font-medium">
+								Profesionalios paslaugos
+							</h2>
 						</motion.div>
 
 						<motion.h1
@@ -81,13 +82,19 @@ const HeroSection = () => {
 								duration: 0.8,
 								ease: [0.215, 0.61, 0.355, 1],
 							}}
-							className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight opacity-100"
+							className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight text-white"
 						>
-							Kuriame{" "}
-							<span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
-								Skaitmenines
-							</span>{" "}
-							Patirtis
+							{h1 ? (
+								h1
+							) : (
+								<>
+									Kuriame{" "}
+									<span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
+										Skaitmenines
+									</span>{" "}
+									Patirtis
+								</>
+							)}
 						</motion.h1>
 
 						<motion.p
@@ -95,11 +102,10 @@ const HeroSection = () => {
 							animate={inView ? "visible" : "hidden"}
 							variants={titleVariants}
 							custom={2}
-							className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto"
+							className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto"
 						>
-							Idėjas paverčiame profesionaliomis interneto
-							svetainėmis, naudodami pažangiausias technologijas
-							ir kūrybinius sprendimus.
+							{introText ||
+								"Idėjas paverčiame profesionaliomis interneto svetainėmis, naudodami pažangiausias technologijas ir kūrybinius sprendimus."}
 						</motion.p>
 					</div>
 
@@ -169,40 +175,13 @@ const HeroSection = () => {
 								<div className="text-3xl md:text-4xl flex align-center justify-center font-display font-bold text-electric-blue mb-2">
 									{stat.icon}
 								</div>
-								<div className="text-white/70">
+								<div className="text-white/70 text-sm">
 									{stat.label}
 								</div>
 							</motion.div>
 						))}
 					</motion.div>
 				</div>
-
-				{/* Scroll Indicator */}
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 1.5 }}
-					className="absolute bottom-8 left-1/2 -translate-x-1/2"
-				>
-					<div className="flex flex-col items-center gap-2">
-						<span className="text-sm text-white/50">
-							Slinkite žemyn
-						</span>
-						<motion.div
-							animate={{
-								y: [0, 10, 0],
-							}}
-							transition={{
-								duration: 1.5,
-								repeat: Infinity,
-								repeatType: "reverse",
-							}}
-							className="w-5 h-8 border-2 border-white/20 rounded-full flex items-start justify-center p-1"
-						>
-							<div className="w-1 h-1.5 bg-electric-blue rounded-full" />
-						</motion.div>
-					</div>
-				</motion.div>
 			</div>
 		</motion.div>
 	);

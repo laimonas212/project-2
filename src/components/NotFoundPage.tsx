@@ -8,7 +8,7 @@ const NotFoundPage: React.FC = () => {
 			initial={{ opacity: 0, y: 30 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6 }}
-			className="flex flex-col items-center justify-center min-h-screen bg-background text-center px-4 relative"
+			className="flex flex-col items-center justify-center pt-40 pb-20 text-center px-4 relative w-full"
 		>
 			{/* Background particles */}
 			<ParticlesBackground />

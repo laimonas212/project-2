@@ -35,10 +35,84 @@
 		<loc>https://amberweb.lt/svetaine-per-24h</loc>
 	</url>
 
-	<!-- Blog įrašai -->
+	<!-- SEO landing puslapiai -->
 	<url>
-		<loc>https://amberweb.lt/blog</loc>
+		<loc>https://amberweb.lt/svetainiu-kurimas</loc>
 	</url>
+	<url>
+		<loc>https://amberweb.lt/internetiniu-svetainiu-kurimas</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/wordpress-svetainiu-kurimas</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/wordpress-svetaines-verslui</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/divi-svetainiu-kurimas</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/e-parduotuviu-kurimas</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/woocommerce-parduotuviu-kurimas</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/wordpress-el-parduotuves</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetaines-kurimo-kaina</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/wordpress-svetaines-kaina</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/el-parduotuves-kurimo-kaina</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/woocommerce-parduotuves-kaina</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-kurimas-mazam-verslui</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetaines-kurimas-imonei</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-atnaujinimas</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/wordpress-svetainiu-prieziura</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-optimizavimas</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-kurimas-vilniuje</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/wordpress-svetainiu-kurimas-vilniuje</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/el-parduotuviu-kurimas-vilniuje</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-kurimas-kaune</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/wordpress-svetainiu-kurimas-kaune</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-kurimas-klaipedoje</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-kurimas-siauliuose</loc>
+	</url>
+	<url>
+		<loc>https://amberweb.lt/svetainiu-kurimas-panevezyje</loc>
+	</url>
+
+	<!-- Blog įrašai -->
 	<url>
 		<loc>https://amberweb.lt/blog/kas-yra-divi-5</loc>
 	</url>

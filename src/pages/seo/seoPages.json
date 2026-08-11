@@ -1,0 +1,1067 @@
+[
+	{
+		"slug": "svetainiu-kurimas",
+		"type": "svetainiu-kurimas",
+		"location": "Lietuva",
+		"primaryKeyword": "svetainių kūrimas",
+		"secondaryKeywords": [
+			"interneto svetainių kūrimas",
+			"internetinių svetainių kūrimas",
+			"svetainės kūrimas",
+			"svetainių kūrimo paslaugos"
+		],
+		"title": "Svetainių kūrimas – Amberweb",
+		"description": "Profesionalus svetainių kūrimas verslui. Modernios, greitos ir SEO optimizuotos WordPress svetainės su patogiu valdymu.",
+		"h1": "Svetainių kūrimas",
+		"contentHeading": "Svetainė, kuri dirba jūsų verslui",
+		"introText": "Kuriame modernias interneto svetaines verslui – nuo pirmos idėjos iki pilnai veikiančio ir lengvai valdomo projekto.",
+		"seoContent": [
+			"Profesionali interneto svetainė šiandien yra vienas svarbiausių verslo įrankių. Ji turi ne tik gerai atrodyti, bet ir greitai veikti, būti patogi lankytojams bei paruošta paieškos sistemoms.",
+			"Kuriame WordPress svetaines, pritaikytas konkrečiam verslui, jo auditorijai ir tikslams. Kiekvienam projektui skiriame dėmesį struktūrai, dizainui, turiniui ir techniniam atlikimui.",
+			"Svetainę gaunate su patogia administravimo sistema, todėl vėliau galėsite patys keisti tekstus, nuotraukas ir kitą turinį."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta",
+			"blog"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "e-parduotuviu-kurimas",
+				"title": "El. parduotuvių kūrimas"
+			},
+			{
+				"slug": "svetaines-kurimo-kaina",
+				"title": "Svetainės kūrimo kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Kiek kainuoja svetainės kūrimas?",
+				"answer": "Kaina priklauso nuo svetainės dydžio, dizaino, funkcionalumo ir turinio. Įvertinę jūsų poreikius pateikiame konkretų pasiūlymą."
+			},
+			{
+				"question": "Kiek laiko užtrunka svetainės kūrimas?",
+				"answer": "Paprastą reprezentacinę svetainę dažniausiai sukuriame per 1–2 savaites nuo visos reikalingos medžiagos gavimo."
+			}
+		]
+	},
+	{
+		"slug": "internetiniu-svetainiu-kurimas",
+		"type": "svetainiu-kurimas",
+		"location": "Lietuva",
+		"primaryKeyword": "internetinių svetainių kūrimas",
+		"secondaryKeywords": [
+			"interneto svetainių kūrimas",
+			"internetinės svetainės kūrimas",
+			"internetinės svetainės verslui",
+			"svetainių kūrimas verslui"
+		],
+		"title": "Internetinių svetainių kūrimas – Amberweb",
+		"description": "Internetinių svetainių kūrimas verslui. Kuriame greitas, modernias ir patogias WordPress svetaines su SEO pagrindais.",
+		"h1": "Internetinių svetainių kūrimas",
+		"contentHeading": "Internetinė svetainė, pritaikyta jūsų verslui",
+		"introText": "Nuo mažos įmonės reprezentacinės svetainės iki didesnio verslo projekto – kuriame sprendimus pagal jūsų realius poreikius.",
+		"seoContent": [
+			"Internetinės svetainės kūrimas prasideda nuo aiškios struktūros ir supratimo, ko svetainėje ieškos jūsų potencialus klientas.",
+			"Projektuojame svetaines taip, kad lankytojas greitai suprastų jūsų pasiūlymą, rastų reikalingą informaciją ir galėtų lengvai susisiekti.",
+			"Techninėje dalyje naudojame WordPress, todėl svetainę galima patogiai administruoti ir ateityje plėsti."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta",
+			"blog"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas",
+				"title": "Svetainių kūrimo paslaugos"
+			},
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "wordpress-svetainiu-kurimas",
+		"type": "wordpress",
+		"location": "Lietuva",
+		"primaryKeyword": "WordPress svetainių kūrimas",
+		"secondaryKeywords": [
+			"wordpress svetainės kūrimas",
+			"wordpress svetainių kūrimo paslaugos",
+			"wordpress kūrimas",
+			"wordpress svetainė"
+		],
+		"title": "WordPress svetainių kūrimas – Amberweb",
+		"description": "WordPress svetainių kūrimas verslui. Modernios, greitos ir lengvai valdomos svetainės su WordPress ir Divi.",
+		"h1": "WordPress svetainių kūrimas",
+		"contentHeading": "WordPress svetainė, kurią lengva valdyti",
+		"introText": "Kuriame profesionalias WordPress svetaines, kurias patogu administruoti, plėsti ir optimizuoti.",
+		"seoContent": [
+			"WordPress yra lanksti turinio valdymo sistema, tinkanti tiek mažoms įmonėms, tiek didesniems projektams. Ji leidžia patogiai valdyti svetainės turinį ir ateityje pridėti naujas funkcijas.",
+			"Naudojame WordPress kartu su Divi, todėl galime sukurti individualų dizainą ir kartu išlaikyti patogų svetainės administravimą.",
+			"Kiekvieną projektą pritaikome mobiliesiems įrenginiams ir pasirūpiname techniniais SEO pagrindais."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta",
+			"blog"
+		],
+		"relatedPages": [
+			{
+				"slug": "divi-svetainiu-kurimas",
+				"title": "Divi svetainių kūrimas"
+			},
+			{
+				"slug": "wordpress-svetaines-verslui",
+				"title": "WordPress svetainės verslui"
+			},
+			{
+				"slug": "wordpress-svetaines-kaina",
+				"title": "WordPress svetainės kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Kodėl verta rinktis WordPress?",
+				"answer": "WordPress suteikia daug lankstumo, patogų turinio valdymą ir galimybę svetainę plėsti ateityje."
+			},
+			{
+				"question": "Ar galėsiu pats administruoti WordPress svetainę?",
+				"answer": "Taip. Po projekto galėsite savarankiškai keisti tekstus, nuotraukas ir kitą svetainės turinį."
+			}
+		]
+	},
+	{
+		"slug": "wordpress-svetaines-verslui",
+		"type": "wordpress-verslui",
+		"location": "Lietuva",
+		"primaryKeyword": "WordPress svetainės verslui",
+		"secondaryKeywords": [
+			"wordpress svetainė įmonei",
+			"verslo svetainė wordpress",
+			"įmonės svetainė",
+			"wordpress svetainė įmonei"
+		],
+		"title": "WordPress svetainės verslui – Amberweb",
+		"description": "Profesionalios WordPress svetainės įmonėms ir smulkiam verslui. Aiški struktūra, modernus dizainas ir patogus valdymas.",
+		"h1": "WordPress svetainės verslui",
+		"contentHeading": "Profesionali svetainė jūsų verslui",
+		"introText": "Kuriame WordPress svetaines įmonėms, kurios nori profesionaliai pristatyti savo paslaugas ir generuoti daugiau užklausų.",
+		"seoContent": [
+			"Verslo svetainė turi per kelias sekundes paaiškinti, ką siūlote ir kodėl klientas turėtų rinktis būtent jus.",
+			"Kuriame aiškios struktūros svetaines, kuriose paslaugos, kontaktai ir svarbiausia informacija pateikiami taip, kad lankytojui būtų lengva priimti sprendimą.",
+			"WordPress suteikia jūsų komandai galimybę savarankiškai atnaujinti svetainę ir jos turinį."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "svetainiu-kurimas-mazam-verslui",
+				"title": "Svetainių kūrimas mažam verslui"
+			}
+		]
+	},
+	{
+		"slug": "divi-svetainiu-kurimas",
+		"type": "divi",
+		"location": "Lietuva",
+		"primaryKeyword": "Divi svetainių kūrimas",
+		"secondaryKeywords": [
+			"divi wordpress",
+			"divi svetainės",
+			"wordpress divi",
+			"divi svetainės kūrimas"
+		],
+		"title": "Divi svetainių kūrimas – Amberweb",
+		"description": "WordPress svetainių kūrimas su Divi. Individualus dizainas, patogus valdymas ir mobiliesiems pritaikytos svetainės.",
+		"h1": "Divi svetainių kūrimas",
+		"contentHeading": "Individuali WordPress svetainė su Divi",
+		"introText": "Kuriame WordPress svetaines su Divi, kai reikia modernaus dizaino ir patogaus vizualinio svetainės valdymo.",
+		"seoContent": [
+			"Divi leidžia kurti individualius WordPress svetainių dizainus ir kartu suteikia patogų vizualinį redaktorių.",
+			"Tai ypač patogu verslui, kuris nori pats keisti svetainės turinį ir nereikalauti programuotojo pagalbos dėl kiekvieno nedidelio pakeitimo.",
+			"Kiekvieną Divi svetainę pritaikome skirtingiems ekranams ir pasirūpiname techniniais našumo bei SEO pagrindais."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "svetainiu-atnaujinimas",
+				"title": "Svetainių atnaujinimas"
+			}
+		]
+	},
+	{
+		"slug": "e-parduotuviu-kurimas",
+		"type": "e-parduotuves",
+		"location": "Lietuva",
+		"primaryKeyword": "el. parduotuvių kūrimas",
+		"secondaryKeywords": [
+			"elektroninių parduotuvių kūrimas",
+			"internetinių parduotuvių kūrimas",
+			"el parduotuvės kūrimas",
+			"internetinės parduotuvės kūrimas"
+		],
+		"title": "El. parduotuvių kūrimas – Amberweb",
+		"description": "Profesionalus el. parduotuvių kūrimas su WooCommerce. Patogus produktų valdymas, mokėjimai, pristatymas ir SEO.",
+		"h1": "El. parduotuvių kūrimas",
+		"contentHeading": "Pradėkite prekybą internetu",
+		"introText": "Kuriame patogias ir greitas el. parduotuves, pritaikytas jūsų produktams, klientams ir verslo procesams.",
+		"seoContent": [
+			"Sėkmingai el. parduotuvei svarbus ne tik dizainas. Pirkimo procesas turi būti aiškus, greitas ir patogus tiek kompiuteryje, tiek telefone.",
+			"Naudojame WooCommerce, todėl galima integruoti mokėjimus, pristatymo sistemas, produktų valdymą, nuolaidas ir kitus prekybai reikalingus sprendimus.",
+			"Parduotuvę pritaikome pagal jūsų produktų kiekį ir verslo modelį – nuo nedidelio katalogo iki didesnio el. prekybos projekto."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta",
+			"blog"
+		],
+		"relatedPages": [
+			{
+				"slug": "woocommerce-parduotuviu-kurimas",
+				"title": "WooCommerce parduotuvių kūrimas"
+			},
+			{
+				"slug": "el-parduotuves-kurimo-kaina",
+				"title": "El. parduotuvės kūrimo kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Su kokia sistema kuriate el. parduotuves?",
+				"answer": "Dažniausiai naudojame WordPress ir WooCommerce."
+			},
+			{
+				"question": "Ar galima integruoti mokėjimus ir pristatymą?",
+				"answer": "Taip. Integruojame jūsų verslui tinkamus mokėjimo ir pristatymo sprendimus."
+			}
+		]
+	},
+	{
+		"slug": "woocommerce-parduotuviu-kurimas",
+		"type": "woocommerce",
+		"location": "Lietuva",
+		"primaryKeyword": "WooCommerce parduotuvių kūrimas",
+		"secondaryKeywords": [
+			"woocommerce svetainės kūrimas",
+			"woocommerce kūrimas",
+			"woocommerce parduotuvė",
+			"wordpress woocommerce"
+		],
+		"title": "WooCommerce parduotuvių kūrimas – Amberweb",
+		"description": "WooCommerce parduotuvių kūrimas su WordPress. Mokėjimai, pristatymas, produktų valdymas ir individualus dizainas.",
+		"h1": "WooCommerce parduotuvių kūrimas",
+		"contentHeading": "Galinga WooCommerce parduotuvė jūsų verslui",
+		"introText": "Kuriame WooCommerce parduotuves, pritaikytas jūsų produktams, klientams ir pardavimo procesui.",
+		"seoContent": [
+			"WooCommerce suteikia WordPress sistemai pilną el. prekybos funkcionalumą. Galima valdyti produktus, užsakymus, klientus, nuolaidas ir pristatymą.",
+			"Parduotuvę pritaikome pagal jūsų veiklą ir integruojame reikalingus mokėjimo bei logistikos sprendimus.",
+			"Tinkamai sukonfigūruota WooCommerce parduotuvė gali būti plečiama kartu su augančiu verslu."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "e-parduotuviu-kurimas",
+				"title": "El. parduotuvių kūrimas"
+			},
+			{
+				"slug": "woocommerce-parduotuves-kaina",
+				"title": "WooCommerce parduotuvės kaina"
+			}
+		]
+	},
+	{
+		"slug": "wordpress-el-parduotuves",
+		"type": "wordpress-ecommerce",
+		"location": "Lietuva",
+		"primaryKeyword": "WordPress el. parduotuvė",
+		"secondaryKeywords": [
+			"wordpress elektroninė parduotuvė",
+			"wordpress parduotuvė",
+			"wordpress e parduotuvė",
+			"woocommerce wordpress"
+		],
+		"title": "WordPress el. parduotuvės – Amberweb",
+		"description": "WordPress ir WooCommerce el. parduotuvių kūrimas. Patogus produktų, užsakymų ir turinio valdymas vienoje sistemoje.",
+		"h1": "WordPress el. parduotuvės",
+		"contentHeading": "Svetainė ir parduotuvė vienoje sistemoje",
+		"introText": "WordPress ir WooCommerce leidžia sujungti profesionalią verslo svetainę ir pilnai veikiančią internetinę parduotuvę.",
+		"seoContent": [
+			"WordPress el. parduotuvė leidžia vienoje sistemoje valdyti ne tik produktus ir užsakymus, bet ir tinklaraštį, paslaugų puslapius bei kitą turinį.",
+			"WooCommerce suteikia lankstumo integruoti mokėjimus, pristatymą ir papildomas prekybos funkcijas.",
+			"Tai geras pasirinkimas verslui, kuris nori turinio svetainės ir el. prekybos vienoje platformoje."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "woocommerce-parduotuviu-kurimas",
+				"title": "WooCommerce parduotuvių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "svetaines-kurimo-kaina",
+		"type": "kaina",
+		"location": "Lietuva",
+		"primaryKeyword": "svetainės kūrimo kaina",
+		"secondaryKeywords": [
+			"svetainės kaina",
+			"svetainių kūrimo kainos",
+			"kiek kainuoja svetainė",
+			"internetinės svetainės kaina"
+		],
+		"title": "Svetainės kūrimo kaina – Amberweb",
+		"description": "Kiek kainuoja svetainės kūrimas? Sužinokite, nuo ko priklauso WordPress svetainės kaina ir projekto biudžetas.",
+		"h1": "Svetainės kūrimo kaina",
+		"contentHeading": "Kiek kainuoja profesionali svetainė?",
+		"introText": "Svetainės kaina priklauso nuo jos dydžio, funkcionalumo, dizaino ir turinio. Paaiškiname, kas sudaro projekto kainą.",
+		"seoContent": [
+			"Paprasta reprezentacinė svetainė ir sudėtingas verslo projektas gali kainuoti labai skirtingai. Todėl svetainės kainą reikia vertinti pagal realius projekto poreikius.",
+			"Didžiausią įtaką kainai turi puslapių skaičius, dizaino sudėtingumas, funkcijos, integracijos ir turinio paruošimas.",
+			"Mūsų tikslas – sukurti tokį sprendimą, kurio reikia jūsų verslui, o ne pridėti nereikalingų funkcijų vien tam, kad projektas kainuotų daugiau."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"pricing",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetaines-kaina",
+				"title": "WordPress svetainės kaina"
+			},
+			{
+				"slug": "el-parduotuves-kurimo-kaina",
+				"title": "El. parduotuvės kūrimo kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Kiek kainuoja paprasta interneto svetainė?",
+				"answer": "Kaina priklauso nuo puslapių skaičiaus, dizaino ir funkcionalumo. Įvertinę projektą pateikiame konkretų pasiūlymą."
+			},
+			{
+				"question": "Ar galima svetainę pradėti nuo mažesnio biudžeto?",
+				"answer": "Taip. Galima pradėti nuo pagrindinių puslapių ir vėliau svetainę plėsti."
+			}
+		]
+	},
+	{
+		"slug": "wordpress-svetaines-kaina",
+		"type": "wordpress-kaina",
+		"location": "Lietuva",
+		"primaryKeyword": "WordPress svetainės kaina",
+		"secondaryKeywords": [
+			"wordpress svetainės kainos",
+			"wordpress kūrimo kaina",
+			"wordpress svetainių kūrimo kaina"
+		],
+		"title": "WordPress svetainės kaina – Amberweb",
+		"description": "WordPress svetainės kaina priklauso nuo projekto dydžio ir funkcionalumo. Sužinokite, kiek gali kainuoti profesionali svetainė.",
+		"h1": "WordPress svetainės kaina",
+		"contentHeading": "Kas sudaro WordPress svetainės kainą?",
+		"introText": "WordPress leidžia kurti skirtingo sudėtingumo svetaines, todėl galutinė projekto kaina priklauso nuo jūsų poreikių.",
+		"seoContent": [
+			"WordPress svetainės kainą sudaro ne tik dizainas. Vertiname struktūrą, puslapių kiekį, funkcionalumą, mobilųjį pritaikymą, SEO pagrindus ir administravimo patogumą.",
+			"Naudojant Divi galima efektyviai kurti individualius dizainus ir kartu išlaikyti patogią svetainės administravimo aplinką.",
+			"Prieš pradėdami projektą aiškiai įvardijame, kas įeina į kainą."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"pricing",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "svetaines-kurimo-kaina",
+				"title": "Bendra svetainės kūrimo kaina"
+			}
+		]
+	},
+	{
+		"slug": "el-parduotuves-kurimo-kaina",
+		"type": "e-parduotuves-kaina",
+		"location": "Lietuva",
+		"primaryKeyword": "el. parduotuvės kūrimo kaina",
+		"secondaryKeywords": [
+			"el parduotuvės kaina",
+			"elektroninės parduotuvės kaina",
+			"internetinės parduotuvės kaina",
+			"woocommerce parduotuvės kaina"
+		],
+		"title": "El. parduotuvės kūrimo kaina – Amberweb",
+		"description": "Kiek kainuoja el. parduotuvės kūrimas? Sužinokite, kas lemia WooCommerce parduotuvės kainą ir projekto biudžetą.",
+		"h1": "El. parduotuvės kūrimo kaina",
+		"contentHeading": "Kiek kainuoja internetinė parduotuvė?",
+		"introText": "Elektroninės parduotuvės kaina priklauso nuo produktų kiekio, funkcionalumo, dizaino ir reikalingų integracijų.",
+		"seoContent": [
+			"Maža WooCommerce parduotuvė ir sudėtingas el. prekybos projektas gali turėti labai skirtingą kainą. Todėl pirmiausia įvertiname, kokių funkcijų iš tikrųjų reikia.",
+			"Kainai įtakos gali turėti mokėjimų integracijos, pristatymo sistemos, produktų variantai, filtravimas, nuolaidos ir automatizacijos.",
+			"Planuojant projektą siekiame išlaikyti gerą kainos ir realios verslo naudos santykį."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"pricing",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "e-parduotuviu-kurimas",
+				"title": "El. parduotuvių kūrimas"
+			},
+			{
+				"slug": "woocommerce-parduotuviu-kurimas",
+				"title": "WooCommerce parduotuvių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "woocommerce-parduotuves-kaina",
+		"type": "woocommerce-kaina",
+		"location": "Lietuva",
+		"primaryKeyword": "WooCommerce parduotuvės kaina",
+		"secondaryKeywords": [
+			"woocommerce kainos",
+			"woocommerce parduotuvės kūrimo kaina",
+			"woocommerce kūrimo kaina"
+		],
+		"title": "WooCommerce parduotuvės kaina – Amberweb",
+		"description": "Kiek kainuoja WooCommerce parduotuvė? Sužinokite, nuo ko priklauso el. prekybos projekto kaina.",
+		"h1": "WooCommerce parduotuvės kaina",
+		"contentHeading": "Kas lemia WooCommerce parduotuvės kainą?",
+		"introText": "WooCommerce parduotuvės kaina priklauso nuo produktų struktūros, dizaino, integracijų ir pirkimo proceso sudėtingumo.",
+		"seoContent": [
+			"WooCommerce leidžia sukurti tiek nedidelę, tiek sudėtingesnę internetinę parduotuvę. Dėl to nėra vienos visiems tinkamos kainos.",
+			"Įvertiname produktų tipus, mokėjimus, pristatymą, filtravimą, akcijas ir kitas reikalingas funkcijas.",
+			"Prieš pradedant projektą pateikiame aiškų darbų ir kainos pasiūlymą."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"pricing",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "woocommerce-parduotuviu-kurimas",
+				"title": "WooCommerce parduotuvių kūrimas"
+			},
+			{
+				"slug": "el-parduotuves-kurimo-kaina",
+				"title": "El. parduotuvės kūrimo kaina"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-kurimas-mazam-verslui",
+		"type": "mazam-verslui",
+		"location": "Lietuva",
+		"primaryKeyword": "svetainių kūrimas mažam verslui",
+		"secondaryKeywords": [
+			"svetainė mažam verslui",
+			"svetainė smulkiam verslui",
+			"svetainė verslui",
+			"svetainės kūrimas smulkiam verslui"
+		],
+		"title": "Svetainių kūrimas mažam verslui – Amberweb",
+		"description": "Svetainių kūrimas mažam ir smulkiam verslui. Profesionalios, lengvai valdomos ir SEO optimizuotos WordPress svetainės.",
+		"h1": "Svetainių kūrimas mažam verslui",
+		"contentHeading": "Verslo svetainė be nereikalingo sudėtingumo",
+		"introText": "Mažam verslui reikia ne sudėtingiausios, o tinkamiausios svetainės. Kuriame sprendimus pagal jūsų realų biudžetą ir poreikius.",
+		"seoContent": [
+			"Mažai įmonei ar individualiai veiklai dažniausiai nereikia sudėtingos sistemos. Svarbiausia – profesionaliai pristatyti paslaugas, parodyti kontaktus ir paskatinti lankytoją susisiekti.",
+			"Kuriame kompaktiškas WordPress svetaines, kuriose nėra nereikalingo funkcionalumo, todėl projektą galima įgyvendinti greičiau ir efektyviau.",
+			"Ateityje svetainę galima plėsti pagal verslo augimą."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "svetaines-kurimo-kaina",
+				"title": "Svetainės kūrimo kaina"
+			}
+		]
+	},
+	{
+		"slug": "svetaines-kurimas-imonei",
+		"type": "imonei",
+		"location": "Lietuva",
+		"primaryKeyword": "svetainės kūrimas įmonei",
+		"secondaryKeywords": [
+			"įmonės svetainė",
+			"verslo svetainė",
+			"svetainė verslui",
+			"profesionali įmonės svetainė"
+		],
+		"title": "Svetainės kūrimas įmonei – Amberweb",
+		"description": "Profesionalių įmonių svetainių kūrimas. WordPress svetainės su aiškia struktūra, moderniu dizainu ir SEO pagrindais.",
+		"h1": "Svetainės kūrimas įmonei",
+		"contentHeading": "Svetainė, kuri profesionaliai pristato jūsų įmonę",
+		"introText": "Kuriame įmonių svetaines, kurios padeda aiškiai pristatyti veiklą, paslaugas ir paskatinti potencialius klientus susisiekti.",
+		"seoContent": [
+			"Įmonės svetainė dažnai yra pirmas kontaktas tarp jūsų verslo ir potencialaus kliento. Todėl ji turi kurti pasitikėjimą ir aiškiai komunikuoti jūsų vertę.",
+			"Projektuojame informacijos struktūrą pagal jūsų paslaugas ir klientų poreikius, o WordPress suteikia patogų svetainės valdymą.",
+			"Svetainę galima toliau plėsti naujomis paslaugomis, turiniu ir funkcijomis."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas-mazam-verslui",
+				"title": "Svetainių kūrimas mažam verslui"
+			},
+			{
+				"slug": "wordpress-svetaines-verslui",
+				"title": "WordPress svetainės verslui"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-atnaujinimas",
+		"type": "atnaujinimas",
+		"location": "Lietuva",
+		"primaryKeyword": "svetainės atnaujinimas",
+		"secondaryKeywords": [
+			"svetainės perdarymas",
+			"senos svetainės atnaujinimas",
+			"svetainės modernizavimas",
+			"svetainės dizaino atnaujinimas"
+		],
+		"title": "Svetainės atnaujinimas ir perdarymas – Amberweb",
+		"description": "Atnaujiname ir perdarome pasenusias WordPress svetaines. Modernus dizainas, geresnis greitis ir patogesnis valdymas.",
+		"h1": "Svetainės atnaujinimas ir perdarymas",
+		"contentHeading": "Atnaujinkite svetainę nepradėdami visko nuo nulio",
+		"introText": "Jeigu dabartinė svetainė atrodo pasenusi, lėtai veikia arba nepatogu ją valdyti, galime ją modernizuoti.",
+		"seoContent": [
+			"Ne kiekvieną seną svetainę būtina išmesti ir kurti nuo nulio. Pirmiausia įvertiname esamą WordPress svetainę ir nustatome, ką galima išsaugoti.",
+			"Galime atnaujinti dizainą, struktūrą, turinį, mobiliąją versiją ir techninius sprendimus.",
+			"Tai leidžia modernizuoti svetainę ir kartu išsaugoti vertingą turinį bei SEO istoriją."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "svetainiu-optimizavimas",
+				"title": "Svetainių optimizavimas"
+			}
+		]
+	},
+	{
+		"slug": "wordpress-svetainiu-prieziura",
+		"type": "prieziura",
+		"location": "Lietuva",
+		"primaryKeyword": "WordPress svetainių priežiūra",
+		"secondaryKeywords": [
+			"wordpress priežiūra",
+			"wordpress svetainės priežiūra",
+			"wordpress atnaujinimai",
+			"svetainės administravimas"
+		],
+		"title": "WordPress svetainių priežiūra – Amberweb",
+		"description": "WordPress svetainių priežiūra, atnaujinimai ir techninis palaikymas. Pasirūpiname svetainės stabilumu, saugumu ir veikimu.",
+		"h1": "WordPress svetainių priežiūra",
+		"contentHeading": "Mes pasirūpinsime jūsų WordPress svetaine",
+		"introText": "Reguliarūs WordPress, temų ir įskiepių atnaujinimai padeda išlaikyti svetainę saugią ir stabilią.",
+		"seoContent": [
+			"WordPress svetainė nėra vienkartinis projektas. Sistemą ir įskiepius reikia atnaujinti, stebėti atsargines kopijas bei spręsti technines problemas.",
+			"Galime pasirūpinti kasdiene technine priežiūra, kad jums nereikėtų gilintis į WordPress administravimą.",
+			"Prireikus atliekame ir papildomus svetainės atnaujinimo bei optimizavimo darbus."
+		],
+		"contentBlocks": ["services", "seo-content", "process", "faq", "cta"],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			},
+			{
+				"slug": "svetainiu-optimizavimas",
+				"title": "Svetainių optimizavimas"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-optimizavimas",
+		"type": "optimizavimas",
+		"location": "Lietuva",
+		"primaryKeyword": "svetainių optimizavimas",
+		"secondaryKeywords": [
+			"wordpress optimizavimas",
+			"svetainės greitinimas",
+			"wordpress svetainės greitinimas",
+			"svetainės greitis"
+		],
+		"title": "Svetainių optimizavimas ir greitinimas – Amberweb",
+		"description": "WordPress svetainių optimizavimas ir greitinimas. Geresnis puslapio įkėlimo laikas, techninis SEO ir našumas.",
+		"h1": "Svetainių optimizavimas ir greitinimas",
+		"contentHeading": "Padėkime jūsų svetainei veikti greičiau",
+		"introText": "Analizuojame WordPress svetainės našumą ir optimizuojame problemines vietas, kurios lėtina jos veikimą.",
+		"seoContent": [
+			"Svetainės greitį gali lemti daug skirtingų veiksnių – dideli vaizdai, įskiepiai, JavaScript, CSS, serverio konfiguracija ar net pati svetainės struktūra.",
+			"Pirmiausia nustatome pagrindines problemas, o tada atliekame optimizaciją pagal realų svetainės poreikį.",
+			"Tikslas – ne vien geras testo rezultatas, bet greitesnė ir malonesnė vartotojo patirtis."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-prieziura",
+				"title": "WordPress svetainių priežiūra"
+			},
+			{
+				"slug": "svetainiu-atnaujinimas",
+				"title": "Svetainės atnaujinimas"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-kurimas-vilniuje",
+		"type": "svetainiu-kurimas",
+		"location": "Vilnius",
+		"primaryKeyword": "svetainių kūrimas Vilniuje",
+		"secondaryKeywords": [
+			"interneto svetainių kūrimas Vilniuje",
+			"internetinių svetainių kūrimas Vilniuje",
+			"wordpress svetainių kūrimas Vilniuje"
+		],
+		"title": "Svetainių kūrimas Vilniuje – Amberweb",
+		"description": "Svetainių kūrimas Vilniuje verslui. Modernios WordPress svetainės, el. parduotuvės ir SEO optimizuoti sprendimai.",
+		"h1": "Svetainių kūrimas Vilniuje",
+		"contentHeading": "Profesionali svetainė Vilniaus verslui",
+		"introText": "Kuriame interneto svetaines Vilniaus įmonėms, specialistams ir smulkiam verslui.",
+		"seoContent": [
+			"Vilniaus verslo rinkoje konkurencija didelė, todėl interneto svetainė turi ne tik atrodyti profesionaliai, bet ir aiškiai parodyti, kodėl klientas turėtų rinktis jūsų paslaugas.",
+			"Kuriame WordPress svetaines su Divi, taip pat WooCommerce el. parduotuves. Projektus pritaikome mobiliesiems įrenginiams ir paruošiame SEO.",
+			"Jeigu patogiau, projektą galime aptarti gyvai Vilniuje arba visiškai nuotoliniu būdu."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta",
+			"blog"
+		],
+		"relatedPages": [
+			{
+				"slug": "wordpress-svetainiu-kurimas-vilniuje",
+				"title": "WordPress svetainių kūrimas Vilniuje"
+			},
+			{
+				"slug": "e-parduotuviu-kurimas",
+				"title": "El. parduotuvių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar galite susitikti Vilniuje?",
+				"answer": "Taip. Jei projektą patogiau aptarti gyvai, galime susitikti Vilniuje."
+			},
+			{
+				"question": "Ar kuriate WordPress svetaines Vilniuje?",
+				"answer": "Taip. WordPress yra pagrindinė mūsų naudojama turinio valdymo sistema."
+			}
+		]
+	},
+	{
+		"slug": "wordpress-svetainiu-kurimas-vilniuje",
+		"type": "wordpress",
+		"location": "Vilnius",
+		"primaryKeyword": "WordPress svetainių kūrimas Vilniuje",
+		"secondaryKeywords": [
+			"wordpress svetainės kūrimas Vilniuje",
+			"wordpress svetainė Vilniuje",
+			"divi svetainių kūrimas Vilniuje"
+		],
+		"title": "WordPress svetainių kūrimas Vilniuje – Amberweb",
+		"description": "WordPress svetainių kūrimas Vilniuje. Modernios, greitos ir patogiai valdomos svetainės verslui su WordPress ir Divi.",
+		"h1": "WordPress svetainių kūrimas Vilniuje",
+		"contentHeading": "WordPress sprendimai Vilniaus verslui",
+		"introText": "Kuriame WordPress svetaines Vilniaus verslui, kurioms svarbus dizainas, patogus valdymas ir SEO.",
+		"seoContent": [
+			"WordPress suteikia galimybę sukurti profesionalią svetainę ir kartu išlaikyti patogų turinio valdymą.",
+			"Naudodami Divi galime sukurti individualų dizainą, o svetainės struktūrą pritaikyti konkrečiai jūsų verslo auditorijai.",
+			"Projektus galime įgyvendinti tiek susitikus Vilniuje, tiek nuotoliniu būdu."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas-vilniuje",
+				"title": "Svetainių kūrimas Vilniuje"
+			},
+			{
+				"slug": "divi-svetainiu-kurimas",
+				"title": "Divi svetainių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "el-parduotuviu-kurimas-vilniuje",
+		"type": "e-parduotuves",
+		"location": "Vilnius",
+		"primaryKeyword": "el. parduotuvių kūrimas Vilniuje",
+		"secondaryKeywords": [
+			"elektroninių parduotuvių kūrimas Vilniuje",
+			"woocommerce parduotuvių kūrimas Vilniuje",
+			"internetinės parduotuvės Vilniuje"
+		],
+		"title": "El. parduotuvių kūrimas Vilniuje – Amberweb",
+		"description": "El. parduotuvių kūrimas Vilniuje su WooCommerce. Patogus produktų valdymas, mokėjimai, pristatymas ir modernus dizainas.",
+		"h1": "El. parduotuvių kūrimas Vilniuje",
+		"contentHeading": "Internetinė parduotuvė Vilniaus verslui",
+		"introText": "Kuriame WooCommerce el. parduotuves Vilniaus verslui – nuo produkto katalogo iki pilno atsiskaitymo proceso.",
+		"seoContent": [
+			"El. prekyboje svarbu ne tik pritraukti lankytoją, bet ir užtikrinti kuo sklandesnį kelią iki pirkimo.",
+			"Kuriame WooCommerce parduotuves su mokėjimų, pristatymo ir produktų valdymo funkcijomis.",
+			"Parduotuvę pritaikome tiek mažesniam verslui, tiek augančiam produktų katalogui."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "e-parduotuviu-kurimas",
+				"title": "El. parduotuvių kūrimas"
+			},
+			{
+				"slug": "woocommerce-parduotuviu-kurimas",
+				"title": "WooCommerce parduotuvių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-kurimas-kaune",
+		"type": "svetainiu-kurimas",
+		"location": "Kaunas",
+		"primaryKeyword": "svetainių kūrimas Kaune",
+		"secondaryKeywords": [
+			"interneto svetainių kūrimas Kaune",
+			"internetinių svetainių kūrimas Kaune",
+			"wordpress svetainių kūrimas Kaune"
+		],
+		"title": "Svetainių kūrimas Kaune – Amberweb",
+		"description": "Svetainių kūrimas Kaune verslui. Modernios WordPress svetainės ir WooCommerce el. parduotuvės.",
+		"h1": "Svetainių kūrimas Kaune",
+		"contentHeading": "Profesionali svetainė Kauno verslui",
+		"introText": "Kuriame modernias interneto svetaines Kauno įmonėms, specialistams ir smulkiam verslui.",
+		"seoContent": [
+			"Kauno verslui svarbu turėti svetainę, kuri aiškiai pristato paslaugas ir padeda potencialiam klientui greitai priimti sprendimą.",
+			"Kuriame WordPress svetaines, pritaikytas mobiliesiems įrenginiams ir paruoštas SEO.",
+			"Projektus galime įgyvendinti visiškai nuotoliniu būdu, todėl galime dirbti su klientais visame Kaune."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas-vilniuje",
+				"title": "Svetainių kūrimas Vilniuje"
+			},
+			{
+				"slug": "e-parduotuviu-kurimas",
+				"title": "El. parduotuvių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "wordpress-svetainiu-kurimas-kaune",
+		"type": "wordpress",
+		"location": "Kaunas",
+		"primaryKeyword": "WordPress svetainių kūrimas Kaune",
+		"secondaryKeywords": [
+			"wordpress svetainės kūrimas Kaune",
+			"wordpress svetainė Kaune",
+			"divi svetainių kūrimas Kaune"
+		],
+		"title": "WordPress svetainių kūrimas Kaune – Amberweb",
+		"description": "WordPress svetainių kūrimas Kaune. Patogios, modernios ir SEO optimizuotos svetainės Kauno verslui.",
+		"h1": "WordPress svetainių kūrimas Kaune",
+		"contentHeading": "WordPress svetainė Kauno verslui",
+		"introText": "Kuriame WordPress svetaines Kauno įmonėms ir specialistams, kuriems svarbus profesionalus rezultatas ir patogus valdymas.",
+		"seoContent": [
+			"WordPress leidžia sukurti profesionalią svetainę ir suteikia verslui galimybę savarankiškai valdyti turinį.",
+			"Naudojame Divi, kai reikia individualaus dizaino ir patogaus vizualinio redaktoriaus.",
+			"Visos svetainės pritaikomos skirtingiems ekranams ir paruošiamos tolesniam SEO."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas-kaune",
+				"title": "Svetainių kūrimas Kaune"
+			},
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-kurimas-klaipedoje",
+		"type": "svetainiu-kurimas",
+		"location": "Klaipėda",
+		"primaryKeyword": "svetainių kūrimas Klaipėdoje",
+		"secondaryKeywords": [
+			"interneto svetainių kūrimas Klaipėdoje",
+			"internetinių svetainių kūrimas Klaipėdoje",
+			"wordpress svetainių kūrimas Klaipėdoje"
+		],
+		"title": "Svetainių kūrimas Klaipėdoje – Amberweb",
+		"description": "Svetainių kūrimas Klaipėdoje. Modernios WordPress svetainės ir WooCommerce el. parduotuvės jūsų verslui.",
+		"h1": "Svetainių kūrimas Klaipėdoje",
+		"contentHeading": "Moderni svetainė Klaipėdos verslui",
+		"introText": "Kuriame greitas, modernias ir lengvai valdomas interneto svetaines Klaipėdos verslui.",
+		"seoContent": [
+			"Profesionali interneto svetainė padeda Klaipėdos verslui būti matomam internete ir aiškiai pristatyti savo paslaugas.",
+			"Kuriame WordPress svetaines ir WooCommerce el. parduotuves, pritaikytas mobiliesiems įrenginiams ir paieškos sistemoms.",
+			"Projektus galime koordinuoti visiškai nuotoliniu būdu."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas",
+				"title": "Svetainių kūrimas"
+			},
+			{
+				"slug": "e-parduotuviu-kurimas",
+				"title": "El. parduotuvių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-kurimas-siauliuose",
+		"type": "svetainiu-kurimas",
+		"location": "Šiauliai",
+		"primaryKeyword": "svetainių kūrimas Šiauliuose",
+		"secondaryKeywords": [
+			"interneto svetainių kūrimas Šiauliuose",
+			"internetinių svetainių kūrimas Šiauliuose",
+			"wordpress svetainių kūrimas Šiauliuose"
+		],
+		"title": "Svetainių kūrimas Šiauliuose – Amberweb",
+		"description": "Svetainių kūrimas Šiauliuose. WordPress svetainės ir WooCommerce el. parduotuvės verslui.",
+		"h1": "Svetainių kūrimas Šiauliuose",
+		"contentHeading": "Svetainė Šiaulių verslui",
+		"introText": "Kuriame profesionalias ir lengvai valdomas interneto svetaines Šiaulių įmonėms bei specialistams.",
+		"seoContent": [
+			"Svetainė turi aiškiai parodyti jūsų paslaugas ir padėti potencialiam klientui rasti reikalingą informaciją.",
+			"Kuriame WordPress svetaines, kurios pritaikomos telefonams, planšetėms ir kompiuteriams.",
+			"Projektus galime įgyvendinti nuotoliniu būdu visoje Šiaulių rinkoje."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas",
+				"title": "Svetainių kūrimas"
+			},
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			}
+		]
+	},
+	{
+		"slug": "svetainiu-kurimas-panevezyje",
+		"type": "svetainiu-kurimas",
+		"location": "Panevėžys",
+		"primaryKeyword": "svetainių kūrimas Panevėžyje",
+		"secondaryKeywords": [
+			"interneto svetainių kūrimas Panevėžyje",
+			"internetinių svetainių kūrimas Panevėžyje",
+			"wordpress svetainių kūrimas Panevėžyje"
+		],
+		"title": "Svetainių kūrimas Panevėžyje – Amberweb",
+		"description": "Svetainių kūrimas Panevėžyje verslui. Modernios WordPress svetainės ir WooCommerce el. parduotuvės.",
+		"h1": "Svetainių kūrimas Panevėžyje",
+		"contentHeading": "Profesionali interneto svetainė Panevėžio verslui",
+		"introText": "Kuriame modernias interneto svetaines Panevėžio įmonėms ir specialistams.",
+		"seoContent": [
+			"Profesionali svetainė padeda verslui būti randamam internete ir aiškiai pristatyti savo paslaugas.",
+			"Naudojame WordPress, todėl sukurtą svetainę galima patogiai administruoti ir ateityje plėsti.",
+			"Kiekvienas projektas pritaikomas mobiliesiems įrenginiams ir paruošiamas SEO."
+		],
+		"contentBlocks": [
+			"services",
+			"seo-content",
+			"portfolio",
+			"technologies",
+			"process",
+			"faq",
+			"cta"
+		],
+		"relatedPages": [
+			{
+				"slug": "svetainiu-kurimas",
+				"title": "Svetainių kūrimas"
+			},
+			{
+				"slug": "wordpress-svetainiu-kurimas",
+				"title": "WordPress svetainių kūrimas"
+			}
+		]
+	}
+]

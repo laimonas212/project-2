@@ -62,6 +62,7 @@ import VersloTinklarastis from "./pages/blog/VersloTinklarastis";
 import DomenoPasirinkimas from "./pages/blog/DomenoPasirinkimas";
 import SenosSvetainesAtnaujinimasArNauja from "./pages/blog/SenosSvetainesAtnaujinimasArNauja";
 import Landing from "./pages/Landing";
+import SeoLanding from "./pages/seo/SeoLanding";
 
 function App() {
 	useEffect(() => {
@@ -85,6 +86,7 @@ function App() {
 						className="relative z-10 flex-grow"
 					>
 						<Routes>
+							<Route path="/:slug" element={<SeoLanding />} />
 							<Route path="/" element={<Titulinis />} />
 							<Route path="/projektai" element={<Projektai />} />
 							<Route
