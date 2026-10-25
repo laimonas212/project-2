@@ -217,13 +217,13 @@ const Kontaktai = () => {
 				</motion.div>
 
 				{/* MAIN CONTENT */}
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+				<div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
 					{/* CONTACT FORM */}
 					<motion.section
 						initial={{ opacity: 0, y: 25 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.1 }}
-						className="lg:col-span-7 relative rounded-2xl p-[1px] bg-gradient-to-br from-electric-blue/50 via-purple-500/30 to-transparent"
+						className="h-full lg:col-span-7 relative rounded-2xl p-[1px] bg-gradient-to-br from-electric-blue/50 via-purple-500/30 to-transparent"
 					>
 						<div className="bg-[#12121a] rounded-2xl p-6 sm:p-9 md:p-10 h-full">
 							<div className="mb-8">
@@ -377,7 +377,7 @@ const Kontaktai = () => {
 					</motion.section>
 
 					{/* RIGHT COLUMN */}
-					<div className="lg:col-span-5 flex flex-col gap-6">
+					<div className="lg:col-span-5 flex flex-col gap-6 h-full">
 						{/* CONTACT INFORMATION */}
 						<motion.div
 							initial={{ opacity: 0, y: 20 }}
