@@ -8,7 +8,6 @@ import Projektai from "./pages/Projektai";
 import Templates from "./pages/Dizainai";
 import Kainos from "./pages/Kainos";
 import Kontaktai from "./pages/Kontaktai";
-import SvetainePer24h from "./pages/SvetainePer24h";
 import { motion } from "framer-motion";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopButton from "./components/ScrollToTopButton";
@@ -55,7 +54,6 @@ import WordPressKaina2025 from "./pages/blog/WordPressKaina2025";
 import InternetoSvetainiuKurimas2025 from "./pages/blog/InternetoSvetainiuKurimas2025";
 import PigiosSvetaines from "./pages/blog/PigiosSvetaines";
 import Divi5Straipsnis from "./pages/blog/Divi5";
-import Svetaine24hStraipsnis from "./pages/blog/Svetaine24hStraipsnis";
 import Akmenukas from "./pages/projektai/akmenukas";
 import DentesVitae from "./pages/projektai/dentes-vitae";
 import VersloTinklarastis from "./pages/blog/VersloTinklarastis";
@@ -96,10 +94,6 @@ function App() {
 							<Route path="/kainos" element={<Kainos />} />
 							<Route path="/kontaktai" element={<Kontaktai />} />
 							<Route path="/blog" element={<Straipsniai />} />
-							<Route
-								path="/svetaine-per-24h"
-								element={<SvetainePer24h />}
-							/>
 							<Route
 								path="/interneto-svetainiu-kurimas"
 								element={<Landing />}
@@ -145,10 +139,6 @@ function App() {
 							<Route
 								path="//blog/kas-yra-divi-5"
 								element={<Divi5Straipsnis />}
-							/>
-							<Route
-								path="/blog/svetaine-per-24h"
-								element={<Svetaine24hStraipsnis />}
 							/>
 							<Route
 								path="/blog/kodel-jusu-verslui-butina-tureti-tinklarasti"

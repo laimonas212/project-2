@@ -59,7 +59,7 @@ const WoocommerceUzsakymuValdymas: React.FC = () => {
 				<div className="w-full pb-8">
 					<img
 						src={Images.blog.woocommerceUzsakymuValdymas}
-						alt="Svetainė per 24h."
+						alt="Užsakymų valdymas WooCommerce"
 						className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
 					/>
 					<div className="mt-2 text-sm inline-flex gap-4">

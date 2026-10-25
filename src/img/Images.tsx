@@ -152,7 +152,6 @@ import romastaMobile from "././projects/romasta/mobile.webp";
 
 
 // blog
-import websiteIn24h from "././blog/Interneto-svetaine-per-24h.webp";
 import divi5 from "././blog/divi-5-ir-wordpress-svetainiu-kurimas-verslui.webp";
 import kaipNaudotisDivi from "././blog/kaip-naudotis-divi.webp";
 import KasYraDivi from "././blog/kas-yra-divi.webp";
@@ -183,7 +182,6 @@ import five from "./5.png";
 import logoInWhite from "./amberweb-logo-white-bg.jpg";
 // import pigiosSvetaines from './logos/pigios-svetaines.png';
 import caution from "./logos/caution.png";
-import svetaine24h from "./logos/svetaine-per-24h.webp";
 
 // acai bowl
 import acaiBowlAbout from "././templates/acai-bowl/acai-bowl-about-page-533x1040.webp";
@@ -437,7 +435,6 @@ const Images = {
 	woo: woo,
 	five: five,
 	blog: {
-		websiteIn24h: websiteIn24h,
 		divi5: divi5,
 		kaipNaudotisDivi: kaipNaudotisDivi,
 		KasYraDivi: KasYraDivi,
@@ -466,7 +463,6 @@ const Images = {
 		logoInWhite: logoInWhite,
 		pigiosSvetaines: pigiosSvetaines,
 		caution: caution,
-		svetaine24h: svetaine24h,
 	},
 	projects: {
 		archiGrupe: {

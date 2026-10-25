@@ -2,42 +2,6 @@ import Images from "../img/Images";
 
 const blogEntries = [
 	{
-		id: "svetaine-per-24h",
-		image: Images.blog.websiteIn24h,
-		title: "Interneto svetainė per 24 val. – ar tai įmanoma?",
-		excerpt: `
-Verslui svarbus greitis – kartais naujos svetainės reikia čia ir dabar. Bet ar įmanoma ją sukurti vos per vieną dieną? Atsakymas – taip. Paaiškinsime kaip.
-
-Greita nereiškia paviršutiniška
-24 valandų terminas galioja ne kompromisams, o procesui. Dirbant su iš anksto paruoštu dizainu, efektyvia struktūra ir žinant kliento poreikius – svetainė gali būti paleista greičiau, nei daugelis įsivaizduoja.
-
-Kas įeina į 24h sprendimą?
-- Turinio valdymo sistema (WordPress)
-- Parinktas dizainas pagal nišą
-- 1-2 puslapiai (pvz. landing, kontaktai)
-- Kontaktinė forma
-- Informacijos patalpinimas
-- Mobiliesiems pritaikytas dizainas
-
-Kam toks sprendimas tinka?
-Šis modelis idealus naujam verslui, laikinai kampanijai ar kai tiesiog reikia greitai būti internete. Jei vėliau norėsite plėsti svetainę – tam pasiruošta.
-
-Kokie apribojimai?
-Greitis reikalauja tvarkos: visa informacija (tekstai, logotipas, kontaktai) turi būti pateikta iš anksto. Nestandartiniai sprendimai ar el. prekyba – jau ilgesnis procesas.
-
-Kodėl verta rinktis būtent mus?
-- Turime ilgametę patirtį su WordPress ir Divi
-- Puikiai suprantame mažų verslų poreikius
-- Turime paruoštų profesionalių dizaino šablonų skirtingoms nišoms
-- Sklandus bendravimas ir darbas iki rezultato
-
-Jei reikia greitos, profesionalios ir estetiškos svetainės – susisiekite. Gali būti, kad jūsų projektas bus paleistas dar rytoj.
-
-Svetainė per 24 val. – skamba greitai, nes ir yra greitai.
-`,
-		url: "/blog/svetaine-per-24h",
-	},
-	{
 		id: "pigios-svetaines",
 		image: Images.blog.pigiosSvetaines,
 		title: "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
