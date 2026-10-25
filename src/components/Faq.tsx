@@ -14,47 +14,39 @@ interface FAQProps {
 }
 
 const defaultFAQ: FAQItem[] = [
-    {
-        question: "Kiek laiko užtrunka interneto svetainės kūrimas?",
-        answer:
-            "Interneto svetainės kūrimo trukmė priklauso nuo projekto sudėtingumo ir pateiktos informacijos. Paprastų asmeninių svetainių kūrimas dažniausiai trunka 1–3 darbo dienas, o el. parduotuvių – 3–5 darbo dienas.",
-    },
-    {
-        question: "Ar galima vėliau keisti svetainės dizainą?",
-        answer:
-            "Taip, sukurtos svetainės dizainas gali būti lengvai atnaujinamas ar koreguojamas pagal jūsų verslo poreikius.",
-    },
-    {
-        question: "Ar galėsiu pats redaguoti svetainės turinį?",
-        answer:
-            "Taip, visos mūsų kuriamos svetainės turi patogią turinio valdymo sistemą (WordPress), leidžiančią lengvai keisti tekstus, nuotraukas ar struktūrą.",
-    },
-    {
-        question: "Ar padedate su svetainės tekstų kūrimu?",
-        answer:
-            "Taip, galime padėti su profesionaliu turiniu – nuo pardaviminių tekstų iki SEO optimizuoto turinio.",
-    },
-    {
-        question: "Ar optimizuojate svetaines paieškos sistemoms (SEO)?",
-        answer:
-            "Taip, visos mūsų svetainės turi bazinį SEO optimizavimą: greitaveika, struktūriniai duomenys, tinkami meta aprašymai.",
-    },
-    {
-        question: "Kiek kainuoja interneto svetainės kūrimas?",
-        answer:
-            "Svetainės kūrimo kaina priklauso nuo funkcionalumo ir turinio apimties. Paprastos svetainės kainuoja nuo 350€, el. parduotuvės – nuo 550€.",
-    },
-    {
-        question:
-            "Kokie papildomi sprendimai reikalingi el. parduotuvės kūrimui, palyginus su paprasta svetaine?",
-        answer:
-            "El. parduotuvė reikalauja integracijų su mokėjimų sistemomis, prekių valdymo, krepšelio, vartotojo paskyrų, atsargų stebėjimo ir automatinio informacijos siuntimo. Paprasta svetainė dažniausiai apsiriboja informaciniu turiniu ir kontaktine forma.",
-    },
-    {
-        question: "Kodėl verta rinktis WordPress svetainę?",
-        answer:
-            "WordPress yra viena populiariausių ir lankščiausių turinio valdymo sistemų pasaulyje. Ji leidžia lengvai valdyti svetainę, turi daug papildinių, ir yra puikiai pritaikoma SEO optimizavimui.",
-    },
+	{
+		question: "Kiek laiko užtrunka interneto svetainės kūrimas?",
+		answer: "Interneto svetainės kūrimo trukmė priklauso nuo projekto apimties, funkcionalumo ir individualių poreikių. Paprastai reprezentacinių svetainių kūrimas trunka 2–4 savaites, o sudėtingesnių projektų ir el. parduotuvių – 4–8 savaites ar ilgiau. Tikslesnis terminas nustatomas įvertinus projekto reikalavimus.",
+	},
+	{
+		question: "Ar galima vėliau keisti svetainės dizainą?",
+		answer: "Taip, sukurtos svetainės dizainas gali būti lengvai atnaujinamas ar koreguojamas pagal jūsų verslo poreikius.",
+	},
+	{
+		question: "Ar galėsiu pats redaguoti svetainės turinį?",
+		answer: "Taip, visos mūsų kuriamos svetainės turi patogią turinio valdymo sistemą (WordPress), leidžiančią lengvai keisti tekstus, nuotraukas ar struktūrą.",
+	},
+	{
+		question: "Ar padedate su svetainės tekstų kūrimu?",
+		answer: "Taip, galime padėti su profesionaliu turiniu - nuo pardaviminių tekstų iki SEO optimizuoto turinio.",
+	},
+	{
+		question: "Ar optimizuojate svetaines paieškos sistemoms (SEO)?",
+		answer: "Taip, visos mūsų svetainės turi bazinį SEO optimizavimą: greitaveika, struktūriniai duomenys, tinkami meta aprašymai.",
+	},
+	{
+		question: "Kiek kainuoja interneto svetainės kūrimas?",
+		answer: "Svetainės kūrimo kaina priklauso nuo funkcionalumo ir turinio apimties. Paprastos svetainės kainuoja nuo 499€, el. parduotuvės - nuo 799€.",
+	},
+	{
+		question:
+			"Kokie papildomi sprendimai reikalingi el. parduotuvės kūrimui, palyginus su paprasta svetaine?",
+		answer: "El. parduotuvė reikalauja integracijų su mokėjimų sistemomis, prekių valdymo, krepšelio, vartotojo paskyrų, atsargų stebėjimo ir automatinio informacijos siuntimo. Paprasta svetainė dažniausiai apsiriboja informaciniu turiniu ir kontaktine forma.",
+	},
+	{
+		question: "Kodėl verta rinktis WordPress svetainę?",
+		answer: "WordPress yra viena populiariausių ir lankščiausių turinio valdymo sistemų pasaulyje. Ji leidžia lengvai valdyti svetainę, turi daug papildinių, ir yra puikiai pritaikoma SEO optimizavimui.",
+	},
 ];
 
 const FAQ = ({ data = defaultFAQ, heading = "D.U.K.", subtext = "Jeigu turite klausimų apie mūsų paslaugas ar norite gauti daugiau informacijos, susisiekite su mumis." }: FAQProps) => {
