@@ -189,7 +189,7 @@ const Kontaktai = () => {
 				<link rel="canonical" href="https://amberweb.lt/kontaktai" />
 			</Helmet>
 
-			<main className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+			<main className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-36 md:pt-44">
 				{/* HERO */}
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}

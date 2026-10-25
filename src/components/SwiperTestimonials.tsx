@@ -94,11 +94,6 @@ const CardSwiper: React.FC = () => {
 
 	return (
 		<section className="relative overflow-hidden py-20 md:py-28">
-			<div className="pointer-events-none absolute inset-0 overflow-hidden">
-				<div className="absolute -left-40 top-10 h-[400px] w-[400px] rounded-full bg-electric-blue/[0.06] blur-[130px]" />
-				<div className="absolute -right-40 bottom-0 h-[400px] w-[400px] rounded-full bg-purple-500/[0.05] blur-[130px]" />
-			</div>
-
 			<div className="container relative z-10 mx-auto px-4">
 				<motion.div
 					initial={{ opacity: 0, y: 24 }}

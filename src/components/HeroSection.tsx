@@ -74,7 +74,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ h1, introText }) => {
 		<motion.section
 			ref={containerRef}
 			style={{ opacity }}
-			className="relative isolate -mt-20 flex min-h-[850px] items-center overflow-hidden bg-dark-surface pb-20 pt-36 md:min-h-screen md:pb-24 md:pt-40"
+			className="relative isolate flex min-h-[850px] items-center overflow-hidden bg-dark-surface pb-20 pt-36 md:min-h-screen md:pb-24 md:pt-40"
 		>
 			{/* Background */}
 			<div className="absolute inset-0 z-0">

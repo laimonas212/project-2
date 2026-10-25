@@ -8,7 +8,7 @@ import ProjectShowcase from "./ProjectShowcase";
 const HomepageSampleWork: React.FC = () => {
 	const projectsList = projects as Project[];
 
-	const projectOrder = ["paparciopm", "veselovaite", "romasta"];
+	const projectOrder = ["smokedrop", "paparciopm", "romasta"];
 
 	const firstThreeProjects = projectOrder
 		.map((id) => projectsList.find((project) => project.id === id))

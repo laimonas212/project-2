@@ -76,7 +76,7 @@ const RedesignVsRebuild = () => {
 				<div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
 			</div>
 
-			<div className="container relative max-w-screen-lg text-white/80 mx-auto px-4">
+			<div className="container relative max-w-screen-lg text-white/80 mx-auto px-4 pt-36">
 				<button
 					onClick={handleBack}
 					className="mb-6 text-sm text-electric-blue hover:underline"

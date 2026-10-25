@@ -378,7 +378,7 @@ const TemplatesPage: React.FC = () => {
 
 			<div className="container relative mx-auto px-4 pb-24">
 				{/* Hero */}
-				<section className="mx-auto max-w-4xl pb-12 pt-20 text-center md:pb-16 md:pt-28">
+				<section className="mx-auto max-w-4xl pb-12 pt-32 text-center md:pb-16 md:pt-44">
 					<motion.div
 						initial={{ opacity: 0, y: 18 }}
 						animate={{ opacity: 1, y: 0 }}
