@@ -281,7 +281,7 @@ const Navbar = () => {
 									"text-sm font-medium transition-colors hover:text-electric-blue",
 									location.pathname === link.href
 										? "text-electric-blue"
-										: "text-white/70"
+										: "text-white/70",
 								)}
 							>
 								{link.label}
@@ -295,14 +295,14 @@ const Navbar = () => {
 							<button
 								onClick={() => {
 									setDesktopSettingsOpen(
-										!desktopSettingsOpen
+										!desktopSettingsOpen,
 									);
 									setDesktopLangOpen(false);
 								}}
 								className={cn(
 									"p-2 rounded-full hover:bg-white/10 text-white/70 transition-colors",
 									desktopSettingsOpen &&
-										"text-white bg-white/10"
+										"text-white bg-white/10",
 								)}
 							>
 								<Settings size={20} />
@@ -327,7 +327,7 @@ const Navbar = () => {
 								}}
 								className={cn(
 									"p-2 rounded-full hover:bg-white/10 text-white/70 transition-colors flex items-center gap-1",
-									desktopLangOpen && "text-white bg-white/10"
+									desktopLangOpen && "text-white bg-white/10",
 								)}
 							>
 								<Globe size={20} />
@@ -349,10 +349,10 @@ const Navbar = () => {
 							</AnimatePresence>
 						</div>
 						<Link
-							to="/svetaine-per-24h"
+							to="/kontaktai"
 							className="button-primary px-5 py-2 rounded-full text-xs font-bold transition-transform hover:scale-105"
 						>
-							Svetainė per 24h
+							Gauti pasiūlymą
 						</Link>
 					</div>
 
@@ -404,10 +404,10 @@ const Navbar = () => {
 											</Link>
 										))}
 										<Link
-											to="/svetaine-per-24h"
+											to="/kontaktai"
 											className="button-primary py-4 rounded-2xl text-center font-bold mt-4 shadow-lg shadow-electric-blue/20"
 										>
-											Svetainė per 24h
+											Gauti pasiūlymą
 										</Link>
 										<div className="flex items-center justify-between mt-6 pt-6 border-t border-white/5">
 											<button
