@@ -36,7 +36,7 @@ const defaultFAQ: FAQItem[] = [
 	},
 	{
 		question: "Kiek kainuoja interneto svetainės kūrimas?",
-		answer: "Svetainės kūrimo kaina priklauso nuo funkcionalumo ir turinio apimties. Paprastos svetainės kainuoja nuo 499€, el. parduotuvės - nuo 799€.",
+		answer: "Svetainės kūrimo kaina priklauso nuo funkcionalumo ir turinio apimties. Paprastos svetainės kainuoja nuo 499€, el. parduotuvės - nuo 1299€.",
 	},
 	{
 		question:
