@@ -108,7 +108,7 @@ const WoocommerceNaujasProduktas: React.FC = () => {
 						</p>
 						<ul className="list-decimal pl-5 space-y-2">
 							<li>
-								Produkto aprašymas – trumpas arba išsamus
+								Produkto aprašymas - trumpas arba išsamus
 								aprašymas apie jūsų produktą.
 							</li>
 							<li>Produkto kaina ir nuolaidos (jei taikoma).</li>

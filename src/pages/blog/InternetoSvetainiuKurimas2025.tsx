@@ -326,7 +326,7 @@ const InternetoSvetainiuKurimas2025 = () => {
 						</li>
 					</ul>
 					<p className="text-white/70 mb-6">
-						Mūsų tikslas – ne tik sukurti puikiai atrodančią
+						Mūsų tikslas - ne tik sukurti puikiai atrodančią
 						svetainę, bet ir užtikrinti, kad ji veiktų jūsų verslo
 						sėkmei, pritrauktų naujų klientų ir padėtų jums augti.
 					</p>

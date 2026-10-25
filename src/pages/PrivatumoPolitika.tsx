@@ -26,7 +26,7 @@ const PrivatumoPolitika: React.FC = () => {
 					<p className="  leading-relaxed text-white/70">
 						Mes, “Amber Web” (toliau - Mes), esame įsipareigoję
 						užtikrinti jūsų asmens duomenų apsaugą, kai naudojatės
-						mūsų svetaine (toliau – Svetainė).
+						mūsų svetaine (toliau - Svetainė).
 					</p>
 				</section>
 

@@ -6,7 +6,7 @@ const blogEntries = [
 		image: Images.blog.pigiosSvetaines,
 		title: "Kodėl pigios svetainės brangiai kainuoja: dažniausi mitai ir realybė",
 		excerpt: `Daugelis verslų, ypač pradedančiųjų, renkasi pigiausią sprendimą kurdami interneto svetainę. Tačiau ar tikrai pigi svetainė reiškia ekonomišką sprendimą? Šiame straipsnyje paneigsime dažniausius mitus ir paaiškinsime, kaip "taupymas" gali virsti didelėmis išlaidomis ateityje.
-1. Mitas: "Svarbiausia – kad veiktų"
+1. Mitas: "Svarbiausia - kad veiktų"
 Techninis veikimas yra tik pradžia. Svetainė turi būti greita, patogi naudoti, pritaikyta SEO, mobiliems įrenginiams ir atitikti verslo tikslus. Pigūs sprendimai dažnai praleidžia šiuos svarbius aspektus.
 
 2. Mitas: "Dizainas nėra svarbus, svarbu turinys"
@@ -16,16 +16,16 @@ Nors turinys svarbus, pirmą įspūdį sukuria dizainas. Pigi svetainė dažnai 
 SEO yra pamatas, o ne priedas. Pigios svetainės dažnai neturi optimizuotos struktūros, meta žymų ar greičio, todėl jas vėliau pritaikyti SEO reikalavimams kainuoja daugiau nei padaryti viską tinkamai iš karto.
 
 4. Mitas: "Svarbiausia, kad būtų pigiai padaryta, o paskui tobulinsim"
-Pigi svetainė dažnai neturi tvirtų technologinių pagrindų. Tobulinimas tampa brangus, o kartais – neįmanomas. Tenka kurti viską iš naujo, kas reiškia dvigubas išlaidas.
+Pigi svetainė dažnai neturi tvirtų technologinių pagrindų. Tobulinimas tampa brangus, o kartais - neįmanomas. Tenka kurti viską iš naujo, kas reiškia dvigubas išlaidas.
 
 5. Mitas: "Kaimynas moka HTML, padarys pigiai"
-Vien HTML nepakanka. Reikia UI/UX žinių, saugumo, atsakomybės. Jei kažkas nepavyks – nebus garantijos ar pagalbos. Profesionalumas atsiperka.
+Vien HTML nepakanka. Reikia UI/UX žinių, saugumo, atsakomybės. Jei kažkas nepavyks - nebus garantijos ar pagalbos. Profesionalumas atsiperka.
 
 6. Realybė: Kokybiška svetainė yra investicija
 Kokybiška svetainė generuoja pasitikėjimą, konversijas ir veikia ilgus metus. Tai ne išlaidos, o investicija į jūsų verslo augimą ir reputaciją internete.
 
 7. Realybė: Klientai sprendžia per sekundes
-Tyrimai rodo, kad vartotojai per 3–5 sekundes nusprendžia, ar likti svetainėje. Pigi ir prastai atrodanti svetainė gali reikšti prarastus klientus.
+Tyrimai rodo, kad vartotojai per 3-5 sekundes nusprendžia, ar likti svetainėje. Pigi ir prastai atrodanti svetainė gali reikšti prarastus klientus.
 
 Išvada: Taupant kuriant svetainę dažnai tenka mokėti du kartus. Geriau iš karto rinktis profesionalų sprendimą, kuris kurtų vertę, o ne rūpesčius.
 
@@ -78,7 +78,7 @@ Verslo svetainės
 Elektroninės parduotuvės
 Portfolio svetainės
 Individualūs sprendimai
-Mūsų tikslas – ne tik sukurti puikiai atrodančią svetainę, bet ir užtikrinti, kad ji veiktų jūsų verslo sėkmei, pritrauktų naujų klientų ir padėtų jums augti.
+Mūsų tikslas - ne tik sukurti puikiai atrodančią svetainę, bet ir užtikrinti, kad ji veiktų jūsų verslo sėkmei, pritrauktų naujų klientų ir padėtų jums augti.
 
 Turite idėją savo naujai interneto svetainei? Susisiekite su mumis šiandien ir gaukite nemokamą konsultaciją. Padėsime jums žengti pirmą žingsnį link sėkmingo interneto projekto 2025 metais.`,
 		url: "/blog/interneto-svetainiu-kurimas-2025",
@@ -87,7 +87,7 @@ Turite idėją savo naujai interneto svetainei? Susisiekite su mumis šiandien i
 		id: "wordpress-svetaines-kaina-2025",
 		image: Images.blog.wordpressKaina2025,
 		title: "Kiek kainuoja svetainė su WordPress Lietuvoje 2025 m.?",
-		excerpt: `Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai svetainių kūrimo kainos prasideda nuo 300–500€ ir gali siekti net 3000€ ar daugiau. Pažiūrėkime, kas lemia tą kainą ir ką gaunate už tam tikrą sumą.
+		excerpt: `Svetainės kaina su WordPress gali labai skirtis, priklausomai nuo poreikių, funkcionalumo ir pasirinkto paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai svetainių kūrimo kainos prasideda nuo 300-500€ ir gali siekti net 3000€ ar daugiau. Pažiūrėkime, kas lemia tą kainą ir ką gaunate už tam tikrą sumą.
 
 1. Ką įprastai apima bazinė WordPress svetainės kaina?
 Pasirinktas dizainas (šablonas arba individualus dizainas)
@@ -102,8 +102,8 @@ Individualus dizainas ir animacijos
 Daugiau puslapių ar kalbų
 Integracijos su kitomis sistemomis (CRM, el. paštas, rezervacijos ir pan.)
 Pilnas SEO paketas su raktinių žodžių analize ir optimizacija
-3. Pigiai vs. kokybiškai – ar verta taupyti?
-Yra daugybė "freelancerių" ar įmonių, siūlančių svetaines už 100–200€, bet dažnai tai būna paviršutiniškai sukurti puslapiai su mažai optimizacijos ir jokiu palaikymu. Tokiu atveju gali prarasti daugiau nei sutaupai. Kokybiškai padaryta svetainė ne tik atrodys profesionaliai, bet ir veiks greitai, bus saugi, lengvai valdoma ir pritaikyta Google paieškai.
+3. Pigiai vs. kokybiškai - ar verta taupyti?
+Yra daugybė "freelancerių" ar įmonių, siūlančių svetaines už 100-200€, bet dažnai tai būna paviršutiniškai sukurti puslapiai su mažai optimizacijos ir jokiu palaikymu. Tokiu atveju gali prarasti daugiau nei sutaupai. Kokybiškai padaryta svetainė ne tik atrodys profesionaliai, bet ir veiks greitai, bus saugi, lengvai valdoma ir pritaikyta Google paieškai.
 
 4. O tai kiek kainuoja svetainė su WooCommerce?
 El. parduotuvė su WordPress + WooCommerce dažniausiai kainuoja nuo 500€. Kaina priklauso nuo produktų kiekio, ar reikalingi mokėjimo metodai, pristatymo skaičiavimai, sandėlio valdymas ir pan.
@@ -117,7 +117,7 @@ Kontaktinė forma
 Pritaikymas telefonams
 Bazinis SEO
 Turinio įkėlimas ir konsultacijos
-Jeigu reikia el. parduotuvės – kaina prasideda nuo 799€, priklausomai nuo specifikos.
+Jeigu reikia el. parduotuvės - kaina prasideda nuo 799€, priklausomai nuo specifikos.
 
 Turite idėją? Susisiekite ir pakonsultuosime be jokio įsipareigojimo.`,
 		url: "/blog/wordpress-svetaines-kaina-2025",
@@ -196,7 +196,7 @@ Spustelėkite „Pridėti naują“ viršuje.
 Produkto informaciją
 Kiekvienam produktui reikės įvesti šią informaciją:
 
-Produkto aprašymas – trumpas arba išsamus aprašymas apie jūsų produktą.
+Produkto aprašymas - trumpas arba išsamus aprašymas apie jūsų produktą.
 Produkto kaina ir nuolaidos (jei taikoma).
 Produkto paveikslėliai ir galerija, kad klientai galėtų matyti, kaip produktas atrodo.
 Produkto tipas ir inventorius
@@ -242,11 +242,11 @@ Atsidarys vizualus redaktorius, kuriame matysite savo puslapį taip, kaip jis at
 Kaip pridėti naują sekciją?
 Paspauskite mėlyną pliuso mygtuką (+), kad pridėtumėte naują sekciją.
 Pasirinkite sekcijos tipą:
-Regular – paprasta sekcija su eilutėmis.
-Specialty – sudėtingesnės sekcijos su unikaliomis išdėstymo galimybėmis.
-Fullwidth – sekcija, užimanti visą puslapio plotį.
+Regular - paprasta sekcija su eilutėmis.
+Specialty - sudėtingesnės sekcijos su unikaliomis išdėstymo galimybėmis.
+Fullwidth - sekcija, užimanti visą puslapio plotį.
 Į sekciją pridėkite eilutę (Row), paspaudę žalią pliusą.
-Pasirinkite išdėstymą – kiek stulpelių norite (pvz., 1, 2, 3 ar daugiau).
+Pasirinkite išdėstymą - kiek stulpelių norite (pvz., 1, 2, 3 ar daugiau).
 Pridėkite modulį (Module), paspausdami juodą pliusą ir pasirinkite norimą elementą (pvz., tekstą, vaizdą, mygtuką).
 Kaip keisti tekstą?
 Norėdami pakeisti tekstą, spustelėkite ant jo tiesiogiai vizualiniame redaktoriuje ir pradėkite rašyti.
@@ -267,12 +267,12 @@ Paspauskite „Save“ (Išsaugoti).
 Pagrindiniai Divi moduliai
 Divi siūlo daugybę modulių, kurie leidžia lengvai pritaikyti puslapį:
 
-Text (Tekstas) – leidžia rašyti ir formatuoti tekstą.
-Image (Vaizdas) – įkelti ir rodyti paveikslėlius.
-Button (Mygtukas) – sukurti mygtuką su nuoroda.
-Gallery (Galerija) – rodyti kelis paveikslėlius kaip galeriją.
-Form (Forma) – pridėti kontaktų formą.
-Video – įterpti vaizdo įrašą.
+Text (Tekstas) - leidžia rašyti ir formatuoti tekstą.
+Image (Vaizdas) - įkelti ir rodyti paveikslėlius.
+Button (Mygtukas) - sukurti mygtuką su nuoroda.
+Gallery (Galerija) - rodyti kelis paveikslėlius kaip galeriją.
+Form (Forma) - pridėti kontaktų formą.
+Video - įterpti vaizdo įrašą.
 Kaip išsaugoti ir publikuoti pakeitimus?
 Baigus redaguoti, spustelėkite „Save“ (Išsaugoti) apatiniame dešiniajame kampe.
 Norėdami atnaujinti puslapį, spustelėkite „Exit Visual Builder“ (Išeiti iš vizualinio redaktoriaus).
@@ -284,9 +284,9 @@ Jei puslapis dar nepublikuotas, paspauskite „Publish“ (Publikuoti).
 		id: "kas-yra-divi-5",
 		image: Images.blog.divi5,
 		title: "Kas yra Divi 5?",
-		excerpt: `Nuo 2025 m. viena populiariausių WordPress temų – Divi – išleido reikšmingą atnaujinimą: Divi 5. Tai nėra tik kosmetinis pakeitimas – tai visas sistemos perrašymas. Tačiau svarbiausia – ką tai reiškia verslui ir svetainių kūrimo paslaugų ieškantiems klientams?
+		excerpt: `Nuo 2025 m. viena populiariausių WordPress temų - Divi - išleido reikšmingą atnaujinimą: Divi 5. Tai nėra tik kosmetinis pakeitimas - tai visas sistemos perrašymas. Tačiau svarbiausia - ką tai reiškia verslui ir svetainių kūrimo paslaugų ieškantiems klientams?
 Greitesnis svetainių veikimas
-Divi 5 atsisakė senos architektūros ir dabar naudoja naują React pagrįstą modulų sistemą. Tai leidžia puslapiams krautis greičiau, o tai tiesiogiai veikia ir SEO, ir vartotojo patirtį. Jei anksčiau Divi buvo kritikuojamas dėl greičio – ši versija atsako į tuos priekaištus.
+Divi 5 atsisakė senos architektūros ir dabar naudoja naują React pagrįstą modulų sistemą. Tai leidžia puslapiams krautis greičiau, o tai tiesiogiai veikia ir SEO, ir vartotojo patirtį. Jei anksčiau Divi buvo kritikuojamas dėl greičio - ši versija atsako į tuos priekaištus.
 
 Kodėl tai svarbu jūsų verslui?
 Svetainės greitis, aiškumas ir saugumas dar niekada nebuvo tokie svarbūs. Naudojant Divi 5 ir WordPress, galima sukurti patikimą, profesionalią svetainę, kuri:
@@ -295,12 +295,12 @@ Greitai kraunasi
 Yra lengvai pritaikoma mobiliesiems
 Atitinka SEO rekomendacijas
 Pritaikyta jūsų verslo tikslams (paslaugos, el. parduotuvė ir pan.)
-Technologija – bet ne jūsų rūpestis
-Daugelis įmonių nesidomi, ar svetainė padaryta su Divi, Elementor ar custom sprendimu – jiems svarbu, kad ji veiktų greitai, atrodytų profesionaliai ir būtų lengvai valdoma. Būtent tai ir siūlau – pasirūpinu visa technine puse, naudodamas efektyviausius įrankius, įskaitant Divi 5.
+Technologija - bet ne jūsų rūpestis
+Daugelis įmonių nesidomi, ar svetainė padaryta su Divi, Elementor ar custom sprendimu - jiems svarbu, kad ji veiktų greitai, atrodytų profesionaliai ir būtų lengvai valdoma. Būtent tai ir siūlau - pasirūpinu visa technine puse, naudodamas efektyviausius įrankius, įskaitant Divi 5.
 
 Kuo skiriasi nuo ankstesnių versijų?
 Švaresnis kodas, mažiau priklausomybių
-Nauja API – galima plėtoti papildomus sprendimus greičiau
+Nauja API - galima plėtoti papildomus sprendimus greičiau
 Lengviau pritaikyti specifiniams poreikiams
 Pagerintas builder'io stabilumas ir greitis
 Ieškote, kas sukurtų svetainę su Divi 5 ar WordPress?
@@ -318,7 +318,7 @@ Naudoju naujausius sprendimus, kad jūsų svetainė būtų konkurencinga 2025-ai
 		id: "kas-yra-divi",
 		image: Images.blog.KasYraDivi,
 		title: "Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms?",
-		excerpt: `Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių (angl. page builder), sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams.
+		excerpt: `Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių (angl. page builder), sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai - naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams.
 Kodėl verta rinktis Divi?
 1. Paprastas vizualinis redaktorius
 Divi veikia pagal WYSIWYG principą („What You See Is What You Get“), todėl redaguodami svetainę iškart matote, kaip ji atrodys. Galite keisti spalvas, šriftus, išdėstymą ir turinį realiu laiku, be jokių kodavimo žinių.
@@ -346,7 +346,7 @@ Smulkioms ir vidutinėms įmonėms
 Laisvai samdomiems dizaineriams ir programuotojams
 Tiems, kurie nori sukurti profesionalią svetainę be kodavimo
 El. parduotuvėms su WooCommerce
-Išvada: Divi yra vienas iš geriausių pasirinkimų norint sukurti vizualiai patrauklią, funkcionalią ir lengvai valdomą „WordPress“ svetainę. Nesvarbu, ar esate pradedantysis, ar profesionalas – su Divi galima įgyvendinti beveik bet kokią dizaino idėją be didelių techninių žinių.
+Išvada: Divi yra vienas iš geriausių pasirinkimų norint sukurti vizualiai patrauklią, funkcionalią ir lengvai valdomą „WordPress“ svetainę. Nesvarbu, ar esate pradedantysis, ar profesionalas - su Divi galima įgyvendinti beveik bet kokią dizaino idėją be didelių techninių žinių.
 
 `,
 		url: "/blog/kas-yra-divi",
@@ -369,7 +369,7 @@ Daugiau nei pusė interneto srauto ateina iš mobiliųjų įrenginių, todėl b�
 Perkrauta svetainė su begale teksto, mirgančių reklamų ir painių mygtukų gali atbaidyti lankytojus. Kita vertus, jei informacijos per mažai, vartotojas gali nesuprasti, ką jūsų verslas siūlo. Svarbu rasti balansą ir pateikti tik svarbiausią informaciją aiškiai ir patraukliai. Naudokite antraštes, sąrašus ir vizualinius elementus, kad informacija būtų lengvai skaitoma ir suprantama.
 
 5. Nepakankama SEO optimizacija
-Net ir gražiausia svetainė nebus naudinga, jei jos niekas neranda. Dažna klaida – ignoruoti SEO (paieškos sistemų optimizavimą). Tinkamai parinkti raktiniai žodžiai, meta aprašymai, greitas užkrovimo laikas ir kokybiškas turinys padės svetainei būti lengviau randamai „Google“ paieškoje. Taip pat svarbu užtikrinti, kad svetainėje yra vidinės nuorodos ir tinkamai naudojamos antraštės (H1, H2, H3), kad paieškos sistemos geriau suprastų svetainės turinį.
+Net ir gražiausia svetainė nebus naudinga, jei jos niekas neranda. Dažna klaida - ignoruoti SEO (paieškos sistemų optimizavimą). Tinkamai parinkti raktiniai žodžiai, meta aprašymai, greitas užkrovimo laikas ir kokybiškas turinys padės svetainei būti lengviau randamai „Google“ paieškoje. Taip pat svarbu užtikrinti, kad svetainėje yra vidinės nuorodos ir tinkamai naudojamos antraštės (H1, H2, H3), kad paieškos sistemos geriau suprastų svetainės turinį.
 
 Išvada: Sėkminga verslo svetainė turi būti greita, aiški, pritaikyta mobiliesiems ir optimizuota paieškos sistemoms. Išvengę šių penkių dažniausių klaidų, galėsite sukurti efektyvesnį ir patrauklesnį puslapį savo verslui. Taip pat svarbu nuolat stebėti svetainės statistiką ir atlikti reikalingus patobulinimus, kad ji atitiktų lankytojų lūkesčius.`,
 		url: "/blog/5-klaidos-kurias-daro-verslai",
@@ -378,7 +378,7 @@ Išvada: Sėkminga verslo svetainė turi būti greita, aiški, pritaikyta mobili
 		id: "kodel-jusu-verslui-butina-tureti-tinklarasti",
 		image: Images.blog.versloTinklarastis,
 		title: "Kodėl jūsų verslui būtina turėti tinklaraštį?",
-		excerpt: `Šiandieniniame skaitmeniniame pasaulyje vien tik turėti svetainę – nebepakanka. Jei norite, kad jūsų verslas būtų matomas „Google“ paieškoje, pritrauktų naujų klientų ir įrodytų savo patikimumą, būtina turėti verslo tinklaraštį.
+		excerpt: `Šiandieniniame skaitmeniniame pasaulyje vien tik turėti svetainę - nebepakanka. Jei norite, kad jūsų verslas būtų matomas „Google“ paieškoje, pritrauktų naujų klientų ir įrodytų savo patikimumą, būtina turėti verslo tinklaraštį.
 
 Toliau paaiškinsiu, kodėl tinklaraštis yra vienas stipriausių įrankių jūsų verslo augimui.
 
@@ -409,7 +409,7 @@ Padeda išsiskirti rinkoje.
 
 Reklama veikia tol, kol mokate už paspaudimus. Tuo tarpu tinklaraščio įrašas, parašytas šiandien, gali atnešti lankytojų dar po metų ar net penkerių.
 
-Tai vadinama ilgalaikiu organiniu srautu – jūsų turinys dirba už jus 24/7.
+Tai vadinama ilgalaikiu organiniu srautu - jūsų turinys dirba už jus 24/7.
 
 4. Tinklaraštis stiprina santykį su klientais
 
@@ -423,45 +423,45 @@ Dalintis naujienomis ir patarimais;
 
 Tai kuria ne tik klientų lojalumą, bet ir bendruomenę aplink jūsų prekės ženklą.
 
-5. Tinklaraštis – papildomas pardavimų kanalas
+5. Tinklaraštis - papildomas pardavimų kanalas
 
 Straipsniuose galite subtiliai integruoti savo paslaugas ar produktus. Pvz.:
 
-Įraše apie „keto dietą“ – pasiūlyti savo receptų e-knygą;
+Įraše apie „keto dietą“ - pasiūlyti savo receptų e-knygą;
 
-Straipsnyje apie „svetainės dizainą“ – pakviesti kreiptis dėl nemokamos konsultacijos.
+Straipsnyje apie „svetainės dizainą“ - pakviesti kreiptis dėl nemokamos konsultacijos.
 
 Tokiu būdu tinklaraštis tampa pardavimų įrankiu, bet neperkrauna reklama.
 
 Išvada
 
-Tinklaraštis nėra tik papildomas puslapis svetainėje. Tai – SEO variklis, pasitikėjimo kūrėjas ir ilgalaikė investicija į jūsų verslo matomumą.
+Tinklaraštis nėra tik papildomas puslapis svetainėje. Tai - SEO variklis, pasitikėjimo kūrėjas ir ilgalaikė investicija į jūsų verslo matomumą.
 
-Jeigu dar neturite tinklaraščio – dabar pats metas pradėti. O jei turite, bet nerašote reguliariai – prisiminkite, kad kiekvienas naujas įrašas gali būti jūsų naujas klientas.`,
+Jeigu dar neturite tinklaraščio - dabar pats metas pradėti. O jei turite, bet nerašote reguliariai - prisiminkite, kad kiekvienas naujas įrašas gali būti jūsų naujas klientas.`,
 		url: "/blog/kodel-jusu-verslui-butina-tureti-tinklarasti",
 	},
 	{
 		id: "domeno-pasirinkimas",
 		image: Images.blog.Domenas,
 		title: "Kaip pasirinkti tinkamą domeno vardą savo svetainei?",
-		excerpt: `Domenas – tai jūsų verslo adresas internete. Tinkamai pasirinktas domeno pavadinimas gali padėti išsiskirti, geriau pozicionuoti savo svetainę „Google“ paieškoje ir sukurti patikimą pirmą įspūdį.
+		excerpt: `Domenas - tai jūsų verslo adresas internete. Tinkamai pasirinktas domeno pavadinimas gali padėti išsiskirti, geriau pozicionuoti savo svetainę „Google“ paieškoje ir sukurti patikimą pirmą įspūdį.
 1. Paprastumas ir įsimenamumas
-Trumpas ir lengvai įsimenamas domenas yra raktas į sėkmę. Venkite sudėtingų raidžių derinių ar skaičių – kuo paprasčiau, tuo geriau. Pvz., manoimone.lt visada bus aiškiau nei mano-imone123.lt.
+Trumpas ir lengvai įsimenamas domenas yra raktas į sėkmę. Venkite sudėtingų raidžių derinių ar skaičių - kuo paprasčiau, tuo geriau. Pvz., manoimone.lt visada bus aiškiau nei mano-imone123.lt.
 
 2. Raktažodžiai domeno pavadinime
 Jei įmanoma, naudokite raktažodį, susijusį su jūsų veikla. Tai gali padėti SEO. Pavyzdžiui, jei teikiate buhalterijos paslaugas, domenas buhalterija.lt yra aiškus signalas tiek klientams, tiek paieškos sistemoms.
 
 3. Pasirinkite tinkamą galūnę (.lt, .com, .eu ir kt.)
-Lietuvoje veikiantiems verslams labiausiai tinka .lt domenas. Jei planuojate tarptautinę veiklą, verta pagalvoti apie .com ar .eu. Svarbiausia – pasirinkti galūnę, atitinkančią jūsų auditoriją.
+Lietuvoje veikiantiems verslams labiausiai tinka .lt domenas. Jei planuojate tarptautinę veiklą, verta pagalvoti apie .com ar .eu. Svarbiausia - pasirinkti galūnę, atitinkančią jūsų auditoriją.
 
 4. Prekės ženklo atpažįstamumas
-Domenas turėtų stiprinti jūsų prekės ženklą. Jei pavadinimas unikalus ir lengvai atpažįstamas – klientams bus lengviau jus prisiminti. Tokiu būdu domenas tampa ne tik adresu, bet ir verslo identiteto dalimi.
+Domenas turėtų stiprinti jūsų prekės ženklą. Jei pavadinimas unikalus ir lengvai atpažįstamas - klientams bus lengviau jus prisiminti. Tokiu būdu domenas tampa ne tik adresu, bet ir verslo identiteto dalimi.
 
 5. Patikrinkite, ar domenas neužimtas
 Prieš registruodami, pasitikrinkite domeno prieinamumą. Jei pavadinimas jau naudojamas, geriau rinktis kitą variantą, o ne pridėti nereikalingų simbolių, kurie tik klaidina vartotojus.
 
 Išvada
-Tinkamai pasirinktas domenas yra ilgalaikė investicija į jūsų verslo matomumą internete. Paprastumas, tinkama galūnė, raktažodžiai ir prekės ženklo stiprinimas – pagrindiniai kriterijai, į kuriuos verta atsižvelgti.`,
+Tinkamai pasirinktas domenas yra ilgalaikė investicija į jūsų verslo matomumą internete. Paprastumas, tinkama galūnė, raktažodžiai ir prekės ženklo stiprinimas - pagrindiniai kriterijai, į kuriuos verta atsižvelgti.`,
 		url: "/blog/domeno-pasirinkimas",
 	},
 	{
@@ -469,47 +469,47 @@ Tinkamai pasirinktas domenas yra ilgalaikė investicija į jūsų verslo matomum
 		image: Images.blog.senaVsNauja,
 		title: "Atnaujinti seną svetainę ar kurti naują? Pilnas gidas 2025",
 		excerpt: `
-      Daugelis verslų susiduria su dilema: gaivinti seną svetainę ar kurti naują su WordPress. Žemiau – praktiškas palyginimas pagal greitį, SEO, kainą, saugumą ir rizikas, kad pasirinkimas būtų pagrįstas.
+      Daugelis verslų susiduria su dilema: gaivinti seną svetainę ar kurti naują su WordPress. Žemiau - praktiškas palyginimas pagal greitį, SEO, kainą, saugumą ir rizikas, kad pasirinkimas būtų pagrįstas.
 
 1. Kada užtenka atnaujinti seną svetainę?
 Dizainas morališkai tvarkingas, reikia tik kosmetikos (spalvos, tipografija, vizualai).
 Sistema palaikoma (WordPress naujausia versija, įskiepiai atnaujinami).
 Turinio daug (straipsniai, produktai), nenori masinės migracijos.
-SEO pozicijos stabilios – pokyčiai turi būti atsargūs, kad jų neprarasti.
+SEO pozicijos stabilios - pokyčiai turi būti atsargūs, kad jų neprarasti.
 2. Kada geriau kurti naują svetainę?
 Sena technologija (custom CMS, neatnaujinami įskiepiai, nėra mobilumo).
 Lėtas krovimas, saugumo spragos, dažni nulūžimai.
 Reikalingos naujos funkcijos: WooCommerce, rezervacijos, integracijos, kalbos.
 Dizainas atbaido lankytojus ir mažina konversiją.
 3. Kainos: atnaujinimas vs. nauja svetainė
-Atnaujinimas (UI korekcijos, greičio/SEO pataisymai): dažniausiai nuo 200–500 €.
+Atnaujinimas (UI korekcijos, greičio/SEO pataisymai): dažniausiai nuo 200-500 €.
 Nauja WordPress svetainė (Divi + SEO pagrindai): nuo 499 €.
 WooCommerce parduotuvė: nuo 799 €, priklausomai nuo funkcijų.
 
 Pastaba: reali kaina priklauso nuo apimties, integracijų ir turinio kiekio.
 
 4. SEO rizikos ir kaip jų išvengti
-URL žemėlapis: nekeičiant struktūros – palikti; keičiant – sukurti 301 peradresavimus.
+URL žemėlapis: nekeičiant struktūros - palikti; keičiant - sukurti 301 peradresavimus.
 Meta žymos ir H1: perkelti/optimizuoti prieš paleidžiant.
 Sitemap + robots.txt: atnaujinti ir pateikti į Google Search Console.
 Greitis: CDN, vaizdų optimizacija, kešavimas, minimalūs skriptai.
 5. Greitas sprendimo medis
-Jei svetainė > 5–7 metų ir lėta – nauja.
-Jei SEO traukia srautą ir reikia tik UX – atnaujinimas.
-Jei reikalingos naujos funkcijos – nauja.
-Jei biudžetas ribotas, bet reikia „atsikvėpti“ – mini atnaujinimas dabar, planuojant naują vėliau.
+Jei svetainė > 5-7 metų ir lėta - nauja.
+Jei SEO traukia srautą ir reikia tik UX - atnaujinimas.
+Jei reikalingos naujos funkcijos - nauja.
+Jei biudžetas ribotas, bet reikia „atsikvėpti“ - mini atnaujinimas dabar, planuojant naują vėliau.
 6. Mūsų pasiūlymas 2025 m.
 Greita esamos svetainės apžiūra (UX, SEO, greitis, saugumas).
-Aiški rekomendacija: gaivinti ar kurti naują – su pro/contra.
-Jei nauja – WordPress + Divi, mobilumas, bazinis SEO, turinio perkėlimas, 301 planas.
+Aiški rekomendacija: gaivinti ar kurti naują - su pro/contra.
+Jei nauja - WordPress + Divi, mobilumas, bazinis SEO, turinio perkėlimas, 301 planas.
 7. D.U.K.
 Ar prarasiu SEO kurdamas naują? Ne, jei teisingai padarysi 301 peradresavimus ir perkelsi meta duomenis.
 
-Kiek trunka? Atnaujinimas – nuo kelių dienų; nauja svetainė – nuo 2 savaičių (priklauso nuo apimties).
+Kiek trunka? Atnaujinimas - nuo kelių dienų; nauja svetainė - nuo 2 savaičių (priklauso nuo apimties).
 
-Ar galima etapais? Taip – pirmiausia kritiniai dalykai (greitis, UX), vėliau – nauja versija.
+Ar galima etapais? Taip - pirmiausia kritiniai dalykai (greitis, UX), vėliau - nauja versija.
 
-Turite seną svetainę ir norite aiškaus atsakymo? Susisiekite – nemokamai įvertinsime, kas jums finansiškai ir strategiškai labiausiai apsimoka.
+Turite seną svetainę ir norite aiškaus atsakymo? Susisiekite - nemokamai įvertinsime, kas jums finansiškai ir strategiškai labiausiai apsimoka.
     `,
 		url: "/blog/senos-svetaines-atnaujinimas-ar-kurti-nauja",
 	},

@@ -41,7 +41,7 @@ const KasYraDivi = () => {
 				</title>
 				<meta
 					name="description"
-					content="Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms? Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių, sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai – naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams."
+					content="Kas yra Divi ir kodėl jis geras pasirinkimas svetainėms? Divi yra vienas populiariausių „WordPress“ puslapių kūrimo įrankių, sukurtas „Elegant Themes“. Jis leidžia kurti svetaines vizualiai - naudojant drag-and-drop metodą, todėl tai patogus sprendimas tiek pradedantiesiems, tiek patyrusiems dizaineriams ir programuotojams."
 				/>
 				<link
 					rel="canonical"
@@ -82,7 +82,7 @@ const KasYraDivi = () => {
 					<h3 className="text-white/70 mb-6">
 						Divi yra vienas populiariausių „WordPress“ puslapių
 						kūrimo įrankių (angl. page builder), sukurtas „Elegant
-						Themes“. Jis leidžia kurti svetaines vizualiai –
+						Themes“. Jis leidžia kurti svetaines vizualiai -
 						naudojant drag-and-drop metodą, todėl tai patogus
 						sprendimas tiek pradedantiesiems, tiek patyrusiems
 						dizaineriams ir programuotojams.
@@ -184,7 +184,7 @@ const KasYraDivi = () => {
 						Išvada: Divi yra vienas iš geriausių pasirinkimų norint
 						sukurti vizualiai patrauklią, funkcionalią ir lengvai
 						valdomą „WordPress“ svetainę. Nesvarbu, ar esate
-						pradedantysis, ar profesionalas – su Divi galima
+						pradedantysis, ar profesionalas - su Divi galima
 						įgyvendinti beveik bet kokią dizaino idėją be didelių
 						techninių žinių.
 					</p>

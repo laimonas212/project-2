@@ -112,7 +112,7 @@ const WordPressKaina2025 = () => {
 						priklausomai nuo poreikių, funkcionalumo ir pasirinkto
 						paslaugų tiekėjo. 2025 m. Lietuvoje dažniausiai
 						svetainių kūrimo kainos prasideda nuo{" "}
-						<strong>300–500€</strong> ir gali siekti net{" "}
+						<strong>300-500€</strong> ir gali siekti net{" "}
 						<strong>3000€ ar daugiau</strong>. Pažiūrėkime, kas
 						lemia tą kainą ir ką gaunate už tam tikrą sumą.
 					</p>
@@ -167,10 +167,10 @@ const WordPressKaina2025 = () => {
 					</ul>
 
 					<h2 className="text-2xl font-semibold  mb-4">
-						3. Pigiai vs. kokybiškai – ar verta taupyti?
+						3. Pigiai vs. kokybiškai - ar verta taupyti?
 					</h2>
 					<p className="text-white/70 mb-6">
-						Daug kas siūlo svetaines už 100–200 €, bet tai
+						Daug kas siūlo svetaines už 100-200 €, bet tai
 						dažniausiai būna paviršutiniški puslapiai be
 						optimizacijos ir be jokio palaikymo. Tokiu atveju gali
 						prarasti daugiau nei sutaupai. Kokybiškai padaryta
@@ -219,7 +219,7 @@ const WordPressKaina2025 = () => {
 					</ul>
 
 					<p className="text-white/70 mb-6">
-						Jeigu reikia el. parduotuvės – kaina prasideda nuo{" "}
+						Jeigu reikia el. parduotuvės - kaina prasideda nuo{" "}
 						<strong>799€</strong>, priklausomai nuo specifikos.
 					</p>
 

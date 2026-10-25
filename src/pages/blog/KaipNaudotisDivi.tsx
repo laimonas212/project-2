@@ -128,14 +128,14 @@ const KaipNaudotisDivi = () => {
 							Pasirinkite sekcijos tipą:
 							<ul className="list-inside list-disc ml-4 text-white/70">
 								<li>
-									Regular – paprasta sekcija su eilutėmis.
+									Regular - paprasta sekcija su eilutėmis.
 								</li>
 								<li>
-									Specialty – sudėtingesnės sekcijos su
+									Specialty - sudėtingesnės sekcijos su
 									unikaliomis išdėstymo galimybėmis.
 								</li>
 								<li>
-									Fullwidth – sekcija, užimanti visą puslapio
+									Fullwidth - sekcija, užimanti visą puslapio
 									plotį.
 								</li>
 							</ul>
@@ -145,7 +145,7 @@ const KaipNaudotisDivi = () => {
 							pliusą.
 						</li>
 						<li>
-							Pasirinkite išdėstymą – kiek stulpelių norite (pvz.,
+							Pasirinkite išdėstymą - kiek stulpelių norite (pvz.,
 							1, 2, 3 ar daugiau).
 						</li>
 						<li>
@@ -221,19 +221,19 @@ const KaipNaudotisDivi = () => {
 					</p>
 					<ul className="list-inside list-disc ml-6 text-white/70 mb-6">
 						<li>
-							Text (Tekstas) – leidžia rašyti ir formatuoti
+							Text (Tekstas) - leidžia rašyti ir formatuoti
 							tekstą.
 						</li>
 						<li>
-							Image (Vaizdas) – įkelti ir rodyti paveikslėlius.
+							Image (Vaizdas) - įkelti ir rodyti paveikslėlius.
 						</li>
-						<li>Button (Mygtukas) – sukurti mygtuką su nuoroda.</li>
+						<li>Button (Mygtukas) - sukurti mygtuką su nuoroda.</li>
 						<li>
-							Gallery (Galerija) – rodyti kelis paveikslėlius kaip
+							Gallery (Galerija) - rodyti kelis paveikslėlius kaip
 							galeriją.
 						</li>
-						<li>Form (Forma) – pridėti kontaktų formą.</li>
-						<li>Video – įterpti vaizdo įrašą.</li>
+						<li>Form (Forma) - pridėti kontaktų formą.</li>
+						<li>Video - įterpti vaizdo įrašą.</li>
 					</ul>
 
 					<h2 className="text-2xl font-semibold  mb-4">

@@ -20,7 +20,7 @@ const Titulinis = () => {
 		<div className="overflow-hidden">
 			<Helmet>
 				<title>
-					Amberweb – Profesionalus Interneto Svetainių Kūrimas
+					Amberweb - Profesionalus Interneto Svetainių Kūrimas
 				</title>
 				<meta
 					name="description"
@@ -32,7 +32,7 @@ const Titulinis = () => {
 				/>
 				<meta
 					property="og:title"
-					content="Amberweb – Profesionalus Interneto Svetainių Kūrimas"
+					content="Amberweb - Profesionalus Interneto Svetainių Kūrimas"
 				/>
 				<meta
 					property="og:description"
@@ -59,16 +59,14 @@ const Titulinis = () => {
 			</section>
 
 			{/* Features Section */}
-			<section className="py-20 bg-dark-surface relative overflow-hidden">
-				<div className="container mx-auto px-4">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-						<Features />
+			<section className="relative bg-dark-surface overflow-hidden">
+				<Features />
+			</section>
 
-						{/* Testimonials Section */}
-						<section className="relative">
-							<CardSwiper />
-						</section>
-					</div>
+			{/* Testimonials Section */}
+			<section className="relative overflow-hidden py-20">
+				<div className="container mx-auto px-4">
+					<CardSwiper />
 				</div>
 			</section>
 

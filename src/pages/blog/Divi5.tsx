@@ -39,7 +39,7 @@ const Divi5Straipsnis = () => {
 				</title>
 				<meta
 					name="description"
-					content="Naujoji Divi 5 versija keičia WordPress svetainių kūrimą – greitesnis veikimas, modulių perrašymas ir švaresnis kodas. Sužinokite, kaip tai padeda verslams gauti modernią svetainę."
+					content="Naujoji Divi 5 versija keičia WordPress svetainių kūrimą - greitesnis veikimas, modulių perrašymas ir švaresnis kodas. Sužinokite, kaip tai padeda verslams gauti modernią svetainę."
 				/>
 				<link
 					rel="canonical"
@@ -82,11 +82,11 @@ const Divi5Straipsnis = () => {
 					</h1>
 
 					<h3 className="text-white/70 mb-6">
-						Nuo 2025 m. viena populiariausių WordPress temų –{" "}
-						<strong>Divi</strong> – išleido reikšmingą atnaujinimą:{" "}
+						Nuo 2025 m. viena populiariausių WordPress temų -{" "}
+						<strong>Divi</strong> - išleido reikšmingą atnaujinimą:{" "}
 						<strong>Divi 5</strong>. Tai nėra tik kosmetinis
-						pakeitimas – tai visas sistemos perrašymas. Tačiau
-						svarbiausia – ką tai reiškia verslui ir svetainių kūrimo
+						pakeitimas - tai visas sistemos perrašymas. Tačiau
+						svarbiausia - ką tai reiškia verslui ir svetainių kūrimo
 						paslaugų ieškantiems klientams?
 					</h3>
 
@@ -98,7 +98,7 @@ const Divi5Straipsnis = () => {
 						naują <strong>React pagrįstą modulių sistemą</strong>.
 						Tai leidžia puslapiams krautis greičiau, o tai
 						tiesiogiai veikia ir SEO, ir vartotojo patirtį. Jei
-						anksčiau Divi buvo kritikuojamas dėl greičio – ši
+						anksčiau Divi buvo kritikuojamas dėl greičio - ši
 						versija atsako į tuos priekaištus.
 					</p>
 
@@ -128,16 +128,16 @@ const Divi5Straipsnis = () => {
 					</ul>
 
 					<h2 className="text-2xl font-semibold mb-4">
-						Technologija – bet ne jūsų rūpestis
+						Technologija - bet ne jūsų rūpestis
 					</h2>
 					<p className="text-white/70 mb-6">
 						Daugelis įmonių nesidomi, ar svetainė padaryta su Divi,
-						Elementor ar custom sprendimu – jiems svarbu, kad ji{" "}
+						Elementor ar custom sprendimu - jiems svarbu, kad ji{" "}
 						<strong>
 							veiktų greitai, atrodytų profesionaliai ir būtų
 							lengvai valdoma
 						</strong>
-						. Būtent tai ir siūlome – pasirūpinsime visa technine
+						. Būtent tai ir siūlome - pasirūpinsime visa technine
 						puse, naudodami efektyviausius įrankius, įskaitant Divi
 						5.
 					</p>
@@ -150,7 +150,7 @@ const Divi5Straipsnis = () => {
 							Švaresnis kodas, mažiau priklausomybių
 						</li>
 						<li className="text-white/70 list-item list-disc">
-							Nauja API – galima plėtoti papildomus sprendimus
+							Nauja API - galima plėtoti papildomus sprendimus
 							greičiau
 						</li>
 						<li className="text-white/70 list-item list-disc">

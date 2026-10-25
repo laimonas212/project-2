@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 interface Step {
 	number: string;
@@ -12,17 +13,17 @@ interface ProcessProps {
 	description?: string;
 }
 
-// function to make text between ** ** bold in markdown
 const makeTextBold = (text: string) => {
 	const regex = /\*\*(.*?)\*\*/g;
+
 	return text.split(regex).map((part, index) =>
 		index % 2 === 1 ? (
-			<strong key={index} className="font-bold">
+			<strong key={index} className="font-semibold text-white">
 				{part}
 			</strong>
 		) : (
 			part
-		)
+		),
 	);
 };
 
@@ -69,70 +70,69 @@ const Process = ({
 	description = "Mes dirbame pagal aiškų ir patikrintą procesą, nuo pradinės idėjos iki galutinės svetainės paleidimo ir techninio palaikymo. Tai leidžia užtikrinti sklandų darbą, aukščiausią kokybę ir rezultatą, kuris efektyviai padeda augti jūsų verslui internete.",
 }: ProcessProps) => {
 	return (
-		<section className="py-20 bg-dark-surface relative">
-			<div className="container mx-auto px-4">
+		<section className="relative overflow-hidden bg-dark-surface py-20 md:py-28">
+			<div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-electric-blue/10 blur-[140px]" />
+			<div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-purple-500/[0.07] blur-[140px]" />
+
+			<div className="container relative mx-auto px-4">
 				<motion.div
-					initial={{ opacity: 0, y: 20 }}
+					initial={{ opacity: 0, y: 24 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true }}
-					className="text-center mb-16"
+					viewport={{ once: true, amount: 0.3 }}
+					transition={{ duration: 0.6 }}
+					className="mx-auto mb-14 max-w-3xl text-center md:mb-16"
 				>
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">
+					<div className="mb-5 inline-flex items-center gap-2 rounded-full border border-electric-blue/20 bg-electric-blue/10 px-4 py-2 text-sm font-medium text-electric-blue">
+						<span className="h-2 w-2 rounded-full bg-electric-blue" />
+						Kaip vyksta darbas?
+					</div>
+
+					<h2 className="mb-5 text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
 						{headline}
 					</h2>
-					<p className="text-white/70 text-lg max-w-2xl mx-auto">
+
+					<p className="mx-auto max-w-2xl text-base leading-relaxed text-white/60 md:text-lg">
 						{description}
 					</p>
 				</motion.div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 relative">
+				<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 					{steps.map((step, index) => (
 						<motion.div
 							key={step.number}
-							initial={{ opacity: 0, y: 30 }}
+							initial={{ opacity: 0, y: 24 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
+							viewport={{ once: true, amount: 0.15 }}
 							transition={{
-								delay: index * 0.2,
 								duration: 0.5,
-								ease: "easeOut",
+								delay: (index % 3) * 0.08,
 							}}
-							className="group relative bg-dark-surface-2 rounded-lg p-6 shadow-lg flex flex-col 
-               border border-transparent hover:border-electric-blue/30 transition-colors duration-300"
+							className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-dark-surface-2/80 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:bg-dark-surface-2 md:p-8"
 						>
-							{/* Badge */}
-							<div
-								className="absolute -top-4 -left-3 w-12 h-12 rounded-full bg-dark-surface-2 flex items-center justify-center text-white font-bold 
-                    transition-all duration-300 ease-in-out group-hover:scale-0 group-hover:opacity-0"
-							>
-								{step.number}
+							<div className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full bg-electric-blue/[0.04] blur-3xl transition-all duration-500 group-hover:bg-electric-blue/[0.12]" />
+
+							<div className="relative mb-7 flex items-center justify-between">
+								<div className="flex h-12 w-12 items-center justify-center rounded-xl border border-electric-blue/20 bg-electric-blue/10 text-sm font-bold text-electric-blue transition-all duration-300 group-hover:border-electric-blue/40 group-hover:bg-electric-blue/20">
+									{step.number}
+								</div>
+
+								<ArrowUpRight className="h-5 w-5 text-white/20 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-electric-blue" />
 							</div>
 
-							{/* Content */}
-							<h3 className="text-xl font-bold mb-4">
-								{step.title}
-							</h3>
-							<p className="text-white/70">
-								{makeTextBold(step.description)}
-							</p>
+							<div className="relative flex flex-1 flex-col">
+								<h3 className="mb-4 text-xl font-bold text-white transition-colors duration-300 group-hover:text-electric-blue">
+									{step.title}
+								</h3>
 
-							{/* Rodyklės */}
-							{index < steps.length - 1 && (
-								<>
-									<div
-										className="hidden md:block absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 
-                        transition-opacity duration-300 group-hover:opacity-0"
-									>
-										<div className="w-0 h-0 border-t-[16px] border-b-[16px] border-l-[16px] border-transparent border-l-dark-surface-2"></div>
-									</div>
-									<div
-										className="md:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full 
-                        transition-opacity duration-300 group-hover:opacity-0"
-									>
-										<div className="w-0 h-0 border-l-[16px] border-r-[16px] border-t-[16px] border-transparent border-t-dark-surface-2"></div>
-									</div>
-								</>
-							)}
+								<p className="text-sm leading-7 text-white/55 md:text-base">
+									{makeTextBold(step.description)}
+								</p>
+							</div>
+
+							<div className="mt-7 flex items-center gap-2 border-t border-white/[0.06] pt-5 text-xs font-medium uppercase tracking-wider text-white/30">
+								<CheckCircle2 className="h-4 w-4 text-electric-blue/70" />
+								<span>Proceso žingsnis {step.number}</span>
+							</div>
 						</motion.div>
 					))}
 				</div>

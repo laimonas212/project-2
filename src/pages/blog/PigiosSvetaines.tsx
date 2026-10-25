@@ -91,7 +91,7 @@ const PigiosSvetaines = () => {
 					</h3>
 
 					<h2 className="text-2xl font-semibold  mb-4">
-						1. Mitas: "Svarbiausia – kad veiktų"
+						1. Mitas: "Svarbiausia - kad veiktų"
 					</h2>
 					<p className="text-white/70 mb-6">
 						Techninis veikimas yra tik pradžia. Svetainė turi būti
@@ -126,7 +126,7 @@ const PigiosSvetaines = () => {
 					</h2>
 					<p className="text-white/70 mb-6">
 						Pigi svetainė dažnai neturi tvirtų technologinių
-						pagrindų. Tobulinimas tampa brangus, o kartais –
+						pagrindų. Tobulinimas tampa brangus, o kartais -
 						neįmanomas. Tenka kurti viską iš naujo, kas reiškia
 						dvigubas išlaidas.
 					</p>
@@ -136,7 +136,7 @@ const PigiosSvetaines = () => {
 					</h2>
 					<p className="text-white/70 mb-6">
 						Vien HTML nepakanka. Reikia UI/UX žinių, saugumo,
-						atsakomybės. Jei kažkas nepavyks – nebus garantijos ar
+						atsakomybės. Jei kažkas nepavyks - nebus garantijos ar
 						pagalbos. Profesionalumas atsiperka.
 					</p>
 
@@ -153,7 +153,7 @@ const PigiosSvetaines = () => {
 						7. Realybė: Klientai sprendžia per sekundes
 					</h2>
 					<p className="text-white/70 mb-6">
-						Tyrimai rodo, kad vartotojai per 3–5 sekundes
+						Tyrimai rodo, kad vartotojai per 3-5 sekundes
 						nusprendžia, ar likti svetainėje. Pigi ir prastai
 						atrodanti svetainė gali reikšti prarastus klientus.
 					</p>

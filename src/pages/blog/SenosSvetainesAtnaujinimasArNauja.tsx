@@ -87,7 +87,7 @@ const RedesignVsRebuild = () => {
 				<div className="w-full pb-8">
 					<img
 						src={Images.blog.senaVsNauja}
-						alt="Sena svetainė ar nauja WordPress svetainė – ką rinktis 2025?"
+						alt="Sena svetainė ar nauja WordPress svetainė - ką rinktis 2025?"
 						className="w-full h-auto bg-gradient-to-r from-electric-blue to-neon-purple pt-[2px] rounded-b-lg animate-gradient-x"
 					/>
 
@@ -111,7 +111,7 @@ const RedesignVsRebuild = () => {
 					<p className="text-white/70 mb-6">
 						Daugelis verslų susiduria su dilema:{" "}
 						<strong>gaivinti seną svetainę</strong> ar
-						<strong> kurti naują su WordPress</strong>. Žemiau –
+						<strong> kurti naują su WordPress</strong>. Žemiau -
 						praktiškas palyginimas pagal greitį, SEO, kainą, saugumą
 						ir rizikas, kad pasirinkimas būtų pagrįstas.
 					</p>
@@ -133,7 +133,7 @@ const RedesignVsRebuild = () => {
 							masinės migracijos.
 						</li>
 						<li className="text-white/70 mb-3 list-item list-disc">
-							SEO pozicijos stabilios – pokyčiai turi būti
+							SEO pozicijos stabilios - pokyčiai turi būti
 							atsargūs, kad jų neprarasti.
 						</li>
 					</ul>
@@ -164,7 +164,7 @@ const RedesignVsRebuild = () => {
 					<p className="text-white/70 mb-4">
 						<strong>Atnaujinimas</strong> (UI korekcijos,
 						greičio/SEO pataisymai): dažniausiai nuo{" "}
-						<strong>200–500 €</strong>.<br />
+						<strong>200-500 €</strong>.<br />
 						<strong>Nauja WordPress svetainė</strong> (Divi + SEO
 						pagrindai): nuo <strong>499 €</strong>.<br />
 						<strong>WooCommerce</strong> parduotuvė: nuo{" "}
@@ -181,7 +181,7 @@ const RedesignVsRebuild = () => {
 					<ul className="pl-4">
 						<li className="text-white/70 mb-3 list-item list-disc">
 							<strong>URL žemėlapis</strong>: nekeičiant
-							struktūros – palikti; keičiant – sukurti 301
+							struktūros - palikti; keičiant - sukurti 301
 							peradresavimus.
 						</li>
 						<li className="text-white/70 mb-3 list-item list-disc">
@@ -203,19 +203,19 @@ const RedesignVsRebuild = () => {
 					</h2>
 					<ul className="pl-4">
 						<li className="text-white/70 mb-3 list-item list-disc">
-							Jei svetainė &gt; 5–7 metų ir lėta –{" "}
+							Jei svetainė &gt; 5-7 metų ir lėta -{" "}
 							<strong>nauja</strong>.
 						</li>
 						<li className="text-white/70 mb-3 list-item list-disc">
-							Jei SEO traukia srautą ir reikia tik UX –{" "}
+							Jei SEO traukia srautą ir reikia tik UX -{" "}
 							<strong>atnaujinimas</strong>.
 						</li>
 						<li className="text-white/70 mb-3 list-item list-disc">
-							Jei reikalingos naujos funkcijos –{" "}
+							Jei reikalingos naujos funkcijos -{" "}
 							<strong>nauja</strong>.
 						</li>
 						<li className="text-white/70 mb-3 list-item list-disc">
-							Jei biudžetas ribotas, bet reikia „atsikvėpti“ –{" "}
+							Jei biudžetas ribotas, bet reikia „atsikvėpti“ -{" "}
 							<strong>mini atnaujinimas</strong> dabar, planuojant
 							naują vėliau.
 						</li>
@@ -231,10 +231,10 @@ const RedesignVsRebuild = () => {
 						</li>
 						<li className="text-white/70 mb-3 list-item list-disc">
 							Aiški rekomendacija: <em>gaivinti</em> ar{" "}
-							<em>kurti naują</em> – su pro/contra.
+							<em>kurti naują</em> - su pro/contra.
 						</li>
 						<li className="text-white/70 mb-3 list-item list-disc">
-							Jei nauja – WordPress + Divi, mobilumas, bazinis
+							Jei nauja - WordPress + Divi, mobilumas, bazinis
 							SEO, turinio perkėlimas, 301 planas.
 						</li>
 					</ul>
@@ -246,13 +246,13 @@ const RedesignVsRebuild = () => {
 						duomenis.
 					</p>
 					<p className="text-white/70 mb-3">
-						<strong>Kiek trunka?</strong> Atnaujinimas – nuo kelių
-						dienų; nauja svetainė – nuo 2 savaičių (priklauso nuo
+						<strong>Kiek trunka?</strong> Atnaujinimas - nuo kelių
+						dienų; nauja svetainė - nuo 2 savaičių (priklauso nuo
 						apimties).
 					</p>
 					<p className="text-white/70 mb-6">
-						<strong>Ar galima etapais?</strong> Taip – pirmiausia
-						kritiniai dalykai (greitis, UX), vėliau – nauja versija.
+						<strong>Ar galima etapais?</strong> Taip - pirmiausia
+						kritiniai dalykai (greitis, UX), vėliau - nauja versija.
 					</p>
 
 					<p className="text-white/70 mb-6">
@@ -263,7 +263,7 @@ const RedesignVsRebuild = () => {
 						>
 							Susisiekite
 						</a>{" "}
-						– nemokamai įvertinsime, kas jums finansiškai ir
+						- nemokamai įvertinsime, kas jums finansiškai ir
 						strategiškai labiausiai apsimoka.
 					</p>
 

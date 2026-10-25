@@ -96,7 +96,7 @@ const VersloTinklarastis = () => {
 						„Google“ mėgsta šviežią turinį. Straipsniai su tinkamais
 						raktiniais žodžiais padeda pritraukti organinį srautą,
 						didina matomumą ir leidžia klientams jus rasti be
-						reklamos. Kiekvienas įrašas – nauja galimybė būti
+						reklamos. Kiekvienas įrašas - nauja galimybė būti
 						pastebėtam.
 					</p>
 
@@ -129,7 +129,7 @@ const VersloTinklarastis = () => {
 					</p>
 
 					<h2 className="text-2xl font-semibold mb-4">
-						5. Tinklaraštis – papildomas pardavimų kanalas
+						5. Tinklaraštis - papildomas pardavimų kanalas
 					</h2>
 					<p className="text-white/70 mb-6">
 						Įrašuose natūraliai integruokite savo paslaugas ar

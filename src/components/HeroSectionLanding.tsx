@@ -1,12 +1,22 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Code2, ArrowRight, Sparkles } from "lucide-react";
+import {
+	Code2,
+	ArrowRight,
+	Sparkles,
+	Rocket,
+	MonitorSmartphone,
+	PenTool,
+	Handshake,
+} from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import ParticlesBackground from "./ParticlesBackground"; // Jei palieki foną
+
+import ParticlesBackground from "./ParticlesBackground";
 
 const HeroSectionLanding = () => {
 	const containerRef = useRef<HTMLDivElement>(null);
+
 	const [ref, inView] = useInView({
 		threshold: 0.1,
 		triggerOnce: true,
@@ -17,61 +27,89 @@ const HeroSectionLanding = () => {
 		offset: ["start start", "end start"],
 	});
 
-	const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+	const opacity = useTransform(scrollYProgress, [0, 0.85], [1, 0.35]);
 
 	const titleVariants = {
-		hidden: { opacity: 0, y: 20 },
+		hidden: { opacity: 0, y: 24 },
 		visible: (i: number) => ({
 			opacity: 1,
 			y: 0,
 			transition: {
-				delay: i * 0.1,
-				duration: 0.8,
-				ease: [0.215, 0.61, 0.355, 1],
+				delay: i * 0.12,
+				duration: 0.75,
+				ease: [0.215, 0.61, 0.355, 1] as const,
 			},
 		}),
 	};
 
-	return (
-		<motion.div
-			ref={containerRef}
-			className="-mt-20 :md-mt-36 relative min-h-screen flex items-center justify-center overflow-hidden"
-			style={{ opacity }}
-		>
-			<ParticlesBackground />
+	const benefits = [
+		{
+			icon: Rocket,
+			title: "Greitis ir SEO",
+			description: "Greitai veikiančios, paieškai optimizuotos svetainės",
+		},
+		{
+			icon: MonitorSmartphone,
+			title: "Pritaikyta visiems įrenginiams",
+			description: "Patogi patirtis telefone, planšetėje ir kompiuteryje",
+		},
+		{
+			icon: PenTool,
+			title: "Individualus dizainas",
+			description: "Sprendimai, pritaikyti jūsų verslo identitetui",
+		},
+		{
+			icon: Handshake,
+			title: "Pagalba ir palaikymas",
+			description: "Aiškus procesas ir ilgalaikis bendradarbiavimas",
+		},
+	];
 
-			{/* Gradient Overlays */}
-			<div className="fixed inset-0 z-0 pointer-events-none">
-				<div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,200,0.25)_0%,transparent_70%)]" />
+	return (
+		<motion.section
+			ref={containerRef}
+			style={{ opacity }}
+			className="relative isolate -mt-20 flex min-h-[850px] items-center overflow-hidden bg-dark-surface pb-24 pt-36 md:min-h-screen md:pb-28 md:pt-40"
+		>
+			{/* Background */}
+			<div className="absolute inset-0 z-0">
+				<ParticlesBackground />
+
+				<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_35%,rgba(60,80,200,0.20)_0%,transparent_65%)]" />
+
+				<div className="pointer-events-none absolute -left-40 top-1/4 h-[500px] w-[500px] rounded-full bg-electric-blue/10 blur-[150px]" />
+
+				<div className="pointer-events-none absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-neon-purple/10 blur-[150px]" />
+
+				<div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-dark-surface/10 via-transparent to-dark-surface" />
 			</div>
 
 			{/* Content */}
-			<div className="container mx-auto px-4 relative z-10" ref={ref}>
-				<div className="max-w-5xl mx-auto">
-					<div className="space-y-6 text-center mb-12">
+			<div ref={ref} className="container relative z-10 mx-auto px-4">
+				<div className="mx-auto max-w-6xl">
+					{/* Heading */}
+					<div className="mx-auto mb-14 max-w-5xl space-y-7 text-center">
 						<motion.div
 							initial="hidden"
 							animate={inView ? "visible" : "hidden"}
 							variants={titleVariants}
 							custom={0}
-							className="inline-flex items-center gap-2 bg-dark-surface/50 backdrop-blur-sm px-6 py-3 rounded-full"
+							className="inline-flex items-center gap-2 rounded-full border border-electric-blue/20 bg-electric-blue/10 px-5 py-2.5 backdrop-blur-md"
 						>
-							<Sparkles className="w-5 h-5 text-electric-blue" />
-							<h1 className="text-white/90">
+							<Sparkles className="h-4 w-4 text-electric-blue" />
+							<span className="text-xs font-semibold uppercase tracking-[0.18em] text-white/80">
 								WordPress ir el. parduotuvių kūrimas
-							</h1>
+							</span>
 						</motion.div>
 
 						<motion.h1
-							initial={{ y: 20 }}
-							animate={{ y: 0 }}
-							transition={{
-								duration: 0.8,
-								ease: [0.215, 0.61, 0.355, 1],
-							}}
-							className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight opacity-100"
+							initial="hidden"
+							animate={inView ? "visible" : "hidden"}
+							variants={titleVariants}
+							custom={1}
+							className="font-display text-4xl font-bold leading-[1.12] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
 						>
-							<span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">
+							<span className="bg-gradient-to-r from-electric-blue via-[#8B7CFF] to-neon-purple bg-clip-text text-transparent">
 								Interneto svetainių
 							</span>{" "}
 							kūrimas jūsų verslui
@@ -82,7 +120,7 @@ const HeroSectionLanding = () => {
 							animate={inView ? "visible" : "hidden"}
 							variants={titleVariants}
 							custom={2}
-							className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto"
+							className="mx-auto max-w-3xl text-base leading-relaxed text-white/65 sm:text-lg md:text-xl"
 						>
 							Kuriame modernias interneto svetaines ir el.
 							parduotuves, kurios padeda pritraukti klientus,
@@ -90,61 +128,115 @@ const HeroSectionLanding = () => {
 						</motion.p>
 					</div>
 
-					{/* CTA Buttons */}
+					{/* CTA */}
 					<motion.div
 						initial="hidden"
 						animate={inView ? "visible" : "hidden"}
 						variants={titleVariants}
 						custom={3}
-						className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-32"
+						className="mb-20 flex flex-col items-center justify-center gap-4 sm:flex-row"
 					>
-						<Link to="/kontaktai" className="text-white">
-							<motion.button
-								whileHover={{ scale: 1.05 }}
-								whileTap={{ scale: 0.95 }}
-								className="button-primary inline-flex items-center gap-2 group"
+						<motion.div
+							whileHover={{ y: -3 }}
+							whileTap={{ scale: 0.97 }}
+						>
+							<Link
+								to="/kontaktai"
+								className="button-primary group inline-flex min-h-14 items-center justify-center gap-3 px-7 text-white"
 							>
 								Gaukite nemokamą konsultaciją
-								<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-							</motion.button>
-						</Link>
-						<Link to="/projektai" className="text-white">
-							<button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/10 hover:border-electric-blue/50 transition-colors duration-300 backdrop-blur-sm">
-								<Code2 className="w-5 h-5" />
+								<ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+							</Link>
+						</motion.div>
+
+						<motion.div
+							whileHover={{ y: -3 }}
+							whileTap={{ scale: 0.97 }}
+						>
+							<Link
+								to="/projektai"
+								className="inline-flex min-h-14 items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-7 text-sm font-semibold text-white transition-all duration-300 hover:border-electric-blue/50 hover:bg-white/[0.08]"
+							>
+								<Code2 className="h-5 w-5 text-electric-blue" />
 								Peržiūrėkite mūsų darbus
-							</button>
-						</Link>
+							</Link>
+						</motion.div>
+					</motion.div>
+
+					{/* Benefits */}
+					<motion.div
+						initial="hidden"
+						animate={inView ? "visible" : "hidden"}
+						variants={titleVariants}
+						custom={4}
+						className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"
+					>
+						{benefits.map((benefit, index) => {
+							const Icon = benefit.icon;
+
+							return (
+								<motion.div
+									key={benefit.title}
+									initial={{ opacity: 0, y: 20 }}
+									animate={
+										inView
+											? { opacity: 1, y: 0 }
+											: { opacity: 0, y: 20 }
+									}
+									transition={{
+										delay: 0.55 + index * 0.12,
+										duration: 0.6,
+									}}
+									className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:bg-white/[0.05]"
+								>
+									<div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-electric-blue/[0.06] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+									<div className="relative z-10">
+										<div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-electric-blue/20 bg-electric-blue/10 text-electric-blue transition-all duration-300 group-hover:scale-110 group-hover:bg-electric-blue/15">
+											<Icon className="h-6 w-6" />
+										</div>
+
+										<h3 className="mb-2 text-sm font-semibold text-white">
+											{benefit.title}
+										</h3>
+
+										<p className="text-xs leading-relaxed text-white/50">
+											{benefit.description}
+										</p>
+									</div>
+								</motion.div>
+							);
+						})}
 					</motion.div>
 				</div>
-
-				{/* Scroll Indicator */}
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 1.5 }}
-					className="absolute bottom-8 left-1/2 -translate-x-1/2"
-				>
-					<div className="flex flex-col items-center gap-2">
-						<span className="text-sm text-white/50">
-							Sužinokite daugiau apie svetainių kūrimą
-						</span>
-						<motion.div
-							animate={{
-								y: [0, 10, 0],
-							}}
-							transition={{
-								duration: 1.5,
-								repeat: Infinity,
-								repeatType: "reverse",
-							}}
-							className="w-5 h-8 border-2 border-white/20 rounded-full flex items-start justify-center p-1"
-						>
-							<div className="w-1 h-1.5 bg-electric-blue rounded-full" />
-						</motion.div>
-					</div>
-				</motion.div>
 			</div>
-		</motion.div>
+
+			{/* Scroll Indicator */}
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: inView ? 1 : 0 }}
+				transition={{ delay: 1.5 }}
+				className="absolute bottom-5 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex"
+			>
+				<span className="text-xs text-white/40">
+					Sužinokite daugiau apie svetainių kūrimą
+				</span>
+
+				<motion.div
+					animate={{ y: [0, 8, 0] }}
+					transition={{
+						duration: 1.5,
+						repeat: Infinity,
+						repeatType: "reverse",
+					}}
+					className="flex h-8 w-5 items-start justify-center rounded-full border-2 border-white/20 p-1"
+				>
+					<div className="h-1.5 w-1 rounded-full bg-electric-blue" />
+				</motion.div>
+			</motion.div>
+
+			<div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-24 bg-gradient-to-t from-dark-surface to-transparent" />
+		</motion.section>
 	);
 };
 

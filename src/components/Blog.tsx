@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { ArrowRight, BookOpen } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -9,86 +11,153 @@ import blogEntries from "./blogEntries";
 
 const Blog = () => {
 	return (
-		<section className="py-20 relative">
-			<div className="container mx-auto px-4">
+		<section className="relative overflow-hidden py-20 md:py-28">
+			<div className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-electric-blue/[0.07] blur-[140px]" />
+
+			<div className="container relative mx-auto px-4">
 				<motion.div
-					initial={{ opacity: 0, y: 20 }}
+					initial={{ opacity: 0, y: 24 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true }}
-					className="text-center mb-16"
+					viewport={{ once: true, amount: 0.3 }}
+					transition={{ duration: 0.6 }}
+					className="mx-auto mb-14 max-w-3xl text-center md:mb-16"
 				>
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						Naujienos ir gidai
+					<div className="mb-5 inline-flex items-center gap-2 rounded-full border border-electric-blue/20 bg-electric-blue/10 px-4 py-2 text-sm font-medium text-electric-blue">
+						<BookOpen className="h-4 w-4" />
+						Amberweb įžvalgos
+					</div>
+
+					<h2 className="mb-5 text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+						Naujienos, gidai ir{" "}
+						<span className="bg-gradient-to-r from-electric-blue to-purple-400 bg-clip-text text-transparent">
+							naudingos įžvalgos
+						</span>
 					</h2>
-					<p className="text-white/70 text-lg max-w-2xl mx-auto">
-						Naujausia informacija, naudingi patarimai ir įžvalgos
+
+					<p className="mx-auto max-w-2xl text-base leading-relaxed text-white/60 md:text-lg">
+						Naujausia informacija, praktiniai patarimai ir idėjos,
+						padėsiančios efektyviau išnaudoti interneto galimybes.
 					</p>
 				</motion.div>
 
-				{/* Swiper su taškeliais */}
 				<Swiper
 					slidesPerView={1}
-					spaceBetween={20}
-					loop={true}
-					grabCursor={true}
-					autoplay={{ delay: 7000, disableOnInteraction: false }}
+					spaceBetween={16}
+					loop={blogEntries.length > 3}
+					grabCursor
+					autoplay={{
+						delay: 7000,
+						disableOnInteraction: false,
+						pauseOnMouseEnter: true,
+					}}
 					pagination={{ clickable: true }}
-					speed={800}
-					centeredSlides={false}
-					modules={[Pagination, Navigation, Autoplay]}
+					speed={700}
+					modules={[Pagination, Autoplay]}
 					breakpoints={{
 						640: {
-							// telefonai
 							slidesPerView: 1,
 							spaceBetween: 20,
 						},
 						768: {
-							// planšetės / mid ekranai
 							slidesPerView: 2,
 							spaceBetween: 20,
 						},
 						1200: {
-							// dideli ekranai
 							slidesPerView: 3,
-							spaceBetween: 30,
+							spaceBetween: 24,
 						},
 					}}
-					className="custom-swiper"
+					className="blog-swiper !pb-14"
 				>
 					{blogEntries.map((entry, index) => (
-						<SwiperSlide key={index} className="h-auto">
-							<div className="card group hover:border-electric-blue/30 transition-colors duration-300 flex flex-col h-full">
-								<div className="aspect-w-16 aspect-h-9 mb-4">
+						<SwiperSlide
+							key={entry.url || index}
+							className="!h-auto"
+						>
+							<motion.article
+								initial={{ opacity: 0, y: 20 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								viewport={{ once: true, amount: 0.2 }}
+								transition={{
+									duration: 0.45,
+									delay: (index % 3) * 0.08,
+								}}
+								className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-dark-surface-2 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30"
+							>
+								<Link
+									to={entry.url}
+									className="relative block aspect-[16/10] overflow-hidden bg-white/[0.03]"
+								>
 									<img
 										src={entry.image}
 										alt={entry.title}
-										className="object-cover w-auto h-16"
+										loading="lazy"
+										className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
 									/>
-								</div>
-								<h3 className="text-xl font-bold mb-2">{entry.title}</h3>
-								<p className="text-white/70 flex-grow line-clamp-2">
-									{entry.excerpt}
-								</p>
-								<Link
-									to={entry.url}
-									className="text-electric-blue font-bold hover:text-electric-blue/70 transition-colors duration-300 mt-auto"
-								>
-									Skaityti daugiau
+
+									<div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60" />
 								</Link>
-							</div>
+
+								<div className="flex flex-1 flex-col p-6">
+									<h3 className="mb-3 text-lg font-bold leading-snug text-white transition-colors duration-300 group-hover:text-electric-blue md:text-xl">
+										<Link to={entry.url}>
+											{entry.title}
+										</Link>
+									</h3>
+
+									<p className="mb-6 line-clamp-3 flex-1 text-sm leading-relaxed text-white/55 md:text-base">
+										{entry.excerpt}
+									</p>
+
+									<Link
+										to={entry.url}
+										className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-electric-blue transition-colors duration-300 hover:text-white"
+									>
+										Skaityti daugiau
+										<ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+									</Link>
+								</div>
+							</motion.article>
 						</SwiperSlide>
 					))}
 				</Swiper>
-				{/* add a button to /blog */}
-				<div className="text-center mt-12">
+
+				<motion.div
+					initial={{ opacity: 0, y: 15 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true }}
+					transition={{ duration: 0.5 }}
+					className="mt-8 text-center"
+				>
 					<Link
 						to="/blog"
-						className="inline-block px-6 py-3 button-primary text-white font-bold"
+						className="button-primary group inline-flex items-center gap-3"
 					>
 						Peržiūrėti visus įrašus
+						<ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
 					</Link>
-				</div>
+				</motion.div>
 			</div>
+
+			<style>{`
+				.blog-swiper .swiper-pagination {
+					bottom: 0;
+				}
+
+				.blog-swiper .swiper-pagination-bullet {
+					width: 7px;
+					height: 7px;
+					background: rgba(255, 255, 255, 0.3);
+					opacity: 1;
+					transition: all 0.3s ease;
+				}
+
+				.blog-swiper .swiper-pagination-bullet-active {
+					width: 22px;
+					border-radius: 10px;
+					background: #3b82f6;
+				}
+			`}</style>
 		</section>
 	);
 };

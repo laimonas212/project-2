@@ -31,7 +31,7 @@ const Privalumai = () => {
 				<p className="text-white/70 text-lg max-w-2xl mx-auto">
 					Šiandien daugiau nei 80 % klientų pirmiausia informacijos
 					ieško internete. Jeigu jūsų svetainė lėta, nepatogi ar
-					pasenusi – konkurentas laimės klientą. Profesionalus
+					pasenusi - konkurentas laimės klientą. Profesionalus
 					interneto svetainių kūrimas užtikrina, kad:
 				</p>
 			</motion.div>

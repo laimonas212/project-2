@@ -79,7 +79,7 @@ const DomenoPasirinkimas = () => {
 					</h1>
 
 					<h3 className="text-white/70 mb-6">
-						Domenas – tai jūsų verslo adresas internete. Tinkamai
+						Domenas - tai jūsų verslo adresas internete. Tinkamai
 						pasirinktas domeno pavadinimas gali padėti išsiskirti,
 						geriau pozicionuoti savo svetainę „Google“ paieškoje ir
 						sukurti patikimą pirmą įspūdį.
@@ -90,7 +90,7 @@ const DomenoPasirinkimas = () => {
 					</h2>
 					<p className="text-white/70 mb-6">
 						Trumpas ir lengvai įsimenamas domenas yra raktas į
-						sėkmę. Venkite sudėtingų raidžių derinių ar skaičių –
+						sėkmę. Venkite sudėtingų raidžių derinių ar skaičių -
 						kuo paprasčiau, tuo geriau. Pvz., <em>manoimone.lt</em>{" "}
 						visada bus aiškiau nei <em>mano-imone123.lt</em>.
 					</p>
@@ -113,7 +113,7 @@ const DomenoPasirinkimas = () => {
 						Lietuvoje veikiantiems verslams labiausiai tinka{" "}
 						<strong>.lt</strong> domenas. Jei planuojate tarptautinę
 						veiklą, verta pagalvoti apie <strong>.com</strong> ar{" "}
-						<strong>.eu</strong>. Svarbiausia – pasirinkti galūnę,
+						<strong>.eu</strong>. Svarbiausia - pasirinkti galūnę,
 						atitinkančią jūsų auditoriją.
 					</p>
 
@@ -122,7 +122,7 @@ const DomenoPasirinkimas = () => {
 					</h2>
 					<p className="text-white/70 mb-6">
 						Domenas turėtų stiprinti jūsų prekės ženklą. Jei
-						pavadinimas unikalus ir lengvai atpažįstamas – klientams
+						pavadinimas unikalus ir lengvai atpažįstamas - klientams
 						bus lengviau jus prisiminti. Tokiu būdu domenas tampa ne
 						tik adresu, bet ir verslo identiteto dalimi.
 					</p>
@@ -141,7 +141,7 @@ const DomenoPasirinkimas = () => {
 					<p className="text-white/70 mb-6">
 						Tinkamai pasirinktas domenas yra ilgalaikė investicija į
 						jūsų verslo matomumą internete. Paprastumas, tinkama
-						galūnė, raktažodžiai ir prekės ženklo stiprinimas –
+						galūnė, raktažodžiai ir prekės ženklo stiprinimas -
 						pagrindiniai kriterijai, į kuriuos verta atsižvelgti.
 					</p>
 

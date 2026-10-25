@@ -181,7 +181,7 @@ const Kontaktai = () => {
 			</div>
 
 			<Helmet>
-				<title>Kontaktai – Gaukite pasiūlymą | Amber Web</title>
+				<title>Kontaktai - Gaukite pasiūlymą | Amber Web</title>
 				<meta
 					name="description"
 					content="Susisiekite su Amber Web dėl internetinės svetainės ar el. parduotuvės kūrimo. Aptarkime Jūsų projektą ir paruoškime individualų pasiūlymą."
@@ -430,7 +430,7 @@ const Kontaktai = () => {
 								<div>
 									<p>Darbo laikas</p>
 									<p className="text-white font-medium mt-1">
-										I–V: 10:00–18:00
+										I-V: 10:00-18:00
 									</p>
 								</div>
 							</div>

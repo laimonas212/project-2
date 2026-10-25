@@ -148,7 +148,7 @@ const KlaidosKuriasDaroVerslai = () => {
 					</h2>
 					<p className="text-white/70 mb-6">
 						Net ir gražiausia svetainė nebus naudinga, jei jos
-						niekas neranda. Dažna klaida – ignoruoti SEO (paieškos
+						niekas neranda. Dažna klaida - ignoruoti SEO (paieškos
 						sistemų optimizavimą). Tinkamai parinkti raktiniai
 						žodžiai, meta aprašymai, greitas užkrovimo laikas ir
 						kokybiškas turinys padės svetainei būti lengviau

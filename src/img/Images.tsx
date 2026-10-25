@@ -106,10 +106,6 @@ import prisipuskSypsenaDesktop from "././projects/prisipusk-sypsena/desktop.webp
 import prisipuskSypsenaTablet from "././projects/prisipusk-sypsena/tablet.webp";
 import prisipuskSypsenaMobile from "././projects/prisipusk-sypsena/mobile.webp";
 
-import proIdeaDesktop from "././projects/pro-idea/desktop.webp";
-import proIdeaTablet from "././projects/pro-idea/tablet.webp";
-import proIdeaMobile from "././projects/pro-idea/mobile.webp";
-
 import provansoSvajosDesktop from "././projects/provanso-svajos/desktop.webp";
 import provansoSvajosTablet from "././projects/provanso-svajos/tablet.webp";
 import provansoSvajosMobile from "././projects/provanso-svajos/mobile.webp";
@@ -121,6 +117,10 @@ import puppyYogaMetaMobile from "././projects/puppy-yoga-meta/mobile.webp";
 import smaragdoUostasDesktop from "././projects/smaragdo-uostas/desktop.webp";
 import smaragdoUostasTablet from "././projects/smaragdo-uostas/tablet.webp";
 import smaragdoUostasMobile from "././projects/smaragdo-uostas/mobile.webp";
+
+import smokedropDesktop from "././projects/smokedrop/desktop.webp";
+import smokedropTablet from "././projects/smokedrop/tablet.webp";
+import smokedropMobile from "././projects/smokedrop/mobile.webp";
 
 import sssprendimaiDesktop from "././projects/sssprendimai/desktop.webp";
 import sssprendimaiTablet from "././projects/sssprendimai/tablet.webp";
@@ -149,7 +149,6 @@ import veselovaiteMobile from "././projects/veselovaite/mobile.webp";
 import romastaDesktop from "././projects/romasta/desktop.webp";
 import romastaTablet from "././projects/romasta/tablet.webp";
 import romastaMobile from "././projects/romasta/mobile.webp";
-
 
 // blog
 import divi5 from "././blog/divi-5-ir-wordpress-svetainiu-kurimas-verslui.webp";
@@ -524,6 +523,11 @@ const Images = {
 			desktop: smaragdoUostasDesktop,
 			tablet: smaragdoUostasTablet,
 			mobile: smaragdoUostasMobile,
+		},
+		smokedrop: {
+			desktop: smokedropDesktop,
+			tablet: smokedropTablet,
+			mobile: smokedropMobile,
 		},
 		sssprendimai: {
 			desktop: sssprendimaiDesktop,

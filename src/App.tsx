@@ -56,6 +56,7 @@ import PigiosSvetaines from "./pages/blog/PigiosSvetaines";
 import Divi5Straipsnis from "./pages/blog/Divi5";
 import Akmenukas from "./pages/projektai/akmenukas";
 import DentesVitae from "./pages/projektai/dentes-vitae";
+import Smokedrop from "./pages/projektai/smokedrop";
 import VersloTinklarastis from "./pages/blog/VersloTinklarastis";
 import DomenoPasirinkimas from "./pages/blog/DomenoPasirinkimas";
 import SenosSvetainesAtnaujinimasArNauja from "./pages/blog/SenosSvetainesAtnaujinimasArNauja";
@@ -227,6 +228,10 @@ function App() {
 							<Route
 								path="/projektai/smaragdo-uostas"
 								element={<Smaragdouostas />}
+							/>
+							<Route
+								path="/projektai/smokedrop"
+							element={<Smokedrop />}
 							/>
 							<Route
 								path="/projektai/sssprendimai"
