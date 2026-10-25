@@ -93,7 +93,7 @@ const CardSwiper: React.FC = () => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	return (
-		<section className="relative overflow-hidden py-20 md:py-28">
+		<section className="relative overflow-hidden py-20">
 			<div className="container relative z-10 mx-auto px-4">
 				<motion.div
 					initial={{ opacity: 0, y: 24 }}

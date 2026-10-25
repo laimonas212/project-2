@@ -78,6 +78,14 @@ import holistineKosmetologijaDesktop from "././projects/holistine-kosmetologija/
 import holistineKosmetologijaTablet from "././projects/holistine-kosmetologija/tablet.webp";
 import holistineKosmetologijaMobile from "././projects/holistine-kosmetologija/mobile.webp";
 
+import inviteuDesktop from "././projects/inviteu/desktop.webp";
+import inviteuTablet from "././projects/inviteu/tablet.webp";
+import inviteuMobile from "././projects/inviteu/mobile.webp";
+
+import dtrDesktop from "././projects/dust2riches/desktop.webp";
+import dtrTablet from "././projects/dust2riches/tablet.webp";
+import dtrMobile from "././projects/dust2riches/mobile.webp";
+
 import kaliauseDesktop from "././projects/kaliause/desktop.webp";
 import kaliauseTablet from "././projects/kaliause/tablet.webp";
 import kaliauseMobile from "././projects/kaliause/mobile.webp";
@@ -474,10 +482,20 @@ const Images = {
 			tablet: brangusAutoTablet,
 			mobile: brangusAutoMobile,
 		},
+		dust2riches: {
+			desktop: dtrDesktop,
+			tablet: dtrTablet,
+			mobile: dtrMobile,
+		},
 		gavorkaArt: {
 			desktop: gavorkaArtDesktop,
 			tablet: gavorkaArtTablet,
 			mobile: gavorkaArtMobile,
+		},
+		inviteu: {
+			desktop: inviteuDesktop,
+			tablet: inviteuTablet,
+			mobile: inviteuMobile,
 		},
 		eriola: {
 			desktop: eriolaDesktop,

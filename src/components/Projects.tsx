@@ -78,6 +78,127 @@ const projects = [
 			"Sukurta platforma klientams supažindinti su naujais BBQ drop'ais",
 		],
 	},
+	// InviteU
+	{
+		id: "inviteu",
+		title: "InviteU",
+		subtitle: "Automatizuota skaitmeninių vestuvių kvietimų platforma",
+
+		description:
+			"InviteU - automatizuota skaitmeninių vestuvių kvietimų platforma, leidžianti poroms išsirinkti patinkantį dizainą ir vos atlikus užsakymą gauti savo individualią vestuvių svetainę. Sukurta sistema automatiškai apdoroja kliento pateiktus duomenis, paruošia naują svetainę pagal pasirinktą dizaino šabloną ir sukonfigūruoja jos turinį. Kiekviena pora gauna atskirą, jai pritaikytą internetinę erdvę, kurioje gali pateikti šventės informaciją, dalintis nuotraukomis, nurodyti šventės vietą bei programą ir rinkti svečių atsakymus per integruotą RSVP sistemą. Projektas apima ne tik vizualinę platformos dalį, bet ir individualiai sukurtą automatizavimo mechanizmą, kuris sujungia užsakymo procesą, duomenų apdorojimą ir naujų svetainių generavimą į vientisą sistemą.",
+
+		image: Images.projects.inviteu,
+		images: {
+			desktop: Images.projects.inviteu.desktop,
+			tablet: Images.projects.inviteu.tablet,
+			mobile: Images.projects.inviteu.mobile,
+		},
+
+		alt: "InviteU - automatizuota skaitmeninių vestuvių kvietimų platforma",
+
+		tags: [
+			"WordPress",
+			"React",
+			"Individualus programavimas",
+			"Procesų automatizavimas",
+			"Svetainių generavimas",
+			"Dinaminiai šablonai",
+			"Skaitmeniniai kvietimai",
+			"Vestuvių svetainės",
+			"RSVP sistema",
+			"Svečių valdymas",
+			"Responsive dizainas",
+			"El. komercija",
+		],
+
+		link: "https://inviteu.lt",
+
+		metaTitle: "InviteU - skaitmeniniai vestuvių kvietimai | Amberweb",
+		metaDescription:
+			"InviteU - automatizuota skaitmeninių vestuvių kvietimų platforma. Pasirinkus dizainą, sistema automatiškai sukuria individualią vestuvių svetainę pagal kliento pateiktus duomenis.",
+
+		goals: [
+			"Sukurti automatizuotą skaitmeninių vestuvių kvietimų platformą",
+			"Leisti klientams savarankiškai pasirinkti dizainą, pateikti duomenis ir užsisakyti individualią svetainę",
+			"Automatizuoti naujų svetainių kūrimo, konfigūravimo ir turinio paruošimo procesą",
+			"Sukurti patogią sistemą vestuvių informacijai pateikti ir svečių atsakymams valdyti",
+		],
+
+		solutions: [
+			"Individualiai sukurta automatizuota užsakymų ir svetainių generavimo sistema",
+			"Automatinis naujos svetainės sukūrimas pagal kliento pasirinktą dizainą ir pateiktus duomenis",
+			"Dinaminiai dizaino šablonai, leidžiantys tą pačią sistemą pritaikyti skirtingiems klientams",
+			"Automatizuotas užsakymo duomenų apdorojimas ir svetainės konfigūravimas",
+			"Integruota RSVP sistema ir svečių atsakymų valdymas",
+			"Moderni, mobiliesiems įrenginiams pritaikyta naudotojo sąsaja",
+		],
+
+		results: [
+			"Sukurta automatizuota platforma, leidžianti klientams savarankiškai užsisakyti skaitmeninius kvietimus",
+			"Įgyvendintas automatinis individualių vestuvių svetainių generavimas pagal pasirinktus dizainus ir kliento duomenis",
+			"Sumažintas rankinio darbo poreikis kuriant ir konfigūruojant naujas klientų svetaines",
+			"Sujungtas užsakymo, svetainės sukūrimo ir svečių valdymo procesas į vieną sistemą",
+		],
+	},
+	// Dust to Riches
+	{
+		id: "dusttoriches",
+		title: "Dust to Riches",
+		subtitle: "Gamifikuota buities darbų valdymo platforma",
+
+		description:
+			"Dust to Riches - asmeninis Web App projektas, kurio idėja - paversti kasdienius buities darbus nuotykiu. Vietoje įprasto užduočių sąrašo kuriama žaidybinė patirtis, skatinanti į kasdienes pareigas pažvelgti kitaip. Projektas orientuotas į gamifikacijos principų pritaikymą, interaktyvią naudotojo patirtį ir individualiai kuriamą aplikacijos funkcionalumą. Tai savarankiškai vystomas skaitmeninis produktas, apimantis aplikacijos koncepciją, sąsajos dizainą, programavimą ir techninę architektūrą.",
+
+		image: Images.projects.dust2riches,
+		images: {
+			desktop: Images.projects.dust2riches.desktop,
+			tablet: Images.projects.dust2riches.tablet,
+			mobile: Images.projects.dust2riches.mobile,
+		},
+
+		alt: "Dust to Riches - žaidybinė buities darbų valdymo Web App platforma",
+
+		tags: [
+			"Web App",
+			"Gamifikacija",
+			"Individualus programavimas",
+			"UI/UX dizainas",
+			"Interaktyvi aplikacija",
+			"Užduočių valdymas",
+			"Žaidybinė patirtis",
+			"Responsive dizainas",
+			"Skaitmeninio produkto kūrimas",
+		],
+
+		link: "https://www.dusttoriches.app",
+
+		metaTitle:
+			"Dust to Riches - paversk buities darbus nuotykiu | Amberweb",
+		metaDescription:
+			"Dust to Riches - asmeninis gamifikuotos Web App platformos projektas, kuriame kasdieniai buities darbai tampa žaidybine patirtimi.",
+
+		goals: [
+			"Sukurti išskirtinę Web App platformą, kuri kasdienius buities darbus paverstų įtraukiančia veikla",
+			"Pritaikyti gamifikacijos principus kasdienių užduočių valdymui",
+			"Sukurti intuityvią ir vizualiai patrauklią naudotojo patirtį",
+			"Vystyti savarankišką skaitmeninį produktą su individualiu funkcionalumu",
+		],
+
+		solutions: [
+			"Individualiai kuriama Web App aplikacijos architektūra",
+			"Gamifikacijos principais paremta naudotojo patirtis",
+			"Interaktyvi sąsaja ir individualiai programuojamas funkcionalumas",
+			"Kasdienių užduočių pateikimas žaidybinėje aplinkoje",
+			"Prisitaikantis dizainas kompiuteriams ir mobiliesiems įrenginiams",
+		],
+
+		results: [
+			"Sukurtas savarankiškas Web App produkto projektas",
+			"Kasdienių buities darbų idėja paversta interaktyvia žaidybine patirtimi",
+			"Įgyvendinta individuali aplikacijos koncepcija ir naudotojo sąsaja",
+			"Sukurta bazė tolimesniam produkto funkcionalumo vystymui",
+		],
+	},
 	//  LŽSPA
 	{
 		id: "lzspa",

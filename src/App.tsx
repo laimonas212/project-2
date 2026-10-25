@@ -57,6 +57,8 @@ import Divi5Straipsnis from "./pages/blog/Divi5";
 import Akmenukas from "./pages/projektai/akmenukas";
 import DentesVitae from "./pages/projektai/dentes-vitae";
 import Smokedrop from "./pages/projektai/smokedrop";
+import Inviteu from "./pages/projektai/inviteu";
+import Dust2riches from "./pages/projektai/dusttoriches";
 import VersloTinklarastis from "./pages/blog/VersloTinklarastis";
 import DomenoPasirinkimas from "./pages/blog/DomenoPasirinkimas";
 import SenosSvetainesAtnaujinimasArNauja from "./pages/blog/SenosSvetainesAtnaujinimasArNauja";
@@ -161,6 +163,10 @@ function App() {
 								element={<LzspaPage />}
 							/>
 							<Route
+								path="/projektai/dusttoriches"
+								element={<Dust2riches />}
+							/>
+							<Route
 								path="/projektai/holistine-kosmetologija"
 								element={<HolistineKosmetologija />}
 							/>
@@ -183,6 +189,10 @@ function App() {
 							<Route
 								path="/projektai/esu-tau"
 								element={<Esutau />}
+							/>
+							<Route
+								path="/projektai/inviteu"
+								element={<Inviteu />}
 							/>
 							<Route
 								path="/projektai/angel-butikas"
@@ -231,7 +241,7 @@ function App() {
 							/>
 							<Route
 								path="/projektai/smokedrop"
-							element={<Smokedrop />}
+								element={<Smokedrop />}
 							/>
 							<Route
 								path="/projektai/sssprendimai"

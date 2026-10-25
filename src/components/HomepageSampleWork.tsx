@@ -8,14 +8,14 @@ import ProjectShowcase from "./ProjectShowcase";
 const HomepageSampleWork: React.FC = () => {
 	const projectsList = projects as Project[];
 
-	const projectOrder = ["smokedrop", "paparciopm", "romasta"];
+	const projectOrder = ["smokedrop", "inviteu", "dusttoriches"];
 
 	const firstThreeProjects = projectOrder
 		.map((id) => projectsList.find((project) => project.id === id))
 		.filter((project): project is Project => Boolean(project));
 
 	return (
-		<section className="relative overflow-hidden py-20 md:py-28">
+		<section className="relative overflow-hidden py-20">
 			{/* Background glow */}
 			<div className="pointer-events-none absolute inset-0 overflow-hidden">
 				<div className="absolute -left-40 top-20 h-[400px] w-[400px] rounded-full bg-electric-blue/[0.06] blur-[130px]" />
@@ -68,15 +68,15 @@ const HomepageSampleWork: React.FC = () => {
 								className="relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-dark-surface-2 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:shadow-[0_15px_50px_rgba(0,200,255,0.08)]"
 							>
 								{/* Project preview */}
-								<div className="relative overflow-hidden bg-black/20">
-									<div className="transition-transform duration-500 group-hover:scale-[1.015]">
-										<ProjectShowcase
-											images={project.images}
-											altTitle={project.title}
-										/>
-									</div>
+								<div className="relative aspect-[16/10] overflow-hidden bg-black/20">
+									<img
+										src={project.images.desktop}
+										alt={`${project.title} - svetainės dizainas`}
+										className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+										loading="lazy"
+									/>
 
-									<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+									<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
 									<div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/40 text-white opacity-0 backdrop-blur-md transition-all duration-300 group-hover:opacity-100">
 										<ArrowRight size={18} />
