@@ -55,6 +55,21 @@ const features = [
 	},
 ];
 
+const headingVariants = {
+	hidden: {
+		opacity: 0,
+		y: 20,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.6,
+			ease: "easeOut" as const,
+		},
+	},
+};
+
 const Features: React.FC<FeaturesProps> = ({ h1, introText, seoContent }) => {
 	return (
 		<section className="relative overflow-hidden py-20 md:py-28">
@@ -67,10 +82,10 @@ const Features: React.FC<FeaturesProps> = ({ h1, introText, seoContent }) => {
 			<div className="container relative z-10 mx-auto px-4">
 				{/* Section heading */}
 				<motion.div
-					initial={{ opacity: 0, y: 24 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial="hidden"
+					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
-					transition={{ duration: 0.6 }}
+					variants={headingVariants}
 					className="mx-auto mb-14 max-w-3xl text-center md:mb-16"
 				>
 					<div className="mb-6 inline-flex items-center gap-2 rounded-full border border-electric-blue/20 bg-electric-blue/[0.08] px-4 py-2 text-xs font-semibold uppercase tracking-wider text-electric-blue">
@@ -98,9 +113,10 @@ const Features: React.FC<FeaturesProps> = ({ h1, introText, seoContent }) => {
 				{/* SEO content */}
 				{seoContent && seoContent.length > 0 && (
 					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
+						initial="hidden"
+						whileInView="visible"
 						viewport={{ once: true }}
+						variants={headingVariants}
 						className="mx-auto mb-14 max-w-4xl space-y-4 text-base leading-relaxed text-white/60"
 					>
 						{seoContent.map((paragraph, index) => (
@@ -122,11 +138,9 @@ const Features: React.FC<FeaturesProps> = ({ h1, introText, seoContent }) => {
 								viewport={{ once: true, amount: 0.1 }}
 								transition={{
 									duration: 0.5,
-									delay: (index % 3) * 0.1,
+									delay: index * 0.1,
 								}}
-								className={`group relative h-full overflow-hidden rounded-2xl border border-white/[0.08] bg-dark-surface-2 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:shadow-[0_15px_45px_rgba(0,200,255,0.06)] sm:p-7 ${
-									index === 3 ? "xl:col-span-1" : ""
-								}`}
+								className="group relative h-full overflow-hidden rounded-2xl border border-white/[0.08] bg-dark-surface-2 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:shadow-[0_15px_45px_rgba(0,200,255,0.06)] sm:p-7"
 							>
 								{/* Hover glow */}
 								<div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-electric-blue/[0.04] blur-3xl transition-all duration-500 group-hover:bg-electric-blue/[0.12]" />
@@ -163,10 +177,10 @@ const Features: React.FC<FeaturesProps> = ({ h1, introText, seoContent }) => {
 
 				{/* CTA */}
 				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial="hidden"
+					whileInView="visible"
 					viewport={{ once: true }}
-					transition={{ duration: 0.5 }}
+					variants={headingVariants}
 					className="mt-12 flex flex-col items-center justify-between gap-6 rounded-2xl border border-electric-blue/15 bg-electric-blue/[0.04] p-7 sm:flex-row sm:p-9"
 				>
 					<div className="text-center sm:text-left">

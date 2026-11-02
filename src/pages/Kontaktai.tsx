@@ -320,7 +320,7 @@ const Kontaktai = () => {
 									<input
 										type="tel"
 										name="phone"
-										placeholder="+370 611 18874"
+										placeholder="+370 123 4567"
 										required
 										value={formData.phone}
 										onChange={handleChange}
