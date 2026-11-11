@@ -8,35 +8,217 @@
 			"interneto svetainių kūrimas",
 			"internetinių svetainių kūrimas",
 			"svetainės kūrimas",
-			"svetainių kūrimo paslaugos"
+			"svetainių kūrimo paslaugos",
+			"svetainių kūrimas verslui",
+			"profesionalios interneto svetainės"
 		],
-		"title": "Svetainių kūrimas - Amberweb",
-		"description": "Profesionalus svetainių kūrimas verslui. Modernios, greitos ir SEO optimizuotos WordPress svetainės su patogiu valdymu.",
+		"title": "Svetainių kūrimas verslui | WordPress svetainės - Amberweb",
+		"description": "Kuriame profesionalias WordPress interneto svetaines verslui. Individualus dizainas, patogus valdymas, mobilusis pritaikymas ir SEO pagrindai.",
 		"h1": "Svetainių kūrimas",
 		"contentHeading": "Svetainė, kuri dirba jūsų verslui",
-		"introText": "Kuriame modernias interneto svetaines verslui - nuo pirmos idėjos iki pilnai veikiančio ir lengvai valdomo projekto.",
+		"introText": "Kuriame profesionalias interneto svetaines įmonėms, paslaugų teikėjams ir augantiems verslams. Nuo pirmos idėjos ir struktūros planavimo iki individualaus dizaino, programavimo ir galutinio paleidimo. Kiekvieną projektą pritaikome konkretiems verslo tikslams, kad svetainė būtų ne tik reprezentatyvi, bet ir padėtų pritraukti klientų.",
 		"seoContent": [
 			{
-				"heading": "Kodėl svarbi profesionali interneto svetainė",
+				"heading": "Kodėl verslui reikalinga profesionali interneto svetainė?",
 				"blocks": [
 					{
 						"type": "text",
-						"content": "Profesionali interneto svetainė šiandien yra vienas svarbiausių verslo įrankių. Ji turi ne tik gerai atrodyti, bet ir greitai veikti, būti patogi lankytojams bei paruošta paieškos sistemoms."
-					}
-				]
-			},
-			{
-				"heading": "Svetainė, kurią patogu valdyti",
-				"blocks": [
-					{
-						"type": "text",
-						"content": "Kuriame WordPress svetaines, pritaikytas konkrečiam verslui, jo auditorijai ir tikslams. Kiekvienam projektui skiriame dėmesį struktūrai, dizainui, turiniui ir techniniam atlikimui."
+						"content": "Interneto svetainė dažnai yra pirmoji vieta, kurioje potencialus klientas susipažįsta su jūsų įmone. Dar prieš paskambindamas ar pateikdamas užklausą žmogus nori suprasti, kokias paslaugas siūlote, kuo išsiskiriate ir ar galite išspręsti jo problemą. Todėl profesionalus svetainių kūrimas prasideda ne nuo spalvų ar efektų, o nuo aiškaus verslo ir jo klientų poreikių supratimo."
 					},
 					{
 						"type": "text",
-						"content": "Svetainę gaunate su patogia administravimo sistema, todėl vėliau galėsite patys keisti tekstus, nuotraukas ir kitą turinį."
+						"content": "Gerai suplanuota svetainė padeda pristatyti jūsų veiklą, atsakyti į dažniausiai užduodamus klausimus, parodyti atliktus darbus ir paskatinti lankytoją susisiekti. Ji veikia visą parą, todėl klientai gali rasti informaciją apie jūsų paslaugas bet kuriuo metu."
+					},
+					{
+						"type": "text",
+						"content": "Svarbu, kad svetainė būtų ne tik vizualiai patraukli. Ji turi greitai veikti, patogiai naudotis telefone, turėti logišką struktūrą ir aiškius veiksmų mygtukus. Būtent šių elementų visuma sukuria gerą lankytojo patirtį ir padeda svetainę paversti naudingu verslo įrankiu."
 					}
-				]
+				],
+				"layout": "editorial"
+			},
+			{
+				"heading": "Kokias interneto svetaines kuriame?",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "Kiekvienas verslas turi skirtingus tikslus, todėl nėra vieno universalaus svetainės sprendimo. Vieniems svarbiausia pristatyti įmonę ir jos paslaugas, kitiems – parodyti darbų portfolio, surinkti užklausas ar suteikti klientams galimybę registruotis. Svetainės struktūrą ir funkcionalumą parenkame pagal konkrečią situaciją."
+					},
+					{
+						"type": "text",
+						"content": "Reprezentacinės svetainės – skirtos įmonėms, kurios nori profesionaliai pristatyti savo veiklą, komandą, paslaugas ir kontaktus. Tai aiški, patikimumą kurianti internetinė erdvė jūsų verslui."
+					},
+					{
+						"type": "text",
+						"content": "Paslaugų svetainės – pritaikytos specialistams ir paslaugų įmonėms. Jose daugiausia dėmesio skiriama paslaugų pristatymui, naudai klientui, atliktiems darbams ir patogiam užklausos pateikimui."
+					},
+					{
+						"type": "text",
+						"content": "Įmonių svetainės – didesnės struktūros projektai, kuriuose gali būti atskiri paslaugų skyriai, naujienos, projektų pristatymai, darbuotojų informacija, kelių kalbų turinys ir kitos verslui reikalingos funkcijos."
+					},
+					{
+						"type": "text",
+						"content": "Individualūs interneto sprendimai – kai standartinės svetainės struktūros nepakanka ir reikia papildomų funkcijų, integracijų ar pagal specifinius verslo procesus pritaikytos vartotojo patirties."
+					},
+					{
+						"type": "text",
+						"content": "Jeigu planuojate prekiauti internetu, siūlome atskirą sprendimą – WooCommerce el. parduotuvės kūrimą. Daugiau apie šią paslaugą galite sužinoti mūsų el. parduotuvių kūrimo puslapyje."
+					}
+				],
+				"layout": "cards"
+			},
+			{
+				"heading": "Svetainių kūrimas su WordPress – lankstus sprendimas verslui",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "Daugumą verslo interneto svetainių kuriame naudodami WordPress turinio valdymo sistemą. Tai plačiai naudojama platforma, leidžianti patogiai administruoti svetainės turinį, plėsti funkcionalumą ir pritaikyti projektą besikeičiantiems verslo poreikiams."
+					},
+					{
+						"type": "text",
+						"content": "Po projekto užbaigimo nereikia kiekvieno nedidelio pakeitimo patikėti programuotojui. Prisijungę prie administravimo aplinkos galėsite patys keisti tekstus, nuotraukas, naujienas ir kitą informaciją. Tai ypač patogu įmonėms, kurios nori savarankiškai atnaujinti savo svetainę."
+					},
+					{
+						"type": "text",
+						"content": "Dizainui ir svetainės struktūrai galime naudoti Divi įrankius, leidžiančius kurti individualius, vizualiai išskirtinius puslapius. Sprendimus pritaikome projekto poreikiams, o ne bandome kiekvieną verslą sutalpinti į vieną iš anksto paruoštą šabloną."
+					},
+					{
+						"type": "text",
+						"content": "WordPress taip pat suteikia galimybę ateityje plėsti svetainę: pridėti naujus paslaugų puslapius, tinklaraštį, papildomas formas, integracijas ar el. prekybos funkcionalumą. Todėl svetainė gali augti kartu su jūsų verslu."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Individualus dizainas ir patogi vartotojo patirtis",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "Svetainės dizainas turi ne tik atspindėti įmonės vizualinį identitetą, bet ir padėti lankytojui greitai rasti reikalingą informaciją. Planuodami puslapio struktūrą atsižvelgiame į tai, kas yra jūsų klientai, kokių klausimų jie turi ir kokį veiksmą norime paskatinti atlikti."
+					},
+					{
+						"type": "text",
+						"content": "Aiški navigacija, tinkamai išdėstyti turinio blokai, įskaitomi tekstai ir pastebimi kontaktiniai mygtukai leidžia lankytojui lengviau orientuotis. Vengiame nereikalingo sudėtingumo – kiekvienas svetainės elementas turi turėti aiškią paskirtį."
+					},
+					{
+						"type": "text",
+						"content": "Dizainą pritaikome skirtingiems ekranams: kompiuteriams, planšetėms ir išmaniesiems telefonams. Mobilioji versija nėra tiesiog sumažinta kompiuterio kopija – joje taip pat turi būti patogu skaityti informaciją, naršyti ir susisiekti su įmone."
+					}
+				],
+				"layout": "editorial"
+			},
+			{
+				"heading": "SEO paruošimas – kad svetainę galėtų rasti Google",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "Profesionalus interneto svetainių kūrimas turi apimti ir pasiruošimą paieškos sistemoms. Dar kuriant svetainę svarbu tinkamai suplanuoti puslapių struktūrą, antraštes, adresus ir turinio išdėstymą. Tai sudaro techninį ir struktūrinį pagrindą tolimesnei SEO optimizacijai."
+					},
+					{
+						"type": "text",
+						"content": "Ruošdami svetainę pasirūpiname logiška antraščių hierarchija, prasmingais puslapių pavadinimais, meta duomenimis, vidinėmis nuorodomis ir tinkamai pateikiamu vaizdų turiniu. Taip pat atsižvelgiame į svetainės įkėlimo greitį ir mobilųjį pritaikymą."
+					},
+					{
+						"type": "text",
+						"content": "Svarbu suprasti, kad techninis SEO paruošimas savaime negarantuoja pirmųjų Google pozicijų. Rezultatams įtakos turi turinio kokybė, konkurencija, svetainės autoritetas ir nuoseklus optimizavimas po paleidimo. Tačiau tinkamas pagrindas leidžia išvengti dalies techninių kliūčių ateityje."
+					},
+					{
+						"type": "text",
+						"content": "Jeigu norite daugiau dėmesio skirti esamos svetainės matomumui paieškos sistemose, galite susipažinti ir su mūsų SEO optimizavimo paslauga."
+					}
+				],
+				"layout": "highlight"
+			},
+			{
+				"heading": "Kaip vyksta interneto svetainės kūrimo procesas?",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "1. Poreikių ir tikslų aptarimas. Pirmiausia išsiaiškiname, kokia veikla užsiimate, kas yra jūsų klientai, kokias paslaugas norite pristatyti ir kokio rezultato tikitės iš svetainės. Aptariame funkcionalumą, terminus ir biudžetą."
+					},
+					{
+						"type": "text",
+						"content": "2. Struktūros planavimas. Sudėliojame pagrindinius puslapius, navigaciją ir informacijos hierarchiją. Šiame etape svarbu numatyti, kaip lankytojas judės svetainėje ir kaip lengvai ras jam reikalingą informaciją."
+					},
+					{
+						"type": "text",
+						"content": "3. Dizaino kūrimas. Parenkame vizualinę kryptį, spalvas, tipografiją ir turinio pateikimo būdus. Dizainą deriname prie įmonės identiteto ir planuojamos vartotojo patirties."
+					},
+					{
+						"type": "text",
+						"content": "4. Programavimas ir įgyvendinimas. Sukuriame svetainę naudodami WordPress, įgyvendiname suplanuotus puslapius, funkcijas ir reikalingas integracijas. Pritaikome svetainę skirtingiems ekranams."
+					},
+					{
+						"type": "text",
+						"content": "5. Turinio įkėlimas ir SEO paruošimas. Įkeliame tekstus, nuotraukas ir kitą medžiagą, sutvarkome pagrindinius SEO elementus bei patikriname puslapių struktūrą."
+					},
+					{
+						"type": "text",
+						"content": "6. Testavimas ir paleidimas. Patikriname nuorodas, formas, pagrindines funkcijas, atvaizdavimą mobiliuosiuose įrenginiuose ir svetainės veikimą. Atlikę paskutinius pataisymus, paruošiame projektą paleidimui."
+					},
+					{
+						"type": "text",
+						"content": "7. Perdavimo ir administravimo instrukcijos. Užbaigus projektą suteikiame prieigą prie svetainės administravimo aplinkos ir paaiškiname, kaip savarankiškai atnaujinti pagrindinį turinį."
+					}
+				],
+				"layout": "steps"
+			},
+			{
+				"heading": "Kiek kainuoja interneto svetainės kūrimas?",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "Svetainių kūrimo kaina priklauso nuo projekto apimties ir sudėtingumo. Nedidelė reprezentacinė svetainė, kurioje pristatomos pagrindinės įmonės paslaugos, reikalauja kitokio darbo nei didesnė įmonės svetainė su individualiais puslapiais, keliomis kalbomis ar papildomomis integracijomis."
+					},
+					{
+						"type": "text",
+						"content": "Pagrindiniai kainą lemiantys veiksniai yra puslapių skaičius, dizaino individualumas, turinio paruošimas, funkcionalumas, integracijos ir papildomi techniniai reikalavimai. Taip pat svarbu, ar klientas pateikia paruoštus tekstus ir nuotraukas, ar jų paruošimas įtraukiamas į projektą."
+					},
+					{
+						"type": "text",
+						"content": "Prieš pradėdami darbus išsiaiškiname poreikius ir pateikiame konkretų pasiūlymą. Taip iš anksto aišku, kokie darbai bus atlikti, kokia projekto apimtis ir kokia numatoma kaina."
+					},
+					{
+						"type": "text",
+						"content": "Jeigu norite susipažinti su kainodara išsamiau, apsilankykite svetainės kūrimo kainos puslapyje."
+					}
+				],
+				"layout": "highlight"
+			},
+			{
+				"heading": "Ką gaunate užbaigus svetainės kūrimo darbus?",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "Užbaigę projektą perduodame veikiančią interneto svetainę su sutarta struktūra ir funkcionalumu. Siekiame, kad galutinis rezultatas būtų ne tik vizualiai išbaigtas, bet ir patogus naudoti tiek lankytojams, tiek svetainės administratoriui."
+					},
+					{
+						"type": "text",
+						"content": "Svetainė pritaikoma kompiuteriams, planšetėms ir telefonams, įdiegiama turinio valdymo sistema, paruošiami pagrindiniai SEO elementai ir patikrinamos pagrindinės funkcijos. Taip pat perduodame administravimo prieigą."
+					},
+					{
+						"type": "text",
+						"content": "Po paleidimo galėsite savarankiškai atnaujinti svetainės turinį arba, esant poreikiui, kreiptis dėl papildomų pakeitimų, funkcijų ar techninės priežiūros. Svetainė neturi tapti užbaigtu ir nejudinamu projektu – ją galima toliau tobulinti augant jūsų verslui."
+					}
+				],
+				"layout": "editorial"
+			},
+			{
+				"heading": "Kodėl verta rinktis Amberweb?",
+				"blocks": [
+					{
+						"type": "text",
+						"content": "Kiekvieną projektą vertiname kaip individualų verslo sprendimą, o ne vien grafinį darbą. Prieš kurdami svetainę siekiame suprasti, ką jūsų verslas siūlo, kokių klientų ieško ir kokią funkciją naujoji svetainė turi atlikti."
+					},
+					{
+						"type": "text",
+						"content": "Dėmesį skiriame aiškiai struktūrai, šiuolaikiškam dizainui, patogiam administravimui ir techniniam įgyvendinimui. Naudojame WordPress platformą, todėl klientas gauna lankstų sprendimą, kurį galima savarankiškai valdyti ir ateityje plėsti."
+					},
+					{
+						"type": "text",
+						"content": "Bendradarbiavimas nesibaigia vien svetainės paleidimu. Galime padėti ir vėliau – atnaujinti turinį, tobulinti svetainę, spręsti technines problemas ar įgyvendinti naujus verslo poreikius."
+					}
+				],
+				"layout": "highlight"
 			}
 		],
 		"contentBlocks": [
@@ -55,22 +237,58 @@
 				"title": "WordPress svetainių kūrimas"
 			},
 			{
-				"slug": "e-parduotuviu-kurimas",
+				"slug": "el-parduotuviu-kurimas",
 				"title": "El. parduotuvių kūrimas"
 			},
 			{
 				"slug": "svetaines-kurimo-kaina",
 				"title": "Svetainės kūrimo kaina"
+			},
+			{
+				"slug": "seo-optimizavimas",
+				"title": "SEO optimizavimas"
 			}
 		],
 		"customFaq": [
 			{
-				"question": "Kiek kainuoja svetainės kūrimas?",
-				"answer": "Kaina priklauso nuo svetainės dydžio, dizaino, funkcionalumo ir turinio. Įvertinę jūsų poreikius pateikiame konkretų pasiūlymą."
+				"question": "Kiek kainuoja interneto svetainės kūrimas?",
+				"answer": "Kaina priklauso nuo puslapių skaičiaus, dizaino individualumo, funkcionalumo, turinio ir reikalingų integracijų. Įvertinę jūsų poreikius pateikiame konkretų pasiūlymą."
 			},
 			{
 				"question": "Kiek laiko užtrunka svetainės kūrimas?",
-				"answer": "Paprastą reprezentacinę svetainę dažniausiai sukuriame per 1-2 savaites nuo visos reikalingos medžiagos gavimo."
+				"answer": "Paprastą reprezentacinę svetainę dažniausiai sukuriame per 1–2 savaites nuo visos reikalingos medžiagos gavimo. Didesni projektai su individualiu funkcionalumu gali užtrukti ilgiau."
+			},
+			{
+				"question": "Ar galėsiu pats administruoti savo interneto svetainę?",
+				"answer": "Taip. Svetaines kuriame su WordPress turinio valdymo sistema, todėl galėsite patys keisti tekstus, nuotraukas, naujienas ir kitą informaciją."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta telefonams?",
+				"answer": "Taip. Kuriamas svetaines pritaikome kompiuteriams, planšetėms ir išmaniesiems telefonams, kad turinys ir funkcijos būtų patogūs naudoti skirtinguose ekranuose."
+			},
+			{
+				"question": "Ar svetainė bus paruošta Google paieškai?",
+				"answer": "Taip. Atliekame pagrindinį SEO paruošimą: sutvarkome puslapių struktūrą, antraštes, meta duomenis ir kitus svarbius techninius elementus. Aukštoms Google pozicijoms pasiekti papildomai reikalingas kokybiškas turinys ir nuoseklus SEO darbas."
+			},
+			{
+				"question": "Ar kuriate svetaines tik pagal paruoštus šablonus?",
+				"answer": "Ne. Svetainės struktūrą ir dizainą pritaikome konkrečiam projektui. Naudojame WordPress ir Divi įrankius, kurie leidžia kurti individualius vizualinius sprendimus."
+			},
+			{
+				"question": "Ar galiu vėliau papildyti arba išplėsti svetainę?",
+				"answer": "Taip. WordPress leidžia papildyti svetainę naujais puslapiais, funkcijomis, integracijomis ir kitais sprendimais pagal augančius verslo poreikius."
+			},
+			{
+				"question": "Ar padedate perkelti jau veikiančią svetainę?",
+				"answer": "Galime aptarti esamos svetainės perkėlimą, atnaujinimą ar atkūrimą. Darbų apimtis priklauso nuo dabartinės sistemos, turinio ir techninės būklės."
+			},
+			{
+				"question": "Ar galiu užsisakyti svetainės kūrimą, jei dar neturiu tekstų?",
+				"answer": "Taip. Galime aptarti reikalingą turinį, jo struktūrą ir paruošimo apimtį. Svarbu iš anksto suderinti, ar tekstų kūrimas įtraukiamas į projekto pasiūlymą."
+			},
+			{
+				"question": "Ar po svetainės paleidimo teikiate priežiūros paslaugas?",
+				"answer": "Taip. Esant poreikiui galime padėti atlikti techninius atnaujinimus, spręsti problemas, keisti turinį ir toliau tobulinti svetainę."
 			}
 		]
 	},
@@ -98,7 +316,8 @@
 						"type": "text",
 						"content": "Internetinės svetainės kūrimas prasideda nuo aiškios struktūros ir supratimo, ko svetainėje ieškos jūsų potencialus klientas."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Aiški struktūra ir patogus valdymas",
@@ -110,6 +329,60 @@
 					{
 						"type": "text",
 						"content": "Techninėje dalyje naudojame WordPress, todėl svetainę galima patogiai administruoti ir ateityje plėsti."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Kaip suplanuojame internetinės svetainės struktūrą",
+				"layout": "split",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Puslapių žemėlapis",
+						"content": "Prieš dizaino darbus sudarome puslapių sąrašą ir nustatome, kokią informaciją kiekvienas jų turi pateikti. Taip išvengiama situacijos, kai svarbios paslaugos pasimeta bendrame tekste."
+					},
+					{
+						"type": "text",
+						"heading": "Lankytojo kelias",
+						"content": "Numatome, kaip žmogus pateks į svetainę, kokius klausimus turės ir kur turėtų rasti kontaktus, kainos informaciją ar užklausos formą."
+					}
+				]
+			},
+			{
+				"heading": "Kokie elementai padeda svetainei atlikti savo darbą",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Aiškus paslaugų pristatymas",
+						"content": "Kiekviena svarbi paslauga turi turėti suprantamą aprašymą ir aiškią naudą klientui."
+					},
+					{
+						"type": "text",
+						"heading": "Patikimumo įrodymai",
+						"content": "Projektų pavyzdžiai, atsiliepimai, reali informacija apie įmonę ir aiškūs kontaktai padeda lankytojui įvertinti pasiūlymą."
+					},
+					{
+						"type": "text",
+						"heading": "Patogus susisiekimas",
+						"content": "Kontaktų nuorodos ir formos turi būti lengvai randamos tiek kompiuteryje, tiek telefone."
+					},
+					{
+						"type": "text",
+						"heading": "Nuoseklus turinys",
+						"content": "Vienodas tonas, aiškios antraštės ir logiška puslapių hierarchija padeda suprasti svetainę."
+					}
+				]
+			},
+			{
+				"heading": "Svetainė turi būti patogi ne tik paleidimo dieną",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Valdymas ir plėtra",
+						"content": "Projektuojame turinio valdymą taip, kad svarbiausius tekstus, nuotraukas ir puslapius būtų galima atnaujinti be nuolatinio programavimo. Nauji skyriai ir funkcijos planuojami pagal realų poreikį."
 					}
 				]
 			}
@@ -132,6 +405,20 @@
 			{
 				"slug": "wordpress-svetainiu-kurimas",
 				"title": "WordPress svetainių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -159,7 +446,8 @@
 						"type": "text",
 						"content": "WordPress yra lanksti turinio valdymo sistema, tinkanti tiek mažoms įmonėms, tiek didesniems projektams. Ji leidžia patogiai valdyti svetainės turinį ir ateityje pridėti naujas funkcijas."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Individualus dizainas ir SEO pagrindai",
@@ -171,6 +459,70 @@
 					{
 						"type": "text",
 						"content": "Kiekvieną projektą pritaikome mobiliesiems įrenginiams ir pasirūpiname techniniais SEO pagrindais."
+					}
+				],
+				"layout": "list"
+			},
+			{
+				"heading": "Ką galima įgyvendinti su WordPress",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Verslo svetainės",
+						"content": "Puslapiai įmonės pristatymui, paslaugoms, projektams, komandai ir kontaktams."
+					},
+					{
+						"type": "text",
+						"heading": "Tinklaraštis ir turinio skyriai",
+						"content": "Straipsniai, naujienos, kategorijos ir kiti turinio tipai, kuriuos galima administruoti per WordPress."
+					},
+					{
+						"type": "text",
+						"heading": "Papildomos funkcijos",
+						"content": "Formos, kelių kalbų sprendimai, integracijos ir kitos funkcijos, parenkamos pagal projekto poreikius."
+					}
+				]
+			},
+			{
+				"heading": "WordPress ir Divi: dizainas bei kasdienis administravimas",
+				"layout": "split",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Vizualus redagavimas",
+						"content": "Divi leidžia kurti ir redaguoti puslapių išdėstymą vizualiai. Tai patogu, kai po paleidimo norėsite koreguoti tekstus, nuotraukas ar atskirus turinio blokus."
+					},
+					{
+						"type": "text",
+						"heading": "Ne vien įskiepių rinkinys",
+						"content": "Projektuojant svarbu atsirinkti tik reikalingus įrankius. Pertekliniai įskiepiai gali apsunkinti administravimą ir turėti įtakos našumui."
+					}
+				]
+			},
+			{
+				"heading": "Į ką atkreipiame dėmesį kuriant WordPress svetainę",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Temos ir įskiepių pasirinkimas",
+						"content": "Parenkame sprendimus pagal funkcijas, suderinamumą ir palaikymą."
+					},
+					{
+						"type": "text",
+						"heading": "Saugumas ir atsarginės kopijos",
+						"content": "Numatome bazines saugumo priemones ir atsarginių kopijų strategiją pagal projekto aplinką."
+					},
+					{
+						"type": "text",
+						"heading": "Greitis ir mobilusis vaizdas",
+						"content": "Tikriname puslapių veikimą skirtinguose ekranuose ir vertiname našumą."
+					},
+					{
+						"type": "text",
+						"heading": "Perdavimas klientui",
+						"content": "Paaiškiname pagrindinius administravimo veiksmus ir perduodame sutartas prieigas."
 					}
 				]
 			}
@@ -207,6 +559,18 @@
 			{
 				"question": "Ar galėsiu pats administruoti WordPress svetainę?",
 				"answer": "Taip. Po projekto galėsite savarankiškai keisti tekstus, nuotraukas ir kitą svetainės turinį."
+			},
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -234,7 +598,8 @@
 						"type": "text",
 						"content": "Verslo svetainė turi per kelias sekundes paaiškinti, ką siūlote ir kodėl klientas turėtų rinktis būtent jus."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Patogus valdymas ir plėtra",
@@ -246,6 +611,65 @@
 					{
 						"type": "text",
 						"content": "WordPress suteikia jūsų komandai galimybę savarankiškai atnaujinti svetainę ir jos turinį."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Ką turi turėti įmonės WordPress svetainė",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Aiškus įmonės pristatymas",
+						"content": "Lankytojui turi būti paprasta suprasti, kuo įmonė užsiima, kokiems klientams dirba ir kuo jos pasiūlymas naudingas."
+					},
+					{
+						"type": "text",
+						"heading": "Paslaugų puslapiai",
+						"content": "Svarbiausias paslaugas verta pristatyti atskirai, pateikiant jų naudą, eigą ir atsakymus į klientų klausimus."
+					},
+					{
+						"type": "text",
+						"heading": "Kontaktai ir užklausos",
+						"content": "Kontaktinė informacija, formos ir raginimai veikti turi būti matomi ir lengvai pasiekiami."
+					}
+				]
+			},
+			{
+				"heading": "Kaip svetainė padeda pardavimo procesui",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Atsako į pirminius klausimus",
+						"content": "Svetainėje pateikiame informaciją apie paslaugas, darbo principus ir dažniausius klausimus."
+					},
+					{
+						"type": "text",
+						"heading": "Parodo kompetenciją",
+						"content": "Atliktų darbų pavyzdžiai ir konkretūs paaiškinimai padeda klientui įvertinti jūsų patirtį."
+					},
+					{
+						"type": "text",
+						"heading": "Surenka užklausas",
+						"content": "Aiškios formos ir kontaktiniai veiksmai leidžia susidomėjusiam lankytojui greitai kreiptis."
+					},
+					{
+						"type": "text",
+						"heading": "Palaiko komunikaciją",
+						"content": "Naujienų ar straipsnių skiltis gali būti naudojama svarbiai informacijai ir įmonės naujienoms skelbti."
+					}
+				]
+			},
+			{
+				"heading": "Svetainės struktūra turi atitikti įmonės veiklą",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Individualus puslapių planas",
+						"content": "Gamybos įmonei, konsultantui ir paslaugų bendrovei reikalinga skirtinga informacijos struktūra. Todėl puslapių planą sudarome pagal realų pasiūlymą, klientų klausimus ir įmonės tikslus."
 					}
 				]
 			}
@@ -267,6 +691,20 @@
 			{
 				"slug": "svetainiu-kurimas-mazam-verslui",
 				"title": "Svetainių kūrimas mažam verslui"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -294,7 +732,8 @@
 						"type": "text",
 						"content": "Divi leidžia kurti individualius WordPress svetainių dizainus ir kartu suteikia patogų vizualinį redaktorių."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Dizainas ir svetainės administravimas",
@@ -306,6 +745,55 @@
 					{
 						"type": "text",
 						"content": "Kiekvieną Divi svetainę pritaikome skirtingiems ekranams ir pasirūpiname techniniais našumo bei SEO pagrindais."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Kaip Divi naudojame kuriant svetainę",
+				"layout": "split",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Vizualus puslapių kūrimas",
+						"content": "Divi suteikia galimybę kurti puslapių išdėstymą iš atskirų modulių ir vizualiai koreguoti jų turinį."
+					},
+					{
+						"type": "text",
+						"heading": "Bendri dizaino elementai",
+						"content": "Pakartotinai naudojami stiliai ir išdėstymai padeda išlaikyti vientisą svetainės vaizdą ir paprasčiau atlikti pakeitimus."
+					}
+				]
+			},
+			{
+				"heading": "Kada Divi gali būti tinkamas pasirinkimas",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Kai svarbus savarankiškas turinio redagavimas",
+						"content": "Komanda gali keisti dalį puslapio turinio per vizualų redaktorių."
+					},
+					{
+						"type": "text",
+						"heading": "Kai reikia individualaus išdėstymo",
+						"content": "Galima derinti skirtingas sekcijas, modulius ir puslapių struktūras."
+					},
+					{
+						"type": "text",
+						"heading": "Kai svetainė bus plečiama",
+						"content": "Naujus puslapius ir turinio sekcijas galima kurti naudojant jau paruoštus dizaino principus."
+					}
+				]
+			},
+			{
+				"heading": "Svarbu ne tik redaktorius, bet ir įgyvendinimo kokybė",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Našumas ir tvarka",
+						"content": "Divi savaime negarantuoja greitos svetainės. Rezultatui svarbūs apgalvotas modulių naudojimas, optimizuoti vaizdai, kokybiškas hostingas ir atsakingas papildomų įskiepių pasirinkimas."
 					}
 				]
 			}
@@ -327,6 +815,20 @@
 			{
 				"slug": "svetainiu-atnaujinimas",
 				"title": "Svetainių atnaujinimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -354,7 +856,8 @@
 						"type": "text",
 						"content": "Sėkmingai el. parduotuvei svarbus ne tik dizainas. Pirkimo procesas turi būti aiškus, greitas ir patogus tiek kompiuteryje, tiek telefone."
 					}
-				]
+				],
+				"layout": "steps"
 			},
 			{
 				"heading": "WooCommerce funkcijos pagal jūsų verslą",
@@ -366,6 +869,65 @@
 					{
 						"type": "text",
 						"content": "Parduotuvę pritaikome pagal jūsų produktų kiekį ir verslo modelį - nuo nedidelio katalogo iki didesnio el. prekybos projekto."
+					}
+				],
+				"layout": "cards"
+			},
+			{
+				"heading": "Pagrindinės el. parduotuvės dalys",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Produktų katalogas",
+						"content": "Kategorijos, produktų puslapiai, variantai, nuotraukos, aprašymai ir atributai turi būti suplanuoti pagal asortimentą."
+					},
+					{
+						"type": "text",
+						"heading": "Atsiskaitymas",
+						"content": "Pirkėjas turi aiškiai matyti užsakymo informaciją ir galimus mokėjimo būdus."
+					},
+					{
+						"type": "text",
+						"heading": "Pristatymas",
+						"content": "Pristatymo būdai, kainos ir sąlygos turi būti suprantami dar prieš patvirtinant užsakymą."
+					}
+				]
+			},
+			{
+				"heading": "Ką suplanuojame prieš kuriant parduotuvę",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Produktų struktūra",
+						"content": "Įvertiname kategorijas, atributus, variantus, filtrus ir katalogo dydį."
+					},
+					{
+						"type": "text",
+						"heading": "Užsakymų eiga",
+						"content": "Aptariame užsakymo būsenas, el. laiškus, sąskaitas ir administravimo procesą."
+					},
+					{
+						"type": "text",
+						"heading": "Mokėjimai ir logistika",
+						"content": "Parenkame reikalingas mokėjimo bei pristatymo integracijas pagal veiklos modelį."
+					},
+					{
+						"type": "text",
+						"heading": "Turinys ir taisyklės",
+						"content": "Numatome pristatymo, grąžinimo, privatumo ir kitas pirkėjui svarbias informacijos skiltis."
+					}
+				]
+			},
+			{
+				"heading": "Parduotuvės sėkmę lemia ir administravimo patogumas",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Kasdienis darbas",
+						"content": "Svarbu, kad darbuotojai galėtų rasti užsakymus, atnaujinti prekes, keisti likučius ir tvarkyti informaciją be sudėtingų veiksmų. Todėl administravimo scenarijus aptariame dar planavimo etape."
 					}
 				]
 			}
@@ -398,6 +960,18 @@
 			{
 				"question": "Ar galima integruoti mokėjimus ir pristatymą?",
 				"answer": "Taip. Integruojame jūsų verslui tinkamus mokėjimo ir pristatymo sprendimus."
+			},
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -425,7 +999,8 @@
 						"type": "text",
 						"content": "WooCommerce suteikia WordPress sistemai pilną el. prekybos funkcionalumą. Galima valdyti produktus, užsakymus, klientus, nuolaidas ir pristatymą."
 					}
-				]
+				],
+				"layout": "cards"
 			},
 			{
 				"heading": "Parduotuvė, kuri gali augti kartu su verslu",
@@ -437,6 +1012,60 @@
 					{
 						"type": "text",
 						"content": "Tinkamai sukonfigūruota WooCommerce parduotuvė gali būti plečiama kartu su augančiu verslu."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "WooCommerce parduotuvės administravimas",
+				"layout": "split",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Produktų valdymas",
+						"content": "WooCommerce leidžia valdyti paprastus ir kintamus produktus, kainas, aprašymus, kategorijas ir atsargų informaciją."
+					},
+					{
+						"type": "text",
+						"heading": "Užsakymų valdymas",
+						"content": "Administravimo aplinkoje galima peržiūrėti užsakymus, keisti jų būsenas ir tvarkyti su pirkimu susijusią informaciją."
+					}
+				]
+			},
+			{
+				"heading": "Funkcijos, kurias galima pritaikyti parduotuvei",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Produktų variantai",
+						"content": "Dydžiai, spalvos ir kiti pasirinkimai, kai jų reikia konkrečiam asortimentui."
+					},
+					{
+						"type": "text",
+						"heading": "Nuolaidos ir kuponai",
+						"content": "Akcijų taisyklės ir nuolaidų kodai pagal pardavimo strategiją."
+					},
+					{
+						"type": "text",
+						"heading": "Mokėjimai ir pristatymas",
+						"content": "Integracijos parenkamos pagal naudojamus paslaugų teikėjus ir pristatymo modelį."
+					},
+					{
+						"type": "text",
+						"heading": "Filtravimas ir paieška",
+						"content": "Didesniam katalogui gali būti reikalingi atributų filtrai ir patogesnė produktų paieška."
+					}
+				]
+			},
+			{
+				"heading": "Prieš paleidimą būtina išbandyti visą pirkimo kelią",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Testinis užsakymas",
+						"content": "Patikriname produkto pasirinkimą, krepšelį, atsiskaitymą, užsakymo patvirtinimą ir el. laiškus. Konkrečios integracijos testuojamos pagal jų tiekėjų galimybes."
 					}
 				]
 			}
@@ -452,12 +1081,26 @@
 		],
 		"relatedPages": [
 			{
-				"slug": "e-parduotuviu-kurimas",
+				"slug": "el-parduotuviu-kurimas",
 				"title": "El. parduotuvių kūrimas"
 			},
 			{
 				"slug": "woocommerce-parduotuves-kaina",
 				"title": "WooCommerce parduotuvės kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -485,7 +1128,8 @@
 						"type": "text",
 						"content": "WordPress el. parduotuvė leidžia vienoje sistemoje valdyti ne tik produktus ir užsakymus, bet ir tinklaraštį, paslaugų puslapius bei kitą turinį."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Lankstus el. parduotuvės funkcionalumas",
@@ -497,6 +1141,65 @@
 					{
 						"type": "text",
 						"content": "Tai geras pasirinkimas verslui, kuris nori turinio svetainės ir el. prekybos vienoje platformoje."
+					}
+				],
+				"layout": "cards"
+			},
+			{
+				"heading": "Kada verta rinktis WordPress ir WooCommerce",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Turinys ir prekyba vienoje vietoje",
+						"content": "Tinka verslui, kuriam svarbūs ir išsamūs informaciniai puslapiai, ir produktų pardavimas."
+					},
+					{
+						"type": "text",
+						"heading": "Lankstus katalogas",
+						"content": "Produktus galima grupuoti kategorijomis, atributais ir variantais pagal asortimentą."
+					},
+					{
+						"type": "text",
+						"heading": "Plėtra pagal poreikį",
+						"content": "Papildomos funkcijos ir integracijos gali būti diegiamos tada, kai atsiranda realus poreikis."
+					}
+				]
+			},
+			{
+				"heading": "Kaip sujungiame svetainę ir parduotuvę",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Bendra navigacija",
+						"content": "Pirkėjas gali pereiti nuo informacijos apie įmonę ar paslaugas prie produktų katalogo."
+					},
+					{
+						"type": "text",
+						"heading": "Nuoseklus dizainas",
+						"content": "Parduotuvės puslapiai derinami prie bendro svetainės dizaino."
+					},
+					{
+						"type": "text",
+						"heading": "Vieninga turinio aplinka",
+						"content": "Straipsniai, puslapiai ir produktai administruojami toje pačioje WordPress aplinkoje."
+					},
+					{
+						"type": "text",
+						"heading": "Pirkimo funkcijos",
+						"content": "Krepšelis, atsiskaitymas, mokėjimai ir pristatymas konfigūruojami pagal projektą."
+					}
+				]
+			},
+			{
+				"heading": "Ne kiekvienai svetainei reikia el. prekybos funkcijų",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Tinkamas sprendimo pasirinkimas",
+						"content": "Jeigu pagrindinis tikslas yra tik paslaugų pristatymas ir užklausų gavimas, įprasta WordPress svetainė gali būti paprastesnis sprendimas. WooCommerce verta rinktis tada, kai iš tiesų planuojama prekyba internetu."
 					}
 				]
 			}
@@ -518,6 +1221,20 @@
 			{
 				"slug": "woocommerce-parduotuviu-kurimas",
 				"title": "WooCommerce parduotuvių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -545,7 +1262,8 @@
 						"type": "text",
 						"content": "Paprasta reprezentacinė svetainė ir sudėtingas verslo projektas gali kainuoti labai skirtingai. Todėl svetainės kainą reikia vertinti pagal realius projekto poreikius."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Investicija pagal realius poreikius",
@@ -557,6 +1275,65 @@
 					{
 						"type": "text",
 						"content": "Mūsų tikslas - sukurti tokį sprendimą, kurio reikia jūsų verslui, o ne pridėti nereikalingų funkcijų vien tam, kad projektas kainuotų daugiau."
+					}
+				],
+				"layout": "highlight"
+			},
+			{
+				"heading": "Pagrindiniai svetainės kūrimo kainos veiksniai",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Puslapių kiekis ir struktūra",
+						"content": "Kainą veikia ne tik puslapių skaičius, bet ir jų individualumas, turinio hierarchija bei reikalingi šablonai."
+					},
+					{
+						"type": "text",
+						"heading": "Dizainas ir funkcijos",
+						"content": "Individualūs išdėstymai, formos, kalbos ir integracijos didina darbų apimtį."
+					},
+					{
+						"type": "text",
+						"heading": "Turinio paruošimas",
+						"content": "Svarbu, ar tekstus, nuotraukas ir kitą medžiagą pateikia klientas, ar jų paruošimas įtraukiamas į projektą."
+					}
+				]
+			},
+			{
+				"heading": "Kas turėtų būti aiškiai nurodyta pasiūlyme",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Darbų apimtis",
+						"content": "Kokie puslapiai ir funkcijos bus įgyvendinti."
+					},
+					{
+						"type": "text",
+						"heading": "Turinio atsakomybės",
+						"content": "Kas paruoš tekstus, nuotraukas ir kitą medžiagą."
+					},
+					{
+						"type": "text",
+						"heading": "Techninės išlaidos",
+						"content": "Domenas, hostingas, mokami įskiepiai ar išorinės paslaugos, jei jos reikalingos."
+					},
+					{
+						"type": "text",
+						"heading": "Pakeitimų tvarka",
+						"content": "Kiek derinimo etapų numatyta ir kaip vertinami papildomi darbai."
+					}
+				]
+			},
+			{
+				"heading": "Kodėl verta lyginti ne vien galutinę kainą",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Pasiūlymo palyginimas",
+						"content": "Du pasiūlymai gali atrodyti panašūs, bet skirtis turinio paruošimu, dizaino individualumu, testavimu, SEO pagrindais ir perdavimo darbais. Vertinkite, kas konkrečiai įtraukta į sutartą sumą."
 					}
 				]
 			}
@@ -587,6 +1364,18 @@
 			{
 				"question": "Ar galima svetainę pradėti nuo mažesnio biudžeto?",
 				"answer": "Taip. Galima pradėti nuo pagrindinių puslapių ir vėliau svetainę plėsti."
+			},
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -613,7 +1402,8 @@
 						"type": "text",
 						"content": "WordPress svetainės kainą sudaro ne tik dizainas. Vertiname struktūrą, puslapių kiekį, funkcionalumą, mobilųjį pritaikymą, SEO pagrindus ir administravimo patogumą."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Dizainas, funkcionalumas ir administravimas",
@@ -625,6 +1415,65 @@
 					{
 						"type": "text",
 						"content": "Prieš pradėdami projektą aiškiai įvardijame, kas įeina į kainą."
+					}
+				],
+				"layout": "cards"
+			},
+			{
+				"heading": "Kas sudaro WordPress projekto kainą",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "WordPress paruošimas",
+						"content": "Sistemos diegimas, bazinė konfigūracija, temos ir reikalingų įskiepių parinkimas."
+					},
+					{
+						"type": "text",
+						"heading": "Dizainas ir puslapiai",
+						"content": "Puslapių šablonai, individualūs blokai, mobilusis išdėstymas ir dizaino pritaikymas."
+					},
+					{
+						"type": "text",
+						"heading": "Funkcionalumas",
+						"content": "Formos, integracijos, kelių kalbų sprendimai ir kitos papildomos galimybės."
+					}
+				]
+			},
+			{
+				"heading": "Kokios išlaidos gali likti po svetainės paleidimo",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Hostingas ir domenas",
+						"content": "Nuolatinės paslaugos, reikalingos svetainei pasiekti internete."
+					},
+					{
+						"type": "text",
+						"heading": "Mokami įskiepiai",
+						"content": "Kai kurios funkcijos gali priklausyti nuo mokamų licencijų ar prenumeratų."
+					},
+					{
+						"type": "text",
+						"heading": "Priežiūra",
+						"content": "Atnaujinimai, atsarginės kopijos, saugumo stebėjimas ir techninė pagalba."
+					},
+					{
+						"type": "text",
+						"heading": "Tolesni pakeitimai",
+						"content": "Nauji puslapiai ar funkcijos gali būti užsakomi atskirai pagal poreikį."
+					}
+				]
+			},
+			{
+				"heading": "WordPress nėra automatiškai pigiausias ar brangiausias sprendimas",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Kaina priklauso nuo darbų",
+						"content": "Platforma suteikia lankstų pagrindą, tačiau galutinę kainą lemia dizainas, turinys, funkcijos ir įgyvendinimo apimtis."
 					}
 				]
 			}
@@ -646,6 +1495,20 @@
 			{
 				"slug": "svetaines-kurimo-kaina",
 				"title": "Bendra svetainės kūrimo kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -673,7 +1536,8 @@
 						"type": "text",
 						"content": "Maža WooCommerce parduotuvė ir sudėtingas el. prekybos projektas gali turėti labai skirtingą kainą. Todėl pirmiausia įvertiname, kokių funkcijų iš tikrųjų reikia."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Funkcijos ir integracijos",
@@ -685,6 +1549,65 @@
 					{
 						"type": "text",
 						"content": "Planuojant projektą siekiame išlaikyti gerą kainos ir realios verslo naudos santykį."
+					}
+				],
+				"layout": "cards"
+			},
+			{
+				"heading": "Kas labiausiai veikia el. parduotuvės kainą",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Produktų katalogas",
+						"content": "Produktų kiekis, variantai, atributai, kategorijos ir filtravimo poreikis."
+					},
+					{
+						"type": "text",
+						"heading": "Pirkimo funkcionalumas",
+						"content": "Krepšelis, atsiskaitymo eiga, nuolaidos, kuponai ir pirkėjo paskyra."
+					},
+					{
+						"type": "text",
+						"heading": "Integracijos",
+						"content": "Mokėjimų, pristatymo, apskaitos ar sandėlio sistemos, jei jos reikalingos."
+					}
+				]
+			},
+			{
+				"heading": "Ką reikia išsiaiškinti prieš skaičiuojant biudžetą",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Asortimentas",
+						"content": "Kiek produktų bus pradžioje ir kaip jie bus pateikiami."
+					},
+					{
+						"type": "text",
+						"heading": "Produktų duomenys",
+						"content": "Ar turite paruoštus pavadinimus, aprašymus, nuotraukas ir kainas."
+					},
+					{
+						"type": "text",
+						"heading": "Užsakymų procesas",
+						"content": "Kaip tvarkysite mokėjimus, pristatymą, grąžinimus ir klientų informavimą."
+					},
+					{
+						"type": "text",
+						"heading": "Išorinės sistemos",
+						"content": "Kokias apskaitos, sandėlio ar kitų tiekėjų sistemas reikės sujungti."
+					}
+				]
+			},
+			{
+				"heading": "Parduotuvės biudžetą verta planuoti etapais",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Pradinis ir vėlesnis funkcionalumas",
+						"content": "Galima atskirti būtinas paleidimo funkcijas nuo patobulinimų, kurių prireiks tik augant užsakymų skaičiui. Taip aiškiau valdoma projekto apimtis."
 					}
 				]
 			}
@@ -699,12 +1622,26 @@
 		],
 		"relatedPages": [
 			{
-				"slug": "e-parduotuviu-kurimas",
+				"slug": "el-parduotuviu-kurimas",
 				"title": "El. parduotuvių kūrimas"
 			},
 			{
 				"slug": "woocommerce-parduotuviu-kurimas",
 				"title": "WooCommerce parduotuvių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -731,7 +1668,8 @@
 						"type": "text",
 						"content": "WooCommerce leidžia sukurti tiek nedidelę, tiek sudėtingesnę internetinę parduotuvę. Dėl to nėra vienos visiems tinkamos kainos."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Kainos pasiūlymas pagal poreikius",
@@ -743,6 +1681,65 @@
 					{
 						"type": "text",
 						"content": "Prieš pradedant projektą pateikiame aiškų darbų ir kainos pasiūlymą."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "WooCommerce kainą sudarantys darbai",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Katalogo paruošimas",
+						"content": "Produktų tipai, kategorijos, variantai, atributai ir importavimo poreikis."
+					},
+					{
+						"type": "text",
+						"heading": "Parduotuvės dizainas",
+						"content": "Pagrindinis puslapis, kategorijų ir produktų puslapiai, krepšelis bei atsiskaitymo vaizdas."
+					},
+					{
+						"type": "text",
+						"heading": "Techninės integracijos",
+						"content": "Mokėjimai, pristatymas, el. laiškai ir kitos sistemos."
+					}
+				]
+			},
+			{
+				"heading": "Klausimai, kurie padeda tiksliau įvertinti projektą",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Kiek produktų bus įkelta?",
+						"content": "Svarbu įvertinti ne tik kiekį, bet ir produktų duomenų struktūrą."
+					},
+					{
+						"type": "text",
+						"heading": "Ar produktai turi variantų?",
+						"content": "Skirtingi dydžiai, spalvos ar komplektacijos gali keisti katalogo paruošimo apimtį."
+					},
+					{
+						"type": "text",
+						"heading": "Kokie mokėjimo ir pristatymo būdai reikalingi?",
+						"content": "Integracijų darbai priklauso nuo pasirinkto paslaugų teikėjo."
+					},
+					{
+						"type": "text",
+						"heading": "Ar reikalingas duomenų importas?",
+						"content": "Esamo katalogo perkėlimas gali reikalauti papildomo paruošimo ir patikrinimo."
+					}
+				]
+			},
+			{
+				"heading": "Vieno universalaus WooCommerce įkainio nėra",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Individualus įvertinimas",
+						"content": "Pateikiame pasiūlymą įvertinę konkrečius produktus, funkcijas ir integracijas. Taip galima išvengti tiek nereikalingų darbų, tiek neįvertintų projekto dalių."
 					}
 				]
 			}
@@ -764,6 +1761,20 @@
 			{
 				"slug": "el-parduotuves-kurimo-kaina",
 				"title": "El. parduotuvės kūrimo kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -791,7 +1802,8 @@
 						"type": "text",
 						"content": "Mažai įmonei ar individualiai veiklai dažniausiai nereikia sudėtingos sistemos. Svarbiausia - profesionaliai pristatyti paslaugas, parodyti kontaktus ir paskatinti lankytoją susisiekti."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Galimybė plėstis ateityje",
@@ -803,6 +1815,65 @@
 					{
 						"type": "text",
 						"content": "Ateityje svetainę galima plėsti pagal verslo augimą."
+					}
+				],
+				"layout": "cards"
+			},
+			{
+				"heading": "Kas svarbiausia mažo verslo svetainei",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Aiškus pasiūlymas",
+						"content": "Per pirmą apsilankymą turi būti suprantama, kokias paslaugas teikiate ir kam jos skirtos."
+					},
+					{
+						"type": "text",
+						"heading": "Kontaktai ir užklausos",
+						"content": "Telefonas, el. paštas, adresas ar užklausos forma turi būti lengvai randami."
+					},
+					{
+						"type": "text",
+						"heading": "Pasitikėjimas",
+						"content": "Nuotraukos, darbų pavyzdžiai, atsiliepimai ir konkreti informacija padeda sumažinti kliento abejones."
+					}
+				]
+			},
+			{
+				"heading": "Kaip išvengti nereikalingų išlaidų",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Pradėti nuo svarbiausių puslapių",
+						"content": "Pirmiausia įgyvendinti pagrindinį pristatymą, paslaugas ir kontaktus."
+					},
+					{
+						"type": "text",
+						"heading": "Rinktis reikalingas funkcijas",
+						"content": "Nediegti papildomų sistemų, kurių verslas realiai nenaudos."
+					},
+					{
+						"type": "text",
+						"heading": "Turinį planuoti iš anksto",
+						"content": "Paruošti pagrindinę informaciją sumažina derinimų ir turinio įkėlimo neaiškumą."
+					},
+					{
+						"type": "text",
+						"heading": "Palikti galimybę plėsti",
+						"content": "Numatyti struktūrą, kurią vėliau galima papildyti naujomis paslaugomis ar skyriais."
+					}
+				]
+			},
+			{
+				"heading": "Mažesnė svetainė vis tiek turi atrodyti profesionaliai",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Kokybė svarbiau už puslapių kiekį",
+						"content": "Kompaktiška svetainė gali būti veiksminga, jei ji greita, aiški, pritaikyta telefonams ir pateikia klientui reikalingą informaciją."
 					}
 				]
 			}
@@ -823,6 +1894,20 @@
 			{
 				"slug": "svetaines-kurimo-kaina",
 				"title": "Svetainės kūrimo kaina"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -850,7 +1935,8 @@
 						"type": "text",
 						"content": "Įmonės svetainė dažnai yra pirmas kontaktas tarp jūsų verslo ir potencialaus kliento. Todėl ji turi kurti pasitikėjimą ir aiškiai komunikuoti jūsų vertę."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Struktūra, kurią galima plėsti",
@@ -862,6 +1948,70 @@
 					{
 						"type": "text",
 						"content": "Svetainę galima toliau plėsti naujomis paslaugomis, turiniu ir funkcijomis."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Svarbiausi įmonės svetainės skyriai",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Apie įmonę",
+						"content": "Trumpai ir konkrečiai pristatoma veikla, patirtis, komanda ar darbo principai."
+					},
+					{
+						"type": "text",
+						"heading": "Paslaugos ir sprendimai",
+						"content": "Atskiri puslapiai padeda išsamiau paaiškinti kiekvieną paslaugą ir jos naudą."
+					},
+					{
+						"type": "text",
+						"heading": "Projektai ir kompetencija",
+						"content": "Atliktų darbų pavyzdžiai, atvejai ar klientų atsiliepimai suteikia daugiau konteksto."
+					},
+					{
+						"type": "text",
+						"heading": "Kontaktai",
+						"content": "Aiškūs kontaktiniai duomenys ir užklausos būdas palengvina pirmą žingsnį."
+					}
+				]
+			},
+			{
+				"heading": "Kaip planuojame įmonės svetainės turinį",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Skirtingos auditorijos",
+						"content": "Įvertiname, ar svetainėje lankysis privatūs klientai, verslo partneriai, tiekėjai ar kandidatai."
+					},
+					{
+						"type": "text",
+						"heading": "Informacijos prioritetai",
+						"content": "Svarbiausia informacija pateikiama pirmiausia, o detalesnis turinys išdėstomas atskiruose puslapiuose."
+					},
+					{
+						"type": "text",
+						"heading": "Paslaugų tarpusavio ryšiai",
+						"content": "Numatome logiškas nuorodas tarp susijusių paslaugų, projektų ir kontaktų."
+					},
+					{
+						"type": "text",
+						"heading": "Ateities poreikiai",
+						"content": "Paliekame galimybę pridėti naujas paslaugas, kalbas ar turinio skiltis."
+					}
+				]
+			},
+			{
+				"heading": "Įmonės svetainė turi atspindėti tikrą veiklą",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Autentiškas turinys",
+						"content": "Vengiame abstrakčių pažadų. Geriausiai įmonę pristato konkretūs jos darbai, aiškiai aprašytos paslaugos ir tikslūs kontaktai."
 					}
 				]
 			}
@@ -883,6 +2033,20 @@
 			{
 				"slug": "wordpress-svetaines-verslui",
 				"title": "WordPress svetainės verslui"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -910,7 +2074,8 @@
 						"type": "text",
 						"content": "Ne kiekvieną seną svetainę būtina išmesti ir kurti nuo nulio. Pirmiausia įvertiname esamą WordPress svetainę ir nustatome, ką galima išsaugoti."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Dizaino ir techninių sprendimų atnaujinimas",
@@ -922,6 +2087,75 @@
 					{
 						"type": "text",
 						"content": "Tai leidžia modernizuoti svetainę ir kartu išsaugoti vertingą turinį bei SEO istoriją."
+					}
+				],
+				"layout": "list"
+			},
+			{
+				"heading": "Kaip vyksta esamos svetainės atnaujinimas",
+				"layout": "steps",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Esamos būklės įvertinimas",
+						"content": "Peržiūrime dizainą, struktūrą, veikimą, naudojamus įskiepius ir turinį."
+					},
+					{
+						"type": "text",
+						"heading": "Prioritetų nustatymas",
+						"content": "Atskiriame tai, ką verta išsaugoti, nuo dalių, kurias reikia perdaryti."
+					},
+					{
+						"type": "text",
+						"heading": "Naujas dizainas ir struktūra",
+						"content": "Atnaujiname puslapių išdėstymą, navigaciją ir turinio pateikimą."
+					},
+					{
+						"type": "text",
+						"heading": "Techniniai darbai",
+						"content": "Sprendžiame suderinamumo, greičio, mobiliųjų įrenginių ir funkcionalumo problemas."
+					},
+					{
+						"type": "text",
+						"heading": "Testavimas ir paleidimas",
+						"content": "Patikriname formas, nuorodas, pagrindinius puslapius ir veikimą prieš pakeitimų paskelbimą."
+					}
+				]
+			},
+			{
+				"heading": "Ką svarbu išsaugoti atnaujinant svetainę",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Vertingą turinį",
+						"content": "Naudingi tekstai ir puslapiai neturėtų būti šalinami be priežasties."
+					},
+					{
+						"type": "text",
+						"heading": "Esamus URL",
+						"content": "Jei keičiasi adresai, suplanuojami atitinkami 301 peradresavimai."
+					},
+					{
+						"type": "text",
+						"heading": "SEO elementus",
+						"content": "Peržiūrimi title, meta aprašymai, antraštės ir indeksuojami puslapiai."
+					},
+					{
+						"type": "text",
+						"heading": "Funkcijas ir duomenis",
+						"content": "Prieš pakeitimus įvertinamos formos, integracijos ir reikalingi duomenys."
+					}
+				]
+			},
+			{
+				"heading": "Atnaujinimas nebūtinai reiškia viską kurti iš naujo",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Sprendimas po audito",
+						"content": "Kartais pakanka dizaino ir turinio atnaujinimo, kitais atvejais ekonomiškiau perkurti techninį pagrindą. Tai sprendžiama įvertinus esamą svetainę."
 					}
 				]
 			}
@@ -942,6 +2176,20 @@
 			{
 				"slug": "svetainiu-optimizavimas",
 				"title": "Svetainių optimizavimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -969,7 +2217,8 @@
 						"type": "text",
 						"content": "WordPress svetainė nėra vienkartinis projektas. Sistemą ir įskiepius reikia atnaujinti, stebėti atsargines kopijas bei spręsti technines problemas."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Techninis palaikymas ir atnaujinimai",
@@ -981,6 +2230,70 @@
 					{
 						"type": "text",
 						"content": "Prireikus atliekame ir papildomus svetainės atnaujinimo bei optimizavimo darbus."
+					}
+				],
+				"layout": "list"
+			},
+			{
+				"heading": "Kas įeina į WordPress priežiūros darbus",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Atnaujinimai",
+						"content": "WordPress branduolio, temos ir įskiepių atnaujinimų planavimas bei suderinamumo patikra."
+					},
+					{
+						"type": "text",
+						"heading": "Atsarginės kopijos",
+						"content": "Kopijų sudarymas ir galimybės atkurti svetainę įvertinimas."
+					},
+					{
+						"type": "text",
+						"heading": "Veikimo stebėjimas",
+						"content": "Pagrindinių svetainės funkcijų ir pasiekiamumo patikra."
+					},
+					{
+						"type": "text",
+						"heading": "Techninių problemų sprendimas",
+						"content": "Pagalba, kai po atnaujinimų ar dėl kitų priežasčių atsiranda klaidų."
+					}
+				]
+			},
+			{
+				"heading": "Atsakingas atnaujinimų procesas",
+				"layout": "steps",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Atsarginė kopija",
+						"content": "Prieš svarbesnius pakeitimus pasirūpinama atkūrimo galimybe."
+					},
+					{
+						"type": "text",
+						"heading": "Atnaujinimų peržiūra",
+						"content": "Įvertinami atnaujinimai ir galimi suderinamumo klausimai."
+					},
+					{
+						"type": "text",
+						"heading": "Atnaujinimas",
+						"content": "Pakeitimai atliekami sutartu būdu, atsižvelgiant į svetainės aplinką."
+					},
+					{
+						"type": "text",
+						"heading": "Patikra",
+						"content": "Patikrinami pagrindiniai puslapiai, formos ir svarbiausios funkcijos."
+					}
+				]
+			},
+			{
+				"heading": "Priežiūros apimtis turi būti aiškiai sutarta",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Kasdienė priežiūra ir papildomi darbai",
+						"content": "Įprasti atnaujinimai nėra tas pats, kas naujų funkcijų kūrimas ar dideli svetainės pakeitimai. Prieš pradedant darbus apibrėžiame, kokios užduotys įtrauktos į priežiūrą."
 					}
 				]
 			}
@@ -994,6 +2307,20 @@
 			{
 				"slug": "svetainiu-optimizavimas",
 				"title": "Svetainių optimizavimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1023,7 +2350,8 @@
 						"type": "text",
 						"content": "SEO optimizavimas – tai nuoseklus procesas, padedantis interneto svetainei tapti lengviau randamai Google paieškoje. Vertinami įvairūs veiksniai: svetainės techninė būklė, puslapių struktūra, turinio kokybė, įkėlimo greitis ir naudotojų patirtis."
 					}
-				]
+				],
+				"layout": "cards"
 			},
 			{
 				"heading": "Vidinis SEO ir turinio optimizavimas",
@@ -1032,7 +2360,8 @@
 						"type": "text",
 						"content": "Atliekame vidinio SEO darbus: optimizuojame puslapių antraštes, meta aprašymus, antraščių struktūrą, tekstus ir vidines nuorodas. Taip pat įvertiname raktažodžius ir jų panaudojimą, kad svetainės turinys geriau atitiktų potencialių klientų paieškas."
 					}
-				]
+				],
+				"layout": "list"
 			},
 			{
 				"heading": "Techninis SEO ir ilgalaikis matomumas",
@@ -1048,6 +2377,75 @@
 					{
 						"type": "text",
 						"content": "Dirbame su WordPress svetainėmis ir elektroninėmis parduotuvėmis. Galime optimizuoti jau veikiančią svetainę arba pasirūpinti SEO pagrindais kuriant naują projektą."
+					}
+				],
+				"layout": "list"
+			},
+			{
+				"heading": "Kaip pradedame SEO optimizavimo darbus",
+				"layout": "steps",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Esamos situacijos analizė",
+						"content": "Peržiūrime indeksavimą, paieškos užklausas, matomumą ir svarbiausius svetainės puslapius."
+					},
+					{
+						"type": "text",
+						"heading": "Raktažodžių ir paieškos ketinimo analizė",
+						"content": "Vertiname, ko ieško potencialūs klientai ir kokio tipo puslapis geriausiai atitinka jų užklausą."
+					},
+					{
+						"type": "text",
+						"heading": "Techninių kliūčių šalinimas",
+						"content": "Tikriname nuskaitymą, indeksavimą, greitį, mobiliąją versiją ir kitus techninius aspektus."
+					},
+					{
+						"type": "text",
+						"heading": "Turinio optimizavimas",
+						"content": "Tobuliname puslapių struktūrą, antraštes, tekstus ir vidines nuorodas."
+					},
+					{
+						"type": "text",
+						"heading": "Rezultatų stebėjimas",
+						"content": "Vertiname parodymus, paspaudimus, pozicijas ir puslapių pokyčius."
+					}
+				]
+			},
+			{
+				"heading": "Kokius SEO darbus galima atlikti",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Techninis SEO",
+						"content": "Indeksavimo, canonical, sitemap, peradresavimų ir techninių klaidų patikra."
+					},
+					{
+						"type": "text",
+						"heading": "Vidinis SEO",
+						"content": "Title, meta aprašymai, H1–H3 struktūra, turinio aiškumas ir vidinės nuorodos."
+					},
+					{
+						"type": "text",
+						"heading": "Turinio strategija",
+						"content": "Puslapių paskirties atskyrimas, paieškos ketinimo atitikimas ir turinio spragų nustatymas."
+					},
+					{
+						"type": "text",
+						"heading": "E. prekybos SEO",
+						"content": "Kategorijų, produktų, filtrų ir pasikartojančių URL valdymo įvertinimas."
+					}
+				]
+			},
+			{
+				"heading": "SEO vertiname pagal verslui svarbius rezultatus",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Ne vien pozicijos",
+						"content": "Svarbu ne tik būti matomam, bet ir pritraukti tinkamus lankytojus, kurie ieško jūsų paslaugų. Todėl vertiname užklausų kokybę, organinį srautą ir konversijas, o ne vien bendrą pozicijų skaičių."
 					}
 				]
 			}
@@ -1077,6 +2475,18 @@
 			{
 				"question": "Ar SEO reikia atlikti nuolat?",
 				"answer": "SEO nėra vienkartinis darbas. Keičiasi paieškos sistemų algoritmai, konkurentų svetainės ir naudotojų paieškos įpročiai, todėl verta periodiškai stebėti rezultatus, atnaujinti turinį ir spręsti naujai atsirandančias problemas."
+			},
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		],
 		"relatedPages": [
@@ -1118,7 +2528,8 @@
 						"type": "text",
 						"content": "Svetainės greitį gali lemti daug skirtingų veiksnių - dideli vaizdai, įskiepiai, JavaScript, CSS, serverio konfiguracija ar net pati svetainės struktūra."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Optimizavimas pagal realias problemas",
@@ -1130,6 +2541,70 @@
 					{
 						"type": "text",
 						"content": "Tikslas - ne vien geras testo rezultatas, bet greitesnė ir malonesnė vartotojo patirtis."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Dažniausios svetainės greičio problemų priežastys",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Per dideli vaizdai",
+						"content": "Neoptimizuotos nuotraukos ir netinkami formatai gali padidinti puslapio svorį."
+					},
+					{
+						"type": "text",
+						"heading": "Pertekliniai įskiepiai",
+						"content": "Papildomi įskiepiai ir jų įkeliami resursai gali apsunkinti puslapio veikimą."
+					},
+					{
+						"type": "text",
+						"heading": "JavaScript ir CSS",
+						"content": "Nereikalingi arba netinkamai įkeliami failai gali lėtinti atvaizdavimą."
+					},
+					{
+						"type": "text",
+						"heading": "Serverio aplinka",
+						"content": "Hostingas, PHP versija, duomenų bazė ir serverio konfigūracija taip pat turi įtakos."
+					}
+				]
+			},
+			{
+				"heading": "Kaip optimizuojame WordPress svetainę",
+				"layout": "steps",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Matavimas",
+						"content": "Užfiksuojame pradinę būklę ir svarbiausias našumo problemas."
+					},
+					{
+						"type": "text",
+						"heading": "Priežasčių paieška",
+						"content": "Nustatome, ar lėtėjimą lemia vaizdai, įskiepiai, kodas ar serveris."
+					},
+					{
+						"type": "text",
+						"heading": "Optimizavimas",
+						"content": "Atliekame tik konkrečiai svetainei reikalingus pakeitimus."
+					},
+					{
+						"type": "text",
+						"heading": "Pakartotinis testavimas",
+						"content": "Palyginame rezultatus ir patikriname, ar nepažeistos svarbios funkcijos."
+					}
+				]
+			},
+			{
+				"heading": "Vienas PageSpeed balas neparodo visos situacijos",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Vertiname realią patirtį",
+						"content": "Svarbu ne tik laboratorinis testo rezultatas, bet ir tai, kaip greitai lankytojui pasirodo pagrindinis turinys, kaip reaguoja puslapis ir ar svetainė patikimai veikia."
 					}
 				]
 			}
@@ -1150,6 +2625,20 @@
 			{
 				"slug": "svetainiu-atnaujinimas",
 				"title": "Svetainės atnaujinimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1176,7 +2665,8 @@
 						"type": "text",
 						"content": "Vilniaus verslo rinkoje konkurencija didelė, todėl interneto svetainė turi ne tik atrodyti profesionaliai, bet ir aiškiai parodyti, kodėl klientas turėtų rinktis jūsų paslaugas."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "WordPress ir WooCommerce sprendimai",
@@ -1188,6 +2678,65 @@
 					{
 						"type": "text",
 						"content": "Jeigu patogiau, projektą galime aptarti gyvai Vilniuje arba visiškai nuotoliniu būdu."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Kokioms Vilniaus įmonėms kuriame svetaines",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Paslaugų verslui",
+						"content": "Svetainės specialistams ir įmonėms, kurioms svarbios paslaugų užklausos ir aiškus pasiūlymas."
+					},
+					{
+						"type": "text",
+						"heading": "Mažoms ir augančioms įmonėms",
+						"content": "Kompaktiški sprendimai, kuriuos galima papildyti augant veiklai."
+					},
+					{
+						"type": "text",
+						"heading": "Produktų ir prekybos verslui",
+						"content": "Svetainės su produktų pristatymu arba atskiros WooCommerce parduotuvės."
+					}
+				]
+			},
+			{
+				"heading": "Nuotolinis bendradarbiavimas su Vilniaus klientais",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Poreikių aptarimas",
+						"content": "Tikslus užduoties ir projekto apimties suderinimas nuotoliniu būdu."
+					},
+					{
+						"type": "text",
+						"heading": "Medžiagos perdavimas",
+						"content": "Tekstus, nuotraukas ir kitą informaciją galima perduoti skaitmeniniu formatu."
+					},
+					{
+						"type": "text",
+						"heading": "Dizaino derinimas",
+						"content": "Puslapių peržiūra ir pastabos vyksta bendrinant projekto peržiūras."
+					},
+					{
+						"type": "text",
+						"heading": "Paleidimas",
+						"content": "Užbaigtas projektas perduodamas su sutartomis prieigomis ir instrukcijomis."
+					}
+				]
+			},
+			{
+				"heading": "Dirbame su Vilniaus verslais ir nuotoliniu būdu",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Patogus procesas",
+						"content": "Projektui nebūtina nuolat susitikti gyvai – svarbiausi sprendimai, medžiaga ir derinimai gali vykti nuotoliniu būdu. Susitikimo poreikį aptariame individualiai."
 					}
 				]
 			}
@@ -1208,7 +2757,7 @@
 				"title": "WordPress svetainių kūrimas Vilniuje"
 			},
 			{
-				"slug": "e-parduotuviu-kurimas",
+				"slug": "el-parduotuviu-kurimas",
 				"title": "El. parduotuvių kūrimas"
 			}
 		],
@@ -1220,6 +2769,18 @@
 			{
 				"question": "Ar kuriate WordPress svetaines Vilniuje?",
 				"answer": "Taip. WordPress yra pagrindinė mūsų naudojama turinio valdymo sistema."
+			},
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1246,7 +2807,8 @@
 						"type": "text",
 						"content": "WordPress suteikia galimybę sukurti profesionalią svetainę ir kartu išlaikyti patogų turinio valdymą."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "Individualus dizainas ir nuotolinis darbas",
@@ -1258,6 +2820,60 @@
 					{
 						"type": "text",
 						"content": "Projektus galime įgyvendinti tiek susitikus Vilniuje, tiek nuotoliniu būdu."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "WordPress svetainės kūrimas Vilniaus įmonei",
+				"layout": "split",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Turinio valdymas",
+						"content": "Svetainės administravimas leidžia įmonės komandai atnaujinti paslaugų informaciją, naujienas ir kitą turinį."
+					},
+					{
+						"type": "text",
+						"heading": "Dizaino pritaikymas",
+						"content": "Puslapių išdėstymas kuriamas pagal įmonės veiklą, auditoriją ir norimą komunikacijos stilių."
+					}
+				]
+			},
+			{
+				"heading": "Ką aptariame prieš pradedant projektą",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Įmonės veiklą ir klientus",
+						"content": "Kokias paslaugas teikiate ir kokių užklausų tikitės."
+					},
+					{
+						"type": "text",
+						"heading": "Puslapių struktūrą",
+						"content": "Kokie skyriai reikalingi pradžioje, o kuriuos galima pridėti vėliau."
+					},
+					{
+						"type": "text",
+						"heading": "Dizainą ir turinį",
+						"content": "Kokios medžiagos jau turite ir ką reikės paruošti."
+					},
+					{
+						"type": "text",
+						"heading": "Techninius poreikius",
+						"content": "Formos, kalbos, integracijos ir administravimo prieigos."
+					}
+				]
+			},
+			{
+				"heading": "Bendradarbiavimas galimas ir visiškai nuotoliniu būdu",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Aiškūs derinimo etapai",
+						"content": "Projekto eigą, peržiūras ir pakeitimus galime suderinti internetu, todėl darbas nepriklauso nuo kliento buvimo konkrečioje Vilniaus vietoje."
 					}
 				]
 			}
@@ -1279,6 +2895,20 @@
 			{
 				"slug": "divi-svetainiu-kurimas",
 				"title": "Divi svetainių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1305,7 +2935,8 @@
 						"type": "text",
 						"content": "El. prekyboje svarbu ne tik pritraukti lankytoją, bet ir užtikrinti kuo sklandesnį kelią iki pirkimo."
 					}
-				]
+				],
+				"layout": "steps"
 			},
 			{
 				"heading": "WooCommerce parduotuvės pagal verslo poreikius",
@@ -1317,6 +2948,65 @@
 					{
 						"type": "text",
 						"content": "Parduotuvę pritaikome tiek mažesniam verslui, tiek augančiam produktų katalogui."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Kokias el. prekybos dalis planuojame",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Produktų katalogas",
+						"content": "Kategorijos, atributai, variantai ir paieška pagal prekių asortimentą."
+					},
+					{
+						"type": "text",
+						"heading": "Atsiskaitymas",
+						"content": "Pirkimo žingsniai ir mokėjimo būdai, suderinti su pasirinktu tiekėju."
+					},
+					{
+						"type": "text",
+						"heading": "Pristatymas",
+						"content": "Pristatymo metodai ir sąlygos, aiškiai pateikiamos pirkėjui."
+					}
+				]
+			},
+			{
+				"heading": "Parduotuvės kūrimo eiga",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Asortimento analizė",
+						"content": "Įvertiname produktų tipus, duomenis ir katalogo struktūrą."
+					},
+					{
+						"type": "text",
+						"heading": "Pirkimo scenarijus",
+						"content": "Numatome, kaip klientas rinksis prekes ir užbaigs užsakymą."
+					},
+					{
+						"type": "text",
+						"heading": "Integracijos",
+						"content": "Suderiname reikalingus mokėjimo ir pristatymo sprendimus."
+					},
+					{
+						"type": "text",
+						"heading": "Testavimas",
+						"content": "Patikriname pirkimo kelią ir svarbiausius administravimo veiksmus."
+					}
+				]
+			},
+			{
+				"heading": "Projektą galima įgyvendinti nuotoliniu būdu",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Bendradarbiavimas su Vilniaus verslu",
+						"content": "Produktų duomenys, dizaino peržiūros ir funkcijų derinimas gali vykti internetu. Susitikimai ar papildomi mokymai aptariami pagal poreikį."
 					}
 				]
 			}
@@ -1332,12 +3022,26 @@
 		],
 		"relatedPages": [
 			{
-				"slug": "e-parduotuviu-kurimas",
+				"slug": "el-parduotuviu-kurimas",
 				"title": "El. parduotuvių kūrimas"
 			},
 			{
 				"slug": "woocommerce-parduotuviu-kurimas",
 				"title": "WooCommerce parduotuvių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1364,7 +3068,8 @@
 						"type": "text",
 						"content": "Kauno verslui svarbu turėti svetainę, kuri aiškiai pristato paslaugas ir padeda potencialiam klientui greitai priimti sprendimą."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "WordPress sprendimai ir nuotolinis bendradarbiavimas",
@@ -1376,6 +3081,65 @@
 					{
 						"type": "text",
 						"content": "Projektus galime įgyvendinti visiškai nuotoliniu būdu, todėl galime dirbti su klientais visame Kaune."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Svetainės sprendimai skirtingoms Kauno verslo veikloms",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Vietinių paslaugų įmonėms",
+						"content": "Aiškūs paslaugų puslapiai, kontaktai ir užklausų pateikimas."
+					},
+					{
+						"type": "text",
+						"heading": "B2B įmonėms",
+						"content": "Išsamesnis sprendimų, kompetencijų ir projektų pristatymas verslo klientams."
+					},
+					{
+						"type": "text",
+						"heading": "Mažam verslui",
+						"content": "Kompaktiška svetainė su svarbiausia informacija ir galimybe ją plėsti."
+					}
+				]
+			},
+			{
+				"heading": "Kaip kuriame svetainę Kauno verslui",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Poreikių aptarimas",
+						"content": "Išsiaiškiname veiklos specifiką, tikslinę auditoriją ir svetainės tikslą."
+					},
+					{
+						"type": "text",
+						"heading": "Turinio struktūra",
+						"content": "Atskiriame paslaugas, informaciją apie įmonę ir kontaktinius veiksmus."
+					},
+					{
+						"type": "text",
+						"heading": "Techninis įgyvendinimas",
+						"content": "Kuriame WordPress aplinkoje ir pritaikome skirtingiems ekranams."
+					},
+					{
+						"type": "text",
+						"heading": "Perdavimas",
+						"content": "Suteikiame administravimo prieigą ir paaiškiname turinio atnaujinimą."
+					}
+				]
+			},
+			{
+				"heading": "Projektus galime įgyvendinti nuotoliniu būdu",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Bendradarbiavimas visame Kaune",
+						"content": "Darbo procesas nepriklauso nuo konkretaus miesto rajono – užduotis, medžiagą ir dizaino derinimus galima tvarkyti internetu."
 					}
 				]
 			}
@@ -1395,8 +3159,22 @@
 				"title": "Svetainių kūrimas Vilniuje"
 			},
 			{
-				"slug": "e-parduotuviu-kurimas",
+				"slug": "el-parduotuviu-kurimas",
 				"title": "El. parduotuvių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1423,7 +3201,8 @@
 						"type": "text",
 						"content": "WordPress leidžia sukurti profesionalią svetainę ir suteikia verslui galimybę savarankiškai valdyti turinį."
 					}
-				]
+				],
+				"layout": "cards"
 			},
 			{
 				"heading": "Individualus dizainas ir SEO paruošimas",
@@ -1435,6 +3214,60 @@
 					{
 						"type": "text",
 						"content": "Visos svetainės pritaikomos skirtingiems ekranams ir paruošiamos tolesniam SEO."
+					}
+				],
+				"layout": "list"
+			},
+			{
+				"heading": "WordPress sprendimai Kauno įmonėms",
+				"layout": "split",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Svetainės valdymas",
+						"content": "WordPress leidžia įmonės darbuotojams atnaujinti tekstus, nuotraukas, paslaugas ir naujienas."
+					},
+					{
+						"type": "text",
+						"heading": "Individualus išdėstymas",
+						"content": "Divi naudojamas ten, kur reikalingas vizualus puslapių kūrimas ir redagavimas."
+					}
+				]
+			},
+			{
+				"heading": "Ką apima projekto paruošimas",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Puslapių planas",
+						"content": "Pagrindiniai įmonės, paslaugų, projektų ir kontaktų puslapiai."
+					},
+					{
+						"type": "text",
+						"heading": "Mobilusis pritaikymas",
+						"content": "Turinys ir navigacija pritaikomi telefonams bei planšetėms."
+					},
+					{
+						"type": "text",
+						"heading": "SEO pagrindai",
+						"content": "Sutvarkoma antraščių hierarchija, puslapių pavadinimai ir pagrindiniai techniniai elementai."
+					},
+					{
+						"type": "text",
+						"heading": "Administravimo perdavimas",
+						"content": "Paaiškiname, kaip atlikti kasdienius turinio pakeitimus."
+					}
+				]
+			},
+			{
+				"heading": "Vietovė neturi riboti projekto",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Nuotolinis procesas",
+						"content": "Svetainės kūrimą Kauno įmonei galime organizuoti nuotoliniu būdu – nuo pirmo pokalbio iki galutinio perdavimo."
 					}
 				]
 			}
@@ -1456,6 +3289,20 @@
 			{
 				"slug": "wordpress-svetainiu-kurimas",
 				"title": "WordPress svetainių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1482,7 +3329,8 @@
 						"type": "text",
 						"content": "Profesionali interneto svetainė padeda Klaipėdos verslui būti matomam internete ir aiškiai pristatyti savo paslaugas."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "WordPress ir WooCommerce sprendimai",
@@ -1494,6 +3342,65 @@
 					{
 						"type": "text",
 						"content": "Projektus galime koordinuoti visiškai nuotoliniu būdu."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Svetainių sprendimai Klaipėdos verslui",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Paslaugų įmonėms",
+						"content": "Aiškus paslaugų pristatymas, kontaktai ir užklausų surinkimas."
+					},
+					{
+						"type": "text",
+						"heading": "Prekybos verslui",
+						"content": "Produktų pristatymas arba WooCommerce parduotuvė su pirkimo funkcijomis."
+					},
+					{
+						"type": "text",
+						"heading": "Įmonėms ir specialistams",
+						"content": "Profesionalus veiklos, patirties ir projektų pristatymas."
+					}
+				]
+			},
+			{
+				"heading": "Ką planuojame prieš kuriant svetainę",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Klientų poreikius",
+						"content": "Kokią informaciją lankytojas turi rasti prieš kreipdamasis."
+					},
+					{
+						"type": "text",
+						"heading": "Svetainės struktūrą",
+						"content": "Pagrindiniai puslapiai ir jų tarpusavio ryšiai."
+					},
+					{
+						"type": "text",
+						"heading": "Turinį ir vizualus",
+						"content": "Tekstai, nuotraukos, projektų pavyzdžiai ir įmonės identitetas."
+					},
+					{
+						"type": "text",
+						"heading": "Techninį įgyvendinimą",
+						"content": "WordPress, mobilusis pritaikymas, formos ir SEO pagrindai."
+					}
+				]
+			},
+			{
+				"heading": "Nuotolinis bendradarbiavimas Klaipėdos verslui",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Aiškus darbo procesas",
+						"content": "Visus projekto etapus galima organizuoti internetu, todėl atstumas netrukdo aptarti poreikių, derinti dizaino ar perduoti svetainę."
 					}
 				]
 			}
@@ -1513,8 +3420,22 @@
 				"title": "Svetainių kūrimas"
 			},
 			{
-				"slug": "e-parduotuviu-kurimas",
+				"slug": "el-parduotuviu-kurimas",
 				"title": "El. parduotuvių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1541,7 +3462,8 @@
 						"type": "text",
 						"content": "Svetainė turi aiškiai parodyti jūsų paslaugas ir padėti potencialiam klientui rasti reikalingą informaciją."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "WordPress sprendimai verslui",
@@ -1553,6 +3475,65 @@
 					{
 						"type": "text",
 						"content": "Projektus galime įgyvendinti nuotoliniu būdu visoje Šiaulių rinkoje."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Kokios svetainės gali reikėti Šiaulių verslui",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Vietinių paslaugų svetainei",
+						"content": "Pagrindinės paslaugos, darbo laikas, kontaktai ir užklausos forma."
+					},
+					{
+						"type": "text",
+						"heading": "Įmonės reprezentacijai",
+						"content": "Veiklos pristatymas, komanda, projektai ir informacija partneriams."
+					},
+					{
+						"type": "text",
+						"heading": "Prekybai internetu",
+						"content": "Produktų katalogas ir WooCommerce pirkimo funkcijos, jei planuojama prekyba."
+					}
+				]
+			},
+			{
+				"heading": "Kaip svetainės turinys padeda klientui apsispręsti",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Aiškus pasiūlymas",
+						"content": "Lankytojas turi greitai suprasti, kuo užsiimate."
+					},
+					{
+						"type": "text",
+						"heading": "Konkreti paslaugų informacija",
+						"content": "Atskiri aprašymai atsako į skirtingus klientų klausimus."
+					},
+					{
+						"type": "text",
+						"heading": "Patikimumo elementai",
+						"content": "Realūs darbų pavyzdžiai, atsiliepimai ir kontaktai."
+					},
+					{
+						"type": "text",
+						"heading": "Paprastas susisiekimas",
+						"content": "Patogios formos ir kontaktai skirtinguose įrenginiuose."
+					}
+				]
+			},
+			{
+				"heading": "Svetainę galima kurti ir plėsti etapais",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Pradžia nuo svarbiausio",
+						"content": "Pirmiausia įgyvendinami pagrindiniai puslapiai, o papildomas turinys ir funkcijos pridedami pagal verslo poreikį."
 					}
 				]
 			}
@@ -1574,6 +3555,20 @@
 			{
 				"slug": "wordpress-svetainiu-kurimas",
 				"title": "WordPress svetainių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	},
@@ -1600,7 +3595,8 @@
 						"type": "text",
 						"content": "Profesionali svetainė padeda verslui būti randamam internete ir aiškiai pristatyti savo paslaugas."
 					}
-				]
+				],
+				"layout": "editorial"
 			},
 			{
 				"heading": "WordPress sprendimai ir patogus valdymas",
@@ -1612,6 +3608,65 @@
 					{
 						"type": "text",
 						"content": "Kiekvienas projektas pritaikomas mobiliesiems įrenginiams ir paruošiamas SEO."
+					}
+				],
+				"layout": "split"
+			},
+			{
+				"heading": "Svetainės tipai Panevėžio įmonėms",
+				"layout": "cards",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Reprezentacinė svetainė",
+						"content": "Įmonės veiklai, paslaugoms ir kontaktams pristatyti."
+					},
+					{
+						"type": "text",
+						"heading": "Paslaugų svetainė",
+						"content": "Kiekvienai svarbiai paslaugai pateikti atskirą informaciją ir užklausos galimybę."
+					},
+					{
+						"type": "text",
+						"heading": "El. parduotuvė",
+						"content": "Produktų katalogui, užsakymams, mokėjimams ir pristatymui valdyti."
+					}
+				]
+			},
+			{
+				"heading": "Ką apgalvojame prieš paleidimą",
+				"layout": "list",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Turinio pilnumą",
+						"content": "Ar lankytojas ras svarbiausią informaciją ir atsakymus į klausimus."
+					},
+					{
+						"type": "text",
+						"heading": "Mobilųjį naudojimą",
+						"content": "Ar patogu naršyti ir susisiekti telefonu."
+					},
+					{
+						"type": "text",
+						"heading": "Techninį veikimą",
+						"content": "Ar veikia formos, nuorodos ir reikalingos integracijos."
+					},
+					{
+						"type": "text",
+						"heading": "Tolimesnį administravimą",
+						"content": "Ar aišku, kaip atnaujinti svetainės turinį po paleidimo."
+					}
+				]
+			},
+			{
+				"heading": "Projektą galime įgyvendinti nuotoliniu būdu",
+				"layout": "highlight",
+				"blocks": [
+					{
+						"type": "text",
+						"heading": "Bendradarbiavimas Panevėžio verslui",
+						"content": "Poreikių aptarimas, medžiagos perdavimas, peržiūros ir projekto perdavimas gali vykti internetu."
 					}
 				]
 			}
@@ -1633,6 +3688,20 @@
 			{
 				"slug": "wordpress-svetainiu-kurimas",
 				"title": "WordPress svetainių kūrimas"
+			}
+		],
+		"customFaq": [
+			{
+				"question": "Ar kuriate svetaines įmonėms Panevėžyje?",
+				"answer": "Taip. Projektus Panevėžyje galime įgyvendinti nuotoliniu būdu, suderinę poreikius, turinį ir darbų apimtį."
+			},
+			{
+				"question": "Ar būtina susitikti gyvai?",
+				"answer": "Ne. Daugumą projekto etapų galima suderinti internetu – nuo pirmo pokalbio iki svetainės perdavimo."
+			},
+			{
+				"question": "Ar svetainė bus pritaikyta vietinei paieškai?",
+				"answer": "Galime suplanuoti vietovei aktualų turinį ir techninius SEO pagrindus. Vietinis matomumas priklauso ir nuo realaus verslo, konkurencijos bei kitų Google signalų."
 			}
 		]
 	}

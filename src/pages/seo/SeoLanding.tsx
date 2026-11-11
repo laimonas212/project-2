@@ -2,7 +2,13 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Sparkles, ChevronRight } from "lucide-react";
+import {
+	ArrowRight,
+	ArrowUpRight,
+	Sparkles,
+	ChevronRight,
+	Check,
+} from "lucide-react";
 
 import { getSeoPage } from "./seoPages";
 import NotFoundPage from "../../components/NotFoundPage";
@@ -20,19 +26,19 @@ import HomepageSampleWork from "../../components/HomepageSampleWork";
 const defaultFaqs = [
 	{
 		question: "Kiek laiko užtrunka interneto svetainės kūrimas?",
-		answer: "Laikas priklauso nuo projekto sudėtingumo. Paprastą reprezentacinę svetainę galime sukurti per kelias dienas, o sudėtingas el. parduotuves – pagal sutartą terminą. Visada laikomės aiškių terminų.",
-	},
-	{
-		question: "Ar galima vėliau keisti svetainės dizainą?",
-		answer: "Taip! Kuriame lankstų WordPress sprendimą, todėl galite keisti dizainą, pridėti puslapius ar funkcijas pagal savo poreikius.",
+		answer: "Laikas priklauso nuo projekto sudėtingumo. Paprastą reprezentacinę svetainę galime sukurti per kelias dienas, o sudėtingesnius projektus įgyvendiname pagal iš anksto sutartą terminą.",
 	},
 	{
 		question: "Ar galėsiu pats redaguoti turinį?",
-		answer: "Žinoma! Svetainės kuriamos WordPress su Divi redaktoriumi, todėl galėsite lengvai atnaujinti tekstus, nuotraukas ir puslapius be programuotojo pagalbos.",
+		answer: "Taip. Svetainės kuriamos su WordPress turinio valdymo sistema, todėl galėsite savarankiškai atnaujinti tekstus, nuotraukas ir kitą turinį.",
 	},
 	{
-		question: "Ar optimizuojate svetaines paieškos sistemoms (SEO)?",
-		answer: "Taip! Visos svetainės kuriamos atsižvelgiant į SEO pagrindus, techninį veikimą ir patogią naudotojo patirtį.",
+		question: "Ar svetainė bus pritaikyta telefonams?",
+		answer: "Taip. Svetainės pritaikomos kompiuteriams, planšetėms ir išmaniesiems telefonams.",
+	},
+	{
+		question: "Ar svetainę paruošiate Google paieškai?",
+		answer: "Sutvarkome pagrindinius techninius SEO elementus ir svetainės struktūrą. Aukštoms pozicijoms pasiekti papildomai reikalingas kokybiškas turinys ir nuoseklus SEO darbas.",
 	},
 ];
 
@@ -45,6 +51,359 @@ const defaultBlocks = [
 	"cta",
 ];
 
+const sectionLayouts = [
+	"editorial",
+	"cards",
+	"split",
+	"list",
+	"highlight",
+	"steps",
+];
+
+const SectionEyebrow = ({ children }) => (
+	<div className="mb-4 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-electric-blue">
+		<span className="h-px w-7 bg-electric-blue" />
+		{children}
+	</div>
+);
+
+function ContentBlock({ block, index, compact = false }) {
+	if (!block) return null;
+
+	switch (block.type) {
+		case "heading":
+			return (
+				<h4
+					key={index}
+					className="pt-2 text-lg font-bold leading-snug text-white md:text-xl"
+				>
+					{block.heading || block.content}
+				</h4>
+			);
+
+		case "list":
+			return (
+				<div key={index} className="space-y-4">
+					{block.heading && (
+						<h4 className="text-base font-semibold text-white md:text-lg">
+							{block.heading}
+						</h4>
+					)}
+					<ul className="space-y-3">
+						{block.items?.map((item, itemIndex) => (
+							<li
+								key={itemIndex}
+								className="flex items-start gap-3 text-sm leading-relaxed text-white/70 md:text-base"
+							>
+								<span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-electric-blue/10 text-electric-blue">
+									<Check size={12} />
+								</span>
+								<span>{item}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			);
+
+		case "highlight":
+			return (
+				<div
+					key={index}
+					className={`rounded-2xl border p-5 md:p-6 ${
+						block.variant === "purple"
+							? "border-neon-purple/20 bg-neon-purple/[0.08]"
+							: block.variant === "blue"
+								? "border-electric-blue/20 bg-electric-blue/[0.08]"
+								: "border-white/10 bg-white/[0.045]"
+					}`}
+				>
+					{block.heading && (
+						<h4 className="mb-2 text-lg font-bold text-white">
+							{block.heading}
+						</h4>
+					)}
+					{block.subheading && (
+						<p className="mb-3 text-sm font-medium text-electric-blue">
+							{block.subheading}
+						</p>
+					)}
+					{block.content && (
+						<p className="text-sm leading-[1.85] text-white/75 md:text-base">
+							{block.content}
+						</p>
+					)}
+					{block.paragraphs?.map((paragraph, paragraphIndex) => (
+						<p
+							key={paragraphIndex}
+							className="mt-3 text-sm leading-[1.85] text-white/75 md:text-base"
+						>
+							{paragraph}
+						</p>
+					))}
+				</div>
+			);
+
+		case "text":
+		default:
+			return (
+				<div key={index} className="space-y-3">
+					{block.heading && (
+						<h4 className="text-base font-semibold leading-snug text-white md:text-lg">
+							{block.heading}
+						</h4>
+					)}
+					{block.subheading && (
+						<p className="text-xs font-semibold uppercase tracking-wider text-electric-blue md:text-sm">
+							{block.subheading}
+						</p>
+					)}
+					{block.content && (
+						<p
+							className={`leading-[1.85] text-white/65 ${
+								compact ? "text-sm" : "text-sm md:text-base"
+							}`}
+						>
+							{block.content}
+						</p>
+					)}
+					{block.paragraphs?.map((paragraph, paragraphIndex) => (
+						<p
+							key={paragraphIndex}
+							className="text-sm leading-[1.85] text-white/65 md:text-base"
+						>
+							{paragraph}
+						</p>
+					))}
+				</div>
+			);
+	}
+}
+
+function SeoSection({ section, index }) {
+	const layout = sectionLayouts.includes(section.layout)
+		? section.layout
+		: "editorial";
+	const blocks = section.blocks || [];
+	const number = String(index + 1).padStart(2, "0");
+
+	const heading = section.heading ? (
+		<h3 className="max-w-2xl text-xl font-bold leading-snug text-white md:text-2xl">
+			{section.heading}
+		</h3>
+	) : null;
+
+	const intro = section.intro ? (
+		<p className="mb-5 max-w-4xl text-base leading-[1.85] text-white/80 md:text-lg">
+			{section.intro}
+		</p>
+	) : null;
+
+	if (layout === "cards") {
+		return (
+			<motion.section
+				key={index}
+				initial={{ opacity: 0, y: 18 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.08 }}
+				transition={{ duration: 0.45 }}
+				className="py-8 first:pt-0 md:py-12"
+			>
+				<div className="mb-7 flex items-start gap-4">
+					<span className="pt-1 text-xs font-semibold tracking-widest text-electric-blue">
+						{number}
+					</span>
+					<div className="space-y-3">
+						{heading}
+						{intro}
+					</div>
+				</div>
+				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					{blocks.map((block, blockIndex) => (
+						<div
+							key={blockIndex}
+							className="h-full rounded-2xl border border-white/[0.08] bg-white/[0.035] p-5 transition-colors hover:border-electric-blue/25 hover:bg-white/[0.05] md:p-6"
+						>
+							<ContentBlock
+								block={block}
+								index={blockIndex}
+								compact
+							/>
+						</div>
+					))}
+				</div>
+			</motion.section>
+		);
+	}
+
+	if (layout === "split") {
+		return (
+			<motion.section
+				key={index}
+				initial={{ opacity: 0, y: 18 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.08 }}
+				transition={{ duration: 0.45 }}
+				className="my-8 overflow-hidden rounded-3xl border border-white/[0.08] bg-[#171923] md:my-12"
+			>
+				<div className="grid md:grid-cols-[0.8fr_1.2fr]">
+					<div className="relative overflow-hidden bg-gradient-to-br from-electric-blue/[0.12] via-white/[0.02] to-neon-purple/[0.12] p-6 md:p-9">
+						<div className="absolute -left-16 -top-16 h-48 w-48 rounded-full bg-electric-blue/10 blur-3xl" />
+						<div className="relative">
+							<div className="mb-5 text-xs font-semibold tracking-widest text-electric-blue">
+								{number}
+							</div>
+							{heading}
+							{intro}
+						</div>
+					</div>
+					<div className="space-y-5 p-6 md:p-9">
+						{blocks.map((block, blockIndex) => (
+							<ContentBlock
+								key={blockIndex}
+								block={block}
+								index={blockIndex}
+							/>
+						))}
+					</div>
+				</div>
+			</motion.section>
+		);
+	}
+
+	if (layout === "highlight") {
+		return (
+			<motion.section
+				key={index}
+				initial={{ opacity: 0, y: 18 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.08 }}
+				transition={{ duration: 0.45 }}
+				className="my-8 rounded-3xl border border-electric-blue/15 bg-gradient-to-br from-electric-blue/[0.09] via-white/[0.025] to-neon-purple/[0.09] p-6 md:my-12 md:p-10"
+			>
+				<div className="mb-6 flex items-start gap-4">
+					<span className="pt-1 text-xs font-semibold tracking-widest text-electric-blue">
+						{number}
+					</span>
+					<div className="space-y-3">
+						{heading}
+						{intro}
+					</div>
+				</div>
+				<div className="grid gap-5 md:grid-cols-2">
+					{blocks.map((block, blockIndex) => (
+						<ContentBlock
+							key={blockIndex}
+							block={block}
+							index={blockIndex}
+						/>
+					))}
+				</div>
+			</motion.section>
+		);
+	}
+
+	if (layout === "steps") {
+		return (
+			<motion.section
+				key={index}
+				initial={{ opacity: 0, y: 18 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.08 }}
+				transition={{ duration: 0.45 }}
+				className="py-8 first:pt-0 md:py-12"
+			>
+				<div className="mb-7 flex items-start gap-4">
+					<span className="pt-1 text-xs font-semibold tracking-widest text-electric-blue">
+						{number}
+					</span>
+					<div className="space-y-3">
+						{heading}
+						{intro}
+					</div>
+				</div>
+				<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+					{blocks.map((block, blockIndex) => (
+						<div
+							key={blockIndex}
+							className="relative rounded-2xl border border-white/[0.08] bg-white/[0.03] p-5"
+						>
+							<div className="mb-4 flex h-8 w-8 items-center justify-center rounded-lg bg-electric-blue/10 text-xs font-bold text-electric-blue">
+								{String(blockIndex + 1).padStart(2, "0")}
+							</div>
+							<ContentBlock
+								block={block}
+								index={blockIndex}
+								compact
+							/>
+						</div>
+					))}
+				</div>
+			</motion.section>
+		);
+	}
+
+	if (layout === "list") {
+		return (
+			<motion.section
+				key={index}
+				initial={{ opacity: 0, y: 18 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.08 }}
+				transition={{ duration: 0.45 }}
+				className="py-8 first:pt-0 md:py-12"
+			>
+				<div className="mb-6 flex items-start gap-4">
+					<span className="pt-1 text-xs font-semibold tracking-widest text-electric-blue">
+						{number}
+					</span>
+					<div className="space-y-3">
+						{heading}
+						{intro}
+					</div>
+				</div>
+				<div className="max-w-4xl space-y-5 pl-8 md:pl-10">
+					{blocks.map((block, blockIndex) => (
+						<ContentBlock
+							key={blockIndex}
+							block={block}
+							index={blockIndex}
+						/>
+					))}
+				</div>
+			</motion.section>
+		);
+	}
+
+	// Editorial – numatytasis išdėstymas. Tekstas pateikiamas be kortelės.
+	return (
+		<motion.section
+			key={index}
+			initial={{ opacity: 0, y: 18 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true, amount: 0.08 }}
+			transition={{ duration: 0.45 }}
+			className="grid gap-5 border-b border-white/[0.08] py-8 first:pt-0 last:border-0 md:grid-cols-[minmax(190px,0.72fr)_minmax(0,1.6fr)] md:gap-12 md:py-11"
+		>
+			<div>
+				<div className="mb-3 text-[11px] font-semibold tracking-[0.2em] text-electric-blue/80">
+					{number}
+				</div>
+				{heading}
+			</div>
+			<div className="min-w-0 space-y-5">
+				{intro}
+				{blocks.map((block, blockIndex) => (
+					<ContentBlock
+						key={blockIndex}
+						block={block}
+						index={blockIndex}
+					/>
+				))}
+			</div>
+		</motion.section>
+	);
+}
+
 export default function SeoLanding() {
 	const { slug } = useParams();
 	const page = getSeoPage(slug);
@@ -55,10 +414,8 @@ export default function SeoLanding() {
 
 	const activeFaqs = page.customFaq || defaultFaqs;
 	const blocksToRender = page.contentBlocks || defaultBlocks;
-
 	const showFaq = blocksToRender.includes("faq");
 
-	// Struktūrizuoti duomenys
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@graph": [
@@ -100,10 +457,8 @@ export default function SeoLanding() {
 		],
 	};
 
-	// Kompaktiškas Hero – iškart pristatoma konkreti paslauga
 	const renderHero = () => (
 		<section className="relative isolate overflow-hidden bg-dark-bg pb-16 pt-28 md:pb-20 md:pt-36">
-			{/* Background effects */}
 			<div className="pointer-events-none absolute inset-0 -z-10">
 				<div className="absolute -top-48 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-electric-blue/[0.10] blur-[140px]" />
 				<div className="absolute -right-40 top-40 h-80 w-80 rounded-full bg-neon-purple/[0.08] blur-[120px]" />
@@ -117,7 +472,6 @@ export default function SeoLanding() {
 					transition={{ duration: 0.7, ease: "easeOut" }}
 					className="mx-auto max-w-4xl text-center"
 				>
-					{/* Breadcrumb */}
 					<div className="mb-8 flex items-center justify-center gap-2 text-sm text-white/40">
 						<Link
 							to="/"
@@ -169,279 +523,65 @@ export default function SeoLanding() {
 				</motion.div>
 			</div>
 
-			{/* Bottom fade */}
 			<div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-dark-surface/30 to-transparent" />
 		</section>
 	);
 
-	// Pagrindinis SEO turinys
+	const renderSeoContent = () => {
+		const sections = page.seoContent || [];
 
-	// Pagrindinis struktūrizuotas SEO turinys
-	const renderSeoContent = () => (
-		<section className="relative overflow-hidden bg-dark-surface py-16 md:py-24">
-			<div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-electric-blue/[0.06] blur-[130px]" />
-			<div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-neon-purple/[0.05] blur-[130px]" />
+		if (!sections.length) return null;
 
-			<div className="container relative z-10 mx-auto px-4">
-				<div className="mx-auto max-w-6xl">
-					<motion.div
-						initial={{ opacity: 0, y: 25 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true, amount: 0.1 }}
-						transition={{ duration: 0.65 }}
-					>
-						{/* Section heading */}
-						<div className="mb-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-electric-blue">
-							<span className="h-px w-7 bg-electric-blue" />
-							Apie paslaugą
+		return (
+			<section className="relative overflow-hidden bg-dark-surface py-14 md:py-20">
+				<div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-electric-blue/[0.05] blur-[130px]" />
+				<div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-neon-purple/[0.045] blur-[130px]" />
+
+				<div className="container relative z-10 mx-auto px-4">
+					<div className="mx-auto max-w-6xl">
+						<div className="mb-8 max-w-4xl md:mb-12">
+							<SectionEyebrow>Apie paslaugą</SectionEyebrow>
+							<h2 className="text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
+								{page.contentHeading ||
+									"Svetainė, kuri padeda jūsų verslui augti"}
+							</h2>
 						</div>
 
-						<h2 className="mb-12 max-w-4xl text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
-							{page.contentHeading ||
-								"Svetainė, kuri padeda jūsų verslui augti"}
-						</h2>
-
-						{/* SEO turinio skyriai */}
-						<div className="space-y-5">
-							{page.seoContent.map((section, sectionIndex) => (
-								<motion.article
-									key={sectionIndex}
-									initial={{ opacity: 0, y: 20 }}
-									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true, amount: 0.1 }}
-									transition={{
-										duration: 0.5,
-										delay: sectionIndex * 0.08,
-									}}
-									className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 transition-colors duration-300 hover:border-white/[0.14] hover:bg-white/[0.035] md:p-9"
-								>
-									<div className="grid gap-6 md:grid-cols-[220px_1fr] md:gap-10">
-										{/* Kairė dalis – skyriaus antraštė */}
-										<div>
-											<div className="mb-3 text-xs font-semibold tracking-widest text-electric-blue/70">
-												{String(
-													sectionIndex + 1,
-												).padStart(2, "0")}
-											</div>
-
-											{section.heading && (
-												<h3 className="text-xl font-bold leading-snug text-white md:text-2xl">
-													{section.heading}
-												</h3>
-											)}
-										</div>
-
-										{/* Dešinė dalis – turinio blokai */}
-										<div className="min-w-0 space-y-5">
-											{section.intro && (
-												<p className="text-lg leading-relaxed text-white/80">
-													{section.intro}
-												</p>
-											)}
-
-											{section.blocks.map(
-												(block, blockIndex) => {
-													switch (block.type) {
-														case "text":
-															return (
-																<div
-																	key={
-																		blockIndex
-																	}
-																>
-																	{block.heading && (
-																		<h4 className="mb-3 text-lg font-semibold text-white">
-																			{
-																				block.heading
-																			}
-																		</h4>
-																	)}
-
-																	{block.subheading && (
-																		<p className="mb-2 text-sm font-medium text-electric-blue">
-																			{
-																				block.subheading
-																			}
-																		</p>
-																	)}
-
-																	{block.content && (
-																		<p className="text-base leading-[1.85] text-white/65">
-																			{
-																				block.content
-																			}
-																		</p>
-																	)}
-
-																	{block.paragraphs?.map(
-																		(
-																			paragraph,
-																			i,
-																		) => (
-																			<p
-																				key={
-																					i
-																				}
-																				className="mt-4 text-base leading-[1.85] text-white/65"
-																			>
-																				{
-																					paragraph
-																				}
-																			</p>
-																		),
-																	)}
-																</div>
-															);
-
-														case "heading":
-															return (
-																<h4
-																	key={
-																		blockIndex
-																	}
-																	className="pt-2 text-xl font-bold text-white"
-																>
-																	{block.heading ||
-																		block.content}
-																</h4>
-															);
-
-														case "list":
-															return (
-																<div
-																	key={
-																		blockIndex
-																	}
-																>
-																	{block.heading && (
-																		<h4 className="mb-4 text-lg font-semibold text-white">
-																			{
-																				block.heading
-																			}
-																		</h4>
-																	)}
-
-																	<ul className="space-y-3">
-																		{block.items?.map(
-																			(
-																				item,
-																				i,
-																			) => (
-																				<li
-																					key={
-																						i
-																					}
-																					className="flex items-start gap-3 text-base leading-relaxed text-white/70"
-																				>
-																					<span className="mt-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-electric-blue/10 text-electric-blue">
-																						<ArrowRight
-																							size={
-																								12
-																							}
-																						/>
-																					</span>
-																					<span>
-																						{
-																							item
-																						}
-																					</span>
-																				</li>
-																			),
-																		)}
-																	</ul>
-																</div>
-															);
-
-														case "highlight":
-															return (
-																<div
-																	key={
-																		blockIndex
-																	}
-																	className={`rounded-xl border p-5 md:p-6 ${
-																		block.variant ===
-																		"purple"
-																			? "border-neon-purple/20 bg-neon-purple/[0.07]"
-																			: block.variant ===
-																				  "blue"
-																				? "border-electric-blue/20 bg-electric-blue/[0.07]"
-																				: "border-white/10 bg-white/[0.04]"
-																	}`}
-																>
-																	{block.heading && (
-																		<h4 className="mb-2 text-lg font-bold text-white">
-																			{
-																				block.heading
-																			}
-																		</h4>
-																	)}
-
-																	{block.subheading && (
-																		<p className="mb-3 text-sm font-medium text-electric-blue">
-																			{
-																				block.subheading
-																			}
-																		</p>
-																	)}
-
-																	{block.content && (
-																		<p className="text-base leading-relaxed text-white/75">
-																			{
-																				block.content
-																			}
-																		</p>
-																	)}
-
-																	{block.paragraphs?.map(
-																		(
-																			paragraph,
-																			i,
-																		) => (
-																			<p
-																				key={
-																					i
-																				}
-																				className="mt-3 text-base leading-relaxed text-white/75"
-																			>
-																				{
-																					paragraph
-																				}
-																			</p>
-																		),
-																	)}
-																</div>
-															);
-
-														default:
-															return null;
-													}
-												},
-											)}
-										</div>
-									</div>
-								</motion.article>
+						<div>
+							{sections.map((section, sectionIndex) => (
+								<SeoSection
+									key={`${section.heading || "section"}-${sectionIndex}`}
+									section={section}
+									index={sectionIndex}
+								/>
 							))}
 						</div>
 
-						{/* CTA */}
-						<div className="mt-12">
+						<div className="mt-8 flex flex-col gap-6 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+							<div className="max-w-xl">
+								<h3 className="text-xl font-bold text-white md:text-2xl">
+									Reikia svetainės savo verslui?
+								</h3>
+								<p className="mt-2 text-sm leading-relaxed text-white/55 md:text-base">
+									Aptarkime jūsų idėją, poreikius ir galimą
+									projekto įgyvendinimą.
+								</p>
+							</div>
 							<Link
 								to="/kontaktai"
-								className="button-primary group inline-flex items-center gap-3"
+								className="button-primary group inline-flex shrink-0 items-center justify-center gap-3"
 							>
-								Aptarkime jūsų projektą
+								Aptarkime projektą
 								<ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
 							</Link>
 						</div>
 
-						{/* Related pages */}
 						{page.relatedPages && page.relatedPages.length > 0 && (
-							<div className="mt-16 border-t border-white/10 pt-10">
-								<h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white/40">
+							<div className="mt-14 border-t border-white/10 pt-8">
+								<h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-white/40">
 									Taip pat gali būti aktualu
 								</h3>
-
-								<div className="grid gap-3 sm:grid-cols-2">
+								<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
 									{page.relatedPages.map((rel) => (
 										<Link
 											key={rel.slug}
@@ -455,14 +595,13 @@ export default function SeoLanding() {
 								</div>
 							</div>
 						)}
-					</motion.div>
+					</div>
 				</div>
-			</div>
-		</section>
-	);
+			</section>
+		);
+	};
 
-	// Dinaminių blokų renderinimas
-	const renderBlock = (blockName: string) => {
+	const renderBlock = (blockName) => {
 		switch (blockName) {
 			case "seo-content":
 				return (
@@ -552,7 +691,6 @@ export default function SeoLanding() {
 			<Helmet>
 				<title>{page.title}</title>
 				<meta name="description" content={page.description} />
-
 				<meta property="og:title" content={page.title} />
 				<meta property="og:description" content={page.description} />
 				<meta
@@ -563,22 +701,17 @@ export default function SeoLanding() {
 					property="og:url"
 					content={`https://amberweb.lt/${page.slug}`}
 				/>
-
 				<meta name="twitter:card" content="summary_large_image" />
-
 				<link
 					rel="canonical"
 					href={`https://amberweb.lt/${page.slug}`}
 				/>
-
 				<script type="application/ld+json">
 					{JSON.stringify(jsonLd)}
 				</script>
 			</Helmet>
 
 			{renderHero()}
-
-			{/* Turinys generuojamas pagal JSON nurodytą eiliškumą */}
 			{blocksToRender.map((block) => renderBlock(block))}
 		</div>
 	);
