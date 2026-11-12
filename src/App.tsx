@@ -1,28 +1,36 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async"; // Pridedame HelmetProvider
+import { HelmetProvider } from "react-helmet-async";
+import { motion } from "framer-motion";
+
 import GoogleConsent from "./components/GoogleConsent";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import NotFoundPage from "./components/NotFoundPage";
+
+import { initGA, logPageView } from "./analytics";
+
+// Pagrindiniai puslapiai
 import Projektai from "./pages/Projektai";
 import Templates from "./pages/Dizainai";
 import Kainos from "./pages/Kainos";
 import Kontaktai from "./pages/Kontaktai";
-import { motion } from "framer-motion";
-import ScrollToTop from "./components/ScrollToTop";
-import ScrollToTopButton from "./components/ScrollToTopButton";
 import PrivatumoPolitika from "./pages/PrivatumoPolitika";
 import Salygos from "./pages/Salygos";
 import Slapukai from "./pages/Slapukai";
 import Titulinis from "./pages/Titulinis";
 import Straipsniai from "./pages/Straipsniai";
-import WoocommerceUzsakymuValdymas from "./pages/blog/WoocommerceUzsakymuValdymas";
-import NaujasWoocommerceProduktas from "./pages/blog/NaujasWoocoomerceProduktas";
-import KaipNaudotisDivi from "./pages/blog/KaipNaudotisDivi";
-import KasYraDivi from "./pages/blog/KasYraDivi";
-import KlaidosKuriasDaroVerslai from "./pages/blog/KlaidosKuriasDaroVerslai";
-import { initGA, logPageView } from "./analytics";
-import NotFoundPage from "./components/NotFoundPage";
+import Landing from "./pages/Landing";
+
+// Dinaminis blogo straipsnio puslapis
+import BlogPost from "./pages/blog/BlogPost";
+
+// SEO puslapiai
+import SeoLanding from "./pages/seo/SeoLanding";
+
+// Projektų puslapiai
 import LzspaPage from "./pages/projektai/lzspa";
 import HolistineKosmetologija from "./pages/projektai/holistine-kosmetologija";
 import Veselovaite from "./pages/projektai/veselovaite";
@@ -50,25 +58,16 @@ import Paparciopm from "./pages/projektai/paparciopm";
 import ArchiGrupe from "./pages/projektai/archi-grupe";
 import Lithuan from "./pages/projektai/lithuan";
 import YogaWithMeta from "./pages/projektai/yoga-with-meta";
-import WordPressKaina2025 from "./pages/blog/WordPressKaina2025";
-import InternetoSvetainiuKurimas2025 from "./pages/blog/InternetoSvetainiuKurimas2025";
-import PigiosSvetaines from "./pages/blog/PigiosSvetaines";
-import Divi5Straipsnis from "./pages/blog/Divi5";
 import Akmenukas from "./pages/projektai/akmenukas";
 import DentesVitae from "./pages/projektai/dentes-vitae";
 import Smokedrop from "./pages/projektai/smokedrop";
 import Inviteu from "./pages/projektai/inviteu";
 import Dust2riches from "./pages/projektai/dusttoriches";
-import VersloTinklarastis from "./pages/blog/VersloTinklarastis";
-import DomenoPasirinkimas from "./pages/blog/DomenoPasirinkimas";
-import SenosSvetainesAtnaujinimasArNauja from "./pages/blog/SenosSvetainesAtnaujinimasArNauja";
-import Landing from "./pages/Landing";
-import SeoLanding from "./pages/seo/SeoLanding";
 
 function App() {
 	useEffect(() => {
-		initGA(); // Initialize Google Analytics
-		logPageView(); // Log initial page load
+		initGA();
+		logPageView();
 	}, []);
 
 	return (
@@ -76,6 +75,7 @@ function App() {
 			<Router>
 				<GoogleConsent />
 				<ScrollToTop />
+
 				<Navbar />
 				<ScrollToTopButton />
 
@@ -87,8 +87,10 @@ function App() {
 						className="relative z-10 flex-grow"
 					>
 						<Routes>
-							<Route path="/:slug" element={<SeoLanding />} />
+							{/* Pagrindinis puslapis */}
 							<Route path="/" element={<Titulinis />} />
+
+							{/* Pagrindiniai puslapiai */}
 							<Route path="/projektai" element={<Projektai />} />
 							<Route
 								path="/paruosti-dizainai"
@@ -96,68 +98,26 @@ function App() {
 							/>
 							<Route path="/kainos" element={<Kainos />} />
 							<Route path="/kontaktai" element={<Kontaktai />} />
-							<Route path="/blog" element={<Straipsniai />} />
+
+							{/* Svetainės kūrimo landing page */}
 							<Route
 								path="/interneto-svetainiu-kurimas"
 								element={<Landing />}
 							/>
+
+							{/* Blogas */}
+							<Route path="/blog" element={<Straipsniai />} />
+							<Route path="/blog/:slug" element={<BlogPost />} />
+
+							{/* Teisiniai puslapiai */}
 							<Route
 								path="/privatumo-politika"
 								element={<PrivatumoPolitika />}
 							/>
 							<Route path="/salygos" element={<Salygos />} />
 							<Route path="/slapukai" element={<Slapukai />} />
-							<Route
-								path="/blog/woocommerce-uzsakymu-valdymas"
-								element={<WoocommerceUzsakymuValdymas />}
-							/>
-							<Route
-								path="/blog/naujas-woocommerce-produktas"
-								element={<NaujasWoocommerceProduktas />}
-							/>
-							<Route
-								path="/blog/kaip-naudotis-divi"
-								element={<KaipNaudotisDivi />}
-							/>
-							<Route
-								path="/blog/kas-yra-divi"
-								element={<KasYraDivi />}
-							/>
-							<Route
-								path="/blog/5-klaidos-kurias-daro-verslai"
-								element={<KlaidosKuriasDaroVerslai />}
-							/>
-							<Route
-								path="/blog/wordpress-svetaines-kaina-2025"
-								element={<WordPressKaina2025 />}
-							/>
-							<Route
-								path="/blog/interneto-svetainiu-kurimas-2025"
-								element={<InternetoSvetainiuKurimas2025 />}
-							/>
-							<Route
-								path="/blog/pigios-svetaines"
-								element={<PigiosSvetaines />}
-							/>
-							<Route
-								path="//blog/kas-yra-divi-5"
-								element={<Divi5Straipsnis />}
-							/>
-							<Route
-								path="/blog/kodel-jusu-verslui-butina-tureti-tinklarasti"
-								element={<VersloTinklarastis />}
-							/>
-							<Route
-								path="/blog/domeno-pasirinkimas"
-								element={<DomenoPasirinkimas />}
-							/>
 
-							<Route
-								path="/blog/senos-svetaines-atnaujinimas-ar-kurti-nauja"
-								element={<SenosSvetainesAtnaujinimasArNauja />}
-							/>
-
-							<Route path="*" element={<NotFoundPage />} />
+							{/* Projektų puslapiai */}
 							<Route
 								path="/projektai/lzspa"
 								element={<LzspaPage />}
@@ -283,8 +243,15 @@ function App() {
 								path="/projektai/romasta"
 								element={<Romasta />}
 							/>
+
+							{/* Dinaminiai SEO puslapiai */}
+							<Route path="/:slug" element={<SeoLanding />} />
+
+							{/* 404 */}
+							<Route path="*" element={<NotFoundPage />} />
 						</Routes>
 					</motion.div>
+
 					<Footer />
 				</div>
 			</Router>

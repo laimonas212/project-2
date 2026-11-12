@@ -298,14 +298,14 @@ const Kainos = () => {
 				</section>
 
 				{/* Price note */}
-				<p className="mx-auto mt-8 max-w-4xl px-4 text-center text-xs leading-relaxed text-white/40">
+				<p className="mx-auto m-8 mb-32 max-w-4xl px-4 text-center text-xs leading-relaxed text-white/40">
 					* Pateikta kaina apima visas nurodytas funkcijas. Galutinė
 					kaina gali keistis priklausomai nuo papildomų funkcijų,
 					puslapių skaičiaus ar specifinių poreikių.
 				</p>
 
 				{/* Features */}
-				<div className="mx-auto mt-24 max-w-5xl px-4">
+				<div className="">
 					<Features />
 				</div>
 

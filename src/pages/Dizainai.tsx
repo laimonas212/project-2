@@ -416,7 +416,7 @@ const TemplatesPage: React.FC = () => {
 									aria-pressed={isActive}
 									className={`inline-flex items-center gap-2 rounded-full border px-5 py-3 text-sm font-medium transition-all duration-300 ${
 										isActive
-											? "border-electric-blue bg-electric-blue text-white shadow-lg shadow-electric-blue/20"
+											? "border-electric-blue bg-electric-blue text-dark-surface shadow-lg shadow-electric-blue/20"
 											: "border-white/10 bg-white/[0.03] text-white/65 hover:border-white/25 hover:bg-white/[0.07] hover:text-white"
 									}`}
 								>

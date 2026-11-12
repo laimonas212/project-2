@@ -50,11 +50,11 @@ const Titulinis = () => {
 			<HeroSection />
 
 			{/* Services Section */}
-			<section ref={servicesRef} className="py-20 relative">
+			<section ref={servicesRef} className="relative">
 				<Services />
 			</section>
 
-			<section className="py-20 bg-dark-surface relative overflow-hidden">
+			<section className="bg-dark-surface relative overflow-hidden">
 				<HomepageSampleWork />
 			</section>
 
@@ -64,7 +64,7 @@ const Titulinis = () => {
 			</section>
 
 			{/* Testimonials Section */}
-			<section className="relative overflow-hidden py-20">
+			<section className="relative overflow-hidden">
 				<div className="container mx-auto px-4">
 					<CardSwiper />
 				</div>

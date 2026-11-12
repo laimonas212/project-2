@@ -17,7 +17,7 @@ import PaslaugosLanding from "../components/PaslaugosLanding";
 
 const Landing = () => {
 	return (
-		<div className="overflow-hidden bg-dark-surface">
+		<div className="overflow-hidden bg-dark-surface pt-20">
 			<Helmet>
 				<title>Interneto svetainių kūrimas - Amberweb</title>
 				<meta
@@ -405,7 +405,7 @@ const Landing = () => {
 			</section>
 
 			{/* Atlikti darbai */}
-			<section className="relative overflow-hidden bg-dark-surface py-20 md:py-28">
+			<section className="relative overflow-hidden bg-dark-surface">
 				<div className="absolute right-0 top-1/3 h-96 w-96 translate-x-1/2 rounded-full bg-neon-purple/5 blur-[140px] pointer-events-none" />
 				<div className="relative z-10">
 					<HomepageSampleWork />
@@ -413,15 +413,15 @@ const Landing = () => {
 			</section>
 
 			{/* Features */}
-			<section className="relative overflow-hidden bg-dark-surface-2 py-20 md:py-28">
+			<section className="relative overflow-hidden bg-dark-surface-2">
 				<div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-electric-blue/5 blur-[140px] pointer-events-none" />
-				<div className="container relative z-10 mx-auto px-4">
+				<div className=" relative z-10 mx-auto">
 					<Features />
 				</div>
 			</section>
 
 			{/* Atsiliepimai */}
-			<section className="relative overflow-hidden bg-dark-surface py-20 md:py-28">
+			<section className="relative overflow-hidden bg-dark-surface">
 				<div className="container relative z-10 mx-auto px-4">
 					<CardSwiper />
 				</div>

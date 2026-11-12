@@ -41,7 +41,7 @@ const servicesList = [
 
 const Services: React.FC = () => {
 	return (
-		<div className="container relative z-10 mx-auto px-4">
+		<div className="container relative z-10 mx-auto py-32 px-4">
 			{/* Section heading */}
 			<motion.div
 				initial={{ opacity: 0, y: 24 }}
