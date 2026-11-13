@@ -130,6 +130,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 							<ProjectShowcase
 								images={project.images}
 								altTitle={project.title}
+								variant="compact"
 							/>
 						</div>
 

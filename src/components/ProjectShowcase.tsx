@@ -10,9 +10,35 @@ interface ProjectShowcaseProps {
 		desktop: string;
 	};
 	altTitle?: string;
+	variant?: "full" | "compact";
 }
 
-export default function ProjectShowcase({ images, altTitle }: ProjectShowcaseProps) {
+const getImageAlt = (altTitle: string | undefined, device: string) =>
+	altTitle
+		? `${altTitle} ${device} įrenginio projekto nuotrauka`
+		: "Projekto nuotrauka";
+
+const CompactProjectShowcase = ({
+	images,
+	altTitle,
+}: Omit<ProjectShowcaseProps, "variant">) => (
+	<div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-white/[0.08] bg-[#11121a] shadow-2xl">
+		<img
+			src={images?.desktop}
+			alt={getImageAlt(altTitle, "kompiuterio")}
+			width={1280}
+			height={800}
+			loading="lazy"
+			decoding="async"
+			className="h-full w-full object-cover object-top"
+		/>
+	</div>
+);
+
+const FullProjectShowcase = ({
+	images,
+	altTitle,
+}: Omit<ProjectShowcaseProps, "variant">) => {
 	const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 	const [mounted, setMounted] = useState(false);
 
@@ -47,6 +73,7 @@ export default function ProjectShowcase({ images, altTitle }: ProjectShowcasePro
 				<motion.div
 					initial={{ opacity: 0, x: -30 }}
 					whileInView={{ opacity: 1, x: 0 }}
+					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 0.6, delay: 0 }}
 					className="relative z-10 [perspective:800px] cursor-pointer"
 					onClick={() => setLightboxImg(images?.mobile || null)}
@@ -54,13 +81,11 @@ export default function ProjectShowcase({ images, altTitle }: ProjectShowcasePro
 					<div className="[transform:rotateY(20deg)_rotateX(4deg)] h-full">
 						<img
 							src={images?.mobile}
-							alt={
-								altTitle
-									? altTitle +
-									  " mobiliojo įrenginio projekto nuotrauka"
-									: "Projekto nuotrauka"
-							}
+							alt={getImageAlt(altTitle, "mobiliojo")}
+							width={370}
+							height={800}
 							loading="lazy"
+							decoding="async"
 							className="h-full w-full object-cover scale-[0.9] shadow-2xl rounded-xl hover:scale-[0.91] transition-transform duration-300"
 						/>
 					</div>
@@ -70,6 +95,7 @@ export default function ProjectShowcase({ images, altTitle }: ProjectShowcasePro
 				<motion.div
 					initial={{ opacity: 0, scale: 0.8 }}
 					whileInView={{ opacity: 1, scale: 1 }}
+					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="relative z-20 -ml-8 [perspective:800px] scale-95 md:scale-100 cursor-pointer"
 					onClick={() => setLightboxImg(images?.tablet || null)}
@@ -77,13 +103,11 @@ export default function ProjectShowcase({ images, altTitle }: ProjectShowcasePro
 					<div className="shadow-2xl [transform:rotateY(20deg)_rotateX(3deg)] h-full">
 						<img
 							src={images?.tablet}
-							alt={
-								altTitle
-									? altTitle +
-									  " planšetinio įrenginio projekto nuotrauka"
-									: "Projekto nuotrauka"
-							}
+							alt={getImageAlt(altTitle, "planšetinio")}
+							width={600}
+							height={800}
 							loading="lazy"
+							decoding="async"
 							className="h-full w-full object-cover rounded-xl hover:scale-[1.01] transition-transform duration-300"
 						/>
 					</div>
@@ -93,6 +117,7 @@ export default function ProjectShowcase({ images, altTitle }: ProjectShowcasePro
 				<motion.div
 					initial={{ opacity: 0, x: 70 }}
 					whileInView={{ opacity: 1, x: 0 }}
+					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 0.6, delay: 0.2 }}
 					className="relative z-30 -ml-8 [perspective:800px] cursor-pointer"
 					onClick={() => setLightboxImg(images?.desktop || null)}
@@ -100,13 +125,11 @@ export default function ProjectShowcase({ images, altTitle }: ProjectShowcasePro
 					<div className="shadow-2xl [transform:rotateY(20deg)_rotateX(2deg)] h-full">
 						<img
 							src={images?.desktop}
-							alt={
-								altTitle
-									? altTitle +
-									  " kompiuterio ekrano projekto nuotrauka"
-									: "Projekto nuotrauka"
-							}
+							alt={getImageAlt(altTitle, "kompiuterio")}
+							width={1280}
+							height={800}
 							loading="lazy"
+							decoding="async"
 							className="h-full w-full object-cover rounded-xl hover:scale-[1.01] transition-transform duration-300"
 						/>
 					</div>
@@ -114,7 +137,18 @@ export default function ProjectShowcase({ images, altTitle }: ProjectShowcasePro
 			</div>
 
 			{/* Lightbox via Portal */}
-			{mounted && createPortal(lightbox, document.body)}
+			{mounted && lightbox && createPortal(lightbox, document.body)}
 		</>
+	);
+};
+
+export default function ProjectShowcase({
+	variant = "full",
+	...props
+}: ProjectShowcaseProps) {
+	return variant === "compact" ? (
+		<CompactProjectShowcase {...props} />
+	) : (
+		<FullProjectShowcase {...props} />
 	);
 }
