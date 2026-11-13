@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
@@ -8,61 +8,62 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-import NotFoundPage from "./components/NotFoundPage";
-
 import { initGA, logPageView } from "./analytics";
 
-// Pagrindiniai puslapiai
-import Projektai from "./pages/Projektai";
-import Templates from "./pages/Dizainai";
-import Kainos from "./pages/Kainos";
-import Kontaktai from "./pages/Kontaktai";
-import PrivatumoPolitika from "./pages/PrivatumoPolitika";
-import Salygos from "./pages/Salygos";
-import Slapukai from "./pages/Slapukai";
-import Titulinis from "./pages/Titulinis";
-import Straipsniai from "./pages/Straipsniai";
-import Landing from "./pages/Landing";
+const Projektai = lazy(() => import("./pages/Projektai"));
+const Templates = lazy(() => import("./pages/Dizainai"));
+const Kainos = lazy(() => import("./pages/Kainos"));
+const Kontaktai = lazy(() => import("./pages/Kontaktai"));
+const PrivatumoPolitika = lazy(() => import("./pages/PrivatumoPolitika"));
+const Salygos = lazy(() => import("./pages/Salygos"));
+const Slapukai = lazy(() => import("./pages/Slapukai"));
+const Titulinis = lazy(() => import("./pages/Titulinis"));
+const Straipsniai = lazy(() => import("./pages/Straipsniai"));
+const Landing = lazy(() => import("./pages/Landing"));
+const BlogPost = lazy(() => import("./pages/blog/BlogPost"));
+const SeoLanding = lazy(() => import("./pages/seo/SeoLanding"));
+const NotFoundPage = lazy(() => import("./components/NotFoundPage"));
 
-// Dinaminis blogo straipsnio puslapis
-import BlogPost from "./pages/blog/BlogPost";
+const LzspaPage = lazy(() => import("./pages/projektai/lzspa"));
+const HolistineKosmetologija = lazy(
+	() => import("./pages/projektai/holistine-kosmetologija"),
+);
+const Veselovaite = lazy(() => import("./pages/projektai/veselovaite"));
+const Topstone = lazy(() => import("./pages/projektai/topstone"));
+const Brangusauto = lazy(() => import("./pages/projektai/brangus-auto"));
+const Kaliause = lazy(() => import("./pages/projektai/kaliause"));
+const Esutau = lazy(() => import("./pages/projektai/esu-tau"));
+const Angelbutikas = lazy(() => import("./pages/projektai/angel-butikas"));
+const Godeko = lazy(() => import("./pages/projektai/godeko"));
+const Eriola = lazy(() => import("./pages/projektai/eriola"));
+const Gavorkaart = lazy(() => import("./pages/projektai/gavorka-art"));
+const Gavorka = lazy(() => import("./pages/projektai/gavorka"));
+const Grozioforma = lazy(() => import("./pages/projektai/grozio-forma"));
+const Ovc = lazy(() => import("./pages/projektai/ovc"));
+const Printery = lazy(() => import("./pages/projektai/printery"));
+const Prisipusksypsena = lazy(
+	() => import("./pages/projektai/prisipusk-sypsena"),
+);
+const Provansosvajos = lazy(() => import("./pages/projektai/provanso-svajos"));
+const Romasta = lazy(() => import("./pages/projektai/romasta"));
+const Smaragdouostas = lazy(() => import("./pages/projektai/smaragdo-uostas"));
+const Sssprendimai = lazy(() => import("./pages/projektai/sssprendimai"));
+const Termoventa = lazy(() => import("./pages/projektai/termoventa"));
+const Tradicinevirtuve = lazy(
+	() => import("./pages/projektai/tradicine-virtuve"),
+);
+const Usmiler = lazy(() => import("./pages/projektai/u-smiler"));
+const Paparciopm = lazy(() => import("./pages/projektai/paparciopm"));
+const ArchiGrupe = lazy(() => import("./pages/projektai/archi-grupe"));
+const Lithuan = lazy(() => import("./pages/projektai/lithuan"));
+const YogaWithMeta = lazy(() => import("./pages/projektai/yoga-with-meta"));
+const Akmenukas = lazy(() => import("./pages/projektai/akmenukas"));
+const DentesVitae = lazy(() => import("./pages/projektai/dentes-vitae"));
+const Smokedrop = lazy(() => import("./pages/projektai/smokedrop"));
+const Inviteu = lazy(() => import("./pages/projektai/inviteu"));
+const Dust2riches = lazy(() => import("./pages/projektai/dusttoriches"));
 
-// SEO puslapiai
-import SeoLanding from "./pages/seo/SeoLanding";
-
-// Projektų puslapiai
-import LzspaPage from "./pages/projektai/lzspa";
-import HolistineKosmetologija from "./pages/projektai/holistine-kosmetologija";
-import Veselovaite from "./pages/projektai/veselovaite";
-import Topstone from "./pages/projektai/topstone";
-import Brangusauto from "./pages/projektai/brangus-auto";
-import Kaliause from "./pages/projektai/kaliause";
-import Esutau from "./pages/projektai/esu-tau";
-import Angelbutikas from "./pages/projektai/angel-butikas";
-import Godeko from "./pages/projektai/godeko";
-import Eriola from "./pages/projektai/eriola";
-import Gavorkaart from "./pages/projektai/gavorka-art";
-import Gavorka from "./pages/projektai/gavorka";
-import Grozioforma from "./pages/projektai/grozio-forma";
-import Ovc from "./pages/projektai/ovc";
-import Printery from "./pages/projektai/printery";
-import Prisipusksypsena from "./pages/projektai/prisipusk-sypsena";
-import Provansosvajos from "./pages/projektai/provanso-svajos";
-import Romasta from "./pages/projektai/romasta";
-import Smaragdouostas from "./pages/projektai/smaragdo-uostas";
-import Sssprendimai from "./pages/projektai/sssprendimai";
-import Termoventa from "./pages/projektai/termoventa";
-import Tradicinevirtuve from "./pages/projektai/tradicine-virtuve";
-import Usmiler from "./pages/projektai/u-smiler";
-import Paparciopm from "./pages/projektai/paparciopm";
-import ArchiGrupe from "./pages/projektai/archi-grupe";
-import Lithuan from "./pages/projektai/lithuan";
-import YogaWithMeta from "./pages/projektai/yoga-with-meta";
-import Akmenukas from "./pages/projektai/akmenukas";
-import DentesVitae from "./pages/projektai/dentes-vitae";
-import Smokedrop from "./pages/projektai/smokedrop";
-import Inviteu from "./pages/projektai/inviteu";
-import Dust2riches from "./pages/projektai/dusttoriches";
+const RouteFallback = () => <div className="min-h-[60vh]" aria-busy="true" />;
 
 function App() {
 	useEffect(() => {
@@ -86,7 +87,8 @@ function App() {
 						transition={{ duration: 0.5 }}
 						className="relative z-10 flex-grow"
 					>
-						<Routes>
+						<Suspense fallback={<RouteFallback />}>
+							<Routes>
 							{/* Pagrindinis puslapis */}
 							<Route path="/" element={<Titulinis />} />
 
@@ -249,7 +251,8 @@ function App() {
 
 							{/* 404 */}
 							<Route path="*" element={<NotFoundPage />} />
-						</Routes>
+							</Routes>
+						</Suspense>
 					</motion.div>
 
 					<Footer />

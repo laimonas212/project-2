@@ -12,7 +12,7 @@ interface Project {
 	title: string;
 	subtitle?: string;
 	description: string;
-	image: any;
+	image: string;
 	images?: {
 		mobile: string;
 		tablet: string;

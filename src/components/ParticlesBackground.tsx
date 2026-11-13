@@ -18,14 +18,15 @@ const ParticlesBackground: React.FC = () => {
 		const renderer = new THREE.WebGLRenderer({
 			canvas: canvasRef.current,
 			alpha: true,
-			antialias: true,
+			antialias: false,
+			powerPreference: "low-power",
 		});
 
 		renderer.setSize(window.innerWidth, window.innerHeight);
-		renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+		renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
 
 		const particlesGeometry = new THREE.BufferGeometry();
-		const particlesCount = 3000;
+		const particlesCount = 900;
 		const posArray = new Float32Array(particlesCount * 3);
 
 		for (let i = 0; i < particlesCount * 3; i++) {
@@ -37,15 +38,11 @@ const ParticlesBackground: React.FC = () => {
 			new THREE.BufferAttribute(posArray, 3)
 		);
 
-		const particleTexture = new THREE.TextureLoader().load(
-			"https://threejs.org/examples/textures/sprites/disc.png",
-		);
 		const particlesMaterial = new THREE.PointsMaterial({
-			size: 0.005,
+			size: 0.007,
 			color: "#00F0FF",
 			transparent: true,
-			opacity: 0.8,
-			map: particleTexture,
+			opacity: 0.65,
 		});
 
 		const particlesMesh = new THREE.Points(
@@ -84,7 +81,6 @@ const ParticlesBackground: React.FC = () => {
 			}
 			window.removeEventListener("resize", handleResize);
 			particlesGeometry.dispose();
-			particleTexture.dispose();
 			particlesMaterial.dispose();
 			renderer.dispose();
 		};

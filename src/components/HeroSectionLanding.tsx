@@ -12,7 +12,7 @@ import {
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
-import ParticlesBackground from "./ParticlesBackground";
+import DeferredParticlesBackground from "./DeferredParticlesBackground";
 
 const HeroSectionLanding = () => {
 	const containerRef = useRef<HTMLDivElement>(null);
@@ -73,7 +73,7 @@ const HeroSectionLanding = () => {
 		>
 			{/* Background */}
 			<div className="absolute inset-0 z-0">
-				<ParticlesBackground />
+				<DeferredParticlesBackground />
 
 				<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_35%,rgba(60,80,200,0.20)_0%,transparent_65%)]" />
 
