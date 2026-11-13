@@ -107,7 +107,8 @@ const Process = ({
 								duration: 0.5,
 								delay: (index % 3) * 0.08,
 							}}
-							className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-dark-surface-2/80 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:bg-dark-surface-2 md:p-8"
+							whileHover={{ y: -4 }}
+							className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-dark-surface-2/80 p-6 transition-[border-color,background-color] duration-300 hover:border-electric-blue/30 hover:bg-dark-surface-2 md:p-8"
 						>
 							<div className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full bg-electric-blue/[0.04] blur-3xl transition-all duration-500 group-hover:bg-electric-blue/[0.12]" />
 

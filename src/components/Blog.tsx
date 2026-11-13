@@ -82,7 +82,8 @@ const Blog = () => {
 									duration: 0.45,
 									delay: (index % 3) * 0.08,
 								}}
-								className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-dark-surface-2 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30"
+								whileHover={{ y: -4 }}
+								className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-dark-surface-2 transition-[border-color] duration-300 hover:border-electric-blue/30"
 							>
 								<Link
 									to={entry.url}

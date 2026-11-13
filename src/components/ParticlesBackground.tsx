@@ -37,14 +37,15 @@ const ParticlesBackground: React.FC = () => {
 			new THREE.BufferAttribute(posArray, 3)
 		);
 
+		const particleTexture = new THREE.TextureLoader().load(
+			"https://threejs.org/examples/textures/sprites/disc.png",
+		);
 		const particlesMaterial = new THREE.PointsMaterial({
 			size: 0.005,
 			color: "#00F0FF",
 			transparent: true,
 			opacity: 0.8,
-			map: new THREE.TextureLoader().load(
-				"https://threejs.org/examples/textures/sprites/disc.png"
-			),
+			map: particleTexture,
 		});
 
 		const particlesMesh = new THREE.Points(
@@ -55,10 +56,15 @@ const ParticlesBackground: React.FC = () => {
 
 		camera.position.z = 3;
 
+		let animationFrameId: number | null = null;
+		let isDisposed = false;
+
 		const animate = () => {
-			requestAnimationFrame(animate);
+			if (isDisposed) return;
+
 			particlesMesh.rotation.y += 0.001;
 			renderer.render(scene, camera);
+			animationFrameId = window.requestAnimationFrame(animate);
 		};
 
 		animate();
@@ -72,7 +78,14 @@ const ParticlesBackground: React.FC = () => {
 		window.addEventListener("resize", handleResize);
 
 		return () => {
+			isDisposed = true;
+			if (animationFrameId !== null) {
+				window.cancelAnimationFrame(animationFrameId);
+			}
 			window.removeEventListener("resize", handleResize);
+			particlesGeometry.dispose();
+			particleTexture.dispose();
+			particlesMaterial.dispose();
 			renderer.dispose();
 		};
 	}, []);

@@ -1,23 +1,53 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ChevronUp } from "lucide-react";
 
 const ScrollToTopButton = () => {
 	const [isVisible, setIsVisible] = useState(false);
 	const [scrollProgress, setScrollProgress] = useState(0);
+	const animationFrameRef = useRef<number | null>(null);
 
 	useEffect(() => {
-		const handleScroll = () => {
+		const updateScrollState = () => {
+			animationFrameRef.current = null;
 			const scrollTop = window.scrollY;
 			const windowHeight =
 				document.documentElement.scrollHeight -
 				document.documentElement.clientHeight;
-			const progress = Math.min((scrollTop / windowHeight) * 100, 100); // Calculate scroll progress
-			setScrollProgress(progress);
-			setIsVisible(scrollTop > 300); // Show button after scrolling 300px
+			const progress = windowHeight > 0
+				? Math.min((scrollTop / windowHeight) * 100, 100)
+				: 0;
+
+			setScrollProgress((currentProgress) =>
+				Math.abs(currentProgress - progress) > 0.1
+					? progress
+					: currentProgress,
+			);
+			setIsVisible((currentlyVisible) => {
+				const shouldBeVisible = scrollTop > 300;
+				return currentlyVisible === shouldBeVisible
+					? currentlyVisible
+					: shouldBeVisible;
+			});
 		};
 
-		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
+		const handleScroll = () => {
+			if (animationFrameRef.current === null) {
+				animationFrameRef.current = window.requestAnimationFrame(
+					updateScrollState,
+				);
+			}
+		};
+
+		handleScroll();
+		window.addEventListener("scroll", handleScroll, { passive: true });
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+			if (animationFrameRef.current !== null) {
+				window.cancelAnimationFrame(animationFrameRef.current);
+				animationFrameRef.current = null;
+			}
+		};
 	}, []);
 
 	const scrollToTop = () => {

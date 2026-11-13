@@ -298,7 +298,7 @@ const Projects: React.FC = () => {
 								onClick={handleLoadMore}
 								whileHover={{ scale: 1.04 }}
 								whileTap={{ scale: 0.96 }}
-								className="group relative flex items-center gap-3 px-7 py-4 rounded-full border border-electric-blue/30 bg-white/[0.03] backdrop-blur-md text-white text-sm font-medium hover:border-electric-blue hover:bg-electric-blue/10 transition-all duration-300"
+								className="group relative flex items-center gap-3 rounded-full border border-electric-blue/30 bg-white/[0.03] px-7 py-4 text-sm font-medium text-white backdrop-blur-md transition-[border-color,background-color] duration-300 hover:border-electric-blue hover:bg-electric-blue/10"
 							>
 								<Plus
 									size={18}

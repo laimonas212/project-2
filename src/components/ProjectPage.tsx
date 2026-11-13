@@ -275,7 +275,7 @@ export default function ProjectPage({ project }: Props) {
 											duration: 0.5,
 											delay: index * 0.12,
 										}}
-										className="group relative p-7 md:p-8 rounded-2xl border border-white/[0.09] bg-white/[0.025] hover:bg-white/[0.045] hover:border-electric-blue/30 transition-all duration-500"
+										className="group relative rounded-2xl border border-white/[0.09] bg-white/[0.025] p-7 transition-[border-color,background-color] duration-500 hover:border-electric-blue/30 hover:bg-white/[0.045] md:p-8"
 									>
 										<div className="flex items-center justify-between mb-9">
 											<div className="w-12 h-12 rounded-xl bg-electric-blue/10 flex items-center justify-center text-electric-blue group-hover:scale-110 transition-transform">

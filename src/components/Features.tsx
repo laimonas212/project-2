@@ -140,7 +140,8 @@ const Features: React.FC<FeaturesProps> = ({ h1, introText, seoContent }) => {
 									duration: 0.5,
 									delay: index * 0.1,
 								}}
-								className="group relative h-full overflow-hidden rounded-2xl border border-white/[0.08] bg-dark-surface-2 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:shadow-[0_15px_45px_rgba(0,200,255,0.06)] sm:p-7"
+								whileHover={{ y: -4 }}
+								className="group relative h-full overflow-hidden rounded-2xl border border-white/[0.08] bg-dark-surface-2 p-6 transition-[border-color,box-shadow] duration-300 hover:border-electric-blue/30 hover:shadow-[0_15px_45px_rgba(0,200,255,0.06)] sm:p-7"
 							>
 								{/* Hover glow */}
 								<div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-electric-blue/[0.04] blur-3xl transition-all duration-500 group-hover:bg-electric-blue/[0.12]" />

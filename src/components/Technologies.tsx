@@ -116,7 +116,7 @@ const Technologies = () => {
 											delay: index * 0.05,
 										}}
 										whileHover={{ y: -4 }}
-										className="group flex min-h-[116px] flex-col items-center justify-center gap-3 rounded-2xl border border-white/[0.07] bg-dark-surface-2/70 px-4 py-6 transition-all duration-300 hover:border-electric-blue/40 hover:bg-dark-surface-2 sm:min-h-[130px]"
+										className="group flex min-h-[116px] flex-col items-center justify-center gap-3 rounded-2xl border border-white/[0.07] bg-dark-surface-2/70 px-4 py-6 transition-[border-color,background-color] duration-300 hover:border-electric-blue/40 hover:bg-dark-surface-2 sm:min-h-[130px]"
 									>
 										<div className="flex h-10 items-center justify-center">
 											{technology.image ? (

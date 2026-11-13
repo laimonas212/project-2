@@ -198,7 +198,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ h1, introText }) => {
 										delay: 0.55 + index * 0.12,
 										duration: 0.6,
 									}}
-									className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-electric-blue/30 hover:bg-white/[0.05]"
+									whileHover={{ y: -4 }}
+									className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 text-center backdrop-blur-sm transition-[border-color,background-color] duration-300 hover:border-electric-blue/30 hover:bg-white/[0.05]"
 								>
 									<div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-electric-blue/[0.06] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
