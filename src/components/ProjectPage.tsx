@@ -90,7 +90,7 @@ export default function ProjectPage({ project }: Props) {
 	].filter((item) => item.items && item.items.length > 0);
 
 	return (
-		<div className="relative min-h-screen overflow-hidden">
+		<div className="relative min-h-screen overflow-hidden py-32">
 			{/* BACKGROUND */}
 			<div className="fixed inset-0 z-0 pointer-events-none">
 				<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_15%,rgba(60,80,200,0.22)_0%,transparent_65%)]" />
