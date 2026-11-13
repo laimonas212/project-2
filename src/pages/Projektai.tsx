@@ -30,7 +30,7 @@ const sortedProjects = [...projects].sort(
 // HEADER
 const ProjectsHeader: React.FC = () => {
 	return (
-		<div className="max-w-7xl mx-auto px-5 sm:px-8 pt-32 md:pt-44 pb-14 md:pb-20">
+		<div className="max-w-7xl mx-auto px-5 pb-20 pt-32 sm:px-8 md:pb-28 md:pt-44">
 			<motion.div
 				initial={{ opacity: 0, y: 25 }}
 				animate={{ opacity: 1, y: 0 }}

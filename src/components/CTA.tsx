@@ -51,7 +51,7 @@ const CTA = ({
 	}
 
 	return (
-		<section className="relative overflow-hidden py-20 md:py-28">
+		<section className="section-spacing relative overflow-hidden">
 			<div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-electric-blue to-neon-purple" />
 
 			<div className="pointer-events-none absolute inset-0 overflow-hidden">

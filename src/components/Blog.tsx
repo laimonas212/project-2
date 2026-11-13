@@ -11,7 +11,7 @@ import blogEntries from "./blogEntries";
 
 const Blog = () => {
 	return (
-		<section className="relative overflow-hidden py-20 md:py-28">
+		<section className="section-spacing relative overflow-hidden">
 			<div className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-electric-blue/[0.07] blur-[140px]" />
 
 			<div className="container relative mx-auto px-4">

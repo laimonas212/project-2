@@ -55,7 +55,7 @@ const Landing = () => {
 			<HeroSectionLanding />
 
 			{/* Privalumai */}
-			<section className="relative overflow-hidden bg-dark-surface py-20 md:py-28">
+			<section className="section-spacing relative overflow-hidden bg-dark-surface">
 				<div className="absolute left-0 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-electric-blue/5 blur-[120px] pointer-events-none" />
 				<div className="relative z-10">
 					<PrivalumaiLanding />
@@ -63,7 +63,7 @@ const Landing = () => {
 			</section>
 
 			{/* SEO turinys */}
-			<section className="relative overflow-hidden bg-dark-surface-2 py-16 md:py-24">
+			<section className="section-spacing relative overflow-hidden bg-dark-surface-2">
 				<div className="absolute right-0 top-0 h-80 w-80 translate-x-1/2 -translate-y-1/2 rounded-full bg-neon-purple/5 blur-[120px] pointer-events-none" />
 				<div className="absolute bottom-0 left-0 h-80 w-80 -translate-x-1/2 translate-y-1/2 rounded-full bg-electric-blue/5 blur-[120px] pointer-events-none" />
 
@@ -398,7 +398,7 @@ const Landing = () => {
 			</section>
 
 			{/* Paslaugos */}
-			<section className="relative overflow-hidden bg-dark-surface-2 py-20 md:py-28">
+			<section className="section-spacing relative overflow-hidden bg-dark-surface-2">
 				<div className="container relative z-10 mx-auto px-4">
 					<PaslaugosLanding />
 				</div>

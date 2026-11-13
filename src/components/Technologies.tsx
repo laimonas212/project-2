@@ -40,7 +40,7 @@ const Technologies = () => {
 	const squareLogos = ["React", "HTML5", "CSS3"];
 
 	return (
-		<section className="relative overflow-hidden py-20 md:py-28">
+		<section className="section-spacing relative overflow-hidden">
 			<div className="pointer-events-none absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-electric-blue/10 blur-[120px]" />
 
 			<div className="container relative mx-auto px-4">

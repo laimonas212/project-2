@@ -67,7 +67,7 @@ const FAQ = ({
 	};
 
 	return (
-		<section className="relative overflow-hidden bg-dark-surface py-20 md:py-28">
+		<section className="section-spacing relative overflow-hidden bg-dark-surface">
 			<div className="pointer-events-none absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-electric-blue/[0.07] blur-[140px]" />
 
 			<div className="container relative mx-auto px-4">

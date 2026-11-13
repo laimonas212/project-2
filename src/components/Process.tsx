@@ -70,7 +70,7 @@ const Process = ({
 	description = "Mes dirbame pagal aiškų ir patikrintą procesą, nuo pradinės idėjos iki galutinės svetainės paleidimo ir techninio palaikymo. Tai leidžia užtikrinti sklandų darbą, aukščiausią kokybę ir rezultatą, kuris efektyviai padeda augti jūsų verslui internete.",
 }: ProcessProps) => {
 	return (
-		<section className="relative overflow-hidden bg-dark-surface py-20 md:py-28">
+		<section className="section-spacing relative overflow-hidden bg-dark-surface">
 			<div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-electric-blue/10 blur-[140px]" />
 			<div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-purple-500/[0.07] blur-[140px]" />
 

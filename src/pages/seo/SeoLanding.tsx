@@ -533,7 +533,7 @@ export default function SeoLanding() {
 		if (!sections.length) return null;
 
 		return (
-			<section className="relative overflow-hidden bg-dark-surface py-14 md:py-20">
+			<section className="section-spacing relative overflow-hidden bg-dark-surface">
 				<div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-electric-blue/[0.05] blur-[130px]" />
 				<div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-neon-purple/[0.045] blur-[130px]" />
 
@@ -614,7 +614,7 @@ export default function SeoLanding() {
 				return (
 					<section
 						key={blockName}
-						className="relative overflow-hidden py-16 md:py-24"
+						className="relative overflow-hidden"
 					>
 						<Process />
 					</section>
@@ -624,7 +624,7 @@ export default function SeoLanding() {
 				return (
 					<section
 						key={blockName}
-						className="relative overflow-hidden bg-dark-surface py-16 md:py-24"
+						className="relative overflow-hidden bg-dark-surface"
 					>
 						<CardSwiper />
 					</section>
@@ -634,7 +634,7 @@ export default function SeoLanding() {
 				return (
 					<section
 						key={blockName}
-						className="relative overflow-hidden py-16 md:py-24"
+						className="relative overflow-hidden"
 					>
 						<Services />
 					</section>
@@ -644,7 +644,7 @@ export default function SeoLanding() {
 				return (
 					<section
 						key={blockName}
-						className="relative overflow-hidden bg-dark-surface py-16 md:py-24"
+						className="relative overflow-hidden bg-dark-surface"
 					>
 						<HomepageSampleWork />
 					</section>
@@ -657,11 +657,9 @@ export default function SeoLanding() {
 				return (
 					<section
 						key={blockName}
-						className="relative overflow-hidden bg-dark-surface py-16 md:py-24"
+						className="relative overflow-hidden bg-dark-surface"
 					>
-						<div className="container mx-auto px-4">
-							<Features />
-						</div>
+						<Features />
 					</section>
 				);
 

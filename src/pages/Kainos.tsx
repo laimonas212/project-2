@@ -114,7 +114,7 @@ const Kainos = () => {
 
 			<div className="mx-auto">
 				{/* Hero */}
-				<section className="mx-auto max-w-4xl px-4 pb-14 pt-32 text-center md:pb-20 md:pt-44">
+				<section className="mx-auto max-w-4xl px-4 pb-20 pt-32 text-center md:pb-28 md:pt-44">
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}

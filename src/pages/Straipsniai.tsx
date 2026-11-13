@@ -27,7 +27,7 @@ const Straipsniai = () => {
 
 			<div className="container relative z-10 mx-auto px-4">
 				{/* Hero */}
-				<section className="relative pb-16 pt-36 text-center md:pb-20 md:pt-44">
+				<section className="relative pb-20 pt-36 text-center md:pb-28 md:pt-44">
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ const Straipsniai = () => {
 				</section>
 
 				{/* Articles */}
-				<section className="pb-24 md:pb-32">
+				<section className="pb-20 md:pb-28">
 					<div className="mb-8 flex flex-wrap items-end justify-between gap-4">
 						<div>
 							<p className="mb-2 text-xs font-semibold uppercase tracking-widest text-electric-blue">

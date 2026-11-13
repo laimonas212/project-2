@@ -137,7 +137,7 @@ export default function ProjectPage({ project }: Props) {
 
 			<div className="relative z-10">
 				{/* HERO */}
-				<section className="max-w-7xl mx-auto px-5 sm:px-8 pt-12 md:pt-20 pb-12">
+				<section className="max-w-7xl mx-auto px-5 pb-20 pt-12 sm:px-8 md:pb-28 md:pt-20">
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
@@ -231,7 +231,7 @@ export default function ProjectPage({ project }: Props) {
 
 				{/* PROJECT OVERVIEW */}
 				{overviewItems.length > 0 && (
-					<section className="max-w-7xl mx-auto px-5 sm:px-8 pt-24 md:pt-32">
+					<section className="max-w-7xl mx-auto px-5 pt-20 sm:px-8 md:pt-28">
 						<motion.div
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
@@ -314,7 +314,7 @@ export default function ProjectPage({ project }: Props) {
 				)}
 
 				{/* TECHNOLOGY SECTION */}
-				<section className="max-w-7xl mx-auto px-5 sm:px-8 pt-24 md:pt-32">
+				<section className="max-w-7xl mx-auto px-5 pt-20 sm:px-8 md:pt-28">
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -360,7 +360,7 @@ export default function ProjectPage({ project }: Props) {
 				</section>
 
 				{/* PROJECT NAVIGATION */}
-				<section className="max-w-7xl mx-auto px-5 sm:px-8 pt-24 md:pt-32">
+				<section className="max-w-7xl mx-auto px-5 pt-20 sm:px-8 md:pt-28">
 					<div className="flex items-center gap-4 mb-8">
 						<div className="h-px flex-1 bg-white/10" />
 						<span className="text-white/30 text-xs tracking-[0.2em] uppercase">
@@ -431,7 +431,7 @@ export default function ProjectPage({ project }: Props) {
 				</section>
 
 				{/* CTA */}
-				<section className="max-w-7xl mx-auto px-4 sm:px-8 pt-24 md:pt-32 pb-20">
+				<section className="max-w-7xl mx-auto px-4 py-20 sm:px-8 md:py-28">
 					<motion.div
 						initial={{ opacity: 0, y: 25 }}
 						whileInView={{ opacity: 1, y: 0 }}

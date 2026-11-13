@@ -28,6 +28,10 @@
 		@apply bg-dark-surface rounded-lg p-6 backdrop-blur-sm border border-white/10;
 	}
 
+	.section-spacing {
+		@apply py-20 md:py-28;
+	}
+
 	.button-primary {
 		@apply px-6 py-3 bg-gradient-to-r from-electric-blue to-neon-purple rounded-lg font-display font-medium hover:opacity-90 transition-all duration-300;
 	}

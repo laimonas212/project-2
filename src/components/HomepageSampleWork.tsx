@@ -15,7 +15,7 @@ const HomepageSampleWork: React.FC = () => {
 		.filter((project): project is Project => Boolean(project));
 
 	return (
-		<section className="relative overflow-hidden py-32">
+		<section className="section-spacing relative overflow-hidden">
 			{/* Background glow */}
 			<div className="pointer-events-none absolute inset-0 overflow-hidden">
 				<div className="absolute -left-40 top-20 h-[400px] w-[400px] rounded-full bg-electric-blue/[0.06] blur-[130px]" />
